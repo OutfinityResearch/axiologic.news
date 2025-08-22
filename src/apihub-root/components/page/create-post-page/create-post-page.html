@@ -10,10 +10,6 @@
             <textarea id="essence" name="essence" rows="4" maxlength="250" required></textarea>
         </div>
         <div class="form-group">
-            <label for="reactions">Reactions (one per line, max 200 chars each) <span class="char-counter" id="reactions-counter">(0 reactions)</span></label>
-            <textarea id="reactions" name="reactions" rows="4" placeholder="Enter reactions, one per line (max 200 chars each)"></textarea>
-        </div>
-        <div class="form-group">
             <label for="source">Source URL</label>
             <input type="url" id="source" name="source">
         </div>
@@ -43,6 +39,48 @@
                 
                 <input type="radio" id="color-night" name="background-color" value="night">
                 <label for="color-night" class="color-option" style="background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);" title="Night Sky"></label>
+
+                <input type="radio" id="color-peach" name="background-color" value="peach">
+                <label for="color-peach" class="color-option" style="background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);" title="Peach"></label>
+
+                <input type="radio" id="color-aqua" name="background-color" value="aqua">
+                <label for="color-aqua" class="color-option" style="background: linear-gradient(to right, #52E5E7 0%, #130CB7 100%);" title="Aqua"></label>
+
+                <input type="radio" id="color-blood" name="background-color" value="blood">
+                <label for="color-blood" class="color-option" style="background: linear-gradient(to right, #d53369 0%, #daae51 100%);" title="Blood"></label>
+
+                <input type="radio" id="color-moon" name="background-color" value="moon">
+                <label for="color-moon" class="color-option" style="background: linear-gradient(to right, #4e54c8 0%, #8f94fb 100%);" title="Moon"></label>
+
+                <input type="radio" id="color-toxic" name="background-color" value="toxic">
+                <label for="color-toxic" class="color-option" style="background: linear-gradient(to right, #333333 0%, #dd1818 100%);" title="Toxic"></label>
+
+                <input type="radio" id="color-emerald" name="background-color" value="emerald">
+                <label for="color-emerald" class="color-option" style="background: linear-gradient(to right, #009245 0%, #FCEE21 100%);" title="Emerald"></label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="promo-banner-text">Promotional Banner Text</label>
+            <input type="text" id="promo-banner-text" name="promo-banner-text" maxlength="100">
+        </div>
+        <div class="form-group">
+            <label for="promo-banner-url">Promotional Banner URL</label>
+            <input type="url" id="promo-banner-url" name="promo-banner-url">
+        </div>
+        <div class="form-group">
+            <div class="reactions-section-header">
+                <label>Reactions (max 10)</label>
+                <button type="button" class="add-reaction-btn" data-local-action="addReactionSlide">+</button>
+            </div>
+            <div class="reactions-carousel">
+                <div class="reactions-carousel-container" id="reactions-container">
+                    <!-- Reaction slides will be added here -->
+                </div>
+                <button type="button" class="carousel-nav-btn prev" data-local-action="prevReactionSlide">&#10094;</button>
+                <button type="button" class="carousel-nav-btn next" data-local-action="nextReactionSlide">&#10095;</button>
+            </div>
+            <div class="carousel-indicators" id="carousel-indicators">
+                <!-- Indicator dots will be added here -->
             </div>
         </div>
         <button type="submit" data-local-action="createPost">Publish</button>

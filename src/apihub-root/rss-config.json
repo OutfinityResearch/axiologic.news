@@ -1,0 +1,51 @@
+{
+  "feeds": [
+    {
+      "name": "BBC News",
+      "url": "https://feeds.bbci.co.uk/news/rss.xml",
+      "enabled": true,
+      "maxReactions": 5,
+      "reactionGuidance": "Focus on geopolitical implications, UK perspective, international relations. Include reactions from: policy analyst, affected citizen, political opposition, international observer, social impact perspective"
+    },
+    {
+      "name": "CNN Top Stories",
+      "url": "http://rss.cnn.com/rss/cnn_topstories.rss",
+      "enabled": true,
+      "maxReactions": 5,
+      "reactionGuidance": "Focus on US politics and society. Include: conservative viewpoint, liberal viewpoint, independent analysis, economic impact, cultural perspective"
+    },
+    {
+      "name": "The Guardian",
+      "url": "https://www.theguardian.com/world/rss",
+      "enabled": true,
+      "maxReactions": 5,
+      "reactionGuidance": "Progressive and environmental focus. Include: environmental activist, business perspective, social justice advocate, scientific/data-driven analysis, working class perspective"
+    },
+    {
+      "name": "Reuters",
+      "url": "https://www.reutersagency.com/feed/?best-topics=tech&post_type=best",
+      "enabled": true,
+      "maxReactions": 4,
+      "reactionGuidance": "Business and market focused. Include: investor perspective, market analyst, technology expert, regulatory concerns"
+    },
+    {
+      "name": "TechCrunch",
+      "url": "https://techcrunch.com/feed/",
+      "enabled": true,
+      "maxReactions": 5,
+      "reactionGuidance": "Tech industry focus. Include: startup founder perspective, venture capitalist view, developer/engineer opinion, privacy advocate, disruption skeptic"
+    },
+    {
+      "name": "Hacker News",
+      "url": "https://news.ycombinator.com/rss",
+      "enabled": true,
+      "maxReactions": 5,
+      "reactionGuidance": "Technical and entrepreneurial focus. Include: experienced developer, startup enthusiast, technical skeptic, business model analyst, open source advocate"
+    }
+  ],
+  "topPostsPerFeed": 5,
+  "defaultBackgroundColor": "purple",
+  "defaultMaxReactions": 5,
+  "fetchFullContent": true,
+  "fetchComments": true
+}

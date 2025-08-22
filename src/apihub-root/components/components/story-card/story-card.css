@@ -16,7 +16,7 @@
     right: 0;
     background: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(10px);
-    z-index: 100;
+    z-index: 1001;
     padding: 10px 20px;
 }
 
@@ -61,6 +61,17 @@
     border-radius: 50%;
     top: 2px; /* Align with the thick line */
     transform: translateX(-50%);
+}
+
+.progress-dot.slide-change {
+    width: 10px;
+    height: 10px;
+    top: 0;
+}
+
+.progress-dot.current {
+    background: #00ff88;
+    box-shadow: 0 0 8px #00ff88;
 }
 
 .progress-info {
@@ -159,19 +170,19 @@
 }
 
 .content-panel {
-    background: rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(12px);
     border-radius: 20px;
-    padding: 25px 20px;
-    width: 98%;
-    max-width: 900px;
+    padding: 30px 25px;
+    width: 95%;
+    max-width: 800px;
     height: auto;
-    min-height: 250px;
-    max-height: 85vh;
+    min-height: 280px;
+    max-height: 75vh;
     overflow-y: auto;
     overflow-x: hidden;
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -359,33 +370,63 @@
 /* Mobile responsiveness for text */
 @media (max-width: 768px) {
     .title {
-        font-size: 2.8em;
-        padding: 0 5px;
+        font-size: 2.5em;
+        padding: 0 15px;
+        max-width: calc(100% - 30px);
     }
     
     .essence {
-        font-size: 1.6em;
-        padding: 0 8px;
+        font-size: 1.5em;
+        padding: 0 20px;
+        max-width: calc(100% - 40px);
     }
     
     .reaction {
         font-size: 1.4em;
-        padding: 0 8px;
+        padding: 0 20px;
+        max-width: calc(100% - 40px);
     }
     
     .carousel-slide {
-        padding: 30px 10px;
+        padding: 20px 10px;
     }
     
     .content-panel {
-        padding: 15px 10px;
-        width: 98%;
+        padding: 20px 15px;
+        width: 92%;
+        min-height: 200px;
+        max-height: 70vh;
     }
     
     .source-link {
         font-size: 1.2em;
         padding: 12px 28px;
     }
+    
+    .reaction-title {
+        font-size: 1.1em;
+        margin-bottom: 10px;
+    }
+}
+
+.carousel-slide[data-id="source"] {
+    justify-content: space-around;
+}
+
+.sponsor-panel {
+    width: 98%;
+    max-width: 900px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    text-align: center;
+}
+
+.next-story-countdown {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #ddd;
+    font-weight: 500;
 }
 
 /* Center content perfectly */

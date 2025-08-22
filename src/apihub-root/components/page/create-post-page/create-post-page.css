@@ -1,7 +1,84 @@
 .create-post-container {
     padding: 20px;
     color: #fff;
+    height: 100%;
+    overflow-y: auto;
+    box-sizing: border-box;
 }
+
+.reactions-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.add-reaction-btn {
+    background: none;
+    border: none;
+    color: #007bff;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+}
+
+.reactions-carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.reactions-carousel-container {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.reaction-slide {
+    flex: 0 0 100%;
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+
+.carousel-nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.3);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.carousel-nav-btn.prev {
+    left: 10px;
+}
+
+.carousel-nav-btn.next {
+    right: 10px;
+}
+
+.carousel-indicators {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.indicator-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #555;
+    margin: 0 4px;
+    cursor: pointer;
+}
+
+.indicator-dot.active {
+    background-color: #fff;
+}
+
 
 .create-post-container h2 {
     text-align: center;
@@ -102,4 +179,37 @@ button[type="submit"] {
 
 .error-message.show {
     display: block;
+}
+
+.reaction-input-group {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.reaction-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.remove-reaction-btn {
+    background: none;
+    border: none;
+    color: #ff4444;
+    cursor: pointer;
+    font-size: 1.5em;
+    padding: 0 5px;
+}
+
+#add-reaction-btn {
+    background: none;
+    border: 1px dashed #555;
+    color: #888;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 5px;
+    width: auto;
+    display: inline-block;
 }

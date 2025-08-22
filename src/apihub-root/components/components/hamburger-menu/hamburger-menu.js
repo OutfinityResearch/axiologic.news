@@ -40,6 +40,11 @@ export class HamburgerMenu {
         this.toggle();
     }
 
+    async navigateToHome() {
+        await window.webSkel.changeToDynamicPage("news-feed-page", "app");
+        this.toggle();
+    }
+
     async navigateToCreatePostFromRSS() {
         await window.webSkel.changeToDynamicPage("create-from-rss-page", "app");
         this.toggle();

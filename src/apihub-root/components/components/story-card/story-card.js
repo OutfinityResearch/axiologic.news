@@ -2,16 +2,15 @@ export class StoryCard {
     constructor(element, invalidate) {
         this.element = element;
         this.invalidate = invalidate;
-        this.carouselInterval = null;
         this.currentSlide = 0;
         this.slides = [];
         this.touchStartX = 0;
         this.touchEndX = 0;
         this.progressInterval = null;
+        this.carouselTimeout = null;
+        this.finalCountdownTimeout = null;
         this.slideTimings = [];
         this.totalPostTime = 0;
-        this.elapsedPostTime = 0;
-        this.currentSlideStartTime = 0;
         this.invalidate();
     }
 
@@ -22,293 +21,184 @@ export class StoryCard {
     }
 
     afterRender() {
-        if (!this.post) {
-            return;
-        }
+        if (!this.post) { return; }
 
-        // Update story counter
-        const currentStoryElement = this.element.querySelector('.current-story');
-        const totalStoriesElement = this.element.querySelector('.total-stories');
-        if (currentStoryElement) {
-            currentStoryElement.textContent = this.storyIndex + 1;
-        }
-        if (totalStoriesElement) {
-            totalStoriesElement.textContent = this.totalStories;
-        }
-
-        // Apply background color theme
+        this.updateStoryCounter();
         this.applyBackgroundTheme();
-
-        const titleElement = this.element.querySelector('.title');
-        const essenceElement = this.element.querySelector('.essence');
-        const sourceLinkElement = this.element.querySelector('.source-link');
-        
-        if (titleElement) {
-            titleElement.textContent = this.post.title;
-            if (webSkel.robustTextService) {
-                webSkel.robustTextService.fitTextInContainer(titleElement, {
-                    maxFontSize: 75,
-                    minFontSize: 28,
-                    enableHyphenation: false,
-                    optimizeJustification: false
-                });
-            } else {
-                webSkel.textService.adjustFontSize(titleElement);
-            }
-        }
-        if (essenceElement) {
-            essenceElement.textContent = this.post.essence;
-            if (webSkel.robustTextService) {
-                webSkel.robustTextService.fitTextInContainer(essenceElement, {
-                    maxFontSize: 45,
-                    minFontSize: 20,
-                    enableHyphenation: false,
-                    optimizeJustification: true
-                });
-            } else {
-                webSkel.textService.adjustFontSize(essenceElement);
-            }
-        }
-        if (sourceLinkElement) sourceLinkElement.href = this.post.source;
-
-        const carousel = this.element.querySelector('.carousel-container');
-        const sourceSlide = this.element.querySelector('.carousel-slide[data-id="source"]');
-
-        if (carousel && sourceSlide) {
-            this.element.querySelectorAll('.reaction-slide').forEach(slide => slide.remove());
-
-            if (this.post.reactions && Array.isArray(this.post.reactions)) {
-                this.post.reactions.forEach((reaction, index) => {
-                    const reactionSlide = document.createElement('div');
-                    reactionSlide.classList.add('carousel-slide', 'reaction-slide');
-                    reactionSlide.setAttribute('data-id', `reaction-${index}`);
-                    reactionSlide.innerHTML = `
-                        <div class="content-panel">
-                            <div class="reaction-title">Reaction #${index + 1}</div>
-                            <p class="reaction"></p>
-                        </div>`;
-                    const reactionTextElement = reactionSlide.querySelector('.reaction');
-                    reactionTextElement.textContent = reaction;
-                    if (webSkel.robustTextService) {
-                        webSkel.robustTextService.fitTextInContainer(reactionTextElement, {
-                            maxFontSize: 38,
-                            minFontSize: 18,
-                            enableHyphenation: false,
-                            optimizeJustification: true
-                        });
-                    } else {
-                        webSkel.textService.adjustFontSize(reactionTextElement);
-                    }
-                    carousel.insertBefore(reactionSlide, sourceSlide);
-                });
-            }
-        }
+        this.populateSlides();
         
         this.slides = Array.from(this.element.querySelectorAll('.carousel-slide'));
+        this.setupTimings();
         this.setupIndicators();
         this.setupNavigation();
         this.setupSwipeGestures();
         this.setupProgressBar();
         
         this.currentSlide = 0;
-        this.showSlide(0);
+        this.showSlide(0, false); // Don't start auto-advance on initial render
+    }
+
+    updateStoryCounter() {
+        const current = this.element.querySelector('.current-story');
+        const total = this.element.querySelector('.total-stories');
+        if (current) current.textContent = this.storyIndex + 1;
+        if (total) total.textContent = this.totalStories;
+    }
+
+    populateSlides() {
+        const titleElement = this.element.querySelector('.title');
+        const essenceElement = this.element.querySelector('.essence');
+        const sourceLinkElement = this.element.querySelector('.source-link');
+        
+        if (titleElement) {
+            titleElement.textContent = this.post.title;
+            webSkel.robustTextService.fitTextInContainer(titleElement, { maxFontSize: 75, minFontSize: 28 });
+        }
+        if (essenceElement) {
+            essenceElement.textContent = this.post.essence;
+            webSkel.robustTextService.fitTextInContainer(essenceElement, { maxFontSize: 45, minFontSize: 20 });
+        }
+        if (sourceLinkElement) sourceLinkElement.href = this.post.source;
+
+        const sponsorPanel = this.element.querySelector('.sponsor-panel');
+        if (this.post.promoBanner && this.post.promoBanner.text && this.post.promoBanner.url) {
+            sponsorPanel.querySelector('.sponsor-banner-link').href = this.post.promoBanner.url;
+            sponsorPanel.querySelector('.sponsor-banner span').textContent = this.post.promoBanner.text;
+            sponsorPanel.style.display = 'block';
+        } else {
+            sponsorPanel.style.display = 'none';
+        }
+
+        const carousel = this.element.querySelector('.carousel-container');
+        const sourceSlide = this.element.querySelector('.carousel-slide[data-id="source"]');
+        this.element.querySelectorAll('.reaction-slide').forEach(slide => slide.remove());
+
+        if (this.post.reactions && Array.isArray(this.post.reactions)) {
+            this.post.reactions.forEach((reaction, index) => {
+                const slide = document.createElement('div');
+                slide.className = 'carousel-slide reaction-slide';
+                slide.dataset.id = `reaction-${index}`;
+                slide.innerHTML = `
+                    <div class="content-panel">
+                        <div class="reaction-title">Reaction #${index + 1}</div>
+                        <p class="reaction"></p>
+                    </div>`;
+                const reactionText = slide.querySelector('.reaction');
+                reactionText.textContent = reaction;
+                webSkel.robustTextService.fitTextInContainer(reactionText, { maxFontSize: 38, minFontSize: 18 });
+                carousel.insertBefore(slide, sourceSlide);
+            });
+        }
+    }
+
+    setupTimings() {
+        this.slideTimings = webSkel.robustTextService.calculateSlideTimings(this.slides);
+        this.totalPostTime = this.slideTimings.reduce((sum, time) => sum + time, 0);
     }
     
     setupProgressBar() {
         const progressWrapper = this.element.querySelector('.progress-bar-wrapper');
         if (!progressWrapper) return;
 
-        // Calculate timings for all slides
-        const userSpeed = localStorage.getItem('readingSpeed') || 'normal';
-        if (webSkel.robustTextService) {
-            this.slideTimings = webSkel.robustTextService.calculateSlideTimings(this.slides);
-            
-            if (userSpeed !== 'normal') {
-                const speedConfig = webSkel.robustTextService.getAdaptiveReadingSpeed(userSpeed);
-                const speedMultiplier = 200 / speedConfig.wordsPerMinute;
-                this.slideTimings = this.slideTimings.map(time => time * speedMultiplier);
-            }
-        } else {
-            this.slideTimings = this.slides.map(() => 3000);
-        }
-        
-        this.totalPostTime = this.slideTimings.reduce((sum, time) => sum + time, 0);
+        progressWrapper.innerHTML = '<div class="progress-bar-background"></div><div class="progress-bar-fill"></div>';
         const totalSeconds = Math.ceil(this.totalPostTime / 1000);
 
-        // Create dots for each second
         for (let i = 0; i <= totalSeconds; i++) {
             const dot = document.createElement('div');
             dot.className = 'progress-dot';
-            const position = (i / totalSeconds) * 100;
-            dot.style.left = `${position}%`;
+            dot.style.left = `${(i / totalSeconds) * 100}%`;
             progressWrapper.appendChild(dot);
         }
-        
-        // Click on progress bar to seek
-        progressWrapper.addEventListener('click', (e) => {
-            const rect = progressWrapper.getBoundingClientRect();
-            const clickX = e.clientX - rect.left;
-            const percentage = clickX / rect.width;
-            const targetTime = percentage * this.totalPostTime;
-            
-            // Find which slide contains this time
-            let cumulativeTime = 0;
-            for (let i = 0; i < this.slideTimings.length; i++) {
-                if (cumulativeTime + this.slideTimings[i] > targetTime) {
-                    this.goToSlide(i);
-                    break;
-                }
-                cumulativeTime += this.slideTimings[i];
-            }
+
+        let cumulativeTime = 0;
+        this.slideTimings.forEach(time => {
+            cumulativeTime += time;
+            const dot = document.createElement('div');
+            dot.className = 'progress-dot slide-change';
+            dot.style.left = `${(cumulativeTime / this.totalPostTime) * 100}%`;
+            progressWrapper.appendChild(dot);
         });
     }
     
     setupIndicators() {
-        const indicatorsContainer = this.element.querySelector('.carousel-indicators');
-        if (!indicatorsContainer) return;
-        
-        indicatorsContainer.innerHTML = '';
+        const container = this.element.querySelector('.carousel-indicators');
+        if (!container) return;
+        container.innerHTML = '';
         this.slides.forEach((_, index) => {
             const indicator = document.createElement('div');
-            indicator.classList.add('carousel-indicator');
-            if (index === 0) indicator.classList.add('active');
+            indicator.className = 'carousel-indicator';
             indicator.addEventListener('click', () => this.goToSlide(index));
-            indicatorsContainer.appendChild(indicator);
+            container.appendChild(indicator);
         });
     }
     
     setupNavigation() {
-        const leftBtn = this.element.querySelector('.carousel-nav-left');
-        const rightBtn = this.element.querySelector('.carousel-nav-right');
-        
-        if (leftBtn) {
-            leftBtn.addEventListener('click', () => this.previousSlide());
-        }
-        
-        if (rightBtn) {
-            rightBtn.addEventListener('click', () => this.nextSlide());
-        }
+        this.element.querySelector('.carousel-nav-left')?.addEventListener('click', () => this.previousSlide());
+        this.element.querySelector('.carousel-nav-right')?.addEventListener('click', () => this.nextSlide());
     }
     
     setupSwipeGestures() {
         const container = this.element.querySelector('.carousel-wrapper');
         if (!container) return;
-        
-        container.addEventListener('touchstart', (e) => {
-            this.touchStartX = e.changedTouches[0].screenX;
-        });
-        
-        container.addEventListener('touchend', (e) => {
+        container.addEventListener('touchstart', e => this.touchStartX = e.changedTouches[0].screenX);
+        container.addEventListener('touchend', e => {
             this.touchEndX = e.changedTouches[0].screenX;
             this.handleSwipe();
-        });
-        
-        let mouseDown = false;
-        container.addEventListener('mousedown', (e) => {
-            mouseDown = true;
-            this.touchStartX = e.screenX;
-        });
-        
-        container.addEventListener('mouseup', (e) => {
-            if (mouseDown) {
-                this.touchEndX = e.screenX;
-                this.handleSwipe();
-                mouseDown = false;
-            }
-        });
-        
-        container.addEventListener('mouseleave', () => {
-            mouseDown = false;
         });
     }
     
     handleSwipe() {
-        const swipeThreshold = 50;
-        const diff = this.touchStartX - this.touchEndX;
-        
-        if (Math.abs(diff) > swipeThreshold) {
-            if (diff > 0) {
-                this.nextSlide();
-            } else {
-                this.previousSlide();
-            }
+        if (Math.abs(this.touchStartX - this.touchEndX) > 50) {
+            if (this.touchStartX > this.touchEndX) this.nextSlide();
+            else this.previousSlide();
         }
     }
-    
-    showSlide(index) {
+
+    clearAllTimers() {
+        clearTimeout(this.carouselTimeout);
+        this.carouselTimeout = null;
+        clearTimeout(this.finalCountdownTimeout);
+        this.finalCountdownTimeout = null;
+    }
+
+    showSlide(index, scheduleNext = true) {
         this.slides.forEach(slide => slide.classList.remove('active'));
-        
         if (this.slides[index]) {
             this.slides[index].classList.add('active');
             this.updateSlideInfo(index);
         }
         
-        const indicators = this.element.querySelectorAll('.carousel-indicator');
-        indicators.forEach((indicator, i) => {
-            indicator.classList.toggle('active', i === index);
+        this.element.querySelectorAll('.carousel-indicator').forEach((ind, i) => {
+            ind.classList.toggle('active', i === index);
         });
+
+        if (scheduleNext) {
+            this.scheduleNextSlide();
+        }
     }
     
     updateSlideInfo(slideIndex) {
         const slideNameEl = this.element.querySelector('.current-slide-name');
         const slide = this.slides[slideIndex];
+        if (!slideNameEl || !slide) return;
         
-        if (slideNameEl && slide) {
-            const slideId = slide.dataset.id;
-            let slideName = 'Slide';
-            
-            if (slideId === 'title') {
-                slideName = 'Title';
-            } else if (slideId === 'essence') {
-                slideName = 'Essence';
-            } else if (slideId === 'source') {
-                slideName = 'Source';
-            } else if (slide.classList.contains('reaction-slide')) {
-                const reactionTitle = slide.querySelector('.reaction-title');
-                slideName = reactionTitle ? reactionTitle.textContent : 'Reaction';
-            }
-            
-            slideNameEl.textContent = slideName;
+        const id = slide.dataset.id;
+        if (id === 'title') slideNameEl.textContent = 'Title';
+        else if (id === 'essence') slideNameEl.textContent = 'Essence';
+        else if (id === 'source') slideNameEl.textContent = 'Source';
+        else if (id.startsWith('reaction')) {
+            slideNameEl.textContent = `Reaction #${parseInt(id.split('-')[1]) + 1}`;
         }
     }
     
     goToSlide(index) {
+        this.clearAllTimers();
         this.currentSlide = index;
         this.showSlide(index);
-        if (this.carouselInterval) {
-            clearTimeout(this.carouselInterval);
-            
-            const userSpeed = localStorage.getItem('readingSpeed') || 'normal';
-            let slideTimings = [];
-            
-            if (webSkel.robustTextService) {
-                slideTimings = webSkel.robustTextService.calculateSlideTimings(this.slides);
-                
-                if (userSpeed !== 'normal') {
-                    const speedConfig = webSkel.robustTextService.getAdaptiveReadingSpeed(userSpeed);
-                    const speedMultiplier = 200 / speedConfig.wordsPerMinute;
-                    slideTimings = slideTimings.map(time => time * speedMultiplier);
-                }
-            } else {
-                slideTimings = this.slides.map(() => 3000);
-            }
-            
-            const scheduleNext = () => {
-                const currentTiming = slideTimings[this.currentSlide] || 3000;
-                
-                this.carouselInterval = setTimeout(() => {
-                    this.nextSlide();
-                    if (this.currentSlide !== 0) {
-                        scheduleNext();
-                    }
-                }, currentTiming);
-            };
-            
-            scheduleNext();
-        }
     }
     
     nextSlide() {
+        this.clearAllTimers();
         this.currentSlide = (this.currentSlide + 1) % this.slides.length;
         this.showSlide(this.currentSlide);
         
@@ -318,52 +208,48 @@ export class StoryCard {
     }
     
     previousSlide() {
+        this.clearAllTimers();
         this.currentSlide = (this.currentSlide - 1 + this.slides.length) % this.slides.length;
         this.showSlide(this.currentSlide);
+    }
+
+    scheduleNextSlide() {
+        this.clearAllTimers();
+        const isLastSlide = this.currentSlide === this.slides.length - 1;
+
+        if (isLastSlide) {
+            this.finalCountdownTimeout = setTimeout(() => {
+                this.element.dispatchEvent(new CustomEvent('story-finished', { bubbles: true }));
+            }, 10000);
+        } else {
+            const currentTiming = this.slideTimings[this.currentSlide] || 3000;
+            this.carouselTimeout = setTimeout(() => this.nextSlide(), currentTiming);
+        }
     }
 
     startCarousel() {
         if (!this.slides || this.slides.length === 0) return;
         
-        clearTimeout(this.carouselInterval);
+        this.clearAllTimers();
         clearInterval(this.progressInterval);
         
         this.currentSlide = 0;
-        this.showSlide(0);
-        
-        // Start the total post timer
+        this.showSlide(0, false);
         this.startPostTimer();
-        
-        const scheduleNext = () => {
-            const currentTiming = this.slideTimings[this.currentSlide] || 3000;
-            
-            this.carouselInterval = setTimeout(() => {
-                this.nextSlide();
-                if (this.currentSlide !== 0) {
-                    scheduleNext();
-                }
-            }, currentTiming);
-        };
-        
-        scheduleNext();
+        this.scheduleNextSlide();
     }
     
     startPostTimer() {
         clearInterval(this.progressInterval);
-        
         const startTime = Date.now();
         const progressFill = this.element.querySelector('.progress-bar-fill');
         
-        // Update timer every 100ms for smooth progress
         this.progressInterval = setInterval(() => {
             const elapsedTime = Date.now() - startTime;
-            
-            // Update progress bar fill smoothly
             if (progressFill) {
-                const progressPercentage = (elapsedTime / this.totalPostTime) * 100;
-                progressFill.style.width = `${Math.min(100, progressPercentage)}%`;
+                const percentage = Math.min(100, (elapsedTime / this.totalPostTime) * 100);
+                progressFill.style.width = `${percentage}%`;
             }
-            
             if (elapsedTime >= this.totalPostTime) {
                 clearInterval(this.progressInterval);
             }
@@ -373,25 +259,22 @@ export class StoryCard {
     applyBackgroundTheme() {
         const storyCard = this.element.querySelector('.story-card');
         if (!storyCard || !this.post.backgroundColor) return;
-        
-        const themes = {
-            purple: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-            blue: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
-            green: 'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)',
-            sunset: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)',
-            fire: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
-            cosmic: 'linear-gradient(135deg, #4481eb 0%, #04befe 100%)',
-            earth: 'linear-gradient(135deg, #0ba360 0%, #3cba92 100%)',
-            night: 'linear-gradient(135deg, #2c3e50 0%, #3498db 100%)'
-        };
-        
-        const selectedTheme = themes[this.post.backgroundColor] || themes.purple;
-        storyCard.style.background = selectedTheme;
-        storyCard.style.animation = 'none'; // Stop gradient animation
+        const themes = { purple: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', blue: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)', green: 'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)', sunset: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)', fire: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)', cosmic: 'linear-gradient(135deg, #4481eb 0%, #04befe 100%)', earth: 'linear-gradient(135deg, #0ba360 0%, #3cba92 100%)', night: 'linear-gradient(135deg, #2c3e50 0%, #3498db 100%)' };
+        storyCard.style.background = themes[this.post.backgroundColor] || themes.purple;
     }
     
     cleanup() {
-        clearTimeout(this.carouselInterval);
+        this.clearAllTimers();
         clearInterval(this.progressInterval);
+    }
+
+    async sharePost() {
+        const shareData = { title: this.post.title, text: this.post.essence, url: this.post.source || window.location.href };
+        try {
+            if (navigator.share) await navigator.share(shareData);
+            else alert('Web Share API is not supported in your browser.');
+        } catch (err) {
+            console.error('Error sharing:', err);
+        }
     }
 }

@@ -13,10 +13,38 @@ export class NewsFeedPage {
     }
 
     async beforeRender() {
-        this.posts = await window.LocalStorage.get('posts');
-        if (!this.posts || this.posts.length === 0) {
-            this.posts = [this.createTutorialPost()];
-            await window.LocalStorage.set('posts', this.posts);
+        const hasVisited = await window.LocalStorage.get('hasVisitedBefore');
+        if (!hasVisited) {
+            const tutorialPost = this.createTutorialPost();
+            const localPosts = await window.LocalStorage.get('posts') || [];
+            localPosts.unshift(tutorialPost);
+            await window.LocalStorage.set('posts', localPosts);
+            await window.LocalStorage.set('hasVisitedBefore', true);
+        }
+
+        const localPosts = await window.LocalStorage.get('posts') || [];
+        
+        let jsonPosts = [];
+        try {
+            const response = await fetch('/current_posts.json');
+            if (response.ok) {
+                jsonPosts = await response.json();
+            }
+        } catch (error) {
+            console.error("Could not fetch current_posts.json:", error);
+        }
+
+        const allPosts = [...jsonPosts, ...localPosts];
+        
+        const uniquePosts = allPosts.filter((post, index, self) =>
+            index === self.findIndex((p) => p.id === post.id)
+        );
+
+        this.posts = uniquePosts;
+
+        if (this.posts.length === 0) {
+            // This should now only happen if both local storage and JSON are empty
+            this.posts = [this.createFallbackPost()];
         }
     }
 
@@ -185,14 +213,29 @@ export class NewsFeedPage {
         return {
             id: "tutorial-1",
             title: "Welcome to Axiologic.news!",
-            essence: "A new way to consume news. Swipe horizontally for story details, vertically for new stories.",
+            essence: "Axiologic.news is a new way to experience news, focusing on core ideas and diverse perspectives, away from clickbait and sensationalism.",
             reactions: [
-                "Vertical feed shows different news stories",
-                "Horizontal carousel shows story details",
-                "Auto-play enabled, swipe to control"
+                "The code is open-source, and you can install your own version for free.",
+                "Swipe UP or DOWN to discover new stories.",
+                "Swipe LEFT or RIGHT to explore details, different reactions, and the source of the news."
             ],
+            source: "https://www.axiologic.net",
+            backgroundColor: "purple",
+            promoBanner: {
+                text: "Axiologic Research",
+                url: "https://www.axiologic.net"
+            }
+        };
+    }
+
+    createFallbackPost() {
+        return {
+            id: "fallback-1",
+            title: "Welcome to Axiologic.news!",
+            essence: "It seems there are no posts available right now. Please check back later.",
+            reactions: [],
             source: "#",
-            backgroundColor: "purple"
+            backgroundColor: "night"
         };
     }
 }

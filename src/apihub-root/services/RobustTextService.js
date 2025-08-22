@@ -7,8 +7,8 @@ export class RobustTextService {
         const defaults = {
             maxFontSize: 70,
             minFontSize: 16,
-            lineHeightRatio: 1.2, /* Reduced for tighter packing */
-            padding: 10, /* Increased default padding */
+            lineHeightRatio: 1.3, /* Slightly increased for better readability */
+            padding: 15, /* Increased default padding */
             enableHyphenation: false,
             optimizeJustification: true,
             adjustContainer: true
@@ -21,14 +21,22 @@ export class RobustTextService {
         // Adjust container size based on text amount if enabled
         if (config.adjustContainer && container.classList.contains('content-panel')) {
             const textLength = (element.textContent || '').length;
-            if (textLength > 300) {
-                container.style.maxHeight = '80vh';
+            if (textLength > 400) {
+                container.style.maxHeight = '75vh';
                 container.style.height = 'auto';
-                container.style.minHeight = '300px';
+                container.style.minHeight = '350px';
+            } else if (textLength > 250) {
+                container.style.maxHeight = '65vh';
+                container.style.height = 'auto';
+                container.style.minHeight = '280px';
             } else if (textLength > 150) {
-                container.style.maxHeight = '60vh';
+                container.style.maxHeight = '55vh';
                 container.style.height = 'auto';
-                container.style.minHeight = '200px';
+                container.style.minHeight = '220px';
+            } else {
+                container.style.maxHeight = '45vh';
+                container.style.height = 'auto';
+                container.style.minHeight = '180px';
             }
         }
         
@@ -311,12 +319,10 @@ export class RobustTextService {
 
     static calculateReadingTime(text, options = {}) {
         const defaults = {
-            wordsPerMinute: 200,
-            minDuration: 2000,
-            maxDuration: 15000,
-            titleBonus: 500,
-            imageViewTime: 1000,
-            baseTime: 1500
+            wordsPerMinute: 220, // Adjusted to a more common average reading speed
+            minDuration: 3000,   // Minimum 3 seconds per slide
+            maxDuration: 20000,  // Maximum 20 seconds per slide
+            baseTime: 1500       // Base time to allow for context switching
         };
         
         const config = { ...defaults, ...options };
@@ -327,27 +333,13 @@ export class RobustTextService {
         
         const words = text.trim().split(/\s+/);
         const wordCount = words.length;
-        const charCount = text.length;
         
-        const avgWordLength = charCount / wordCount;
-        const complexityFactor = avgWordLength > 6 ? 1.2 : 1.0;
+        // Calculate raw reading time
+        const readingTimeMs = (wordCount / config.wordsPerMinute) * 60 * 1000;
         
-        const readingSpeed = config.wordsPerMinute / complexityFactor;
-        const readingTimeMinutes = wordCount / readingSpeed;
-        const readingTimeMs = readingTimeMinutes * 60 * 1000;
+        const totalTime = config.baseTime + readingTimeMs;
         
-        let totalTime = config.baseTime + readingTimeMs;
-        
-        if (wordCount < 10) {
-            totalTime = Math.max(config.minDuration, wordCount * 400);
-        } else if (wordCount < 30) {
-            totalTime = config.baseTime + (wordCount * 300);
-        } else if (wordCount < 50) {
-            totalTime = config.baseTime + (wordCount * 250);
-        } else {
-            totalTime = config.baseTime + readingTimeMs * 1.1;
-        }
-        
+        // Clamp the result between min and max duration
         return Math.min(Math.max(totalTime, config.minDuration), config.maxDuration);
     }
 
@@ -387,35 +379,39 @@ export class RobustTextService {
                 case 'title':
                     timings.push(this.calculateReadingTime(text, {
                         ...baseOptions,
-                        wordsPerMinute: 250,
-                        minDuration: 3000,
-                        maxDuration: 6000,
-                        baseTime: 2000
+                        wordsPerMinute: 200, // Slower reading for titles
+                        minDuration: 4000,   // Minimum 4 seconds for titles
+                        maxDuration: 8000,   // Maximum 8 seconds for titles
+                        baseTime: 2500
                     }));
                     break;
                 case 'essence':
                     timings.push(this.calculateReadingTime(text, {
                         ...baseOptions,
-                        wordsPerMinute: 200,
-                        minDuration: 4000,
-                        maxDuration: 10000,
-                        baseTime: 1500
+                        wordsPerMinute: 180, // Slower for essence
+                        minDuration: 5000,   // Minimum 5 seconds
+                        maxDuration: 15000,  // Maximum 15 seconds for long essence
+                        baseTime: 2000
                     }));
                     break;
                 case 'reaction':
                     timings.push(this.calculateReadingTime(text, {
                         ...baseOptions,
-                        wordsPerMinute: 180,
-                        minDuration: 4000,
-                        maxDuration: 12000,
-                        baseTime: 1500
+                        wordsPerMinute: 180, // Same speed as essence
+                        minDuration: 4500,   // Minimum 4.5 seconds
+                        maxDuration: 12000,  // Maximum 12 seconds
+                        baseTime: 2000
                     }));
                     break;
                 case 'source':
-                    timings.push(2500);
+                    timings.push(10000); // Fixed 10 seconds for source slide (as requested)
                     break;
                 default:
-                    timings.push(this.calculateReadingTime(text, baseOptions));
+                    timings.push(this.calculateReadingTime(text, {
+                        ...baseOptions,
+                        minDuration: 4000,
+                        maxDuration: 10000
+                    }));
             }
         });
         
