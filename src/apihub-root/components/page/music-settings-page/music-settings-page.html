@@ -1,0 +1,67 @@
+<div class="settings-container">
+    <div class="settings-header">
+        <div class="header-left">
+            <div class="back-button" data-local-action="navigateToMainPage">
+                <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <div class="settings-title">Background Music Settings</div>
+        </div>
+    </div>
+    <div class="settings-content">
+        <div class="settings-card">
+            <div class="settings-card-header">
+                <h3>Background Music Management</h3>
+                <p>Upload and manage background music for different content categories</p>
+            </div>
+            <div class="music-categories">
+                <div class="category-grid">
+                    <!-- Music categories will be rendered here -->
+                </div>
+            </div>
+            <div class="music-upload-section">
+                <div class="setting-item">
+                    <label for="music-category-select">Upload Music for Category</label>
+                    <select id="music-category-select">
+                        <option value="">Select a category...</option>
+                        <option value="energetic-dynamic">Energetic & Dynamic</option>
+                        <option value="peaceful-calming">Peaceful & Calming</option>
+                        <option value="spiritual-mystic">Spiritual & Mystic</option>
+                        <option value="playful-creative">Playful & Creative</option>
+                        <option value="melancholic-reflective">Melancholic & Reflective</option>
+                    </select>
+                </div>
+                <div class="file-upload-area">
+                    <input type="file" id="music-file-input" accept="audio/mp3,audio/mpeg" style="display: none;" data-local-action="handleMusicUpload">
+                    <div class="upload-dropzone" data-local-action="triggerMusicUpload">
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                        <p>Click to upload MP3 file or drag and drop</p>
+                        <small>Maximum file size: 10MB</small>
+                    </div>
+                </div>
+            </div>
+            <div class="uploaded-music-list">
+                <h4>Uploaded Music</h4>
+                <div id="music-list" class="music-items">
+                    <!-- Music items will be rendered here -->
+                </div>
+            </div>
+            <div class="music-player" id="music-player" style="display: none;">
+                <audio controls id="music-audio-player"></audio>
+                <div class="player-info">
+                    <span id="playing-category"></span>
+                    <span id="playing-filename"></span>
+                </div>
+            </div>
+            <div class="storage-info">
+                <div class="info-card">
+                    <i class="fa-solid fa-database"></i>
+                    <div>
+                        <strong>Storage Information</strong>
+                        <p>Music files are stored locally in your browser. Storage used: <span id="storage-used">0 MB</span></p>
+                        <small>Files are compressed for efficient storage. Large files may affect performance.</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,4 @@
+[2025-08-22T10:33:39.660Z];  MINT; {"amount":1000000000,"reason":"Initial minting"};
+[2025-08-22T10:33:39.661Z];  CREATE_OBJECT; {"itemType":"user","id":"UXXXXXX1"};
+[2025-08-22T10:33:39.663Z];  CREATE_OBJECT; {"itemType":"userLoginStatus","id":"USERLOG.1"};
+[2025-08-22T10:33:39.663Z];  TRANSFER; {"fromID":"system","toID":"UXXXXXX1","amount":100000000,"reason":"Founders reward"};

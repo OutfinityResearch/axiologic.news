@@ -1,0 +1,132 @@
+.scene-preview-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.preview-content {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    height: 533px;
+    overflow: hidden;
+    border: 2px solid var(--border-color);
+    border-radius: var(--border-radius);
+    background-color: #000;
+}
+
+#scene-preview-canvas {
+    position: relative;
+    z-index: 1;
+    display: block;
+}
+
+.animation-iframe {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    border: none !important;
+    z-index: 0 !important;
+    pointer-events: none !important;
+    overflow: hidden !important;
+}
+
+.scene-controls {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.play-button, .pause-button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    transition: background-color 0.2s ease;
+}
+
+.play-button:hover, .pause-button:hover {
+    background-color: var(--accent-color-hover);
+}
+
+.text-slot-animated {
+    position: absolute;
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.text-slot-animated.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.text-slot-animated.slide-in-left {
+    transform: translateX(-100px);
+}
+
+.text-slot-animated.slide-in-left.visible {
+    transform: translateX(0);
+}
+
+.text-slot-animated.slide-in-right {
+    transform: translateX(100px);
+}
+
+.text-slot-animated.slide-in-right.visible {
+    transform: translateX(0);
+}
+
+.text-slot-animated.bounce-in {
+    transform: scale(0.3);
+}
+
+.text-slot-animated.bounce-in.visible {
+    transform: scale(1);
+    animation: bounceIn 0.6s ease-out;
+}
+
+@keyframes bounceIn {
+    0% { transform: scale(0.3); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInUp {
+    from { 
+        opacity: 0;
+        transform: translateY(30px); 
+    }
+    to { 
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}
+
+@keyframes slideInDown {
+    from { 
+        opacity: 0;
+        transform: translateY(-30px); 
+    }
+    to { 
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}

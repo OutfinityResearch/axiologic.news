@@ -1,0 +1,31 @@
+{
+    "name": "MemeHit",
+    "version": "v1.0.0",
+    "description": "",
+    "scripts": {
+        "postinstall": "node ./node_modules/octopus/scripts/setEnv --file=../../../env.json \"npm run do-install\"",
+        "build": "node ./node_modules/octopus/scripts/setEnv --file=../../../env.json \"node ./node_modules/octopus/scripts/build\"",
+        "do-install": "node ./node_modules/octopus/scripts/ensureFreezeState.js && node ./node_modules/octopus/scripts/run",
+        "build-all": "node ./node_modules/octopus/scripts/setEnv --file=../../../env.json \"node ./bin/octopusRun.js build\"",
+        "dev-install": "node ./bin/mkDevEnv.js && npm install && npm run build-all",
+        "server": "node ./node_modules/octopus/scripts/setEnv --file=../../../env.json \"cd src/opendsu-sdk && npm run start\"",
+        "tests": "npm run test",
+        "test": "node ./opendsu-sdk/bin/scripts/testrunner.js --config=./test-suites.json",
+        "clean": "node ./bin/clean.js ./"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/OutfinityResearch/memehit"
+    },
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/OutfinityResearch/memehit/issues"
+    },
+    "homepage": "https://github.com/OutfinityResearch/memehit#readme",
+    "dependencies": {
+        "octopus": "git+http://github.com/opendsu/octopus.git"
+    },
+    "devDependencies": {
+    }
+}

@@ -1,0 +1,50 @@
+<div class="create-post-container">
+    <h2>Create New Post</h2>
+    <form>
+        <div class="form-group">
+            <label for="title">Title <span class="char-counter" id="title-counter">(0/80)</span></label>
+            <input type="text" id="title" name="title" maxlength="80" required>
+        </div>
+        <div class="form-group">
+            <label for="essence">Essence <span class="char-counter" id="essence-counter">(0/250)</span></label>
+            <textarea id="essence" name="essence" rows="4" maxlength="250" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="reactions">Reactions (one per line, max 200 chars each) <span class="char-counter" id="reactions-counter">(0 reactions)</span></label>
+            <textarea id="reactions" name="reactions" rows="4" placeholder="Enter reactions, one per line (max 200 chars each)"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="source">Source URL</label>
+            <input type="url" id="source" name="source">
+        </div>
+        <div class="form-group">
+            <label for="background-color">Background Theme</label>
+            <div class="color-selector">
+                <input type="radio" id="color-purple" name="background-color" value="purple" checked>
+                <label for="color-purple" class="color-option" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);" title="Purple Dream"></label>
+                
+                <input type="radio" id="color-blue" name="background-color" value="blue">
+                <label for="color-blue" class="color-option" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);" title="Ocean Blue"></label>
+                
+                <input type="radio" id="color-green" name="background-color" value="green">
+                <label for="color-green" class="color-option" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);" title="Nature Green"></label>
+                
+                <input type="radio" id="color-sunset" name="background-color" value="sunset">
+                <label for="color-sunset" class="color-option" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);" title="Sunset"></label>
+                
+                <input type="radio" id="color-fire" name="background-color" value="fire">
+                <label for="color-fire" class="color-option" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);" title="Fire"></label>
+                
+                <input type="radio" id="color-cosmic" name="background-color" value="cosmic">
+                <label for="color-cosmic" class="color-option" style="background: linear-gradient(135deg, #4481eb 0%, #04befe 100%);" title="Cosmic"></label>
+                
+                <input type="radio" id="color-earth" name="background-color" value="earth">
+                <label for="color-earth" class="color-option" style="background: linear-gradient(135deg, #0ba360 0%, #3cba92 100%);" title="Earth"></label>
+                
+                <input type="radio" id="color-night" name="background-color" value="night">
+                <label for="color-night" class="color-option" style="background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);" title="Night Sky"></label>
+            </div>
+        </div>
+        <button type="submit" data-local-action="createPost">Publish</button>
+    </form>
+</div>

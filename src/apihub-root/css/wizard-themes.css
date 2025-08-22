@@ -1,0 +1,330 @@
+/* Wizard Theme Colors */
+:root {
+    /* Quiz Wizard - Purple */
+    --quiz-primary: #8B5CF6;
+    --quiz-primary-hover: #7C3AED;
+    --quiz-primary-light: #A78BFA;
+    --quiz-header-bg: linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%);
+    
+    /* RSS Wizard - Orange */
+    --rss-primary: #F97316;
+    --rss-primary-hover: #EA580C;
+    --rss-primary-light: #FB923C;
+    --rss-header-bg: linear-gradient(135deg, #F97316 0%, #EA580C 100%);
+    
+    /* Educative Wizard - Blue */
+    --educative-primary: #3B82F6;
+    --educative-primary-hover: #2563EB;
+    --educative-primary-light: #60A5FA;
+    --educative-header-bg: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+    
+    /* Questions Wizard - Teal */
+    --questions-primary: #14B8A6;
+    --questions-primary-hover: #0D9488;
+    --questions-primary-light: #2DD4BF;
+    --questions-header-bg: linear-gradient(135deg, #14B8A6 0%, #0D9488 100%);
+    
+    /* Trivia Wizard - Green */
+    --trivia-primary: #10B981;
+    --trivia-primary-hover: #059669;
+    --trivia-primary-light: #34D399;
+    --trivia-header-bg: linear-gradient(135deg, #10B981 0%, #059669 100%);
+    
+    /* Philosophy Wizard - Indigo */
+    --philosophy-primary: #6366F1;
+    --philosophy-primary-hover: #4F46E5;
+    --philosophy-primary-light: #818CF8;
+    --philosophy-header-bg: linear-gradient(135deg, #6366F1 0%, #4F46E5 100%);
+}
+
+/* Unified Wizard Header Styles */
+.wizard-header {
+    display: flex;
+    align-items: center;
+    padding: 20px 30px;
+    background: var(--surface-color);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 30px;
+}
+
+.wizard-header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.wizard-header-center {
+    flex: 1;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.wizard-header-right {
+    min-width: 60px;
+}
+
+/* Back Button - More Prominent */
+.back-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.back-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.4);
+    transform: translateX(-3px);
+}
+
+.back-button i {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+/* Remove duplicate "Back" text button */
+.prev-button {
+    display: none !important;
+}
+
+/* Wizard Title with Icon */
+.wizard-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.wizard-icon {
+    font-size: 32px;
+    opacity: 0.9;
+}
+
+.wizard-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0;
+    color: #ffffff;
+    line-height: 1.2;
+}
+
+.wizard-subtitle {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+    text-align: center;
+    line-height: 1.4;
+    display: block;
+    width: 100%;
+}
+
+/* Quiz Wizard Specific */
+.quiz-wizard-container .wizard-header {
+    background: var(--quiz-header-bg);
+}
+
+.quiz-wizard-container .btn-primary,
+.quiz-wizard-container .button-62 {
+    background-color: var(--quiz-primary) !important;
+    border-color: var(--quiz-primary) !important;
+}
+
+.quiz-wizard-container .btn-primary:hover,
+.quiz-wizard-container .button-62:hover {
+    background-color: var(--quiz-primary-hover) !important;
+}
+
+/* RSS Wizard Specific */
+.rss-short-wizard-container .wizard-header {
+    background: var(--rss-header-bg);
+}
+
+.rss-short-wizard-container .btn-primary,
+.rss-short-wizard-container .button-62 {
+    background-color: var(--rss-primary) !important;
+    border-color: var(--rss-primary) !important;
+}
+
+.rss-short-wizard-container .btn-primary:hover,
+.rss-short-wizard-container .button-62:hover {
+    background-color: var(--rss-primary-hover) !important;
+}
+
+/* Educative Wizard Specific */
+.educative-short-wizard-container .wizard-header {
+    background: var(--educative-header-bg);
+}
+
+.educative-short-wizard-container .btn-primary,
+.educative-short-wizard-container .button-62 {
+    background-color: var(--educative-primary) !important;
+    border-color: var(--educative-primary) !important;
+}
+
+.educative-short-wizard-container .btn-primary:hover,
+.educative-short-wizard-container .button-62:hover {
+    background-color: var(--educative-primary-hover) !important;
+}
+
+/* Questions Wizard Specific */
+.questions-wizard-container .wizard-header {
+    background: var(--questions-header-bg);
+}
+
+.questions-wizard-container .btn-primary,
+.questions-wizard-container .button-62 {
+    background-color: var(--questions-primary) !important;
+    border-color: var(--questions-primary) !important;
+}
+
+.questions-wizard-container .btn-primary:hover,
+.questions-wizard-container .button-62:hover {
+    background-color: var(--questions-primary-hover) !important;
+}
+
+/* Trivia Wizard Specific */
+.trivia-wizard-container .wizard-header {
+    background: var(--trivia-header-bg);
+}
+
+.trivia-wizard-container .btn-primary,
+.trivia-wizard-container .button-62 {
+    background-color: var(--trivia-primary) !important;
+    border-color: var(--trivia-primary) !important;
+}
+
+.trivia-wizard-container .btn-primary:hover,
+.trivia-wizard-container .button-62:hover {
+    background-color: var(--trivia-primary-hover) !important;
+}
+
+/* Philosophy Wizard Specific */
+.philosophy-wizard-container .wizard-header {
+    background: var(--philosophy-header-bg);
+}
+
+.philosophy-wizard-container .btn-primary,
+.philosophy-wizard-container .button-62 {
+    background-color: var(--philosophy-primary) !important;
+    border-color: var(--philosophy-primary) !important;
+}
+
+.philosophy-wizard-container .btn-primary:hover,
+.philosophy-wizard-container .button-62:hover {
+    background-color: var(--philosophy-primary-hover) !important;
+}
+
+/* Main Page Wizard Cards */
+.wizard-item {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.wizard-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.wizard-item:hover::before {
+    opacity: 1;
+}
+
+/* Wizard specific card colors */
+.wizard-item[data-wizard="quiz"]::before {
+    background: var(--quiz-header-bg);
+}
+
+.wizard-item[data-wizard="quiz"] button {
+    background-color: var(--quiz-primary) !important;
+}
+
+.wizard-item[data-wizard="quiz"] button:hover {
+    background-color: var(--quiz-primary-hover) !important;
+}
+
+.wizard-item[data-wizard="rss"]::before {
+    background: var(--rss-header-bg);
+}
+
+.wizard-item[data-wizard="rss"] button {
+    background-color: var(--rss-primary) !important;
+}
+
+.wizard-item[data-wizard="rss"] button:hover {
+    background-color: var(--rss-primary-hover) !important;
+}
+
+.wizard-item[data-wizard="educative"]::before {
+    background: var(--educative-header-bg);
+}
+
+.wizard-item[data-wizard="educative"] button {
+    background-color: var(--educative-primary) !important;
+}
+
+.wizard-item[data-wizard="educative"] button:hover {
+    background-color: var(--educative-primary-hover) !important;
+}
+
+.wizard-item[data-wizard="questions"]::before {
+    background: var(--questions-header-bg);
+}
+
+.wizard-item[data-wizard="questions"] button {
+    background-color: var(--questions-primary) !important;
+}
+
+.wizard-item[data-wizard="questions"] button:hover {
+    background-color: var(--questions-primary-hover) !important;
+}
+
+.wizard-item[data-wizard="trivia"]::before {
+    background: var(--trivia-header-bg);
+}
+
+.wizard-item[data-wizard="trivia"] button {
+    background-color: var(--trivia-primary) !important;
+}
+
+.wizard-item[data-wizard="trivia"] button:hover {
+    background-color: var(--trivia-primary-hover) !important;
+}
+
+.wizard-item[data-wizard="philosophy"]::before {
+    background: var(--philosophy-header-bg);
+}
+
+.wizard-item[data-wizard="philosophy"] button {
+    background-color: var(--philosophy-primary) !important;
+}
+
+.wizard-item[data-wizard="philosophy"] button:hover {
+    background-color: var(--philosophy-primary-hover) !important;
+}
+
+/* Icon positioning in main page cards */
+.wizard-item h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.wizard-item h2 i {
+    order: -1; /* Move icon before text */
+    font-size: 1.2em;
+}

@@ -1,0 +1,63 @@
+{
+    "storage": "../apihub-root",
+    "port": 8080,
+    "workers": 1,
+    "preventRateLimit": true,
+    "activeComponents": [
+        "bdns",
+        "bricking",
+        "anchoring",
+        "internalWebhook",
+        "externalWebhook",
+        "Gatekeeper",
+        "proxy",
+        "versionlessDSU",
+        "secrets",
+        "lightDBEnclave",
+        "staticServer"
+    ],
+    "componentsConfig": {
+        "versionlessDSU": {
+            "module": "./components/versionlessDSU"
+        },
+        "Gatekeeper": {
+            "module": "./../../Gatekeeper"
+        },
+        "staticServer": {
+            "excludedFiles": [
+                ".*.secret",
+                ".*private"
+            ]
+        },
+        "bricking": {},
+        "anchoring": {}
+    },
+    "responseHeaders": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block"
+    },
+    "enableRequestLogger": true,
+    "enableJWTAuthorisation": false,
+    "enableSimpleAuth": false,
+    "enableOAuth": false,
+    "enableLocalhostAuthorization": false,
+    "cacheDurations": [
+        {
+            "urlPattern": "/",
+            "duration": 3600,
+            "method": "equals"
+        },
+        {
+            "urlPattern": "/assets",
+            "duration": 3600
+        },
+        {
+            "urlPattern": "/scripts",
+            "duration": 3600
+        },
+        {
+            "urlPattern": "/style",
+            "duration": 3600
+        }
+    ]
+}

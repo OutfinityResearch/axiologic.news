@@ -1,0 +1,61 @@
+{
+    "webComponentsRootDir": "/components",
+    "components": [
+        {
+            "name": "news-feed-page",
+            "type": "page",
+            "presenterClassName": "NewsFeedPage"
+        },
+        {
+            "name": "animations-settings-page",
+            "type": "page",
+            "presenterClassName": "AnimationsSettingsPage"
+        },
+        {
+            "name": "voice-settings-page",
+            "type": "page",
+            "presenterClassName": "VoiceSettingsPage"
+        },
+        {
+            "name": "music-settings-page",
+            "type": "page",
+            "presenterClassName": "MusicSettingsPage"
+        },
+        {
+            "name": "api-keys-settings-page",
+            "type": "page",
+            "presenterClassName": "ApiKeysSettingsPage"
+        },
+        {
+            "name": "create-post-page",
+            "type": "page",
+            "presenterClassName": "CreatePostPage"
+        },
+        {
+            "name": "create-from-rss-page",
+            "type": "page",
+            "presenterClassName": "CreateFromRssPage"
+        },
+        {
+            "name": "hamburger-menu",
+            "type": "components",
+            "presenterClassName": "HamburgerMenu"
+        },
+        {
+            "name": "story-card",
+            "type": "components",
+            "presenterClassName": "StoryCard"
+        },
+        {
+            "name": "show-error-modal",
+            "type": "modals",
+            "presenterClassName": "ShowErrorModal"
+        },
+        {
+            "name": "loading-indicator",
+            "type": "base",
+            "presenterClassName": "LoadingIndicator"
+        }
+    ],
+    "services": []
+}

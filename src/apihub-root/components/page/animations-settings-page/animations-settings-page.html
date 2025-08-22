@@ -1,0 +1,65 @@
+<div class="settings-container">
+    <div class="settings-header">
+        <div class="header-left">
+            <div class="back-button" data-local-action="navigateToMainPage">
+                <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <div class="settings-title">Animation Settings</div>
+        </div>
+    </div>
+    <div class="settings-content">
+        <div class="settings-card">
+            <div class="settings-card-header">
+                <h3>Background Animations</h3>
+                <p>Preview and manage background animations for your videos</p>
+            </div>
+            <div class="animation-selector">
+                <div class="setting-item">
+                    <label for="animation-category">Category</label>
+                    <select id="animation-category" data-local-action="changeAnimationCategory">
+                        <option value="">Select a category...</option>
+                        <option value="energetic-dynamic">Energetic & Dynamic</option>
+                        <option value="peaceful-calming">Peaceful & Calming</option>
+                        <option value="spiritual-mystic">Spiritual & Mystic</option>
+                        <option value="playful-creative">Playful & Creative</option>
+                        <option value="melancholic-reflective">Melancholic & Reflective</option>
+                    </select>
+                </div>
+                <div class="setting-item">
+                    <label for="animation-type">Animation Type</label>
+                    <select id="animation-type" data-local-action="changeAnimationType">
+                        <option value="">Select category first...</option>
+                    </select>
+                </div>
+            </div>
+            <div class="animation-preview-container">
+                <div class="preview-header">
+                    <h4>Preview</h4>
+                    <div class="preview-controls">
+                        <button class="preview-button" data-local-action="startAnimationPreview">
+                            <i class="fa-solid fa-play"></i> Start Preview
+                        </button>
+                        <button class="stop-preview-button" data-local-action="stopAnimationPreview" style="display: none;">
+                            <i class="fa-solid fa-stop"></i> Stop
+                        </button>
+                    </div>
+                </div>
+                <div id="animation-preview" class="animation-preview-area">
+                    <div class="preview-placeholder">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        <p>Select a category and animation type to preview</p>
+                    </div>
+                </div>
+            </div>
+            <div class="animation-info">
+                <div class="info-card">
+                    <i class="fa-solid fa-info-circle"></i>
+                    <div>
+                        <strong>Animation Usage</strong>
+                        <p>These animations are automatically applied to your videos based on the content type. Custom animations can be created and saved for specific use cases.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typography Test - Axiologic.news</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/typography-enhanced.css">
+    <style>
+        body {
+            padding: 20px;
+            font-family: 'Inter', sans-serif;
+        }
+        .test-container {
+            width: 100%;
+            max-width: 450px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .test-section {
+            background: rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            color: white;
+            min-height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .test-text {
+            width: 100%;
+        }
+        h2 {
+            color: white;
+            margin-bottom: 20px;
+        }
+        .controls {
+            margin-bottom: 20px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h2>Typography Testing</h2>
+        
+        <div class="controls">
+            <button onclick="testShortText()">Test Short Text</button>
+            <button onclick="testMediumText()">Test Medium Text</button>
+            <button onclick="testLongText()">Test Long Text</button>
+            <button onclick="testTitle()">Test Title</button>
+        </div>
+
+        <div class="test-section" id="titleSection">
+            <div class="test-text title" id="titleText">Breaking News: Revolutionary Technology Changes Everything</div>
+        </div>
+
+        <div class="test-section" id="essenceSection">
+            <div class="test-text essence" id="essenceText">Scientists have discovered a groundbreaking new technology that promises to revolutionize the way we live, work, and interact with the world around us.</div>
+        </div>
+
+        <div class="test-section" id="reactionSection">
+            <div class="test-text reaction" id="reactionText">This remarkable discovery represents a paradigm shift in our understanding of technology and its potential applications. The implications are far-reaching and could fundamentally alter multiple industries.</div>
+        </div>
+    </div>
+
+    <script type="module">
+        import { RobustTextService } from './services/RobustTextService.js';
+        
+        window.RobustTextService = RobustTextService;
+        
+        function adjustAllTexts() {
+            const titleElement = document.getElementById('titleText');
+            const essenceElement = document.getElementById('essenceText');
+            const reactionElement = document.getElementById('reactionText');
+            
+            RobustTextService.fitTextInContainer(titleElement, {
+                maxFontSize: 50,
+                minFontSize: 18,
+                enableHyphenation: false,
+                optimizeJustification: false
+            });
+            
+            RobustTextService.fitTextInContainer(essenceElement, {
+                maxFontSize: 30,
+                minFontSize: 14,
+                enableHyphenation: true,
+                optimizeJustification: true
+            });
+            
+            RobustTextService.fitTextInContainer(reactionElement, {
+                maxFontSize: 24,
+                minFontSize: 12,
+                enableHyphenation: true,
+                optimizeJustification: true
+            });
+        }
+        
+        window.testShortText = function() {
+            document.getElementById('titleText').textContent = "Quick Update";
+            document.getElementById('essenceText').textContent = "A brief summary of today's events.";
+            document.getElementById('reactionText').textContent = "Short and sweet.";
+            adjustAllTexts();
+        };
+        
+        window.testMediumText = function() {
+            document.getElementById('titleText').textContent = "Major Scientific Breakthrough in Quantum Computing";
+            document.getElementById('essenceText').textContent = "Researchers at MIT have successfully demonstrated a new quantum computing algorithm that could solve complex problems thousands of times faster than traditional computers.";
+            document.getElementById('reactionText').textContent = "This development marks a significant milestone in the field of quantum computing. The new algorithm shows promise for applications in cryptography, drug discovery, and artificial intelligence.";
+            adjustAllTexts();
+        };
+        
+        window.testLongText = function() {
+            document.getElementById('titleText').textContent = "Comprehensive Analysis: The Future of Renewable Energy and Its Global Impact on Climate Change Mitigation Strategies";
+            document.getElementById('essenceText').textContent = "A comprehensive international study involving researchers from 50 countries has revealed groundbreaking insights into the potential of renewable energy sources to combat climate change. The research, spanning five years and analyzing data from over 10,000 installations worldwide, demonstrates that a complete transition to renewable energy is not only technologically feasible but also economically advantageous in the long term.";
+            document.getElementById('reactionText').textContent = "The implications of this extensive research cannot be overstated. For the first time, we have concrete evidence that renewable energy technologies have matured to the point where they can reliably replace fossil fuels across all sectors of the economy. The study's findings suggest that countries investing heavily in renewable infrastructure today will enjoy significant economic advantages over the next two decades, while simultaneously contributing to global climate goals. This represents a fundamental shift in how we approach energy policy and could accelerate the transition to a sustainable future. The research also highlights the importance of international cooperation and technology sharing to ensure that developing nations can leapfrog traditional fossil fuel infrastructure and move directly to clean energy solutions.";
+            adjustAllTexts();
+        };
+        
+        window.testTitle = function() {
+            document.getElementById('titleText').textContent = "BREAKING: Unprecedented Discovery";
+            adjustAllTexts();
+        };
+        
+        // Initial adjustment
+        adjustAllTexts();
+        
+        // Watch for window resize
+        window.addEventListener('resize', adjustAllTexts);
+    </script>
+</body>
+</html>
