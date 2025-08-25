@@ -1,0 +1,45 @@
+:root[data-theme="dark"] {
+  --bg: #1a1a2e; /* Deep navy blue instead of gray */
+  --surface: #16213e; /* Rich dark blue surface */
+  --text: #ffffff;
+  --text-secondary: #a8dadc; /* Soft aqua for secondary text */
+  --border: rgba(168, 218, 220, 0.15);
+  --glass: rgba(22, 33, 62, 0.7);
+  --accent: #f1fa8c; /* Bright yellow accent */
+  --accent-2: #50fa7b; /* Vibrant green */
+  --primary: #ff79c6; /* Pink highlight */
+  --secondary: #bd93f9; /* Purple */
+}
+
+:root[data-theme="light"] {
+  --bg: #fef6e4; /* Warm cream background */
+  --surface: #ffffff;
+  --text: #172c66; /* Deep blue text */
+  --text-secondary: #8b5cf6; /* Purple secondary */
+  --border: rgba(139, 92, 246, 0.15);
+  --glass: rgba(255,255,255,0.8);
+  --accent: #f582ae; /* Coral pink accent */
+  --accent-2: #00ebc7; /* Turquoise */
+  --primary: #ff6e6c; /* Warm red */
+  --secondary: #4cc9f0; /* Sky blue */
+}
+
+/* Default to vibrant theme */
+:root {
+  --bg: #1a1a2e;
+  --surface: #16213e;
+  --text: #ffffff;
+  --text-secondary: #a8dadc;
+  --border: rgba(168, 218, 220, 0.15);
+  --glass: rgba(22, 33, 62, 0.7);
+  --accent: #f1fa8c;
+  --accent-2: #50fa7b;
+  --primary: #ff79c6;
+  --secondary: #bd93f9;
+}
+
+/* Global application surfaces */
+html, body { background: var(--bg); color: var(--text); }
+.mobile-container { background: var(--surface); }
+.app-header { background: var(--glass); border-bottom: 1px solid var(--border); }
+.hamburger-menu-button { border-color: var(--border); }

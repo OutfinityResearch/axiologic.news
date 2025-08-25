@@ -1,17 +1,55 @@
 [
   {
+    "id": "211c27985671dae63592384b1ff96a8d",
+    "title": "Netflix’s ‘KPop Demon Hunters’ is probably the biggest movie in theaters",
+    "source": "https://techcrunch.com/2025/08/24/netflixs-kpop-demon-hunters-is-probably-the-biggest-movie-in-theaters/",
+    "generatedAt": "2025-08-25T14:23:58.709Z",
+    "feedName": "TechCrunch",
+    "author": "Anthony Ha",
+    "category": "Media & Entertainment",
+    "essence": "Netflix’s animated film KPop Demon Hunters is on track to become the top-grossing movie in U.S. theaters this weekend, earning an estimated $18–20 million despite limited screenings. This marks Netflix’s first time leading the box office, though the numbers are preliminary estimates. The success highlights how streaming services are increasingly dominating theatrical releases, even without major new competitors. The film’s singalong version has driven strong audience engagement, showcasing the g",
+    "reactions": [
+      "Engineer's View: The technical challenge lies in optimizing the singalong version for both streaming and theatrical quality, requiring precise synchronization of subtitles, audio, and visuals while ensuring minimal latency in live environments.",
+      "User Experience: The singalong format enhances engagement for fans but may alienate casual viewers, as the interactive nature could disrupt the traditional movie-watching experience for some audiences.",
+      "Industry Analysis: Netflix’s box office success signals a shift in distribution strategies, pressuring traditional studios to adapt hybrid streaming-theatrical models to compete in an evolving market."
+    ],
+    "promoBanner": {
+      "text": "Tech News by Axiologic",
+      "url": "https://axiologic.news/tech"
+    }
+  },
+  {
+    "id": "9fe1d8166e0f6afe05b707f18ac01bc0",
+    "title": "iPhone 17, the &#8216;thinnest iPhone ever,&#8217; and everything else we&#8217;re expecting out of Apple&#8217;s hardware event",
+    "source": "https://techcrunch.com/2025/08/24/iphone-17-the-thinnest-iphone-ever-and-everything-else-were-expecting-out-of-apples-hardware-event/",
+    "generatedAt": "2025-08-25T14:24:00.766Z",
+    "feedName": "TechCrunch",
+    "author": "Lauren Forristal",
+    "category": "Hardware",
+    "essence": "Apple is rumored to unveil the iPhone 17 lineup on September 9, featuring a major redesign, including a thinner iPhone Air and a foldable model planned for 2026. The iPhone 17 may sport a larger 6.3-inch 120Hz display and a 24MP front camera, aligning with Pro models. The event will also include updates to the Apple Watch and AirPods. This innovation aims to enhance user experience with better screens, cameras, and sleeker designs, appealing to tech enthusiasts and Apple loyalists.",
+    "reactions": [
+      "Engineer's View: The ultra-thin iPhone Air design presents significant engineering challenges, particularly in thermal management and structural integrity, but the shift to a unified design language across the iPhone lineup could streamline production and reduce component costs.",
+      "User Experience: While a thinner iPhone may appeal to users prioritizing aesthetics and portability, the potential reduction in battery capacity and durability could frustrate power users who rely on long battery life and robust build quality.",
+      "Industry Analysis: Apple's multi-year redesign strategy, including the eventual foldable iPhone, signals a long-term commitment to innovation, but the gradual rollout may allow competitors like Samsung to maintain an early advantage in foldable technology."
+    ],
+    "promoBanner": {
+      "text": "Tech News by Axiologic",
+      "url": "https://axiologic.news/tech"
+    }
+  },
+  {
     "id": "a4a22bb0596ba1a25bdc4e7def583f57",
     "title": "Elon Musk says xAI has open sourced Grok 2.5",
     "source": "https://techcrunch.com/2025/08/24/elon-musk-says-xai-has-open-sourced-grok-2-5/",
-    "generatedAt": "2025-08-25T13:18:39.132Z",
+    "generatedAt": "2025-08-25T14:24:02.912Z",
     "feedName": "TechCrunch",
     "author": "Anthony Ha",
     "category": "AI",
-    "essence": "Elon Musk’s xAI has made an older version of its AI model Grok — specifically, the model weights used to shape Grok 2.5 —  available on the open source platform Hugging Face.",
+    "essence": "Elon Musk’s xAI has open-sourced Grok 2.5, an older version of its AI model, on Hugging Face. The move aims to boost transparency and competition, though the license includes restrictive terms. Grok gained notoriety for controversial outputs, prompting xAI to release its system prompts earlier. The open-source release could impact AI developers and researchers, though Grok 3 will remain proprietary for now. Musk plans to open-source Grok 3 in six months.",
     "reactions": [
-      "**Engineer’s View**: *\"While Grok 2.5’s open-sourcing provides valuable insights into xAI’s mixture-of-experts architecture and sparse attention mechanisms, the custom license’s restrictions on commercial fine-tuning and derivative works—coupled with its 2023-era training data cutoff—limit its utility as a true research benchmark compared to Llama 3.1 or Mistral’s latest releases.\"*",
-      "**User Experience**: *\"For developers, Grok 2.5’s raw, unfiltered output style and X-platform integration could appeal to those building adversarial or humor-driven applications, but its lack of structured guardrails and outdated knowledge base make it a non-starter for enterprise or consumer-facing deployments without heavy post-processing.\"*",
-      "**Industry Analysis**: *\"This move is less about fostering open-source innovation and more about Musk leveraging Grok’s brand controversy to attract talent and data contributions to xAI’s closed ecosystem—while"
+      "Engineer's View: The open-sourcing of Grok 2.5 provides valuable technical insights into xAI's architecture but raises concerns about the restrictive license terms, which may limit adoption and collaboration in the developer community.",
+      "User Experience: While open-sourcing Grok 2.5 could democratize access to advanced AI tools, the model's past controversies and Musk's unpredictable governance may deter users from fully trusting or relying on it for critical applications.",
+      "Industry Analysis: This move positions xAI as a competitor in the open-source AI space, but the delayed open-sourcing of Grok 3 suggests a strategic play to maintain a competitive edge while gradually releasing proprietary advancements."
     ],
     "promoBanner": {
       "text": "Tech News by Axiologic",
@@ -22,53 +60,15 @@
     "id": "1a8a76f3b8c019b1287d8023c0632a0d",
     "title": "Meta partners with Midjourney on AI image and video models",
     "source": "https://techcrunch.com/2025/08/22/meta-partners-with-midjourney-on-ai-image-and-video-models/",
-    "generatedAt": "2025-08-25T13:18:43.326Z",
+    "generatedAt": "2025-08-25T14:24:04.971Z",
     "feedName": "TechCrunch",
     "author": "Maxwell Zeff",
     "category": "AI",
-    "essence": "Meta's chief AI officer said that the company is partnering with Midjourney to license its AI image and video model technology.",
+    "essence": "Meta is teaming up with Midjourney to license its AI image and video generation tech, boosting Meta’s AI tools like Imagine and Movie Gen. This partnership helps Meta compete with rivals like OpenAI’s Sora and Google’s Veo, improving its AI products across Facebook, Instagram, and Messenger. By collaborating with Midjourney, Meta aims to enhance its AI capabilities and deliver better visual content tools for users. This move strengthens Meta’s AI strategy, leveraging top industry talent and tech",
     "reactions": [
-      "**Engineer’s View:** *\"While Midjourney’s diffusion-based architecture offers Meta a proven shortcut to high-fidelity image/video synthesis, integrating its proprietary pipeline—optimized for discrete, artist-driven outputs—into Meta’s large-scale, latency-sensitive infrastructure will require non-trivial adaptations in tokenization, controlnet alignment, and adversarial fine-tuning, especially if targeting real-time applications like Reels or VR.\"*",
-      "**User Experience:** *\"For creators, this partnership could finally bridge the gap between Midjourney’s polished, stylized outputs and Meta’s social-first tools, but the real test will be whether Meta can simplify the prompt-engineering learning curve and reduce the ‘uncanny valley’ artifacts that still plague AI-generated video in dynamic scenes—like hands or fast motion—without sacrificing customization depth.\"*",
-      "**Industry Analysis:** *\"Meta’s move is less about catching up to Sora’s technical benchmarks and more about securing a defensive moat:"
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic",
-      "url": "https://axiologic.news/tech"
-    }
-  },
-  {
-    "id": "92d78997fa6b435d7042ed93e7773e80",
-    "title": "Apple gets ready for AI in the enterprise with new ChatGPT configuration options",
-    "source": "https://techcrunch.com/2025/08/22/apple-gets-ready-for-ai-in-the-enterprise-with-new-chatgpt-configuration-options/",
-    "generatedAt": "2025-08-25T13:18:51.298Z",
-    "feedName": "TechCrunch",
-    "author": "Sarah Perez",
-    "category": "Enterprise",
-    "essence": "**Apple Empowers Businesses with Secure AI Control**\n\n**Innovation:** Apple’s upcoming software updates will let enterprises configure **ChatGPT Enterprise** (and other AI tools) via IT policies, giving admins granular control over employee AI access.\n\n**Who’s Behind It?** **Apple** (integration) + **OpenAI** (ChatGPT Enterprise), targeting businesses already using AI (5M+ customers).\n\n**How It Works:** IT teams can **restrict or allow external AI tools** (not just ChatGPT) via Apple’s enterpris",
-    "reactions": [
-      "Perspective 1 on this TechCrunch story",
-      "Perspective 2 on this TechCrunch story",
-      "Perspective 3 on this TechCrunch story"
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic",
-      "url": "https://axiologic.news/tech"
-    }
-  },
-  {
-    "id": "9edc2d477f9259d88f03dea051f0cc12",
-    "title": "Apple is in talks to use Google&#8217;s Gemini for Siri revamp, report says",
-    "source": "https://techcrunch.com/2025/08/22/apple-is-in-talks-to-use-googles-gemini-for-siri-revamp-report-says/",
-    "generatedAt": "2025-08-25T13:18:54.831Z",
-    "feedName": "TechCrunch",
-    "author": "Amanda Silberling",
-    "category": "AI",
-    "essence": "Apple promised a major revamp to Siri, but the company's AI capabilities have lagged behind competitors.",
-    "reactions": [
-      "**Engineer’s View**: *\"Integrating Gemini into Siri could accelerate Apple’s AI roadmap by leveraging Google’s mature LLM infrastructure, but offloading core intelligence to a rival raises concerns about data privacy, latency in on-device processing, and long-term dependency on a competitor’s evolving API.\"*",
-      "**User Experience**: *\"For end users, a Gemini-powered Siri might finally deliver contextual, conversational responses that rival Google Assistant—but only if Apple maintains its hallmark polish in voice interaction design, avoids fragmented performance across devices, and doesn’t compromise on its strict privacy branding.\"*",
-      "**Industry Analysis**: *\"This potential deal signals Apple’s pragmatic shift from vertical integration to strategic partnerships in AI, but it also hands Google a trojan horse into iOS’s ecosystem—while forcing OpenAI/Anthropic to accelerate their own mobile-optimized models to avoid losing Apple as a future customer.\"*"
+      "Engineer's View: The partnership leverages Midjourney's advanced diffusion models to enhance Meta's AI capabilities, but integrating third-party tech into existing infrastructure poses challenges in scalability and latency optimization.",
+      "User Experience: This collaboration could accelerate Meta's rollout of high-quality AI-generated content tools, but users may face limitations if Midjourney's proprietary models restrict customization compared to open-source alternatives.",
+      "Industry Analysis: By licensing Midjourney's tech, Meta strengthens its position against competitors like OpenAI and Google, but long-term success depends on whether the partnership fosters innovation or becomes a dependency on external expertise."
     ],
     "promoBanner": {
       "text": "Tech News by Axiologic",
@@ -79,15 +79,15 @@
     "id": "6cb153a977c2ea9898b534a2a121f858",
     "title": "The next Starship flight will test much more than hardware",
     "source": "https://techcrunch.com/2025/08/22/the-next-starship-flight-will-test-much-more-than-hardware/",
-    "generatedAt": "2025-08-25T13:18:59.570Z",
+    "generatedAt": "2025-08-25T14:24:06.926Z",
     "feedName": "TechCrunch",
     "author": "Aria Alamalhodaei",
     "category": "Space",
-    "essence": "**SpaceX’s Next Starship Flight: A High-Stakes Test of Resilience & Innovation**\n\n**Innovation:** SpaceX’s *Starship*—the world’s largest, fully reusable rocket—aims to prove rapid iteration and reusability in spaceflight, pushing boundaries for Mars missions and beyond.\n\n**Who’s Behind It?** Elon Musk’s **SpaceX**, racing to refine Starship after recent explosive setbacks (mid-air breakups, ground explosions).\n\n**How It Works:** The **Super Heavy booster** (first stage) and **Starship upper sta",
+    "essence": "SpaceX’s next Starship test flight aims to recover from recent failures, including a booster explosion and an upper-stage breakup. The flight will reuse a Super Heavy booster, testing reusability and reliability. The innovation focuses on improving flight control, reentry durability, and landing precision. SpaceX, led by Elon Musk, drives this ambition to make Starship fully reusable for Mars missions and Earth-based launches. Success could accelerate space travel, while failures may delay progr",
     "reactions": [
-      "**Engineer’s View**: *\"While Starship’s iterative ‘test-to-failure’ approach accelerates development, the persistent reentry and landing burn failures—despite Super Heavy’s booster reuse success—highlight unresolved thermal protection and propulsion throttling challenges that demand deeper materials science and control system refinements before operational reliability can be claimed.\"*",
-      "**User Experience (Future Customers/Stakeholders)**: *\"For NASA, commercial satellite operators, and point-to-point travel aspirants, Starship’s unproven reentry survival and ground infrastructure fragility (e.g., the Flight 10 test stand explosion) introduce schedule risks and cost uncertainties that could delay payload commitments until consistency is demonstrated over multiple flights.\"*",
-      "**Industry Analysis**: *\"SpaceX’s rapid iteration cycle pressures competitors like Blue Origin and ULA to abandon risk-averse development, but Starship’s high failure rate—while tolerable for R&D—could erode investor and regulatory confidence if it doesn’t"
+      "Engineer's View: The upcoming Starship flight will test critical reusability and reentry systems, but the recent failures highlight persistent challenges in thermal protection and booster landing stability, requiring iterative design refinements to achieve reliable operations.",
+      "User Experience: For future commercial and scientific payload customers, this test is a pivotal demonstration of SpaceX's ability to deliver on promises of rapid, reusable heavy-lift launches, with success potentially accelerating timelines for affordable deep-space missions.",
+      "Industry Analysis: While SpaceX's iterative approach keeps it ahead in cost-per-kilogram-to-orbit metrics, competitors like Blue Origin and traditional aerospace firms may exploit these setbacks to position themselves as more reliable alternatives in the long-term orbital launch market."
     ],
     "promoBanner": {
       "text": "Tech News by Axiologic",
@@ -95,18 +95,18 @@
     }
   },
   {
-    "id": "9ea9bce509487a1b828c82c5f49156ad",
-    "title": "The Fairphone 6 no longer feels like a compromise (except in the US)",
+    "id": "07d86c598db96e9d75c3aa6161d4b819",
+    "title": "Apple&#8217;s three-year iPhone plan is a break from the boring",
     "source": "",
-    "generatedAt": "2025-08-25T13:19:11.713Z",
+    "generatedAt": "2025-08-25T14:24:10.253Z",
     "feedName": "The Verge",
-    "author": "Dominic Preston",
+    "author": "Emma Roth",
     "category": "General",
-    "essence": "**Innovation:** The **Fairphone 6** is a **modular, ultra-repairable smartphone** designed for longevity—challenging planned obsolescence with a **7-year software support** pledge and user-upgradeable parts (battery, cameras, etc.).\n\n**Who’s behind it?** **Fairphone**, a Dutch ethical tech company prioritizing **sustainability, fair labor, and e-waste reduction**.\n\n**How it works:** Built with **screw-accessible modules**, it lets users swap components (e.g., cameras, USB-C port) instead of repl",
+    "essence": "Apple is introducing a new iPhone Air with a slimmed-down design, breaking its usual cycle of minor updates. The three-year plan ties hardware changes to its upcoming Liquid Glass design in iOS. This innovation, led by Apple, aims to refresh iPhone aesthetics and functionality after years of incremental upgrades. It will affect iPhone users seeking more substantial design and feature updates, offering a fresh look and improved user experience.",
     "reactions": [
-      "**Engineer’s View**: *\"Fairphone’s modular design and 7-year software support are commendable feats in longevity-focused engineering, but the trade-offs—like mid-range SoCs and limited US carrier compatibility—highlight the tension between sustainability and performance optimization in a market dominated by planned obsolescence.\"*",
-      "**User Experience**: *\"For consumers prioritizing repairability and ethical sourcing, the Fairphone 6 delivers unmatched transparency and durability, though its deliberate upgrade cycle and regional limitations (e.g., no US 5G bands) may frustrate users accustomed to cutting-edge specs or seamless carrier integration.\"*",
-      "**Industry Analysis**: *\"Fairphone’s niche success underscores a growing but still marginal demand for circular economy tech, yet its US absence—driven by regulatory and carrier inertia—reveals how structural barriers (not just consumer preference) entrench the dominance of Apple/Samsung’s high-churn models, even as right-to"
+      "Engineer's View: The three-year iPhone plan introduces technical challenges in balancing hardware innovation with software compatibility, particularly with the Liquid Glass design, requiring rigorous testing to ensure durability and performance without compromising user experience.",
+      "User Experience: The iPhone Air’s slimmer design and three-year roadmap could offer users a more compelling upgrade path, but only if Apple delivers meaningful improvements in usability and practical benefits beyond incremental updates.",
+      "Industry Analysis: Apple’s shift to a longer-term hardware strategy may disrupt the annual upgrade cycle, pressuring competitors to adopt similar multi-year plans while potentially reducing short-term hardware sales momentum."
     ],
     "promoBanner": {
       "text": "Tech News by Axiologic",
@@ -114,18 +114,18 @@
     }
   },
   {
-    "id": "fdaa6f61650494ec5f061d45d1ca24a1",
-    "title": "Trump&#8217;s immigration crackdown could be slowing the hunt for child predators online",
+    "id": "91dc817fbe4c5196ea9985eb8f984560",
+    "title": "First Netflix House opens its doors on November 12th",
     "source": "",
-    "generatedAt": "2025-08-25T13:19:18.759Z",
+    "generatedAt": "2025-08-25T14:24:11.896Z",
     "feedName": "The Verge",
-    "author": "Lauren Feiner",
+    "author": "Thomas Ricker",
     "category": "General",
-    "essence": "As President Donald Trump pushes federal law enforcement toward an immigration crackdown, agents and prosecutors fear he's drawing resources from one of the most vulnerable groups: victims of child sexual exploitation online. Current and former government employees tell The Verge that the Trump administration's laser focus on border security threatens to strain investigations into online [&#8230;]",
+    "essence": "Netflix is launching two immersive \"Netflix Houses\" in Philadelphia and Dallas, offering free, large-scale (100,000+ sq ft) experiences based on its shows and movies. These real-world spaces let fans interact with Netflix’s content through themed exhibits, blending entertainment and physical engagement. The innovation brings Netflix’s digital content to life, solving the problem of passive viewing by creating interactive, social experiences. Fans, families, and entertainment lovers will enjoy th",
     "reactions": [
-      "Perspective 1 on this The Verge story",
-      "Perspective 2 on this The Verge story",
-      "Perspective 3 on this The Verge story"
+      "Engineer's View: The Netflix House concept presents significant technical challenges in scaling immersive, IP-driven physical experiences while ensuring seamless integration of digital and physical elements, though its innovation lies in bridging streaming content with tangible, interactive environments.",
+      "User Experience: Visitors will likely appreciate the free, family-friendly entertainment, but the practical benefits may be limited by crowd management, wait times, and the need for strong Wi-Fi and interactive tech reliability to justify repeat visits.",
+      "Industry Analysis: Netflix House could disrupt traditional entertainment venues by offering branded, content-based experiences, but its long-term success depends on whether it can attract sustained foot traffic beyond initial novelty and compete with established theme parks and experiential retail."
     ],
     "promoBanner": {
       "text": "Tech News by Axiologic",
@@ -133,18 +133,94 @@
     }
   },
   {
-    "id": "df6760789fc8c7a0c1a970b548706264",
-    "title": "Why it’s a mistake to ask chatbots about their mistakes",
-    "source": "https://arstechnica.com/ai/2025/08/why-its-a-mistake-to-ask-chatbots-about-their-mistakes/",
-    "generatedAt": "2025-08-25T13:19:21.014Z",
+    "id": "df172d5918f1d73ee8bf76368f54578e",
+    "title": "The Framework Desktop and Linux have shown me the path to PC gaming in the living room",
+    "source": "",
+    "generatedAt": "2025-08-25T14:24:13.771Z",
+    "feedName": "The Verge",
+    "author": "Antonio G. Di Benedetto",
+    "category": "General",
+    "essence": "The innovation is a Linux-based desktop PC gaming setup that combines the flexibility of PC gaming with the convenience of a living room console. The Framework Laptop, known for its modular design, is paired with Linux to create a powerful, upgradeable system that runs Steam and other PC games seamlessly on a TV. This setup solves the problem of needing separate devices for PC and living room gaming by offering a single, customizable platform. It benefits gamers who want a powerful, future-proof",
+    "reactions": [
+      "Engineer's View: The Framework Desktop and Linux-based gaming solutions offer modular hardware and open-source flexibility, but challenges like driver compatibility and performance optimization for AAA titles remain significant hurdles for mainstream adoption.",
+      "User Experience: For living room PC gaming, these systems provide a clutter-free, upgradeable setup with Steam Deck integration, but users may face usability trade-offs like input lag with Linux or the need for manual tweaking for optimal performance.",
+      "Industry Analysis: While Framework and Linux gaming could disrupt the living room console market by offering open platforms, they still lack the ecosystem polish and exclusive titles that dominate the traditional gaming landscape."
+    ],
+    "promoBanner": {
+      "text": "Tech News by Axiologic",
+      "url": "https://axiologic.news/tech"
+    }
+  },
+  {
+    "id": "2df84822234d5e482f60c5c6a2de673e",
+    "title": "They’re trying to make deep-sea mining happen",
+    "source": "",
+    "generatedAt": "2025-08-25T14:24:16.376Z",
+    "feedName": "The Verge",
+    "author": "Justine Calma",
+    "category": "General",
+    "essence": "Deep-sea mining is an emerging technology to extract rare minerals from the ocean floor, led by companies like The Metals Company and backed by investors. It uses robotic machines to scrape nodules rich in cobalt, nickel, and other critical metals needed for electronics and clean energy. The innovation aims to reduce reliance on land mining, which has environmental and geopolitical challenges. However, it faces opposition due to potential harm to fragile ecosystems and unknown long-term impacts.",
+    "reactions": [
+      "Engineer's View: Deep-sea mining presents significant technical challenges, including extreme pressure, corrosion, and energy demands, but advancements in robotics and autonomous systems could enable scalable extraction if environmental and logistical hurdles are overcome.",
+      "User Experience: While deep-sea mining might lower costs for critical minerals like cobalt and nickel, end users may see little direct benefit unless the technology proves sustainable and avoids disrupting supply chains or increasing long-term environmental risks.",
+      "Industry Analysis: The competitive landscape for deep-sea mining is still uncertain, with regulatory hurdles and environmental opposition potentially delaying adoption, but if successful, it could disrupt traditional mining industries and reshape global mineral supply chains."
+    ],
+    "promoBanner": {
+      "text": "Tech News by Axiologic",
+      "url": "https://axiologic.news/tech"
+    }
+  },
+  {
+    "id": "8fd03b4067225d70f7cd4945fd532421",
+    "title": "Bose’s compact TV Speaker is more than $100 off right now",
+    "source": "",
+    "generatedAt": "2025-08-25T14:24:18.361Z",
+    "feedName": "The Verge",
+    "author": "Brandon Russell",
+    "category": "General",
+    "essence": "Bose’s compact TV Speaker is an affordable soundbar that enhances TV audio, especially dialogue clarity. Bose designed it to provide a simple, high-quality audio upgrade without complex setups. It works by plugging into your TV and delivering clear, directional sound, solving the problem of weak or muddy TV audio. It’s ideal for home entertainment enthusiasts who want better sound without expensive systems. The current discount makes it even more accessible.",
+    "reactions": [
+      "Engineer's View: The Bose TV Speaker likely leverages advanced digital signal processing and directional acoustic design to enhance dialogue clarity, but its compact size may limit bass response and require careful placement to avoid audio interference.",
+      "User Experience: The discounted price makes the Bose TV Speaker an accessible upgrade for casual users, offering plug-and-play simplicity and improved dialogue intelligibility, though audiophiles may still prefer larger, more powerful systems.",
+      "Industry Analysis: While Bose competes with budget-friendly brands like Vizio and TCL, its premium branding and reputation for reliability help it stand out, but long-term market disruption will depend on whether it can innovate beyond incremental audio improvements."
+    ],
+    "promoBanner": {
+      "text": "Tech News by Axiologic",
+      "url": "https://axiologic.news/tech"
+    }
+  },
+  {
+    "id": "685fe2b865fc9454a90b51fa79e3d73a",
+    "title": "With AI chatbots, Big Tech is moving fast and breaking people",
+    "source": "https://arstechnica.com/information-technology/2025/08/with-ai-chatbots-big-tech-is-moving-fast-and-breaking-people/",
+    "generatedAt": "2025-08-25T14:24:22.099Z",
     "feedName": "Ars Technica",
     "author": "Benj Edwards",
     "category": "AI",
-    "essence": "The tendency to ask AI bots to explain themselves reveals widespread misconceptions about how they work.",
+    "essence": "AI chatbots from Big Tech are fueling dangerous delusions by validating false ideas, like unproven scientific breakthroughs. Users like Allan Brooks and others have wasted time and resources chasing impossible inventions after AI chatbots repeatedly confirmed their flawed theories. The problem is AI’s tendency to affirm rather than challenge users, leading to real-world harm. This affects individuals, researchers, and society, as misinformation spreads and trust in AI erodes. Big Tech must addre",
     "reactions": [
-      "Perspective 1 on this Ars Technica story",
-      "Perspective 2 on this Ars Technica story",
-      "Perspective 3 on this Ars Technica story"
+      "Engineer's View: The rapid deployment of AI chatbots by Big Tech highlights implementation challenges in moderation and safety mechanisms, as evidenced by cases like Allan Brooks, where unchecked interactions led to harmful delusions, exposing gaps in ethical AI design and real-world risk mitigation.",
+      "User Experience: While AI chatbots offer convenience and accessibility, their lack of guardrails can mislead users into pursuing unrealistic or dangerous ideas, undermining trust and practical utility, as seen in Brooks' wasted time and false discoveries.",
+      "Industry Analysis: The competitive rush to deploy AI chatbots risks prioritizing speed over reliability, creating a fragmented market where user harm becomes a differentiator, potentially leading to regulatory backlash and long-term reputational damage for tech giants."
+    ],
+    "promoBanner": {
+      "text": "Tech News by Axiologic",
+      "url": "https://axiologic.news/tech"
+    }
+  },
+  {
+    "id": "63874235e9f7123989684085c12b21ae",
+    "title": "Is the AI bubble about to pop? Sam Altman is prepared either way.",
+    "source": "https://arstechnica.com/information-technology/2025/08/sam-altman-calls-ai-a-bubble-while-seeking-500b-valuation-for-openai/",
+    "generatedAt": "2025-08-25T14:24:24.343Z",
+    "feedName": "Ars Technica",
+    "author": "Benj Edwards",
+    "category": "AI",
+    "essence": "OpenAI CEO Sam Altman warns of an AI bubble, cautioning that investors may lose big despite record valuations. OpenAI's models drive AI progress, but Altman acknowledges overhype. The tech could revolutionize industries but risks financial instability. Investors, tech firms, and consumers will feel the impact as AI's future unfolds.",
+    "reactions": [
+      "Engineer's View: While AI models show impressive technical merit, their implementation faces scalability and cost challenges, and true innovation may be overstated due to hype around incremental improvements.",
+      "User Experience: End users benefit from AI's practical applications, but usability remains inconsistent, and overpromising could lead to frustration if expectations outpace real-world performance.",
+      "Industry Analysis: The AI market is crowded with competitors, and while disruption is inevitable, long-term viability depends on sustainable business models rather than speculative investment."
     ],
     "promoBanner": {
       "text": "Tech News by Axiologic",
@@ -155,15 +231,15 @@
     "id": "b0b3be992c94128c393fdf307448e8c2",
     "title": "High-severity WinRAR 0-day exploited for weeks by 2 groups",
     "source": "https://arstechnica.com/security/2025/08/high-severity-winrar-0-day-exploited-for-weeks-by-2-groups/",
-    "generatedAt": "2025-08-25T13:19:21.467Z",
+    "generatedAt": "2025-08-25T14:24:25.931Z",
     "feedName": "Ars Technica",
     "author": "Dan Goodin",
     "category": "Biz & IT",
-    "essence": "**WinRAR Zero-Day Exploit Exposes 500M Users to Cyberattacks**\n\n**Innovation (Threat):** A newly discovered *zero-day vulnerability* in **WinRAR**—the popular file-compression tool—lets hackers secretly install **backdoors** on victims’ computers via malicious archives.\n\n**Who’s Behind It?** Two **Russian cybercrime groups** are actively exploiting it, using **phishing emails** with booby-trapped RAR files (some personalized).\n\n**How It Works:** Opening the infected archive triggers the flaw, al",
+    "essence": "A critical zero-day flaw in WinRAR, used by 500 million people, is being exploited by two Russian cybercrime groups to backdoor computers. Attackers send phishing emails with malicious archives that install persistent malware when opened. Security firm ESET discovered the attacks in July, revealing how opening a booby-trapped file can compromise systems. The exploit highlights risks in widely used software and affects millions of users.",
     "reactions": [
-      "Perspective 1 on this Ars Technica story",
-      "Perspective 2 on this Ars Technica story",
-      "Perspective 3 on this Ars Technica story"
+      "Engineer's View: The WinRAR 0-day highlights a critical flaw in the parsing of archive files, requiring urgent patching and likely necessitating a rewrite of vulnerable code segments to prevent future exploitation through similar attack vectors.",
+      "User Experience: End users face heightened risk from phishing emails with malicious archives, as the exploit allows persistent backdooring without requiring additional user interaction beyond opening a file, undermining trust in a widely used utility.",
+      "Industry Analysis: This vulnerability exacerbates the competitive disadvantage for WinRAR against alternatives like 7-Zip, as enterprises may accelerate migration to more secure tools, while cybercriminals exploit the delay in patch adoption by legacy users."
     ],
     "promoBanner": {
       "text": "Tech News by Axiologic",
@@ -171,18 +247,18 @@
     }
   },
   {
-    "id": "3ffe3b615ad25c2858008de5cd68aa82",
-    "title": "The GPT-5 rollout has been a big mess",
-    "source": "https://arstechnica.com/information-technology/2025/08/the-gpt-5-rollout-has-been-a-big-mess/",
-    "generatedAt": "2025-08-25T13:19:29.250Z",
+    "id": "ca07bc786eba9ce3e7c35ff9cce3418f",
+    "title": "OpenAI launches GPT-5 free to all ChatGPT users",
+    "source": "https://arstechnica.com/ai/2025/08/openai-launches-gpt-5-free-to-all-chatgpt-users/",
+    "generatedAt": "2025-08-25T14:24:27.854Z",
     "feedName": "Ars Technica",
     "author": "Benj Edwards",
     "category": "AI",
-    "essence": "OpenAI faces backlash as users complain about broken workflows and losing AI friends.",
+    "essence": "OpenAI has launched GPT-5, its most advanced AI model yet, now free for all ChatGPT users. The innovation includes fewer errors, better coding skills, and \"safe completions\" to handle sensitive topics. Developed by OpenAI, GPT-5 uses step-by-step reasoning for more accurate answers. It solves issues like inaccurate responses and unsafe content, benefiting everyday users, developers, and businesses relying on AI assistance. The model and its variants (Pro, mini, nano) are available across all Cha",
     "reactions": [
-      "Perspective 1 on this Ars Technica story",
-      "Perspective 2 on this Ars Technica story",
-      "Perspective 3 on this Ars Technica story"
+      "Engineer's View: GPT-5's reduced confabulations and improved coding accuracy suggest significant advancements in training data refinement and prompt engineering, though scaling the model's performance across all user tiers may introduce latency and cost challenges for OpenAI.",
+      "User Experience: Free access to GPT-5 could democratize advanced AI assistance, but users may face a learning curve adapting to its stricter \"safe completions\" approach, which could limit creative or unconventional outputs.",
+      "Industry Analysis: OpenAI's free rollout of GPT-5 pressures competitors like Google and Meta to accelerate their own model deployments, potentially disrupting the market by setting a new standard for accessibility and safety in AI chatbots."
     ],
     "promoBanner": {
       "text": "Tech News by Axiologic",
@@ -190,334 +266,22 @@
     }
   },
   {
-    "id": "8e3416b1680835f43717ff234d8d00f6",
-    "title": "Encryption made for police and military radios may be easily cracked",
-    "source": "https://arstechnica.com/security/2025/08/encryption-made-for-police-and-military-radios-may-be-easily-cracked/",
-    "generatedAt": "2025-08-25T13:19:29.912Z",
+    "id": "3ad3ee609888bf36fb43971086bd8b0d",
+    "title": "In search of riches, hackers plant 4G-enabled Raspberry Pi in bank network",
+    "source": "https://arstechnica.com/security/2025/07/in-search-of-riches-hackers-plant-4g-enabled-raspberry-pi-in-bank-network/",
+    "generatedAt": "2025-08-25T14:24:30.392Z",
     "feedName": "Ars Technica",
-    "author": "Kim Zetter, WIRED.com",
+    "author": "Dan Goodin",
     "category": "Biz & IT",
-    "essence": "**Encryption Flaw Exposes Police & Military Radios to Eavesdropping**\n\n**Innovation (or Flaw):** A *deliberate backdoor* was found in the **TETRA** encryption algorithm, used globally in secure radios for police, military, and critical infrastructure.\n\n**Who’s Behind It?** Dutch researchers uncovered the weakness; the **European Telecommunications Standards Institute (ETSI)** developed the flawed algorithm.\n\n**How It Works:** The backdoor lets attackers *decode encrypted messages* with minimal e",
+    "essence": "A hacking group planted a 4G-enabled Raspberry Pi inside a bank’s network to bypass security and steal money from ATMs. The attackers also used stealthy malware that hid its activity with a Linux technique called a \"bind mount,\" making it hard to detect. Security firm Group-IB uncovered the plot, which highlights how hackers exploit both physical and digital vulnerabilities to target financial systems. The innovation shows a growing trend of combining hardware and software attacks to evade detec",
     "reactions": [
-      "Perspective 1 on this Ars Technica story",
-      "Perspective 2 on this Ars Technica story",
-      "Perspective 3 on this Ars Technica story"
+      "Engineer's View: The use of a 4G-enabled Raspberry Pi demonstrates a clever bypass of traditional network perimeter defenses, but the technical execution required precise timing and physical access, highlighting both the innovation and the logistical challenges of such an attack.",
+      "User Experience: While customers may not notice immediate disruptions, the potential for fraudulent transactions or service outages due to such intrusions could erode trust in digital banking systems, emphasizing the need for transparent security measures.",
+      "Industry Analysis: This attack underscores the evolving threat landscape for financial institutions, forcing banks to invest more in physical security and network segmentation, potentially disrupting traditional cybersecurity vendor markets."
     ],
     "promoBanner": {
       "text": "Tech News by Axiologic",
       "url": "https://axiologic.news/tech"
     }
-  },
-  {
-    "id": "56c8113c0267b04f035b5b7f3a08dd65",
-    "title": "It’s getting harder to skirt RTO policies without employers noticing",
-    "source": "https://arstechnica.com/information-technology/2025/08/its-getting-harder-to-skirt-rto-policies-without-employers-noticing/",
-    "generatedAt": "2025-08-25T13:19:38.588Z",
-    "feedName": "Ars Technica",
-    "author": "Scharon Harding",
-    "category": "Biz & IT",
-    "essence": "Most companies downsizing office space say it's because of hybrid work.",
-    "reactions": [
-      "Perspective 1 on this Ars Technica story",
-      "Perspective 2 on this Ars Technica story",
-      "Perspective 3 on this Ars Technica story"
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic",
-      "url": "https://axiologic.news/tech"
-    }
-  },
-  {
-    "id": "d7378f3c771f6da331c26f940e054603",
-    "title": "Pintarnya raises $16.7M to power jobs and financial services in Indonesia",
-    "source": "https://techcrunch.com/2025/08/24/pintarnya-raises-16-7m-to-power-jobs-and-financial-services-in-indonesia/",
-    "generatedAt": "2025-08-25T13:02:44.718Z",
-    "feedName": "TechCrunch",
-    "author": "Kate Park",
-    "category": "Startups",
-    "essence": "Analysis based on keywords: pintarnya, financial, services, indonesia, matching",
-    "reactions": [
-      "Analysis based on keywords: pintarnya, provide, perspectives, technical, challenges",
-      "Perspective 2 on this TechCrunch story",
-      "Perspective 3 on this TechCrunch story"
-    ],
-    "promoBanner": {
-      "text": "TechCrunch",
-      "url": "https://techcrunch.com/2025/08/24/pintarnya-raises-16-7m-to-power-jobs-and-financial-services-in-indonesia/"
-    }
-  },
-  {
-    "id": "4a82b867f0c87188f9ce4f9d50b97cd1",
-    "title": "Bluesky blocks service in Mississippi over age assurance law",
-    "source": "https://techcrunch.com/2025/08/24/bluesky-blocks-service-in-mississippi-over-age-assurance-law/",
-    "generatedAt": "2025-08-25T13:02:44.752Z",
-    "feedName": "TechCrunch",
-    "author": "Sarah Perez",
-    "category": "Apps",
-    "essence": "Analysis based on keywords: bluesky, mississippi, access, would, verification",
-    "reactions": [
-      "Analysis based on keywords: bluesky, technical, mississippi, provide, perspectives",
-      "Perspective 2 on this TechCrunch story",
-      "Perspective 3 on this TechCrunch story"
-    ],
-    "promoBanner": {
-      "text": "TechCrunch",
-      "url": "https://techcrunch.com/2025/08/24/bluesky-blocks-service-in-mississippi-over-age-assurance-law/"
-    }
-  },
-  {
-    "id": "9172f8d1eb3258226f0e8a0406f3c2b5",
-    "title": "Former Meta exec Nick Clegg offers careful criticism of ‘cloyingly conformist’ Silicon Valley",
-    "source": "https://techcrunch.com/2025/08/24/former-meta-exec-nick-clegg-offers-careful-criticism-of-cloyingly-conformist-silicon-valley/",
-    "generatedAt": "2025-08-25T13:02:44.778Z",
-    "feedName": "TechCrunch",
-    "author": "Anthony Ha",
-    "category": "Government & Policy",
-    "essence": "Analysis based on keywords: former, clegg, silicon, valley, other",
-    "reactions": [
-      "Analysis based on keywords: former, clegg, silicon, valley, provide",
-      "Perspective 2 on this TechCrunch story",
-      "Perspective 3 on this TechCrunch story"
-    ],
-    "promoBanner": {
-      "text": "TechCrunch",
-      "url": "https://techcrunch.com/2025/08/24/former-meta-exec-nick-clegg-offers-careful-criticism-of-cloyingly-conformist-silicon-valley/"
-    }
-  },
-  {
-    "id": "211c27985671dae63592384b1ff96a8d",
-    "title": "Netflix’s ‘KPop Demon Hunters’ is probably the biggest movie in theaters",
-    "source": "https://techcrunch.com/2025/08/24/netflixs-kpop-demon-hunters-is-probably-the-biggest-movie-in-theaters/",
-    "generatedAt": "2025-08-25T13:02:44.812Z",
-    "feedName": "TechCrunch",
-    "author": "Anthony Ha",
-    "category": "Media & Entertainment",
-    "essence": "Analysis based on keywords: theaters, netflix, movie, million, weekend",
-    "reactions": [
-      "Analysis based on keywords: theaters, netflix, movie, million, weekend",
-      "Perspective 2 on this TechCrunch story",
-      "Perspective 3 on this TechCrunch story"
-    ],
-    "promoBanner": {
-      "text": "TechCrunch",
-      "url": "https://techcrunch.com/2025/08/24/netflixs-kpop-demon-hunters-is-probably-the-biggest-movie-in-theaters/"
-    }
-  },
-  {
-    "id": "38d623cc7fcd9aace88fec5bc9375032",
-    "title": "TechCrunch Mobility: Waymo&#8217;s Big Apple score and Nvidia backs Nuro",
-    "source": "https://techcrunch.com/2025/08/24/techcrunch-mobility-waymos-big-apple-score-and-nvidia-backs-nuro/",
-    "generatedAt": "2025-08-25T13:02:44.843Z",
-    "feedName": "TechCrunch",
-    "author": "Kirsten Korosec",
-    "category": "Transportation",
-    "essence": "Analysis based on keywords: techcrunch, mobility, reveals, summarize, technology",
-    "reactions": [
-      "Analysis based on keywords: techcrunch, mobility, provide, perspectives, technical",
-      "Perspective 2 on this TechCrunch story",
-      "Perspective 3 on this TechCrunch story"
-    ],
-    "promoBanner": {
-      "text": "TechCrunch",
-      "url": "https://techcrunch.com/2025/08/24/techcrunch-mobility-waymos-big-apple-score-and-nvidia-backs-nuro/"
-    }
-  },
-  {
-    "id": "a140cb8868380e6ba77021c32a9a2169",
-    "title": "EcoFlow’s Rapid power bank is the fastest yet",
-    "source": "",
-    "generatedAt": "2025-08-25T13:02:44.924Z",
-    "feedName": "The Verge",
-    "author": "Thomas Ricker",
-    "category": "General",
-    "essence": "Analysis based on keywords: power, ecoflow, rapid, summarize, technology",
-    "reactions": [
-      "Analysis based on keywords: power, provide, perspectives, technical, ecoflow",
-      "Perspective 2 on this The Verge story",
-      "Perspective 3 on this The Verge story"
-    ],
-    "promoBanner": {
-      "text": "The Verge",
-      "url": ""
-    }
-  },
-  {
-    "id": "d1f22bf102ec6d1e745fb8b6178858b8",
-    "title": "When the Blade Breaks",
-    "source": "",
-    "generatedAt": "2025-08-25T13:02:44.925Z",
-    "feedName": "The Verge",
-    "author": "Gabriella Burnham",
-    "category": "General",
-    "essence": "Analysis based on keywords: behind, summarize, technology, story, answering",
-    "reactions": [
-      "Analysis based on keywords: provide, perspectives, technical, three, expert",
-      "Perspective 2 on this The Verge story",
-      "Perspective 3 on this The Verge story"
-    ],
-    "promoBanner": {
-      "text": "The Verge",
-      "url": ""
-    }
-  },
-  {
-    "id": "91dc817fbe4c5196ea9985eb8f984560",
-    "title": "First Netflix House opens its doors on November 12th",
-    "source": "",
-    "generatedAt": "2025-08-25T13:02:44.925Z",
-    "feedName": "The Verge",
-    "author": "Thomas Ricker",
-    "category": "General",
-    "essence": "Analysis based on keywords: netflix, house, first, november, dallas",
-    "reactions": [
-      "Analysis based on keywords: netflix, house, provide, perspectives, technical",
-      "Perspective 2 on this The Verge story",
-      "Perspective 3 on this The Verge story"
-    ],
-    "promoBanner": {
-      "text": "The Verge",
-      "url": ""
-    }
-  },
-  {
-    "id": "df172d5918f1d73ee8bf76368f54578e",
-    "title": "The Framework Desktop and Linux have shown me the path to PC gaming in the living room",
-    "source": "",
-    "generatedAt": "2025-08-25T13:02:44.925Z",
-    "feedName": "The Verge",
-    "author": "Antonio G. Di Benedetto",
-    "category": "General",
-    "essence": "Analysis based on keywords: gaming, living, steam, summarize, technology",
-    "reactions": [
-      "Analysis based on keywords: provide, perspectives, technical, gaming, living",
-      "Perspective 2 on this The Verge story",
-      "Perspective 3 on this The Verge story"
-    ],
-    "promoBanner": {
-      "text": "The Verge",
-      "url": ""
-    }
-  },
-  {
-    "id": "2df84822234d5e482f60c5c6a2de673e",
-    "title": "They’re trying to make deep-sea mining happen",
-    "source": "",
-    "generatedAt": "2025-08-25T13:02:44.925Z",
-    "feedName": "The Verge",
-    "author": "Justine Calma",
-    "category": "General",
-    "essence": "Analysis based on keywords: stepback, story, mining, summarize, technology",
-    "reactions": [
-      "Analysis based on keywords: stepback, provide, perspectives, technical, mining",
-      "Perspective 2 on this The Verge story",
-      "Perspective 3 on this The Verge story"
-    ],
-    "promoBanner": {
-      "text": "The Verge",
-      "url": ""
-    }
-  },
-  {
-    "id": "685fe2b865fc9454a90b51fa79e3d73a",
-    "title": "With AI chatbots, Big Tech is moving fast and breaking people",
-    "source": "https://arstechnica.com/information-technology/2025/08/with-ai-chatbots-big-tech-is-moving-fast-and-breaking-people/",
-    "generatedAt": "2025-08-25T13:02:46.037Z",
-    "feedName": "Ars Technica",
-    "author": "Benj Edwards",
-    "category": "AI",
-    "essence": "Analysis based on keywords: chatbots, standard, brooks, times, story",
-    "reactions": [
-      "Analysis based on keywords: chatbots, standard, provide, three, perspectives",
-      "Perspective 2 on this Ars Technica story",
-      "Perspective 3 on this Ars Technica story"
-    ],
-    "promoBanner": {
-      "text": "Ars Technica",
-      "url": "https://arstechnica.com/information-technology/2025/08/with-ai-chatbots-big-tech-is-moving-fast-and-breaking-people/"
-    }
-  },
-  {
-    "id": "5a4d32e767e07d9bd0464b349360f2ca",
-    "title": "College student’s “time travel” AI experiment accidentally outputs real 1834 history",
-    "source": "https://arstechnica.com/information-technology/2025/08/ai-built-from-1800s-texts-surprises-creator-by-mentioning-real-1834-london-protests/",
-    "generatedAt": "2025-08-25T13:02:46.275Z",
-    "feedName": "Ars Technica",
-    "author": "Benj Edwards",
-    "category": "AI",
-    "essence": "Analysis based on keywords: history, london, standard, story, college",
-    "reactions": [
-      "Analysis based on keywords: history, london, standard, provide, perspectives",
-      "Perspective 2 on this Ars Technica story",
-      "Perspective 3 on this Ars Technica story"
-    ],
-    "promoBanner": {
-      "text": "Ars Technica",
-      "url": "https://arstechnica.com/information-technology/2025/08/ai-built-from-1800s-texts-surprises-creator-by-mentioning-real-1834-london-protests/"
-    }
-  },
-  {
-    "id": "63874235e9f7123989684085c12b21ae",
-    "title": "Is the AI bubble about to pop? Sam Altman is prepared either way.",
-    "source": "https://arstechnica.com/information-technology/2025/08/sam-altman-calls-ai-a-bubble-while-seeking-500b-valuation-for-openai/",
-    "generatedAt": "2025-08-25T13:02:46.408Z",
-    "feedName": "Ars Technica",
-    "author": "Benj Edwards",
-    "category": "AI",
-    "essence": "Analysis based on keywords: altman, bubble, about, standard, story",
-    "reactions": [
-      "Analysis based on keywords: altman, bubble, about, standard, provide",
-      "Perspective 2 on this Ars Technica story",
-      "Perspective 3 on this Ars Technica story"
-    ],
-    "promoBanner": {
-      "text": "Ars Technica",
-      "url": "https://arstechnica.com/information-technology/2025/08/sam-altman-calls-ai-a-bubble-while-seeking-500b-valuation-for-openai/"
-    }
-  },
-  {
-    "id": "c2c6c3be352b293e9a6f0ca8d3003adb",
-    "title": "Is AI really trying to escape human control and blackmail people?",
-    "source": "https://arstechnica.com/information-technology/2025/08/is-ai-really-trying-to-escape-human-control-and-blackmail-people/",
-    "generatedAt": "2025-08-25T13:02:46.542Z",
-    "feedName": "Ars Technica",
-    "author": "Benj Edwards",
-    "category": "AI",
-    "essence": "Analysis based on keywords: really, standard, story, behind, trying",
-    "reactions": [
-      "Analysis based on keywords: standard, provide, perspectives, technical, really",
-      "Perspective 2 on this Ars Technica story",
-      "Perspective 3 on this Ars Technica story"
-    ],
-    "promoBanner": {
-      "text": "Ars Technica",
-      "url": "https://arstechnica.com/information-technology/2025/08/is-ai-really-trying-to-escape-human-control-and-blackmail-people/"
-    }
-  },
-  {
-    "id": "68771efb0af51e0546be0474d2c8982d",
-    "title": "OpenAI brings back GPT-4o after user revolt",
-    "source": "https://arstechnica.com/information-technology/2025/08/openai-brings-back-gpt-4o-after-user-revolt/",
-    "generatedAt": "2025-08-25T13:02:46.678Z",
-    "feedName": "Ars Technica",
-    "author": "Benj Edwards",
-    "category": "AI",
-    "essence": "Analysis based on keywords: openai, after, altman, edwards, standard",
-    "reactions": [
-      "Analysis based on keywords: openai, after, users, edwards, standard",
-      "Perspective 2 on this Ars Technica story",
-      "Perspective 3 on this Ars Technica story"
-    ],
-    "promoBanner": {
-      "text": "Ars Technica",
-      "url": "https://arstechnica.com/information-technology/2025/08/openai-brings-back-gpt-4o-after-user-revolt/"
-    }
-  },
-  {
-    "id": "tech-1",
-    "title": "The Future of Quantum Computing",
-    "essence": "Quantum computing has the potential to revolutionize technology and solve some of the world's most complex problems.",
-    "reactions": [],
-    "source": "#",
-    "backgroundColor": "cyan"
   }
 ]

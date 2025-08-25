@@ -1,0 +1,473 @@
+/* Story Card - Enhanced Square Design */
+.story-card {
+    width: 100%;
+    aspect-ratio: 1;
+    max-width: 100vw;
+    max-height: 100vw;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 12px;
+    /* Ensure gradients are visible */
+    background-color: #2a5298 !important; /* Fallback color */
+    isolation: isolate;
+}
+
+/* Top progress bars */
+.progress-bars {
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    right: 10px;
+    height: 4px;
+    display: flex;
+    gap: 6px;
+    z-index: 12;
+}
+
+.progress-segment {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.progress-segment .fill {
+    width: 0%;
+    height: 100%;
+    background: var(--accent, #fff);
+    opacity: 0.95;
+    transition: width linear 5s;
+}
+
+.progress-segment.active .fill {
+    width: 100%;
+}
+
+/* Card Container */
+.card-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Individual Card Slides */
+.card-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: translateX(100%) !important;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.card-slide.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.card-slide.prev {
+    transform: translateX(-100%) !important;
+}
+
+/* Gradient Overlay for better text readability */
+.card-gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.55) 0%,
+        rgba(0, 0, 0, 0.25) 50%,
+        rgba(0, 0, 0, 0.08) 100%
+    );
+    z-index: 1;
+}
+
+/* Show progress only on active card */
+.story-card .progress-bars { opacity: 0; visibility: hidden; transition: opacity 0.2s ease; }
+.story-card.active-card .progress-bars { opacity: 1; visibility: visible; }
+
+/* Card Content */
+.card-content {
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+    color: var(--text-on-bg, #fff);
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+/* Card Header */
+.card-header {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 0.75rem;
+}
+
+.card-title {
+    font-size: clamp(1rem, 3.5vw, 1.4rem);
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 0 0 0.5rem 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-transform: capitalize;
+}
+
+.card-badge {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.card-time {
+    margin-top: 0.4rem;
+    font-size: 0.75rem;
+    opacity: 0.85;
+}
+
+/* Card Body */
+.card-body {
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 0.5rem;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+}
+
+.card-body::-webkit-scrollbar {
+    width: 4px;
+}
+
+.card-body::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.card-body::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 2px;
+}
+
+/* Text Styles */
+.card-essence {
+    font-size: clamp(0.78rem, 2.5vw, 0.95rem);
+    line-height: 1.55;
+    margin: 0;
+    text-align: justify;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.35);
+    opacity: 0.95;
+    hyphens: auto;
+    word-break: break-word;
+}
+
+/* Reaction Styles */
+.reaction-title {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    opacity: 0.7;
+    margin-bottom: 0.5rem;
+}
+
+.reaction-text {
+    font-size: clamp(0.78rem, 2.5vw, 0.95rem);
+    line-height: 1.55;
+    text-align: justify;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.35);
+    opacity: 0.95;
+    hyphens: auto;
+    word-break: break-word;
+}
+
+/* Source Section */
+.source-section {
+    margin-top: 1rem;
+}
+
+.source-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--text-on-bg, #fff);
+    text-decoration: none;
+    padding: 0.75rem 1.25rem;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.source-link:hover {
+    background: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Slide indicators removed; using top progress bars only */
+
+/* Enhanced Natural Background Gradients - Pleasing to the human eye */
+.story-card[data-bg="gradient-1"] {
+    /* Deep Ocean - calming blue depths */
+    background: linear-gradient(145deg, #1e3c72 0%, #2a5298 60%, #7e8ba3 100%) !important;
+}
+
+.story-card[data-bg="gradient-2"] {
+    /* Sunset Glow - warm evening colors */
+    background: linear-gradient(135deg, #ee9ca7 0%, #ffdde1 50%, #fcb69f 100%) !important;
+}
+
+.story-card[data-bg="gradient-3"] {
+    /* Forest Morning - fresh green tones */
+    background: linear-gradient(145deg, #134e5e 0%, #71b280 60%, #a8c88f 100%) !important;
+}
+
+.story-card[data-bg="gradient-4"] {
+    /* Desert Dawn - warm earth tones */
+    background: linear-gradient(135deg, #d4a574 0%, #e8b595 50%, #f3d5ad 100%) !important;
+}
+
+.story-card[data-bg="gradient-5"] {
+    /* Northern Lights - mystical aurora */
+    background: linear-gradient(145deg, #43cea2 0%, #185a9d 50%, #364f6b 100%) !important;
+}
+
+.story-card[data-bg="gradient-6"] {
+    /* Lavender Fields - soft purple hues */
+    background: linear-gradient(135deg, #9d50bb 0%, #b06ab3 40%, #dda5d9 100%) !important;
+}
+
+.story-card[data-bg="gradient-7"] {
+    /* Coral Reef - underwater paradise */
+    background: linear-gradient(145deg, #ff6b9d 0%, #feca57 50%, #ffd93d 100%) !important;
+}
+
+.story-card[data-bg="gradient-8"] {
+    /* Mountain Mist - cool gray-blues */
+    background: linear-gradient(135deg, #606c88 0%, #8b92a8 50%, #bcc0cc 100%) !important;
+}
+
+.story-card[data-bg="gradient-9"] {
+    /* Golden Hour - warm photography light */
+    background: linear-gradient(145deg, #f4a460 0%, #f7b267 40%, #ffd4a3 100%) !important;
+}
+
+.story-card[data-bg="gradient-10"] {
+    /* Deep Space - cosmic blues and purples */
+    background: linear-gradient(135deg, #1f1c2c 0%, #474b7a 50%, #928dab 100%) !important;
+}
+
+.story-card[data-bg="gradient-11"] {
+    /* Autumn Forest - warm fall colors */
+    background: linear-gradient(145deg, #8b4513 0%, #cd853f 40%, #daa520 100%) !important;
+}
+
+.story-card[data-bg="gradient-12"] {
+    /* Ocean Twilight - deep sea blues */
+    background: linear-gradient(135deg, #003973 0%, #004e92 50%, #428bca 100%) !important;
+}
+
+.story-card[data-bg="gradient-13"] {
+    /* Sage Garden - calming greens */
+    background: linear-gradient(145deg, #506d2f 0%, #7a9a44 50%, #a3b88c 100%) !important;
+}
+
+.story-card[data-bg="gradient-14"] {
+    /* Wine Country - rich burgundy */
+    background: linear-gradient(135deg, #5d001e 0%, #9a1750 40%, #ee4c7c 100%) !important;
+}
+
+.story-card[data-bg="gradient-15"] {
+    /* Misty Morning - soft grays */
+    background: linear-gradient(145deg, #757f9a 0%, #a7adba 50%, #d7dde8 100%) !important;
+}
+
+.story-card[data-bg="gradient-16"] {
+    /* Tropical Sunset - vibrant paradise */
+    background: linear-gradient(135deg, #f77062 0%, #fe8199 40%, #ffa5ab 100%) !important;
+}
+
+.story-card[data-bg="gradient-17"] {
+    /* Earth Clay - natural terracotta */
+    background: linear-gradient(145deg, #ac4b1c 0%, #cc6843 50%, #e8956d 100%) !important;
+}
+
+.story-card[data-bg="gradient-18"] {
+    /* Sky Blue - clear day */
+    background: linear-gradient(135deg, #56ccf2 0%, #87ceeb 50%, #b6e7fc 100%) !important;
+}
+
+.story-card[data-bg="gradient-19"] {
+    /* Meadow Bloom - spring freshness */
+    background: linear-gradient(145deg, #86a873 0%, #a8c09a 50%, #c9d4c5 100%) !important;
+}
+
+.story-card[data-bg="gradient-20"] {
+    /* Dusk Purple - evening elegance */
+    background: linear-gradient(135deg, #4a148c 0%, #7b1fa2 40%, #ab47bc 100%) !important;
+}
+
+.story-card[data-bg="gradient-21"] {
+    /* Coffee Morning - warm browns */
+    background: linear-gradient(145deg, #3c2415 0%, #6f4e37 50%, #a67c52 100%) !important;
+}
+
+.story-card[data-bg="gradient-22"] {
+    /* Rose Garden - soft pinks */
+    background: linear-gradient(135deg, #f8b5ce 0%, #ffc4d6 50%, #ffdde4 100%) !important;
+}
+
+.story-card[data-bg="gradient-23"] {
+    /* Emerald Coast - tropical greens */
+    background: linear-gradient(145deg, #00695c 0%, #00897b 50%, #4db6ac 100%) !important;
+}
+
+.story-card[data-bg="gradient-24"] {
+    /* Sandstone - warm desert */
+    background: linear-gradient(135deg, #c9a876 0%, #ddb896 50%, #e8c4a0 100%) !important;
+}
+
+.story-card[data-bg="gradient-25"] {
+    /* Moonlight - cool silver blues */
+    background: linear-gradient(145deg, #283e51 0%, #4b79a1 50%, #a0b5ce 100%) !important;
+}
+
+.story-card[data-bg="gradient-26"] {
+    /* Peach Blossom - soft warm tones */
+    background: linear-gradient(135deg, #ffb5a0 0%, #ffc8b8 50%, #ffddd4 100%) !important;
+}
+
+.story-card[data-bg="gradient-27"] {
+    /* Deep Forest - rich greens */
+    background: linear-gradient(145deg, #1a3a1a 0%, #2d5a2d 40%, #4a7c4a 100%) !important;
+}
+
+.story-card[data-bg="gradient-28"] {
+    /* Stormy Sea - dramatic grays */
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 40%, #7f8c8d 100%) !important;
+}
+
+.story-card[data-bg="gradient-29"] {
+    /* Vintage Wine - deep reds */
+    background: linear-gradient(145deg, #722f37 0%, #8e4447 50%, #b36b71 100%) !important;
+}
+
+.story-card[data-bg="gradient-30"] {
+    /* Honey Amber - golden yellows */
+    background: linear-gradient(135deg, #ffb347 0%, #ffc968 50%, #ffdb8b 100%) !important;
+}
+
+/* Pattern overlays for more variety */
+.story-card[data-pattern="dots"]::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+    z-index: 0;
+}
+
+.story-card[data-pattern="lines"]::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 10px,
+        rgba(255,255,255,0.05) 10px,
+        rgba(255,255,255,0.05) 20px
+    );
+    z-index: 0;
+}
+
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+    .story-card {
+        border-radius: 0;
+    }
+    
+    .card-content {
+        padding: 1.25rem;
+    }
+    
+    .card-title {
+        font-size: clamp(0.95rem, 4vw, 1.25rem);
+    }
+    
+    .card-essence,
+    .reaction-text {
+        font-size: clamp(0.8rem, 3.2vw, 0.95rem);
+    }
+    
+    .card-badge {
+        font-size: 0.65rem;
+    }
+}
+
+/* Sponsor Section */
+.sponsor-section {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.sponsor-link {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    font-size: 0.8rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.sponsor-link:hover {
+    color: white;
+}
+
+/* Touch Feedback */
+.story-card.swiping {
+    transition: none;
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+    .card-slide {
+        transition: opacity 0.3s ease;
+    }
+    
+    .story-card.swiping {
+        transition: none;
+    }
+}
