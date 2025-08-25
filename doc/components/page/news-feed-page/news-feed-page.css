@@ -3,7 +3,7 @@
     width: 100%;
     position: relative;
     overflow: hidden;
-    background: #000;
+    background: var(--bg);
 }
 
 .news-feed-container {
@@ -29,15 +29,19 @@
 
 /* Story cards container styling */
 .news-feed-container story-card {
-    scroll-snap-align: center;
-    scroll-snap-stop: always;
     display: block;
     width: 90%;
     aspect-ratio: 1;
-    margin: 0 auto 15px auto;
+    margin: 12px auto;
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, opacity 0.3s ease;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
+.news-feed-container .bottom-spacer {
+    height: 45vh;
 }
 
 .story-card-placeholder {
@@ -66,7 +70,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+        background: var(--bg);
     }
     
     .news-feed-container {

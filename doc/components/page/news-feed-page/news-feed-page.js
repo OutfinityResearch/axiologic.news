@@ -40,11 +40,18 @@ export class NewsFeedPage {
                 }
             }
             
-            // Load from local posts.json
-            const response = await fetch('./posts.json');
-            if (response.ok) {
-                const localJsonPosts = await response.json();
-                jsonPosts = jsonPosts.concat(localJsonPosts);
+            // Load from selected local source categories (default to 'default')
+            const selected = await window.LocalStorage.get('selectedSourceCategories') || ['default'];
+            for (const cat of selected) {
+                try {
+                    const resp = await fetch(`./sources/${cat}/posts.json`);
+                    if (resp.ok) {
+                        const catPosts = await resp.json();
+                        jsonPosts = jsonPosts.concat(catPosts);
+                    }
+                } catch (e) {
+                    console.warn(`Could not load sources/${cat}/posts.json`, e);
+                }
             }
         } catch (error) {
             console.error("Could not fetch posts.json:", error);
@@ -78,7 +85,7 @@ export class NewsFeedPage {
         container.innerHTML = '';
         this.storyCards = [];
 
-        // Create story card elements
+        // Create story card elements for all posts (vertical carousel)
         this.posts.forEach((post, index) => {
             const storyCardElement = document.createElement('story-card');
             storyCardElement.setAttribute('data-presenter', 'story-card');
@@ -98,14 +105,22 @@ export class NewsFeedPage {
                 }
             }
 
+            // Do not auto-advance to next post on story-finished
             this.element.removeEventListener('story-finished', this.boundNextStory);
-            this.element.addEventListener('story-finished', this.boundNextStory);
-            
+
             this.setupScrollDetection();
-            this.setupInfiniteScroll();
+            // Optional: infinite scroll can remain off for now
+
+            // Mark initial active based on current center
+            this.checkActiveStory();
         });
+
+        // Add bottom spacer to allow last post to center
+        const spacer = document.createElement('div');
+        spacer.className = 'bottom-spacer';
+        container.appendChild(spacer);
     }
-    
+
     setupScrollDetection() {
         const container = this.element.querySelector('.news-feed-container');
         if (!container) return;
@@ -122,7 +137,19 @@ export class NewsFeedPage {
             scrollTimeout = setTimeout(() => {
                 isScrolling = false;
                 this.checkActiveStory();
-            }, 150);
+            }, 120);
+        });
+
+        // Initial activation and centering on first render
+        requestAnimationFrame(() => {
+            this.checkActiveStory();
+            const cards = container.querySelectorAll('story-card');
+            if (cards[this.currentStoryIndex]) {
+                cards[this.currentStoryIndex].classList.add('active-card');
+                // Use a standard behavior
+                cards[this.currentStoryIndex].scrollIntoView({ behavior: 'auto', block: 'center' });
+                this.storyCards[this.currentStoryIndex]?.startCarousel();
+            }
         });
     }
 
@@ -131,42 +158,42 @@ export class NewsFeedPage {
         const cards = container.querySelectorAll('story-card');
         const containerRect = container.getBoundingClientRect();
 
+        // Find the card closest to center
+        let newActive = 0;
+        let minDist = Infinity;
         cards.forEach((card, index) => {
             const rect = card.getBoundingClientRect();
             const cardCenter = rect.top + rect.height / 2;
             const containerCenter = containerRect.top + containerRect.height / 2;
-            const isInView = Math.abs(cardCenter - containerCenter) < rect.height / 3;
-            
-            if (isInView && this.currentStoryIndex !== index) {
-                // Stop previous story's carousel
-                if (this.storyCards[this.currentStoryIndex]) {
-                    this.storyCards[this.currentStoryIndex].stopAutoPlay();
-                }
-                
-                this.currentStoryIndex = index;
-                
-                // Start new story's carousel
-                if (this.storyCards[index]) {
-                    this.storyCards[index].startCarousel();
-                }
-            }
+            const dist = Math.abs(cardCenter - containerCenter);
+            if (dist < minDist) { minDist = dist; newActive = index; }
         });
-    }
 
-    setupInfiniteScroll() {
-        const container = this.element.querySelector('.news-feed-container');
-        if (!container) return;
+        if (newActive !== this.currentStoryIndex) {
+            // Stop autoplay on all others and remove active class
+            this.storyCards.forEach((presenter, idx) => {
+                if (!presenter) return;
+                presenter.stopAutoPlay();
+                presenter.enableAutoPlay = false;
+                const el = cards[idx];
+                if (el) el.classList.remove('active-card');
+            });
 
-        container.addEventListener('scroll', () => {
-            const scrollHeight = container.scrollHeight;
-            const scrollTop = container.scrollTop;
-            const clientHeight = container.clientHeight;
+            // Set new active and start
+            this.currentStoryIndex = newActive;
+            const activePresenter = this.storyCards[newActive];
+            const activeEl = cards[newActive];
+            if (activeEl) activeEl.classList.add('active-card');
+            if (activePresenter) activePresenter.startCarousel();
 
-            // When near the bottom (within 200px), add more stories
-            if (scrollHeight - scrollTop - clientHeight < 200) {
-                this.loadMoreStories();
+            // Ensure center alignment
+            if (cards[newActive]) {
+                cards[newActive].scrollIntoView({ behavior: 'smooth', block: 'center' });
             }
-        });
+        } else {
+            // Maintain active class on current
+            cards.forEach((el, idx) => el.classList.toggle('active-card', idx === this.currentStoryIndex));
+        }
     }
 
     async loadMoreStories() {
@@ -203,10 +230,18 @@ export class NewsFeedPage {
     nextStory() {
         const container = this.element.querySelector('.news-feed-container');
         const cards = container.querySelectorAll('story-card');
-        
         if (this.currentStoryIndex < cards.length - 1) {
             this.currentStoryIndex++;
-            cards[this.currentStoryIndex].scrollIntoView({ behavior: 'smooth' });
+            cards[this.currentStoryIndex].scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+    }
+
+    previousStory() {
+        const container = this.element.querySelector('.news-feed-container');
+        const cards = container.querySelectorAll('story-card');
+        if (this.currentStoryIndex > 0) {
+            this.currentStoryIndex--;
+            cards[this.currentStoryIndex].scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
     }
 

@@ -19,7 +19,7 @@ export class StoryCard {
     afterRender() {
         if (!this.post) return;
 
-        this.applyRandomGradient();
+        this.applyDynamicGradient();
         this.populateContent();
         this.createReactionSlides();
         this.initializeSlides();
@@ -29,16 +29,22 @@ export class StoryCard {
         this.startAutoPlay();
     }
 
-    applyRandomGradient() {
-        // Apply a random gradient background (30 options)
-        const gradientNumber = Math.floor(Math.random() * 30) + 1;
+    applyDynamicGradient() {
+        const totalGradients = 30;
+        const id = (this.post && this.post.id) ? String(this.post.id) : String(this.storyIndex);
+        
+        let hash = 0; 
+        for (let i = 0; i < id.length; i++) {
+            hash = ((hash << 5) - hash) + id.charCodeAt(i);
+        }
+        
+        const gradientNumber = (Math.abs(hash) % totalGradients) + 1;
         this.element.setAttribute('data-bg', `gradient-${gradientNumber}`);
         
-        // Randomly add a pattern overlay (20% chance for better readability)
-        if (Math.random() < 0.2) {
-            const patterns = ['dots', 'lines'];
-            const pattern = patterns[Math.floor(Math.random() * patterns.length)];
-            this.element.setAttribute('data-pattern', pattern);
+        if (Math.abs(hash) % 10 === 0) {
+            this.element.setAttribute('data-pattern', 'dots');
+        } else if (Math.abs(hash) % 10 === 1) {
+            this.element.setAttribute('data-pattern', 'lines');
         }
     }
 

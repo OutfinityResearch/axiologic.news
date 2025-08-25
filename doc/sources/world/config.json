@@ -1,11 +1,24 @@
 {
     "feeds": [
         {
-            "name": "Reuters World News",
-            "url": "https://www.reuters.com/news/archive/worldNews.rss",
+            "name": "BBC World",
+            "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+            "enabled": true
+        },
+        {
+            "name": "Al Jazeera",
+            "url": "https://www.aljazeera.com/xml/rss/all.xml",
+            "enabled": true
+        },
+        {
+            "name": "Guardian World",
+            "url": "https://www.theguardian.com/world/rss",
             "enabled": true
         }
     ],
     "topPostsPerFeed": 5,
-    "defaultBackgroundColor": "brown"
+    "historyDays": 30,
+    "selectionPrompt": "Select globally significant news stories that shape our world: 1) Major geopolitical developments and international relations, 2) Economic shifts affecting multiple countries, 3) Human rights and social justice movements, 4) Climate events and environmental crises, 5) Cultural phenomena crossing borders. Focus on stories with lasting impact over breaking news, and ensure diverse geographic representation.",
+    "essencePrompt": "Summarize this world news story with context: What happened? Where and when? Who's involved? Why does it matter globally? What are the immediate and potential long-term consequences? Provide essential background for international readers.",
+    "perspectivesPrompt": "Generate three global perspectives on this story:\n1. Regional Context: Local viewpoint, historical background, and cultural factors\n2. International Relations: Diplomatic implications, power dynamics, and global alliances\n3. Human Impact: Effects on ordinary people, humanitarian concerns, and social implications\n\nProvide balanced, culturally sensitive analysis from multiple viewpoints."
 }

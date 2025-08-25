@@ -4,8 +4,21 @@
             "name": "TechCrunch Startups",
             "url": "https://techcrunch.com/category/startups/feed/",
             "enabled": true
+        },
+        {
+            "name": "Y Combinator",
+            "url": "https://news.ycombinator.com/rss",
+            "enabled": true
+        },
+        {
+            "name": "VentureBeat",
+            "url": "https://venturebeat.com/feed/",
+            "enabled": true
         }
     ],
     "topPostsPerFeed": 5,
-    "defaultBackgroundColor": "teal"
+    "historyDays": 30,
+    "selectionPrompt": "Identify the most compelling startup stories focusing on: 1) Significant funding rounds with notable investors, 2) Innovative business models disrupting traditional industries, 3) Founder stories with valuable lessons, 4) Startup pivots and strategic decisions, 5) Acquisition news and exit strategies. Prioritize stories about execution and growth over ideas alone.",
+    "essencePrompt": "Capture the startup story essence: What's the company doing? What's their unique approach? What milestone did they hit? Who's backing them? What market are they disrupting? Focus on business model, traction, and differentiation.",
+    "perspectivesPrompt": "Generate three startup ecosystem perspectives:\n1. Investor Lens: Evaluate market opportunity, scalability, team strength, and investment potential\n2. Founder Insights: Lessons for other entrepreneurs, strategic decisions, and execution challenges\n3. Market Disruption: How this startup changes the competitive landscape and customer expectations\n\nProvide actionable insights for founders and investors."
 }

@@ -4,8 +4,26 @@
             "name": "Wired",
             "url": "https://www.wired.com/feed/category/technology/latest/rss",
             "enabled": true
+        },
+        {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/feed/",
+            "enabled": true
+        },
+        {
+            "name": "The Verge",
+            "url": "https://www.theverge.com/rss/index.xml",
+            "enabled": true
+        },
+        {
+            "name": "Ars Technica",
+            "url": "https://feeds.arstechnica.com/arstechnica/technology-lab",
+            "enabled": true
         }
     ],
     "topPostsPerFeed": 5,
-    "defaultBackgroundColor": "cyan"
+    "historyDays": 30,
+    "selectionPrompt": "Select technology stories that matter most to tech professionals and enthusiasts. Prioritize: 1) Major product launches and updates from leading tech companies, 2) Breakthrough technologies and engineering achievements, 3) Cybersecurity developments and data privacy issues, 4) Developer tools and programming innovations, 5) Consumer tech that changes how we live and work. Focus on stories with real impact over rumors or minor updates.",
+    "essencePrompt": "Summarize this technology story by answering: What's the innovation? Who's behind it? How does it work? What problem does it solve? Who will it affect? Keep technical details accurate but accessible.",
+    "perspectivesPrompt": "Provide three expert technology perspectives:\n1. Engineer's View: Technical merit, implementation challenges, and innovation level\n2. User Experience: How this affects end users, usability, and practical benefits\n3. Industry Analysis: Competitive landscape, market disruption, and long-term implications\n\nBe specific, avoid hype, and provide balanced technical insight."
 }

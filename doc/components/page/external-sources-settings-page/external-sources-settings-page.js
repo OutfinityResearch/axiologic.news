@@ -3,16 +3,53 @@ export class ExternalSourcesSettingsPage {
         this.element = element;
         this.invalidate = invalidate;
         this.urls = [];
+        this.categories = [];
+        this.selectedCategories = ['default'];
         this.invalidate();
     }
 
     async beforeRender() {
         this.urls = await window.LocalStorage.get('externalPostsUrls') || [];
+        this.selectedCategories = await window.LocalStorage.get('selectedSourceCategories') || ['default'];
+        try {
+            const resp = await fetch('./sources/sources.json');
+            if (resp.ok) this.categories = await resp.json();
+        } catch (e) {
+            console.warn('Could not load sources/sources.json', e);
+            this.categories = [{name:'default'}];
+        }
     }
 
     afterRender() {
         this.renderUrlList();
+        this.renderCategoryList();
         this.setupEventListeners();
+    }
+
+    renderCategoryList() {
+        const container = this.element.querySelector('#category-list');
+        if (!container) return;
+        container.innerHTML = '';
+        this.categories.forEach(cat => {
+            const id = `cat-${cat.name}`;
+            const wrapper = document.createElement('label');
+            wrapper.className = 'category-item';
+            wrapper.innerHTML = `
+                <input type="checkbox" id="${id}" ${this.selectedCategories.includes(cat.name) ? 'checked' : ''} />
+                <span>${cat.name}</span>
+            `;
+            container.appendChild(wrapper);
+            const cb = wrapper.querySelector('input');
+            cb.addEventListener('change', async () => {
+                if (cb.checked) {
+                    if (!this.selectedCategories.includes(cat.name)) this.selectedCategories.push(cat.name);
+                } else {
+                    this.selectedCategories = this.selectedCategories.filter(n => n !== cat.name);
+                }
+                if (this.selectedCategories.length === 0) this.selectedCategories = ['default'];
+                await window.LocalStorage.set('selectedSourceCategories', this.selectedCategories);
+            });
+        });
     }
 
     renderUrlList() {

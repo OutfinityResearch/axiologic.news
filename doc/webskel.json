@@ -7,6 +7,11 @@
             "presenterClassName": "NewsFeedPage"
         },
         {
+            "name": "settings-page",
+            "type": "page",
+            "presenterClassName": "SettingsPage"
+        },
+        {
             "name": "external-sources-settings-page",
             "type": "page",
             "presenterClassName": "ExternalSourcesSettingsPage"

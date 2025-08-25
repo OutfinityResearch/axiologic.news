@@ -1,5 +1,6 @@
 import WebSkel from './WebSkel/webskel.mjs';
 import LoadingIndicator from './components/base/loading-indicator/loading-indicator.js';
+import './services/ThemeManager.js';
 
 async function start() {
     const webSkel = await WebSkel.initialise('webskel.json');
@@ -14,10 +15,15 @@ async function start() {
     // Store webSkel globally first
     window.webSkel = webSkel;
 
-    // Create hamburger menu element
+    // Create hamburger menu element inside mobile container to simulate phone overlay
     const hamburgerMenu = document.createElement('hamburger-menu');
     hamburgerMenu.setAttribute('data-presenter', 'hamburger-menu');
-    document.body.prepend(hamburgerMenu);
+    const mobileContainer = document.querySelector('.mobile-container');
+    if (mobileContainer) {
+        mobileContainer.prepend(hamburgerMenu);
+    } else {
+        document.body.prepend(hamburgerMenu);
+    }
     
     // Initialize hamburger menu functionality after a delay
     setTimeout(() => {
