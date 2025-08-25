@@ -1,0 +1,102 @@
+.news-feed-wrapper {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background: #000;
+}
+
+.news-feed-container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Hide scrollbar but keep functionality */
+.news-feed-container::-webkit-scrollbar {
+    display: none;
+}
+
+.news-feed-container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Story cards container styling */
+.news-feed-container story-card {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    display: block;
+    width: 90%;
+    aspect-ratio: 1;
+    margin: 0 auto 15px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.story-card-placeholder {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #666;
+    text-align: center;
+    padding: 20px;
+}
+
+.story-card-placeholder h2 {
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 1; }
+}
+
+/* Desktop layout */
+@media (min-width: 769px) {
+    .news-feed-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    }
+    
+    .news-feed-container {
+        max-width: 500px;
+        margin: 0 auto;
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+    }
+    
+    .news-feed-container story-card {
+        max-width: 500px;
+    }
+}
+
+/* Loading state */
+.news-feed-container.loading::after {
+    content: '';
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-top-color: white;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    z-index: 1000;
+}
+
+@keyframes spin {
+    to { transform: translateX(-50%) rotate(360deg); }
+}

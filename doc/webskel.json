@@ -1,0 +1,36 @@
+{
+    "webComponentsRootDir": "/axiologic.news/doc/components",
+    "components": [
+        {
+            "name": "news-feed-page",
+            "type": "page",
+            "presenterClassName": "NewsFeedPage"
+        },
+        {
+            "name": "external-sources-settings-page",
+            "type": "page",
+            "presenterClassName": "ExternalSourcesSettingsPage"
+        },
+        {
+            "name": "hamburger-menu",
+            "type": "components",
+            "presenterClassName": "HamburgerMenu"
+        },
+        {
+            "name": "story-card",
+            "type": "components",
+            "presenterClassName": "StoryCard"
+        },
+        {
+            "name": "show-error-modal",
+            "type": "modals",
+            "presenterClassName": "ShowErrorModal"
+        },
+        {
+            "name": "loading-indicator",
+            "type": "base",
+            "presenterClassName": "LoadingIndicator"
+        }
+    ],
+    "services": []
+}
