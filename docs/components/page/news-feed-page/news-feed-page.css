@@ -41,17 +41,7 @@
     transform-origin: center center;
 }
 
-/* Make the centered/active card a bit taller to comfortably fit ~500 chars */
-.news-feed-container story-card.active-card {
-    width: 98%; /* Slightly larger */
-    max-width: 520px;
-}
-.news-feed-container story-card.active-card .story-card {
-    aspect-ratio: auto; /* allow dynamic height controlled by JS */
-}
-.news-feed-container story-card.active-card .card-content {
-    padding: 1.3rem;
-}
+/* Keep card size stable across active/inactive states to avoid flicker */
 
 .news-feed-container .bottom-spacer {
     height: 45vh;

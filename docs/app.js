@@ -11,7 +11,15 @@ async function start() {
 
     // Make LoadingIndicator globally available
     window.LoadingIndicator = LoadingIndicator;
-    
+    // Apply saved content scale (font size) early
+    try {
+        const savedScale = await window.LocalStorage.get('contentScale');
+        const scale = typeof savedScale === 'number' ? savedScale : 1.0;
+        document.documentElement.style.setProperty('--content-scale', String(scale));
+    } catch (e) {
+        document.documentElement.style.setProperty('--content-scale', '1');
+    }
+
     // Store webSkel globally first
     window.webSkel = webSkel;
 

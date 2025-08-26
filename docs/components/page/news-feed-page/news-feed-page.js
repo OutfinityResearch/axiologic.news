@@ -58,10 +58,35 @@ export class NewsFeedPage {
         }
 
         const allPosts = [...jsonPosts, ...localPosts];
+
+        // Filter out posts that look like HTML/code or have too-short pages
+        const isLikelyHtmlOrCode = (text = '') => {
+            if (!text || typeof text !== 'string') return false;
+            const htmlTag = /<\/?[a-z][^>]*>/i;
+            const codeFence = /```|<script|function\s|class\s|\{\s*\}|console\.|import\s|export\s|;\s*\n/mi;
+            const attrs = /\s(?:class|style|id|onclick|onerror|href|src)=/i;
+            return htmlTag.test(text) || codeFence.test(text) || attrs.test(text);
+        };
+        const wordCount = (text = '') => (text.trim().match(/\b\w+\b/g) || []).length;
+        const isValidPost = (p) => {
+            if (!p) return false;
+            // Keep tutorial/fallback posts regardless
+            if (typeof p.id === 'string' && (p.id.startsWith('tutorial-') || p.id.startsWith('fallback-'))) return true;
+            const pages = [];
+            if (p.essence) pages.push(p.essence);
+            if (Array.isArray(p.reactions)) pages.push(...p.reactions.filter(Boolean));
+            if (pages.length === 0) return false;
+            // Reject if any page looks like html/code
+            if (pages.some(isLikelyHtmlOrCode)) return false;
+            // Require each page to have at least 15 words
+            if (pages.some(txt => wordCount(txt) < 15)) return false;
+            return true;
+        };
         
         const uniquePosts = allPosts.filter((post, index, self) =>
             index === self.findIndex((p) => p.id === post.id)
         );
+        const filteredPosts = uniquePosts.filter(isValidPost);
 
         // Get viewing history data
         const progressMap = await window.LocalStorage.get('postProgress') || {};
@@ -94,7 +119,7 @@ export class NewsFeedPage {
             return 3; // Complete
         };
         
-        this.posts = uniquePosts.sort((a, b) => {
+        this.posts = filteredPosts.sort((a, b) => {
             const ra = priorityRank(a);
             const rb = priorityRank(b);
             if (ra !== rb) return ra - rb;

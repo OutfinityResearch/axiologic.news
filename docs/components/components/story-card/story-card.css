@@ -125,7 +125,7 @@
 }
 
 .card-title {
-    font-size: clamp(0.85rem, 3vw, 1.15rem);
+    font-size: calc(clamp(0.85rem, 3vw, 1.15rem) * var(--content-scale, 1));
     font-weight: 700;
     line-height: 1.3;
     margin: 0 0 0.5rem 0;
@@ -143,7 +143,7 @@
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
     border-radius: 12px;
-    font-size: 0.7rem;
+    font-size: calc(0.7rem * var(--content-scale, 1));
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 600;
@@ -157,7 +157,7 @@
 .card-time {
     display: inline-block;
     margin-left: 8px;
-    font-size: 0.72rem;
+    font-size: calc(0.72rem * var(--content-scale, 1));
     opacity: 0.9;
 }
 
@@ -186,7 +186,7 @@
 
 /* Text Styles */
 .card-essence {
-    font-size: clamp(0.78rem, 2.1vw, 0.9rem);
+    font-size: calc(clamp(0.78rem, 2.1vw, 0.9rem) * var(--content-scale, 1));
     line-height: 1.58;
     margin: 0;
     text-align: justify;
@@ -198,7 +198,7 @@
 
 /* Reaction Styles */
 .reaction-title {
-    font-size: 0.75rem;
+    font-size: calc(0.75rem * var(--content-scale, 1));
     text-transform: uppercase;
     letter-spacing: 1.5px;
     opacity: 0.7;
@@ -206,7 +206,7 @@
 }
 
 .reaction-text {
-    font-size: clamp(0.78rem, 2.1vw, 0.9rem); /* unified with essence */
+    font-size: calc(clamp(0.78rem, 2.1vw, 0.9rem) * var(--content-scale, 1)); /* unified with essence */
     line-height: 1.58;
     text-align: justify;
     text-shadow: 0 2px 5px rgba(0,0,0,0.5);
@@ -232,7 +232,7 @@
     border-radius: 25px;
     backdrop-filter: blur(10px);
     transition: all 0.3s ease;
-    font-size: 0.9rem;
+    font-size: calc(0.9rem * var(--content-scale, 1));
 }
 
 .source-link:hover {
@@ -396,13 +396,11 @@
         padding: 1.25rem;
     }
     
-    .card-title { font-size: clamp(0.82rem, 3.4vw, 1.1rem); }
+    .card-title { font-size: calc(clamp(0.82rem, 3.4vw, 1.1rem) * var(--content-scale, 1)); }
     
-    .card-essence, .reaction-text { font-size: clamp(0.76rem, 2.8vw, 0.88rem); }
+    .card-essence, .reaction-text { font-size: calc(clamp(0.76rem, 2.8vw, 0.88rem) * var(--content-scale, 1)); }
     
-    .card-badge {
-        font-size: 0.65rem;
-    }
+    .card-badge { font-size: calc(0.65rem * var(--content-scale, 1)); }
 }
 
 /* Sponsor Section */
@@ -415,7 +413,7 @@
 .sponsor-link {
     color: rgba(255, 255, 255, 0.9);
     text-decoration: none;
-    font-size: 0.8rem;
+    font-size: calc(0.8rem * var(--content-scale, 1));
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;

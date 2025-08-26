@@ -589,70 +589,29 @@ export class StoryCard {
     }
 
     adjustHeightForSlide(slideEl) {
-        try {
-            const isActive = this.element.classList.contains('active-card');
-            const root = this.element.querySelector('.story-card');
-            if (!isActive || !root || !slideEl) return;
-            const content = slideEl.querySelector('.card-content');
-            if (!content) return;
-            const body = slideEl.querySelector('.card-body');
-
-            // Temporarily allow natural sizing for accurate measurement
-            const prevRootHeight = root.style.height;
-            root.style.height = 'auto';
-            const prevContentHeight = content.style.height;
-            const prevBodyOverflow = body ? body.style.overflow : null;
-            const prevBodyFlex = body ? body.style.flex : null;
-            content.style.height = 'auto';
-            if (body) {
-                body.style.overflow = 'visible';
-                body.style.flex = 'initial';
-            }
-
-            // Measure natural content height
-            const contentHeight = Math.ceil(content.scrollHeight);
-
-            // Restore styles
-            content.style.height = prevContentHeight;
-            if (body) {
-                body.style.overflow = prevBodyOverflow;
-                body.style.flex = prevBodyFlex;
-            }
-            const extras = 32; // top/bottom progress bars and spacing
-            const total = contentHeight + extras;
-            const maxH = Math.floor(window.innerHeight * 0.9);
-            const finalH = Math.min(total, maxH);
-            root.style.height = `${finalH}px`;
-
-            // If content exceeds available height, allow vertical scroll in body for usability
-            if (body) {
-                if (total > maxH) {
-                    body.style.overflowY = 'auto';
-                } else {
-                    body.style.overflowY = 'hidden';
-                }
-            }
-            // Ensure we don't accidentally keep 'auto' from above
-            if (prevRootHeight) {
-                // keep the newly computed height; no need to restore
-            }
-        } catch (_) {
-            // ignore
-        }
+        try { return; } catch (_) { }
     }
 
     computeAndSetMaxHeight() {
         try {
-            const isActive = this.element.classList.contains('active-card');
             const root = this.element.querySelector('.story-card');
-            if (!isActive || !root || !this.slides?.length) return;
+            if (!root || !this.slides?.length) return;
 
-            const extras = 32;
-            const maxHViewport = Math.floor(window.innerHeight * 0.9);
+            // Only adjust height for larger text sizes to avoid flicker in normal mode
+            const scaleStr = getComputedStyle(document.documentElement).getPropertyValue('--content-scale') || '1';
+            const scale = parseFloat(scaleStr);
+            if (!(scale > 1.0)) {
+                // Reset to CSS-defined aspect sizing; ensure internal body doesn't scroll
+                root.style.height = '';
+                const bodies = this.element.querySelectorAll('.card-body');
+                bodies.forEach(b => { b.style.overflowY = 'hidden'; });
+                return;
+            }
 
-            const prevRootHeight = root.style.height;
-            root.style.height = 'auto';
+            const extras = 32; // progress bars and spacing
+            const maxHViewport = Math.floor(window.innerHeight * 0.92); // allow a bit more for larger fonts
 
+            // Measure max content height across slides without transitions
             let maxTotal = 0;
             for (const slideEl of this.slides) {
                 const content = slideEl.querySelector('.card-content');
@@ -662,14 +621,18 @@ export class StoryCard {
                 const prevContentHeight = content.style.height;
                 const prevBodyOverflow = body ? body.style.overflow : null;
                 const prevBodyFlex = body ? body.style.flex : null;
+
                 content.style.height = 'auto';
                 if (body) {
                     body.style.overflow = 'visible';
                     body.style.flex = 'initial';
                 }
+
                 const contentHeight = Math.ceil(content.scrollHeight);
                 const total = contentHeight + extras;
                 if (total > maxTotal) maxTotal = total;
+
+                // Restore
                 content.style.height = prevContentHeight;
                 if (body) {
                     body.style.overflow = prevBodyOverflow;
@@ -685,7 +648,6 @@ export class StoryCard {
             bodies.forEach(b => {
                 b.style.overflowY = capApplied ? 'auto' : 'hidden';
             });
-
         } catch (_) { /* ignore */ }
     }
 
