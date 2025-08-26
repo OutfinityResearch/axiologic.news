@@ -30,7 +30,7 @@ export class NewsFeedPage {
             const externalUrls = await window.LocalStorage.get('externalPostsUrls') || [];
             for (const url of externalUrls) {
                 try {
-                    const response = await fetch(url);
+                    const response = await fetch(url, { cache: 'no-store' });
                     if (response.ok) {
                         const posts = await response.json();
                         jsonPosts = jsonPosts.concat(posts);
@@ -44,7 +44,7 @@ export class NewsFeedPage {
             const selected = await window.LocalStorage.get('selectedSourceCategories') || ['default'];
             for (const cat of selected) {
                 try {
-                    const resp = await fetch(`./sources/${cat}/posts.json`);
+                    const resp = await fetch(`./sources/${cat}/posts.json`, { cache: 'no-store' });
                     if (resp.ok) {
                         const catPosts = await resp.json();
                         jsonPosts = jsonPosts.concat(catPosts);

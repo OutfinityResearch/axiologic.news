@@ -29,6 +29,7 @@ async function start() {
     setTimeout(() => {
         const hamburgerButton = document.querySelector('#hamburger-button');
         const menu = document.querySelector('hamburger-menu');
+        const refreshButton = document.querySelector('#refresh-button');
         
         if (hamburgerButton && menu) {
             hamburgerButton.addEventListener('click', (e) => {
@@ -41,6 +42,20 @@ async function start() {
                 } else {
                     // Fallback: toggle a class
                     menu.classList.toggle('open');
+                }
+            });
+        }
+
+        if (refreshButton) {
+            refreshButton.addEventListener('click', async (e) => {
+                e.preventDefault();
+                // Optional visual feedback
+                refreshButton.classList.add('spinning');
+                try {
+                    // Re-render the feed page to force a fresh fetch
+                    await window.webSkel.changeToDynamicPage('news-feed-page', 'app');
+                } finally {
+                    refreshButton.classList.remove('spinning');
                 }
             });
         }
