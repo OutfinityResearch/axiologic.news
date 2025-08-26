@@ -4,8 +4,8 @@
     "description": "AI-powered news aggregator",
     "type": "commonjs",
     "scripts": {
-        "generate": "node doc/sources/generate.js",
-        "generate-ai": "node doc/sources/generate-ai.js"
+        "generate": "node docs/sources/generate.js",
+        "generate-ai": "node docs/sources/generate-ai.js"
     },
     "author": "",
     "license": "MIT"
