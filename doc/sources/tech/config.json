@@ -19,6 +19,31 @@
             "name": "Ars Technica",
             "url": "https://feeds.arstechnica.com/arstechnica/technology-lab",
             "enabled": true
+        },
+        {
+            "name": "Engadget",
+            "url": "https://www.engadget.com/rss.xml",
+            "enabled": true
+        },
+        {
+            "name": "Hacker News (Frontpage)",
+            "url": "https://hnrss.org/frontpage",
+            "enabled": true
+        },
+        {
+            "name": "Reddit r/technology",
+            "url": "https://www.reddit.com/r/technology/.rss",
+            "enabled": true
+        },
+        {
+            "name": "Reddit r/programming",
+            "url": "https://www.reddit.com/r/programming/.rss",
+            "enabled": true
+        },
+        {
+            "name": "GitHub Changelog",
+            "url": "https://github.blog/changelog/feed/",
+            "enabled": true
         }
     ],
     "topPostsPerFeed": 5,

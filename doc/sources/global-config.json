@@ -1,11 +1,11 @@
 {
   "apiKeys": {
-    "openai": "",
-    "anthropic": "",
-    "claude": "",
-    "mistral": "pxVk3dzbY2VCDeTSYNppESxOewME6Gq9",
-    "gemini": "",
-    "groq": ""
+    "openai": "$OPENAI_API_KEY",
+    "anthropic": "$ANTHROPIC_API_KEY",
+    "claude": "$CLAUDE_API_KEY",
+    "mistral": "$MISTRAL_API_KEY",
+    "gemini": "$GEMINI_API_KEY",
+    "groq": "$GROQ_API_KEY"
   },
   "defaultProvider": "mistral",
   "defaultModels": {
@@ -24,33 +24,33 @@
     "defaultUrl": "https://axiologic.news",
     "customBanners": {
       "tech": {
-        "text": "Tech News by Axiologic",
-        "url": "https://axiologic.news/tech"
+        "text": "Tech News by Axiologic.News",
+        "url": "https://axiologic.news/"
       },
       "ai": {
-        "text": "AI Insights by Axiologic",
-        "url": "https://axiologic.news/ai"
+        "text": "AI Insights by Axiologic.News",
+        "url": "https://axiologic.news/"
       },
       "startups": {
-        "text": "Startup Stories by Axiologic",
-        "url": "https://axiologic.news/startups"
+        "text": "Startup Stories by Axiologic.News",
+        "url": "https://axiologic.news/"
       },
       "science": {
-        "text": "Science Discoveries by Axiologic",
-        "url": "https://axiologic.news/science"
+        "text": "Science Discoveries by Axiologic.News",
+        "url": "https://axiologic.news/"
       },
       "world": {
-        "text": "World News by Axiologic",
-        "url": "https://axiologic.news/world"
+        "text": "World News by Axiologic.News",
+        "url": "https://axiologic.news/"
       }
     }
   },
   "contentSettings": {
-    "maxPostsPerFeed": 10,
+    "maxPostsPerFeed": 50,
     "maxTokensPerRequest": 500,
     "contentFetchTimeout": 10000,
     "requestTimeout": 30000,
-    "historyDays": 30
+    "historyDays": 3
   },
   "debug": false
 }

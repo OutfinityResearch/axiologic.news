@@ -14,6 +14,26 @@
             "name": "Science Magazine",
             "url": "https://www.science.org/rss/news_current.xml",
             "enabled": true
+        },
+        {
+            "name": "NASA Breaking News",
+            "url": "https://www.nasa.gov/rss/dyn/breaking_news.rss",
+            "enabled": true
+        },
+        {
+            "name": "Scientific American",
+            "url": "https://www.scientificamerican.com/feed/",
+            "enabled": true
+        },
+        {
+            "name": "Phys.org",
+            "url": "https://phys.org/rss-feed/",
+            "enabled": true
+        },
+        {
+            "name": "arXiv cs.AI",
+            "url": "https://export.arxiv.org/rss/cs.AI",
+            "enabled": true
         }
     ],
     "topPostsPerFeed": 5,

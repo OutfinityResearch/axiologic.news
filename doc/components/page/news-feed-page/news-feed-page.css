@@ -27,21 +27,65 @@
     scrollbar-width: none;
 }
 
-/* Story cards container styling */
 .news-feed-container story-card {
     display: block;
-    width: 90%;
-    aspect-ratio: 1;
+    width: 94%;
+    max-width: 500px; /* Max width for consistency */
+    aspect-ratio: 1.15;
     margin: 12px auto;
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     scroll-snap-align: center;
     scroll-snap-stop: always;
+    transform-origin: center center;
+}
+
+/* Make the centered/active card a bit taller to comfortably fit ~500 chars */
+.news-feed-container story-card.active-card {
+    width: 98%; /* Slightly larger */
+    max-width: 520px;
+}
+.news-feed-container story-card.active-card .story-card {
+    aspect-ratio: auto; /* allow dynamic height controlled by JS */
+}
+.news-feed-container story-card.active-card .card-content {
+    padding: 1.3rem;
 }
 
 .news-feed-container .bottom-spacer {
     height: 45vh;
+}
+
+.news-feed-container .top-spacer {
+    height: 45vh;
+    display: flex;
+    align-items: flex-end; /* Align to the bottom */
+    justify-content: center;
+    position: relative;
+    padding-bottom: 4vh; /* Push it up from the very bottom */
+}
+
+.news-feed-container .top-spacer .spacer-title {
+    font-size: clamp(1.6rem, 6vw, 3rem);
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    color: rgba(0, 0, 0, 0.6); /* Default for light theme */
+    text-shadow: 0 1px 3px rgba(255,255,255,0.2);
+    opacity: 0.85;
+    pointer-events: none;
+    animation: topSpacerFadeOut 2.2s ease 1.2s forwards;
+}
+
+:root[data-theme="dark"] .news-feed-container .top-spacer .spacer-title {
+    color: rgba(255, 255, 255, 0.7); /* Color for dark theme */
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+@keyframes topSpacerFadeOut {
+  0% { opacity: 0.85; filter: none; transform: translateY(0); }
+  80% { opacity: 0.08; filter: blur(0.5px); transform: translateY(0); }
+  100% { opacity: 0; filter: blur(0.6px); transform: translateY(0); }
 }
 
 .story-card-placeholder {
@@ -74,15 +118,24 @@
     }
     
     .news-feed-container {
-        max-width: 500px;
+        max-width: 600px;
         margin: 0 auto;
         box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
         border-radius: 10px;
     }
     
     .news-feed-container story-card {
-        max-width: 500px;
+        max-width: 600px;
     }
+}
+
+/* Theme-aware card elevation */
+:root[data-theme="light"] .news-feed-container story-card {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+:root[data-theme="dark"] .news-feed-container story-card {
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.35);
 }
 
 /* Loading state */

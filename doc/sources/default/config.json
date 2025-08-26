@@ -4,6 +4,41 @@
             "name": "Axiologic News",
             "url": "https://www.axiologic.net/feed/",
             "enabled": true
+        },
+        {
+            "name": "Reuters Top News",
+            "url": "https://feeds.reuters.com/reuters/topNews",
+            "enabled": true
+        },
+        {
+            "name": "AP Top News",
+            "url": "https://feeds.apnews.com/apf-topnews",
+            "enabled": true
+        },
+        {
+            "name": "CNN Top Stories",
+            "url": "https://rss.cnn.com/rss/edition.rss",
+            "enabled": true
+        },
+        {
+            "name": "BBC Top Stories",
+            "url": "https://feeds.bbci.co.uk/news/rss.xml",
+            "enabled": true
+        },
+        {
+            "name": "The Guardian",
+            "url": "https://www.theguardian.com/uk/rss",
+            "enabled": true
+        },
+        {
+            "name": "Reddit r/news",
+            "url": "https://www.reddit.com/r/news/.rss",
+            "enabled": true
+        },
+        {
+            "name": "Reddit r/worldnews",
+            "url": "https://www.reddit.com/r/worldnews/.rss",
+            "enabled": true
         }
     ],
     "topPostsPerFeed": 5,

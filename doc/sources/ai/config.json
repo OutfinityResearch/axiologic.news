@@ -14,6 +14,31 @@
             "name": "VentureBeat AI",
             "url": "https://venturebeat.com/category/ai/feed/",
             "enabled": true
+        },
+        {
+            "name": "Google AI Blog",
+            "url": "https://ai.googleblog.com/feeds/posts/default",
+            "enabled": true
+        },
+        {
+            "name": "OpenAI Blog",
+            "url": "https://openai.com/blog/rss.xml",
+            "enabled": true
+        },
+        {
+            "name": "Hugging Face Blog",
+            "url": "https://huggingface.co/blog/feed.xml",
+            "enabled": true
+        },
+        {
+            "name": "Reddit r/MachineLearning",
+            "url": "https://www.reddit.com/r/MachineLearning/.rss",
+            "enabled": true
+        },
+        {
+            "name": "Reddit r/artificial",
+            "url": "https://www.reddit.com/r/artificial/.rss",
+            "enabled": true
         }
     ],
     "topPostsPerFeed": 5,

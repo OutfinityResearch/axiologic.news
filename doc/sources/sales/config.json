@@ -4,6 +4,36 @@
             "name": "Sales Hacker",
             "url": "https://www.saleshacker.com/feed/",
             "enabled": true
+        },
+        {
+            "name": "HubSpot Sales Blog",
+            "url": "https://blog.hubspot.com/sales/rss.xml",
+            "enabled": true
+        },
+        {
+            "name": "Close Sales Blog",
+            "url": "https://blog.close.com/rss/",
+            "enabled": true
+        },
+        {
+            "name": "Salesforce Blog",
+            "url": "https://www.salesforce.com/blog/feed/",
+            "enabled": true
+        },
+        {
+            "name": "Reddit r/sales",
+            "url": "https://www.reddit.com/r/sales/.rss",
+            "enabled": true
+        },
+        {
+            "name": "Reddit r/AskSales",
+            "url": "https://www.reddit.com/r/asksales/.rss",
+            "enabled": true
+        },
+        {
+            "name": "Reddit r/Entrepreneur",
+            "url": "https://www.reddit.com/r/entrepreneur/.rss",
+            "enabled": true
         }
     ],
     "topPostsPerFeed": 5,

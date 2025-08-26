@@ -1,7 +1,7 @@
 /* Story Card - Enhanced Square Design */
 .story-card {
     width: 100%;
-    aspect-ratio: 1;
+    aspect-ratio: 1.2; /* Balanced aspect ratio */
     max-width: 100vw;
     max-height: 100vw;
     position: relative;
@@ -9,6 +9,47 @@
     margin: 0 auto;
     border-radius: 12px;
 }
+
+/* Slide progress at top */
+.progress-bars {
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    right: 12px;
+    height: 3px;
+    display: flex;
+    gap: 6px;
+    z-index: 3;
+}
+.resume-progress {
+    position: absolute;
+    bottom: 8px;
+    left: 12px;
+    right: 12px;
+    height: 3px;
+    z-index: 3;
+    background: rgba(255,255,255,0.25);
+    border-radius: 2px;
+    overflow: hidden;
+}
+.resume-progress .resume-fill {
+    width: var(--view-progress, 0%);
+    height: 100%;
+    background: #fff; /* always white */
+}
+.progress-segment {
+    flex: 1 1 auto;
+    background: rgba(255, 255, 255, 0.35);
+    border-radius: 2px;
+    overflow: hidden;
+}
+.progress-fill {
+    width: 0%;
+    height: 100%;
+    background: #fff; /* always white */
+}
+
+/* Keep the fill white in both themes for clarity */
 
 /* Card Container */
 .card-container {
@@ -49,15 +90,25 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.1) 40%, rgba(0,0,0,0) 100%);
+    /* Default overlay for contrast on colorful backgrounds */
+    background: linear-gradient(180deg, rgba(0,0,0,0.32) 0%, rgba(0,0,0,0.14) 45%, rgba(0,0,0,0.02) 100%);
     z-index: 1;
+}
+
+/* Theme-specific overlay tuning for readability */
+:root[data-theme="light"] .story-card .card-gradient-overlay {
+    background: linear-gradient(180deg, rgba(0,0,0,0.28) 0%, rgba(0,0,0,0.16) 52%, rgba(0,0,0,0.06) 100%);
+}
+
+:root[data-theme="dark"] .story-card .card-gradient-overlay {
+    background: linear-gradient(180deg, rgba(0,0,0,0.22) 0%, rgba(0,0,0,0.12) 48%, rgba(0,0,0,0.03) 100%);
 }
 
 /* Card Content */
 .card-content {
     width: 100%;
     height: 100%;
-    padding: 1.5rem;
+    padding: 1.75rem; /* Adjusted padding */
     color: white;
     position: relative;
     z-index: 2;
@@ -74,11 +125,11 @@
 }
 
 .card-title {
-    font-size: clamp(1rem, 3.5vw, 1.4rem);
+    font-size: clamp(0.85rem, 3vw, 1.15rem);
     font-weight: 700;
     line-height: 1.3;
     margin: 0 0 0.5rem 0;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.55), 0 1px 2px rgba(0,0,0,0.35);
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
@@ -98,12 +149,24 @@
     font-weight: 600;
 }
 
+:root[data-theme="light"] .card-badge {
+    background: rgba(0, 0, 0, 0.12);
+}
+
+/* Time next to domain on the same row */
+.card-time {
+    display: inline-block;
+    margin-left: 8px;
+    font-size: 0.72rem;
+    opacity: 0.9;
+}
+
 /* Card Body */
 .card-body {
     flex: 1;
-    overflow-y: auto;
+    overflow-y: hidden; /* avoid vertical scroll inside card */
     overflow-x: hidden;
-    padding-right: 0.5rem;
+    padding-right: 0; /* remove asymmetric padding */
     scrollbar-width: thin;
     scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
 }
@@ -123,11 +186,11 @@
 
 /* Text Styles */
 .card-essence {
-    font-size: clamp(0.75rem, 2vw, 0.85rem);
-    line-height: 1.6;
+    font-size: clamp(0.78rem, 2.1vw, 0.9rem);
+    line-height: 1.58;
     margin: 0;
     text-align: justify;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    text-shadow: 0 2px 5px rgba(0,0,0,0.5);
     opacity: 0.95;
     hyphens: auto;
     word-break: break-word;
@@ -143,10 +206,10 @@
 }
 
 .reaction-text {
-    font-size: clamp(0.85rem, 2.8vw, 1rem);
-    line-height: 1.6;
+    font-size: clamp(0.78rem, 2.1vw, 0.9rem); /* unified with essence */
+    line-height: 1.58;
     text-align: justify;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    text-shadow: 0 2px 5px rgba(0,0,0,0.5);
     opacity: 0.95;
     hyphens: auto;
     word-break: break-word;
@@ -208,25 +271,25 @@
     transform: scale(1.5);
 }
 
-/* Enhanced Background Gradients - More variety */
-.story-card[data-bg="gradient-1"] { background: linear-gradient(135deg, #23074d, #cc5333); }
-.story-card[data-bg="gradient-2"] { background: linear-gradient(135deg, #2c3e50, #fd746c); }
-.story-card[data-bg="gradient-3"] { background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); }
+/* Enhanced Background Gradients - Brighter, more modern palette */
+.story-card[data-bg="gradient-1"] { background: linear-gradient(135deg, #6dd5ed, #2193b0); }
+.story-card[data-bg="gradient-2"] { background: linear-gradient(135deg, #ffafbd, #ffc3a0); }
+.story-card[data-bg="gradient-3"] { background: linear-gradient(135deg, #ffdde1, #ee9ca7); }
 .story-card[data-bg="gradient-4"] { background: linear-gradient(135deg, #c33764, #1d2671); }
 .story-card[data-bg="gradient-5"] { background: linear-gradient(135deg, #141e30, #243b55); }
-.story-card[data-bg="gradient-6"] { background: linear-gradient(135deg, #3a1c71, #d76d77, #ffaf7b); }
-.story-card[data-bg="gradient-7"] { background: linear-gradient(135deg, #000000, #434343); }
-.story-card[data-bg="gradient-8"] { background: linear-gradient(135deg, #373b44, #4286f4); }
-.story-card[data-bg="gradient-9"] { background: linear-gradient(135deg, #ba5370, #f4e2d8); }
-.story-card[data-bg="gradient-10"] { background: linear-gradient(135deg, #283c86, #45a247); }
-.story-card[data-bg="gradient-11"] { background: linear-gradient(135deg, #c31432, #240b36); }
-.story-card[data-bg="gradient-12"] { background: linear-gradient(135deg, #16222a, #3a6073); }
-.story-card[data-bg="gradient-13"] { background: linear-gradient(135deg, #304352, #d7d2cc); }
+.story-card[data-bg="gradient-6"] { background: linear-gradient(135deg, #ddd6f3, #faaca8); }
+.story-card[data-bg="gradient-7"] { background: linear-gradient(135deg, #757f9a, #d7dde8); }
+.story-card[data-bg="gradient-8"] { background: linear-gradient(135deg, #4facfe, #00f2fe); }
+.story-card[data-bg="gradient-9"] { background: linear-gradient(135deg, #f093fb, #f5576c); }
+.story-card[data-bg="gradient-10"] { background: linear-gradient(135deg, #43e97b, #38f9d7); }
+.story-card[data-bg="gradient-11"] { background: linear-gradient(135deg, #fa709a, #fee140); }
+.story-card[data-bg="gradient-12"] { background: linear-gradient(135deg, #622774, #c53364); }
+.story-card[data-bg="gradient-13"] { background: linear-gradient(135deg, #764ba2, #667eea); }
 .story-card[data-bg="gradient-14"] { background: linear-gradient(135deg, #4b6cb7, #182848); }
-.story-card[data-bg="gradient-15"] { background: linear-gradient(135deg, #232526, #414345); }
+.story-card[data-bg="gradient-15"] { background: linear-gradient(135deg, #ef473a, #cb2d3e); }
 .story-card[data-bg="gradient-16"] { background: linear-gradient(135deg, #8e9eab, #eef2f3); }
 .story-card[data-bg="gradient-17"] { background: linear-gradient(135deg, #616161, #9bc5c3); }
-.story-card[data-bg="gradient-18"] { background: linear-gradient(135deg, #485563, #29323c); }
+.story-card[data-bg="gradient-18"] { background: linear-gradient(135deg, #ff7e5f, #feb47b); }
 .story-card[data-bg="gradient-19"] { background: linear-gradient(135deg, #de6262, #ffb88c); }
 .story-card[data-bg="gradient-20"] { background: linear-gradient(135deg, #061161, #780206); }
 .story-card[data-bg="gradient-21"] { background: linear-gradient(135deg, #1d2b64, #f8cdda); }
@@ -251,6 +314,7 @@
     background-image: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
     background-size: 20px 20px;
     z-index: 0;
+    opacity: 0.6;
 }
 
 .story-card[data-pattern="lines"]::before {
@@ -268,7 +332,59 @@
         rgba(255,255,255,0.05) 20px
     );
     z-index: 0;
+    opacity: 0.5;
 }
+
+/* Theme-aware pattern contrast */
+:root[data-theme="light"] .story-card[data-pattern="dots"]::before {
+    background-image: radial-gradient(circle, rgba(0,0,0,0.08) 1px, transparent 1px);
+    opacity: 0.55;
+}
+
+:root[data-theme="light"] .story-card[data-pattern="lines"]::before {
+    background-image: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 10px,
+        rgba(0,0,0,0.04) 10px,
+        rgba(0,0,0,0.04) 20px
+    );
+    opacity: 0.45;
+}
+
+/* Gloss effect: subtle diagonal sheen on some cards */
+.story-card[data-effect="gloss"]::after {
+    content: '';
+    position: absolute;
+    top: -20%;
+    left: -20%;
+    width: 140%;
+    height: 60%;
+    background: linear-gradient(120deg, rgba(255,255,255,0.22) 0%, rgba(255,255,255,0.10) 40%, rgba(255,255,255,0.04) 60%, rgba(255,255,255,0.0) 100%);
+    transform: rotate(-8deg);
+    border-radius: 14px;
+    z-index: 0; /* sits under gradient overlay */
+    pointer-events: none;
+}
+
+:root[data-theme="light"] .story-card[data-effect="gloss"]::after {
+    background: linear-gradient(120deg, rgba(255,255,255,0.30) 0%, rgba(255,255,255,0.16) 40%, rgba(255,255,255,0.06) 60%, rgba(255,255,255,0.0) 100%);
+}
+
+/* Vivid Gradient Palette (used via data-color), same for both themes */
+.story-card[data-color="color-1"]  { background: linear-gradient(135deg, #ff6a00, #ee0979); }
+.story-card[data-color="color-2"]  { background: linear-gradient(135deg, #36d1dc, #5b86e5); }
+.story-card[data-color="color-3"]  { background: linear-gradient(135deg, #ff512f, #f09819); }
+.story-card[data-color="color-4"]  { background: linear-gradient(135deg, #7f00ff, #e100ff); }
+.story-card[data-color="color-5"]  { background: linear-gradient(135deg, #00b09b, #96c93d); }
+.story-card[data-color="color-6"]  { background: linear-gradient(135deg, #30cfd0, #330867); }
+.story-card[data-color="color-7"]  { background: linear-gradient(135deg, #fc466b, #3f5efb); }
+.story-card[data-color="color-8"]  { background: linear-gradient(135deg, #f7971e, #ffd200); }
+.story-card[data-color="color-9"]  { background: linear-gradient(135deg, #00c6ff, #0072ff); }
+.story-card[data-color="color-10"] { background: linear-gradient(135deg, #f857a6, #ff5858); }
+.story-card[data-color="color-11"] { background: linear-gradient(135deg, #a8ff78, #78ffd6); }
+.story-card[data-color="color-12"] { background: linear-gradient(135deg, #fbd72b, #f9484a); }
+
 
 /* Mobile Optimizations */
 @media (max-width: 768px) {
@@ -280,14 +396,9 @@
         padding: 1.25rem;
     }
     
-    .card-title {
-        font-size: clamp(0.95rem, 4vw, 1.25rem);
-    }
+    .card-title { font-size: clamp(0.82rem, 3.4vw, 1.1rem); }
     
-    .card-essence,
-    .reaction-text {
-        font-size: clamp(0.8rem, 3.2vw, 0.95rem);
-    }
+    .card-essence, .reaction-text { font-size: clamp(0.76rem, 2.8vw, 0.88rem); }
     
     .card-badge {
         font-size: 0.65rem;

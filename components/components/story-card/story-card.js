@@ -30,8 +30,8 @@ export class StoryCard {
     }
 
     applyDynamicGradient() {
-        // Use our new natural gradient classes for better visual appeal
-        const totalGradients = 30; // We have 30 beautiful natural gradients defined
+        // Use vibrant gradient classes with visual effects
+        const totalGradients = 30; // We have 30 vibrant gradients defined
         const id = (this.post && this.post.id) ? String(this.post.id) : String(this.storyIndex);
         
         // Generate a hash from the post ID for consistent gradient assignment
@@ -46,11 +46,24 @@ export class StoryCard {
         // Apply the gradient class
         this.element.setAttribute('data-bg', `gradient-${gradientNumber}`);
         
-        // Optionally add a subtle pattern overlay for variety (10% chance)
-        if (Math.abs(hash) % 10 === 0) {
-            this.element.setAttribute('data-pattern', 'dots');
-        } else if (Math.abs(hash) % 10 === 1) {
-            this.element.setAttribute('data-pattern', 'lines');
+        // Apply unique visual effects based on gradient number
+        const effects = ['bubbles', 'sparkles', 'waves', 'pulse'];
+        const patterns = ['dots', 'grid', 'diagonal'];
+        
+        // 40% chance for a visual effect
+        if (gradientNumber % 5 <= 1) {
+            const effectIndex = gradientNumber % effects.length;
+            this.element.setAttribute('data-effect', effects[effectIndex]);
+        }
+        // 30% chance for a pattern overlay
+        else if (gradientNumber % 10 <= 2) {
+            const patternIndex = gradientNumber % patterns.length;
+            this.element.setAttribute('data-pattern', patterns[patternIndex]);
+        }
+        
+        // Mark first card for special 'news' badge animation
+        if (this.storyIndex === 0) {
+            this.element.classList.add('first-card');
         }
     }
 

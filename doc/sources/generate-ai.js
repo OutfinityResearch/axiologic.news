@@ -96,27 +96,43 @@ const AI_CONFIG = {
 // Get the appropriate API key based on provider
 function getApiKey() {
     const provider = AI_CONFIG.provider.toLowerCase();
-    
-    // First check environment variables
-    let envKey = '';
-    if (provider === 'mistral') {
-        envKey = process.env.MISTRAL_API_KEY || process.env.AI_API_KEY || '';
-    } else if (provider === 'gemini') {
-        envKey = process.env.GEMINI_API_KEY || process.env.AI_API_KEY || '';
-    } else if (provider === 'claude' || provider === 'anthropic') {
-        envKey = process.env.CLAUDE_API_KEY || process.env.ANTHROPIC_API_KEY || process.env.AI_API_KEY || '';
-    } else if (provider === 'openai') {
-        envKey = process.env.OPENAI_API_KEY || process.env.AI_API_KEY || '';
-    } else {
-        envKey = process.env.AI_API_KEY || '';
+
+    // Define provider-specific environment variables
+    const providerEnvVars = {
+        mistral: ['MISTRAL_API_KEY'],
+        gemini: ['GEMINI_API_KEY'],
+        claude: ['CLAUDE_API_KEY', 'ANTHROPIC_API_KEY'],
+        anthropic: ['CLAUDE_API_KEY', 'ANTHROPIC_API_KEY'],
+        openai: ['OPENAI_API_KEY'],
+        groq: ['GROQ_API_KEY']
+    };
+
+    // 1. Check provider-specific environment variables first
+    if (providerEnvVars[provider]) {
+        for (const key of providerEnvVars[provider]) {
+            if (process.env[key]) {
+                return process.env[key];
+            }
+        }
     }
-    
-    // If no env key, use from global config
-    if (!envKey && GLOBAL_CONFIG.apiKeys) {
-        return GLOBAL_CONFIG.apiKeys[provider] || '';
+
+    // 2. Check generic AI_API_KEY environment variable
+    if (process.env.AI_API_KEY) {
+        return process.env.AI_API_KEY;
     }
-    
-    return envKey;
+
+    // 3. Check global config for placeholder or literal key
+    if (GLOBAL_CONFIG.apiKeys && GLOBAL_CONFIG.apiKeys[provider]) {
+        const configValue = GLOBAL_CONFIG.apiKeys[provider];
+        if (configValue.startsWith('$')) {
+            const envVarName = configValue.substring(1);
+            return process.env[envVarName] || '';
+        }
+        // It's a literal key from the config
+        return configValue;
+    }
+
+    return ''; // No key found
 }
 
 // Get the appropriate model based on provider
@@ -176,7 +192,7 @@ class AIService {
     async analyze(prompt, maxTokens = null) {
         // Use global config or default
         if (!maxTokens) {
-            maxTokens = GLOBAL_CONFIG.contentSettings?.maxTokensPerRequest || 500;
+            maxTokens = GLOBAL_CONFIG.contentSettings?.maxTokensPerRequest || 800;
         }
         const provider = AI_CONFIG.provider.toLowerCase();
         
@@ -415,10 +431,10 @@ class ContentFetcher {
 
         // Extract article content (common selectors)
         const articleSelectors = [
-            /<article[^>]*>([\s\S]*?)<\/article>/gi,
-            /<main[^>]*>([\s\S]*?)<\/main>/gi,
-            /<div[^>]*class="[^"]*content[^"]*"[^>]*>([\s\S]*?)<\/div>/gi,
-            /<div[^>]*class="[^"]*article[^"]*"[^>]*>([\s\S]*?)<\/div>/gi
+            /<article[^>]*>([\n\s\S]*?)<\/article>/gi,
+            /<main[^>]*>([\n\s\S]*?)<\/main>/gi,
+            /<div[^>]*class="[^"]*content[^"]*"[^>]*>([\n\s\S]*?)<\/div>/gi,
+            /<div[^>]*class="[^"]*article[^"]*"[^>]*>([\n\s\S]*?)<\/div>/gi
         ];
 
         for (const selector of articleSelectors) {
@@ -431,8 +447,8 @@ class ContentFetcher {
 
         // Extract comments if present
         const commentSelectors = [
-            /<div[^>]*class="[^"]*comment[^"]*"[^>]*>([\s\S]*?)<\/div>/gi,
-            /<section[^>]*class="[^"]*comments[^"]*"[^>]*>([\s\S]*?)<\/section>/gi
+            /<div[^>]*class="[^"]*comment[^"]*"[^>]*>([\n\s\S]*?)<\/div>/gi,
+            /<section[^>]*class="[^"]*comments[^"]*"[^>]*>([\n\s\S]*?)<\/section>/gi
         ];
 
         for (const selector of commentSelectors) {
@@ -440,13 +456,13 @@ class ContentFetcher {
             for (const match of matches) {
                 const comment = this.cleanText(match[0]);
                 if (comment.length > 20) {
-                    content.comments.push(comment.substring(0, 200));
+                    content.comments.push(comment.substring(0, 1000));
                 }
             }
         }
 
         // Extract metadata
-        const titleMatch = html.match(/<title[^>]*>(.*?)<\/title>/i);
+        const titleMatch = html.match(/<title[^>]*>([\s\S]*?)<\/title>/i);
         if (titleMatch) content.metadata.title = this.cleanText(titleMatch[1]);
 
         const authorMatch = html.match(/<meta[^>]*name="author"[^>]*content="([^"]*)"[^>]*>/i);
@@ -456,74 +472,219 @@ class ContentFetcher {
     }
 
     cleanText(html) {
-        return html
-            .replace(/<[^>]+>/g, ' ')
-            .replace(/\s+/g, ' ')
+        if (!html) return '';
+        
+        // Remove CSS class patterns common in Reddit and other feeds
+        html = html.replace(/\[&[^\]]+\]/g, '');
+        html = html.replace(/class="[^"]*"/g, '');
+        html = html.replace(/style="[^"]*"/g, '');
+        
+        // Remove script and style content
+        html = html.replace(/<script[^>]*>[\s\S]*?<\/script>/gi, '');
+        html = html.replace(/<style[^>]*>[\s\S]*?<\/style>/gi, '');
+        
+        // Convert breaks and paragraphs to spaces
+        html = html.replace(/<br\s*\/?>/gi, ' ');
+        html = html.replace(/<\/p>/gi, ' ');
+        html = html.replace(/<\/div>/gi, ' ');
+        
+        // Remove all HTML tags
+        html = html.replace(/<[^>]+>/g, ' ');
+        
+        // Comprehensive HTML entity decoding
+        html = html
             .replace(/&nbsp;/g, ' ')
+            .replace(/&amp;/g, '&')
             .replace(/&lt;/g, '<')
             .replace(/&gt;/g, '>')
-            .replace(/&amp;/g, '&')
             .replace(/&quot;/g, '"')
             .replace(/&#39;/g, "'")
+            .replace(/&apos;/g, "'")
+            .replace(/&#x27;/g, "'")
+            .replace(/&#x2F;/g, '/')
+            .replace(/&#([0-9]+);/g, (match, num) => String.fromCharCode(num))
+            .replace(/&#x([0-9a-fA-F]+);/g, (match, hex) => String.fromCharCode(parseInt(hex, 16)))
+            .replace(/&mdash;/g, '—')
+            .replace(/&ndash;/g, '–')
+            .replace(/&hellip;/g, '...')
+            .replace(/&bull;/g, '•');
+        
+        // Clean whitespace
+        html = html
+            .replace(/\s+/g, ' ')
             .trim()
-            .substring(0, 2000); // Limit to 2000 chars
+            .substring(0, 20000); // Allow up to 20k chars for full content
+        
+        return html;
     }
 }
 
-// RSS fetcher and parser
-async function fetchRSS(url) {
+// RSS fetcher and parser with timeout and redirect handling
+async function fetchRSS(url, timeout = 15000) {
     return new Promise((resolve, reject) => {
-        const parsedUrl = new URL(url);
-        const protocol = parsedUrl.protocol === 'https:' ? https : http;
+        try {
+            const parsedUrl = new URL(url);
+            const protocol = parsedUrl.protocol === 'https:' ? https : http;
+            
+            const options = {
+                headers: {
+                    'User-Agent': 'Mozilla/5.0 (compatible; Axiologic RSS Reader/2.0)',
+                    'Accept': 'application/rss+xml, application/xml, text/xml, */*'
+                },
+                timeout: timeout
+            };
 
-        protocol.get(url, {
-            headers: {
-                'User-Agent': 'Mozilla/5.0 (compatible; RSS Reader/2.0)'
-            }
-        }, (res) => {
-            let data = '';
-            res.on('data', chunk => data += chunk);
-            res.on('end', () => resolve(data));
-        }).on('error', reject);
+            const req = protocol.get(url, options, (res) => {
+                // Handle redirects
+                if (res.statusCode === 301 || res.statusCode === 302 || res.statusCode === 307) {
+                    const redirectUrl = res.headers.location;
+                    if (redirectUrl) {
+                        console.log(`    Following redirect to: ${redirectUrl}`);
+                        return fetchRSS(redirectUrl, timeout).then(resolve).catch(reject);
+                    }
+                }
+                
+                if (res.statusCode !== 200) {
+                    reject(new Error(`HTTP ${res.statusCode}: ${res.statusMessage}`));
+                    return;
+                }
+                
+                let data = '';
+                res.on('data', chunk => data += chunk);
+                res.on('end', () => {
+                    if (data.length === 0) {
+                        reject(new Error('Empty RSS feed'));
+                    } else {
+                        resolve(data);
+                    }
+                });
+            });
+            
+            req.on('timeout', () => {
+                req.abort();
+                reject(new Error(`RSS fetch timeout after ${timeout}ms`));
+            });
+            
+            req.on('error', (err) => {
+                reject(new Error(`Network error: ${err.message}`));
+            });
+        } catch (err) {
+            reject(new Error(`Invalid URL or fetch error: ${err.message}`));
+        }
     });
 }
 
 function parseRSSItem(item) {
+    const cleanHtmlText = (text) => {
+        if (!text) return '';
+        
+        // Remove CDATA sections
+        text = text.replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1');
+        
+        // Remove CSS class attributes (common in Reddit feeds)
+        text = text.replace(/\[&[^\]]+\]/g, '');
+        text = text.replace(/class="[^"]*"/g, '');
+        text = text.replace(/style="[^"]*"/g, '');
+        
+        // Remove script and style tags with their content
+        text = text.replace(/<script[^>]*>[\s\S]*?<\/script>/gi, '');
+        text = text.replace(/<style[^>]*>[\s\S]*?<\/style>/gi, '');
+        
+        // Convert common HTML tags to spaces for readability
+        text = text.replace(/<br\s*\/?>/gi, ' ');
+        text = text.replace(/<\/p>/gi, ' ');
+        text = text.replace(/<\/div>/gi, ' ');
+        text = text.replace(/<\/li>/gi, ' ');
+        
+        // Remove all remaining HTML tags
+        text = text.replace(/<[^>]+>/g, ' ');
+        
+        // Decode HTML entities (comprehensive list)
+        text = text
+            .replace(/&nbsp;/g, ' ')
+            .replace(/&amp;/g, '&')
+            .replace(/&lt;/g, '<')
+            .replace(/&gt;/g, '>')
+            .replace(/&quot;/g, '"')
+            .replace(/&#39;/g, "'")
+            .replace(/&apos;/g, "'")
+            .replace(/&#x27;/g, "'")
+            .replace(/&#x2F;/g, '/')
+            .replace(/&#([0-9]+);/g, (match, num) => String.fromCharCode(num))
+            .replace(/&#x([0-9a-fA-F]+);/g, (match, hex) => String.fromCharCode(parseInt(hex, 16)))
+            .replace(/&mdash;/g, '—')
+            .replace(/&ndash;/g, '–')
+            .replace(/&hellip;/g, '...')
+            .replace(/&bull;/g, '•')
+            .replace(/&copy;/g, '©')
+            .replace(/&reg;/g, '®')
+            .replace(/&trade;/g, '™');
+        
+        // Clean up whitespace
+        text = text
+            .replace(/\s+/g, ' ')
+            .replace(/\n\s*\n/g, '\n')
+            .trim();
+        
+        return text;
+    };
+    
     const getTextContent = (tag) => {
-        const match = item.match(new RegExp(`<${tag}[^>]*>([\\s\\S]*?)<\\/${tag}>`, 'i'));
-        if (match && match[1]) {
-            return match[1]
-                .replace(/<!\[CDATA\[(.*?)\]\]>/gs, '$1')
-                .replace(/<[^>]+>/g, '')
-                .replace(/&lt;/g, '<')
-                .replace(/&gt;/g, '>')
-                .replace(/&amp;/g, '&')
-                .replace(/&quot;/g, '"')
-                .replace(/&#39;/g, "'")
-                .trim();
+        // Try multiple tag patterns for better compatibility
+        const patterns = [
+            new RegExp(`<${tag}[^>]*><!\\[CDATA\\[([\\s\\S]*?)\\]\\]><\\/${tag}>`, 'i'),
+            new RegExp(`<${tag}[^>]*>([\\s\\S]*?)<\\/${tag}>`, 'i')
+        ];
+        
+        for (const pattern of patterns) {
+            const match = item.match(pattern);
+            if (match && match[1]) {
+                return cleanHtmlText(match[1]);
+            }
         }
+        
+        // For link tags, also try href attribute (Atom feeds)
+        if (tag === 'link') {
+            const hrefMatch = item.match(/<link[^>]*href="([^"]+)"/i);
+            if (hrefMatch && hrefMatch[1]) {
+                return hrefMatch[1].trim();
+            }
+        }
+        
         return '';
     };
 
     return {
         title: getTextContent('title'),
-        description: getTextContent('description') || getTextContent('summary'),
-        link: getTextContent('link'),
-        pubDate: getTextContent('pubDate') || getTextContent('published'),
+        description: getTextContent('description') || getTextContent('summary') || getTextContent('content'),
+        link: getTextContent('link') || getTextContent('guid'),
+        pubDate: getTextContent('pubDate') || getTextContent('published') || getTextContent('updated'),
         category: getTextContent('category'),
-        author: getTextContent('author') || getTextContent('dc:creator')
+        author: getTextContent('author') || getTextContent('dc:creator') || getTextContent('creator')
     };
 }
 
 function parseRSS(xml) {
     const items = [];
+    
+    // Support both RSS and Atom feeds
     const itemMatches = xml.matchAll(/<item[^>]*>[\s\S]*?<\/item>|<entry[^>]*>[\s\S]*?<\/entry>/gi);
 
     for (const match of itemMatches) {
-        const item = parseRSSItem(match[0]);
-        if (item.title) {
-            item.pubDate = item.pubDate ? new Date(item.pubDate) : new Date();
-            items.push(item);
+        try {
+            const item = parseRSSItem(match[0]);
+            if (item.title && item.link) {
+                // Parse date more robustly
+                if (item.pubDate) {
+                    const parsedDate = new Date(item.pubDate);
+                    item.pubDate = isNaN(parsedDate.getTime()) ? new Date() : parsedDate;
+                } else {
+                    item.pubDate = new Date();
+                }
+                items.push(item);
+            }
+        } catch (err) {
+            console.log(`    Warning: Failed to parse RSS item: ${err.message}`);
         }
     }
 
@@ -531,7 +692,9 @@ function parseRSS(xml) {
 }
 
 function generatePostId(title, link) {
-    return crypto.createHash('md5').update(title + link).digest('hex');
+    // Use just the link URL for ID generation to ensure uniqueness
+    // This prevents duplicate posts even if title changes
+    return crypto.createHash('md5').update(link).digest('hex');
 }
 
 // Main story processor
@@ -558,7 +721,9 @@ class StoryProcessor {
             const item = itemsToProcess[i];
             const postId = generatePostId(item.title, item.link);
             
+            // Double-check ID doesn't exist
             if (existingIds.has(postId)) {
+                console.log(`    Skipping duplicate: ${item.title.substring(0, 30)}...`);
                 continue;
             }
 
@@ -640,26 +805,33 @@ Return only the numbers (comma-separated) of the selected stories.`;
             title: item.title,
             source: item.link,
             generatedAt: new Date().toISOString(),
+            publishedAt: (item.pubDate && item.pubDate.toISOString) ? item.pubDate.toISOString() : undefined,
             feedName: feed.name,
             author: item.author || feed.name,
             category: item.category || 'General'
         };
 
-        // Generate essence using AI
+        // Generate essence using AI or fallback
         const essence = await this.generateEssence(item, fullContent);
-        if (!essence) {
-            console.log(`      Skipping post due to AI unavailability`);
-            return null; // Skip this post if AI is not available
+        if (!essence || essence.trim().length < 10) {
+            console.log(`      Warning: Empty essence, using description`);
+            post.essence = item.description || 'Content not available';
+        } else {
+            post.essence = essence;
         }
-        post.essence = essence;
         
-        // Generate perspectives/reactions using AI
+        // Generate perspectives/reactions using AI or fallback
         const reactions = await this.generatePerspectives(item, feed, fullContent);
-        if (!reactions) {
-            console.log(`      Skipping post due to AI unavailability`);
-            return null; // Skip this post if AI is not available
+        if (!reactions || reactions.length === 0) {
+            console.log(`      Warning: No reactions generated, using defaults`);
+            post.reactions = [
+                `Article from ${feed.name}`,
+                `Check the source for more details`,
+                `Stay updated with the latest news`
+            ];
+        } else {
+            post.reactions = reactions;
         }
-        post.reactions = reactions;
         
         // Add promo banner from global config or use feed default
         const globalBanner = getPromoBanner(this.config.category || 'default');
@@ -677,26 +849,32 @@ Return only the numbers (comma-separated) of the selected stories.`;
 
     async generateEssence(item, fullContent) {
         if (!this.config.essencePrompt) {
-            // Use description or extract from content
-            if (fullContent && fullContent.text) {
-                return fullContent.text.substring(0, 500);
+            // Use description or extract from content without truncation
+            if (fullContent && fullContent.text && fullContent.text.trim()) {
+                return fullContent.text;
             }
-            return item.description ? item.description.substring(0, 500) : '';
+            if (item.description && item.description.trim()) {
+                // Description is already cleaned by parseRSSItem
+                return item.description;
+            }
+            return 'No content available';
         }
 
         const content = fullContent?.text || item.description || '';
         const prompt = `${this.config.essencePrompt}
 
 Title: ${item.title}
-Content: ${content.substring(0, 1000)}
+Content: ${content.substring(0, 20000)}
 
-Write a compelling essence/summary in plain text only - no markdown, no asterisks, no formatting (max 500 chars):`;
+Write a concise, compelling essence/summary (approximately 400-600 words) in plain text only — no markdown, no asterisks, no quotes. Keep it readable and informative. Focus on the key points and implications.`;
 
         try {
-            const response = await this.ai.analyze(prompt, 150);
+            const response = await this.ai.analyze(prompt, 800); // Allow more tokens for fuller content
             if (!response || response === null) {
-                console.log(`      AI not available - skipping essence generation`);
-                return null;
+                console.log(`      AI not available - using full cleaned description`);
+                // Use full cleaned description when AI is not available
+                const fallbackText = fullContent?.text || item.description || '';
+                return fallbackText || 'No content available';
             }
             // Clean and validate the response
             let cleaned = response.trim()
@@ -707,7 +885,7 @@ Write a compelling essence/summary in plain text only - no markdown, no asterisk
                 .trim();
             
             if (cleaned && cleaned.length > 20) {
-                return cleaned.substring(0, 500);
+                return cleaned; // Do not truncate; UI handles layout
             }
             return null;
         } catch (error) {
@@ -718,10 +896,11 @@ Write a compelling essence/summary in plain text only - no markdown, no asterisk
 
     async generatePerspectives(item, feed, fullContent) {
         if (!this.config.perspectivesPrompt) {
+            // Default perspectives when no AI prompt configured
             return [
-                `Key insights from ${feed.name}`,
-                `Why this matters to our readers`,
-                `Implications and future outlook`
+                `Latest update from ${feed.name}`,
+                `Read more at the source for full details`,
+                `Stay informed with curated technology news`
             ];
         }
 
@@ -732,17 +911,23 @@ Write a compelling essence/summary in plain text only - no markdown, no asterisk
 
 Title: ${item.title}
 Source: ${feed.name}
-Content: ${content.substring(0, 800)}
-${comments ? `\nReader Comments:\n${comments.substring(0, 400)}` : ''}
+Content: ${content.substring(0, 20000)}
+${comments ? `
+Reader Comments:\n${comments.substring(0, 5000)}` : ''}
 
 Generate 3 unique perspectives/reactions. Use plain text only - no markdown, no asterisks, no quotes, no formatting. One clear sentence per perspective:`;
 
         try {
-            const response = await this.ai.analyze(prompt, 300);
+            const response = await this.ai.analyze(prompt, 500);
             
             if (!response || response === null) {
-                console.log(`      AI not available - skipping perspectives generation`);
-                return null;
+                console.log(`      AI not available - using default perspectives`);
+                // Fallback perspectives when AI is not available
+                return [
+                    `Article from ${feed.name}: ${item.title.substring(0, 100)}`,
+                    `Published on ${item.pubDate ? new Date(item.pubDate).toLocaleDateString() : 'recently'}`,
+                    `Visit the source for complete information`
+                ];
             }
             
             // Parse response into 3 perspectives
@@ -755,7 +940,7 @@ Generate 3 unique perspectives/reactions. Use plain text only - no markdown, no 
             // Extract up to 3 meaningful perspectives
             for (let i = 0; i < Math.min(3, lines.length); i++) {
                 let cleaned = lines[i]
-                    .replace(/^[\d\-\*\•]+\.?\s*/, '') // Remove numbered lists and bullet points
+                    .replace(/^[\d\-\*•]+\.?\s*/, '') // Remove numbered lists and bullet points
                     .replace(/\*\*/g, '') // Remove all markdown bold formatting
                     .replace(/\*/g, '') // Remove all markdown italic formatting
                     .replace(/^["']/g, '') // Remove leading quotes
@@ -786,7 +971,7 @@ Generate 3 unique perspectives/reactions. Use plain text only - no markdown, no 
                                 .replace(/\*/g, '')
                                 .replace(/^["']/g, '')
                                 .replace(/["']$/g, '')
-                                .substring(0, 200);
+                                ; // No truncation for perspectives
                             
                             perspectives.push(cleaned);
                         } else {
@@ -809,47 +994,78 @@ Generate 3 unique perspectives/reactions. Use plain text only - no markdown, no 
     }
 }
 
-// History manager to track processed stories
-class HistoryManager {
-    constructor(historyPath) {
-        this.historyPath = historyPath;
-        this.history = new Map();
+// Post manager using posts.json as the source of truth
+class PostManager {
+    constructor(postsPath, historyDays = 30) {
+        this.postsPath = postsPath;
+        this.historyDays = historyDays;
+        this.posts = [];
+        this.postIds = new Set();
     }
 
     async load() {
         try {
-            const data = await fs.readFile(this.historyPath, 'utf8');
-            const entries = JSON.parse(data);
-            this.history = new Map(entries);
+            const data = await fs.readFile(this.postsPath, 'utf8');
+            this.posts = JSON.parse(data);
+            // Clean up old posts on load
+            this.posts = this.cleanupOldPosts(this.posts);
+            // Build ID set for fast lookups
+            this.postIds = new Set(this.posts.map(p => p.id));
         } catch {
-            this.history = new Map();
+            this.posts = [];
+            this.postIds = new Set();
         }
     }
 
-    async save() {
-        const entries = Array.from(this.history.entries());
-        await fs.writeFile(this.historyPath, JSON.stringify(entries, null, 2));
-    }
-
-    hasProcessed(id, withinDays = 30) {
-        const timestamp = this.history.get(id);
-        if (!timestamp) return false;
+    async save(newPosts) {
+        // Merge new posts with existing ones
+        const allPosts = [...newPosts, ...this.posts];
         
-        const daysSince = (Date.now() - timestamp) / (1000 * 60 * 60 * 24);
-        return daysSince < withinDays;
-    }
-
-    markProcessed(id) {
-        this.history.set(id, Date.now());
-    }
-
-    cleanup(olderThanDays = 30) {
-        const cutoff = Date.now() - (olderThanDays * 24 * 60 * 60 * 1000);
-        for (const [id, timestamp] of this.history.entries()) {
-            if (timestamp < cutoff) {
-                this.history.delete(id);
+        // Remove duplicates by ID (keep newest version)
+        const uniqueMap = new Map();
+        for (const post of allPosts) {
+            if (!uniqueMap.has(post.id) || this.isNewer(post, uniqueMap.get(post.id))) {
+                uniqueMap.set(post.id, post);
             }
         }
+        
+        // Convert back to array and clean old posts
+        this.posts = this.cleanupOldPosts(Array.from(uniqueMap.values()));
+        
+        // Sort by date (newest first)
+        this.posts.sort((a, b) => {
+            const dateA = new Date(a.publishedAt || a.generatedAt || 0).getTime();
+            const dateB = new Date(b.publishedAt || b.generatedAt || 0).getTime();
+            return dateB - dateA;
+        });
+        
+        // Save to file
+        await fs.writeFile(this.postsPath, JSON.stringify(this.posts, null, 2));
+        
+        // Update ID set
+        this.postIds = new Set(this.posts.map(p => p.id));
+    }
+
+    cleanupOldPosts(posts) {
+        const cutoff = Date.now() - (this.historyDays * 24 * 60 * 60 * 1000);
+        return posts.filter(post => {
+            const date = new Date(post.publishedAt || post.generatedAt || 0).getTime();
+            return !isNaN(date) && date >= cutoff;
+        });
+    }
+
+    isNewer(postA, postB) {
+        const dateA = new Date(postA.publishedAt || postA.generatedAt || 0).getTime();
+        const dateB = new Date(postB.publishedAt || postB.generatedAt || 0).getTime();
+        return dateA > dateB;
+    }
+
+    hasPost(id) {
+        return this.postIds.has(id);
+    }
+
+    getExistingIds() {
+        return this.postIds;
     }
 }
 
@@ -912,26 +1128,22 @@ async function main() {
     for (const folder of folders) {
         const configPath = path.join(folder, 'config.json');
         const postsPath = path.join(folder, 'posts.json');
-        const historyPath = path.join(folder, '.history.json');
+        // No .history.json anymore — rely only on posts.json
         
         console.log(`\n=== ${path.basename(folder).toUpperCase()} ===`);
         
         try {
-            // Load configuration and history
+            // Load configuration
             const config = await loadEnhancedConfig(configPath);
             config.category = path.basename(folder); // Add category from folder name
             
-            const history = new HistoryManager(historyPath);
-            await history.load();
+            // Initialize post manager
+            const historyDays = config.historyDays || GLOBAL_CONFIG.contentSettings?.historyDays || 30;
+            const postManager = new PostManager(postsPath, historyDays);
+            await postManager.load();
             
-            // Load existing posts
-            let existingPosts = [];
-            try {
-                const data = await fs.readFile(postsPath, 'utf8');
-                existingPosts = JSON.parse(data);
-            } catch {}
-            
-            const existingIds = new Set(existingPosts.map(p => p.id));
+            console.log(`  Loaded ${postManager.posts.length} existing posts`);
+            const existingIds = postManager.getExistingIds();
             
             // Create processor
             const processor = new StoryProcessor(config, aiService, contentFetcher);
@@ -947,24 +1159,46 @@ async function main() {
                 console.log(`\nProcessing ${feed.name}...`);
                 
                 try {
-                    // Fetch RSS
-                    const rssData = await fetchRSS(feed.url);
-                    const items = parseRSS(rssData);
+                    // Fetch RSS with timeout
+                    const fetchTimeout = GLOBAL_CONFIG.contentSettings?.contentFetchTimeout || 15000;
+                    console.log(`  Fetching RSS from: ${feed.url}`);
                     
-                    if (items.length === 0) {
-                        console.log(`  No items found`);
+                    const rssData = await fetchRSS(feed.url, fetchTimeout);
+                    
+                    if (!rssData || rssData.trim().length === 0) {
+                        console.log(`  Empty RSS response`);
                         continue;
                     }
                     
-                    console.log(`  Found ${items.length} items`);
+                    const items = parseRSS(rssData);
                     
-                    // Filter out recently processed items
-                    const unprocessedItems = items.filter(item => {
+                    if (items.length === 0) {
+                        console.log(`  No valid items found in RSS`);
+                        console.log(`  RSS data sample: ${rssData.substring(0, 200)}...`);
+                        continue;
+                    }
+                    
+                    console.log(`  Found ${items.length} RSS items`);
+                    
+                    // Filter out items that already exist in posts.json
+                    const unprocessedItems = [];
+                    let skippedCount = 0;
+                    
+                    for (const item of items) {
                         const id = generatePostId(item.title, item.link);
-                        return !history.hasProcessed(id, config.historyDays);
-                    });
+                        if (!existingIds.has(id)) {
+                            unprocessedItems.push(item);
+                        } else {
+                            skippedCount++;
+                        }
+                    }
                     
-                    console.log(`  ${unprocessedItems.length} not recently processed`);
+                    console.log(`  ${skippedCount} already in posts.json, ${unprocessedItems.length} new items to process`);
+                    
+                    if (unprocessedItems.length === 0) {
+                        console.log(`  All items already processed`);
+                        continue;
+                    }
                     
                     // Process stories with AI
                     const feedPosts = await processor.processStories(
@@ -973,9 +1207,8 @@ async function main() {
                         existingIds
                     );
                     
-                    // Mark as processed
+                    // Collect new posts
                     for (const post of feedPosts) {
-                        history.markProcessed(post.id);
                         newPosts.push(post);
                     }
                     
@@ -989,17 +1222,16 @@ async function main() {
             
             // Save results
             if (newPosts.length > 0) {
-                const allPosts = [...newPosts, ...existingPosts];
-                await fs.writeFile(postsPath, JSON.stringify(allPosts, null, 2));
+                await postManager.save(newPosts);
                 console.log(`\n✓ Saved ${newPosts.length} new posts to ${path.basename(folder)}/posts.json`);
+                console.log(`  Total posts after cleanup: ${postManager.posts.length}`);
                 totalNew += newPosts.length;
             } else {
+                // Even if no new posts, save to cleanup old ones
+                await postManager.save([]);
                 console.log(`\n✓ No new posts for ${path.basename(folder)}`);
+                console.log(`  Posts after cleanup: ${postManager.posts.length}`);
             }
-            
-            // Cleanup old history and save
-            history.cleanup(config.historyDays * 2);
-            await history.save();
             
         } catch (error) {
             console.error(`Error processing ${path.basename(folder)}: ${error.message}`);
@@ -1019,4 +1251,4 @@ if (require.main === module) {
     });
 }
 
-module.exports = { AIService, ContentFetcher, StoryProcessor, HistoryManager };
+module.exports = { AIService, ContentFetcher, StoryProcessor, PostManager };

@@ -14,6 +14,26 @@
             "name": "VentureBeat",
             "url": "https://venturebeat.com/feed/",
             "enabled": true
+        },
+        {
+            "name": "Crunchbase News",
+            "url": "https://news.crunchbase.com/feed/",
+            "enabled": true
+        },
+        {
+            "name": "Sifted",
+            "url": "https://sifted.eu/feed/",
+            "enabled": true
+        },
+        {
+            "name": "Tech.eu",
+            "url": "https://tech.eu/feed/",
+            "enabled": true
+        },
+        {
+            "name": "Reddit r/startups",
+            "url": "https://www.reddit.com/r/startups/.rss",
+            "enabled": true
         }
     ],
     "topPostsPerFeed": 5,

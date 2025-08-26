@@ -63,7 +63,44 @@ export class NewsFeedPage {
             index === self.findIndex((p) => p.id === post.id)
         );
 
-        this.posts = uniquePosts;
+        // Get viewing history data
+        const progressMap = await window.LocalStorage.get('postProgress') || {};
+        const centeredMap = await window.LocalStorage.get('postCenteredHistory') || {};
+        
+        // Helper to get the publication/generation date
+        const getDate = (p) => {
+            // Try multiple date fields
+            const dateStr = p.publishedAt || p.generatedAt || p.pubDate || p.date || p.createdAt;
+            if (dateStr) {
+                const date = new Date(dateStr);
+                return isNaN(date.getTime()) ? 0 : date.getTime();
+            }
+            return 0;
+        };
+        
+        // Sort by multiple criteria:
+        // 1. Never centered (never reached viewport center)
+        // 2. Unseen (no progress)
+        // 3. Partial (0 < progress < 1)
+        // 4. Complete (progress = 1)
+        // Within each group, sort by date (newest first)
+        const priorityRank = (p) => {
+            const hasBeenCentered = centeredMap[p.id]?.centered === true;
+            const progress = progressMap[p.id]?.progress;
+            
+            if (!hasBeenCentered) return 0; // Never centered - highest priority
+            if (progress === undefined || progress === 0) return 1; // Unseen
+            if (progress > 0 && progress < 1) return 2; // Partial
+            return 3; // Complete
+        };
+        
+        this.posts = uniquePosts.sort((a, b) => {
+            const ra = priorityRank(a);
+            const rb = priorityRank(b);
+            if (ra !== rb) return ra - rb;
+            // Within same priority group, sort by date (newest first)
+            return getDate(b) - getDate(a);
+        });
 
         if (this.posts.length === 0) {
             // This should now only happen if both local storage and JSON are empty
@@ -83,6 +120,11 @@ export class NewsFeedPage {
         if (placeholder) placeholder.remove();
 
         container.innerHTML = '';
+        // Add a top spacer to help centering the first card
+        const topSpacer = document.createElement('div');
+        topSpacer.className = 'top-spacer';
+        topSpacer.innerHTML = '<div class="spacer-title">News</div>';
+        container.appendChild(topSpacer);
         this.storyCards = [];
 
         // Create story card elements for all posts (vertical carousel)
@@ -153,7 +195,7 @@ export class NewsFeedPage {
         });
     }
 
-    checkActiveStory() {
+    async checkActiveStory() {
         const container = this.element.querySelector('.news-feed-container');
         const cards = container.querySelectorAll('story-card');
         const containerRect = container.getBoundingClientRect();
@@ -176,7 +218,12 @@ export class NewsFeedPage {
                 presenter.stopAutoPlay();
                 presenter.enableAutoPlay = false;
                 const el = cards[idx];
-                if (el) el.classList.remove('active-card');
+                if (el) {
+                    el.classList.remove('active-card');
+                    // Clear any dynamic height when deactivating
+                    const root = el.querySelector('.story-card');
+                    if (root) root.style.height = '';
+                }
             });
 
             // Set new active and start
@@ -185,6 +232,16 @@ export class NewsFeedPage {
             const activeEl = cards[newActive];
             if (activeEl) activeEl.classList.add('active-card');
             if (activePresenter) activePresenter.startCarousel();
+            
+            // Mark this post as having been centered
+            if (this.posts[newActive]) {
+                const postId = this.posts[newActive].id;
+                const centeredMap = await window.LocalStorage.get('postCenteredHistory') || {};
+                if (!centeredMap[postId]) {
+                    centeredMap[postId] = { centered: true, firstCenteredAt: new Date().toISOString() };
+                    await window.LocalStorage.set('postCenteredHistory', centeredMap);
+                }
+            }
 
             // Ensure center alignment
             if (cards[newActive]) {

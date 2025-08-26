@@ -1,42 +1,27 @@
 #!/bin/bash
 
-# Script pentru curățarea tuturor fișierelor posts.json
-# Resetează toate postările la array gol pentru testare de la zero
+# Script pentru curățarea tuturor fișierelor generate
+# Păstrează doar config.json în fiecare categorie; șterge posts.json, backup-urile și .history.json
 
-echo "🧹 Curățare posts.json în toate directoarele..."
+echo "🧹 Curățare fișiere generate în toate directoarele..."
 echo ""
 
 # Găsește toate directoarele care au config.json
 for dir in */; do
     if [ -f "${dir}config.json" ]; then
-        posts_file="${dir}posts.json"
-        
-        # Verifică dacă există posts.json
-        if [ -f "$posts_file" ]; then
-            # Salvează backup dacă are conținut
-            if [ -s "$posts_file" ]; then
-                backup_file="${dir}posts.backup.$(date +%Y%m%d_%H%M%S).json"
-                cp "$posts_file" "$backup_file"
-                echo "✓ Backup salvat: $backup_file"
+        echo "📁 ${dir}"
+        # Șterge toate fișierele din director cu excepția config.json
+        for f in "${dir}"*; do
+            base=$(basename "$f")
+            if [ "$base" != "config.json" ]; then
+                if [ -f "$f" ]; then
+                    rm -f "$f"
+                    echo "  ✖ Șters: $f"
+                fi
             fi
-            
-            # Resetează la array gol
-            echo '[]' > "$posts_file"
-            echo "✓ Curățat: $posts_file"
-        else
-            # Creează posts.json gol dacă nu există
-            echo '[]' > "$posts_file"
-            echo "✓ Creat gol: $posts_file"
-        fi
-        
-        # Șterge și history dacă există
-        history_file="${dir}.history.json"
-        if [ -f "$history_file" ]; then
-            rm "$history_file"
-            echo "✓ Șters history: $history_file"
-        fi
-        
-        echo ""
+        done
+        echo "  ✓ Păstrat: ${dir}config.json"
+        echo
     fi
 done
 

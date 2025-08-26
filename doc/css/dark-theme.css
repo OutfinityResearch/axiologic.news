@@ -1,11 +1,11 @@
 :root {
-    --primary-color: #007bff;
-    --primary-color-hover: #0056b3;
-    --background-color: #121212;
-    --surface-color: #1e1e1e;
-    --text-color: #ffffff;
-    --text-color-secondary: #a0a0a0;
-    --border-radius: 10px;
+    --primary-color: #388bfd; /* A slightly brighter blue */
+    --primary-color-hover: #529dff;
+    --background-color: #1a1a1a; /* Softer, off-black */
+    --surface-color: #2c2c2c; /* Lighter surface for cards/headers */
+    --text-color: #e0e0e0; /* Off-white for reduced eye strain */
+    --text-color-secondary: #b0b0b0; /* Lighter secondary text */
+    --border-radius: 12px; /* Slightly more rounded */
 }
 
 body {
