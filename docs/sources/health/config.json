@@ -1,0 +1,23 @@
+{
+  "feeds": [
+    {
+      "name": "ScienceDaily Health",
+      "url": "https://www.sciencedaily.com/rss/health_medicine.xml",
+      "enabled": true
+    },
+    {
+      "name": "WHO News",
+      "url": "https://www.who.int/feeds/entity/news/en/rss.xml",
+      "enabled": true
+    },
+    {
+      "name": "Medical Xpress – Health",
+      "url": "https://medicalxpress.com/rss-feed/health-news/",
+      "enabled": true
+    }
+  ],
+  "topPostsPerFeed": 5,
+  "historyDays": 30,
+  "defaultBackgroundColor": "teal"
+}
+

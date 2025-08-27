@@ -36,7 +36,7 @@ Each source folder should have a `config.json` with these fields:
         }
     ],
     "topPostsPerFeed": 5,
-    "historyDays": 30,
+    "historyDays": 5,
     "selectionPrompt": "AI prompt for selecting interesting stories",
     "essencePrompt": "AI prompt for generating story summaries",
     "perspectivesPrompt": "AI prompt for generating unique perspectives"

@@ -82,7 +82,7 @@ try {
             maxTokensPerRequest: 500,
             contentFetchTimeout: 10000,
             requestTimeout: 30000,
-            historyDays: 30
+            historyDays: 5
         }
     };
 }
@@ -996,7 +996,7 @@ Generate 3 unique perspectives/reactions. Use plain text only - no markdown, no 
 
 // Post manager using posts.json as the source of truth
 class PostManager {
-    constructor(postsPath, historyDays = 30) {
+    constructor(postsPath, historyDays = 5) {
         this.postsPath = postsPath;
         this.historyDays = historyDays;
         this.posts = [];
@@ -1008,7 +1008,12 @@ class PostManager {
             const data = await fs.readFile(this.postsPath, 'utf8');
             this.posts = JSON.parse(data);
             // Clean up old posts on load
+            const before = this.posts.length;
             this.posts = this.cleanupOldPosts(this.posts);
+            const removed = before - this.posts.length;
+            if (removed > 0) {
+                console.log(`  Removed ${removed} old post(s) (> ${this.historyDays} day(s)) during initial cleanup`);
+            }
             // Build ID set for fast lookups
             this.postIds = new Set(this.posts.map(p => p.id));
         } catch {
@@ -1030,7 +1035,12 @@ class PostManager {
         }
         
         // Convert back to array and clean old posts
+        const beforeCleanupLen = uniqueMap.size;
         this.posts = this.cleanupOldPosts(Array.from(uniqueMap.values()));
+        const removedOld = beforeCleanupLen - this.posts.length;
+        if (removedOld > 0) {
+            console.log(`  Removed ${removedOld} old post(s) (> ${this.historyDays} day(s))`);
+        }
         
         // Sort by date (newest first)
         this.posts.sort((a, b) => {
@@ -1079,7 +1089,7 @@ async function loadEnhancedConfig(configPath) {
     config.perspectivesPrompt = config.perspectivesPrompt || '';
     config.essencePrompt = config.essencePrompt || '';
     config.topPostsPerFeed = config.topPostsPerFeed || 5;
-    config.historyDays = config.historyDays || 30;
+    config.historyDays = config.historyDays || 5;
     
     return config;
 }
@@ -1179,12 +1189,25 @@ async function main() {
                     }
                     
                     console.log(`  Found ${items.length} RSS items`);
+
+                    // Filter out items older than historyDays to avoid generating then removing them
+                    const cutoffMs = Date.now() - (historyDays * 24 * 60 * 60 * 1000);
+                    const freshItems = items.filter(it => {
+                        try {
+                            const t = new Date(it.pubDate || it.published || it.updated || 0).getTime();
+                            return !isNaN(t) && t >= cutoffMs;
+                        } catch (_) { return false; }
+                    });
+                    if (freshItems.length === 0) {
+                        console.log(`  0 within last ${historyDays} day(s) — skipping feed`);
+                        continue;
+                    }
                     
                     // Filter out items that already exist in posts.json
                     const unprocessedItems = [];
                     let skippedCount = 0;
                     
-                    for (const item of items) {
+                    for (const item of freshItems) {
                         const id = generatePostId(item.title, item.link);
                         if (!existingIds.has(id)) {
                             unprocessedItems.push(item);
@@ -1192,8 +1215,8 @@ async function main() {
                             skippedCount++;
                         }
                     }
-                    
-                    console.log(`  ${skippedCount} already in posts.json, ${unprocessedItems.length} new items to process`);
+
+                    console.log(`  ${skippedCount} already in posts.json, ${unprocessedItems.length} new items to process (within ${historyDays} day(s))`);
                     
                     if (unprocessedItems.length === 0) {
                         console.log(`  All items already processed`);
