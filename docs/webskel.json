@@ -17,6 +17,11 @@
       "presenterClassName": "ExternalSourcesSettingsPage"
     },
     {
+      "name": "settings-page",
+      "type": "page",
+      "presenterClassName": "SettingsPage"
+    },
+    {
       "name": "hamburger-menu",
       "type": "components",
       "presenterClassName": "HamburgerMenu"

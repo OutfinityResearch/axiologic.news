@@ -66,11 +66,6 @@ export class HamburgerMenu {
         this.toggle();
     }
 
-    async navigateToExternalSourcesSettings() {
-        await window.webSkel.changeToDynamicPage("external-sources-settings-page", "app");
-        this.toggle();
-    }
-
     async navigateToSettings() {
         await window.webSkel.changeToDynamicPage("settings-page", "app");
         this.toggle();

@@ -741,6 +741,7 @@ export class StoryCard {
         const applyBtn = selector.querySelector('.apply-sources-btn');
         const selectAllBtn = selector.querySelector('.select-all-btn');
         const clearAllBtn = selector.querySelector('.clear-all-btn');
+        const addSourceBtn = selector.querySelector('.add-source-btn');
         if (applyBtn) applyBtn.style.display = 'none';
         
         // Get available sources
@@ -758,9 +759,15 @@ export class StoryCard {
         // Get currently selected sources
         const selected = await window.LocalStorage.get('selectedSourceCategories') || ['default'];
         const externalSources = await window.LocalStorage.get('externalPostSources') || [];
-        const externalUrls = Array.isArray(externalSources) ? externalSources.map(s => s.url) : (await window.LocalStorage.get('externalPostsUrls') || []);
-        const selectedExternal = await window.LocalStorage.get('selectedExternalPostsUrls');
-        const selectedExtSet = new Set(Array.isArray(selectedExternal) ? selectedExternal : externalUrls);
+        
+        // Debug: Log what we're getting from storage
+        console.log('External sources from storage:', externalSources);
+        
+        // Ensure externalSources is an array
+        const externalSourcesArray = Array.isArray(externalSources) ? externalSources : [];
+        const externalUrls = externalSourcesArray.map(s => s && s.url ? s.url : '').filter(Boolean);
+        const selectedExternal = await window.LocalStorage.get('selectedExternalPostsUrls') || [];
+        const selectedExtSet = new Set(Array.isArray(selectedExternal) ? selectedExternal : []);
         const initialSelected = new Set([
             ...selected,
             ...Array.from(selectedExtSet).map(u => `url:${encodeURIComponent(u)}`)
@@ -813,7 +820,10 @@ export class StoryCard {
         });
 
         // External URLs appended after categories
-        (externalSources.length ? externalSources.map(s => ({ url: s.url, tag: s.tag })) : externalUrls.map(u => ({ url: u, tag: '' }))).forEach(({url, tag}) => {
+        console.log('Processing external sources:', externalSourcesArray);
+        externalSourcesArray.forEach(source => {
+            const url = source.url;
+            const tag = source.tag || '';
             const sourceItem = document.createElement('div');
             sourceItem.className = 'source-item';
             const checkbox = document.createElement('input');
@@ -829,6 +839,9 @@ export class StoryCard {
             if (!display || display.length === 0) {
                 display = url;
                 try { const u = new URL(url); display = u.hostname.replace(/^www\./,''); } catch {}
+            } else {
+                // Add # prefix to tag for display
+                display = '#' + tag;
             }
             label.textContent = display;
             sourceItem.appendChild(checkbox);
@@ -840,6 +853,32 @@ export class StoryCard {
             });
             checkbox.addEventListener('change', onChange);
         });
+
+        // Add handler for Add Source button
+        if (addSourceBtn) {
+            addSourceBtn.addEventListener('click', async (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                try {
+                    const res = await window.webSkel.showModal('add-external-source-modal', {}, true);
+                    const data = res && res.data;
+                    if (!data || !data.url) return;
+                    const tag = (data.tag || '').trim();
+                    const existing = await window.LocalStorage.get('externalPostSources') || [];
+                    if (existing.find(s => s && s.url === data.url)) return;
+                    existing.push({ url: data.url, tag });
+                    await window.LocalStorage.set('externalPostSources', existing);
+                    const selectedExternal = await window.LocalStorage.get('selectedExternalPostsUrls') || [];
+                    if (!selectedExternal.includes(data.url)) {
+                        selectedExternal.push(data.url);
+                        await window.LocalStorage.set('selectedExternalPostsUrls', selectedExternal);
+                    }
+                    this.setupDataSourcesSelector();
+                } catch (err) {
+                    console.error('Add external source failed:', err);
+                }
+            });
+        }
 
         // Add handlers for select all / clear all
         if (selectAllBtn) selectAllBtn.addEventListener('click', () => {
@@ -861,10 +900,12 @@ export class StoryCard {
                 if (checkbox && checkbox.checked) newCategories.push(source.id);
             });
             const newExternal = [];
-            externalUrls.forEach(url => {
-                const encoded = encodeURIComponent(url);
-                const cb = document.getElementById(`source-url:${encoded}`);
-                if (cb && cb.checked) newExternal.push(url);
+            externalSourcesArray.forEach(source => {
+                if (source && source.url) {
+                    const encoded = encodeURIComponent(source.url);
+                    const cb = document.getElementById(`source-url:${encoded}`);
+                    if (cb && cb.checked) newExternal.push(source.url);
+                }
             });
 
             await window.LocalStorage.set('selectedSourceCategories', newCategories);
@@ -874,44 +915,7 @@ export class StoryCard {
             await window.webSkel.changeToDynamicPage('news-feed-page', 'app');
         });
 
-        // Add external source button positioned in second column
-        try {
-            // Count current items to place the plus on second column
-            const currentCount = sourcesList.children.length;
-            if (currentCount % 2 === 1) {
-                const ph = document.createElement('div');
-                ph.className = 'source-item placeholder';
-                sourcesList.appendChild(ph);
-            }
-            const addItem = document.createElement('div');
-            addItem.className = 'source-item add-external';
-            addItem.innerHTML = '<button type="button" class="add-external-btn" aria-label="Add external source">➕ Add</button>';
-            sourcesList.appendChild(addItem);
-            addItem.querySelector('.add-external-btn').addEventListener('click', async (e) => {
-                e.preventDefault();
-                try {
-                    const res = await window.webSkel.showModal('add-external-source-modal', {}, true);
-                    const data = res && res.data;
-                    if (!data || !data.url) return;
-                    const tag = (data.tag || '').trim();
-                    // Update storage
-                    const existing = await window.LocalStorage.get('externalPostSources') || [];
-                    if (existing.find(s => s && s.url === data.url)) return; // already exists
-                    existing.push({ url: data.url, tag });
-                    await window.LocalStorage.set('externalPostSources', existing);
-                    // Preselect the new source
-                    const selectedExternal = await window.LocalStorage.get('selectedExternalPostsUrls') || [];
-                    if (!selectedExternal.includes(data.url)) {
-                        selectedExternal.push(data.url);
-                        await window.LocalStorage.set('selectedExternalPostsUrls', selectedExternal);
-                    }
-                    // Re-render just the selector list
-                    this.setupDataSourcesSelector();
-                } catch (err) {
-                    console.error('Add external source failed:', err);
-                }
-            });
-        } catch (_) {}
+
     }
 
     async saveViewProgress(progress) {

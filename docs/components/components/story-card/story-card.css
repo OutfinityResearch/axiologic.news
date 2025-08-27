@@ -97,6 +97,7 @@
 
 .card-slide.prev {
     transform: translateX(-100%);
+    opacity: 1;
 }
 
 /* Remove gradient overlay */
@@ -121,7 +122,7 @@
 /* Selection card compact spacing */
 .story-card.selection-mode .card-content { padding: 8px; }
 .story-card.selection-mode .card-header { margin-bottom: 6px; padding-bottom: 6px; }
-.story-card.selection-mode .card-title { font-size: 16px; }
+.story-card.selection-mode .card-title { font-size: calc(16px * var(--content-scale, 1)); }
 .story-card.selection-mode .apply-sources-btn { margin-top: 6px; padding: 5px 10px; font-size: 12px; border-radius: 12px; }
 .story-card.selection-mode .sources-list { max-height: 140px; gap: 4px 6px; }
 .story-card.selection-mode .source-item { padding: 4px 4px; }
@@ -139,7 +140,7 @@
 
 
 .card-title {
-    font-size: 18px;
+    font-size: calc(18px * var(--content-scale, 1));
     font-weight: 600;
     line-height: 1.4;
     margin: 0 0 8px 0;
@@ -153,7 +154,7 @@
     padding: 4px 12px;
     background: var(--surface);
     border-radius: 16px;
-    font-size: 12px;
+    font-size: calc(12px * var(--content-scale, 1));
     text-transform: uppercase;
     letter-spacing: 0.5px;
     font-weight: 500;
@@ -165,7 +166,7 @@
 .card-time {
     display: inline-block;
     margin-left: 8px;
-    font-size: 12px;
+    font-size: calc(12px * var(--content-scale, 1));
     color: var(--text-secondary);
 }
 
@@ -203,7 +204,7 @@
 
 /* Text Styles */
 .card-essence {
-    font-size: 14px;
+    font-size: calc(14px * var(--content-scale, 1));
     line-height: 1.6;
     margin: 0;
     text-align: justify;
@@ -217,7 +218,7 @@
 
 
 .reaction-title {
-    font-size: 12px;
+    font-size: calc(12px * var(--content-scale, 1));
     text-transform: uppercase;
     letter-spacing: 1px;
     color: var(--text-secondary);
@@ -227,7 +228,7 @@
 
 
 .reaction-text {
-    font-size: 14px;
+    font-size: calc(14px * var(--content-scale, 1));
     line-height: 1.6;
     text-align: justify;
     text-justify: inter-word;
@@ -366,12 +367,12 @@
     }
     
     .card-title {
-        font-size: 16px;
+        font-size: calc(16px * var(--content-scale, 1));
     }
     
     .card-essence,
     .reaction-text {
-        font-size: 13px;
+        font-size: calc(13px * var(--content-scale, 1));
     }
     
     .card-badge {
@@ -438,26 +439,21 @@
     padding-right: 4px;
 }
 
-.source-item.add-external {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 6px;
-    border: 1px dashed var(--border);
-    border-radius: 8px;
+.add-source-btn {
+    padding: 6px 12px;
     background: transparent;
+    border: 1px solid var(--primary);
+    border-radius: 14px;
+    color: var(--primary);
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: 600;
+    transition: all 0.2s ease;
 }
 
-.source-item.add-external button {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    padding: 6px 10px;
-    border-radius: 16px;
-    border: 1px solid var(--border);
-    background: var(--glass);
-    color: var(--text);
-    cursor: pointer;
+.add-source-btn:hover {
+    background: var(--primary);
+    color: var(--surface);
 }
 
 .source-item.placeholder { visibility: hidden; }
@@ -489,7 +485,7 @@
 
 .source-label {
     flex: 1;
-    font-size: 12.5px;
+    font-size: calc(12.5px * var(--content-scale, 1));
     color: var(--text);
     cursor: pointer;
     display: block;
