@@ -813,25 +813,11 @@ Return only the numbers (comma-separated) of the selected stories.`;
 
         // Generate essence using AI or fallback
         const essence = await this.generateEssence(item, fullContent);
-        if (!essence || essence.trim().length < 10) {
-            console.log(`      Warning: Empty essence, using description`);
-            post.essence = item.description || 'Content not available';
-        } else {
-            post.essence = essence;
-        }
+        post.essence = this.buildFallbackEssence(essence, item, feed);
         
         // Generate perspectives/reactions using AI or fallback
         const reactions = await this.generatePerspectives(item, feed, fullContent);
-        if (!reactions || reactions.length === 0) {
-            console.log(`      Warning: No reactions generated, using defaults`);
-            post.reactions = [
-                `Article from ${feed.name}`,
-                `Check the source for more details`,
-                `Stay updated with the latest news`
-            ];
-        } else {
-            post.reactions = reactions;
-        }
+        post.reactions = this.buildFallbackReactions(reactions, item, feed);
         
         // Add promo banner from global config or use feed default
         const globalBanner = getPromoBanner(this.config.category || 'default');
@@ -845,6 +831,57 @@ Return only the numbers (comma-separated) of the selected stories.`;
         }
 
         return post;
+    }
+
+    // Build a robust essence, cleaning Reddit/aggregator boilerplate and ensuring readability
+    buildFallbackEssence(aiEssence, item, feed) {
+        const MIN_WORDS = 25;
+        const raw = (aiEssence && aiEssence.trim().length > 0) ? aiEssence : (item.description || '');
+        let text = String(raw || '').replace(/\s+/g, ' ').trim();
+        // Remove common boilerplate from Reddit/aggregators
+        const blacklist = [
+            /linktree/ig,
+            /members online/ig,
+            /share\b/ig,
+            /read more\b/ig,
+            /go to\b/ig,
+            /reddit'?s?\s+no\.?\s*1\s+seo\s+community/ig,
+            /help ?hey/ig,
+            /stay up to date/ig,
+            /we'?ll work it out together/ig
+        ];
+        blacklist.forEach((re) => { text = text.replace(re, ''); });
+        // Deduplicate repeated tokens
+        text = text.replace(/\b(\w+)(\s+\1){2,}\b/gi, '$1');
+        // Trim to a reasonable length
+        const sentences = text.split(/(?<=[.!?])\s+/).filter(Boolean);
+        const trimmed = sentences.slice(0, 3).join(' ');
+        const fallback = trimmed && trimmed.length > 40 ? trimmed : `${item.title}. Source: ${feed.name}.`;
+        // Ensure minimum words
+        const wc = (fallback.match(/\b\w+\b/g) || []).length;
+        if (wc >= MIN_WORDS) return fallback;
+        // If still too short, append a compact context line
+        const extra = ` This update highlights key points about "${item.title}" from ${feed.name}, focusing on practical implications and why it matters now.`;
+        return (fallback + extra);
+    }
+
+    // Ensure reactions exist and each has 15+ words; otherwise build informative defaults
+    buildFallbackReactions(reactions, item, feed) {
+        const MIN_WORDS = 15;
+        const ensure = (txt) => {
+            const words = (String(txt || '').match(/\b\w+\b/g) || []).length;
+            if (words >= MIN_WORDS) return txt;
+            // Build a richer default line
+            return `Context: ${item.title} — From ${feed.name}, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.`;
+        };
+        if (!Array.isArray(reactions) || reactions.length === 0) {
+            return [
+                ensure(`What happened: ${item.title}. Why it matters for marketing teams and decision‑makers, with concrete takeaways and immediate next steps.`),
+                ensure(`Impact: How this could affect performance, budgets, channels, workflows, or strategy; risks and trade‑offs leaders should weigh now.`),
+                ensure(`Actionable: Practical experiments, measurement ideas, and checkpoints to validate results and avoid hype; guidance to get started responsibly.`)
+            ];
+        }
+        return reactions.map(ensure);
     }
 
     async generateEssence(item, fullContent) {
@@ -1135,6 +1172,36 @@ async function main() {
     let totalNew = 0;
     let totalProcessed = 0;
 
+    // Prepare invalid RSS URL store
+    const INVALID_URLS_PATH = path.join(__dirname, 'invalidUrls.json');
+    let invalidStore = [];
+    try {
+        const raw = await fs.readFile(INVALID_URLS_PATH, 'utf8');
+        invalidStore = JSON.parse(raw);
+        if (!Array.isArray(invalidStore)) invalidStore = [];
+    } catch { invalidStore = []; }
+
+    const recordInvalid = async ({ url, name, category, message }) => {
+        try {
+            const now = new Date().toISOString();
+            const idx = invalidStore.findIndex(e => e && e.url === url);
+            if (idx >= 0) {
+                const prev = invalidStore[idx];
+                invalidStore[idx] = {
+                    ...prev,
+                    name: name || prev.name,
+                    category: category || prev.category,
+                    lastError: message || prev.lastError,
+                    lastSeenAt: now,
+                    count: (prev.count || 0) + 1
+                };
+            } else {
+                invalidStore.push({ url, name: name || '', category: category || '', lastError: message || 'Unknown error', firstSeenAt: now, lastSeenAt: now, count: 1 });
+            }
+            await fs.writeFile(INVALID_URLS_PATH, JSON.stringify(invalidStore, null, 2));
+        } catch (_) { /* ignore */ }
+    };
+
     for (const folder of folders) {
         const configPath = path.join(folder, 'config.json');
         const postsPath = path.join(folder, 'posts.json');
@@ -1176,15 +1243,17 @@ async function main() {
                     const rssData = await fetchRSS(feed.url, fetchTimeout);
                     
                     if (!rssData || rssData.trim().length === 0) {
-                        console.log(`  Empty RSS response`);
+                        console.log('  Empty RSS response');
+                        // Not recorded as a hard error per policy
                         continue;
                     }
                     
                     const items = parseRSS(rssData);
                     
                     if (items.length === 0) {
-                        console.log(`  No valid items found in RSS`);
+                        console.log('  No valid items found in RSS');
                         console.log(`  RSS data sample: ${rssData.substring(0, 200)}...`);
+                        // Not recorded as a hard error per policy
                         continue;
                     }
                     
@@ -1200,6 +1269,7 @@ async function main() {
                     });
                     if (freshItems.length === 0) {
                         console.log(`  0 within last ${historyDays} day(s) — skipping feed`);
+                        // Not a true error; do not record
                         continue;
                     }
                     
@@ -1240,6 +1310,7 @@ async function main() {
                     
                 } catch (error) {
                     console.error(`  Error: ${error.message}`);
+                    await recordInvalid({ url: feed.url, name: feed.name, category: config.category, message: error.message });
                 }
             }
             

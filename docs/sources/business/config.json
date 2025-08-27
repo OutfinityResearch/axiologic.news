@@ -18,6 +18,8 @@
   ],
   "topPostsPerFeed": 5,
   "historyDays": 30,
-  "defaultBackgroundColor": "blue"
+  "defaultBackgroundColor": "blue",
+  "selectionPrompt": "Select business stories with macro or market impact: 1) earnings/M&A with strategic consequences, 2) macroeconomic shifts (inflation, rates, labor, supply chain), 3) regulation/policy affecting multiple industries, 4) notable leadership/strategy pivots. Prioritize hard data.",
+  "essencePrompt": "Summarize what changed (deal, earnings, policy), who is impacted (sectors/regions), and why it matters for operators and investors.",
+  "perspectivesPrompt": "Provide three views: 1) Market reaction and fundamentals, 2) Strategic implications for competitors/customers, 3) Risks and scenarios over the next 1–3 quarters."
 }
-

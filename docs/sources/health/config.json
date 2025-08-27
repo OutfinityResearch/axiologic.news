@@ -18,6 +18,8 @@
   ],
   "topPostsPerFeed": 5,
   "historyDays": 30,
-  "defaultBackgroundColor": "teal"
+  "defaultBackgroundColor": "teal",
+  "selectionPrompt": "Select medical/health stories with strong evidence or guidance: 1) peer‑reviewed research with significant findings, 2) clinical guidelines/approvals, 3) public health advisories, 4) meaningful biotech/medtech updates. Avoid preliminary hype.",
+  "essencePrompt": "Explain the key finding/intervention, evidence quality, affected population, and practical implications in plain language.",
+  "perspectivesPrompt": "Provide three clinical/public health perspectives: 1) Evidence strength and limitations, 2) Real‑world application and caveats, 3) Health system/patient impact and next steps."
 }
-

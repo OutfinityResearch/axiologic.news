@@ -42,5 +42,8 @@
         }
     ],
     "topPostsPerFeed": 5,
-    "defaultBackgroundColor": "green"
+    "defaultBackgroundColor": "green",
+    "selectionPrompt": "Select the most relevant general news: 1) major events with wide impact, 2) trustworthy sources and clear facts, 3) updates that change the situation or policy, 4) concise stories with concrete details. Avoid speculative or low‑signal items.",
+    "essencePrompt": "Summarize what happened, why it matters now, and who is affected. Keep it factual, concise, and accessible.",
+    "perspectivesPrompt": "Provide three angles: 1) Context and implications, 2) Stakeholders affected and near‑term outcomes, 3) Longer‑term risks/opportunities."
 }
