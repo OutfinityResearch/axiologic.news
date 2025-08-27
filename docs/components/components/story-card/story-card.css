@@ -438,6 +438,30 @@
     padding-right: 4px;
 }
 
+.source-item.add-external {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    border: 1px dashed var(--border);
+    border-radius: 8px;
+    background: transparent;
+}
+
+.source-item.add-external button {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 10px;
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    background: var(--glass);
+    color: var(--text);
+    cursor: pointer;
+}
+
+.source-item.placeholder { visibility: hidden; }
+
 .source-item {
     display: flex;
     align-items: center;

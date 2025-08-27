@@ -873,6 +873,45 @@ export class StoryCard {
             try { await window.LocalStorage.set('jumpToFirstNews', true); } catch (_) {}
             await window.webSkel.changeToDynamicPage('news-feed-page', 'app');
         });
+
+        // Add external source button positioned in second column
+        try {
+            // Count current items to place the plus on second column
+            const currentCount = sourcesList.children.length;
+            if (currentCount % 2 === 1) {
+                const ph = document.createElement('div');
+                ph.className = 'source-item placeholder';
+                sourcesList.appendChild(ph);
+            }
+            const addItem = document.createElement('div');
+            addItem.className = 'source-item add-external';
+            addItem.innerHTML = '<button type="button" class="add-external-btn" aria-label="Add external source">➕ Add</button>';
+            sourcesList.appendChild(addItem);
+            addItem.querySelector('.add-external-btn').addEventListener('click', async (e) => {
+                e.preventDefault();
+                try {
+                    const res = await window.webSkel.showModal('add-external-source-modal', {}, true);
+                    const data = res && res.data;
+                    if (!data || !data.url) return;
+                    const tag = (data.tag || '').trim();
+                    // Update storage
+                    const existing = await window.LocalStorage.get('externalPostSources') || [];
+                    if (existing.find(s => s && s.url === data.url)) return; // already exists
+                    existing.push({ url: data.url, tag });
+                    await window.LocalStorage.set('externalPostSources', existing);
+                    // Preselect the new source
+                    const selectedExternal = await window.LocalStorage.get('selectedExternalPostsUrls') || [];
+                    if (!selectedExternal.includes(data.url)) {
+                        selectedExternal.push(data.url);
+                        await window.LocalStorage.set('selectedExternalPostsUrls', selectedExternal);
+                    }
+                    // Re-render just the selector list
+                    this.setupDataSourcesSelector();
+                } catch (err) {
+                    console.error('Add external source failed:', err);
+                }
+            });
+        } catch (_) {}
     }
 
     async saveViewProgress(progress) {
