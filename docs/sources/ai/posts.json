@@ -1,5 +1,25 @@
 [
   {
+    "id": "2d66458b4b79205f0c74b7cac3d46fae",
+    "title": "Donuts in space (prompt in comment)",
+    "source": "https://www.reddit.com/r/artificial/comments/1n1nqks/donuts_in_space_prompt_in_comment/",
+    "generatedAt": "2025-08-27T18:03:34.828Z",
+    "publishedAt": "2025-08-27T17:40:42.000Z",
+    "feedName": "Reddit r/artificial",
+    "author": "/u/shadow--404 https://www.reddit.com/user/shadow--404",
+    "category": "General",
+    "essence": "Donuts in space (prompt in comment). Source: Reddit r/artificial. This update highlights key points about \"Donuts in space (prompt in comment)\" from Reddit r/artificial, focusing on practical implications and why it matters now.",
+    "reactions": [
+      "Context: Donuts in space (prompt in comment) — From Reddit r/artificial, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
+      "Context: Donuts in space (prompt in comment) — From Reddit r/artificial, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
+      "Context: Donuts in space (prompt in comment) — From Reddit r/artificial, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "0a60d132f3e8cc64d5cbffb8b4736396",
     "title": "OpenAI will add parental controls for ChatGPT following teen’s death",
     "source": "https://www.reddit.com/r/artificial/comments/1n1lrma/openai_will_add_parental_controls_for_chatgpt/",
@@ -1533,26 +1553,6 @@
       "Contrarian Perspective: This seems like a viral marketing stunt or a meme, as the post lacks credible details, technical depth, or verifiable evidence, making it hard to assess any real AI innovation or advancement.",
       "Business/Industry Impact: If this were a legitimate AI-generated discovery, it could disrupt fields like biotech or exploration by showcasing AI's ability to uncover hidden phenomena, but without proof, it’s just speculative hype.",
       "Opportunities View: Even if this is just a joke, it highlights how AI can blur the line between reality and fiction, creating opportunities for creative storytelling, viral engagement, or even AI-driven content moderation challenges."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "607262e40b7dfb3db30891a476f4f357",
-    "title": "[D]GEPA: Reflective Prompt Evolution beats RL with 35× fewer rollouts",
-    "source": "https://www.reddit.com/r/MachineLearning/comments/1mzxtzb/dgepa_reflective_prompt_evolution_beats_rl_with/",
-    "generatedAt": "2025-08-27T10:31:16.006Z",
-    "publishedAt": "2025-08-25T18:02:33.000Z",
-    "feedName": "Reddit r/MachineLearning",
-    "author": "/u/No_Marionberry_5366 https://www.reddit.com/user/No_Marionberry_5366",
-    "category": "General",
-    "essence": "Summary: GEPA’s Breakthrough in AI Optimization\n\nA groundbreaking new approach called GEPA (Genetic-Pareto Prompt Evolution) is challenging the dominance of reinforcement learning (RL) in optimizing AI systems. Developed by researchers in 2025, GEPA stands out by using natural language reflection and evolutionary techniques to refine prompts for large language models (LLMs), achieving superior results with far fewer computational resources than traditional RL methods.\n\nWhat’s New?\nGEPA replaces the standard RL approach—where systems learn by adjusting weights based on scalar rewards—with a more intuitive, language-driven method. Instead of relying on noisy gradients and massive rollouts, GEPA mutates and evolves prompts while analyzing the text outputs of previous attempts. This allows the system to \"think aloud,\" diagnosing its own performance and refining prompts in a way that aligns with how LLMs naturally process language.\n\nThe results are impressive: GEPA outperforms RL-based methods (like GRPO) by up to 19% while requiring 35 times fewer rollouts. In some cases, it achieves optimal performance with just a few hundred trials, compared to the tens of thousands needed for RL. It also surpasses MIPROv2, the previous state-of-the-art prompt optimizer, demonstrating that language-based optimization can be more efficient and effective.\n\nWhy Does It Matter?\nThis shift is significant because it moves AI optimization away from brute-force gradient-based learning and toward a more interpretable, human-like process. By treating the outputs of an LLM as textual artifacts that can be analyzed and improved, GEPA leverages the model’s own strengths—language understanding and generation—rather than forcing it into a rigid numerical framework.\n\nThe implications are vast. For one, it drastically reduces the computational cost of fine-tuning AI systems, making advanced optimization accessible to smaller teams and less well-funded projects. It also suggests that the future of AI adaptation may lie in language-native methods rather than scaling up RL.\n\nWhat Could Change?\nGEPA’s success hints at a broader paradigm shift in AI development. If language-based reflection and retrieval can outperform RL, it could redefine how we optimize not just prompts but entire AI workflows. For example, in multi-hop question-answering systems, GEPA’s ability to generate better follow-up queries could improve retrieval-augmented generation (RAG) pipelines, making search engines and knowledge bases more efficient.\n\nAdditionally, GEPA’s reliance on maintaining a pool of Pareto-optimal prompts—where only the best-performing versions are kept—highlights the importance of efficient storage and retrieval systems. Vector databases like Chroma or Qdrant could become critical infrastructure for this kind of evolutionary optimization, blending AI adaptation with advanced data management.\n\nThe Bigger Picture\nThis research challenges the assumption that scaling up RL is the only path to smarter AI. Instead, it points to a future where AI systems improve by reflecting on their own outputs, learning from language, and evolving in a way that mirrors human problem-solving. If adopted widely, GEPA-like methods could lead to more efficient, cost-effective, and interpretable AI systems—ushering in a new era of optimization that prioritizes language and memory over raw computational power.",
-    "reactions": [
-      "Contrarian Perspective: While GEPA's claims of 35× efficiency gains are impressive, the lack of peer-reviewed validation and reliance on self-reported benchmarks raises questions about whether this is a genuine breakthrough or just another overhyped prompt optimization technique dressed up as a paradigm shift.",
-      "Business/Industry Impact: If GEPA's efficiency claims hold, it could disrupt the RLHF-dominated market by making prompt optimization accessible to smaller firms, reducing computational costs, and accelerating deployment of adaptive LLM systems, particularly in enterprise search and multi-hop reasoning applications.",
-      "Societal/Ethical View: The shift toward language-native optimization could democratize AI adaptation but also risks creating opaque, self-reinforcing prompt ecosystems where biases or errors compound without clear audit trails, demanding new ethical frameworks for explainability and accountability."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
