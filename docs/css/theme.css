@@ -1,41 +1,41 @@
 :root[data-theme="dark"] {
-  --bg: #000000; /* Pure black background */
-  --surface: #000000; /* Pure black surfaces */
-  --text: #ffffff;
-  --text-secondary: #c8c8c8; /* Neutral gray for secondary text */
-  --border: rgba(255, 255, 255, 0.12);
-  --glass: rgba(0, 0, 0, 0.8); /* Black glass */
-  --accent: #f1fa8c; /* Bright yellow accent */
-  --accent-2: #50fa7b; /* Vibrant green */
-  --primary: #ff79c6; /* Pink highlight */
-  --secondary: #bd93f9; /* Purple */
+  --bg: #1a1a1a;
+  --surface: #2c2c2c;
+  --text: #e0e0e0;
+  --text-secondary: #b0b0b0;
+  --border: rgba(255, 255, 255, 0.1);
+  --glass: rgba(44, 44, 44, 0.8);
+  --primary: #388bfd;
+  --secondary: #529dff;
+  --accent: #388bfd;
+  --accent-2: #50fa7b;
 }
 
 :root[data-theme="light"] {
-  --bg: #fef6e4; /* Warm cream background */
+  --bg: #f5f5f5;
   --surface: #ffffff;
-  --text: #172c66; /* Deep blue text */
-  --text-secondary: #8b5cf6; /* Purple secondary */
-  --border: rgba(139, 92, 246, 0.15);
-  --glass: rgba(255,255,255,0.8);
-  --accent: #f582ae; /* Coral pink accent */
-  --accent-2: #00ebc7; /* Turquoise */
-  --primary: #ff6e6c; /* Warm red */
-  --secondary: #4cc9f0; /* Sky blue */
+  --text: #333333;
+  --text-secondary: #666666;
+  --border: rgba(0, 0, 0, 0.1);
+  --glass: rgba(255, 255, 255, 0.8);
+  --primary: #0a66c2;
+  --secondary: #004182;
+  --accent: #0a66c2;
+  --accent-2: #00ebc7;
 }
 
 /* Default variables (match dark to avoid blue flash before theme applies) */
 :root {
-  --bg: #000000;
-  --surface: #000000;
-  --text: #ffffff;
-  --text-secondary: #c8c8c8;
-  --border: rgba(255, 255, 255, 0.12);
-  --glass: rgba(0, 0, 0, 0.8);
-  --accent: #f1fa8c;
+  --bg: #1a1a1a;
+  --surface: #2c2c2c;
+  --text: #e0e0e0;
+  --text-secondary: #b0b0b0;
+  --border: rgba(255, 255, 255, 0.1);
+  --glass: rgba(44, 44, 44, 0.8);
+  --primary: #388bfd;
+  --secondary: #529dff;
+  --accent: #388bfd;
   --accent-2: #50fa7b;
-  --primary: #ff79c6;
-  --secondary: #bd93f9;
   --content-scale: 1;
 }
 

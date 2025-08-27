@@ -17,7 +17,7 @@ export class HamburgerMenu {
         } else {
             this.element.classList.remove('open');
         }
-        
+
         // Set up click handlers for menu items
         const links = this.element.querySelectorAll('[data-local-action]');
         links.forEach(link => {
@@ -30,6 +30,15 @@ export class HamburgerMenu {
                 }
             });
         });
+
+        // Update theme label text
+        try {
+            const label = this.element.querySelector('.theme-label');
+            if (label && window.ThemeManager) {
+                const theme = window.ThemeManager.theme;
+                label.textContent = theme === 'dark' ? 'Switch to Light Theme' : 'Switch to Dark Theme';
+            }
+        } catch (_) {}
     }
 
     setupCloseOnClick() {
@@ -65,5 +74,17 @@ export class HamburgerMenu {
     async navigateToSettings() {
         await window.webSkel.changeToDynamicPage("settings-page", "app");
         this.toggle();
+    }
+
+    toggleTheme() {
+        try {
+            if (window.ThemeManager) {
+                window.ThemeManager.toggleTheme();
+            } else if (window.ThemeManager === undefined && window.ThemeManager?.toggleTheme) {
+                // no-op fallback
+            }
+        } catch (_) {}
+        // Refresh label
+        this.invalidate();
     }
 }

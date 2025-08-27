@@ -24,6 +24,12 @@ export class StoryCard {
 
         this.applyDynamicGradient();
         this.populateContent();
+        
+        // Show data sources selector on the first card
+        if (this.storyIndex === 0) {
+            this.setupDataSourcesSelector();
+        }
+        
         this.createMainContinuationSlidesIfNeeded();
         this.createReactionSlides();
         this.initializeSlides();
@@ -113,21 +119,42 @@ export class StoryCard {
             if (el) el.textContent = cleanTitle;
         });
 
-        // Populate main slide essence
+        // For first card, show welcome message instead of essence
         const essenceElement = this.element.querySelector('.card-essence');
-        if (essenceElement) essenceElement.textContent = this.post.essence;
+        if (this.storyIndex === 0) {
+            if (essenceElement) {
+                essenceElement.textContent = 'Welcome to Axiologic News! Customize your news sources below:';
+            }
+            // Update the title for first card
+            const titleElements = this.element.querySelectorAll('.card-title');
+            titleElements.forEach(el => {
+                if (el) el.textContent = 'Select News Sources';
+            });
+            // Hide badge and time on the main slide for the first card
+            const mainHeader = this.element.querySelector('.card-slide[data-id="main"] .card-header');
+            if (mainHeader) {
+                const badge = mainHeader.querySelector('.card-badge');
+                const time = mainHeader.querySelector('.card-time');
+                if (badge) badge.style.display = 'none';
+                if (time) time.style.display = 'none';
+            }
+        } else {
+            // Populate main slide essence for other cards
+            if (essenceElement) essenceElement.textContent = this.post.essence;
+        }
 
-        // Compute and set domain on badges (main + source)
-        const domain = this.extractDomain(this.post.source) || 'Axiologic';
-        const mainBadge = this.element.querySelector('.card-slide[data-id="main"] .card-badge');
-        if (mainBadge) mainBadge.textContent = domain;
-        const sourceBadge = this.element.querySelector('.card-slide[data-id="source"] .card-badge');
-        if (sourceBadge) sourceBadge.textContent = domain;
+        // Compute and set domain/time on badges only for non-first cards
+        if (this.storyIndex !== 0) {
+            const domain = this.extractDomain(this.post.source) || 'Axiologic';
+            const mainBadge = this.element.querySelector('.card-slide[data-id="main"] .card-badge');
+            if (mainBadge) mainBadge.textContent = domain;
+            const sourceBadge = this.element.querySelector('.card-slide[data-id="source"] .card-badge');
+            if (sourceBadge) sourceBadge.textContent = domain;
 
-        // Set relative time on both main and source slides
-        const timeText = this.formatTimeAgo(this.post.publishedAt || this.post.generatedAt);
-        const timeEls = this.element.querySelectorAll('.card-slide .card-time');
-        timeEls.forEach(el => { if (el) el.textContent = timeText; });
+            const timeText = this.formatTimeAgo(this.post.publishedAt || this.post.generatedAt);
+            const timeEls = this.element.querySelectorAll('.card-slide .card-time');
+            timeEls.forEach(el => { if (el) el.textContent = timeText; });
+        }
 
         // Populate source slide
         const sourceLink = this.element.querySelector('.source-link');
@@ -143,6 +170,20 @@ export class StoryCard {
                     </a>
                 `;
             }
+            // Also show a compact inline sponsor note above the resume bar (visible on all slides)
+            const sponsorInline = this.element.querySelector('.sponsor-inline');
+            if (sponsorInline) {
+                sponsorInline.innerHTML = `
+                    <a href="${this.post.promoBanner.url}" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-ad"></i>
+                        <span>${this.post.promoBanner.text}</span>
+                    </a>
+                `;
+            }
+        } else {
+            // Hide inline sponsor if none
+            const sponsorInline = this.element.querySelector('.sponsor-inline');
+            if (sponsorInline) sponsorInline.style.display = 'none';
         }
     }
 
@@ -662,6 +703,96 @@ export class StoryCard {
         } catch (e) {
             // ignore
         }
+    }
+
+    async setupDataSourcesSelector() {
+        const selector = this.element.querySelector('.data-sources-selector');
+        if (!selector) return;
+        
+        // Show the selector
+        selector.style.display = 'block';
+        
+        // Hide the essence paragraph
+        const essenceElement = this.element.querySelector('.card-essence');
+        if (essenceElement) essenceElement.style.display = 'none';
+        
+        const sourcesList = selector.querySelector('.sources-list');
+        const applyBtn = selector.querySelector('.apply-sources-btn');
+        const selectAllBtn = selector.querySelector('.select-all-btn');
+        const clearAllBtn = selector.querySelector('.clear-all-btn');
+        
+        // Get available sources
+        const availableSources = [
+            { id: 'default', name: 'Default' },
+            { id: 'ai', name: 'AI' },
+            { id: 'marketing', name: 'Marketing' },
+            { id: 'tech', name: 'Technology' },
+            { id: 'science', name: 'Science' },
+            { id: 'business', name: 'Business' },
+            { id: 'health', name: 'Health' },
+            { id: 'world', name: 'World News' }
+        ];
+        
+        // Get currently selected sources
+        const selected = await window.LocalStorage.get('selectedSourceCategories') || ['default'];
+        
+        // Populate sources list
+        sourcesList.innerHTML = '';
+        availableSources.forEach(source => {
+            const sourceItem = document.createElement('div');
+            sourceItem.className = 'source-item';
+            
+            const checkbox = document.createElement('input');
+            checkbox.type = 'checkbox';
+            checkbox.className = 'source-checkbox';
+            checkbox.id = `source-${source.id}`;
+            checkbox.checked = selected.includes(source.id);
+            
+            const label = document.createElement('label');
+            label.className = 'source-label';
+            label.htmlFor = `source-${source.id}`;
+            label.textContent = source.name;
+            
+            sourceItem.appendChild(checkbox);
+            sourceItem.appendChild(label);
+            sourcesList.appendChild(sourceItem);
+            
+            // Make the whole item clickable
+            sourceItem.addEventListener('click', (e) => {
+                if (e.target !== checkbox) {
+                    checkbox.checked = !checkbox.checked;
+                }
+            });
+        });
+        
+        // Actions: select all / clear all
+        if (selectAllBtn) {
+            selectAllBtn.addEventListener('click', () => {
+                sourcesList.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = true);
+            });
+        }
+        if (clearAllBtn) {
+            clearAllBtn.addEventListener('click', () => {
+                sourcesList.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+            });
+        }
+
+        // Handle apply button
+        applyBtn.addEventListener('click', async () => {
+            const newSelection = [];
+            availableSources.forEach(source => {
+                const checkbox = document.getElementById(`source-${source.id}`);
+                if (checkbox && checkbox.checked) {
+                    newSelection.push(source.id);
+                }
+            });
+            
+            // Save selection
+            await window.LocalStorage.set('selectedSourceCategories', newSelection);
+            
+            // Reload the page to apply changes
+            window.location.reload();
+        });
     }
 
     async saveViewProgress(progress) {

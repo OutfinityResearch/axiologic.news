@@ -1,73 +1,34 @@
-/* Story Card Dark Mode Compatibility */
+/* Story Card Dark Mode Compatibility - Minimalist Design */
 
-/* Adjust vibrant gradients for dark mode */
+/* Dark mode specific adjustments */
 @media (prefers-color-scheme: dark) {
-    .story-card[data-bg^="gradient-"] {
-        filter: brightness(0.85) saturate(1.15);
+    .story-card {
+        background: rgba(20, 20, 24, 0.95);
+        border-color: rgba(255, 255, 255, 0.08);
     }
     
-    /* Ensure text remains highly readable */
+    /* Ensure text remains readable */
     .story-card .card-content {
-        color: #ffffff !important;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        color: rgba(255, 255, 255, 0.95);
     }
     
     .story-card .card-title {
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        color: rgba(255, 255, 255, 0.95);
     }
     
     .story-card .card-badge {
-        background: rgba(0, 0, 0, 0.4);
-        backdrop-filter: blur(12px);
-        color: #ffffff;
-        border: 1px solid rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(255, 255, 255, 0.15);
     }
     
-    .story-card .card-gradient-overlay {
-        background: linear-gradient(
-            180deg,
-            rgba(0, 0, 0, 0.65) 0%,
-            rgba(0, 0, 0, 0.35) 50%,
-            rgba(0, 0, 0, 0.15) 100%
-        );
-    }
-    
-    /* Adjust visual effects for better visibility in dark mode */
-    .story-card[data-effect="bubbles"]::before,
-    .story-card[data-effect="bubbles"]::after {
-        background: radial-gradient(circle, rgba(255,255,255,0.15), rgba(255,255,255,0.03));
-    }
-    
-    .story-card[data-effect="sparkles"]::before {
-        opacity: 0.5;
-        box-shadow: 
-            20px 30px 0 rgba(255,255,255,0.5),
-            50px 10px 0 rgba(255,255,255,0.5),
-            80px 40px 0 rgba(255,255,255,0.5),
-            30px 60px 0 rgba(255,255,255,0.5),
-            70px 70px 0 rgba(255,255,255,0.5);
-    }
-    
-    .story-card[data-effect="waves"]::before {
-        background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 70%);
-    }
-    
-    .story-card[data-effect="pulse"]::before {
-        border-color: rgba(255,255,255,0.2);
-    }
-    
-    /* Adjust pattern overlays */
-    .story-card[data-pattern="dots"]::after {
-        opacity: 0.25;
-        background-image: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
-    }
-    
-    .story-card[data-pattern="grid"]::after {
-        opacity: 0.2;
-    }
-    
-    .story-card[data-pattern="diagonal"]::after {
-        opacity: 0.15;
+    /* Remove visual effects for minimalist design */
+    .story-card[data-effect]::before,
+    .story-card[data-effect]::after,
+    .story-card[data-pattern]::before,
+    .story-card[data-pattern]::after {
+        display: none;
     }
     
     /* Progress bars visibility */
@@ -80,28 +41,25 @@
     }
 }
 
-/* System dark mode preference */
-.dark-theme .story-card[data-bg^="gradient-"] {
-    filter: brightness(0.85) saturate(1.15);
+/* System dark mode preference - Minimalist */
+.dark-theme .story-card {
+    background: rgba(20, 20, 24, 0.95);
+    border-color: rgba(255, 255, 255, 0.08);
 }
 
 .dark-theme .story-card .card-content {
-    color: #ffffff !important;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    color: rgba(255, 255, 255, 0.95);
 }
 
 .dark-theme .story-card .card-badge {
-    background: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(12px);
-    color: #ffffff;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-.dark-theme .story-card[data-effect="bubbles"]::before,
-.dark-theme .story-card[data-effect="bubbles"]::after {
-    background: radial-gradient(circle, rgba(255,255,255,0.15), rgba(255,255,255,0.03));
-}
-
+.dark-theme .story-card[data-effect]::before,
+.dark-theme .story-card[data-effect]::after,
 .dark-theme .story-card[data-pattern]::after {
-    opacity: 0.2;
+    display: none;
 }
