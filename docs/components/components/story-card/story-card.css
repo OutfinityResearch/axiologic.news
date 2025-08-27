@@ -34,7 +34,7 @@
 
 .resume-progress {
     position: absolute;
-    bottom: 26px; /* lift to make room for sponsor below */
+    bottom: 12px; /* match top spacing for symmetry */
     left: 16px;
     right: 16px;
     height: 2px;
@@ -109,7 +109,7 @@
     width: 100%;
     min-height: auto;
     height: 100%; /* Stretch to slide height */
-    padding: 20px;
+    padding: 16px;
     color: var(--text);
     position: relative;
     z-index: 2;
@@ -117,6 +117,15 @@
     flex-direction: column;
     box-sizing: border-box;
 }
+
+/* Selection card compact spacing */
+.story-card.selection-mode .card-content { padding: 8px; }
+.story-card.selection-mode .card-header { margin-bottom: 6px; padding-bottom: 6px; }
+.story-card.selection-mode .card-title { font-size: 16px; }
+.story-card.selection-mode .apply-sources-btn { margin-top: 6px; padding: 5px 10px; font-size: 12px; border-radius: 12px; }
+.story-card.selection-mode .sources-list { max-height: 140px; gap: 4px 6px; }
+.story-card.selection-mode .source-item { padding: 4px 4px; }
+.story-card.selection-mode .source-checkbox { margin-right: 6px; }
 
 
 
@@ -168,6 +177,7 @@
     overflow-y: auto;
     overflow-x: hidden;
     padding-right: 0;
+    padding-bottom: 34px; /* compact but safe above progress + sponsor */
     max-height: none;
     min-height: auto;
     scrollbar-width: thin;
@@ -260,9 +270,7 @@
 
 /* Sponsor Section */
 .sponsor-section {
-    margin-top: 20px;
-    padding-top: 16px;
-    border-top: 1px solid var(--border);
+    display: none; /* avoid duplicate banner; we use inline sponsor */
 }
 
 
@@ -302,12 +310,17 @@
 .sponsor-inline {
     position: absolute;
     left: 16px;
-    bottom: 6px; /* below the progress bar */
+    right: 16px;
+    bottom: 2px; /* sit under progress but keep 12px to edge for the bar */
     z-index: 4;
     text-align: left;
-    font-size: 11px;
+    font-size: 10px;
+    line-height: 1;
     color: var(--text-secondary);
     pointer-events: none; /* non-interactive unless active card */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .sponsor-inline a {
@@ -398,9 +411,9 @@
 
 /* Data Sources Selector - LinkedIn Style */
 .data-sources-selector {
-    margin-top: 8px;
-    padding-top: 6px;
-    border-top: 1px solid var(--border);
+    margin-top: 6px;
+    padding-top: 0;
+    border-top: none; /* avoid double line with header border */
 }
 
 
@@ -414,28 +427,7 @@
 
 
 
-.sources-actions {
-    display: flex;
-    justify-content: flex-end;
-    gap: 8px;
-    margin-bottom: 6px;
-}
-
-.sources-actions .select-all-btn,
-.sources-actions .clear-all-btn {
-    background: transparent;
-    border: none;
-    color: var(--primary);
-    font-size: 12px;
-    font-weight: 600;
-    cursor: pointer;
-    padding: 2px 4px;
-}
-
-.sources-actions .clear-all-btn { color: var(--text-secondary); }
-
-.sources-actions .select-all-btn:hover,
-.sources-actions .clear-all-btn:hover { text-decoration: underline; }
+/* actions removed */
 
 .sources-list {
     display: grid;
@@ -514,3 +506,22 @@
 .apply-sources-btn:active {
     transform: translateY(0);
 }
+.sources-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-bottom: 4px;
+}
+
+.sources-actions .select-all-btn,
+.sources-actions .clear-all-btn {
+    background: transparent;
+    border: none;
+    color: var(--primary);
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0 2px;
+}
+
+.sources-actions .clear-all-btn { color: var(--text-secondary); }

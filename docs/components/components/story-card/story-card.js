@@ -24,6 +24,15 @@ export class StoryCard {
 
         this.applyDynamicGradient();
         this.populateContent();
+        // For selection card, shrink to content height
+        if (this.storyIndex === 0) {
+            this.element.classList.add('selection-card');
+            this.adjustSelectionCardHeight();
+            if (!this._onResizeSel) {
+                this._onResizeSel = () => this.adjustSelectionCardHeight();
+                window.addEventListener('resize', this._onResizeSel);
+            }
+        }
         
         // Show data sources selector on the first card
         if (this.storyIndex === 0) {
@@ -44,6 +53,27 @@ export class StoryCard {
             this.computeAndSetMaxHeight();
         };
         window.addEventListener('resize', this._onResize);
+        // Precompute stable height for all non-selection cards to prevent flicker
+        if (this.storyIndex !== 0) {
+            this.computeAndSetMaxHeight();
+        }
+    }
+
+    adjustSelectionCardHeight() {
+        try {
+            const host = this.element; // <story-card>
+            const root = this.element.querySelector('.story-card');
+            const content = this.element.querySelector('.card-slide[data-id="main"] .card-content');
+            if (!host || !root || !content) return;
+            // Measure main content height
+            const footerReserve = 40; // progress bar + sponsor inline space
+            const h = Math.ceil(content.scrollHeight + footerReserve);
+            host.style.aspectRatio = 'auto';
+            host.style.height = h + 'px';
+            // Ensure inner root matches host
+            root.style.height = '100%';
+            root.classList.add('selection-mode');
+        } catch (_) { }
     }
 
     applyDynamicGradient() {
@@ -164,11 +194,8 @@ export class StoryCard {
         if (this.post.promoBanner) {
             const sponsorSection = this.element.querySelector('.sponsor-section');
             if (sponsorSection) {
-                sponsorSection.innerHTML = `
-                    <a href="${this.post.promoBanner.url}" target="_blank" class="sponsor-link">
-                        <i class="fas fa-ad"></i> ${this.post.promoBanner.text}
-                    </a>
-                `;
+                sponsorSection.innerHTML = '';
+                sponsorSection.style.display = 'none';
             }
             // Also show a compact inline sponsor note above the resume bar (visible on all slides)
             const sponsorInline = this.element.querySelector('.sponsor-inline');
@@ -537,8 +564,7 @@ export class StoryCard {
         // Called by parent when story becomes active
         this.showSlide(0);
         // Do not start autoplay yet; wait for user swipe-left on essence
-        // Ensure height fits the maximum needed among all slides
-        this.computeAndSetMaxHeight();
+        // Height already precomputed for non-selection cards to avoid flicker
     }
 
     cleanup() {
@@ -546,6 +572,10 @@ export class StoryCard {
         if (this._onResize) {
             window.removeEventListener('resize', this._onResize);
             this._onResize = null;
+        }
+        if (this._onResizeSel) {
+            window.removeEventListener('resize', this._onResizeSel);
+            this._onResizeSel = null;
         }
     }
 
@@ -635,21 +665,11 @@ export class StoryCard {
 
     computeAndSetMaxHeight() {
         try {
+            if (this._fixedHeight) return; // already computed and fixed
+            if (this.storyIndex === 0) return; // selection card handled separately
             const root = this.element.querySelector('.story-card');
             if (!root || !this.slides?.length) return;
-
-            // Only adjust height for larger text sizes to avoid flicker in normal mode
-            const scaleStr = getComputedStyle(document.documentElement).getPropertyValue('--content-scale') || '1';
-            const scale = parseFloat(scaleStr);
-            if (!(scale > 1.0)) {
-                // Reset to CSS-defined aspect sizing; ensure internal body doesn't scroll
-                root.style.height = '';
-                const bodies = this.element.querySelectorAll('.card-body');
-                bodies.forEach(b => { b.style.overflowY = 'hidden'; });
-                return;
-            }
-
-            const extras = 32; // progress bars and spacing
+            const extras = 34; // compact reserve for progress + sponsor
             const maxHViewport = Math.floor(window.innerHeight * 0.92); // allow a bit more for larger fonts
 
             // Measure max content height across slides without transitions
@@ -683,6 +703,7 @@ export class StoryCard {
 
             const finalH = Math.min(maxTotal, maxHViewport);
             root.style.height = `${finalH}px`;
+            this._fixedHeight = true;
 
             const capApplied = maxTotal > maxHViewport;
             const bodies = this.element.querySelectorAll('.card-body');
@@ -720,6 +741,7 @@ export class StoryCard {
         const applyBtn = selector.querySelector('.apply-sources-btn');
         const selectAllBtn = selector.querySelector('.select-all-btn');
         const clearAllBtn = selector.querySelector('.clear-all-btn');
+        if (applyBtn) applyBtn.style.display = 'none';
         
         // Get available sources
         const availableSources = [
@@ -735,9 +757,25 @@ export class StoryCard {
         
         // Get currently selected sources
         const selected = await window.LocalStorage.get('selectedSourceCategories') || ['default'];
+        const initialSelected = new Set(selected);
         
         // Populate sources list
         sourcesList.innerHTML = '';
+        const onChange = () => {
+            try {
+                const current = [];
+                sourcesList.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+                    if (cb.checked) {
+                        const id = cb.id.replace('source-', '');
+                        current.push(id);
+                    }
+                });
+                // Determine if changed
+                const changed = current.length !== initialSelected.size || current.some(id => !initialSelected.has(id));
+                if (applyBtn) applyBtn.style.display = changed ? 'block' : 'none';
+            } catch (_) {}
+        };
+
         availableSources.forEach(source => {
             const sourceItem = document.createElement('div');
             sourceItem.className = 'source-item';
@@ -762,20 +800,22 @@ export class StoryCard {
                 if (e.target !== checkbox) {
                     checkbox.checked = !checkbox.checked;
                 }
+                onChange();
             });
+            checkbox.addEventListener('change', onChange);
+        });
+
+        // Add handlers for select all / clear all
+        if (selectAllBtn) selectAllBtn.addEventListener('click', () => {
+            sourcesList.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = true);
+            onChange();
+        });
+        if (clearAllBtn) clearAllBtn.addEventListener('click', () => {
+            sourcesList.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+            onChange();
         });
         
-        // Actions: select all / clear all
-        if (selectAllBtn) {
-            selectAllBtn.addEventListener('click', () => {
-                sourcesList.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = true);
-            });
-        }
-        if (clearAllBtn) {
-            clearAllBtn.addEventListener('click', () => {
-                sourcesList.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
-            });
-        }
+        // Actions removed (Select all / Clear all)
 
         // Handle apply button
         applyBtn.addEventListener('click', async () => {
@@ -789,9 +829,12 @@ export class StoryCard {
             
             // Save selection
             await window.LocalStorage.set('selectedSourceCategories', newSelection);
-            
-            // Reload the page to apply changes
-            window.location.reload();
+
+            // Mark to jump to first news (skip selection card) on next load
+            try { await window.LocalStorage.set('jumpToFirstNews', true); } catch (_) {}
+
+            // Re-open feed and scroll to first news
+            await window.webSkel.changeToDynamicPage('news-feed-page', 'app');
         });
     }
 

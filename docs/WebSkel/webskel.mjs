@@ -484,11 +484,14 @@ const G = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
 }, Symbol.toStringTag, { value: "Module" }));
 class h {
   constructor() {
-    this._appContent = {}, this.appServices = {}, this._documentElement = document, this.actionRegistry = {}, this.registerListeners(), this.ResourceManager = new L(), this.defaultLoader = document.createElement("dialog"), this.loaderCount = 0, this.defaultLoader.classList.add("spinner"), this.defaultLoader.classList.add("spinner-default-style"), window.showApplicationError = async (e, t, n) => await S("show-error-modal", {
-      title: e,
-      message: t,
-      technical: n
-    }), console.log("creating new app manager instance");
+    this._appContent = {}, this.appServices = {}, this._documentElement = document, this.actionRegistry = {}, this.registerListeners(), this.ResourceManager = new L(), this.defaultLoader = document.createElement("dialog"), this.loaderCount = 0, this.defaultLoader.classList.add("spinner"), this.defaultLoader.classList.add("spinner-default-style"), window.showApplicationError = async (e, t, n) => {
+      try { console.error("ApplicationError:", e, t, n); } catch (_) {}
+      return await S("show-error-modal", {
+        title: e,
+        message: t,
+        technical: n
+      });
+    }, console.log("creating new app manager instance");
   }
   async reinit(e) {
     await h.instance.loadConfigs(e);

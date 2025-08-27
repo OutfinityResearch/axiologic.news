@@ -13,6 +13,11 @@ export class NewsFeedPage {
     }
 
     async beforeRender() {
+        this.startAtFirstNews = false;
+        try {
+            const jump = await window.LocalStorage.get('jumpToFirstNews');
+            this.startAtFirstNews = !!jump;
+        } catch (_) { this.startAtFirstNews = false; }
         const hasVisited = await window.LocalStorage.get('hasVisitedBefore');
         if (!hasVisited) {
             const tutorialPost = this.createTutorialPost();
@@ -145,10 +150,9 @@ export class NewsFeedPage {
         if (placeholder) placeholder.remove();
 
         container.innerHTML = '';
-        // Add a top spacer to help centering the first card
+        // Add a top spacer (invisible) to allow the first card to center when scrolled
         const topSpacer = document.createElement('div');
         topSpacer.className = 'top-spacer';
-        topSpacer.innerHTML = '<div class="spacer-title">News</div>';
         container.appendChild(topSpacer);
         this.storyCards = [];
 
@@ -172,6 +176,8 @@ export class NewsFeedPage {
                 }
             }
 
+            // Keep a minimal top spacer; no dynamic large gaps
+
             // Do not auto-advance to next post on story-finished
             this.element.removeEventListener('story-finished', this.boundNextStory);
 
@@ -179,6 +185,10 @@ export class NewsFeedPage {
             // Optional: infinite scroll can remain off for now
 
             // Mark initial active based on current center
+            // Default: start at first real news (index 1) and let user manually navigate to selection card (index 0)
+            this.currentStoryIndex = this.posts.length > 1 ? 1 : 0;
+            // If explicitly requested via flag, keep centering on first news as well
+            if (this.startAtFirstNews && this.posts.length > 1) this.currentStoryIndex = 1;
             this.checkActiveStory();
         });
 
@@ -208,15 +218,22 @@ export class NewsFeedPage {
         });
 
         // Initial activation and centering on first render
-        requestAnimationFrame(() => {
+        requestAnimationFrame(async () => {
             this.checkActiveStory();
             const cards = container.querySelectorAll('story-card');
             if (cards[this.currentStoryIndex]) {
                 cards[this.currentStoryIndex].classList.add('active-card');
+                // Also mark neighbor classes initially
+                const prevEl = cards[this.currentStoryIndex - 1];
+                const nextEl = cards[this.currentStoryIndex + 1];
+                if (prevEl) prevEl.classList.add('prev-card');
+                if (nextEl) nextEl.classList.add('next-card');
                 // Use a standard behavior
                 cards[this.currentStoryIndex].scrollIntoView({ behavior: 'auto', block: 'center' });
                 this.storyCards[this.currentStoryIndex]?.startCarousel();
             }
+            // Clear jump flag after applying once
+            try { await window.LocalStorage.set('jumpToFirstNews', false); } catch (_) {}
         });
     }
 
@@ -245,9 +262,7 @@ export class NewsFeedPage {
                 const el = cards[idx];
                 if (el) {
                     el.classList.remove('active-card');
-                    // Clear any dynamic height when deactivating
-                    const root = el.querySelector('.story-card');
-                    if (root) root.style.height = '';
+                    el.classList.remove('prev-card', 'next-card');
                 }
             });
 
@@ -256,6 +271,11 @@ export class NewsFeedPage {
             const activePresenter = this.storyCards[newActive];
             const activeEl = cards[newActive];
             if (activeEl) activeEl.classList.add('active-card');
+            // Mark neighbors
+            const prevEl = cards[newActive - 1];
+            const nextEl = cards[newActive + 1];
+            if (prevEl) prevEl.classList.add('prev-card');
+            if (nextEl) nextEl.classList.add('next-card');
             if (activePresenter) activePresenter.startCarousel();
             
             // Mark this post as having been centered
@@ -274,7 +294,11 @@ export class NewsFeedPage {
             }
         } else {
             // Maintain active class on current
-            cards.forEach((el, idx) => el.classList.toggle('active-card', idx === this.currentStoryIndex));
+            cards.forEach((el, idx) => {
+                el.classList.toggle('active-card', idx === this.currentStoryIndex);
+                el.classList.toggle('prev-card', idx === this.currentStoryIndex - 1);
+                el.classList.toggle('next-card', idx === this.currentStoryIndex + 1);
+            });
         }
     }
 

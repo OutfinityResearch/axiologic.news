@@ -19,8 +19,15 @@ export class ShowErrorModal {
         messageElement.textContent = this.message;
         this.element.querySelector("[data-id='technical']").textContent = this.technical;
 
-        webSkel.textService.adjustFontSize(titleElement);
-        webSkel.textService.adjustFontSize(messageElement);
+        try {
+            const ws = window.webSkel;
+            if (ws && ws.textService && typeof ws.textService.adjustFontSize === 'function') {
+                ws.textService.adjustFontSize(titleElement);
+                ws.textService.adjustFontSize(messageElement);
+            }
+        } catch (_) {
+            // Ignore optional text sizing errors
+        }
     }
 
     closeModal() {
