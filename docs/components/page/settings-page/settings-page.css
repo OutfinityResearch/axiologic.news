@@ -4,7 +4,6 @@
 .settings-content { padding:16px; }
 .settings-section { background: var(--surface); border:1px solid var(--border); border-radius:12px; padding:16px; }
 .field-row { display:flex; align-items:center; justify-content:space-between; gap:12px; }
-.theme-options { display:flex; gap:10px; }
 .theme-btn { background: var(--glass); border:1px solid var(--border); color: var(--text); padding:10px 14px; border-radius:10px; cursor:pointer; }
 .theme-btn.active { outline: 2px solid var(--text); }
 

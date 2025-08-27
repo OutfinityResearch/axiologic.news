@@ -31,8 +31,11 @@ export class NewsFeedPage {
         
         let jsonPosts = [];
         try {
-            // Try to load from configured external URLs first
-            const externalUrls = await window.LocalStorage.get('externalPostsUrls') || [];
+            // Try to load from configured external URLs first (support tagged sources)
+            const externalSources = await window.LocalStorage.get('externalPostSources') || [];
+            const allExternal = Array.isArray(externalSources) ? externalSources.map(s => s.url) : (await window.LocalStorage.get('externalPostsUrls') || []);
+            const selectedExternal = await window.LocalStorage.get('selectedExternalPostsUrls');
+            const externalUrls = Array.isArray(selectedExternal) ? selectedExternal : allExternal;
             for (const url of externalUrls) {
                 try {
                     const response = await fetch(url, { cache: 'no-store' });

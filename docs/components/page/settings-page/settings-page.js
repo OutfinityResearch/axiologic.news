@@ -11,26 +11,18 @@ export class SettingsPage {
     const back = this.element.querySelector('#back-button');
     if (back) back.addEventListener('click', () => window.webSkel.changeToDynamicPage('news-feed-page','app'));
 
-    const btnLight = this.element.querySelector('#theme-light');
-    const btnDark = this.element.querySelector('#theme-dark');
     const btnSmall = this.element.querySelector('#text-small');
     const btnMedium = this.element.querySelector('#text-medium');
     const btnLarge = this.element.querySelector('#text-large');
     const btnXLarge = this.element.querySelector('#text-xlarge');
 
     const applyActive = () => {
-      const current = document.documentElement.getAttribute('data-theme');
-      btnLight?.classList.toggle('active', current === 'light');
-      btnDark?.classList.toggle('active', current === 'dark');
       const scale = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--content-scale') || '1');
       btnSmall?.classList.toggle('active', Math.abs(scale - 0.9) < 0.01);
       btnMedium?.classList.toggle('active', Math.abs(scale - 1.0) < 0.01);
       btnLarge?.classList.toggle('active', Math.abs(scale - 1.15) < 0.01);
       btnXLarge?.classList.toggle('active', Math.abs(scale - 1.3) < 0.01);
     };
-
-    btnLight?.addEventListener('click', () => { window.ThemeManager?.setTheme('light'); applyActive(); });
-    btnDark?.addEventListener('click', () => { window.ThemeManager?.setTheme('dark'); applyActive(); });
 
     const setScale = async (value) => {
       document.documentElement.style.setProperty('--content-scale', String(value));

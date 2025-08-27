@@ -7,9 +7,9 @@
       "presenterClassName": "NewsFeedPage"
     },
     {
-      "name": "settings-page",
-      "type": "page",
-      "presenterClassName": "SettingsPage"
+      "name": "add-external-source-modal",
+      "type": "modals",
+      "presenterClassName": "AddExternalSourceModal"
     },
     {
       "name": "external-sources-settings-page",

@@ -757,7 +757,14 @@ export class StoryCard {
         
         // Get currently selected sources
         const selected = await window.LocalStorage.get('selectedSourceCategories') || ['default'];
-        const initialSelected = new Set(selected);
+        const externalSources = await window.LocalStorage.get('externalPostSources') || [];
+        const externalUrls = Array.isArray(externalSources) ? externalSources.map(s => s.url) : (await window.LocalStorage.get('externalPostsUrls') || []);
+        const selectedExternal = await window.LocalStorage.get('selectedExternalPostsUrls');
+        const selectedExtSet = new Set(Array.isArray(selectedExternal) ? selectedExternal : externalUrls);
+        const initialSelected = new Set([
+            ...selected,
+            ...Array.from(selectedExtSet).map(u => `url:${encodeURIComponent(u)}`)
+        ]);
         
         // Populate sources list
         sourcesList.innerHTML = '';
@@ -805,6 +812,35 @@ export class StoryCard {
             checkbox.addEventListener('change', onChange);
         });
 
+        // External URLs appended after categories
+        (externalSources.length ? externalSources.map(s => ({ url: s.url, tag: s.tag })) : externalUrls.map(u => ({ url: u, tag: '' }))).forEach(({url, tag}) => {
+            const sourceItem = document.createElement('div');
+            sourceItem.className = 'source-item';
+            const checkbox = document.createElement('input');
+            checkbox.type = 'checkbox';
+            checkbox.className = 'source-checkbox';
+            const encoded = encodeURIComponent(url);
+            checkbox.id = `source-url:${encoded}`;
+            checkbox.checked = selectedExtSet.has(url);
+            const label = document.createElement('label');
+            label.className = 'source-label';
+            label.htmlFor = `source-url:${encoded}`;
+            let display = tag;
+            if (!display || display.length === 0) {
+                display = url;
+                try { const u = new URL(url); display = u.hostname.replace(/^www\./,''); } catch {}
+            }
+            label.textContent = display;
+            sourceItem.appendChild(checkbox);
+            sourceItem.appendChild(label);
+            sourcesList.appendChild(sourceItem);
+            sourceItem.addEventListener('click', (e) => {
+                if (e.target !== checkbox) checkbox.checked = !checkbox.checked;
+                onChange();
+            });
+            checkbox.addEventListener('change', onChange);
+        });
+
         // Add handlers for select all / clear all
         if (selectAllBtn) selectAllBtn.addEventListener('click', () => {
             sourcesList.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = true);
@@ -819,21 +855,22 @@ export class StoryCard {
 
         // Handle apply button
         applyBtn.addEventListener('click', async () => {
-            const newSelection = [];
+            const newCategories = [];
             availableSources.forEach(source => {
                 const checkbox = document.getElementById(`source-${source.id}`);
-                if (checkbox && checkbox.checked) {
-                    newSelection.push(source.id);
-                }
+                if (checkbox && checkbox.checked) newCategories.push(source.id);
             });
-            
-            // Save selection
-            await window.LocalStorage.set('selectedSourceCategories', newSelection);
+            const newExternal = [];
+            externalUrls.forEach(url => {
+                const encoded = encodeURIComponent(url);
+                const cb = document.getElementById(`source-url:${encoded}`);
+                if (cb && cb.checked) newExternal.push(url);
+            });
 
-            // Mark to jump to first news (skip selection card) on next load
+            await window.LocalStorage.set('selectedSourceCategories', newCategories);
+            await window.LocalStorage.set('selectedExternalPostsUrls', newExternal);
+
             try { await window.LocalStorage.set('jumpToFirstNews', true); } catch (_) {}
-
-            // Re-open feed and scroll to first news
             await window.webSkel.changeToDynamicPage('news-feed-page', 'app');
         });
     }

@@ -79,5 +79,59 @@
     "firstSeenAt": "2025-08-27T13:48:06.626Z",
     "lastSeenAt": "2025-08-27T13:48:06.626Z",
     "count": 1
+  },
+  {
+    "url": "https://blog.close.com/rss/",
+    "name": "Close Sales Blog",
+    "category": "sales",
+    "lastError": "HTTP 404: Not Found",
+    "firstSeenAt": "2025-08-27T13:51:15.926Z",
+    "lastSeenAt": "2025-08-27T13:51:15.926Z",
+    "count": 1
+  },
+  {
+    "url": "https://www.reddit.com/r/asksales/.rss",
+    "name": "Reddit r/AskSales",
+    "category": "sales",
+    "lastError": "HTTP 403: Forbidden",
+    "firstSeenAt": "2025-08-27T13:52:08.088Z",
+    "lastSeenAt": "2025-08-27T13:52:08.088Z",
+    "count": 1
+  },
+  {
+    "url": "https://www.scientificamerican.com/feed/",
+    "name": "Scientific American",
+    "category": "science",
+    "lastError": "HTTP 404: Not Found",
+    "firstSeenAt": "2025-08-27T13:53:36.080Z",
+    "lastSeenAt": "2025-08-27T13:53:36.080Z",
+    "count": 1
+  },
+  {
+    "url": "https://sifted.eu/feed/",
+    "name": "Sifted",
+    "category": "startups",
+    "lastError": "HTTP 308: Permanent Redirect",
+    "firstSeenAt": "2025-08-27T13:57:33.115Z",
+    "lastSeenAt": "2025-08-27T13:57:33.115Z",
+    "count": 1
+  },
+  {
+    "url": "https://www.wired.com/feed/category/technology/latest/rss",
+    "name": "Wired",
+    "category": "tech",
+    "lastError": "HTTP 404: Not Found",
+    "firstSeenAt": "2025-08-27T13:58:26.025Z",
+    "lastSeenAt": "2025-08-27T13:58:26.025Z",
+    "count": 1
+  },
+  {
+    "url": "https://feeds.reuters.com/reuters/worldNews",
+    "name": "Reuters World News",
+    "category": "world",
+    "lastError": "Network error: getaddrinfo ENOTFOUND feeds.reuters.com",
+    "firstSeenAt": "2025-08-27T14:02:47.637Z",
+    "lastSeenAt": "2025-08-27T14:02:47.637Z",
+    "count": 1
   }
 ]
