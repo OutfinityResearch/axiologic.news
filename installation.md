@@ -14,7 +14,7 @@ The project includes a GitHub Actions workflow to automatically update the news 
 
 ### How it Works
 
-The workflow is defined in the file `.github/workflows/update-news.yml`. It performs the following steps:
+The workflow, once activated, will perform the following steps:
 
 1.  **Scheduled Trigger:** The workflow is scheduled to run every hour.
 2.  **Checkout:** It checks out the latest version of the repository.
@@ -24,17 +24,16 @@ The workflow is defined in the file `.github/workflows/update-news.yml`. It perf
 
 ### Setting up the GitHub Action
 
-To enable the automated news generation in your own fork of this repository, you need to configure secrets for the AI providers you want to use.
+To enable the automated news generation in your own fork of this repository, you need to configure secrets and manually create the workflow file.
 
-1.  **Fork the repository:** Start by forking this repository to your own GitHub account.
+#### 1. Configure Secrets
 
-2.  **Navigate to Settings:** In your forked repository, go to `Settings` > `Secrets and variables` > `Actions`.
+First, you need to add the necessary API keys as secrets in your forked repository.
 
-3.  **Create New Secrets:** Click on `New repository secret` to add the necessary API keys. The secrets you need to add depend on the AI provider you want to use.
+1.  **Navigate to Settings:** In your forked repository, go to `Settings` > `Secrets and variables` > `Actions`.
+2.  **Create New Secrets:** Click on `New repository secret` to add the necessary API keys.
 
-#### Required Secrets
-
-The `generate-ai.js` script supports multiple AI providers. You need to provide an API key for at least one of them.
+The secrets you need to add depend on the AI provider you want to use:
 
 -   `AI_PROVIDER`: (Optional) The AI provider to use. Defaults to `openai`. Supported values are `openai`, `gemini`, `mistral`, `claude`, `anthropic`, `groq`, `ollama`.
 -   `AI_MODEL`: (Optional) The specific model to use for the selected provider.
@@ -50,4 +49,15 @@ The `generate-ai.js` script supports multiple AI providers. You need to provide 
 
 If you want to use OpenAI, you need to create a secret named `OPENAI_API_KEY` with your OpenAI API key as the value. You can also set the `AI_PROVIDER` secret to `openai`.
 
-Once the secrets are configured, the GitHub Action will run automatically and keep your news feed up to date.
+#### 2. Activate the Workflow
+
+Due to GitHub's security policies, pushing workflow files directly can be restricted. To work around this, you need to create the workflow file manually in the GitHub interface.
+
+1.  **Go to the `Actions` tab** in your GitHub repository.
+2.  Click on **`set up a workflow yourself`** or **`New workflow`**.
+3.  This will open a new file editor. Name the file `update-news.yml`.
+4.  Go to the `workflow-template.txt` file in the root of your repository and copy its entire content.
+5.  Paste the content into the new `update-news.yml` file in the GitHub editor.
+6.  Click **`Commit changes...`** to save the new workflow file.
+
+Once you have configured the secrets and created the workflow file, the GitHub Action will be active and will run automatically every hour to keep your news feed up to date. You can then delete the `workflow-template.txt` file from your repository.
