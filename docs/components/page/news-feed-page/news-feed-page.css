@@ -128,14 +128,5 @@
 @keyframes spin {
     to { transform: translateX(-50%) rotate(360deg); }
 }
-.news-feed-container story-card.prev-card:not(.selection-card) .card-body,
-.news-feed-container story-card.prev-card:not(.selection-card) .reaction-text,
-.news-feed-container story-card.prev-card:not(.selection-card) .source-section {
-    display: none;
-}
-
-.news-feed-container story-card.prev-card:not(.selection-card) .card-badge,
-.news-feed-container story-card.prev-card:not(.selection-card) .card-time {
-    display: none;
-}
+/* Keep content visible on previous cards - no hiding */
 .news-feed-container story-card.selection-card { pointer-events: auto; }

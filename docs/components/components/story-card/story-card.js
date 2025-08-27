@@ -223,13 +223,17 @@ export class StoryCard {
         const cleanTitle = this.sanitizeTitle(this.post.title);
         this.post.reactions.forEach((reaction, index) => {
             // Extract heading from first up to 5 words if a colon appears
-            let heading = `Perspective ${index + 1}`;
+            let heading = 'Perspective';
             let bodyText = reaction;
             try {
                 const match = reaction.match(/^((?:\S+\s+){0,4}\S+)\s*:\s*(.*)$/);
                 if (match && match[1]) {
                     heading = match[1].trim();
                     bodyText = match[2] !== undefined ? match[2].trim() : '';
+                    // If heading still contains "Perspective" with numbers, clean it
+                    if (heading.toLowerCase().includes('perspective')) {
+                        heading = 'Perspective';
+                    }
                 }
             } catch (_) {}
 
@@ -631,6 +635,8 @@ export class StoryCard {
                 .replace(/[\u2013\u2014]/g, '-')
                 .replace(/\s+/g, ' ') // collapse whitespace
                 .trim();
+            // Remove leading separators/punctuation (parentheses, brackets, commas, etc.)
+            text = text.replace(/^[\(\)\[\],;:\-\u2013\u2014\.]+\s*/, '').trim();
             // Remove dangling punctuation at end (common when titles are cut)
             text = text.replace(/[\-:\u2013\u2014]+$/g, '').trim();
             return text;
@@ -744,112 +750,145 @@ export class StoryCard {
         const addSourceBtn = selector.querySelector('.add-source-btn');
         if (applyBtn) applyBtn.style.display = 'none';
         
-        // Get available sources
-        const availableSources = [
-            { id: 'default', name: 'Default' },
-            { id: 'ai', name: 'AI' },
-            { id: 'marketing', name: 'Marketing' },
-            { id: 'tech', name: 'Technology' },
-            { id: 'science', name: 'Science' },
-            { id: 'business', name: 'Business' },
-            { id: 'health', name: 'Health' },
-            { id: 'world', name: 'World News' }
+        // Default sources that are built-in
+        const defaultSources = [
+            { id: 'default', name: 'Default', type: 'category', removable: false },
+            { id: 'ai', name: 'AI', type: 'category', removable: false },
+            { id: 'marketing', name: 'Marketing', type: 'category', removable: false },
+            { id: 'tech', name: 'Technology', type: 'category', removable: false },
+            { id: 'science', name: 'Science', type: 'category', removable: false },
+            { id: 'business', name: 'Business', type: 'category', removable: false },
+            { id: 'health', name: 'Health', type: 'category', removable: false },
+            { id: 'world', name: 'World News', type: 'category', removable: false }
         ];
         
-        // Get currently selected sources
-        const selected = await window.LocalStorage.get('selectedSourceCategories') || ['default'];
+        // Initialize sources in localStorage if not present
+        let allSources = await window.LocalStorage.get('allNewsSources');
+        if (!allSources) {
+            allSources = [...defaultSources];
+            await window.LocalStorage.set('allNewsSources', allSources);
+        }
+        
+        // Ensure default sources are always present
+        const existingIds = new Set(allSources.map(s => s.id));
+        defaultSources.forEach(defSource => {
+            if (!existingIds.has(defSource.id)) {
+                allSources.push(defSource);
+            }
+        });
+        
+        // Add external sources to allSources if not already there
         const externalSources = await window.LocalStorage.get('externalPostSources') || [];
+        externalSources.forEach(ext => {
+            if (ext && ext.url && !allSources.find(s => s.url === ext.url)) {
+                allSources.push({
+                    url: ext.url,
+                    tag: ext.tag || '',
+                    type: 'external',
+                    removable: true
+                });
+            }
+        });
         
-        // Debug: Log what we're getting from storage
-        console.log('External sources from storage:', externalSources);
+        // Save updated sources list
+        await window.LocalStorage.set('allNewsSources', allSources);
         
-        // Ensure externalSources is an array
-        const externalSourcesArray = Array.isArray(externalSources) ? externalSources : [];
-        const externalUrls = externalSourcesArray.map(s => s && s.url ? s.url : '').filter(Boolean);
+        // Get currently selected sources
+        const selectedCategories = await window.LocalStorage.get('selectedSourceCategories') || ['default'];
         const selectedExternal = await window.LocalStorage.get('selectedExternalPostsUrls') || [];
-        const selectedExtSet = new Set(Array.isArray(selectedExternal) ? selectedExternal : []);
-        const initialSelected = new Set([
-            ...selected,
-            ...Array.from(selectedExtSet).map(u => `url:${encodeURIComponent(u)}`)
+        const selectedSet = new Set([
+            ...selectedCategories,
+            ...selectedExternal
         ]);
         
         // Populate sources list
         sourcesList.innerHTML = '';
         const onChange = () => {
-            try {
-                const current = [];
-                sourcesList.querySelectorAll('input[type="checkbox"]').forEach(cb => {
-                    if (cb.checked) {
-                        const id = cb.id.replace('source-', '');
-                        current.push(id);
-                    }
-                });
-                // Determine if changed
-                const changed = current.length !== initialSelected.size || current.some(id => !initialSelected.has(id));
-                if (applyBtn) applyBtn.style.display = changed ? 'block' : 'none';
-            } catch (_) {}
+            if (applyBtn) applyBtn.style.display = 'block';
         };
 
-        availableSources.forEach(source => {
+        // Render all sources from localStorage
+        allSources.forEach(source => {
             const sourceItem = document.createElement('div');
             sourceItem.className = 'source-item';
-            
-            const checkbox = document.createElement('input');
-            checkbox.type = 'checkbox';
-            checkbox.className = 'source-checkbox';
-            checkbox.id = `source-${source.id}`;
-            checkbox.checked = selected.includes(source.id);
-            
-            const label = document.createElement('label');
-            label.className = 'source-label';
-            label.htmlFor = `source-${source.id}`;
-            label.textContent = source.name;
-            
-            sourceItem.appendChild(checkbox);
-            sourceItem.appendChild(label);
-            sourcesList.appendChild(sourceItem);
-            
-            // Make the whole item clickable
-            sourceItem.addEventListener('click', (e) => {
-                if (e.target !== checkbox) {
-                    checkbox.checked = !checkbox.checked;
-                }
-                onChange();
-            });
-            checkbox.addEventListener('change', onChange);
-        });
-
-        // External URLs appended after categories
-        console.log('Processing external sources:', externalSourcesArray);
-        externalSourcesArray.forEach(source => {
-            const url = source.url;
-            const tag = source.tag || '';
-            const sourceItem = document.createElement('div');
-            sourceItem.className = 'source-item';
-            const checkbox = document.createElement('input');
-            checkbox.type = 'checkbox';
-            checkbox.className = 'source-checkbox';
-            const encoded = encodeURIComponent(url);
-            checkbox.id = `source-url:${encoded}`;
-            checkbox.checked = selectedExtSet.has(url);
-            const label = document.createElement('label');
-            label.className = 'source-label';
-            label.htmlFor = `source-url:${encoded}`;
-            let display = tag;
-            if (!display || display.length === 0) {
-                display = url;
-                try { const u = new URL(url); display = u.hostname.replace(/^www\./,''); } catch {}
-            } else {
-                // Add # prefix to tag for display
-                display = '#' + tag;
+            if (source.removable) {
+                sourceItem.classList.add('removable');
             }
-            label.textContent = display;
+            
+            const checkbox = document.createElement('input');
+            checkbox.type = 'checkbox';
+            checkbox.className = 'source-checkbox';
+            
+            // Set ID based on source type
+            const sourceId = source.type === 'external' ? 
+                `source-url:${encodeURIComponent(source.url)}` : 
+                `source-${source.id}`;
+            checkbox.id = sourceId;
+            
+            // Check if selected
+            checkbox.checked = source.type === 'external' ? 
+                selectedSet.has(source.url) :
+                selectedSet.has(source.id);
+            
+            const label = document.createElement('label');
+            label.className = 'source-label';
+            label.htmlFor = sourceId;
+            
+            // Display text
+            if (source.type === 'external') {
+                label.textContent = source.tag ? `#${source.tag}` : source.url;
+            } else {
+                label.textContent = source.name;
+            }
+            
             sourceItem.appendChild(checkbox);
             sourceItem.appendChild(label);
+            
+            // Add delete button for removable sources
+            if (source.removable) {
+                const deleteBtn = document.createElement('button');
+                deleteBtn.className = 'delete-source-btn';
+                deleteBtn.innerHTML = '×';
+                deleteBtn.title = 'Remove source';
+                deleteBtn.addEventListener('click', async (e) => {
+                    e.stopPropagation();
+                    e.preventDefault();
+                    
+                    // Remove from allSources
+                    const updatedSources = allSources.filter(s => {
+                        if (source.type === 'external') {
+                            return s.url !== source.url;
+                        }
+                        return s.id !== source.id;
+                    });
+                    
+                    await window.LocalStorage.set('allNewsSources', updatedSources);
+                    
+                    // Also remove from legacy storage for external sources
+                    if (source.type === 'external') {
+                        const extSources = await window.LocalStorage.get('externalPostSources') || [];
+                        const updatedExt = extSources.filter(s => s.url !== source.url);
+                        await window.LocalStorage.set('externalPostSources', updatedExt);
+                        
+                        const selectedExt = await window.LocalStorage.get('selectedExternalPostsUrls') || [];
+                        const updatedSelExt = selectedExt.filter(url => url !== source.url);
+                        await window.LocalStorage.set('selectedExternalPostsUrls', updatedSelExt);
+                    }
+                    
+                    // Refresh the selector
+                    this.setupDataSourcesSelector();
+                });
+                sourceItem.appendChild(deleteBtn);
+            }
+            
             sourcesList.appendChild(sourceItem);
+            
+            // Make the whole item clickable (except delete button)
             sourceItem.addEventListener('click', (e) => {
-                if (e.target !== checkbox) checkbox.checked = !checkbox.checked;
-                onChange();
+                if (e.target !== checkbox && !e.target.classList.contains('delete-source-btn')) {
+                    checkbox.checked = !checkbox.checked;
+                    onChange();
+                }
             });
             checkbox.addEventListener('change', onChange);
         });
@@ -864,15 +903,36 @@ export class StoryCard {
                     const data = res && res.data;
                     if (!data || !data.url) return;
                     const tag = (data.tag || '').trim();
+                    
+                    // Get current sources
+                    const allSources = await window.LocalStorage.get('allNewsSources') || [];
+                    
+                    // Check if already exists
+                    if (allSources.find(s => s.url === data.url)) return;
+                    
+                    // Add new external source
+                    allSources.push({
+                        url: data.url,
+                        tag: tag,
+                        type: 'external',
+                        removable: true
+                    });
+                    
+                    await window.LocalStorage.set('allNewsSources', allSources);
+                    
+                    // Also update legacy storage for compatibility
                     const existing = await window.LocalStorage.get('externalPostSources') || [];
-                    if (existing.find(s => s && s.url === data.url)) return;
-                    existing.push({ url: data.url, tag });
-                    await window.LocalStorage.set('externalPostSources', existing);
+                    if (!existing.find(s => s && s.url === data.url)) {
+                        existing.push({ url: data.url, tag });
+                        await window.LocalStorage.set('externalPostSources', existing);
+                    }
+                    
                     const selectedExternal = await window.LocalStorage.get('selectedExternalPostsUrls') || [];
                     if (!selectedExternal.includes(data.url)) {
                         selectedExternal.push(data.url);
                         await window.LocalStorage.set('selectedExternalPostsUrls', selectedExternal);
                     }
+                    
                     this.setupDataSourcesSelector();
                 } catch (err) {
                     console.error('Add external source failed:', err);
@@ -895,16 +955,22 @@ export class StoryCard {
         // Handle apply button
         applyBtn.addEventListener('click', async () => {
             const newCategories = [];
-            availableSources.forEach(source => {
-                const checkbox = document.getElementById(`source-${source.id}`);
-                if (checkbox && checkbox.checked) newCategories.push(source.id);
-            });
             const newExternal = [];
-            externalSourcesArray.forEach(source => {
-                if (source && source.url) {
-                    const encoded = encodeURIComponent(source.url);
-                    const cb = document.getElementById(`source-url:${encoded}`);
-                    if (cb && cb.checked) newExternal.push(source.url);
+            
+            // Get all checked sources
+            const allSourcesNow = await window.LocalStorage.get('allNewsSources') || [];
+            allSourcesNow.forEach(source => {
+                let checkbox;
+                if (source.type === 'external') {
+                    checkbox = document.getElementById(`source-url:${encodeURIComponent(source.url)}`);
+                    if (checkbox && checkbox.checked) {
+                        newExternal.push(source.url);
+                    }
+                } else {
+                    checkbox = document.getElementById(`source-${source.id}`);
+                    if (checkbox && checkbox.checked) {
+                        newCategories.push(source.id);
+                    }
                 }
             });
 
