@@ -64,6 +64,20 @@ export class NewsFeedPage {
 
         const allPosts = [...jsonPosts, ...localPosts];
 
+        // Ensure every post has a stable id for tracking/ordering
+        const ensureId = (p) => {
+            try {
+                if (p && !p.id) {
+                    const date = p.publishedAt || p.generatedAt || p.pubDate || p.date || p.createdAt || '';
+                    const src = p.source || p.url || '';
+                    const title = p.title || '';
+                    p.id = `${src}|${title}|${date}`.slice(0, 256);
+                }
+            } catch (_) {}
+            return p;
+        };
+        allPosts.forEach(ensureId);
+
         // Filter out posts that look like HTML/code or have too-short pages
         const isLikelyHtmlOrCode = (text = '') => {
             if (!text || typeof text !== 'string') return false;
@@ -93,8 +107,7 @@ export class NewsFeedPage {
         );
         const filteredPosts = uniquePosts.filter(isValidPost);
 
-        // Get viewing history data
-        const progressMap = await window.LocalStorage.get('postProgress') || {};
+        // Get viewing history data: which posts have ever been centered (brought in prime plan)
         const centeredMap = await window.LocalStorage.get('postCenteredHistory') || {};
         
         // Helper to get the publication/generation date
@@ -108,27 +121,23 @@ export class NewsFeedPage {
             return 0;
         };
         
-        // Sort by multiple criteria:
-        // 1. Never centered (never reached viewport center)
-        // 2. Unseen (no progress)
-        // 3. Partial (0 < progress < 1)
-        // 4. Complete (progress = 1)
-        // Within each group, sort by date (newest first)
-        const priorityRank = (p) => {
-            const hasBeenCentered = centeredMap[p.id]?.centered === true;
-            const progress = progressMap[p.id]?.progress;
-            
-            if (!hasBeenCentered) return 0; // Never centered - highest priority
-            if (progress === undefined || progress === 0) return 1; // Unseen
-            if (progress > 0 && progress < 1) return 2; // Partial
-            return 3; // Complete
+        // Sort logic:
+        // 1) Posts never centered (not seen in prime plan) first
+        // 2) Within each group, newest first by published/generated date
+        const stableId = (p) => {
+            try {
+                const src = (p.source || p.url || '').trim().toLowerCase();
+                const date = (p.publishedAt || p.generatedAt || p.pubDate || p.date || p.createdAt || '').trim();
+                if (src) return `${src}|${date}`;
+                return p.id || `${(p.title||'').trim()}|${date}`;
+            } catch (_) { return p.id; }
         };
-        
         this.posts = filteredPosts.sort((a, b) => {
-            const ra = priorityRank(a);
-            const rb = priorityRank(b);
-            if (ra !== rb) return ra - rb;
-            // Within same priority group, sort by date (newest first)
+            const aKey = stableId(a);
+            const bKey = stableId(b);
+            const aCentered = (centeredMap[aKey]?.centered || centeredMap[a.id]?.centered) ? 1 : 0;
+            const bCentered = (centeredMap[bKey]?.centered || centeredMap[b.id]?.centered) ? 1 : 0;
+            if (aCentered !== bCentered) return aCentered - bCentered; // 0 before 1
             return getDate(b) - getDate(a);
         });
 
@@ -231,10 +240,34 @@ export class NewsFeedPage {
                 // Use a standard behavior
                 cards[this.currentStoryIndex].scrollIntoView({ behavior: 'auto', block: 'center' });
                 this.storyCards[this.currentStoryIndex]?.startCarousel();
+                // Ensure initial active is recorded as centered
+                await this.markAsCentered(this.currentStoryIndex);
             }
             // Clear jump flag after applying once
             try { await window.LocalStorage.set('jumpToFirstNews', false); } catch (_) {}
         });
+    }
+
+    async markAsCentered(index) {
+        try {
+            if (!this.posts[index]) return;
+            const post = this.posts[index];
+            const postId = post.id;
+            const src = (post.source || post.url || '').trim().toLowerCase();
+            const date = (post.publishedAt || post.generatedAt || post.pubDate || post.date || post.createdAt || '').trim();
+            const sKey = src ? `${src}|${date}` : postId;
+            const centeredMap = await window.LocalStorage.get('postCenteredHistory') || {};
+            let changed = false;
+            if (!centeredMap[postId]?.centered) {
+                centeredMap[postId] = { centered: true, firstCenteredAt: new Date().toISOString() };
+                changed = true;
+            }
+            if (!centeredMap[sKey]?.centered) {
+                centeredMap[sKey] = { centered: true, firstCenteredAt: new Date().toISOString() };
+                changed = true;
+            }
+            if (changed) await window.LocalStorage.set('postCenteredHistory', centeredMap);
+        } catch (_) { /* ignore */ }
     }
 
     async checkActiveStory() {
@@ -279,14 +312,7 @@ export class NewsFeedPage {
             if (activePresenter) activePresenter.startCarousel();
             
             // Mark this post as having been centered
-            if (this.posts[newActive]) {
-                const postId = this.posts[newActive].id;
-                const centeredMap = await window.LocalStorage.get('postCenteredHistory') || {};
-                if (!centeredMap[postId]) {
-                    centeredMap[postId] = { centered: true, firstCenteredAt: new Date().toISOString() };
-                    await window.LocalStorage.set('postCenteredHistory', centeredMap);
-                }
-            }
+            await this.markAsCentered(newActive);
 
             // Ensure center alignment
             if (cards[newActive]) {
@@ -299,6 +325,8 @@ export class NewsFeedPage {
                 el.classList.toggle('prev-card', idx === this.currentStoryIndex - 1);
                 el.classList.toggle('next-card', idx === this.currentStoryIndex + 1);
             });
+            // Ensure current active is registered as centered
+            await this.markAsCentered(this.currentStoryIndex);
         }
     }
 
