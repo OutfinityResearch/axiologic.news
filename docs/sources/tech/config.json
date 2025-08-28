@@ -24,6 +24,21 @@
       "name": "GitHub Changelog",
       "url": "https://github.blog/changelog/feed/",
       "enabled": true
+    },
+    {
+      "name": "Hacker News",
+      "url": "https://news.ycombinator.com/rss",
+      "enabled": true
+    },
+    {
+      "name": "WIRED",
+      "url": "https://www.wired.com/feed/rss",
+      "enabled": true
+    },
+    {
+      "name": "Cybersecurity & Privacy",
+      "url": "https://news.google.com/rss/search?q=cybersecurity%20OR%20%22data%20privacy%22+when:7d&hl=en-US&gl=US&ceid=US:en",
+      "enabled": true
     }
   ],
   "topPostsPerFeed": 5,

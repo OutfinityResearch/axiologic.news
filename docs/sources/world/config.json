@@ -19,6 +19,21 @@
       "name": "NYTimes World",
       "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
       "enabled": true
+    },
+    {
+        "name": "BBC News (Twitter)",
+        "url": "https://news.google.com/rss/search?q=site:twitter.com/BBCWorld+when:7d&hl=en-US&gl=US&ceid=US:en",
+        "enabled": true
+    },
+    {
+        "name": "Reuters (Twitter)",
+        "url": "https://news.google.com/rss/search?q=site:twitter.com/Reuters+when:7d&hl=en-US&gl=US&ceid=US:en",
+        "enabled": true
+    },
+    {
+        "name": "Geopolitics & International Relations",
+        "url": "https://news.google.com/rss/search?q=geopolitics%20OR%20%22international%20relations%22+when:7d&hl=en-US&gl=US&ceid=US:en",
+        "enabled": true
     }
   ],
   "topPostsPerFeed": 5,

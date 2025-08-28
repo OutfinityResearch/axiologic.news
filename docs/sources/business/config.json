@@ -9,6 +9,16 @@
       "name": "MarketWatch Top Stories",
       "url": "https://feeds.content.dowjones.io/public/rss/mw_topstories",
       "enabled": true
+    },
+    {
+      "name": "Financial Times",
+      "url": "https://www.ft.com/?format=rss",
+      "enabled": true
+    },
+    {
+      "name": "The Economist",
+      "url": "https://www.economist.com/finance-and-economics/rss.xml",
+      "enabled": true
     }
   ],
   "topPostsPerFeed": 5,

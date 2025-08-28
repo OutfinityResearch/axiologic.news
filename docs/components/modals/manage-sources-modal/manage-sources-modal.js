@@ -24,7 +24,20 @@ export class ManageSourcesModal {
 
         listContainer.innerHTML = '';
 
+        // Apply filters
+        const filterText = (this.element.querySelector('#filter-text')?.value || '').trim().toLowerCase();
+        const onlyVisible = !!this.element.querySelector('#only-visible')?.checked;
+
+        const matches = (s) => {
+            if (!filterText) return true;
+            const tag = (s.tag || '').toLowerCase();
+            const url = (s.url || '').toLowerCase();
+            return tag.includes(filterText) || url.includes(filterText);
+        };
+
         this.sources.forEach((source, index) => {
+            if (onlyVisible && !source.visible) return;
+            if (!matches(source)) return;
             const item = document.createElement('div');
             item.className = 'source-item';
             item.innerHTML = `
@@ -73,6 +86,8 @@ export class ManageSourcesModal {
         const cancelButton = this.element.querySelector('#cancel-button');
         const saveButton = this.element.querySelector('#save-button');
         const addButton = this.element.querySelector('#add-source-button');
+        const filterInput = this.element.querySelector('#filter-text');
+        const onlyVisibleToggle = this.element.querySelector('#only-visible');
         const selectAllButton = this.element.querySelector('#select-all-button');
         const deselectAllButton = this.element.querySelector('#deselect-all-button');
 
@@ -99,6 +114,23 @@ export class ManageSourcesModal {
             addButton.addEventListener('click', () => {
                 this.addNewSource();
             });
+        }
+        // Auto-fill tag on URL blur if tag empty
+        const urlInput = this.element.querySelector('#new-source-url');
+        const tagInput = this.element.querySelector('#new-source-tag');
+        if (urlInput && tagInput) {
+            urlInput.addEventListener('blur', () => {
+                if (!tagInput.value.trim() && urlInput.value.trim()) {
+                    const auto = this.deriveTag(urlInput.value.trim());
+                    tagInput.value = this.normalizeTag(auto || 'external');
+                }
+            });
+        }
+        if (filterInput) {
+            filterInput.addEventListener('input', () => this.renderSourcesTable());
+        }
+        if (onlyVisibleToggle) {
+            onlyVisibleToggle.addEventListener('change', () => this.renderSourcesTable());
         }
         
         if (selectAllButton) {
@@ -134,12 +166,17 @@ export class ManageSourcesModal {
         const tagInput = this.element.querySelector('#new-source-tag');
         const urlInput = this.element.querySelector('#new-source-url');
 
-        const tag = this.normalizeTag(tagInput.value);
+        let tag = this.normalizeTag(tagInput.value);
         const url = urlInput.value.trim();
 
-        if (!tag || !url) {
-            alert('Please provide both a hashtag and URL for the source');
+        if (!url) {
+            alert('Please provide a URL for the source');
             return;
+        }
+
+        // Auto-derive tag if empty
+        if (!tag) {
+            tag = this.deriveTag(url) || 'external';
         }
 
         // Check if URL already exists
@@ -165,7 +202,7 @@ export class ManageSourcesModal {
         
         // Add to local array for immediate display
         newSource.id = `external-${Date.now()}-${Math.random()}`;
-        this.sources.push(newSource);
+        this.sources.unshift(newSource);
 
         // Clear inputs
         tagInput.value = '';

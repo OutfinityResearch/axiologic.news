@@ -30,7 +30,11 @@
             "url": "https://www.adweek.com/category/marketing/feed/",
             "enabled": true
         },
-        
+        {
+            "name": "Digital Marketing & SEO News",
+            "url": "https://news.google.com/rss/search?q=%22digital%20marketing%22%20OR%20SEO%20OR%20SEM+when:7d&hl=en-US&gl=US&ceid=US:en",
+            "enabled": true
+        }
     ],
     "topPostsPerFeed": 5,
     "defaultBackgroundColor": "orange",

@@ -89,7 +89,14 @@ class StoryProcessor {
             `${idx + 1}. ${item.title}\n   ${(item.description || '').substring(0, 100)}`
         ).join('\n\n');
 
-        const prompt = `${this.config.selectionPrompt}\nFeed: ${feed.name}\nAvailable stories:\n${titlesAndDescriptions}\nSelect the ${this.config.topPostsPerFeed || 5} most interesting and relevant stories.\nReturn only the numbers (comma-separated) of the selected stories.`;
+        const prompt = `${this.config.selectionPrompt}\n\nSELECTION CRITERIA:
+- Prioritize stories with NEW information, data, or developments
+- Skip repetitive AI safety/ethics stories unless there's a specific incident
+- Prefer stories with concrete outcomes over speculation
+- Avoid clickbait and "[Company] might/could/may" stories
+- Skip Reddit posts that are just questions or rants without substance
+- Focus on actual news, launches, research results, or data
+\nFeed: ${feed.name}\nAvailable stories:\n${titlesAndDescriptions}\n\nSelect ONLY the ${this.config.topPostsPerFeed || 5} stories with REAL substance and new information.\nReturn numbers (comma-separated). If fewer than ${this.config.topPostsPerFeed || 5} are worthy, return fewer:`;
 
         const response = await this.ai.analyze(prompt, 100);
         
@@ -128,11 +135,38 @@ class StoryProcessor {
             return false;
         }
 
-        // Check for minimum length
+        // List of generic/repetitive phrases to avoid
+        const genericPhrases = [
+            /ai safety/i,
+            /we must be careful/i,
+            /ethical implications/i,
+            /time will tell/i,
+            /game.?changer/i,
+            /revolutionary/i,
+            /the future is here/i,
+            /this is interesting/i,
+            /remains to be seen/i,
+            /we should follow regulations/i,
+            /respect.*privacy/i,
+            /could be dangerous/i
+        ];
+
+        // Check each reaction for quality
         for (const reaction of reactions) {
             const wordCount = (reaction.match(/\b\w+\b/g) || []).length;
-            if (wordCount < 10) { // A bit more realistic than 50 for a single reaction
+            if (wordCount < 10) {
                 return false;
+            }
+            
+            // Check for too many generic phrases
+            let genericCount = 0;
+            for (const phrase of genericPhrases) {
+                if (phrase.test(reaction)) {
+                    genericCount++;
+                }
+            }
+            if (genericCount > 1) {
+                return false; // Too generic
             }
         }
 
@@ -153,11 +187,26 @@ class StoryProcessor {
 
         // Generate essence using AI or fallback
         const essence = await this.generateEssence(item, fullContent);
+        
+        // Check if essence is too generic or low quality
+        if (essence && this.isGenericContent(essence)) {
+            console.log(`      Skipping generic content: ${item.title.substring(0, 50)}...`);
+            return null; // Skip this post entirely
+        }
+        
         post.essence = this.buildFallbackEssence(essence, item, feed);
         
         // Generate perspectives/reactions using AI or fallback
         const reactions = await this.generatePerspectives(item, feed, fullContent);
-        post.reactions = this.buildFallbackReactions(reactions, item, feed);
+        
+        // Use quality check to filter bad reactions
+        if (!this.qualityCheckReactions(reactions)) {
+            // Try to get better reactions from content/comments
+            const betterReactions = this.extractRealReactions(fullContent, item);
+            post.reactions = betterReactions.length >= 3 ? betterReactions : this.buildFallbackReactions(null, item, feed);
+        } else {
+            post.reactions = this.buildFallbackReactions(reactions, item, feed);
+        }
         
         // Add promo banner from global config or use feed default
         const globalBanner = getPromoBanner(this.config.category || 'default');
@@ -173,6 +222,63 @@ class StoryProcessor {
         return post;
     }
 
+    isGenericContent(content) {
+        if (!content) return true;
+        
+        const genericIndicators = [
+            /ai safety concerns/i,
+            /ethical implications of ai/i,
+            /we must regulate/i,
+            /could potentially/i,
+            /might be able to/i,
+            /in the future/i,
+            /time will tell/i,
+            /remains to be seen/i
+        ];
+        
+        let genericScore = 0;
+        for (const indicator of genericIndicators) {
+            if (indicator.test(content)) {
+                genericScore++;
+            }
+        }
+        
+        // Also check for lack of specific data/numbers
+        const hasNumbers = /\d+/.test(content);
+        const hasSpecificNames = /[A-Z][a-z]+\s+[A-Z][a-z]+/.test(content); // Proper names
+        
+        return genericScore > 2 || (!hasNumbers && !hasSpecificNames && content.length < 200);
+    }
+    
+    extractRealReactions(fullContent, item) {
+        const reactions = [];
+        
+        if (fullContent?.comments && fullContent.comments.length > 0) {
+            // Try to extract meaningful comments
+            const meaningfulComments = fullContent.comments
+                .filter(c => c && c.length > 50 && c.length < 500)
+                .filter(c => !/(deleted|removed|\[removed\])/i.test(c))
+                .filter(c => !/^(this|wow|lol|nice|cool|great)/i.test(c))
+                .slice(0, 5);
+            
+            for (const comment of meaningfulComments) {
+                // Clean and format the comment as a perspective
+                const cleaned = comment
+                    .replace(/^[\s\*\-]+/, '')
+                    .replace(/\s+/g, ' ')
+                    .trim();
+                
+                if (cleaned.length > 30) {
+                    reactions.push(`Community perspective: ${cleaned.substring(0, 200)}`);
+                }
+                
+                if (reactions.length >= 3) break;
+            }
+        }
+        
+        return reactions;
+    }
+    
     // Build a robust essence, cleaning Reddit/aggregator boilerplate and ensuring readability
     buildFallbackEssence(aiEssence, item, feed) {
         const MIN_WORDS = 25;
@@ -238,7 +344,14 @@ class StoryProcessor {
         }
 
         const content = fullContent?.text || item.description || '';
-        const prompt = `${this.config.essencePrompt}\nTitle: ${item.title}\nContent: ${content.substring(0, 20000)}\nWrite a concise, compelling essence/summary (approximately 400-600 words) in plain text only — no markdown, no asterisks, no quotes. Keep it readable and informative. Focus on the key points and implications.`;
+        const prompt = `${this.config.essencePrompt}\n\nIMPORTANT RULES:
+- Focus on NEW insights, data, or developments not commonly known
+- Skip generic warnings about AI ethics, regulations, or safety unless there's a specific new development
+- Provide concrete examples, numbers, or specific outcomes when available
+- If the content lacks substance or is just speculation, say so briefly
+- NO repetitive content - each story must bring unique value
+- Avoid clichés like "game-changer", "revolutionary", "the future is here"
+\nTitle: ${item.title}\nContent: ${content.substring(0, 20000)}\n\nWrite a concise, insightful essence (200-400 words) in plain text only. Focus on what's genuinely NEW and WHY it matters. If there's nothing substantial, be honest and brief.`;
 
         try {
             const response = await this.ai.analyze(prompt, 800); // Allow more tokens for fuller content
@@ -279,7 +392,15 @@ class StoryProcessor {
         const content = fullContent?.text || item.description || '';
         const comments = fullContent?.comments?.join('\n') || '';
         
-        const prompt = `${this.config.perspectivesPrompt}\nTitle: ${item.title}\nSource: ${feed.name}\nContent: ${content.substring(0, 20000)}\n${comments ? `\nReader Comments:\n${comments.substring(0, 5000)}` : ''}\nGenerate 3 unique perspectives/reactions. Use plain text only - no markdown, no asterisks, no quotes, no formatting. One clear sentence per perspective:`;
+        const prompt = `${this.config.perspectivesPrompt}\n\nCRITICAL RULES:
+- Extract REAL reactions from comments if available, not generic statements
+- Focus on specific insights, criticisms, or expert opinions
+- NO generic warnings about AI safety, ethics, or "we must be careful"
+- If comments exist, use actual user perspectives (cleaned up)
+- Skip empty platitudes like "this is interesting" or "time will tell"
+- Each reaction must add unique value or perspective
+- If content/comments are low quality, acknowledge it briefly
+\nTitle: ${item.title}\nSource: ${feed.name}\nContent: ${content.substring(0, 20000)}\n${comments ? `\nReal User Comments (use these if insightful):\n${comments.substring(0, 5000)}` : ''}\n\nGenerate 3 distinct, valuable perspectives. Plain text only, one sentence each. If there are no meaningful insights, provide honest critical analysis:`;
 
         try {
             const response = await this.ai.analyze(prompt, 500);

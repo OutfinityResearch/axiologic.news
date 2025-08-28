@@ -1,0 +1,34 @@
+{
+    "feeds": [
+        {
+            "name": "Product Hunt Daily",
+            "url": "https://www.producthunt.com/feed",
+            "enabled": true
+        },
+        {
+            "name": "AI Product Launches",
+            "url": "https://news.google.com/rss/search?q=%22AI%20product%22%20OR%20%22AI%20tool%22%20AND%20(launch%20OR%20release)+when:7d&hl=en-US&gl=US&ceid=US:en",
+            "enabled": true
+        },
+        {
+            "name": "New SaaS Products",
+            "url": "https://news.google.com/rss/search?q=%22new%20saas%20product%22%20OR%20%22new%20saas%20launch%22+when:7d&hl=en-US&gl=US&ceid=US:en",
+            "enabled": true
+        },
+        {
+            "name": "New Dev Tools",
+            "url": "https://news.google.com/rss/search?q=%22new%20developer%20tool%22%20OR%20%22dev%20tool%20release%22+when:7d&hl=en-US&gl=US&ceid=US:en",
+            "enabled": true
+        },
+        {
+            "name": "TechCrunch Product Launches",
+            "url": "https://techcrunch.com/tag/launch/feed/",
+            "enabled": true
+        }
+    ],
+    "topPostsPerFeed": 5,
+    "historyDays": 5,
+    "selectionPrompt": "Select the most interesting new product launches, especially those using AI. Prioritize: 1) Products that solve a real problem in a novel way, 2) AI-powered tools that offer significant new capabilities, 3) SaaS products with clear value propositions, 4) Developer tools that improve productivity. Focus on products with a public launch and clear use cases.",
+    "essencePrompt": "Summarize the product launch: What is the product? Who is it for? What problem does it solve? What is its key feature or innovation? What is the pricing/availability? Focus on what makes the product unique and valuable.",
+    "perspectivesPrompt": "Provide three perspectives on this new product:\n1. Target User's View: How would a potential user see this product? What are the pros and cons for them?\n2. Competitor's View: How does this product stack up against existing solutions? What is its competitive advantage?\n3. Investor's View: What is the market potential? Is the business model viable? What are the risks?"
+}

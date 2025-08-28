@@ -30,13 +30,20 @@
             "url": "https://tech.eu/feed/",
             "enabled": true
         },
-        
+        {
+            "name": "Startup Funding News",
+            "url": "https://news.google.com/rss/search?q=startup%20funding%20OR%20%22venture%20capital%22+when:7d&hl=en-US&gl=US&ceid=US:en",
+            "enabled": true
+        },
+        {
+            "name": "SaaS & B2B Startup Growth",
+            "url": "https://news.google.com/rss/search?q=(saas%20OR%20%22b2b%20startup%22)%20AND%20(growth%20OR%20metrics)+when:7d&hl=en-US&gl=US&ceid=US:en",
+            "enabled": true
+        }
     ],
     "topPostsPerFeed": 5,
     "historyDays": 5,
     "selectionPrompt": "Identify the most compelling startup stories focusing on: 1) Significant funding rounds with notable investors, 2) Innovative business models disrupting traditional industries, 3) Founder stories with valuable lessons, 4) Startup pivots and strategic decisions, 5) Acquisition news and exit strategies. Prioritize stories about execution and growth over ideas alone.",
     "essencePrompt": "Capture the startup story essence: What's the company doing? What's their unique approach? What milestone did they hit? Who's backing them? What market are they disrupting? Focus on business model, traction, and differentiation.",
     "perspectivesPrompt": "Generate three startup ecosystem perspectives:\n1. Investor Lens: Evaluate market opportunity, scalability, team strength, and investment potential\n2. Founder Insights: Lessons for other entrepreneurs, strategic decisions, and execution challenges\n3. Market Disruption: How this startup changes the competitive landscape and customer expectations\n\nProvide actionable insights for founders and investors."
-}
-stors."
 }

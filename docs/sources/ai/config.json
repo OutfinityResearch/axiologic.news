@@ -24,6 +24,16 @@
       "name": "Microsoft AI Blog",
       "url": "https://blogs.microsoft.com/ai/feed/",
       "enabled": true
+    },
+    {
+        "name": "AI Research News",
+        "url": "https://news.google.com/rss/search?q=%22artificial%20intelligence%22%20OR%20%22machine%20learning%22%20AND%20(breakthrough%20OR%20research)+when:7d&hl=en-US&gl=US&ceid=US:en",
+        "enabled": true
+    },
+    {
+        "name": "Generative AI Applications",
+        "url": "https://news.google.com/rss/search?q=(generative%20AI%20OR%20LLM)%20AND%20(application%20OR%20use-case)+when:7d&hl=en-US&gl=US&ceid=US:en",
+        "enabled": true
     }
   ],
   "topPostsPerFeed": 5,
