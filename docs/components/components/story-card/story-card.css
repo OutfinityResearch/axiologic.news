@@ -142,6 +142,7 @@
 .story-card.selection-mode .card-title { font-size: calc(16px * var(--content-scale, 1)); }
 .story-card.selection-mode .apply-sources-btn { margin-top: 6px; padding: 5px 10px; font-size: 12px; border-radius: 12px; }
 .story-card.selection-mode .sources-list { max-height: none !important; gap: 4px 6px; }
+.story-card.selection-mode .sources-list { background: transparent; border: none; box-shadow: none; }
 .story-card.selection-mode .source-item { padding: 4px 4px; }
 .story-card.selection-mode .source-checkbox { margin-right: 6px; }
 .story-card.selection-mode .card-slide.active {
@@ -151,7 +152,15 @@
 .story-card.selection-mode .data-sources-selector { 
     position: relative; 
     z-index: 101; 
-    background: var(--surface); /* prevent transparency issues */
+    background: transparent; /* keep only outer card chrome */
+    border: none;
+}
+.story-card.selection-mode .sources-actions { background: transparent; border: none; }
+.story-card.selection-mode .sources-actions {
+    position: sticky;
+    top: 12px; /* offset from very top for visibility */
+    z-index: 5;
+    pointer-events: auto;
 }
 /* ascunde elementele flotante pe cardul de selecție */
 .story-card.selection-mode .progress-bars,
@@ -223,9 +232,9 @@
     overflow-y: auto;
     overflow-x: hidden;
     padding-right: 0;
-    padding-bottom: 40px; /* space above progress + sponsor */
-    max-height: calc(100vh - 280px); /* prevent text truncation */
-    min-height: 300px; /* ensure minimum readable area */
+    padding-bottom: 16px; /* smaller bottom space */
+    max-height: calc(100vh - 220px); /* softer cap */
+    min-height: 200px; /* smaller minimum */
     scrollbar-width: thin;
     scrollbar-color: var(--border) transparent;
 }

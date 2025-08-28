@@ -127,12 +127,13 @@ export class StoryCard {
             const rh = resume ? resume.offsetHeight : 0;
             const sh = sponsor ? sponsor.offsetHeight : 0;
             const ih = indicators ? indicators.offsetHeight : 0;
-            // base spacing + measured controls
-            const margin = 16; // breathing room
+            // base spacing + measured controls — keep this minimal
+            const margin = 8; // small breathing room
             const reserve = rh + sh + ih + margin;
-            return Math.max(40, reserve);
+            // minimal reserve to avoid clipping overlays
+            return Math.max(12, reserve);
         } catch (_) {
-            return 48;
+            return 16;
         }
     }
 
@@ -790,11 +791,13 @@ export class StoryCard {
                 const prevContentHeight = content.style.height;
                 const prevBodyOverflow = body ? body.style.overflow : null;
                 const prevBodyFlex = body ? body.style.flex : null;
+                const prevBodyPadding = body ? body.style.paddingBottom : null;
 
                 content.style.height = 'auto';
                 if (body) {
                     body.style.overflow = 'visible';
                     body.style.flex = 'initial';
+                    body.style.paddingBottom = '0px'; // do not count artificial padding in measurement
                 }
 
                 const contentHeight = Math.ceil(content.scrollHeight);
@@ -806,17 +809,28 @@ export class StoryCard {
                 if (body) {
                     body.style.overflow = prevBodyOverflow;
                     body.style.flex = prevBodyFlex;
+                    body.style.paddingBottom = prevBodyPadding;
                 }
             }
 
             const finalH = Math.min(maxTotal, maxHViewport);
+            // Fix both host and inner root heights and disable host aspect ratio
+            const hostEl = this.element;
+            if (hostEl && hostEl.style) {
+                hostEl.style.aspectRatio = 'auto';
+                hostEl.style.height = `${finalH}px`;
+            }
             root.style.height = `${finalH}px`;
             this._fixedHeight = true;
 
             const capApplied = maxTotal > maxHViewport;
             const bodies = this.element.querySelectorAll('.card-body');
             bodies.forEach(b => {
+                // Allow body to scroll only when needed
                 b.style.overflowY = capApplied ? 'auto' : 'hidden';
+                // Reduce unused whitespace on short slides
+                b.style.minHeight = '0';
+                b.style.paddingBottom = '12px';
             });
         } catch (_) { /* ignore */ }
     }

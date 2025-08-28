@@ -196,10 +196,14 @@ export class NewsFeedPage {
         });
         if (window.__LOGS_ENABLED) console.timeEnd('NF: compute weights');
         if (window.__LOGS_ENABLED) console.time('NF: sort');
-        this.posts = filteredPosts.sort((a, b) => {
+        // Keep selection card pinned at index 0 regardless of weights
+        const selection = filteredPosts.find(p => p.id === 'selection-card');
+        const others = filteredPosts.filter(p => p.id !== 'selection-card');
+        const sortedOthers = others.sort((a, b) => {
             if (a.__weight !== b.__weight) return a.__weight - b.__weight;
             return b.__ts - a.__ts; // prefer newer when same weight
         });
+        this.posts = selection ? [selection, ...sortedOthers] : sortedOthers;
         if (window.__LOGS_ENABLED) console.timeEnd('NF: sort');
         if (window.__LOGS_ENABLED) console.timeEnd('NF: beforeRender total');
         if (window.__LOGS_ENABLED) window.logTS('NF: posts ready', { count: this.posts.length });
@@ -379,6 +383,10 @@ export class NewsFeedPage {
                     container.scrollTop = 0;
                 }
                 activeEl.scrollIntoView({ behavior: 'smooth', block: initialBlock });
+                // Nudge down a bit so selection actions are not hidden at the very top
+                if (this.currentStoryIndex === 0) {
+                    setTimeout(() => { try { container.scrollBy({ top: 20, left: 0, behavior: 'auto' }); } catch (_) {} }, 120);
+                }
                 this.storyCardsMap.get(this.currentStoryIndex)?.startCarousel();
                 // Ensure initial active is recorded as centered
                 await this.markAsCentered(this.currentStoryIndex);
@@ -512,6 +520,9 @@ export class NewsFeedPage {
             if (activeEl) {
                 const block = (newActive === 0) ? 'start' : 'center';
                 activeEl.scrollIntoView({ behavior: 'smooth', block });
+                if (newActive === 0) {
+                    setTimeout(() => { try { container.scrollBy({ top: 20, left: 0, behavior: 'auto' }); } catch (_) {} }, 120);
+                }
             }
         } else {
             // Maintain active class on current
