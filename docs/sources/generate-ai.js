@@ -152,12 +152,12 @@ function getModel() {
         case 'mistral':
             return 'mistral-large-latest';
         case 'gemini':
-            return 'gemini-pro';
+            return 'gemini-2.5-flash';
         case 'claude':
         case 'anthropic':
             return 'claude-3-haiku-20240307';
         case 'openai':
-            return 'gpt-4o-mini';
+            return 'gpt-5';
         case 'ollama':
             return 'llama2';
         default:

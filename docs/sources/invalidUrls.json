@@ -5,8 +5,8 @@
     "category": "ai",
     "lastError": "HTTP 404: Not Found",
     "firstSeenAt": "2025-08-27T13:45:41.292Z",
-    "lastSeenAt": "2025-08-28T09:03:12.812Z",
-    "count": 22
+    "lastSeenAt": "2025-08-28T08:03:27.325Z",
+    "count": 21
   },
   {
     "url": "https://openai.com/blog/rss.xml",
@@ -23,8 +23,8 @@
     "category": "business",
     "lastError": "Network error: getaddrinfo ENOTFOUND feeds.reuters.com",
     "firstSeenAt": "2025-08-27T13:45:43.201Z",
-    "lastSeenAt": "2025-08-28T09:03:16.365Z",
-    "count": 22
+    "lastSeenAt": "2025-08-28T08:03:28.712Z",
+    "count": 21
   },
   {
     "url": "https://www.axiologic.net/feed/",
@@ -32,8 +32,8 @@
     "category": "default",
     "lastError": "HTTP 404: Not Found",
     "firstSeenAt": "2025-08-27T13:46:18.576Z",
-    "lastSeenAt": "2025-08-28T09:03:17.079Z",
-    "count": 22
+    "lastSeenAt": "2025-08-28T08:03:29.843Z",
+    "count": 21
   },
   {
     "url": "https://feeds.reuters.com/reuters/topNews",
@@ -41,8 +41,8 @@
     "category": "default",
     "lastError": "Network error: getaddrinfo ENOTFOUND feeds.reuters.com",
     "firstSeenAt": "2025-08-27T13:46:18.578Z",
-    "lastSeenAt": "2025-08-28T09:03:17.151Z",
-    "count": 22
+    "lastSeenAt": "2025-08-28T08:03:29.890Z",
+    "count": 21
   },
   {
     "url": "https://feeds.apnews.com/apf-topnews",
@@ -50,8 +50,8 @@
     "category": "default",
     "lastError": "Network error: getaddrinfo ENOTFOUND feeds.apnews.com",
     "firstSeenAt": "2025-08-27T13:46:18.611Z",
-    "lastSeenAt": "2025-08-28T09:03:17.283Z",
-    "count": 22
+    "lastSeenAt": "2025-08-28T08:03:30.024Z",
+    "count": 21
   },
   {
     "url": "https://rss.cnn.com/rss/edition.rss",
@@ -59,17 +59,17 @@
     "category": "default",
     "lastError": "Network error: Client network socket disconnected before secure TLS connection was established",
     "firstSeenAt": "2025-08-27T13:46:18.701Z",
-    "lastSeenAt": "2025-08-28T09:03:17.353Z",
-    "count": 22
+    "lastSeenAt": "2025-08-28T08:03:30.150Z",
+    "count": 21
   },
   {
     "url": "https://www.who.int/feeds/entity/news/en/rss.xml",
     "name": "WHO News",
     "category": "health",
-    "lastError": "HTTP 400: Bad Request",
+    "lastError": "HTTP 404: not found",
     "firstSeenAt": "2025-08-27T13:47:37.489Z",
-    "lastSeenAt": "2025-08-28T09:03:19.470Z",
-    "count": 22
+    "lastSeenAt": "2025-08-28T08:03:33.084Z",
+    "count": 21
   },
   {
     "url": "https://www.marketingprofs.com/rss/atom.xml",
@@ -92,11 +92,11 @@
   {
     "url": "https://www.reddit.com/r/asksales/.rss",
     "name": "Reddit r/AskSales",
-    "category": "salesForums",
+    "category": "sales",
     "lastError": "HTTP 403: Forbidden",
     "firstSeenAt": "2025-08-27T13:52:08.088Z",
-    "lastSeenAt": "2025-08-28T09:03:21.332Z",
-    "count": 22
+    "lastSeenAt": "2025-08-28T08:03:51.970Z",
+    "count": 21
   },
   {
     "url": "https://www.scientificamerican.com/feed/",
@@ -104,8 +104,8 @@
     "category": "science",
     "lastError": "HTTP 404: Not Found",
     "firstSeenAt": "2025-08-27T13:53:36.080Z",
-    "lastSeenAt": "2025-08-28T09:03:22.949Z",
-    "count": 22
+    "lastSeenAt": "2025-08-28T08:03:54.090Z",
+    "count": 21
   },
   {
     "url": "https://sifted.eu/feed/",
@@ -122,8 +122,8 @@
     "category": "tech",
     "lastError": "HTTP 404: Not Found",
     "firstSeenAt": "2025-08-27T13:58:26.025Z",
-    "lastSeenAt": "2025-08-28T09:03:29.229Z",
-    "count": 22
+    "lastSeenAt": "2025-08-28T08:03:58.933Z",
+    "count": 21
   },
   {
     "url": "https://feeds.reuters.com/reuters/worldNews",
@@ -131,43 +131,7 @@
     "category": "world",
     "lastError": "Network error: getaddrinfo ENOTFOUND feeds.reuters.com",
     "firstSeenAt": "2025-08-27T14:02:47.637Z",
-    "lastSeenAt": "2025-08-28T09:03:34.392Z",
-    "count": 22
-  },
-  {
-    "url": "https://openai.com/blog/rss/",
-    "name": "OpenAI Blog",
-    "category": "ai",
-    "lastError": "HTTP 403: Forbidden",
-    "firstSeenAt": "2025-08-28T09:03:12.715Z",
-    "lastSeenAt": "2025-08-28T09:03:12.715Z",
-    "count": 1
-  },
-  {
-    "url": "https://blogs.nvidia.com/blog/category/ai/feed/",
-    "name": "Nvidia AI Blog",
-    "category": "ai",
-    "lastError": "HTTP 404: Not Found",
-    "firstSeenAt": "2025-08-28T09:03:13.574Z",
-    "lastSeenAt": "2025-08-28T09:03:13.574Z",
-    "count": 1
-  },
-  {
-    "url": "https://thegradient.pub/feed/",
-    "name": "The Gradient",
-    "category": "ai",
-    "lastError": "Invalid URL or fetch error: Invalid URL",
-    "firstSeenAt": "2025-08-28T09:03:13.929Z",
-    "lastSeenAt": "2025-08-28T09:03:13.929Z",
-    "count": 1
-  },
-  {
-    "url": "https://aiweekly.co/rss",
-    "name": "AI Weekly",
-    "category": "ai",
-    "lastError": "HTTP 404: Not Found",
-    "firstSeenAt": "2025-08-28T09:03:15.199Z",
-    "lastSeenAt": "2025-08-28T09:03:15.199Z",
-    "count": 1
+    "lastSeenAt": "2025-08-28T08:04:03.535Z",
+    "count": 21
   }
 ]
