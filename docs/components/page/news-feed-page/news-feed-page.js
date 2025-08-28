@@ -50,15 +50,33 @@ export class NewsFeedPage {
             
             // Load from selected local source categories (default to 'default')
             const selected = await window.LocalStorage.get('selectedSourceCategories') || ['default'];
+            
+            // Load default sources configuration to get URLs
+            let sourceConfig = {};
+            try {
+                const configResp = await fetch('./default_sources.json');
+                if (configResp.ok) {
+                    const config = await configResp.json();
+                    (config.sources || []).forEach(src => {
+                        if (src.id) sourceConfig[src.id] = src;
+                    });
+                }
+            } catch (e) {
+                console.warn('Could not load default_sources.json', e);
+            }
+            
             for (const cat of selected) {
                 try {
-                    const resp = await fetch(`./sources/${cat}/posts.json`, { cache: 'no-store' });
+                    // Use URL from config if available, otherwise use default path
+                    const sourceUrl = sourceConfig[cat]?.url || `./sources/${cat}/posts.json`;
+                    const fullUrl = sourceUrl.startsWith('/') ? `.${sourceUrl}` : sourceUrl;
+                    const resp = await fetch(fullUrl, { cache: 'no-store' });
                     if (resp.ok) {
                         const catPosts = await resp.json();
                         jsonPosts = jsonPosts.concat(catPosts);
                     }
                 } catch (e) {
-                    console.warn(`Could not load sources/${cat}/posts.json`, e);
+                    console.warn(`Could not load source ${cat}`, e);
                 }
             }
         } catch (error) {
@@ -194,6 +212,7 @@ export class NewsFeedPage {
             this.element.removeEventListener('story-finished', this.boundNextStory);
 
             this.setupScrollDetection();
+            this.setupTouchNavigation();
             // Optional: infinite scroll can remain off for now
 
             // Mark initial active based on current center
@@ -249,6 +268,44 @@ export class NewsFeedPage {
             // Clear jump flag after applying once
             try { await window.LocalStorage.set('jumpToFirstNews', false); } catch (_) {}
         });
+    }
+
+    setupTouchNavigation() {
+        const container = this.element.querySelector('.news-feed-container');
+        if (!container) return;
+        if (this._onTouchStart) container.removeEventListener('touchstart', this._onTouchStart);
+        if (this._onTouchEnd) container.removeEventListener('touchend', this._onTouchEnd);
+
+        this._onTouchStart = (e) => {
+            if (e.changedTouches && e.changedTouches.length) {
+                this.touchStartY = e.changedTouches[0].screenY;
+            }
+        };
+        this._onTouchEnd = (e) => {
+            if (e.changedTouches && e.changedTouches.length) {
+                this.touchEndY = e.changedTouches[0].screenY;
+                const dy = this.touchStartY - this.touchEndY;
+                const threshold = 40; // px
+                if (Math.abs(dy) > threshold) {
+                    if (dy > 0) {
+                        // Swipe up -> next post
+                        this.nextStory();
+                    } else {
+                        // Swipe down -> previous post
+                        this.previousStory();
+                    }
+                }
+            }
+        };
+
+        container.addEventListener('touchstart', this._onTouchStart, { passive: true });
+        container.addEventListener('touchend', this._onTouchEnd, { passive: true });
+
+        // Map story-card's request event to next story
+        const onNextReq = (e) => { this.nextStory(); };
+        if (this._onUserNextReq) container.removeEventListener('user-request-next-post', this._onUserNextReq);
+        this._onUserNextReq = onNextReq;
+        container.addEventListener('user-request-next-post', this._onUserNextReq);
     }
 
     async markAsCentered(index) {
@@ -384,6 +441,12 @@ export class NewsFeedPage {
 
     cleanup() {
         this.element.removeEventListener('story-finished', this.boundNextStory);
+        const container = this.element.querySelector('.news-feed-container');
+        if (container) {
+            if (this._onTouchStart) container.removeEventListener('touchstart', this._onTouchStart);
+            if (this._onTouchEnd) container.removeEventListener('touchend', this._onTouchEnd);
+            if (this._onUserNextReq) container.removeEventListener('user-request-next-post', this._onUserNextReq);
+        }
         this.storyCards.forEach(card => card.cleanup());
     }
 

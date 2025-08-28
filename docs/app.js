@@ -5,9 +5,23 @@ import './services/ThemeManager.js';
 async function start() {
     const webSkel = await WebSkel.initialise('webskel.json');
     webSkel.setDomElementForPages(document.querySelector('#app'));
+    
+    // Remove initial loading spinner
+    const initialSpinner = document.querySelector('.initial-spinner');
+    if (initialSpinner) {
+        setTimeout(() => {
+            initialSpinner.style.opacity = '0';
+            initialSpinner.style.transition = 'opacity 0.3s ease';
+            setTimeout(() => {
+                initialSpinner.close();
+                initialSpinner.remove();
+            }, 300);
+        }, 100);
+    }
 
     // Load core services
     await import('./services/LocalStorage.js');
+    await import('./services/SourcesManager.js');
 
     // Make LoadingIndicator globally available
     window.LoadingIndicator = LoadingIndicator;

@@ -1,0 +1,39 @@
+<div class="manage-sources-modal modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>Manage News Sources</h2>
+            <button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            <div class="sources-manager">
+                <div class="sources-table-container">
+                    <table class="sources-table">
+                        <thead>
+                            <tr>
+                                <th>Visible</th>
+                                <th>Hashtag</th>
+                                <th>URL</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="sources-tbody">
+                            <!-- Sources will be dynamically added here -->
+                        </tbody>
+                    </table>
+                </div>
+                <div class="add-source-section">
+                    <h3>Add New Source</h3>
+                    <div class="add-source-form">
+                        <input type="text" id="new-source-tag" placeholder="Hashtag (without #)" class="modal-input">
+                        <input type="text" id="new-source-url" placeholder="URL (absolute or relative to site)" class="modal-input">
+                        <button id="add-source-button" class="action-button">Add Source</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button id="save-button" class="primary-button">Save Changes</button>
+            <button id="cancel-button" class="secondary-button">Cancel</button>
+        </div>
+    </div>
+</div>

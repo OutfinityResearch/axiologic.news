@@ -1,53 +1,16 @@
 {
+    "name": "AI Forums",
+    "description": "Discussions and news from AI communities.",
+    "hashtag": "#AIForums",
     "feeds": [
         {
-            "name": "MIT Technology Review - AI",
-            "url": "https://www.technologyreview.com/feed/",
+            "name": "Reddit r/MachineLearning",
+            "url": "https://www.reddit.com/r/MachineLearning/.rss",
             "enabled": true
         },
         {
-            "name": "OpenAI Blog",
-            "url": "https://openai.com/blog/rss/",
-            "enabled": true
-        },
-        {
-            "name": "Google AI Blog",
-            "url": "https://ai.googleblog.com/feeds/posts/default",
-            "enabled": true
-        },
-        {
-            "name": "AI Trends",
-            "url": "https://www.aitrends.com/feed/",
-            "enabled": true
-        },
-        {
-            "name": "Machine Learning Mastery",
-            "url": "https://machinelearningmastery.com/blog/feed/",
-            "enabled": true
-        },
-        {
-            "name": "Nvidia AI Blog",
-            "url": "https://blogs.nvidia.com/blog/category/ai/feed/",
-            "enabled": true
-        },
-        {
-            "name": "The Gradient",
-            "url": "https://thegradient.pub/feed/",
-            "enabled": true
-        },
-        {
-            "name": "Towards Data Science",
-            "url": "https://towardsdatascience.com/feed",
-            "enabled": true
-        },
-        {
-            "name": "AI Weekly",
-            "url": "https://aiweekly.co/rss",
-            "enabled": true
-        },
-        {
-            "name": "Microsoft AI Blog",
-            "url": "https://blogs.microsoft.com/ai/feed/",
+            "name": "Reddit r/artificial",
+            "url": "https://www.reddit.com/r/artificial/.rss",
             "enabled": true
         }
     ],

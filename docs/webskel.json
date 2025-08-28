@@ -12,6 +12,11 @@
       "presenterClassName": "AddExternalSourceModal"
     },
     {
+      "name": "manage-sources-modal",
+      "type": "modals",
+      "presenterClassName": "ManageSourcesModal"
+    },
+    {
       "name": "external-sources-settings-page",
       "type": "page",
       "presenterClassName": "ExternalSourcesSettingsPage"

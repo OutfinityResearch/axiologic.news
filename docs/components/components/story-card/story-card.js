@@ -41,6 +41,7 @@ export class StoryCard {
         
         this.createMainContinuationSlidesIfNeeded();
         this.createReactionSlides();
+        this.linkTitlesToSource();
         this.initializeSlides();
         this.setupSwipeGestures();
         this.setupIndicators();
@@ -212,6 +213,28 @@ export class StoryCard {
             const sponsorInline = this.element.querySelector('.sponsor-inline');
             if (sponsorInline) sponsorInline.style.display = 'none';
         }
+    }
+
+    linkTitlesToSource() {
+        try {
+            if (this.storyIndex === 0) return; // selection card has no external source link
+            const url = this.post?.source;
+            if (!url) return;
+            const cleanTitle = this.sanitizeTitle(this.post.title);
+            const titles = this.element.querySelectorAll('.card-title');
+            titles.forEach(h => {
+                if (!h) return;
+                const existing = h.querySelector('a');
+                if (existing) {
+                    existing.href = url;
+                    existing.textContent = cleanTitle;
+                    existing.target = '_blank';
+                    existing.rel = 'noopener noreferrer';
+                } else {
+                    h.innerHTML = `<a href="${url}" target="_blank" rel="noopener noreferrer">${cleanTitle}</a>`;
+                }
+            });
+        } catch (_) { /* ignore */ }
     }
 
     createReactionSlides() {
@@ -407,8 +430,16 @@ export class StoryCard {
                 }
                 this.nextSlide();
             } else {
-                // Swipe right - previous slide
-                this.previousSlide();
+                // Swipe right - previous slide or request next post if on first slide
+                if (this.currentSlide === 0) {
+                    if (this.storyIndex === 0) return; // ignore on selection card
+                    try {
+                        const evt = new CustomEvent('user-request-next-post', { bubbles: true, detail: { postId: this.post?.id } });
+                        this.element.dispatchEvent(evt);
+                    } catch (_) { /* ignore */ }
+                } else {
+                    this.previousSlide();
+                }
             }
         }
     }
@@ -747,59 +778,16 @@ export class StoryCard {
         const applyBtn = selector.querySelector('.apply-sources-btn');
         const selectAllBtn = selector.querySelector('.select-all-btn');
         const clearAllBtn = selector.querySelector('.clear-all-btn');
-        const addSourceBtn = selector.querySelector('.add-source-btn');
+        const manageSourcesBtn = selector.querySelector('.manage-sources-btn');
         if (applyBtn) applyBtn.style.display = 'none';
         
-        // Default sources that are built-in
-        const defaultSources = [
-            { id: 'default', name: 'Default', type: 'category', removable: false },
-            { id: 'ai', name: 'AI', type: 'category', removable: false },
-            { id: 'marketing', name: 'Marketing', type: 'category', removable: false },
-            { id: 'tech', name: 'Technology', type: 'category', removable: false },
-            { id: 'science', name: 'Science', type: 'category', removable: false },
-            { id: 'business', name: 'Business', type: 'category', removable: false },
-            { id: 'health', name: 'Health', type: 'category', removable: false },
-            { id: 'world', name: 'World News', type: 'category', removable: false }
-        ];
+        // Get sources from centralized service
+        const allSources = await window.SourcesManager.getAllSources();
+        const visibleSourcesOnly = await window.SourcesManager.getVisibleSources();
         
-        // Initialize sources in localStorage if not present
-        let allSources = await window.LocalStorage.get('allNewsSources');
-        if (!allSources) {
-            allSources = [...defaultSources];
-            await window.LocalStorage.set('allNewsSources', allSources);
-        }
-        
-        // Ensure default sources are always present
-        const existingIds = new Set(allSources.map(s => s.id));
-        defaultSources.forEach(defSource => {
-            if (!existingIds.has(defSource.id)) {
-                allSources.push(defSource);
-            }
-        });
-        
-        // Add external sources to allSources if not already there
-        const externalSources = await window.LocalStorage.get('externalPostSources') || [];
-        externalSources.forEach(ext => {
-            if (ext && ext.url && !allSources.find(s => s.url === ext.url)) {
-                allSources.push({
-                    url: ext.url,
-                    tag: ext.tag || '',
-                    type: 'external',
-                    removable: true
-                });
-            }
-        });
-        
-        // Save updated sources list
-        await window.LocalStorage.set('allNewsSources', allSources);
-        
-        // Get currently selected sources
-        const selectedCategories = await window.LocalStorage.get('selectedSourceCategories') || ['default'];
-        const selectedExternal = await window.LocalStorage.get('selectedExternalPostsUrls') || [];
-        const selectedSet = new Set([
-            ...selectedCategories,
-            ...selectedExternal
-        ]);
+        // Get currently selected sources from service
+        const selected = await window.SourcesManager.getSelectedSources();
+        const selectedSet = new Set(selected.all);
         
         // Populate sources list
         sourcesList.innerHTML = '';
@@ -807,8 +795,8 @@ export class StoryCard {
             if (applyBtn) applyBtn.style.display = 'block';
         };
 
-        // Render all sources from localStorage
-        allSources.forEach(source => {
+        // Render visible sources
+        visibleSourcesOnly.forEach(source => {
             const sourceItem = document.createElement('div');
             sourceItem.className = 'source-item';
             if (source.removable) {
@@ -834,11 +822,16 @@ export class StoryCard {
             label.className = 'source-label';
             label.htmlFor = sourceId;
             
-            // Display text
-            if (source.type === 'external') {
-                label.textContent = source.tag ? `#${source.tag}` : source.url;
+            // Display text with hashtags for all sources
+            if (source.tag) {
+                label.textContent = source.tag;
+                label.classList.add('hashtag');
+            } else if (source.type === 'external') {
+                label.textContent = source.url.split('/').pop().replace('.json', '');
+                label.classList.add('hashtag');
             } else {
-                label.textContent = source.name;
+                // For sources without tag, use name or derive from id
+                label.textContent = source.name || source.id;
             }
             
             sourceItem.appendChild(checkbox);
@@ -893,49 +886,22 @@ export class StoryCard {
             checkbox.addEventListener('change', onChange);
         });
 
-        // Add handler for Add Source button
-        if (addSourceBtn) {
-            addSourceBtn.addEventListener('click', async (e) => {
+        // Add handler for Manage Sources button
+        if (manageSourcesBtn) {
+            manageSourcesBtn.addEventListener('click', async (e) => {
                 e.preventDefault();
                 e.stopPropagation();
                 try {
-                    const res = await window.webSkel.showModal('add-external-source-modal', {}, true);
-                    const data = res && res.data;
-                    if (!data || !data.url) return;
-                    const tag = (data.tag || '').trim();
-                    
-                    // Get current sources
-                    const allSources = await window.LocalStorage.get('allNewsSources') || [];
-                    
-                    // Check if already exists
-                    if (allSources.find(s => s.url === data.url)) return;
-                    
-                    // Add new external source
-                    allSources.push({
-                        url: data.url,
-                        tag: tag,
-                        type: 'external',
-                        removable: true
-                    });
-                    
-                    await window.LocalStorage.set('allNewsSources', allSources);
-                    
-                    // Also update legacy storage for compatibility
-                    const existing = await window.LocalStorage.get('externalPostSources') || [];
-                    if (!existing.find(s => s && s.url === data.url)) {
-                        existing.push({ url: data.url, tag });
-                        await window.LocalStorage.set('externalPostSources', existing);
+                    const res = await window.webSkel.showModal('manage-sources-modal', {}, true);
+                    // Check both res.saved and res.data.saved for compatibility
+                    const saved = res?.saved || res?.data?.saved;
+                    if (saved) {
+                        // Reload sources from service and rebuild selector
+                        await window.SourcesManager.reload();
+                        this.setupDataSourcesSelector();
                     }
-                    
-                    const selectedExternal = await window.LocalStorage.get('selectedExternalPostsUrls') || [];
-                    if (!selectedExternal.includes(data.url)) {
-                        selectedExternal.push(data.url);
-                        await window.LocalStorage.set('selectedExternalPostsUrls', selectedExternal);
-                    }
-                    
-                    this.setupDataSourcesSelector();
                 } catch (err) {
-                    console.error('Add external source failed:', err);
+                    console.error('Manage sources failed:', err);
                 }
             });
         }
@@ -957,9 +923,9 @@ export class StoryCard {
             const newCategories = [];
             const newExternal = [];
             
-            // Get all checked sources
-            const allSourcesNow = await window.LocalStorage.get('allNewsSources') || [];
-            allSourcesNow.forEach(source => {
+            // Get all checked sources (only from visible ones)
+            const visibleSourcesNow = await window.SourcesManager.getVisibleSources();
+            visibleSourcesNow.forEach(source => {
                 let checkbox;
                 if (source.type === 'external') {
                     checkbox = document.getElementById(`source-url:${encodeURIComponent(source.url)}`);
@@ -974,8 +940,8 @@ export class StoryCard {
                 }
             });
 
-            await window.LocalStorage.set('selectedSourceCategories', newCategories);
-            await window.LocalStorage.set('selectedExternalPostsUrls', newExternal);
+            // Save through service
+            await window.SourcesManager.saveSelectedSources(newCategories, newExternal);
 
             try { await window.LocalStorage.set('jumpToFirstNews', true); } catch (_) {}
             await window.webSkel.changeToDynamicPage('news-feed-page', 'app');

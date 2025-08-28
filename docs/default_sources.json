@@ -1,0 +1,124 @@
+{
+  "sources": [
+    {
+      "id": "default",
+      "type": "category",
+      "url": "/sources/default/posts.json",
+      "tag": "default",
+      "removable": false,
+      "visible": true
+    },
+    {
+      "id": "ai",
+      "type": "category",
+      "url": "/sources/ai/posts.json",
+      "tag": "ai",
+      "removable": false,
+      "visible": false
+    },
+    {
+      "id": "marketing",
+      "type": "category", 
+      "url": "/sources/marketing/posts.json",
+      "tag": "marketing",
+      "removable": false,
+      "visible": false
+    },
+    {
+      "id": "tech",
+      "type": "category",
+      "url": "/sources/tech/posts.json",
+      "tag": "tech",
+      "removable": false,
+      "visible": false
+    },
+    {
+      "id": "science",
+      "type": "category",
+      "url": "/sources/science/posts.json",
+      "tag": "science",
+      "removable": false,
+      "visible": false
+    },
+    {
+      "id": "business",
+      "type": "category",
+      "url": "/sources/business/posts.json",
+      "tag": "business",
+      "removable": false,
+      "visible": false
+    },
+    {
+      "id": "health",
+      "type": "category",
+      "url": "/sources/health/posts.json",
+      "tag": "health",
+      "removable": false,
+      "visible": false
+    },
+    {
+      "id": "world",
+      "type": "category",
+      "url": "/sources/world/posts.json",
+      "tag": "world",
+      "removable": false,
+      "visible": false
+    },
+    {
+      "id": "startups",
+      "type": "category",
+      "url": "/sources/startups/posts.json",
+      "tag": "startups",
+      "removable": false,
+      "visible": false
+    },
+    {
+      "id": "sales",
+      "type": "category",
+      "url": "/sources/sales/posts.json",
+      "tag": "sales",
+      "removable": false,
+      "visible": false
+    },
+    {
+      "id": "aiForums",
+      "type": "category",
+      "url": "/sources/aiForums/posts.json",
+      "tag": "aiForums",
+      "removable": false,
+      "visible": false
+    },
+    {
+      "id": "marketingForums",
+      "type": "category",
+      "url": "/sources/marketingForums/posts.json",
+      "tag": "marketingForums",
+      "removable": false,
+      "visible": false
+    },
+    {
+      "id": "techForums",
+      "type": "category",
+      "url": "/sources/techForums/posts.json",
+      "tag": "techForums",
+      "removable": false,
+      "visible": false
+    },
+    {
+      "id": "startupsForums",
+      "type": "category",
+      "url": "/sources/startupsForums/posts.json",
+      "tag": "startupsForums",
+      "removable": false,
+      "visible": false
+    },
+    {
+      "id": "salesForums",
+      "type": "category",
+      "url": "/sources/salesForums/posts.json",
+      "tag": "salesForums",
+      "removable": false,
+      "visible": false
+    }
+  ]
+}
