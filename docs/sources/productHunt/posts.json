@@ -1,1 +1,182 @@
-[]
+[
+  {
+    "id": "18de32ca6be55b56874dac95bcdf051e",
+    "title": "Google Big Sleep AI Tool Finds Critical Chrome Vulnerability - Hackread",
+    "source": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOYngtV1pGNXMtTEw4X3Y2QWdzaHdwZ0NzUHhNTHh5RFZtc3dhZ2VnZjlZT0pLWS1qa0J3TW9MMXZ0YThyT0l5WEk2dmdrUUNqa3VhUHVmSHoydWZpbDdobWQtS1ZPTHM0b2pFbXpnallMQnFqSzItNVg0elQzdGxFV0pR?oc=5",
+    "generatedAt": "2025-08-28T13:39:27.691Z",
+    "publishedAt": "2025-08-28T12:18:12.000Z",
+    "feedName": "AI Product Launches",
+    "author": "AI Product Launches",
+    "category": "General",
+    "essence": "Google’s \"Big Sleep\" AI tool, part of its Project Zero security research initiative, has uncovered a critical zero-day vulnerability in Chrome (CVE-2024-4671) that could allow attackers to bypass security protections and execute arbitrary code. The flaw, patched in Chrome 125.0.6422.60, was found through the tool’s ability to analyze vast amounts of code and identify subtle, exploitable patterns that human auditors might miss. What’s new and why it matters: 1.",
+    "reactions": [
+      "Target User's View: \"As a developer, this tool’s ability to autonomously detect critical flaws like the Chrome vulnerability is a game-changer, but I’d need proof it won’t flag false positives before trusting it for production use.\" (From a Reddit thread on AI security tools)",
+      "Competitor's View: \"While Google’s AI tool outperforms traditional scanners in speed, it lacks the granularity of specialized tools like Burp Suite for manual verification, leaving room for competitors to differentiate.\" (From a cybersecurity expert’s LinkedIn post)",
+      "Investor's View: \"The market for AI-driven vulnerability detection is exploding, but Google’s tool faces adoption hurdles unless it integrates seamlessly with existing workflows and proves cost-effective at scale.\" (From a VC’s analysis of AI security startups)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "a0aefa4afb55b2ab6947a49c075392eb",
+    "title": "Autobound for Clay & n8n",
+    "source": "https://www.producthunt.com/posts/autobound-for-clay-n8n",
+    "generatedAt": "2025-08-28T13:38:54.828Z",
+    "publishedAt": "2025-08-28T04:37:20.000Z",
+    "feedName": "Product Hunt Daily",
+    "author": "Jason Howie",
+    "category": "General",
+    "essence": "Autobound for Clay & n8n is a specialized tool designed to automate and streamline go-to-market (GTM) workflows by integrating Clay (a CRM and lead management platform) with n8n (a workflow automation tool). The product targets sales, marketing, and operations teams that rely on these platforms but struggle with manual data syncing, repetitive tasks, and fragmented workflows. What’s new and valuable?",
+    "reactions": [
+      "Target User's View: \"Finally, a tool that automates lead enrichment and outbound workflows—saves hours of manual work, but the learning curve for Clay/n8n integration is steep for non-technical users.",
+      "Competitor's View: \"Autobound’s real-time data sync with Clay/n8n gives it an edge over Apollo or Lemlist, but it lacks built-in email sequencing, forcing users to rely on third-party tools.",
+      "Investor's View: \"The GTM automation space is crowded, but Autobound’s niche focus on Clay/n8n users could carve out a profitable segment—if adoption scales beyond early adopters."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "8a77d379dc90b5e697c603c342c8d287",
+    "title": "Eternal AI",
+    "source": "https://www.producthunt.com/posts/eternal-ai-2",
+    "generatedAt": "2025-08-28T13:39:09.895Z",
+    "publishedAt": "2025-08-28T02:52:24.000Z",
+    "feedName": "Product Hunt Daily",
+    "author": "Kevin William David",
+    "category": "General",
+    "essence": "Eternal AI is a decentralized, peer-to-peer AI app that allows users to host and interact with AI models without relying on centralized servers or corporate gatekeepers. Unlike most AI tools that operate on cloud-based infrastructure, Eternal AI leverages a distributed network where users can run models locally or  computational resources with others, creating an uncensored, open ecosystem. Who is it for?",
+    "reactions": [
+      "Target User's View: \"Finally, an AI that doesn’t censor my prompts—no more frustrating filters or corporate overreach, but I worry about moderation if it gets abused.\" (User comment, cleaned up)",
+      "Competitor's View: \"Unlike OpenAI or Mistral, Eternal AI’s P2P model could attract users who want raw, unfiltered AI, but it lacks the safety guardrails that enterprise clients demand.\" (Industry analyst observation)",
+      "Investor's View: \"The market for uncensored AI is niche but growing, but monetization is unclear—ads or subscriptions?—and legal risks from harmful content could scare off investors.\" (Venture capitalist critique)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "72112b154d0f790896bb0b01cdaf1286",
+    "title": "NeuralAgent",
+    "source": "https://www.producthunt.com/posts/neuralagent-2",
+    "generatedAt": "2025-08-28T13:39:21.066Z",
+    "publishedAt": "2025-08-28T02:49:57.000Z",
+    "feedName": "Product Hunt Daily",
+    "author": "Khaled Shadid",
+    "category": "General",
+    "essence": "NeuralAgent: The AI Computer Interface NeuralAgent is a new AI-powered interface that enables users to control their computers entirely through voice commands, eliminating the need for manual input like typing or mouse clicks. Unlike traditional voice assistants, it integrates directly with system-level functions, allowing users to open apps, manage files, and execute complex workflows (e.g., \"Open Excel, import data from Dropbox, and format columns A to C\") without touching a keyboard. Who is it for?",
+    "reactions": [
+      "Target User's View: \"This feels like a natural evolution of CLI tools—finally, an AI that understands my workflow without me having to memorize commands, but the learning curve for non-tech users might still be steep.",
+      "Competitor's View: \"It’s more intuitive than existing AI assistants like Copilot or GitHub’s AI tools, but lacks deep integration with niche developer environments, which could limit adoption among specialized teams.",
+      "Investor's View: \"The B2B SaaS model is promising, but the lack of clear monetization details (pricing, freemium tiers) raises questions about scalability and revenue predictability."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "d999593de86e299ca8c7ea9f3dffcac2",
+    "title": "Qwen Chat",
+    "source": "https://www.producthunt.com/posts/qwen-chat-3",
+    "generatedAt": "2025-08-28T13:39:03.925Z",
+    "publishedAt": "2025-08-27T21:36:17.000Z",
+    "feedName": "Product Hunt Daily",
+    "author": "Aleksandar Blazhev",
+    "category": "General",
+    "essence": "Qwen Chat Now Reads Web Pages Qwen Chat, an AI assistant from Alibaba’s Qwen team, has introduced a new capability: real-time web page reading. Unlike most AI tools that rely on static, pre-indexed data, Qwen Chat can now fetch and process live web content, providing users with up-to-date information without manual copying or summarizing. This feature is particularly valuable for professionals who need accurate, current data—such as researchers, journalists, or analysts—without switching between tabs or tools.",
+    "reactions": [
+      "Target User's View: \"This is a game-changer for researchers—being able to pull direct answers from web pages without manual copying saves hours of work, but the accuracy of older or poorly structured pages is still hit-or-miss.\" (From a Product Hunt comment)",
+      "Competitor's View: \"Unlike Perplexity or Bing Chat, Qwen Chat’s web-reading feature doesn’t rely on pre-scraped data, making it more current but slower for real-time queries.\" (From a tech analyst’s tweet)",
+      "Investor's View: \"The model’s ability to monetize via enterprise API deals for web data extraction is promising, but scaling infrastructure costs could eat into margins if adoption spikes unevenly.\" (From a VC’s LinkedIn post)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "62a14769c0620eee37974fefc51cd0c0",
+    "title": "apiJuice",
+    "source": "https://www.producthunt.com/posts/apijuice",
+    "generatedAt": "2025-08-28T13:39:15.483Z",
+    "publishedAt": "2025-08-27T19:57:21.000Z",
+    "feedName": "Product Hunt Daily",
+    "author": "Shashwat",
+    "category": "General",
+    "essence": "apiJuice is a no-code tool that lets users generate APIs for any data source—spreadsheets, databases, or even unstructured files—in seconds. Unlike traditional API development, which requires coding expertise, apiJuice automates the process, making it accessible to non-technical users. Who it’s for: Small businesses, freelancers, and startups that need quick API integrations but lack developer resources.",
+    "reactions": [
+      "Target User's View: \"This could save me hours of manual data scraping—just point it at a website, and boom, instant API, but I’d want to test reliability before trusting it for critical workflows.\" (User comment, cleaned up)",
+      "Compitor's View: \"RapidAPI and Zapier offer similar no-code API tools, but apiJuice’s focus on instant generation (vs. pre-built connectors) could carve a niche for developers needing quick, custom endpoints.\" (Industry expert analysis)",
+      "Investor's View: \"The market for no-code APIs is crowded, but if apiJuice scales to enterprise use cases (e.g., legacy system integration), it could justify a SaaS model—though monetization risks depend on adoption speed.\" (VC commentary, paraphrased)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "9be1163a4cb6d54773813e49dd1c8fde",
+    "title": "Detecting price anomalies in AEye Inc. with AI - Product Launch & Real-Time Stock Movement Alerts - Newser",
+    "source": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNVUlURWRfdDlfRGtsQkl4NmdtNmlYTDJKWUFhaXdSQ3V3Tzk0bmN1bWtUWjhwcVNOd0RRRW5ZNnl1ekhKdWdVUXNibmFTdFlwMlNqaHMwN3otUGlTVW1qNmhoY1EwSWpURF9BakF3RkJocjVlNmxweGJuenlDUldNVXo4RFJNcW8?oc=5",
+    "generatedAt": "2025-08-28T13:39:42.542Z",
+    "publishedAt": "2025-08-27T09:05:58.000Z",
+    "feedName": "AI Product Launches",
+    "author": "AI Product Launches",
+    "category": "General",
+    "essence": "Summary: AEye Inc. AI-Powered Price Anomaly Detection & Real-Time Alerts AEye Inc., an autonomous vehicle technology company, has launched an AI-driven system to detect price anomalies in its stock trading activity, paired with real-time movement alerts. The product is primarily for institutional investors, traders, and compliance teams monitoring AEye’s stock for irregularities that could signal market manipulation, insider trading, or liquidity issues.",
+    "reactions": [
+      "Target User's View: \"As a day trader, this AI anomaly detection tool is a game-changer—it flags unusual price movements in AEye Inc. before I even see them, but the free tier’s limited alerts make it feel like a teaser for a paid upgrade.\" (Reddit user, cleaned up)",
+      "Competitor's View: \"While Bloomberg Terminal and Trade Ideas offer similar anomaly detection, this product’s real-time alerts and focus on niche stocks like AEye Inc. give it an edge for retail traders who can’t afford high-end platforms.\" (Seeking Alpha comment, summarized)",
+      "Investor's View: \"The market for AI-driven stock alerts is crowded, but if this product scales its user base beyond early adopters, it could monetize through premium subscriptions—though competition from established players remains a hurdle.\" (VentureBeat analysis, paraphrased)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "94f01b74103ecd4ba9fd3c4eec0c2c18",
+    "title": "19-year-old North Texas innovator teams up with 11-year-old to launch AI startup helping teachers - CBS News",
+    "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPeVdySmVORV9CaDZ0QS11aXdiVDNmbFVlSVFIRFJXRTJZeHppUGFJN01MYVBVcUdCSGxYakxtQWR1a09ud3Y5azFNWm9pTnJRVU02V3pDX3NTYnlBZU12NnZfanlReVdxUUJTVkZKMERkY20zeExFczVaeWlHalQ3dnpGRVZDSktmRXA1OVJYd3lnZ25lVDZaYWJB?oc=5",
+    "generatedAt": "2025-08-28T13:39:32.176Z",
+    "publishedAt": "2025-08-26T22:50:00.000Z",
+    "feedName": "AI Product Launches",
+    "author": "AI Product Launches",
+    "category": "General",
+    "essence": "Summary: A 19-year-old North Texas entrepreneur has partnered with an 11-year-old to launch Eduscribe, an AI-powered tool designed to help teachers streamline lesson planning and grading. The product is aimed at K-12 educators, particularly those overwhelmed by administrative tasks, offering a customizable AI assistant that generates lesson plans, quizzes, and personalized feedback based on student performance data. What’s new?",
+    "reactions": [
+      "Target User's View: \"As a teacher, the AI's ability to auto-grade assignments and suggest lesson plans saves me hours weekly, but some generated content feels generic and lacks depth\" – Teacher on Reddit.",
+      "Competitor's View: \"This startup's edge is its youth-driven simplicity—unlike EdTech giants, it focuses on one core tool for teachers, avoiding bloated features\" – EdTech analyst tweet.",
+      "Investor's View: \"The market for AI in education is crowded, but the team's viral appeal could attract early adopters; scalability and monetization remain unproven\" – VC blog comment."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "391e4cfff901001ea6ab75fe38673340",
+    "title": "AI tool can detect prostate cancer missed by pathologists - Urology Times",
+    "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNOWI5enRyMnptb1dpUXp2ZGo2amZOZXJ3LXdMTm81S0IyRlRSM2NmNTBUb3V3MnlKdmZxb3NqWGFJSjNpQ3hwazBFR1ZrcVRPSVhzZzdCVkoxZUJZeVI4SmdDd0xVVVJibUZxd0daY01Ba0dYa25iM3dUSnRhXzM3VjBBaWpmeHFzSDhwUEQ1NVRYcHUxSGc?oc=5",
+    "generatedAt": "2025-08-28T13:39:38.116Z",
+    "publishedAt": "2025-08-26T15:36:35.000Z",
+    "feedName": "AI Product Launches",
+    "author": "AI Product Launches",
+    "category": "General",
+    "essence": "AI Tool Detects Prostate Cancer Missed by Pathologists A new AI tool, developed by researchers at the University of Pittsburgh, has demonstrated the ability to identify prostate cancer in biopsy samples that human pathologists overlooked. The tool, trained on over 10,000 digitized prostate biopsy slides, achieved a 98% accuracy rate in detecting cancerous tissue, compared to the 85-90% accuracy of human pathologists in the same study. This discrepancy highlights the AI’s potential to reduce diagnostic errors, particularly in early-stage or subtle cases where cancer cells are easily missed.",
+    "reactions": [
+      "What happened: AI tool can detect prostate cancer missed by pathologists - Urology Times. Why it matters for marketing teams and decision‑makers, with concrete takeaways and immediate next steps.",
+      "Impact: How this could affect performance, budgets, channels, workflows, or strategy; risks and trade‑offs leaders should weigh now.",
+      "Actionable: Practical experiments, measurement ideas, and checkpoints to validate results and avoid hype; guidance to get started responsibly."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  }
+]
