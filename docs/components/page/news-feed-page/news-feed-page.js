@@ -19,11 +19,8 @@ export class NewsFeedPage {
 
     async beforeRender() {
         try { if (window.__LOGS_ENABLED) { console.time('NF: full load'); console.time('NF: waiting UI'); } } catch (_) {}
+        // Always start on selection card; do not jump to first news automatically
         this.startAtFirstNews = false;
-        try {
-            const jump = await window.LocalStorage.get('jumpToFirstNews');
-            this.startAtFirstNews = !!jump;
-        } catch (_) { this.startAtFirstNews = false; }
         const hasVisited = await window.LocalStorage.get('hasVisitedBefore');
         if (!hasVisited) {
             const tutorialPost = this.createTutorialPost();
@@ -256,10 +253,8 @@ export class NewsFeedPage {
             this.setupScrollDetection();
             this.setupTouchNavigation();
 
-            // Start pe cardul de selecție (index 0) implicit;
-            // treci la prima știre doar dacă există flag explicit
+            // Pornește pe cardul de selecție (index 0) fără a sări automat la prima știre
             this.currentStoryIndex = 0;
-            if (this.startAtFirstNews && this.posts.length > 1) this.currentStoryIndex = 1;
 
             // Build initial virtualization window
             this.ensureVirtualWindow(this.currentStoryIndex);
@@ -363,7 +358,7 @@ export class NewsFeedPage {
             }, 120);
         });
 
-        // Initial activation and centering on first render
+        // Initial activation on first render (no auto-scroll on selection card)
         // Add a small delay to ensure selection card is properly sized
         setTimeout(async () => {
             this.checkActiveStory();
@@ -376,24 +371,19 @@ export class NewsFeedPage {
                 const nextEl = this.cardEls.get(this.currentStoryIndex + 1);
                 if (prevEl) prevEl.classList.add('prev-card');
                 if (nextEl) nextEl.classList.add('next-card');
-                // Use a standard behavior, ensure selection card is at top
-                const initialBlock = (this.currentStoryIndex === 0) ? 'start' : 'center';
-                // Scroll to top first if showing selection card
-                if (this.currentStoryIndex === 0) {
+                // Do not auto-scroll when starting on selection card; keep at top without animation
+                if (this.currentStoryIndex !== 0) {
+                    activeEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                } else {
                     container.scrollTop = 0;
-                }
-                activeEl.scrollIntoView({ behavior: 'smooth', block: initialBlock });
-                // Nudge down a bit so selection actions are not hidden at the very top
-                if (this.currentStoryIndex === 0) {
-                    setTimeout(() => { try { container.scrollBy({ top: 20, left: 0, behavior: 'auto' }); } catch (_) {} }, 120);
                 }
                 this.storyCardsMap.get(this.currentStoryIndex)?.startCarousel();
                 // Ensure initial active is recorded as centered
                 await this.markAsCentered(this.currentStoryIndex);
                 try { window.logTS('NF: active card centered and started', { index: this.currentStoryIndex }); } catch (_) {}
             }
-            // Clear jump flag after applying once
-            try { await window.LocalStorage.set('jumpToFirstNews', false); } catch (_) {}
+                // Asigură-te că flag-ul de salt este mereu inactiv
+                try { await window.LocalStorage.set('jumpToFirstNews', false); } catch (_) {}
             if (window.__LOGS_ENABLED) console.timeEnd('NF: afterRender total');
             if (window.__LOGS_ENABLED) console.timeEnd('NF: full load');
         }, 100); // Small delay to ensure DOM is ready
@@ -516,12 +506,12 @@ export class NewsFeedPage {
             // Mark this post as having been centered
             await this.markAsCentered(newActive);
 
-            // Ensure alignment: selection card aligns to top to show full content
+            // Ensure alignment: do not scroll when activating selection card; center others
             if (activeEl) {
-                const block = (newActive === 0) ? 'start' : 'center';
-                activeEl.scrollIntoView({ behavior: 'smooth', block });
-                if (newActive === 0) {
-                    setTimeout(() => { try { container.scrollBy({ top: 20, left: 0, behavior: 'auto' }); } catch (_) {} }, 120);
+                if (newActive !== 0) {
+                    activeEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                } else {
+                    container.scrollTop = 0;
                 }
             }
         } else {

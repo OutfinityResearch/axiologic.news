@@ -1049,8 +1049,18 @@ export class StoryCard {
             // Save through service
             await window.SourcesManager.saveSelectedSources(newCategories, newExternal);
 
-            try { await window.LocalStorage.set('jumpToFirstNews', true); } catch (_) {}
-            await window.webSkel.changeToDynamicPage('news-feed-page', 'app');
+            try { await window.LocalStorage.set('jumpToFirstNews', false); } catch (_) {}
+            // Refresh the existing news-feed-page in place to avoid any jump
+            try {
+                const pageEl = this.element.closest('news-feed-page');
+                if (pageEl && window.webSkel?.refreshElement) {
+                    window.webSkel.refreshElement(pageEl);
+                } else {
+                    await window.webSkel.changeToDynamicPage('news-feed-page', 'app');
+                }
+            } catch (_) {
+                try { await window.webSkel.changeToDynamicPage('news-feed-page', 'app'); } catch (e) {}
+            }
         });
 
 

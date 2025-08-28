@@ -84,12 +84,7 @@
     gap: 16px;
 }
 
-@media (min-width: 900px) {
-    .sources-manager {
-        grid-template-columns: 1fr 2fr;
-        align-items: start;
-    }
-}
+/* Keep single-column layout on desktop as well */
 
 .add-source-section {
     background: var(--background-secondary, #f5f5f5);

@@ -69,12 +69,18 @@ export class ManageSourcesModal {
         // Add event listeners for delete buttons
         listContainer.querySelectorAll('.delete-button').forEach(button => {
             if (!button.disabled) {
-                button.addEventListener('click', (e) => {
+                button.addEventListener('click', async (e) => {
                     const index = parseInt(e.target.dataset.index);
-                    if (confirm(`Delete source "${this.sources[index].tag}"?`)) {
-                        this.sources.splice(index, 1);
-                        this.hasChanges = true;
-                        this.renderSourcesTable();
+                    const src = this.sources[index];
+                    if (!src) return;
+                    if (confirm(`Delete source "${src.tag}"?`)) {
+                        try {
+                            await window.SourcesManager.removeSource(src.id || src.url);
+                            this.sources = await window.SourcesManager.getAllSources();
+                            this.renderSourcesTable();
+                        } catch (_) {
+                            alert('Could not delete source.');
+                        }
                     }
                 });
             }
@@ -162,7 +168,7 @@ export class ManageSourcesModal {
         }
     }
 
-    addNewSource() {
+    async addNewSource() {
         const tagInput = this.element.querySelector('#new-source-tag');
         const urlInput = this.element.querySelector('#new-source-url');
 
@@ -200,9 +206,14 @@ export class ManageSourcesModal {
             visible: true
         };
         
-        // Add to local array for immediate display
-        newSource.id = `external-${Date.now()}-${Math.random()}`;
-        this.sources.unshift(newSource);
+        // Persist immediately via service and refresh list
+        try {
+            await window.SourcesManager.addSource(newSource);
+            this.sources = await window.SourcesManager.getAllSources();
+        } catch (_) {
+            alert('Could not add source.');
+            return;
+        }
 
         // Clear inputs
         tagInput.value = '';
