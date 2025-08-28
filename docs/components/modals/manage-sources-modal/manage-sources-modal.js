@@ -97,6 +97,8 @@ export class ManageSourcesModal {
         const cancelButton = this.element.querySelector('#cancel-button');
         const saveButton = this.element.querySelector('#save-button');
         const addButton = this.element.querySelector('#add-source-button');
+        const selectAllButton = this.element.querySelector('#select-all-button');
+        const deselectAllButton = this.element.querySelector('#deselect-all-button');
 
         if (closeButton) {
             closeButton.addEventListener('click', () => {
@@ -120,6 +122,34 @@ export class ManageSourcesModal {
         if (addButton) {
             addButton.addEventListener('click', () => {
                 this.addNewSource();
+            });
+        }
+        
+        if (selectAllButton) {
+            selectAllButton.addEventListener('click', () => {
+                const checkboxes = this.element.querySelectorAll('.visibility-checkbox');
+                checkboxes.forEach(cb => {
+                    cb.checked = true;
+                    const index = parseInt(cb.dataset.index);
+                    if (this.sources[index]) {
+                        this.sources[index].visible = true;
+                    }
+                });
+                this.hasChanges = true;
+            });
+        }
+        
+        if (deselectAllButton) {
+            deselectAllButton.addEventListener('click', () => {
+                const checkboxes = this.element.querySelectorAll('.visibility-checkbox');
+                checkboxes.forEach(cb => {
+                    cb.checked = false;
+                    const index = parseInt(cb.dataset.index);
+                    if (this.sources[index]) {
+                        this.sources[index].visible = false;
+                    }
+                });
+                this.hasChanges = true;
             });
         }
     }

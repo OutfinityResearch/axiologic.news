@@ -424,6 +424,15 @@
     background: var(--background-secondary);
     border-radius: 8px;
     margin: 8px 0;
+    min-height: 40px;
+}
+
+.no-sources-message {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 14px;
+    padding: 12px;
 }
 
 .manage-sources-btn {

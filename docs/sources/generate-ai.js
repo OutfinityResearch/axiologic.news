@@ -799,6 +799,28 @@ Return only the numbers (comma-separated) of the selected stories.`;
             .slice(0, this.config.topPostsPerFeed || 5);
     }
 
+    qualityCheckReactions(reactions) {
+        if (!reactions || reactions.length < 3) {
+            return false;
+        }
+
+        // Check for identical reactions
+        const uniqueReactions = new Set(reactions);
+        if (uniqueReactions.size < reactions.length) {
+            return false;
+        }
+
+        // Check for minimum length
+        for (const reaction of reactions) {
+            const wordCount = (reaction.match(/\b\w+\b/g) || []).length;
+            if (wordCount < 10) { // A bit more realistic than 50 for a single reaction
+                return false;
+            }
+        }
+
+        return true;
+    }
+
     async createEnhancedPost(item, feed, fullContent) {
         const post = {
             id: generatePostId(item.title, item.link),

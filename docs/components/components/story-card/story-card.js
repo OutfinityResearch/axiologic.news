@@ -795,6 +795,13 @@ export class StoryCard {
             if (applyBtn) applyBtn.style.display = 'block';
         };
 
+        // Check if there are any visible sources
+        if (visibleSourcesOnly.length === 0) {
+            sourcesList.innerHTML = '<div class="no-sources-message">No sources available. Click "Manage Sources" to add some.</div>';
+            sourcesList.style.minHeight = '50px';
+            return;
+        }
+
         // Render visible sources
         visibleSourcesOnly.forEach(source => {
             const sourceItem = document.createElement('div');
