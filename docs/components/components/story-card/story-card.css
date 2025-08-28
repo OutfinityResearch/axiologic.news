@@ -157,10 +157,11 @@
 }
 .story-card.selection-mode .sources-actions { background: transparent; border: none; }
 .story-card.selection-mode .sources-actions {
-    position: sticky;
-    top: 12px; /* offset from very top for visibility */
-    z-index: 5;
+    position: static; /* footer placement */
+    top: auto;
+    z-index: 2;
     pointer-events: auto;
+    margin-top: 12px;
 }
 /* ascunde elementele flotante pe cardul de selecție */
 .story-card.selection-mode .progress-bars,

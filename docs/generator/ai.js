@@ -115,15 +115,25 @@ function getModel(provider) {
 
 class AIService {
     constructor() {
-        this.providers = ['openai', 'gemini', 'anthropic', 'mistral', 'groq', 'ollama'];
+        // Prioritize based on AI_PROVIDER env var, then check in order
+        const preferredProvider = process.env.AI_PROVIDER;
+        if (preferredProvider && preferredProvider !== 'none') {
+            this.providers = [preferredProvider, 'mistral', 'gemini', 'anthropic', 'openai', 'groq', 'ollama'];
+        } else {
+            this.providers = ['mistral', 'gemini', 'anthropic', 'openai', 'groq', 'ollama'];
+        }
         this.activeProvider = null;
         this.apiKey = null;
     }
 
     async initialize() {
+        // Remove duplicates from providers list
+        this.providers = [...new Set(this.providers)];
+        
         for (const provider of this.providers) {
             const apiKey = getApiKey(provider);
-            if (apiKey || provider === 'ollama') {
+            // Check if API key is valid (not a placeholder starting with $)
+            if (apiKey && !apiKey.startsWith('$') && (apiKey.length > 10 || provider === 'ollama')) {
                 this.activeProvider = provider;
                 this.apiKey = apiKey;
                 const model = getModel(this.activeProvider);
@@ -135,7 +145,7 @@ class AIService {
             }
         }
         console.error('ERROR: No AI provider API key found!');
-        console.error('Please set one of: OPENAI_API_KEY, GEMINI_API_KEY, ANTHROPIC_API_KEY, MISTRAL_API_KEY, GROQ_API_KEY');
+        console.error('Please set one of: MISTRAL_API_KEY, GEMINI_API_KEY, ANTHROPIC_API_KEY, OPENAI_API_KEY, GROQ_API_KEY');
         console.error('Or configure API keys in sources/global-config.json');
         process.exit(1);
     }

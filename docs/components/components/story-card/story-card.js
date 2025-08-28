@@ -864,10 +864,15 @@ export class StoryCard {
         const selectAllBtn = selector.querySelector('.select-all-btn');
         const clearAllBtn = selector.querySelector('.clear-all-btn');
         const manageSourcesBtn = selector.querySelector('.manage-sources-btn');
+        const actionsBar = selector.querySelector('.sources-actions');
         // Reserve space for the Apply button from the start (visibility hidden keeps layout stable)
         if (applyBtn) {
             applyBtn.style.display = 'block';
             applyBtn.style.visibility = 'hidden';
+        }
+        // Move actions bar to footer area (below Apply), so Apply stays near the checkboxes
+        if (actionsBar) {
+            try { selector.appendChild(actionsBar); } catch (_) {}
         }
         
         // Get sources from centralized service
