@@ -41,6 +41,7 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes to commit."
           else
-            git commit -m "Update news sources"
-            git push
+            git pull 
+            git commit -m "Update news sources"            
+            git push -f
           fi
