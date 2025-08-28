@@ -506,14 +506,7 @@ export class NewsFeedPage {
             // Mark this post as having been centered
             await this.markAsCentered(newActive);
 
-            // Ensure alignment: do not scroll when activating selection card; center others
-            if (activeEl) {
-                if (newActive !== 0) {
-                    activeEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                } else {
-                    container.scrollTop = 0;
-                }
-            }
+            // Do not force any scroll alignment here; let user control scrolling
         } else {
             // Maintain active class on current
             const activeEl = this.cardEls.get(this.currentStoryIndex);
