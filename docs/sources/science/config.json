@@ -1,44 +1,39 @@
 {
-    "feeds": [
-        {
-            "name": "ScienceDaily",
-            "url": "https://www.sciencedaily.com/rss/all.xml",
-            "enabled": true
-        },
-        {
-            "name": "Nature News",
-            "url": "https://www.nature.com/nature.rss",
-            "enabled": true
-        },
-        {
-            "name": "Science Magazine",
-            "url": "https://www.science.org/rss/news_current.xml",
-            "enabled": true
-        },
-        {
-            "name": "NASA Breaking News",
-            "url": "https://www.nasa.gov/rss/dyn/breaking_news.rss",
-            "enabled": true
-        },
-        {
-            "name": "Scientific American",
-            "url": "https://www.scientificamerican.com/feed/",
-            "enabled": true
-        },
-        {
-            "name": "Phys.org",
-            "url": "https://phys.org/rss-feed/",
-            "enabled": true
-        },
-        {
-            "name": "arXiv cs.AI",
-            "url": "https://export.arxiv.org/rss/cs.AI",
-            "enabled": true
-        }
-    ],
-    "topPostsPerFeed": 5,
-    "historyDays": 5,
-    "selectionPrompt": "Select the most significant scientific discoveries and research breakthroughs: 1) Peer-reviewed studies with major implications, 2) Medical and health breakthroughs affecting human life, 3) Climate and environmental research with urgent findings, 4) Space exploration and astronomy discoveries, 5) Fundamental physics, chemistry, or biology advances. Prioritize studies from reputable institutions with clear methodology and significant results.",
-    "essencePrompt": "Explain this scientific discovery in clear terms: What did researchers discover? How did they do it? Why is it important? What are the implications? Include key findings and potential applications while maintaining scientific accuracy.",
-    "perspectivesPrompt": "Provide three scientific community perspectives:\n1. Research Significance: Evaluate methodology, novelty, and contribution to the field\n2. Practical Applications: Real-world implications, potential technologies, and timeline to implementation\n3. Broader Impact: Effects on society, environment, health, or our understanding of the universe\n\nBe rigorous yet accessible, avoiding sensationalism."
+  "feeds": [
+    {
+      "name": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/rss/all.xml",
+      "enabled": true
+    },
+    {
+      "name": "Nature News",
+      "url": "https://www.nature.com/nature.rss",
+      "enabled": true
+    },
+    {
+      "name": "Science Magazine",
+      "url": "https://www.science.org/rss/news_current.xml",
+      "enabled": true
+    },
+    {
+      "name": "NASA Breaking News",
+      "url": "https://www.nasa.gov/rss/dyn/breaking_news.rss",
+      "enabled": true
+    },
+    {
+      "name": "Phys.org",
+      "url": "https://phys.org/rss-feed/",
+      "enabled": true
+    },
+    {
+      "name": "arXiv cs.AI",
+      "url": "https://export.arxiv.org/rss/cs.AI",
+      "enabled": true
+    }
+  ],
+  "topPostsPerFeed": 5,
+  "historyDays": 5,
+  "selectionPrompt": "Select the most significant scientific discoveries and research breakthroughs: 1) Peer-reviewed studies with major implications, 2) Medical and health breakthroughs affecting human life, 3) Climate and environmental research with urgent findings, 4) Space exploration and astronomy discoveries, 5) Fundamental physics, chemistry, or biology advances. Prioritize studies from reputable institutions with clear methodology and significant results.",
+  "essencePrompt": "Explain this scientific discovery in clear terms: What did researchers discover? How did they do it? Why is it important? What are the implications? Include key findings and potential applications while maintaining scientific accuracy.",
+  "perspectivesPrompt": "Provide three scientific community perspectives:\n1. Research Significance: Evaluate methodology, novelty, and contribution to the field\n2. Practical Applications: Real-world implications, potential technologies, and timeline to implementation\n3. Broader Impact: Effects on society, environment, health, or our understanding of the universe\n\nBe rigorous yet accessible, avoiding sensationalism."
 }

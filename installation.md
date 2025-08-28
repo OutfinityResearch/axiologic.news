@@ -19,7 +19,7 @@ The workflow, once activated, will perform the following steps:
 1.  **Scheduled Trigger:** The workflow is scheduled to run every hour.
 2.  **Checkout:** It checks out the latest version of the repository.
 3.  **Setup Node.js:** It sets up a Node.js environment.
-4.  **Generate News:** It runs the `docs/sources/generate-ai.js` script, which fetches and processes news articles.
+4.  **Generate News:** It runs the `docs/run-generator.sh` script, which fetches and processes news articles using the modular generator system.
 5.  **Commit and Push:** It commits the updated `posts.json` and `invalidUrls.json` files to the repository.
 
 ### Setting up the GitHub Action
@@ -35,7 +35,7 @@ First, you need to add the necessary API keys as secrets in your forked reposito
 
 The secrets you need to add depend on the AI provider you want to use:
 
--   `AI_PROVIDER`: (Optional) The AI provider to use. Defaults to `openai`. Supported values are `openai`, `gemini`, `mistral`, `claude`, `anthropic`, `groq`, `ollama`.
+-   `AI_PROVIDER`: (Optional, auto-detected) The AI provider to use. Supported values are `openai`, `gemini`, `mistral`, `claude`, `anthropic`, `groq`, `ollama`. The system will automatically detect which provider to use based on available API keys.
 -   `AI_MODEL`: (Optional) The specific model to use for the selected provider.
 -   `OPENAI_API_KEY`: The API key for OpenAI.
 -   `GEMINI_API_KEY`: The API key for Google Gemini.
@@ -47,7 +47,9 @@ The secrets you need to add depend on the AI provider you want to use:
 
 **Example:**
 
-If you want to use OpenAI, you need to create a secret named `OPENAI_API_KEY` with your OpenAI API key as the value. You can also set the `AI_PROVIDER` secret to `openai`.
+If you want to use OpenAI, you need to create a secret named `OPENAI_API_KEY` with your OpenAI API key as the value. The system will automatically detect and use OpenAI as the provider.
+
+**Important:** At least one AI API key is REQUIRED. The generator will not work without AI capabilities.
 
 #### 2. Activate the Workflow
 

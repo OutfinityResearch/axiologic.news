@@ -13,32 +13,34 @@ class SourcesManager {
      */
     async initialize() {
         if (this.initialized) return this.sources;
-        
-        // Load default sources from configuration
-        let defaultSources = [];
-        try {
-            const response = await fetch('./default_sources.json');
-            if (response.ok) {
-                const config = await response.json();
-                defaultSources = config.sources || [];
-            }
-        } catch (error) {
-            console.error('Failed to load default sources:', error);
-            // Minimal fallback
-            defaultSources = [
-                { id: 'default', type: 'category', url: '/sources/default/posts.json', tag: 'default', removable: false, visible: true },
-                { id: 'tech', type: 'category', url: '/sources/tech/posts.json', tag: 'tech', removable: false, visible: true }
-            ];
-        }
 
-        // Load saved sources from localStorage
+        // Load saved sources first; if present, skip fetching defaults to avoid blocking
         const savedSources = await window.LocalStorage.get('allNewsSources');
-        
-        if (savedSources && Array.isArray(savedSources)) {
-            // Merge with defaults, preserving user settings
-            this.sources = this.mergeSourcesWithDefaults(savedSources, defaultSources);
+        let defaultSources = [];
+
+        if (savedSources && Array.isArray(savedSources) && savedSources.length > 0) {
+            this.sources = [...savedSources];
         } else {
-            // First time - use defaults
+            // First-time initialization: get defaults from cache or config file
+            try {
+                const cachedCfg = await window.LocalStorage.get('defaultSourcesConfig');
+                if (cachedCfg && Array.isArray(cachedCfg.sources)) {
+                    defaultSources = cachedCfg.sources;
+                } else {
+                    const resp = await fetch('./default_sources.json', { cache: 'force-cache' });
+                    if (resp.ok) {
+                        const cfg = await resp.json();
+                        defaultSources = cfg.sources || [];
+                        await window.LocalStorage.set('defaultSourcesConfig', cfg);
+                    }
+                }
+            } catch (error) {
+                console.warn('Default sources config unavailable, using minimal fallback:', error);
+                defaultSources = [
+                    { id: 'default', type: 'category', url: '/sources/default/posts.json', tag: 'default', removable: false, visible: true },
+                    { id: 'tech', type: 'category', url: '/sources/tech/posts.json', tag: 'tech', removable: false, visible: true }
+                ];
+            }
             this.sources = [...defaultSources];
         }
 

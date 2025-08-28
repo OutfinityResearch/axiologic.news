@@ -1,49 +1,29 @@
 {
-    "feeds": [
-        {
-            "name": "Axiologic News",
-            "url": "https://www.axiologic.net/feed/",
-            "enabled": true
-        },
-        {
-            "name": "Reuters Top News",
-            "url": "https://feeds.reuters.com/reuters/topNews",
-            "enabled": true
-        },
-        {
-            "name": "AP Top News",
-            "url": "https://feeds.apnews.com/apf-topnews",
-            "enabled": true
-        },
-        {
-            "name": "CNN Top Stories",
-            "url": "https://rss.cnn.com/rss/edition.rss",
-            "enabled": true
-        },
-        {
-            "name": "BBC Top Stories",
-            "url": "https://feeds.bbci.co.uk/news/rss.xml",
-            "enabled": true
-        },
-        {
-            "name": "The Guardian",
-            "url": "https://www.theguardian.com/uk/rss",
-            "enabled": true
-        },
-        {
-            "name": "Reddit r/news",
-            "url": "https://www.reddit.com/r/news/.rss",
-            "enabled": true
-        },
-        {
-            "name": "Reddit r/worldnews",
-            "url": "https://www.reddit.com/r/worldnews/.rss",
-            "enabled": true
-        }
-    ],
-    "topPostsPerFeed": 5,
-    "defaultBackgroundColor": "green",
-    "selectionPrompt": "Select the most relevant general news: 1) major events with wide impact, 2) trustworthy sources and clear facts, 3) updates that change the situation or policy, 4) concise stories with concrete details. Avoid speculative or low‑signal items.",
-    "essencePrompt": "Summarize what happened, why it matters now, and who is affected. Keep it factual, concise, and accessible.",
-    "perspectivesPrompt": "Provide three angles: 1) Context and implications, 2) Stakeholders affected and near‑term outcomes, 3) Longer‑term risks/opportunities."
+  "feeds": [
+    {
+      "name": "BBC Top Stories",
+      "url": "https://feeds.bbci.co.uk/news/rss.xml",
+      "enabled": true
+    },
+    {
+      "name": "The Guardian",
+      "url": "https://www.theguardian.com/uk/rss",
+      "enabled": true
+    },
+    {
+      "name": "Reddit r/news",
+      "url": "https://www.reddit.com/r/news/.rss",
+      "enabled": true
+    },
+    {
+      "name": "Reddit r/worldnews",
+      "url": "https://www.reddit.com/r/worldnews/.rss",
+      "enabled": true
+    }
+  ],
+  "topPostsPerFeed": 5,
+  "defaultBackgroundColor": "green",
+  "selectionPrompt": "Select the most relevant general news: 1) major events with wide impact, 2) trustworthy sources and clear facts, 3) updates that change the situation or policy, 4) concise stories with concrete details. Avoid speculative or low‑signal items.",
+  "essencePrompt": "Summarize what happened, why it matters now, and who is affected. Keep it factual, concise, and accessible.",
+  "perspectivesPrompt": "Provide three angles: 1) Context and implications, 2) Stakeholders affected and near‑term outcomes, 3) Longer‑term risks/opportunities."
 }

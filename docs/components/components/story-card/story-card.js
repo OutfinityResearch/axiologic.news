@@ -24,19 +24,26 @@ export class StoryCard {
 
         this.applyDynamicGradient();
         this.populateContent();
-        // For selection card, shrink to content height
+        // First card (sources selection): ensure selector is rendered before sizing
         if (this.storyIndex === 0) {
+            // Mark as selection early so CSS can hide header/essence immediately
+            try {
+                const root = this.element.querySelector('.story-card');
+                if (root) root.classList.add('selection-mode');
+            } catch (_) {}
             this.element.classList.add('selection-card');
-            this.adjustSelectionCardHeight();
+            // Render sources selector first, then size to fit
+            try {
+                Promise.resolve()
+                    .then(() => this.setupDataSourcesSelector())
+                    .then(() => new Promise(requestAnimationFrame))
+                    .then(() => this.adjustSelectionCardHeight())
+                    .catch(() => this.adjustSelectionCardHeight());
+            } catch (_) { this.adjustSelectionCardHeight(); }
             if (!this._onResizeSel) {
                 this._onResizeSel = () => this.adjustSelectionCardHeight();
                 window.addEventListener('resize', this._onResizeSel);
             }
-        }
-        
-        // Show data sources selector on the first card
-        if (this.storyIndex === 0) {
-            this.setupDataSourcesSelector();
         }
         
         this.createMainContinuationSlidesIfNeeded();
@@ -58,6 +65,15 @@ export class StoryCard {
         if (this.storyIndex !== 0) {
             this.computeAndSetMaxHeight();
         }
+
+        try {
+            window.logTS('SC: rendered', {
+                index: this.storyIndex,
+                id: this.post?.id,
+                title: (this.post?.title || '').slice(0, 80),
+                slides: this.slides?.length || 0
+            });
+        } catch (_) { /* ignore */ }
     }
 
     adjustSelectionCardHeight() {
@@ -66,15 +82,58 @@ export class StoryCard {
             const root = this.element.querySelector('.story-card');
             const content = this.element.querySelector('.card-slide[data-id="main"] .card-content');
             if (!host || !root || !content) return;
-            // Measure main content height
-            const footerReserve = 40; // progress bar + sponsor inline space
-            const h = Math.ceil(content.scrollHeight + footerReserve);
+            // Selection card should size naturally like a normal card
+            // Remove any forced sizing from previous runs
             host.style.aspectRatio = 'auto';
-            host.style.height = h + 'px';
-            // Ensure inner root matches host
-            root.style.height = '100%';
+            host.style.removeProperty('height');
+            // Ensure inner root uses natural height
             root.classList.add('selection-mode');
+            root.style.height = 'auto';
+            const body = this.element.querySelector('.card-slide[data-id="main"] .card-body');
+            if (body) {
+                body.style.overflowY = 'visible';
+                body.style.maxHeight = 'unset';
+                body.style.minHeight = 'auto';
+            }
         } catch (_) { }
+    }
+
+    computeSelectionExtraSpace() {
+        try {
+            const list = this.element.querySelector('.sources-list');
+            if (!list) return 0;
+            const items = list.querySelectorAll('.source-item');
+            const total = items.length;
+            if (total === 0) return 0;
+            const cols = 2;
+            const rows = Math.max(1, Math.ceil(total / cols));
+            const first = list.querySelector('.source-item');
+            const itemH = first ? Math.max(22, Math.round(first.getBoundingClientRect().height)) : 28;
+            // Provide generous extra space scaling with number of rows
+            const perRow = Math.round(itemH * 0.9) + 12; // ~90% item height + 12px
+            const base = 24; // minimal footer space
+            const extra = base + rows * perRow;
+            return Math.min(extra, 600); // cap to avoid extreme oversizing
+        } catch (_) {
+            return 120;
+        }
+    }
+
+    getFooterReserve() {
+        try {
+            const resume = this.element.querySelector('.resume-progress');
+            const sponsor = this.element.querySelector('.sponsor-inline');
+            const indicators = this.element.querySelector('.slide-indicators');
+            const rh = resume ? resume.offsetHeight : 0;
+            const sh = sponsor ? sponsor.offsetHeight : 0;
+            const ih = indicators ? indicators.offsetHeight : 0;
+            // base spacing + measured controls
+            const margin = 16; // breathing room
+            const reserve = rh + sh + ih + margin;
+            return Math.max(40, reserve);
+        } catch (_) {
+            return 48;
+        }
     }
 
     applyDynamicGradient() {
@@ -459,6 +518,11 @@ export class StoryCard {
     }
 
     setupIndicators() {
+        if (this.storyIndex === 0) {
+            const c0 = this.element.querySelector('.slide-indicators');
+            if (c0) c0.style.display = 'none';
+            return;
+        }
         const indicatorContainer = this.element.querySelector('.slide-indicators');
         if (!indicatorContainer) return;
 
@@ -488,6 +552,7 @@ export class StoryCard {
             this.progressSegments.push({ seg, fill });
         }
         this.resetProgressVisuals();
+        try { window.logTS('SC: progress bars created', { index: this.storyIndex, segments: this.slides.length }); } catch (_) {}
     }
 
     resetProgressVisuals() {
@@ -503,6 +568,7 @@ export class StoryCard {
             current.fill.style.transition = `width ${this.autoPlayDuration}ms linear`;
             current.fill.style.width = '0%';
         }
+        try { window.logTS('SC: progress reset', { index: this.storyIndex, slide: this.currentSlide, durationMs: this.autoPlayDuration }); } catch (_) {}
     }
 
     showSlide(index) {
@@ -546,6 +612,8 @@ export class StoryCard {
 
         // Reset auto-play only if enabled
         if (this.autoplayEnabled) this.startAutoPlay();
+
+        try { window.logTS('SC: showSlide', { index: this.storyIndex, slide: this.currentSlide, durationMs: this.autoPlayDuration, autoplay: !!this.autoplayEnabled }); } catch (_) {}
     }
 
     nextSlide() {
@@ -572,6 +640,7 @@ export class StoryCard {
     startAutoPlay() {
         this.stopAutoPlay();
         // Auto-advance after configured duration
+        try { window.logTS('SC: startAutoPlay', { index: this.storyIndex, slide: this.currentSlide, durationMs: this.autoPlayDuration }); } catch (_) {}
         this.autoPlayTimeout = setTimeout(() => {
             this.nextSlide();
         }, this.autoPlayDuration);
@@ -581,11 +650,13 @@ export class StoryCard {
         if (this.autoPlayTimeout) {
             clearTimeout(this.autoPlayTimeout);
             this.autoPlayTimeout = null;
+            try { window.logTS('SC: stopAutoPlay', { index: this.storyIndex }); } catch (_) {}
         }
     }
 
     triggerNextStory() {
         // Dispatch event to parent to move to next story
+        try { window.logTS('SC: finished post', { index: this.storyIndex, id: this.post?.id }); } catch (_) {}
         this.element.dispatchEvent(new CustomEvent('story-finished', {
             bubbles: true,
             detail: { storyIndex: this.storyIndex }
@@ -706,8 +777,8 @@ export class StoryCard {
             if (this.storyIndex === 0) return; // selection card handled separately
             const root = this.element.querySelector('.story-card');
             if (!root || !this.slides?.length) return;
-            const extras = 34; // compact reserve for progress + sponsor
-            const maxHViewport = Math.floor(window.innerHeight * 0.92); // allow a bit more for larger fonts
+            const extras = this.getFooterReserve();
+            const maxHViewport = Math.floor(window.innerHeight * 0.96);
 
             // Measure max content height across slides without transitions
             let maxTotal = 0;
@@ -779,7 +850,11 @@ export class StoryCard {
         const selectAllBtn = selector.querySelector('.select-all-btn');
         const clearAllBtn = selector.querySelector('.clear-all-btn');
         const manageSourcesBtn = selector.querySelector('.manage-sources-btn');
-        if (applyBtn) applyBtn.style.display = 'none';
+        // Reserve space for the Apply button from the start (visibility hidden keeps layout stable)
+        if (applyBtn) {
+            applyBtn.style.display = 'block';
+            applyBtn.style.visibility = 'hidden';
+        }
         
         // Get sources from centralized service
         const allSources = await window.SourcesManager.getAllSources();
@@ -792,7 +867,8 @@ export class StoryCard {
         // Populate sources list
         sourcesList.innerHTML = '';
         const onChange = () => {
-            if (applyBtn) applyBtn.style.display = 'block';
+            if (applyBtn) applyBtn.style.visibility = 'visible';
+            // Height stays stable; reserved space prevents growth on toggle
         };
 
         // Check if there are any visible sources
@@ -893,6 +969,9 @@ export class StoryCard {
             checkbox.addEventListener('change', onChange);
         });
 
+        // Padding bottom managed by card height computation; keep list padding minimal
+        try { sourcesList.style.paddingBottom = '4px'; } catch (_) {}
+
         // Add handler for Manage Sources button
         if (manageSourcesBtn) {
             manageSourcesBtn.addEventListener('click', async (e) => {
@@ -906,6 +985,7 @@ export class StoryCard {
                         // Reload sources from service and rebuild selector
                         await window.SourcesManager.reload();
                         this.setupDataSourcesSelector();
+                        try { this.adjustSelectionCardHeight(); } catch (_) {}
                     }
                 } catch (err) {
                     console.error('Manage sources failed:', err);
@@ -922,7 +1002,7 @@ export class StoryCard {
             sourcesList.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
             onChange();
         });
-        
+        // Initial sizing is handled by afterRender promise chain
         // Actions removed (Select all / Clear all)
 
         // Handle apply button
@@ -975,6 +1055,7 @@ export class StoryCard {
             // Reflect immediately in bottom resume bar
             const root = this.element.querySelector('.story-card');
             if (root) root.style.setProperty('--view-progress', `${Math.round(next * 100)}%`);
+            try { window.logTS('SC: saveViewProgress', { id: this.post.id, progress: next, slide: this.currentSlide, total: this.slides?.length || 1 }); } catch (_) {}
         } catch (e) {
             // ignore
         }

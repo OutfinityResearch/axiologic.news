@@ -36,6 +36,14 @@ export default class LoadingIndicator {
      */
     static show(container, text = "Loading...") {
         if (container) {
+            try {
+                const logsOn = (typeof window !== 'undefined' && (window.__LOGS_ENABLED !== false));
+                if (typeof window !== 'undefined' && window.logTS) {
+                    if (logsOn) window.logTS('UI: show loading-indicator', { text });
+                } else if (logsOn) {
+                    console.log('UI: show loading-indicator', { text, t: Date.now() });
+                }
+            } catch (_) { /* ignore */ }
             container.innerHTML = LoadingIndicator.getHTML(text);
         }
     }
@@ -46,6 +54,14 @@ export default class LoadingIndicator {
      */
     static hide(container) {
         if (container) {
+            try {
+                const logsOn = (typeof window !== 'undefined' && (window.__LOGS_ENABLED !== false));
+                if (typeof window !== 'undefined' && window.logTS) {
+                    if (logsOn) window.logTS('UI: hide loading-indicator');
+                } else if (logsOn) {
+                    console.log('UI: hide loading-indicator', { t: Date.now() });
+                }
+            } catch (_) { /* ignore */ }
             container.innerHTML = '';
         }
     }

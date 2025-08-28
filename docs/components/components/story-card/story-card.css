@@ -93,6 +93,7 @@
 .card-slide.active {
     opacity: 1;
     transform: translateX(0);
+    z-index: 5; /* Ensure active slide is on top */
 }
 
 .card-slide.prev {
@@ -110,7 +111,7 @@
     width: 100%;
     min-height: auto;
     height: 100%; /* Stretch to slide height */
-    padding: 16px;
+    padding: 24px 16px 16px 16px; /* extra top to avoid overlap with progress bars */
     color: var(--text);
     position: relative;
     z-index: 2;
@@ -120,13 +121,48 @@
 }
 
 /* Selection card compact spacing */
-.story-card.selection-mode .card-content { padding: 8px; }
+.story-card.selection-mode { 
+    position: relative;
+    z-index: 2; /* same visual layer as other cards */
+    background: var(--surface);
+    isolation: isolate; /* create new stacking context */
+    min-height: auto; /* let content determine height */
+    height: auto !important; /* override base 100% height */
+    /* Use default card border/shadow; remove special highlight */
+}
+.story-card.selection-mode .card-content { 
+    padding: 20px; 
+    min-height: auto; /* let content determine height */
+    height: auto; 
+    background: var(--surface); /* ensure solid background */
+}
+.story-card.selection-mode .card-container { height: auto; display: block; }
+.story-card.selection-mode .card-slide { position: relative; transform: none; }
 .story-card.selection-mode .card-header { margin-bottom: 6px; padding-bottom: 6px; }
 .story-card.selection-mode .card-title { font-size: calc(16px * var(--content-scale, 1)); }
 .story-card.selection-mode .apply-sources-btn { margin-top: 6px; padding: 5px 10px; font-size: 12px; border-radius: 12px; }
-.story-card.selection-mode .sources-list { max-height: 140px; gap: 4px 6px; }
+.story-card.selection-mode .sources-list { max-height: none !important; gap: 4px 6px; }
 .story-card.selection-mode .source-item { padding: 4px 4px; }
 .story-card.selection-mode .source-checkbox { margin-right: 6px; }
+.story-card.selection-mode .card-slide.active {
+    position: relative !important;
+    transform: none !important;
+}
+.story-card.selection-mode .data-sources-selector { 
+    position: relative; 
+    z-index: 101; 
+    background: var(--surface); /* prevent transparency issues */
+}
+/* ascunde elementele flotante pe cardul de selecție */
+.story-card.selection-mode .progress-bars,
+.story-card.selection-mode .resume-progress,
+.story-card.selection-mode .sponsor-inline { display: none !important; }
+.story-card.selection-mode .card-body { 
+    overflow: visible; 
+    max-height: none;
+    min-height: auto;
+    padding-bottom: 20px;
+}
 
 
 
@@ -187,9 +223,9 @@
     overflow-y: auto;
     overflow-x: hidden;
     padding-right: 0;
-    padding-bottom: 34px; /* compact but safe above progress + sponsor */
-    max-height: none;
-    min-height: auto;
+    padding-bottom: 40px; /* space above progress + sponsor */
+    max-height: calc(100vh - 280px); /* prevent text truncation */
+    min-height: 300px; /* ensure minimum readable area */
     scrollbar-width: thin;
     scrollbar-color: var(--border) transparent;
 }
@@ -396,9 +432,13 @@
 
 /* Data Sources Selector - LinkedIn Style */
 .data-sources-selector {
-    margin-top: 6px;
-    padding-top: 0;
-    border-top: none; /* avoid double line with header border */
+    margin-top: 12px;
+    padding: 16px;
+    background: var(--surface);
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    position: relative;
+    z-index: 10;
 }
 
 
@@ -418,13 +458,35 @@
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 8px 12px;
-    max-height: 200px;
+    max-height: 400px;
     overflow-y: auto;
-    padding: 8px;
+    padding: 12px;
     background: var(--background-secondary);
     border-radius: 8px;
-    margin: 8px 0;
-    min-height: 40px;
+    margin: 12px 0;
+    min-height: 60px;
+    border: 1px solid var(--border);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Custom scrollbar for sources list */
+.sources-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.sources-list::-webkit-scrollbar-track {
+    background: var(--background-tertiary, rgba(0, 0, 0, 0.1));
+    border-radius: 3px;
+}
+
+.sources-list::-webkit-scrollbar-thumb {
+    background: var(--primary, #4CAF50);
+    border-radius: 3px;
+    opacity: 0.7;
+}
+
+.sources-list::-webkit-scrollbar-thumb:hover {
+    opacity: 1;
 }
 
 .no-sources-message {
@@ -442,9 +504,10 @@
     border-radius: 14px;
     color: var(--primary);
     cursor: pointer;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 600;
     transition: all 0.2s ease;
+    margin-left: auto; /* push to the right side */
 }
 
 .manage-sources-btn:hover {
@@ -568,9 +631,14 @@
 }
 .sources-actions {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
     gap: 8px;
-    margin-bottom: 4px;
+    margin-bottom: 12px;
+    padding: 8px 12px;
+    background: var(--background-secondary);
+    border-radius: 8px;
+    border: 1px solid var(--border);
 }
 
 .sources-actions .select-all-btn,
@@ -581,7 +649,18 @@
     font-size: 12px;
     font-weight: 600;
     cursor: pointer;
-    padding: 0 2px;
+    padding: 4px 8px;
+    transition: background-color 0.2s;
+    border-radius: 4px;
+}
+
+.sources-actions .select-all-btn:hover,
+.sources-actions .clear-all-btn:hover {
+    background: rgba(0, 0, 0, 0.05);
 }
 
 .sources-actions .clear-all-btn { color: var(--text-secondary); }
+/* Hide header completely for selection card */
+.story-card.selection-mode .card-slide[data-id="main"] .card-header { 
+    display: none !important;
+}

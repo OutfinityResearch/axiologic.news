@@ -30,7 +30,7 @@ jobs:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           AI_API_KEY: ${{ secrets.AI_API_KEY }}
           OLLAMA_HOST: ${{ secrets.OLLAMA_HOST }}
-        run: node docs/sources/generate-ai.js all
+        run: cd docs && ./run-generator.sh all
 
       - name: Commit and push changes
         run: |

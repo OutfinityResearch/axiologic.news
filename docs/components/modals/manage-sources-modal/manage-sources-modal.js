@@ -19,44 +19,33 @@ export class ManageSourcesModal {
     }
 
     renderSourcesTable() {
-        const tbody = this.element.querySelector('#sources-tbody');
-        if (!tbody) return;
+        const listContainer = this.element.querySelector('#sources-list');
+        if (!listContainer) return;
 
-        tbody.innerHTML = '';
+        listContainer.innerHTML = '';
 
         this.sources.forEach((source, index) => {
-            const row = document.createElement('tr');
-            row.innerHTML = `
-                <td>
-                    <input type="checkbox" class="visibility-checkbox" 
-                           data-index="${index}" 
-                           ${source.visible ? 'checked' : ''}>
-                </td>
-                <td>
-                    <input type="text" class="source-tag-input" 
-                           data-index="${index}" 
-                           value="${this.escapeHtml(source.tag || '')}" 
-                           placeholder="tag">
-                </td>
-                <td>
-                    <input type="text" class="source-url-input" 
-                           data-index="${index}" 
-                           value="${this.escapeHtml(source.url || '')}" 
-                           ${!source.removable ? 'readonly' : ''}>
-                </td>
-                <td>
-                    <button class="delete-button" 
-                            data-index="${index}" 
-                            ${!source.removable ? 'disabled' : ''}>
-                        Delete
-                    </button>
-                </td>
+            const item = document.createElement('div');
+            item.className = 'source-item';
+            item.innerHTML = `
+                <input type="checkbox" class="visibility-checkbox" 
+                       data-index="${index}" 
+                       ${source.visible ? 'checked' : ''}>
+                <div class="source-info">
+                    <div class="source-hashtag">${this.escapeHtml(source.tag || 'unnamed')}</div>
+                    <div class="source-url">${this.escapeHtml(source.url || '')}</div>
+                </div>
+                <button class="delete-button" 
+                        data-index="${index}" 
+                        ${!source.removable ? 'disabled' : ''}>
+                    Delete
+                </button>
             `;
-            tbody.appendChild(row);
+            listContainer.appendChild(item);
         });
 
-        // Add event listeners for inputs
-        tbody.querySelectorAll('.visibility-checkbox').forEach(checkbox => {
+        // Add event listeners for checkboxes only (no inline editing)
+        listContainer.querySelectorAll('.visibility-checkbox').forEach(checkbox => {
             checkbox.addEventListener('change', (e) => {
                 const index = parseInt(e.target.dataset.index);
                 this.sources[index].visible = e.target.checked;
@@ -64,29 +53,16 @@ export class ManageSourcesModal {
             });
         });
 
-        tbody.querySelectorAll('.source-tag-input').forEach(input => {
-            input.addEventListener('input', (e) => {
-                const index = parseInt(e.target.dataset.index);
-                this.sources[index].tag = this.normalizeTag(e.target.value);
-                this.hasChanges = true;
-            });
-        });
-
-        tbody.querySelectorAll('.source-url-input').forEach(input => {
-            input.addEventListener('input', (e) => {
-                const index = parseInt(e.target.dataset.index);
-                this.sources[index].url = e.target.value.trim();
-                this.hasChanges = true;
-            });
-        });
-
-        tbody.querySelectorAll('.delete-button').forEach(button => {
+        // Add event listeners for delete buttons
+        listContainer.querySelectorAll('.delete-button').forEach(button => {
             if (!button.disabled) {
                 button.addEventListener('click', (e) => {
                     const index = parseInt(e.target.dataset.index);
-                    this.sources.splice(index, 1);
-                    this.hasChanges = true;
-                    this.renderSourcesTable();
+                    if (confirm(`Delete source "${this.sources[index].tag}"?`)) {
+                        this.sources.splice(index, 1);
+                        this.hasChanges = true;
+                        this.renderSourcesTable();
+                    }
                 });
             }
         });
