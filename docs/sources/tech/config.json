@@ -43,7 +43,7 @@
   ],
   "topPostsPerFeed": 5,
   "historyDays": 5,
-  "selectionPrompt": "Select technology stories that matter most to tech professionals and enthusiasts. Prioritize: 1) Major product launches and updates from leading tech companies, 2) Breakthrough technologies and engineering achievements, 3) Cybersecurity developments and data privacy issues, 4) Developer tools and programming innovations, 5) Consumer tech that changes how we live and work. Focus on stories with real impact over rumors or minor updates.",
-  "essencePrompt": "Summarize this technology story by answering: What's the innovation? Who's behind it? How does it work? What problem does it solve? Who will it affect? Keep technical details accurate but accessible.",
-  "perspectivesPrompt": "Provide three expert technology perspectives:\n1. Contrarian View: Why this could be wrong or hype \n2. User Experience: How this affects end users, usability, and practical benefits if real\n3. Industry Analysis: Long-term implications if real\n\nBe specific, avoid hype, and provide balanced technical insight."
+  "selectionPrompt": "Select only tech stories with a concrete 'what changed' (release, deprecation, CVE, API/policy change) and credible details (links, numbers, dates). Prefer primary sources and posts with changelogs, benchmarks, or CVE data. Skip teasers and rumor threads.",
+  "essencePrompt": "Output 3 bullets: 1) What's new (one sentence), 2) Why it matters for engineers/teams, 3) Evidence (version numbers, CVEs, perf deltas) + gotcha if any. 60–120 words total.",
+  "perspectivesPrompt": "Three one‑sentence views: 1) Operator takeaway (what to change in pipelines/config), 2) Security/DevOps check (risk or mitigation), 3) Adoption note (compatibility, rollout sequence)."
 }

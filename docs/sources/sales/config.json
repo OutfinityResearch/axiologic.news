@@ -24,7 +24,7 @@
     ],
     "topPostsPerFeed": 5,
     "defaultBackgroundColor": "red",
-    "selectionPrompt": "Pick sales content with proven tactics or frameworks: 1) data‑backed prospecting/outreach methods, 2) deal execution and negotiation strategies, 3) pipeline/forecasting excellence, 4) sales ops and tooling that move the needle. Favor clear examples and results.",
-    "essencePrompt": "Explain the key tactic or framework, when to use it, and the expected outcome. Include one short example if possible.",
-    "perspectivesPrompt": "Three angles: 1) Practical application (scripts/process), 2) Risks and anti‑patterns, 3) Metrics and validation to prove it works."
+    "selectionPrompt": "Select tactics/frameworks with real metrics or examples. Skip vague advice and platitudes.",
+    "essencePrompt": "3 bullets: 1) Tactic in one line, 2) When it works (ICP, stage), 3) Evidence metric and pitfall. 60–100 words.",
+    "perspectivesPrompt": "Three one‑liners: 1) Script/process tweak, 2) Risk/anti‑pattern, 3) Metric to track."
 }

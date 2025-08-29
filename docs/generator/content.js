@@ -5,12 +5,36 @@ const { URL } = require('url');
 class ContentFetcher {
     async fetchFullContent(url) {
         try {
+            // Special handling for discussion platforms where HTML is often blocked
+            if (this.isRedditUrl(url)) {
+                const discussion = await this.fetchRedditDiscussion(url);
+                if (discussion) return discussion;
+            }
+            if (this.isHackerNewsUrl(url)) {
+                const discussion = await this.fetchHackerNewsDiscussion(url);
+                if (discussion) return discussion;
+            }
+
             const html = await this.fetchHTML(url);
             return this.extractContent(html);
         } catch (error) {
             console.log(`  Could not fetch full content: ${error.message}`);
             return null;
         }
+    }
+
+    isRedditUrl(url) {
+        try {
+            const u = new URL(url);
+            return /(^|\.)reddit\.com$/i.test(u.hostname);
+        } catch (_) { return false; }
+    }
+
+    isHackerNewsUrl(url) {
+        try {
+            const u = new URL(url);
+            return /news\.ycombinator\.com$/i.test(u.hostname) && /item\?id=\d+/.test(u.search);
+        } catch (_) { return false; }
     }
 
     async fetchHTML(url) {
@@ -86,6 +110,74 @@ class ContentFetcher {
         if (authorMatch) content.metadata.author = authorMatch[1];
 
         return content;
+    }
+
+    async fetchRedditDiscussion(url) {
+        try {
+            // Normalize to JSON API endpoint
+            const u = new URL(url);
+            // Strip query for consistent fetch and append .json
+            const path = u.pathname.endsWith('/') ? u.pathname : u.pathname + '/';
+            const jsonUrl = `${u.protocol}//${u.hostname}${path}.json?limit=100&sort=top`;
+            const raw = await this.fetchHTML(jsonUrl);
+            const data = JSON.parse(raw);
+            // data[0] = post, data[1] = comments
+            const post = data?.[0]?.data?.children?.[0]?.data || {};
+            const commentsArr = (data?.[1]?.data?.children || [])
+                .map(c => c?.data)
+                .filter(Boolean)
+                .filter(c => !c.stickied && !c.collapsed && !c.removed_by_category && !c.body?.match(/^\[deleted\]|^\[removed\]/i));
+
+            const topComments = commentsArr
+                .sort((a, b) => (b.score || 0) - (a.score || 0))
+                .slice(0, 15)
+                .map(c => this.cleanText(c.body || ''))
+                .filter(t => t && t.length > 60)
+                .slice(0, 8);
+
+            const content = {
+                text: this.cleanText(post.selftext || post.title || ''),
+                comments: topComments,
+                metadata: {
+                    platform: 'reddit',
+                    score: post.score || 0,
+                    numComments: post.num_comments || commentsArr.length || 0,
+                    subreddit: post.subreddit || '',
+                    author: post.author || ''
+                }
+            };
+            return content;
+        } catch (e) {
+            // Fall back to HTML extraction if JSON fails
+            return null;
+        }
+    }
+
+    async fetchHackerNewsDiscussion(url) {
+        try {
+            const u = new URL(url);
+            const idMatch = u.search.match(/id=(\d+)/);
+            if (!idMatch) return null;
+            const id = idMatch[1];
+            const apiUrl = `https://hn.algolia.com/api/v1/items/${id}`;
+            const raw = await this.fetchHTML(apiUrl);
+            const data = JSON.parse(raw);
+            const comments = (data.children || [])
+                .filter(c => !c.deleted && !c.dead && c.text)
+                .sort((a, b) => (b.points || 0) - (a.points || 0))
+                .map(c => this.cleanText(c.text))
+                .filter(t => t && t.length > 60)
+                .slice(0, 8);
+            return {
+                text: this.cleanText(data.text || data.title || ''),
+                comments,
+                metadata: {
+                    platform: 'hackernews',
+                    points: data.points || 0,
+                    numComments: data.children?.length || 0
+                }
+            };
+        } catch (_) { return null; }
     }
 
     cleanText(html) {

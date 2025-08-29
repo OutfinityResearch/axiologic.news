@@ -33,7 +33,7 @@
   ],
   "topPostsPerFeed": 5,
   "historyDays": 5,
-  "selectionPrompt": "Select the most significant scientific discoveries and research breakthroughs: 1) Peer-reviewed studies with major implications, 2) Medical and health breakthroughs affecting human life, 3) Climate and environmental research with urgent findings, 4) Space exploration and astronomy discoveries, 5) Fundamental physics, chemistry, or biology advances. Prioritize studies from reputable institutions with clear methodology and significant results.",
-  "essencePrompt": "Explain this scientific discovery in clear terms: What did researchers discover? How did they do it? Why is it important? What are the implications? Include key findings and potential applications while maintaining scientific accuracy.",
-  "perspectivesPrompt": "Provide three scientific community perspectives:\n1. Research Significance: Evaluate methodology, novelty, and contribution to the field\n2. Practical Applications: Real-world implications, potential technologies, and timeline to implementation\n3. Broader Impact: Effects on society, environment, health, or our understanding of the universe\n\nBe rigorous yet accessible, avoiding sensationalism."
+  "selectionPrompt": "Select only peer‑reviewed or official preprints with strong methodology, named datasets, and effect sizes. Prefer replication, null results with implications, and policy‑relevant findings. Skip press‑release hype and mouse‑only studies unless groundbreaking.",
+  "essencePrompt": "3 bullets (plain language): 1) What was found (population/setting), 2) How we know (method, sample size, effect size/CI), 3) Why it matters + key limitation. 60–120 words total.",
+  "perspectivesPrompt": "Three one‑sentence views: 1) Methods check (bias/confounders), 2) Practical implication or next experiment, 3) Scope limit (what this doesn’t show)."
 }

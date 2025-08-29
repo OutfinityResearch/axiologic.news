@@ -185,6 +185,17 @@ class StoryProcessor {
             category: item.category || 'General'
         };
 
+        // If this is a forum/discussion source, ensure we actually have meaningful comments
+        const isDiscussion = /reddit\.com|news\.ycombinator\.com/i.test(item.link) || /Reddit|Hacker News/i.test(feed.name) || /Forums$/i.test(this.config.name || this.config.category || '');
+        if (isDiscussion) {
+            const numComments = fullContent?.metadata?.numComments || fullContent?.comments?.length || 0;
+            // Require a minimum amount of signal
+            if (!fullContent || numComments < 5) {
+                // Not enough context; skip generating a low-value post
+                return null;
+            }
+        }
+
         // Generate essence using AI or fallback
         const essence = await this.generateEssence(item, fullContent);
         
@@ -203,7 +214,12 @@ class StoryProcessor {
         if (!this.qualityCheckReactions(reactions)) {
             // Try to get better reactions from content/comments
             const betterReactions = this.extractRealReactions(fullContent, item);
-            post.reactions = betterReactions.length >= 3 ? betterReactions : this.buildFallbackReactions(null, item, feed);
+            if (betterReactions.length >= 3) {
+                post.reactions = this.buildFallbackReactions(betterReactions, item, feed);
+            } else {
+                // Prefer to skip entirely rather than add filler reactions
+                return null;
+            }
         } else {
             post.reactions = this.buildFallbackReactions(reactions, item, feed);
         }
@@ -246,8 +262,10 @@ class StoryProcessor {
         // Also check for lack of specific data/numbers
         const hasNumbers = /\d+/.test(content);
         const hasSpecificNames = /[A-Z][a-z]+\s+[A-Z][a-z]+/.test(content); // Proper names
+        // Skip obvious network blocks or placeholders
+        const blocked = /blocked by network|content is blocked|access denied|captcha/i.test(content);
         
-        return genericScore > 2 || (!hasNumbers && !hasSpecificNames && content.length < 200);
+        return blocked || genericScore > 2 || (!hasNumbers && !hasSpecificNames && content.length < 200);
     }
     
     extractRealReactions(fullContent, item) {
@@ -311,23 +329,19 @@ class StoryProcessor {
         return (fallback + extra);
     }
 
-    // Ensure reactions exist and each has 15+ words; otherwise build informative defaults
+    // Ensure reactions exist and each has 15+ words; avoid filler when missing
     buildFallbackReactions(reactions, item, feed) {
         const MIN_WORDS = 15;
         const ensure = (txt) => {
             const words = (String(txt || '').match(/\b\w+\b/g) || []).length;
             if (words >= MIN_WORDS) return txt;
-            // Build a richer default line
-            return `Context: ${item.title} — From ${feed.name}, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.`;
+            // Avoid generic filler
+            return '';
         };
         if (!Array.isArray(reactions) || reactions.length === 0) {
-            return [
-                ensure(`What happened: ${item.title}. Why it matters for marketing teams and decision‑makers, with concrete takeaways and immediate next steps.`),
-                ensure(`Impact: How this could affect performance, budgets, channels, workflows, or strategy; risks and trade‑offs leaders should weigh now.`),
-                ensure(`Actionable: Practical experiments, measurement ideas, and checkpoints to validate results and avoid hype; guidance to get started responsibly.`)
-            ];
+            return [];
         }
-        return reactions.map(ensure);
+        return reactions.map(ensure).filter(Boolean);
     }
 
     async generateEssence(item, fullContent) {
@@ -344,14 +358,13 @@ class StoryProcessor {
         }
 
         const content = fullContent?.text || item.description || '';
-        const prompt = `${this.config.essencePrompt}\n\nIMPORTANT RULES:
-- Focus on NEW insights, data, or developments not commonly known
-- Skip generic warnings about AI ethics, regulations, or safety unless there's a specific new development
-- Provide concrete examples, numbers, or specific outcomes when available
-- If the content lacks substance or is just speculation, say so briefly
-- NO repetitive content - each story must bring unique value
-- Avoid clichés like "game-changer", "revolutionary", "the future is here"
-\nTitle: ${item.title}\nContent: ${content.substring(0, 20000)}\n\nWrite a concise, insightful essence (200-400 words) in plain text only. Focus on what's genuinely NEW and WHY it matters. If there's nothing substantial, be honest and brief.`;
+        const prompt = `${this.config.essencePrompt}\n\nSTRICT RULES:
+- Extract the delta: what changed vs. before (facts only)
+- Include 1–3 concrete datapoints (numbers, names, dates) if present
+- One compact paragraph or 3 bullets: What's new; Why it matters; Evidence/Caveats
+- If substance is weak or speculative, state that clearly in one line
+- Avoid clichés (game‑changer, revolutionary) and vague adjectives
+\nTitle: ${item.title}\nContent: ${content.substring(0, 20000)}\n\nReturn 90–160 words. Plain text.`;
 
         try {
             const response = await this.ai.analyze(prompt, 800); // Allow more tokens for fuller content
@@ -393,14 +406,11 @@ class StoryProcessor {
         const comments = fullContent?.comments?.join('\n') || '';
         
         const prompt = `${this.config.perspectivesPrompt}\n\nCRITICAL RULES:
-- Extract REAL reactions from comments if available, not generic statements
-- Focus on specific insights, criticisms, or expert opinions
-- NO generic warnings about AI safety, ethics, or "we must be careful"
-- If comments exist, use actual user perspectives (cleaned up)
-- Skip empty platitudes like "this is interesting" or "time will tell"
-- Each reaction must add unique value or perspective
-- If content/comments are low quality, acknowledge it briefly
-\nTitle: ${item.title}\nSource: ${feed.name}\nContent: ${content.substring(0, 20000)}\n${comments ? `\nReal User Comments (use these if insightful):\n${comments.substring(0, 5000)}` : ''}\n\nGenerate 3 distinct, valuable perspectives. Plain text only, one sentence each. If there are no meaningful insights, provide honest critical analysis:`;
+        - Prefer quoting or paraphrasing top, representative comments when available (no fabrication)
+        - Avoid platitudes; each line must add a distinct, concrete insight
+        - No generic warnings about ethics/safety unless tied to a specific claim
+        - If comments lack substance, say so briefly and stop
+        \nTitle: ${item.title}\nSource: ${feed.name}\nContent: ${content.substring(0, 20000)}\n${comments ? `\nTop Comments (use if insightful):\n${comments.substring(0, 5000)}` : ''}\n\nOutput 3 single‑sentence perspectives or return a single line: \"No meaningful perspectives found.\"`;
 
         try {
             const response = await this.ai.analyze(prompt, 500);

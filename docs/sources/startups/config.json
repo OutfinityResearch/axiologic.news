@@ -43,7 +43,7 @@
     ],
     "topPostsPerFeed": 5,
     "historyDays": 5,
-    "selectionPrompt": "Identify the most compelling startup stories focusing on: 1) Significant funding rounds with notable investors, 2) Innovative business models disrupting traditional industries, 3) Founder stories with valuable lessons, 4) Startup pivots and strategic decisions, 5) Acquisition news and exit strategies. Prioritize stories about execution and growth over ideas alone.",
-    "essencePrompt": "Capture the startup story essence: What's the company doing? What's their unique approach? What milestone did they hit? Who's backing them? What market are they disrupting? Focus on business model, traction, and differentiation.",
-    "perspectivesPrompt": "Generate three startup ecosystem perspectives:\n1. Investor Lens: Evaluate market opportunity, scalability, team strength, and investment potential\n2. Founder Insights: Lessons for other entrepreneurs, strategic decisions, and execution challenges\n3. Market Disruption: How this startup changes the competitive landscape and customer expectations\n\nProvide actionable insights for founders and investors."
+    "selectionPrompt": "Pick startup stories with hard signals: funding (round size, lead investor), revenue/MAU milestones, notable launches, pivots with outcome, or M&A with terms. Skip HR fluff and stealth teasers.",
+    "essencePrompt": "3 bullets: 1) What happened (round/launch/metric) with numbers, 2) Why it matters (GTM, wedge, motion), 3) Proof and risks (backers, retention, CAC/LTV signals). 60–120 words.",
+    "perspectivesPrompt": "Three one‑sentence takes: 1) Investor — thesis/risks, 2) Operator — execution lesson, 3) Market — who loses if they win."
 }

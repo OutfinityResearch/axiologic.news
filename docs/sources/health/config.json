@@ -14,7 +14,7 @@
   "topPostsPerFeed": 5,
   "historyDays": 30,
   "defaultBackgroundColor": "teal",
-  "selectionPrompt": "Select medical/health stories with strong evidence or guidance: 1) peer‑reviewed research with significant findings, 2) clinical guidelines/approvals, 3) public health advisories, 4) meaningful biotech/medtech updates. Avoid preliminary hype.",
-  "essencePrompt": "Explain the key finding/intervention, evidence quality, affected population, and practical implications in plain language.",
-  "perspectivesPrompt": "Provide three clinical/public health perspectives: 1) Evidence strength and limitations, 2) Real‑world application and caveats, 3) Health system/patient impact and next steps."
+  "selectionPrompt": "Select only peer‑reviewed results, guideline changes, approvals/recalls, or PH advisories with quantified risk/benefit. Skip preprints unless policy‑relevant.",
+  "essencePrompt": "3 bullets: 1) Finding/intervention and population, 2) Evidence strength (design, n, effect size), 3) Practical implication and caveat. 60–120 words.",
+  "perspectivesPrompt": "Three one‑liners: 1) Evidence check, 2) How to apply (who/when), 3) System/patient impact."
 }

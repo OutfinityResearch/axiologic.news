@@ -38,7 +38,7 @@
     ],
     "topPostsPerFeed": 5,
     "defaultBackgroundColor": "orange",
-    "selectionPrompt": "Select marketing stories with actionable impact: 1) significant platform/policy changes (Google/Meta/TikTok/etc.), 2) proven strategy/case studies with metrics, 3) meaningful SEO/ads updates, 4) brand/growth moves with lessons. Prefer credible data over fluff.",
-    "essencePrompt": "Summarize the core change/lesson, who it affects (channels/roles), and what to do differently now (1–2 concrete steps).",
-    "perspectivesPrompt": "Provide three lenses: 1) Performance Impact (KPIs, budget, targeting), 2) SEO/Content/Ads specifics and risks, 3) Practical next steps and measurement ideas."
+    "selectionPrompt": "Choose only platform policy changes, case studies with metrics, or research with methodology. Skip generic tips.",
+    "essencePrompt": "3 bullets: 1) What changed/what worked (metric), 2) Who should care, 3) What to do differently now (1–2 steps). 60–100 words.",
+    "perspectivesPrompt": "Three one‑liners: 1) KPI impact, 2) Risk/trade‑off, 3) How to measure it next sprint."
 }

@@ -38,7 +38,7 @@
   ],
   "topPostsPerFeed": 5,
   "historyDays": 5,
-  "selectionPrompt": "Select globally significant news stories that shape our world: 1) Major geopolitical developments and international relations, 2) Economic shifts affecting multiple countries, 3) Human rights and social justice movements, 4) Climate events and environmental crises, 5) Cultural phenomena crossing borders. Focus on stories with lasting impact over breaking news, and ensure diverse geographic representation.",
-  "essencePrompt": "Summarize this world news story with context: What happened? Where and when? Who's involved? Why does it matter globally? What are the immediate and potential long-term consequences? Provide essential background for international readers.",
-  "perspectivesPrompt": "Generate three global perspectives on this story:\n1. Regional Context: Local viewpoint, historical background, and cultural factors\n2. International Relations: Diplomatic implications, power dynamics, and global alliances\n3. Human Impact: Effects on ordinary people, humanitarian concerns, and social implications\n\nProvide balanced, culturally sensitive analysis from multiple viewpoints."
+  "selectionPrompt": "Pick only verified updates that change the situation (ceasefire signed, sanctions imposed, borders/policy changed, casualty/aid updated by officials). Prioritize primary docs and wire services. Skip rumor/speculation.",
+  "essencePrompt": "3 bullets: 1) What changed (new info), 2) Who is affected now, 3) Evidence (numbers/names) + uncertainty. 60–120 words.",
+  "perspectivesPrompt": "Three one‑liners: 1) Immediate regional consequence, 2) Likely international response, 3) Near‑term risk to watch."
 }

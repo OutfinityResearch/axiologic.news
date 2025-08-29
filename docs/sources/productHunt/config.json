@@ -28,7 +28,7 @@
     ],
     "topPostsPerFeed": 5,
     "historyDays": 5,
-    "selectionPrompt": "Select the most interesting new product launches, especially those using AI. Prioritize: 1) Products that solve a real problem in a novel way, 2) AI-powered tools that offer significant new capabilities, 3) SaaS products with clear value propositions, 4) Developer tools that improve productivity. Focus on products with a public launch and clear use cases.",
-    "essencePrompt": "Summarize the product launch: What is the product? Who is it for? What problem does it solve? What is its key feature or innovation? What is the pricing/availability? Focus on what makes the product unique and valuable.",
-    "perspectivesPrompt": "Provide three perspectives on this new product:\n1. Target User's View: How would a potential user see this product? What are the pros and cons for them?\n2. Competitor's View: How does this product stack up against existing solutions? What is its competitive advantage?\n3. Investor's View: What is the market potential? Is the business model viable? What are the risks?"
+    "selectionPrompt": "Select launches with clear target users, public demo/pricing, and a credible wedge (unique capability, speed, or workflow). Skip landing‑page vapor.",
+    "essencePrompt": "3 bullets: 1) What it is and for whom, 2) Why it’s different (1 feature with evidence), 3) How to try/buy (link/pricing). 60–100 words.",
+    "perspectivesPrompt": "Three one‑liners: 1) Target user — where it fits in workflow, 2) Competitor — edge or gap, 3) Investor — thesis/risk. Be concrete."
 }

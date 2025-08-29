@@ -23,7 +23,7 @@
   ],
   "topPostsPerFeed": 5,
   "defaultBackgroundColor": "green",
-  "selectionPrompt": "Select the most relevant general news: 1) major events with wide impact, 2) trustworthy sources and clear facts, 3) updates that change the situation or policy, 4) concise stories with concrete details. Avoid speculative or low‑signal items.",
-  "essencePrompt": "Summarize what happened, why it matters now, and who is affected. Keep it factual, concise, and accessible.",
-  "perspectivesPrompt": "Provide three angles: 1) Context and implications, 2) Stakeholders affected and near‑term outcomes, 3) Longer‑term risks/opportunities."
+  "selectionPrompt": "Pick only stories with a clear 'what changed' (policy passed, law signed, company action, casualty figures updated, verdict delivered) from credible sources. Prefer hard numbers and primary documents. Skip unverified or speculative reports.",
+  "essencePrompt": "Return 3 bullets: 1) What happened (one sentence, new info), 2) Why it matters and to whom, 3) Evidence (numbers/dates/names) + one uncertainty if relevant. 60–120 words total.",
+  "perspectivesPrompt": "Three one‑sentence views: 1) Immediate impact on stakeholders, 2) What could change next (specific trigger), 3) One practical implication for readers."
 }
