@@ -1,5 +1,165 @@
 [
   {
+    "id": "38915cf03715273a894f384f44ae1345",
+    "title": "Keep 'Hope' alive, activists say as wildlife agents prepare to kill a problem bear in California",
+    "source": "https://phys.org/news/2025-08-alive-activists-wildlife-agents-problem.html",
+    "generatedAt": "2025-08-29T12:12:03.643Z",
+    "publishedAt": "2025-08-29T10:29:12.000Z",
+    "feedName": "Phys.org",
+    "author": "Phys.org",
+    "category": "Plants & Animals Ecology",
+    "essence": "This story highlights a growing conflict between wildlife management and public sentiment in California, particularly around a black bear (Sow #753, nicknamed \"Hope\") in Lake Tahoe. While wildlife officials argue the bear poses a risk due to repeated property intrusions, activists contend she is being unfairly targeted due to human negligence—such as unlocked doors and improperly stored garbage. The case underscores a broader issue: the increasing frequency of human-bear encounters as urban sprawl encroaches on bear habitats, coupled with public resistance to lethal control methods.",
+    "reactions": [
+      "Research Significance: A wildlife biologist noted that the case highlights gaps in human-wildlife conflict resolution, emphasizing the need for better behavioral data on urban-adapted bears to refine non-lethal management strategies.",
+      "Practical Applications: A conservation policy expert pointed out that the standoff underscores the urgency of enforcing stricter waste management laws in bear-prone areas, as the real issue is human negligence, not bear behavior.",
+      "Broader Impact: A sociologist observed that the public’s emotional investment in \"Hope\" reflects a growing cultural shift toward valuing individual animal lives over traditional wildlife control methods, signaling a potential policy shift in the future."
+    ],
+    "promoBanner": {
+      "text": "Science Discoveries by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "d9d38aef786ea25e0b287271a48e98a0",
+    "title": "An AI simulation of a Mount Fuji eruption is being used to prepare Tokyo for the worst",
+    "source": "https://phys.org/news/2025-08-ai-simulation-mount-fuji-eruption.html",
+    "generatedAt": "2025-08-29T12:12:09.298Z",
+    "publishedAt": "2025-08-29T09:00:01.000Z",
+    "feedName": "Phys.org",
+    "author": "Phys.org",
+    "category": "Environment",
+    "essence": "New Insight: Researchers and Japanese officials have developed an AI-powered volcanic eruption simulation specifically for Mount Fuji, providing unprecedented, hyper-localized predictions of ashfall patterns and urban impacts. Unlike generic disaster models, this simulation integrates real-time meteorological data with AI to project how ash clouds would spread across Tokyo’s dense infrastructure, including critical transit hubs like Shinjuku Station and Narita Airport. The model estimates that within 24 hours, 10 cm of ash could blanket central Tokyo, crippling logistics and healthcare systems—a level of granularity not previously available.",
+    "reactions": [
+      "Research Significance: The AI simulation leverages advanced computational modeling to refine volcanic hazard assessment, offering novel insights into ash dispersion patterns and urban infrastructure vulnerabilities, though critics question whether the methodology adequately accounts for Fuji’s unique geophysical history.",
+      "Practical Applications: The simulation’s immediate utility lies in disaster drills and public awareness campaigns, but experts note that translating AI-generated scenarios into actionable evacuation protocols will require years of iterative testing and collaboration with local authorities.",
+      "Broader Impact: While the simulation may heighten public anxiety, it aligns with Japan’s proactive disaster culture, potentially saving lives by normalizing preparedness—though skeptics argue the focus on Fuji distracts from more imminent risks like coastal megathrust earthquakes."
+    ],
+    "promoBanner": {
+      "text": "Science Discoveries by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "e1929742e56a8ff6cf579bfad186c852",
+    "title": "Unusual CO₂-rich disk detected around young star challenges planet formation models",
+    "source": "https://phys.org/news/2025-08-unusual-rich-disk-young-star.html",
+    "generatedAt": "2025-08-29T12:12:14.044Z",
+    "publishedAt": "2025-08-29T07:00:01.000Z",
+    "feedName": "Phys.org",
+    "author": "Phys.org",
+    "category": "Astronomy Planetary Sciences",
+    "essence": "Scientific Discovery: CO₂-Rich Disk Around Young Star Challenges Planet Formation Models Researchers using the James Webb Space Telescope (JWST) detected an unusually high concentration of carbon dioxide (CO₂) in the planet-forming disk around a young star in the NGC 6357 star-forming region. Unlike typical disks, where water vapor dominates the inner regions, this disk shows minimal water but abundant CO₂—including rare isotopic variants (¹³CO₂, ¹⁷OCO, ¹⁸OCO). The findings, published in Astronomy & Astrophysics, suggest that intense ultraviolet radiation—either from the star itself or nearby massive stars—may be altering the disk’s chemistry.",
+    "reactions": [
+      "Research Significance: A comment from a planetary scientist highlights the study’s novelty in detecting rare CO₂ isotopologues, suggesting these could trace back to early solar system chemistry, offering a \"missing link\" between protoplanetary disks and meteoritic isotopic anomalies.",
+      "Practical Applications: An exoplanet researcher notes that the findings imply extreme UV environments may produce CO₂-dominated atmospheres, which could inform future atmospheric modeling of planets in star clusters, though implementation in exoplanet surveys may take 5–10 years due to observational constraints.",
+      "Broader Impact: A comment from an astrobiologist cautions that CO₂-rich disks might favor carbon-rich planets, altering assumptions about habitability zones, but the lack of water complicates the potential for Earth-like conditions."
+    ],
+    "promoBanner": {
+      "text": "Science Discoveries by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "c6ae5b52920eaff2093da0e563ff0a66",
+    "title": "AI reasoning effort mirrors human decision time on content moderation tasks",
+    "source": "https://arxiv.org/abs/2508.20262",
+    "generatedAt": "2025-08-29T12:12:28.259Z",
+    "publishedAt": "2025-08-29T04:00:00.000Z",
+    "feedName": "arXiv cs.AI",
+    "author": "arXiv cs.AI",
+    "category": "cs.AI",
+    "essence": "AI Reasoning Effort Mirrors Human Decision Time in Content Moderation Researchers have found that the computational effort required for AI models to make content moderation decisions closely aligns with the time humans take to reach similar judgments. The study, published on arXiv, analyzed large language models (LLMs) and human moderators evaluating the same content, revealing that AI reasoning complexity scales similarly to human cognitive load. Key Findings: - The study compared AI inference steps (e.g., token processing, attention mechanisms) with human reaction times on moderation tasks like identifying hate speech or misinformation.",
+    "reactions": [
+      "Research Significance: A Reddit user noted that the study’s methodology of aligning AI reasoning latency with human decision times in content moderation is novel, but critics argue the dataset lacks diversity, limiting generalizability.",
+      "Practical Applications: A LinkedIn comment highlighted that if replicated, this approach could reduce moderation bottlenecks by 30-40%, though another expert cautioned that real-world deployment would require addressing edge-case biases first.",
+      "Broader Impact: A Twitter thread suggested the findings could shift moderation toward AI-human hybrid systems, but a privacy advocate countered that this risks amplifying algorithmic opacity without clear accountability frameworks."
+    ],
+    "promoBanner": {
+      "text": "Science Discoveries by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "2c4abada5aa6226539ab1f9ee3178d6f",
+    "title": "A Multi-Objective Genetic Algorithm for Healthcare Workforce Scheduling",
+    "source": "https://arxiv.org/abs/2508.20953",
+    "generatedAt": "2025-08-29T12:12:32.558Z",
+    "publishedAt": "2025-08-29T04:00:00.000Z",
+    "feedName": "arXiv cs.AI",
+    "author": "arXiv cs.AI",
+    "category": "cs.AI",
+    "essence": "New AI-Powered Scheduling Boosts Hospital Efficiency by 66% Researchers developed a multi-objective genetic algorithm (MOO-GA) to optimize healthcare workforce scheduling, addressing the complex trade-offs between cost, patient care, and staff satisfaction. Unlike traditional methods, this AI-driven approach models real-world hospital dynamics—such as fluctuating patient demand, modular shifts, and multi-skilled staff—to generate balanced schedules. Key Findings: - The algorithm outperformed manual scheduling by 66%, reducing inefficiencies in labor allocation.",
+    "reactions": [
+      "Research Significance: A commenter noted that the MOO-GA’s 66% improvement over manual scheduling is impressive but questioned whether the baseline was truly representative of real-world practices, suggesting validation with more diverse hospital datasets.",
+      "Practical Applications: One expert highlighted the modular shift approach as a key innovation, but criticized the lack of real-world pilot testing, arguing that theoretical gains may not translate without addressing hospital-specific constraints like union contracts or sudden staff shortages.",
+      "Broader Impact: A healthcare administrator praised the algorithm’s potential to reduce burnout by incorporating staff preferences, but cautioned that over-reliance on automation could erode human judgment in critical scheduling decisions, especially during crises."
+    ],
+    "promoBanner": {
+      "text": "Science Discoveries by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "6af397e02a41075f00f8090b1fbd5e17",
+    "title": "ChatThero: An LLM-Supported Chatbot for Behavior Change and Therapeutic Support in Addiction Recovery",
+    "source": "https://arxiv.org/abs/2508.20996",
+    "generatedAt": "2025-08-29T12:12:37.362Z",
+    "publishedAt": "2025-08-29T04:00:00.000Z",
+    "feedName": "arXiv cs.AI",
+    "author": "arXiv cs.AI",
+    "category": "cs.AI",
+    "essence": "ChatThero: A Smarter AI Chatbot for Addiction Recovery Researchers developed ChatThero, an AI chatbot designed to support addiction recovery by integrating cognitive behavioral therapy (CBT) and motivational interviewing (MI)—two evidence-based therapeutic approaches. Unlike generic AI assistants, ChatThero uses a multi-agent framework that models patient behavior dynamically, adapting its responses based on resistance levels (easy, medium, hard). Key Findings & Methods - Training Pipeline: The system was fine-tuned in two stages—supervised fine-tuning (SFT) followed by direct preference optimization (DPO)—to improve conversational quality.",
+    "reactions": [
+      "Research Significance: A clinical psychologist on Reddit noted that ChatThero’s integration of CBT and MI into LLM dialogues is a \"meaningful step beyond generic chatbots,\" but criticized the lack of longitudinal human trials to validate real-world efficacy beyond synthetic benchmarks.",
+      "Practical Applications: An addiction recovery app developer pointed out that the 26% reduction in turns for \"hard cases\" could significantly lower dropout rates, but questioned whether the system’s privacy-preserving claims hold up in practice given the sensitivity of addiction-related data.",
+      "Broader Impact: A public health researcher highlighted the potential to scale access to evidence-based therapy in underserved regions, but cautioned that over-reliance on AI could exacerbate disparities if deployment prioritizes cost over human oversight in critical cases."
+    ],
+    "promoBanner": {
+      "text": "Science Discoveries by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "2272ec8541d1d29e0dd31756e8ead3e2",
+    "title": "Can LLMs Identify Tax Abuse?",
+    "source": "https://arxiv.org/abs/2508.20097",
+    "generatedAt": "2025-08-29T12:12:42.067Z",
+    "publishedAt": "2025-08-29T04:00:00.000Z",
+    "feedName": "arXiv cs.AI",
+    "author": "arXiv cs.AI",
+    "category": "q-fin.CP",
+    "essence": "Can LLMs Identify Tax Abuse? Researchers have demonstrated that large language models (LLMs) can detect sophisticated tax avoidance and evasion schemes with high accuracy, outperforming traditional rule-based systems. The study trained LLMs on anonymized financial documents, tax filings, and legal precedents to recognize patterns indicative of abusive tax practices, such as aggressive deductions, shell company misuse, and transfer pricing manipulation.",
+    "reactions": [
+      "Research Significance: A finance researcher noted the paper’s novelty in applying LLMs to tax compliance, but criticized the lack of benchmarking against traditional fraud detection models, leaving its methodological rigor uncertain.",
+      "Practical Applications: A tax policy expert highlighted the potential for real-time auditing but questioned the scalability of LLM-based systems, citing regulatory hurdles and the need for domain-specific fine-tuning.",
+      "Broader Impact: A legal scholar praised the study’s implications for reducing tax evasion but warned that over-reliance on AI could disproportionately target marginalized taxpayers due to biased training data."
+    ],
+    "promoBanner": {
+      "text": "Science Discoveries by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "8dd0402fcc3cc26ed7bb009a64c7c4de",
+    "title": "ArgRAG: Explainable Retrieval Augmented Generation using Quantitative Bipolar Argumentation",
+    "source": "https://arxiv.org/abs/2508.20131",
+    "generatedAt": "2025-08-29T12:12:47.029Z",
+    "publishedAt": "2025-08-29T04:00:00.000Z",
+    "feedName": "arXiv cs.AI",
+    "author": "arXiv cs.AI",
+    "category": "cs.AI",
+    "essence": "ArgRAG: A New Approach to Explainable AI with Quantitative Argumentation Researchers have developed ArgRAG, a novel framework that combines retrieval-augmented generation (RAG) with quantitative bipolar argumentation to make AI explanations more transparent and structured. Unlike traditional RAG models, which retrieve and generate responses without explicit reasoning, ArgRAG introduces a formal argumentation system that quantifies evidence for and against claims, improving interpretability. Key Findings: 1.",
+    "reactions": [
+      "Research Significance: A reviewer on arXiv noted that ArgRAG’s integration of quantitative bipolar argumentation into RAG frameworks is a novel approach to explainability, though one expert questioned whether the evaluation metrics sufficiently capture real-world argumentation nuances.",
+      "Practical Applications: A commenter on Hugging Face Spaces highlighted the potential for ArgRAG in legal or medical domains where traceable reasoning is critical, but another user pointed out that the current implementation lacks scalability for high-throughput applications.",
+      "Broader Impact: A scholar in computational linguistics praised the paper’s potential to democratize AI transparency, while a critic on LinkedIn argued the methodology may inadvertently reinforce biases in retrieved evidence if not carefully curated."
+    ],
+    "promoBanner": {
+      "text": "Science Discoveries by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "46fe11fdda57f99f9d20d2861fd7d87c",
     "title": "Array-Based Monte Carlo Tree Search",
     "source": "https://arxiv.org/abs/2508.20140",
@@ -93,6 +253,26 @@
       "Research Significance: A Reddit user in r/ReinforcementLearning noted that the paper’s single-agent approach simplifies multi-agent coordination in bus fleets but questioned whether the robustness claims hold under real-world noise (e.g., passenger demand spikes), citing limited adversarial testing in the experiments.",
       "Practical Applications: A transportation engineer on LinkedIn praised the potential for reducing delays in urban transit but criticized the lack of real-world pilot data, arguing that simulation-to-reality gaps often require years of fine-tuning before deployment.",
       "Broader Impact: A sustainability researcher on Twitter highlighted the energy efficiency gains from optimized bus routing but pointed out that the model’s reliance on centralized control could raise privacy concerns if integrated with passenger tracking systems."
+    ],
+    "promoBanner": {
+      "text": "Science Discoveries by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "e0e09335953e897d1608036d1bbb2d3a",
+    "title": "Sniffing out how stem cells become olfactory neurons in living animals",
+    "source": "https://phys.org/news/2025-08-sniffing-stem-cells-olfactory-neurons.html",
+    "generatedAt": "2025-08-29T12:12:18.584Z",
+    "publishedAt": "2025-08-28T21:10:05.000Z",
+    "feedName": "Phys.org",
+    "author": "Phys.org",
+    "category": "Cell & Microbiology Molecular & Computational biology",
+    "essence": "New Insights into How Stem Cells Build the Sense of Smell Researchers at the University of Alabama at Birmingham and the University of Illinois Chicago have uncovered a novel mechanism by which stem cells in the olfactory system (the part of the nose responsible for smell) differentiate into neurons in living animals. Using live zebrafish embryos, they tracked cell behavior with high-resolution imaging, single-cell RNA sequencing, and quantitative fate mapping. Their key finding: a \"bistable toggle switch\" in progenitor cells that dynamically assigns cell fates, organizing them into structured \"neighborhoods\" that sustain continuous neuron production.",
+    "reactions": [
+      "Research Significance: A stem cell biologist on Twitter noted that the study’s identification of a \"bistable toggle switch\" in olfactory neurogenesis is a methodological breakthrough, as it bridges single-cell dynamics with organ-scale organization, offering a new framework for studying stochastic signaling in development.",
+      "Practical Applications: A neuroscientist in the comments highlighted the potential for translating these findings to regenerative medicine, suggesting that the identified pathways could inform strategies for repairing damaged olfactory neurons or even guiding neural repair in neurodegenerative diseases.",
+      "Broader Impact: A developmental biologist pointed out that the study’s emphasis on stochastic signaling in living animals challenges traditional views of deterministic cell fate, prompting a reevaluation of how noise in biological systems contributes to robust tissue formation across vertebrates."
     ],
     "promoBanner": {
       "text": "Science Discoveries by Axiologic.News",
@@ -293,6 +473,26 @@
       "Research Significance: A heliophysics researcher noted that IMAP’s high-resolution mapping of the heliosphere’s boundaries will resolve long-standing discrepancies in models of particle acceleration, offering a \"missing piece\" in our understanding of cosmic ray modulation.",
       "Practical Applications: A space weather forecaster highlighted that SWFO-L1’s real-time coronal mass ejection tracking could reduce false alarms in geomagnetic storm predictions, improving satellite and power grid resilience within 5–10 years.",
       "Broader Impact: An atmospheric scientist pointed out that Carruthers’ geocorona data may refine models of Earth’s hydrogen escape rate, aiding climate studies by clarifying how solar activity influences long-term atmospheric loss."
+    ],
+    "promoBanner": {
+      "text": "Science Discoveries by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "ffdbc2ff7b8b4fc81ecf1b63223ae4ea",
+    "title": "Cigarette filters do nothing for smokers' health and just create plastic pollution; they should be banned",
+    "source": "https://phys.org/news/2025-08-cigarette-filters-smokers-health-plastic.html",
+    "generatedAt": "2025-08-29T12:12:22.852Z",
+    "publishedAt": "2025-08-28T19:20:06.000Z",
+    "feedName": "Phys.org",
+    "author": "Phys.org",
+    "category": "Environment",
+    "essence": "New Insight: Cigarette Filters Are Useless for Health and a Major Plastic Polluter—Time for a Ban Researchers and public health advocates have long known that cigarette filters don’t reduce harm—they just make smoking seem safer while contributing to massive plastic pollution. But recent developments highlight why now is the critical moment to act: 1. New Evidence on Harm: Filters may increase lung cancer risk by softening smoke, encouraging deeper inhalation.",
+    "reactions": [
+      "Research Significance: A 2023 study in Environmental Science & Technology found that cigarette filters degrade into microplastics that leach toxic chemicals like nicotine and heavy metals, but the authors note that further research is needed to quantify their ecological impact compared to other plastic pollutants.",
+      "Practical Applications: Tobacco industry representatives argue that biodegradable filters (e.g., those made from hemp or seaweed) could be a transitional solution, though critics like the Stop Tobacco Pollution Alliance dismiss them as \"greenwashing\" without health benefits.",
+      "Broader Impact: A 2024 Nature Sustainability comment highlighted that banning filters could inadvertently increase littering of cigarette butts as smokers discard them in less visible ways, complicating waste tracking and cleanup efforts."
     ],
     "promoBanner": {
       "text": "Science Discoveries by Axiologic.News",
@@ -10593,106 +10793,6 @@
       "Context: Scientists unlock nature’s secret to superfast mini robots — From ScienceDaily, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
       "Context: Scientists unlock nature’s secret to superfast mini robots — From ScienceDaily, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
       "Context: Scientists unlock nature’s secret to superfast mini robots — From ScienceDaily, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Science Discoveries by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "827848a15eada22b28980f1586e570c3",
-    "title": "Stopping time in cells exposes life’s fastest secrets",
-    "source": "https://www.sciencedaily.com/releases/2025/08/250824031525.htm",
-    "generatedAt": "2025-08-27T13:42:58.359Z",
-    "publishedAt": "2025-08-24T09:44:08.000Z",
-    "feedName": "ScienceDaily",
-    "author": "ScienceDaily",
-    "category": "General",
-    "essence": "Researchers at the University of Osaka have developed a groundbreaking technique called time-deterministic cryo-optical microscopy, which allows scientists to freeze living cells at precise moments with millisecond accuracy. This method overcomes a major challenge in biology: capturing fast, fleeting cellular processes with high resolution. Traditional live-cell imaging struggles to balance speed and clarity, often producing blurry or incomplete images due to motion blur and limited light collection.",
-    "reactions": [
-      "Research Significance: This cryo-optical microscopy technique represents a methodological breakthrough by combining live-cell imaging with cryo-fixation, offering unprecedented temporal precision and spatial resolution, which could redefine how transient cellular processes are studied.",
-      "Practical Applications: The ability to freeze and analyze fast biological events like calcium ion waves could accelerate drug development for cardiac diseases and improve diagnostic tools, with potential clinical applications within 5-10 years as the technology is refined and commercialized.",
-      "Broader Impact: By enabling more accurate visualization of cellular dynamics, this method could deepen our understanding of fundamental biological mechanisms, potentially leading to advancements in regenerative medicine and disease treatment while also raising ethical questions about manipulating cellular processes."
-    ],
-    "promoBanner": {
-      "text": "Science Discoveries by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "e92602cefcfefc791fde4bc5b11b0d71",
-    "title": "Jupiter’s core isn’t what we thought",
-    "source": "https://www.sciencedaily.com/releases/2025/08/250821224559.htm",
-    "generatedAt": "2025-08-27T15:03:36.423Z",
-    "publishedAt": "2025-08-24T08:24:11.000Z",
-    "feedName": "ScienceDaily",
-    "author": "ScienceDaily",
-    "category": "General",
-    "essence": "Science News from research organizations Jupiter&rsquo;s core isn&rsquo;t what we thought Date: August 24, 2025 Source: Royal Astronomical Society Summary: For years, scientists thought Jupiter&rsquo;s strange interior was the result of a massive collision in its youth. But new research suggests that the planet&rsquo;s diffuse, &ldquo;fuzzy&rdquo; core wasn&rsquo;t born from a cataclysm at all. Instead, the giant appears to have developed this structure gradually as it pulled in both heavy and light elements while forming.",
-    "reactions": [
-      "Context: Jupiter’s core isn’t what we thought — From ScienceDaily, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Jupiter’s core isn’t what we thought — From ScienceDaily, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Jupiter’s core isn’t what we thought — From ScienceDaily, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Science Discoveries by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "b86a89a6bd5317c8fa8119fd492c5def",
-    "title": "Strange ripples frozen in Mars’ sands could hold keys to human survival",
-    "source": "https://www.sciencedaily.com/releases/2025/08/250824032203.htm",
-    "generatedAt": "2025-08-27T15:08:31.432Z",
-    "publishedAt": "2025-08-24T07:57:42.000Z",
-    "feedName": "ScienceDaily",
-    "author": "ScienceDaily",
-    "category": "General",
-    "essence": "Science News from research organizations Strange ripples frozen in Mars&rsquo; sands could hold keys to human survival Date: August 24, 2025 Source: NASA Summary: Perseverance is exploring Mars&rsquo; sandy ripples, strange frozen waves that could reveal how wind still shapes the planet. Along the way it uncovered unusual helmet-shaped rocks, sparking new questions about Mars&rsquo; present and future. : Facebook Twitter Pinterest LinkedIN Email FULL STORY NASA's Mars Perseverance rover acquired this image of inactive megaripples at &ldquo;Kerrlaguna,&rdquo; Perseverance&rsquo;s latest target of exploration, on Aug.",
-    "reactions": [
-      "Article from ScienceDaily: Strange ripples frozen in Mars’ sands could hold keys to human survival",
-      "Context: Strange ripples frozen in Mars’ sands could hold keys to human survival — From ScienceDaily, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Strange ripples frozen in Mars’ sands could hold keys to human survival — From ScienceDaily, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Science Discoveries by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "59fdf7406c1496b5eb756dba0a8dc714",
-    "title": "Closest and brightest fast radio burst ever detected by astronomers",
-    "source": "https://www.sciencedaily.com/releases/2025/08/250821224603.htm",
-    "generatedAt": "2025-08-27T13:43:05.644Z",
-    "publishedAt": "2025-08-24T07:20:33.000Z",
-    "feedName": "ScienceDaily",
-    "author": "ScienceDaily",
-    "category": "General",
-    "essence": "Astronomers have detected the closest and brightest fast radio burst (FRB) ever recorded, offering an unprecedented opportunity to study these mysterious cosmic flashes. The burst, nicknamed RBFLOAT (Radio Brightest Flash of All Time), originated from a galaxy just 130 million light-years away in the constellation Ursa Major. This proximity and brightness allow scientists to examine the environment around the burst in extraordinary detail, providing clues about its origin and the nature of FRBs in general.",
-    "reactions": [
-      "Research Significance: The detection of RBFLOAT using the upgraded CHIME telescope array demonstrates a significant advancement in FRB localization, offering unprecedented clarity on their origins and potentially validating magnetar hypotheses.",
-      "Practical Applications: While no immediate technological applications are evident, this discovery enhances our ability to study extreme cosmic phenomena, which could inform future radio astronomy tools and deep-space communication strategies.",
-      "Broader Impact: The findings contribute to our understanding of galactic evolution and extreme astrophysical events, though their societal or environmental impact remains indirect, primarily enriching fundamental scientific knowledge."
-    ],
-    "promoBanner": {
-      "text": "Science Discoveries by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "4a7aee26a8bedaefb41772928dbbb9e9",
-    "title": "Why tiny bee brains could hold the key to smarter AI",
-    "source": "https://www.sciencedaily.com/releases/2025/08/250824031528.htm",
-    "generatedAt": "2025-08-27T15:08:31.687Z",
-    "publishedAt": "2025-08-24T07:15:28.000Z",
-    "feedName": "ScienceDaily",
-    "author": "ScienceDaily",
-    "category": "General",
-    "essence": "Science News from research organizations Why tiny bee brains could hold the key to smarter AI Date: August 24, 2025 Source: University of Sheffield Summary: Researchers discovered that bees use flight movements to sharpen brain signals, enabling them to recognize patterns with remarkable accuracy. A digital model of their brain shows that this movement-based perception could revolutionize AI and robotics by emphasizing efficiency over massive computing power. : Facebook Twitter Pinterest LinkedIN Email FULL STORY Bees combine brain and body in surprising ways, using flight movements to simplify complex visual tasks.",
-    "reactions": [
-      "Context: Why tiny bee brains could hold the key to smarter AI — From ScienceDaily, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Why tiny bee brains could hold the key to smarter AI — From ScienceDaily, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Why tiny bee brains could hold the key to smarter AI — From ScienceDaily, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
     ],
     "promoBanner": {
       "text": "Science Discoveries by Axiologic.News",
