@@ -71,6 +71,11 @@ export class HamburgerMenu {
         this.toggle();
     }
 
+    async navigateToFavorites() {
+        await window.webSkel.changeToDynamicPage("favorites-page", "app");
+        this.toggle();
+    }
+
     toggleTheme() {
         try {
             if (window.ThemeManager) {

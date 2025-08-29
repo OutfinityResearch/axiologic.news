@@ -27,6 +27,11 @@
       "presenterClassName": "SettingsPage"
     },
     {
+      "name": "favorites-page",
+      "type": "page",
+      "presenterClassName": "FavoritesPage"
+    },
+    {
       "name": "hamburger-menu",
       "type": "components",
       "presenterClassName": "HamburgerMenu"

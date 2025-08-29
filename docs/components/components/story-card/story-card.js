@@ -24,8 +24,8 @@ export class StoryCard {
 
         this.applyDynamicGradient();
         this.populateContent();
-        // First card (sources selection): ensure selector is rendered before sizing
-        if (this.storyIndex === 0) {
+        // Selection card: ensure selector is rendered before sizing
+        if (this.post?.isSelectionCard) {
             // Mark as selection early so CSS can hide header/essence immediately
             try {
                 const root = this.element.querySelector('.story-card');
@@ -56,13 +56,20 @@ export class StoryCard {
         this.applyStoredViewProgress();
         // Do not start carousel here; the page will start it when the card becomes active
 
+        // Setup favorite toggle (skip for selection card)
+        try {
+            if (!this.post.isSelectionCard) {
+                this.setupFavoriteToggle();
+            }
+        } catch (_) {}
+
         // Recompute height on resize when active
         this._onResize = () => {
             this.computeAndSetMaxHeight();
         };
         window.addEventListener('resize', this._onResize);
         // Precompute stable height for all non-selection cards to prevent flicker
-        if (this.storyIndex !== 0) {
+        if (!this.post?.isSelectionCard) {
             this.computeAndSetMaxHeight();
         }
 
@@ -74,6 +81,76 @@ export class StoryCard {
                 slides: this.slides?.length || 0
             });
         } catch (_) { /* ignore */ }
+    }
+
+    async setupFavoriteToggle() {
+        const btn = this.element.querySelector('.favorite-btn');
+        if (!btn) return;
+        const icon = btn.querySelector('i');
+        const id = this.post?.id;
+        if (!id) return;
+        try {
+            const favIds = await window.LocalStorage.get('favoritePostIds') || [];
+            const isFav = favIds.includes(id);
+            this.applyFavoriteUi(btn, icon, isFav);
+        } catch (_) {}
+
+        btn.addEventListener('click', async (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            try {
+                let favIds = await window.LocalStorage.get('favoritePostIds') || [];
+                let favMap = await window.LocalStorage.get('favoritePostsById') || {};
+                const idx = favIds.indexOf(id);
+                let isFav;
+                if (idx >= 0) {
+                    // remove
+                    favIds.splice(idx, 1);
+                    if (favMap && favMap[id]) delete favMap[id];
+                    isFav = false;
+                } else {
+                    // add to front
+                    favIds.unshift(id);
+                    favMap[id] = this.post;
+                    isFav = true;
+                }
+                await window.LocalStorage.set('favoritePostIds', favIds);
+                await window.LocalStorage.set('favoritePostsById', favMap);
+                this.applyFavoriteUi(btn, icon, isFav);
+                // If we are inside the Favorites page and unfavorite, remove the card from view
+                if (!isFav) {
+                    const favList = this.element.closest('.favorites-list');
+                    if (favList) {
+                        // Remove host <story-card>
+                        const host = this.element.closest('story-card');
+                        if (host && host.parentNode) host.parentNode.removeChild(host);
+                        // Show empty message if list becomes empty
+                        const remaining = favList.querySelector('story-card');
+                        if (!remaining) {
+                            const empty = document.querySelector('.favorites-empty');
+                            if (empty) empty.hidden = false;
+                        }
+                    }
+                }
+            } catch (err) {
+                console.error('Favorite toggle failed', err);
+            }
+        });
+    }
+
+    applyFavoriteUi(btn, icon, isFav) {
+        try {
+            if (!btn || !icon) return;
+            if (isFav) {
+                btn.classList.add('favorited');
+                icon.classList.remove('far');
+                icon.classList.add('fas');
+            } else {
+                btn.classList.remove('favorited');
+                icon.classList.remove('fas');
+                icon.classList.add('far');
+            }
+        } catch (_) {}
     }
 
     adjustSelectionCardHeight() {
@@ -212,7 +289,7 @@ export class StoryCard {
 
         // For first card, show welcome message instead of essence
         const essenceElement = this.element.querySelector('.card-essence');
-        if (this.storyIndex === 0) {
+        if (this.post?.isSelectionCard) {
             if (essenceElement) {
                 essenceElement.textContent = 'Welcome to Axiologic News! Customize your news sources below:';
             }
@@ -235,7 +312,7 @@ export class StoryCard {
         }
 
         // Compute and set domain/time on badges only for non-first cards
-        if (this.storyIndex !== 0) {
+        if (!this.post?.isSelectionCard) {
             const domain = this.extractDomain(this.post.source) || 'Axiologic';
             const mainBadge = this.element.querySelector('.card-slide[data-id="main"] .card-badge');
             if (mainBadge) mainBadge.textContent = domain;
@@ -277,7 +354,7 @@ export class StoryCard {
 
     linkTitlesToSource() {
         try {
-            if (this.storyIndex === 0) return; // selection card has no external source link
+            if (this.post?.isSelectionCard) return; // selection card has no external source link
             const url = this.post?.source;
             if (!url) return;
             const cleanTitle = this.sanitizeTitle(this.post.title);
@@ -492,7 +569,7 @@ export class StoryCard {
             } else {
                 // Swipe right - previous slide or request next post if on first slide
                 if (this.currentSlide === 0) {
-                    if (this.storyIndex === 0) return; // ignore on selection card
+                    if (this.post?.isSelectionCard) return; // ignore on selection card
                     try {
                         const evt = new CustomEvent('user-request-next-post', { bubbles: true, detail: { postId: this.post?.id } });
                         this.element.dispatchEvent(evt);
@@ -519,7 +596,7 @@ export class StoryCard {
     }
 
     setupIndicators() {
-        if (this.storyIndex === 0) {
+        if (this.post?.isSelectionCard) {
             const c0 = this.element.querySelector('.slide-indicators');
             if (c0) c0.style.display = 'none';
             return;
@@ -775,7 +852,7 @@ export class StoryCard {
     computeAndSetMaxHeight() {
         try {
             if (this._fixedHeight) return; // already computed and fixed
-            if (this.storyIndex === 0) return; // selection card handled separately
+            if (this.post?.isSelectionCard) return; // selection card handled separately
             const root = this.element.querySelector('.story-card');
             if (!root || !this.slides?.length) return;
             const extras = this.getFooterReserve();
