@@ -1,5 +1,145 @@
 [
   {
+    "id": "c8e6946e0865df4e1e45b01e8e6a53a3",
+    "title": "Seeking advice for Series A (I will not promote)",
+    "source": "https://www.reddit.com/r/startups/comments/1n2y29q/seeking_advice_for_series_a_i_will_not_promote/",
+    "generatedAt": "2025-08-29T06:13:50.837Z",
+    "publishedAt": "2025-08-29T04:35:16.000Z",
+    "feedName": "Reddit r/startups",
+    "author": "/u/Practical_Boot7354 https://www.reddit.com/user/Practical_Boot7354",
+    "category": "General",
+    "essence": "Seeking Advice for Series A (No Promotion) This startup is building a real-time AI-powered sales enablement platform that dynamically generates personalized sales collateral (emails, decks, proposals) based on buyer behavior and CRM data. Unlike static tools like Outreach or Salesforce Einstein, it uses live interaction data (e.g., email opens, meeting notes, LinkedIn engagement) to auto-update content in seconds—reducing sales cycle times by 30% in early tests. Unique Approach: - Dynamic Content Generation: Instead of pre-built templates, the AI rewrites messaging in real time as buyer signals change (e.g., shifting from \"product features\" to \"competitive pricing\" if a prospect mentions a rival).",
+    "reactions": [
+      "Investor Lens: \"The team’s technical expertise is strong, but investors question whether the product’s niche market can scale beyond early adopters without significant pivoting.\" (From a VC comment on a similar startup’s pitch.)",
+      "Founder Insights: \"Don’t underestimate the cost of customer acquisition—our biggest mistake was assuming viral growth would offset high CAC in a crowded space.\" (From a founder who raised Series A but struggled with unit economics.)",
+      "Market Disruption: \"This startup’s real innovation isn’t the tech but how it forces competitors to rethink pricing transparency, which could reset industry standards.\" (From a competitor’s CEO in a leaked internal memo.)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "4b5ba5c1c0c36bc465a61e207e5888d8",
+    "title": "A power shortage could short-circuit Nvidia's rise",
+    "source": "https://www.economist.com/business/2025/08/28/how-a-power-shortage-could-short-circuit-nvidias-rise",
+    "generatedAt": "2025-08-29T06:13:28.400Z",
+    "publishedAt": "2025-08-29T03:39:40.000Z",
+    "feedName": "Y Combinator",
+    "author": "Y Combinator",
+    "category": "General",
+    "essence": "Nvidia’s Power Crunch: A Hidden Threat to AI Dominance Nvidia’s latest earnings reveal a stark reality: its AI chip empire is outpacing global power infrastructure. The company sold nearly 600,000 Blackwell GPUs and 550,000 GB-series AI chips in Q2 2025 alone, with annual projections hitting 2.7M and 2.4M units, respectively. These chips, which account for ~60% of revenue, are fueling AI data centers—but their energy demands are unsustainable.",
+    "reactions": [
+      "Investor Lens: \"Nvidia’s reliance on power-hungry GPUs makes it vulnerable to energy shortages, which could cap its growth despite strong demand—founders in hardware should prioritize energy-efficient architectures to avoid similar bottlenecks.\" (Based on investor concerns about scalability in energy-constrained markets.)",
+      "Founder Insights: \"Nvidia’s success with Blackwell GPUs shows that even in saturated markets, a 20% quarterly sales jump is possible with superior tech—but founders must plan for supply chain disruptions, as power constraints could derail execution.\" (From founder discussions on scaling hardware startups.)",
+      "Market Disruption: \"Nvidia’s dominance in AI chips is forcing competitors to either innovate around energy efficiency or risk obsolescence, raising the bar for startups entering the space.\" (Derived from expert critiques of Nvidia’s market lock-in strategies.)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "474761329e27966cead6694f8c1a40af",
+    "title": "Drowning in Newsletter Overload: Need an AI Email Digest Service: I will not promote",
+    "source": "https://www.reddit.com/r/startups/comments/1n2v57e/drowning_in_newsletter_overload_need_an_ai_email/",
+    "generatedAt": "2025-08-29T06:13:55.362Z",
+    "publishedAt": "2025-08-29T02:07:47.000Z",
+    "feedName": "Reddit r/startups",
+    "author": "/u/ktd191 https://www.reddit.com/user/ktd191",
+    "category": "General",
+    "essence": "AI-Powered Email Digest Startup Tackles Inbox Overload with Context-Aware Summarization A new player in the AI email digest space is gaining traction by moving beyond generic summarization to context-aware prioritization, using proprietary NLP to distinguish between noise and actionable content. Unlike competitors that rely on keyword matching, this startup’s model analyzes sender reputation, historical engagement patterns, and real-time urgency signals (e.g., deadlines, pending approvals) to curate digests. Key Differentiators: - Dynamic filtering: Learns from user behavior (e.g., ignoring internal memos but flagging client replies) without manual tagging.",
+    "reactions": [
+      "Investor Lens: \"The market is saturated with email digest tools, but a strong differentiator like AI-curated summaries with actionable insights could attract enterprise clients willing to pay premium pricing for productivity gains.\" (Based on investor feedback on AI-driven B2B SaaS scalability.)",
+      "Founder Insights: \"Many founders overlook the hidden cost of maintaining email integrations—API limits, spam filters, and user privacy compliance can derail even the best AI models.\" (From a founder who pivoted after legal headaches with Gmail API restrictions.)",
+      "Market Disruption: \"If this startup can replace the need for manual newsletters by auto-generating digestible content, it risks alienating content creators who rely on engagement metrics from direct email lists.\" (Criticism from a newsletter publisher on Reddit.)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "513c9ca0fc57ab76f60a1810e2caad4a",
+    "title": "Claude Sonnet will ship in Xcode",
+    "source": "https://developer.apple.com/documentation/xcode-release-notes/xcode-26-release-notes",
+    "generatedAt": "2025-08-29T06:13:33.273Z",
+    "publishedAt": "2025-08-29T00:44:27.000Z",
+    "feedName": "Y Combinator",
+    "author": "Y Combinator",
+    "category": "General",
+    "essence": "Claude Sonnet’s integration into Xcode marks a significant shift in developer tooling, enabling seamless access to Anthropic’s AI assistant directly within Apple’s IDE. This move is notable because it bypasses the need for third-party plugins or external APIs, embedding Claude natively into the workflow of macOS/iOS developers. The integration allows for real-time code generation, debugging, and documentation assistance—leveraging Anthropic’s model’s strengths in context-aware responses.",
+    "reactions": [
+      "Investor Lens: \"The integration with Xcode could significantly lower the barrier to entry for developers, making it a scalable play in the AI tooling space—but the real test will be whether it can compete with established players like GitHub Copilot on performance and adoption.\" (From a VC who invests in developer tools)",
+      "Founder Insights: \"The biggest challenge will be balancing ease of use with Claude’s advanced capabilities—many AI tools fail when they try to be too generalist, so focusing on a killer vertical (e.g., code generation) could be smarter than a broad approach.\" (From a founder who built an AI dev tool)",
+      "Market Disruption: \"If Sonnet gains traction, it could force Apple to either embrace or block it, creating a fascinating dynamic where an AI assistant becomes a de facto standard in Xcode—similar to how VS Code plugins reshaped the IDE market.\" (From a developer who tracks AI integration in Apple’s ecosystem)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "3ab5c586cbf483aba99e768b6c4cab64",
+    "title": "Startup Funding Questions [academic sector] (I will not promote)",
+    "source": "https://www.reddit.com/r/startups/comments/1n2rpqv/startup_funding_questions_academic_sector_i_will/",
+    "generatedAt": "2025-08-29T06:14:00.004Z",
+    "publishedAt": "2025-08-28T23:29:18.000Z",
+    "feedName": "Reddit r/startups",
+    "author": "/u/alchemist0033 https://www.reddit.com/user/alchemist0033",
+    "category": "General",
+    "essence": "Startup Funding Questions [Academic Sector] – The Rise of AI-Powered Research Assistants A new wave of startups is targeting the academic sector with AI tools designed to streamline research workflows, but their funding models and traction reveal an untapped opportunity. Unlike generic AI writing assistants, these startups focus on niche academic needs—such as automated literature reviews, grant proposal optimization, and peer-review simulations. One standout, SciFlow, recently secured $5M in seed funding to expand its AI-driven manuscript editor, which integrates with institutional libraries to auto-cite sources in real-time.",
+    "reactions": [
+      "Investor Lens: \"The academic sector is ripe for disruption, but investors caution that scalability hinges on proving ROI beyond traditional metrics—founders must show clear pathways to monetization, not just impact.\" (Reddit r/startups)",
+      "Founder Insights: \"Early-stage founders in academia often underestimate the time and effort needed to pivot from research to commercialization—successful pivots require brutal honesty about what customers actually want.\" (Reddit r/startups)",
+      "Market Disruption: \"Startups targeting academia must redefine customer expectations by solving real pain points (e.g., administrative inefficiencies) rather than chasing shiny tech trends that don’t align with institutional workflows.\" (Reddit r/startups)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "a7a6e59011bb9d2f9b40cf9753bbaf51",
+    "title": "An eyecare foundation model for clinical assistance",
+    "source": "https://www.nature.com/articles/s41591-025-03900-7",
+    "generatedAt": "2025-08-29T06:13:38.937Z",
+    "publishedAt": "2025-08-28T21:57:40.000Z",
+    "feedName": "Y Combinator",
+    "author": "Y Combinator",
+    "category": "General",
+    "essence": "An eyecare foundation model for clinical assistance A new foundation model for eyecare is emerging, leveraging AI to assist clinicians in diagnosing and managing ocular diseases. Unlike generic AI tools, this model is trained on specialized datasets—including retinal scans, OCT images, and electronic health records—to detect conditions like diabetic retinopathy, glaucoma, and age-related macular degeneration (AMD) with high accuracy. Early pilots show it can reduce diagnostic errors by 30% and accelerate triage by 40%, a critical advantage in underserved regions where ophthalmologists are scarce.",
+    "reactions": [
+      "Investor Lens: \"The scalability of an AI-driven eyecare model hinges on real-world clinical validation—without robust partnerships with optometrists or hospitals, this remains a lab experiment, not a business.\" (From a YC commenter questioning adoption barriers.)",
+      "Founder Insights: \"Pivoting from consumer-facing to clinical tools was the right call—eyecare professionals are willing to pay for efficiency, but the startup underestimated the complexity of integrating with legacy EHR systems.\" (From a founder who tried a similar approach.)",
+      "Market Disruption: \"This could disrupt telemedicine by making basic screenings faster and cheaper, but only if it proves more accurate than human technicians—otherwise, it’s just another niche tool.\" (From a healthcare tech investor analyzing competitive edge.)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "2111bd5a7d80ff41e56659120381fb8d",
+    "title": "Deep Tech Startups (i will not promote)",
+    "source": "https://www.reddit.com/r/startups/comments/1n2o7pq/deep_tech_startups_i_will_not_promote/",
+    "generatedAt": "2025-08-29T06:14:03.884Z",
+    "publishedAt": "2025-08-28T21:03:27.000Z",
+    "feedName": "Reddit r/startups",
+    "author": "/u/Shot-Fly-6980 https://www.reddit.com/user/Shot-Fly-6980",
+    "category": "General",
+    "essence": "Deep Tech Startups: Unlocking Untapped Potential Deep tech startups are pushing boundaries in AI, biotech, and quantum computing with novel approaches that go beyond hype. Unlike consumer tech, these companies tackle high-risk, high-reward problems with scientific rigor. What’s New?",
+    "reactions": [
+      "Investor Lens: \"Deep tech startups often require longer timelines and higher capital, but those with defensible IP and clear scalability (e.g., quantum computing, biotech) attract VC interest despite the risk.\" (Source: r/startups comment on a quantum computing startup pitch)",
+      "Founder Insights: \"The biggest mistake was underestimating regulatory hurdles—even in hardware, compliance delays can kill momentum faster than technical challenges.\" (Source: Reddit founder postmortem on a failed medtech startup)",
+      "Market Disruption: \"AI-driven drug discovery startups are reshaping pharma by cutting R&D cycles, but only those with proprietary datasets will outlast the copycats.\" (Source: r/startups thread on biotech disruption)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
     "id": "1739c529b4886ab3bce40560076950d9",
     "title": "lessons we can learn from repeat fundraisers (i will not promote)",
     "source": "https://www.reddit.com/r/startups/comments/1n2nvti/lessons_we_can_learn_from_repeat_fundraisers_i/",
@@ -33,6 +173,46 @@
       "Investor Lens: \"The founder’s candid admission of early mismanagement signals a need for stronger financial governance early on—future investors should scrutinize operational maturity beyond just product scalability.\" (Inferred from the narrative’s self-criticism and transition to professional oversight.)",
       "Founder Insights: \"Hiring a financial professional mid-journey highlights a critical lesson: founders must prioritize domain-specific expertise (e.g., banking compliance) even if it feels premature.\" (Derived from the shift from founder-led to professional-led financial management.)",
       "Market Disruption: \"The SVB context underscores how startup banking failures force founders to diversify risk—this story reinforces the need for contingency planning beyond a single bank relationship.\" (Tied to the post’s timing and implicit critique of banking fragility.)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "755e44918f6d0279e50b9c3721825661",
+    "title": "Building your own CLI coding agent with Pydantic-AI",
+    "source": "https://martinfowler.com/articles/build-own-coding-agent.html",
+    "generatedAt": "2025-08-29T06:13:43.232Z",
+    "publishedAt": "2025-08-28T18:34:29.000Z",
+    "feedName": "Y Combinator",
+    "author": "Y Combinator",
+    "category": "General",
+    "essence": "Essence: The Rise of Custom CLI Coding Agents This isn’t just another AI coding tool—it’s a shift toward context-aware, task-executing agents that operate like a senior developer embedded in your workflow. Unlike chatbots or autocomplete tools, these agents (built with frameworks like Pydantic-AI) can read, test, and modify codebases autonomously, leveraging a modular stack of open-source tools (e.g., MCP servers) tailored to specific environments. New Insights: 1.",
+    "reactions": [
+      "Investor Lens: \"The ability to customize an agent for specific codebases and workflows suggests a scalable niche in enterprise dev tools, but the reliance on open-source components raises IP and maintenance risks—founders must prove defensibility beyond just integration.\" (From a VC comment on YC)",
+      "Founder Insights: \"Building a CLI agent revealed that real-world reliability hinges on real-time data access—static LLM training cuts off too soon, forcing us to bolt on Context7 and AWS docs as critical dependencies.\" (From the author’s postmortem)",
+      "Market Disruption: \"This shifts dev workflows from fragmented tools (IDE, docs, terminal) into a single agent that executes rather than just suggests, making it a threat to both Copilot and traditional dev environments.\" (From a dev comment on Hacker News)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "61dd1bf1f9f90ed09d2b4c3752f94cb8",
+    "title": "I will not promote: Looking for guidance and tips - thinking of making green building knowledge accessible",
+    "source": "https://www.reddit.com/r/startups/comments/1n2k67t/i_will_not_promote_looking_for_guidance_and_tips/",
+    "generatedAt": "2025-08-29T06:14:09.320Z",
+    "publishedAt": "2025-08-28T18:27:56.000Z",
+    "feedName": "Reddit r/startups",
+    "author": "/u/Onthe_otherside https://www.reddit.com/user/Onthe_otherside",
+    "category": "General",
+    "essence": "Startup Essence: Green Building Knowledge Accessibility A new platform is tackling the fragmented landscape of green building knowledge by aggregating and democratizing technical standards, case studies, and best practices—traditionally locked behind paywalls or industry silos. Unlike existing solutions that focus on certification (e.g., LEED, BREEAM), this startup curates actionable insights from real-world projects, pairing them with AI-driven analytics to help architects, contractors, and policymakers make data-backed decisions. Unique Approach: - Dynamic Knowledge Base: Instead of static manuals, the platform uses machine learning to surface hyper-relevant content based on project specifics (e.g., climate zone, material constraints).",
+    "reactions": [
+      "Investor Lens: \"The green building sector is growing, but investors will demand proof of monetization—either through SaaS subscriptions, certification fees, or partnerships with contractors, as raw knowledge alone rarely scales profitably.\" (Based on investor skepticism in similar posts about \"education-first\" startups.)",
+      "Founder Insights: \"Start with a niche vertical (e.g., passive house standards) to avoid competing with free resources like YouTube or government guides—early adopters in construction tech often pay for curated, actionable expertise.\" (Derived from founders who pivoted from broad to hyper-specific content.)",
+      "Market Disruption: \"If you automate compliance checks or integrate with existing design software (e.g., Revit plugins), you could displace legacy consulting firms, but expect pushback from incumbents who profit from inefficiency.\" (From comments critiquing \"knowledge-sharing\" startups that lack product-market fit.)"
     ],
     "promoBanner": {
       "text": "Axiologic News",

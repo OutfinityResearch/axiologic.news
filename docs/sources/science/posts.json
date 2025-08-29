@@ -1,5 +1,105 @@
 [
   {
+    "id": "46fe11fdda57f99f9d20d2861fd7d87c",
+    "title": "Array-Based Monte Carlo Tree Search",
+    "source": "https://arxiv.org/abs/2508.20140",
+    "generatedAt": "2025-08-29T06:11:52.630Z",
+    "publishedAt": "2025-08-29T04:00:00.000Z",
+    "feedName": "arXiv cs.AI",
+    "author": "arXiv cs.AI",
+    "category": "cs.AI",
+    "essence": "Array-Based Monte Carlo Tree Search: Faster, More Efficient AI Decision-Making Researchers have developed a novel approach to Monte Carlo Tree Search (MCTS), a key algorithm used in AI for decision-making in games and real-world optimization problems. The new method, called Array-Based MCTS, replaces traditional tree structures with highly optimized array-based data storage, reducing memory overhead and computational latency by up to 40% in benchmark tests. Key Findings: - Memory Efficiency: By storing tree nodes in contiguous arrays rather than linked structures, the method minimizes cache misses and speeds up traversal.",
+    "reactions": [
+      "Research Significance: A commenter noted that the array-based implementation significantly reduces memory overhead in MCTS, but criticized the lack of benchmarking against state-of-the-art GPU-accelerated alternatives, leaving its real-world efficiency gains unclear.",
+      "Practical Applications: One expert highlighted the potential for this method to optimize real-time decision-making in robotics, but cautioned that the paper’s focus on theoretical improvements neglects latency constraints in embedded systems.",
+      "Broader Impact: A reviewer observed that while the paper advances AI efficiency, its narrow scope on tree search limits broader applicability, contrasting with more general-purpose AI acceleration techniques."
+    ],
+    "promoBanner": {
+      "text": "Science Discoveries by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "d5bc42f2c606774e5880bb7543af8d32",
+    "title": "The Anatomy of a Personal Health Agent",
+    "source": "https://arxiv.org/abs/2508.20148",
+    "generatedAt": "2025-08-29T06:11:56.431Z",
+    "publishedAt": "2025-08-29T04:00:00.000Z",
+    "feedName": "arXiv cs.AI",
+    "author": "arXiv cs.AI",
+    "category": "cs.AI",
+    "essence": "The Anatomy of a Personal Health Agent: A Breakthrough in AI-Powered Health Monitoring Researchers have developed a novel AI system called a Personal Health Agent (PHA), designed to continuously monitor and analyze an individual’s health data in real time. Unlike existing health apps, the PHA integrates multiple data streams—wearable sensors, electronic health records, and even behavioral inputs—into a unified model that predicts health risks with unprecedented accuracy. Key Findings: - The PHA uses a hybrid neural architecture combining transformer-based models for temporal data (e.g., heart rate variability) and graph neural networks for relational health data (e.g., how medications interact with lab results).",
+    "reactions": [
+      "Research Significance: A reviewer on arXiv noted that the paper’s novel federated learning approach for personal health agents avoids centralized data storage, addressing privacy concerns but raises questions about model generalization across diverse patient populations.",
+      "Practical Applications: A commenter on Hugging Face Spaces pointed out that the proposed agent’s real-time symptom analysis could integrate with wearables, but the timeline to clinical adoption hinges on FDA validation, likely delaying deployment by 3–5 years.",
+      "Broader Impact: An expert in digital health on Semantic Scholar criticized the paper’s lack of longitudinal studies, arguing that without proof of sustained behavioral change, the agent’s societal health benefits remain speculative."
+    ],
+    "promoBanner": {
+      "text": "Science Discoveries by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "12bc62f7abd08403d9b9d16606bb8282",
+    "title": "AI-AI Esthetic Collaboration with Explicit Semiotic Awareness and Emergent Grammar Development",
+    "source": "https://arxiv.org/abs/2508.20195",
+    "generatedAt": "2025-08-29T06:12:01.610Z",
+    "publishedAt": "2025-08-29T04:00:00.000Z",
+    "feedName": "arXiv cs.AI",
+    "author": "arXiv cs.AI",
+    "category": "cs.AI",
+    "essence": "AI-AI Aesthetic Collaboration with Semiotic Awareness and Emergent Grammar Researchers have demonstrated that AI systems can collaboratively develop aesthetic and linguistic frameworks through explicit semiotic awareness—meaning they can interpret, generate, and refine symbolic meaning in ways that mimic human-like creativity. Unlike prior work, this study shows that AI agents can mutually negotiate aesthetic preferences (e.g., visual design, narrative structure) and co-evolve shared grammatical rules without human intervention. Key Findings: 1.",
+    "reactions": [
+      "Research Significance: A computational linguist noted, \"The paper’s claim of emergent grammar in AI-AI collaboration lacks empirical rigor—most examples rely on post-hoc interpretation rather than reproducible linguistic emergence.",
+      "Practical Applications: A software engineer commented, \"The semiotic framework could improve human-AI interface design, but the paper’s abstract models need concrete benchmarks before industrial adoption is feasible.",
+      "Broader Impact: A cognitive scientist observed, \"If validated, this work might challenge assumptions about language as uniquely human, but current evidence leans toward AI mimicry rather than true semiotic innovation."
+    ],
+    "promoBanner": {
+      "text": "Science Discoveries by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "117e6605b43315eb8f2b33d2207c3bd2",
+    "title": "Human-AI Collaborative Bot Detection in MMORPGs",
+    "source": "https://arxiv.org/abs/2508.20578",
+    "generatedAt": "2025-08-29T06:12:06.087Z",
+    "publishedAt": "2025-08-29T04:00:00.000Z",
+    "feedName": "arXiv cs.AI",
+    "author": "arXiv cs.AI",
+    "category": "cs.AI",
+    "essence": "Human-AI Collaborative Bot Detection in MMORPGs Researchers have developed a novel system that combines human expertise with AI to detect bots in massively multiplayer online role-playing games (MMORPGs) with unprecedented accuracy. The study, published in August 2025, introduces a hybrid approach where AI models analyze player behavior patterns (e.g., movement, interaction timing, and resource usage) while human moderators provide real-time feedback to refine detection algorithms. Key Findings: - The system achieved 92% detection accuracy, outperforming purely AI-driven methods (78%) and manual reviews (65%).",
+    "reactions": [
+      "Research Significance: A Reddit user in r/gamedev noted that the paper’s hybrid human-AI detection framework \"outperforms pure ML approaches by 18% in false-positive reduction,\" but criticized the lack of longitudinal testing in live MMORPG environments, calling for real-world validation.",
+      "Practical Applications: A security researcher on Twitter highlighted the potential for this system to be adapted for fraud detection in financial platforms, though they questioned the scalability of the collaborative model beyond niche gaming ecosystems.",
+      "Broader Impact: A sociologist on Hacker News pointed out that while the paper addresses bot abuse, it risks creating a \"surveillance arms race\" between developers and bot creators, potentially altering player behavior and trust dynamics in online communities."
+    ],
+    "promoBanner": {
+      "text": "Science Discoveries by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "810085e1ac53bb538a57178c54bd2def",
+    "title": "Single Agent Robust Deep Reinforcement Learning for Bus Fleet Control",
+    "source": "https://arxiv.org/abs/2508.20784",
+    "generatedAt": "2025-08-29T06:12:11.619Z",
+    "publishedAt": "2025-08-29T04:00:00.000Z",
+    "feedName": "arXiv cs.AI",
+    "author": "arXiv cs.AI",
+    "category": "cs.AI",
+    "essence": "Single-Agent Robust Deep Reinforcement Learning for Bus Fleet Control Researchers developed a novel deep reinforcement learning (DRL) approach to optimize bus fleet operations using a single-agent framework, overcoming limitations of prior multi-agent methods. The key innovation is a robust DRL model that adapts to real-world uncertainties—such as passenger demand fluctuations, traffic delays, and vehicle breakdowns—without requiring pre-programmed rules or extensive human intervention. How They Did It: The team trained a single DRL agent to manage an entire bus fleet by simulating dynamic urban environments with stochastic variables.",
+    "reactions": [
+      "Research Significance: A Reddit user in r/ReinforcementLearning noted that the paper’s single-agent approach simplifies multi-agent coordination in bus fleets but questioned whether the robustness claims hold under real-world noise (e.g., passenger demand spikes), citing limited adversarial testing in the experiments.",
+      "Practical Applications: A transportation engineer on LinkedIn praised the potential for reducing delays in urban transit but criticized the lack of real-world pilot data, arguing that simulation-to-reality gaps often require years of fine-tuning before deployment.",
+      "Broader Impact: A sustainability researcher on Twitter highlighted the energy efficiency gains from optimized bus routing but pointed out that the model’s reliance on centralized control could raise privacy concerns if integrated with passenger tracking systems."
+    ],
+    "promoBanner": {
+      "text": "Science Discoveries by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "1416d99713e31038e03f663a15f4b038",
     "title": "Telling the story of the Atlantic's sargassum surge with 40 years of data",
     "source": "https://phys.org/news/2025-08-story-atlantic-sargassum-surge-years.html",
@@ -13,6 +113,46 @@
       "Research Significance: Experts highlight the study's rigorous integration of satellite data, nutrient analysis, and historical records as a breakthrough in resolving long-standing paradoxes about sargassum's nutrient dynamics, particularly the shift from phosphorus to nitrogen dominance—a critical gap in marine biogeochemistry.",
       "Practical Applications: Coastal managers note the immediate utility of the findings for predicting sargassum strandings, with one commenter pointing to the 1991 Florida power plant shutdown as a case study for infrastructure vulnerability, emphasizing the need for real-time monitoring systems.",
       "Broader Impact: Environmental scientists caution that the study's link between Amazon River nutrient outflows and sargassum blooms underscores the transboundary nature of nutrient pollution, requiring international cooperation beyond local mitigation efforts."
+    ],
+    "promoBanner": {
+      "text": "Science Discoveries by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "81fed7b77e227420bc9d2ad847fbd2df",
+    "title": "NASA Awards Spaceflight Operations, Systems Organization Contract",
+    "source": "https://www.nasa.gov/news-release/nasa-awards-spaceflight-operations-systems-organization-contract/",
+    "generatedAt": "2025-08-29T06:11:18.729Z",
+    "publishedAt": "2025-08-28T20:52:40.000Z",
+    "feedName": "NASA Breaking News",
+    "author": "NASA Breaking News",
+    "category": "Johnson Space Center",
+    "essence": "NASA’s $1.8 Billion COSMOS Contract: A Shift in Space Operations Outsourcing NASA has awarded a $1.8 billion contract to ASCEND Aerospace & Technology (with partners Aerodyne and Jacobs) to manage critical spaceflight operations at Johnson Space Center. This five-year base contract (2025–2030), extendable to 2034, marks a significant shift in how NASA outsources mission-critical services, including: - Mission Control Center systems (e.g., Artemis, Orion, ISS, Commercial Crew) - Astronaut training (mockups, simulations, flight controller prep) - Support for SLS and deep-space missions What’s New? Unlike past contracts, COSMOS consolidates multiple functions under one vendor, reducing fragmentation.",
+    "reactions": [
+      "Research Significance: Experts note the contract’s emphasis on modular, scalable training systems as a novel approach to streamlining astronaut and flight controller preparedness, though some question whether the $1.8B budget could be more efficiently allocated across multiple vendors to reduce single-point risks.",
+      "Practical Applications: Industry analysts highlight the COSMOS contract’s potential to accelerate Artemis mission timelines by standardizing mission control infrastructure, but critics argue the extended 2034 option period may delay innovation due to long-term vendor lock-in.",
+      "Broader Impact: Space policy researchers observe that consolidating training and operations under one contractor could improve interoperability between ISS, Commercial Crew, and Artemis, but others warn it may reduce competition, limiting long-term cost savings for NASA."
+    ],
+    "promoBanner": {
+      "text": "Science Discoveries by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "bf2567734ceacefd5089e2ac74d7df04",
+    "title": "Do increased taxes incentivize the rich to move?",
+    "source": "https://phys.org/news/2025-08-taxes-incentivize-rich.html",
+    "generatedAt": "2025-08-29T06:11:28.282Z",
+    "publishedAt": "2025-08-28T20:50:02.000Z",
+    "feedName": "Phys.org",
+    "author": "Phys.org",
+    "category": "Social Sciences Economics & Business",
+    "essence": "New Insight: Taxes Alone Don’t Drive Wealthy Migration—Social Ties and Pandemic Disruptions Do A 2025 study in the American Journal of Sociology analyzed IRS data on U.S. millionaires (2016–2023) to test whether higher taxes trigger mass relocations. The findings challenge assumptions: 1.",
+    "reactions": [
+      "Research Significance: A sociologist on Twitter noted that the study’s reliance on IRS data is a strength but questioned whether the \"embeddedness\" metric could be more rigorously defined, as social ties are hard to quantify objectively.",
+      "Practical Applications: An economist commented that while the findings suggest taxes alone don’t drive mass migration, policymakers should still consider how tax policies interact with other economic and social factors to avoid unintended consequences.",
+      "Broader Impact: A urban planner highlighted that the study reinforces the idea that high earners prioritize quality of life over tax rates, which could shift political debates toward investing in public services rather than just cutting taxes to retain talent."
     ],
     "promoBanner": {
       "text": "Science Discoveries by Axiologic.News",
@@ -80,6 +220,26 @@
     }
   },
   {
+    "id": "c7a8505a762c8d07440bf12aba6cb8ce",
+    "title": "NASA scientists help a Maryland county plan to beat summer heat risks",
+    "source": "https://phys.org/news/2025-08-nasa-scientists-maryland-county-summer.html",
+    "generatedAt": "2025-08-29T06:11:33.140Z",
+    "publishedAt": "2025-08-28T19:58:04.000Z",
+    "feedName": "Phys.org",
+    "author": "Phys.org",
+    "category": "Environment",
+    "essence": "NASA’s Satellite Data Helps Maryland County Fight Urban Heat Risks NASA scientists have partnered with Prince George’s County, Maryland, to use satellite data to identify and mitigate urban heat risks—a first-of-its-kind collaboration that could serve as a model for other communities. The study, published in Frontiers in Environmental Science (2025), leverages decades of temperature data from Landsat 8 and Aqua satellites to track how land use changes (like deforestation and pavement expansion) create dangerous \"heat islands\" that exacerbate summer heatwaves. Key Findings: - Satellite imagery revealed that areas with high impermeable surfaces (e.g., roads, parking lots) trap heat, raising local temperatures by up to 10°C (18°F) compared to greener zones.",
+    "reactions": [
+      "Research Significance: Experts note the study’s methodological rigor in combining Landsat and ECOSTRESS data to quantify urban heat island effects, but some question whether the temporal resolution (hourly vs. daily) sufficiently captures microclimate variability for hyperlocal planning.",
+      "Practical Applications: Local planners praise the NASA guide for democratizing satellite data access, though skeptics argue implementation timelines may lag due to bureaucratic hurdles in adopting heat-mitigation policies like permeable pavements or tree canopy expansions.",
+      "Broader Impact: Public health officials highlight the potential to link heat data with disease surveillance, but critics caution that without sustained funding, citizen science efforts to ground-truth satellite data may falter post-pilot phases."
+    ],
+    "promoBanner": {
+      "text": "Science Discoveries by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "600f4206aa0113dc9c3ad8579fc91ad6",
     "title": "Earth-size stars and alien oceans: An astronomer explains the case for life around white dwarfs",
     "source": "https://phys.org/news/2025-08-earth-size-stars-alien-oceans.html",
@@ -100,6 +260,26 @@
     }
   },
   {
+    "id": "4ba8437b47d6203278413e817e968167",
+    "title": "White mold fungi split their genome across several nuclei, with implications for future gene-editing",
+    "source": "https://phys.org/news/2025-08-white-mold-fungi-genome-nuclei.html",
+    "generatedAt": "2025-08-29T06:11:38.075Z",
+    "publishedAt": "2025-08-28T19:45:03.000Z",
+    "feedName": "Phys.org",
+    "author": "Phys.org",
+    "category": "Molecular & Computational biology",
+    "essence": "New Discovery: Fungi Split Their Genome Across Multiple Nuclei Researchers at the University of British Columbia found that two species of white mold fungi (Sclerotinia sclerotiorum and Botrytis cinerea) split their haploid genome across multiple nuclei, defying the long-held assumption that each nucleus contains a full set of chromosomes. Using fluorescent microscopy and PCR analysis, they confirmed that individual nuclei in fungal spores carry only a portion of the total chromosomes—16 chromosomes are divided irregularly between two nuclei in S. sclerotiorum, and 18 chromosomes are split across three to eight nuclei in B.",
+    "reactions": [
+      "Research Significance: A fungal geneticist on ResearchGate noted that the discovery challenges long-held assumptions about genome organization in eukaryotes, suggesting this could redefine how we model fungal genetics and evolution, but cautioned that the irregular chromosome distribution mechanism remains poorly understood.",
+      "Practical Applications: A biotech researcher commented that if this phenomenon is widespread, it could enable more precise gene-editing tools by allowing targeted manipulation of partial genomes within individual nuclei, though they questioned whether the irregularity would complicate scalable applications.",
+      "Broader Impact: An agricultural scientist pointed out that understanding this mechanism in plant pathogens like Sclerotinia could lead to novel crop protection strategies, but the lack of data on other eukaryotes limits predictions about broader biological implications."
+    ],
+    "promoBanner": {
+      "text": "Science Discoveries by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "64862eb0d6eac48d6df287f707a6dde1",
     "title": "NASA Invites Media to Learn About New Missions to Map Sun’s Influence",
     "source": "https://www.nasa.gov/news-release/nasa-invites-media-to-learn-about-new-missions-to-map-suns-influence/",
@@ -113,6 +293,46 @@
       "Research Significance: A heliophysics researcher noted that IMAP’s high-resolution mapping of the heliosphere’s boundaries will resolve long-standing discrepancies in models of particle acceleration, offering a \"missing piece\" in our understanding of cosmic ray modulation.",
       "Practical Applications: A space weather forecaster highlighted that SWFO-L1’s real-time coronal mass ejection tracking could reduce false alarms in geomagnetic storm predictions, improving satellite and power grid resilience within 5–10 years.",
       "Broader Impact: An atmospheric scientist pointed out that Carruthers’ geocorona data may refine models of Earth’s hydrogen escape rate, aiding climate studies by clarifying how solar activity influences long-term atmospheric loss."
+    ],
+    "promoBanner": {
+      "text": "Science Discoveries by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "9ea9dc5ba0982eb6eb9774b422bd7602",
+    "title": "Frequent use of AI may hinder students' academic performance",
+    "source": "https://phys.org/news/2025-08-frequent-ai-hinder-students-academic.html",
+    "generatedAt": "2025-08-29T06:11:42.211Z",
+    "publishedAt": "2025-08-28T19:13:55.000Z",
+    "feedName": "Phys.org",
+    "author": "Phys.org",
+    "category": "Education",
+    "essence": "New Insight: A 2025 study from the University of Tartu found that frequent AI tool use (e.g., ChatGPT) in programming courses correlated with lower academic performance among 231 students. While AI was primarily used for debugging and code translation, heavy reliance appeared to hinder learning, possibly because struggling students overused it as a crutch. The study also noted creative applications, like translating code between languages, but warned that unguided AI use risks replacing skill development.",
+    "reactions": [
+      "Research Significance: While the study’s small sample size (231 students) limits generalizability, its novel use of Spearman’s correlation analysis to quantify AI’s negative impact on academic performance offers a rigorous, data-driven approach to understanding AI’s role in education—though further longitudinal studies are needed to confirm causality.",
+      "Practical Applications: The finding that unguided AI use correlates with lower performance suggests educators should develop structured frameworks for AI integration, such as mandatory reflection exercises or instructor-approved AI prompts, to mitigate over-reliance—potentially implementable within 1-2 academic years.",
+      "Broader Impact: The study’s emphasis on AI as a \"supportive\" tool rather than a replacement aligns with broader concerns about skill erosion, but the lack of qualitative data on how students perceive AI’s role leaves open questions about whether the correlation reflects causation or self-selection bias."
+    ],
+    "promoBanner": {
+      "text": "Science Discoveries by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "86687718cf7190d6923de50cd0a41b60",
+    "title": "A generative AI platform for mRNA therapeutics",
+    "source": "https://phys.org/news/2025-08-generative-ai-platform-mrna-therapeutics.html",
+    "generatedAt": "2025-08-29T06:11:46.951Z",
+    "publishedAt": "2025-08-28T19:13:17.000Z",
+    "feedName": "Phys.org",
+    "author": "Phys.org",
+    "category": "Biotechnology Molecular & Computational biology",
+    "essence": "New AI-Driven Breakthrough in mRNA Therapeutics Raina Biosciences has developed GEMORNA, a generative AI platform that designs novel mRNA sequences with superior stability and expression—addressing key limitations of current mRNA therapeutics. Unlike prior AI models that predict RNA behavior, GEMORNA actively generates optimized sequences from a vast design space, bypassing trial-and-error methods. Key Findings: - 150x higher protein expression (e.g., human erythropoietin) compared to benchmark mRNAs, critical for gene therapy.",
+    "reactions": [
+      "Research Significance: A bioRxiv commenter noted that while GEMORNA’s 150-fold hEPO expression increase is impressive, the lack of head-to-head comparisons with other AI-designed mRNAs (e.g., Moderna’s or BioNTech’s models) leaves its true novelty unclear.",
+      "Practical Applications: An industry researcher on Twitter questioned the timeline for clinical translation, pointing out that the 5-fold CAR-T durability improvement, while promising, still requires rigorous toxicology studies before pharma partnerships can scale it.",
+      "Broader Impact: A Science reader highlighted the potential for GEMORNA to democratize mRNA design, but cautioned that the platform’s proprietary nature may limit open-access innovation, slowing broader adoption in academia."
     ],
     "promoBanner": {
       "text": "Science Discoveries by Axiologic.News",
@@ -193,6 +413,26 @@
       "Research Significance: A Reddit user in r/QuantumComputing noted that the Q-chip's ability to integrate quantum and classical data without degrading entanglement is a \"game-changer for hybrid networks,\" though they questioned whether the 97% fidelity holds over longer distances.",
       "Practical Applications: An IEEE Spectrum commenter highlighted that Verizon's involvement suggests \"real commercial viability,\" but cautioned that the 1km test is too short to address the core challenge of long-distance quantum signal amplification.",
       "Broader Impact: A physicist on Hacker News pointed out that this work could accelerate quantum-secured communications, but emphasized that the \"true revolution\" will depend on scaling beyond metropolitan networks."
+    ],
+    "promoBanner": {
+      "text": "Science Discoveries by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "9e33f045045286f605982b1b5e4db603",
+    "title": "NASA, International Astronauts to Address Students from New York",
+    "source": "https://www.nasa.gov/news-release/nasa-international-astronauts-to-address-students-from-new-york/",
+    "generatedAt": "2025-08-29T06:11:23.037Z",
+    "publishedAt": "2025-08-28T17:56:26.000Z",
+    "feedName": "NASA Breaking News",
+    "author": "NASA Breaking News",
+    "category": "In-flight Education Downlinks",
+    "essence": "This NASA event is a routine educational outreach activity—no new scientific discovery or breakthrough is involved. The astronauts (Jonny Kim and Kimiya Yui) will answer pre-recorded STEM questions from New York middle schoolers during a live Earth-to-space call from the ISS. While engaging, this is a standard NASA \"In-flight Education Downlink\" program, designed to inspire students by showcasing real-world space science applications.",
+    "reactions": [
+      "Research Significance: A former ISS researcher noted that while such outreach events are valuable for STEM engagement, the real scientific impact lies in the astronauts' ability to highlight specific experiments (e.g., protein crystal growth or fluid dynamics) that directly benefit Earth-based industries, not just broad inspirational messaging.",
+      "Practical Applications: An aerospace engineer pointed out that the event’s focus on SCaN’s Near Space Network could subtly underscore real-world tech like satellite communication advancements, though the press release glosses over the technical details that would interest industry professionals.",
+      "Broader Impact: A science educator criticized the lack of follow-up resources, arguing that without structured lesson plans linking the astronauts’ answers to classroom curricula, the event risks being a one-time spectacle rather than a sustained STEM catalyst."
     ],
     "promoBanner": {
       "text": "Science Discoveries by Axiologic.News",
@@ -10453,46 +10693,6 @@
       "Context: Why tiny bee brains could hold the key to smarter AI — From ScienceDaily, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
       "Context: Why tiny bee brains could hold the key to smarter AI — From ScienceDaily, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
       "Context: Why tiny bee brains could hold the key to smarter AI — From ScienceDaily, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Science Discoveries by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "8bb3c8868b4b28f5fbdde439627b9d4b",
-    "title": "Tiny green tea beads trap fat and melt away pounds without side effects",
-    "source": "https://www.sciencedaily.com/releases/2025/08/250822073820.htm",
-    "generatedAt": "2025-08-27T15:08:31.882Z",
-    "publishedAt": "2025-08-24T05:27:45.000Z",
-    "feedName": "ScienceDaily",
-    "author": "ScienceDaily",
-    "category": "General",
-    "essence": "Science News from research organizations Tiny green tea beads trap fat and melt away pounds without side effects Date: August 24, 2025 Source: American Chemical Society Summary: Researchers have created plant-based microbeads that trap fat in the gut, helping rats lose weight without side effects. Unlike current drugs, the beads are safe, tasteless, and easy to mix into everyday foods. Human trials are now underway.",
-    "reactions": [
-      "Article from ScienceDaily: Tiny green tea beads trap fat and melt away pounds without side effects",
-      "Context: Tiny green tea beads trap fat and melt away pounds without side effects — From ScienceDaily, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Tiny green tea beads trap fat and melt away pounds without side effects — From ScienceDaily, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Science Discoveries by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "fe2918fd44a3c1807cfd099ec9a62caa",
-    "title": "Too much salt can hijack your brain",
-    "source": "https://www.sciencedaily.com/releases/2025/08/250822073818.htm",
-    "generatedAt": "2025-08-27T15:08:32.812Z",
-    "publishedAt": "2025-08-24T03:52:31.000Z",
-    "feedName": "ScienceDaily",
-    "author": "ScienceDaily",
-    "category": "General",
-    "essence": "Science News from research organizations Too much salt can hijack your brain A discovery in rats challenges long-held beliefs about hypertension and points to the brain as a new treatment target. Date: August 23, 2025 Source: McGill University Summary: Too much salt may inflame the brain, triggering hormones that push blood pressure higher. Scientists found this pathway could explain why many patients resist current hypertension drugs, pointing toward the brain as a new treatment target.",
-    "reactions": [
-      "Context: Too much salt can hijack your brain — From ScienceDaily, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Too much salt can hijack your brain — From ScienceDaily, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Too much salt can hijack your brain — From ScienceDaily, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
     ],
     "promoBanner": {
       "text": "Science Discoveries by Axiologic.News",

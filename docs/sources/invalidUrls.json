@@ -77,8 +77,8 @@
     "category": "marketing",
     "lastError": "HTTP 404: Page Not Found",
     "firstSeenAt": "2025-08-27T13:48:06.626Z",
-    "lastSeenAt": "2025-08-29T00:17:12.567Z",
-    "count": 24
+    "lastSeenAt": "2025-08-29T06:08:18.086Z",
+    "count": 25
   },
   {
     "url": "https://blog.close.com/rss/",
@@ -113,8 +113,8 @@
     "category": "startups",
     "lastError": "HTTP 403: Forbidden",
     "firstSeenAt": "2025-08-27T13:57:33.115Z",
-    "lastSeenAt": "2025-08-29T00:22:48.976Z",
-    "count": 24
+    "lastSeenAt": "2025-08-29T06:12:49.671Z",
+    "count": 25
   },
   {
     "url": "https://www.wired.com/feed/category/technology/latest/rss",
@@ -176,7 +176,16 @@
     "category": "business",
     "lastError": "Invalid URL or fetch error: Invalid URL",
     "firstSeenAt": "2025-08-28T13:34:55.975Z",
-    "lastSeenAt": "2025-08-29T00:14:42.183Z",
-    "count": 3
+    "lastSeenAt": "2025-08-29T06:06:05.275Z",
+    "count": 4
+  },
+  {
+    "url": "https://www.wired.com/feed/rss",
+    "name": "WIRED",
+    "category": "tech",
+    "lastError": "RSS fetch timeout after 10000ms",
+    "firstSeenAt": "2025-08-29T06:15:52.669Z",
+    "lastSeenAt": "2025-08-29T06:15:52.669Z",
+    "count": 1
   }
 ]
