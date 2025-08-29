@@ -1,5 +1,6 @@
 .news-feed-wrapper {
-    height: 100vh;
+    /* Fit inside app-content area (which already accounts for header height) */
+    height: 100%;
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -36,7 +37,10 @@
     border-radius: 12px;
     box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
     transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), width 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s ease;
-    scroll-snap-align: center;
+    /* Default snap to start; use scroll-margin to raise active card */
+    scroll-snap-align: start;
+    /* 15% top margin for snap so previous card occupies at most ~15% */
+    scroll-margin-top: 15vh;
     transform-origin: center center;
     pointer-events: none; /* non-active cards are non-interactive */
     opacity: 0.85; /* slightly transparent inactive cards */
@@ -50,13 +54,24 @@
 .news-feed-container story-card.selection-card {
     aspect-ratio: auto !important;
     min-height: auto; /* let content determine height */
-    scroll-snap-align: start; /* align top for selection card */
+    /* Disable snapping for selection card so it can be fully scrolled */
+    scroll-snap-align: none;
+    /* No offset for selection card; sit flush at top */
+    scroll-margin-top: 0;
+    scroll-margin-bottom: 0;
     margin-bottom: 40px; /* enough separation, but not exaggerated */
     /* Use default shadow/border from generic card styles */
     background: var(--surface);
     z-index: 2;
     opacity: 1 !important;
     pointer-events: auto !important;
+}
+
+/* Do not apply the 30% offset correction to the first post */
+.news-feed-container story-card.first-post {
+    /* Disable centering correction and centering for first real post */
+    scroll-snap-align: start;
+    scroll-margin-top: 0;
 }
 
 /* While selection card is active, hide following cards to avoid peeking headers */
@@ -68,9 +83,7 @@
     height: 45vh;
 }
 
-.news-feed-container .top-spacer { 
-    height: 20px; /* increased space at top for better initial visibility */
-}
+.news-feed-container .top-spacer { height: 0; }
 
 .story-card-placeholder {
     height: 100vh;

@@ -13,7 +13,7 @@ const argvPort = (() => {
   if (i !== -1 && process.argv[i + 1]) return Number(process.argv[i + 1]);
   return undefined;
 })();
-const PORT = argvPort || Number(process.env.PORT) || 8081;
+const PORT = argvPort || Number(process.env.PORT) || 8082;
 
 const MIME = {
   '.html': 'text/html; charset=utf-8',

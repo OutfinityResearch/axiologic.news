@@ -284,6 +284,13 @@ export class NewsFeedPage {
         storyCardElement.post = this.posts[index];
         storyCardElement.storyIndex = index;
         storyCardElement.totalStories = this.posts.length;
+        // Mark first real post (after selection) to bypass 30% offset correction
+        try {
+            const post = this.posts[index];
+            if (index === 1 && post && !post.isSelectionCard) {
+                storyCardElement.classList.add('first-post');
+            }
+        } catch (_) {}
         // Insert before bottom spacer
         const bottomSpacer = container.querySelector('.bottom-spacer');
         // Find correct position among existing cards by data-index
@@ -342,6 +349,8 @@ export class NewsFeedPage {
     setupScrollDetection() {
         const container = this.element.querySelector('.news-feed-container');
         if (!container) return;
+        // Disable snap while on the selection card so nothing auto-centers it
+        try { container.style.scrollSnapType = 'none'; } catch (_) {}
 
         let isScrolling = false;
         let scrollTimeout;
@@ -371,12 +380,9 @@ export class NewsFeedPage {
                 const nextEl = this.cardEls.get(this.currentStoryIndex + 1);
                 if (prevEl) prevEl.classList.add('prev-card');
                 if (nextEl) nextEl.classList.add('next-card');
-                // Do not auto-scroll when starting on selection card; keep at top without animation
-                if (this.currentStoryIndex !== 0) {
-                    activeEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                } else {
-                    container.scrollTop = 0;
-                }
+                // Ensure starting position is the selection card on all viewports
+                // Always align to start for first two cards as well
+                activeEl.scrollIntoView({ behavior: 'auto', block: 'start' });
                 this.storyCardsMap.get(this.currentStoryIndex)?.startCarousel();
                 // Ensure initial active is recorded as centered
                 await this.markAsCentered(this.currentStoryIndex);
@@ -491,6 +497,8 @@ export class NewsFeedPage {
 
             // Set new active and start
             this.currentStoryIndex = newActive;
+            // Re-enable snapping only after leaving selection card
+            try { container.style.scrollSnapType = (this.currentStoryIndex === 0) ? 'none' : 'y proximity'; } catch (_) {}
             // Ensure window includes neighbors
             this.ensureVirtualWindow(this.currentStoryIndex);
             const activePresenter = this.storyCardsMap.get(newActive);
@@ -518,6 +526,8 @@ export class NewsFeedPage {
             if (nextEl) nextEl.classList.add('next-card');
             // Ensure current active is registered as centered
             await this.markAsCentered(this.currentStoryIndex);
+            // Keep snap disabled while on selection card
+            try { container.style.scrollSnapType = (this.currentStoryIndex === 0) ? 'none' : 'y proximity'; } catch (_) {}
         }
     }
 
@@ -569,7 +579,7 @@ export class NewsFeedPage {
             } catch (_) {}
             this.ensureVirtualWindow(this.currentStoryIndex);
             const el = this.cardEls.get(this.currentStoryIndex);
-            if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
     }
 
@@ -583,7 +593,7 @@ export class NewsFeedPage {
             } catch (_) {}
             this.ensureVirtualWindow(this.currentStoryIndex);
             const el = this.cardEls.get(this.currentStoryIndex);
-            if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
     }
 
