@@ -13,6 +13,9 @@ export class NewsFeedPage {
         this.boundNextStory = this.nextStory.bind(this);
         this.touchStartY = 0;
         this.touchEndY = 0;
+        this.touchStartX = 0;
+        this.touchEndX = 0;
+        this._navLock = false; // prevents double-advance on same gesture
         this.isLoadingMore = false;
         this.invalidate();
     }
@@ -398,36 +401,19 @@ export class NewsFeedPage {
     setupTouchNavigation() {
         const container = this.element.querySelector('.news-feed-container');
         if (!container) return;
+        // Remove any previous vertical swipe listeners to allow native scrolling
         if (this._onTouchStart) container.removeEventListener('touchstart', this._onTouchStart);
         if (this._onTouchEnd) container.removeEventListener('touchend', this._onTouchEnd);
+        this._onTouchStart = null;
+        this._onTouchEnd = null;
 
-        this._onTouchStart = (e) => {
-            if (e.changedTouches && e.changedTouches.length) {
-                this.touchStartY = e.changedTouches[0].screenY;
-            }
+        // Keep horizontal-driven next-post event from story-card
+        const onNextReq = (e) => {
+            if (this._navLock) return;
+            this._navLock = true;
+            setTimeout(() => { this._navLock = false; }, 350);
+            this.nextStory();
         };
-        this._onTouchEnd = (e) => {
-            if (e.changedTouches && e.changedTouches.length) {
-                this.touchEndY = e.changedTouches[0].screenY;
-                const dy = this.touchStartY - this.touchEndY;
-                const threshold = 40; // px
-                if (Math.abs(dy) > threshold) {
-                    if (dy > 0) {
-                        // Swipe up -> next post
-                        this.nextStory();
-                    } else {
-                        // Swipe down -> previous post
-                        this.previousStory();
-                    }
-                }
-            }
-        };
-
-        container.addEventListener('touchstart', this._onTouchStart, { passive: true });
-        container.addEventListener('touchend', this._onTouchEnd, { passive: true });
-
-        // Map story-card's request event to next story
-        const onNextReq = (e) => { this.nextStory(); };
         if (this._onUserNextReq) container.removeEventListener('user-request-next-post', this._onUserNextReq);
         this._onUserNextReq = onNextReq;
         container.addEventListener('user-request-next-post', this._onUserNextReq);
@@ -462,23 +448,25 @@ export class NewsFeedPage {
         const cards = container.querySelectorAll('story-card');
         const containerRect = container.getBoundingClientRect();
 
-        // Find the card closest to center (use absolute story index via data-index)
+        // Determine first fully visible card from top to bottom
+        const tol = 4; // tolerance px to avoid off-by-1 with borders/margins
         let newActive = this.currentStoryIndex;
-        let minDist = Infinity;
         const nearTop = (container.scrollTop || 0) <= 24;
         if (nearTop && this.cardEls.has(0)) {
             newActive = 0;
-        }
-        if (!nearTop) {
-            cards.forEach((card) => {
+        } else {
+            // Iterate in DOM order; pick first fully visible
+            for (const card of cards) {
                 const rect = card.getBoundingClientRect();
-                const cardCenter = rect.top + rect.height / 2;
-                const containerCenter = containerRect.top + containerRect.height / 2;
-                const dist = Math.abs(cardCenter - containerCenter);
-                const absIndex = parseInt(card.getAttribute('data-index'), 10);
-                if (!Number.isFinite(absIndex)) return;
-                if (dist < minDist) { minDist = dist; newActive = absIndex; }
-            });
+                const fullyVisible = rect.top >= (containerRect.top + tol) && rect.bottom <= (containerRect.bottom - tol);
+                if (fullyVisible) {
+                    const absIndex = parseInt(card.getAttribute('data-index'), 10);
+                    if (Number.isFinite(absIndex)) {
+                        newActive = absIndex;
+                        break;
+                    }
+                }
+            }
         }
 
         if (newActive !== this.currentStoryIndex) {

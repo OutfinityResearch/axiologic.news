@@ -70,7 +70,7 @@ export class HamburgerMenu {
         await window.webSkel.changeToDynamicPage("settings-page", "app");
         this.toggle();
     }
-
+analizeaz
     async navigateToFavorites() {
         await window.webSkel.changeToDynamicPage("favorites-page", "app");
         this.toggle();
