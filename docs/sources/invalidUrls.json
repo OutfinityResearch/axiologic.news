@@ -77,8 +77,8 @@
     "category": "marketing",
     "lastError": "HTTP 404: Page Not Found",
     "firstSeenAt": "2025-08-27T13:48:06.626Z",
-    "lastSeenAt": "2025-08-30T00:14:21.795Z",
-    "count": 27
+    "lastSeenAt": "2025-08-30T06:05:55.276Z",
+    "count": 28
   },
   {
     "url": "https://blog.close.com/rss/",
@@ -113,8 +113,8 @@
     "category": "startups",
     "lastError": "HTTP 403: Forbidden",
     "firstSeenAt": "2025-08-27T13:57:33.115Z",
-    "lastSeenAt": "2025-08-30T00:17:35.456Z",
-    "count": 27
+    "lastSeenAt": "2025-08-30T06:08:20.650Z",
+    "count": 28
   },
   {
     "url": "https://www.wired.com/feed/category/technology/latest/rss",
@@ -176,8 +176,8 @@
     "category": "business",
     "lastError": "Invalid URL or fetch error: Invalid URL",
     "firstSeenAt": "2025-08-28T13:34:55.975Z",
-    "lastSeenAt": "2025-08-30T00:13:11.048Z",
-    "count": 6
+    "lastSeenAt": "2025-08-30T06:04:40.799Z",
+    "count": 7
   },
   {
     "url": "https://www.wired.com/feed/rss",
@@ -194,8 +194,8 @@
     "category": "techForums",
     "lastError": "HTTP 403: Blocked",
     "firstSeenAt": "2025-08-29T18:12:06.514Z",
-    "lastSeenAt": "2025-08-29T18:12:06.514Z",
-    "count": 1
+    "lastSeenAt": "2025-08-30T06:10:09.171Z",
+    "count": 2
   },
   {
     "url": "https://www.reddit.com/r/programming/.rss",
@@ -203,7 +203,106 @@
     "category": "techForums",
     "lastError": "HTTP 403: Blocked",
     "firstSeenAt": "2025-08-29T18:12:06.557Z",
-    "lastSeenAt": "2025-08-29T18:12:06.557Z",
+    "lastSeenAt": "2025-08-30T06:10:09.282Z",
+    "count": 2
+  },
+  {
+    "url": "https://www.reddit.com/r/MachineLearning/.rss",
+    "name": "Reddit r/MachineLearning",
+    "category": "aiForums",
+    "lastError": "HTTP 403: Blocked",
+    "firstSeenAt": "2025-08-30T06:04:15.105Z",
+    "lastSeenAt": "2025-08-30T06:04:15.105Z",
+    "count": 1
+  },
+  {
+    "url": "https://www.reddit.com/r/artificial/.rss",
+    "name": "Reddit r/artificial",
+    "category": "aiForums",
+    "lastError": "HTTP 403: Blocked",
+    "firstSeenAt": "2025-08-30T06:04:15.211Z",
+    "lastSeenAt": "2025-08-30T06:04:15.211Z",
+    "count": 1
+  },
+  {
+    "url": "https://www.reddit.com/r/news/.rss",
+    "name": "Reddit r/news",
+    "category": "default",
+    "lastError": "HTTP 403: Blocked",
+    "firstSeenAt": "2025-08-30T06:05:40.428Z",
+    "lastSeenAt": "2025-08-30T06:05:40.428Z",
+    "count": 1
+  },
+  {
+    "url": "https://www.reddit.com/r/worldnews/.rss",
+    "name": "Reddit r/worldnews",
+    "category": "default",
+    "lastError": "HTTP 403: Blocked",
+    "firstSeenAt": "2025-08-30T06:05:40.538Z",
+    "lastSeenAt": "2025-08-30T06:05:40.538Z",
+    "count": 1
+  },
+  {
+    "url": "https://www.reddit.com/r/marketing/.rss",
+    "name": "Reddit r/marketing",
+    "category": "marketingForums",
+    "lastError": "HTTP 403: Blocked",
+    "firstSeenAt": "2025-08-30T06:06:34.950Z",
+    "lastSeenAt": "2025-08-30T06:06:34.950Z",
+    "count": 1
+  },
+  {
+    "url": "https://www.reddit.com/r/digital_marketing/.rss",
+    "name": "Reddit r/digital_marketing",
+    "category": "marketingForums",
+    "lastError": "HTTP 403: Blocked",
+    "firstSeenAt": "2025-08-30T06:06:35.051Z",
+    "lastSeenAt": "2025-08-30T06:06:35.051Z",
+    "count": 1
+  },
+  {
+    "url": "https://www.reddit.com/r/SEO/.rss",
+    "name": "Reddit r/SEO",
+    "category": "marketingForums",
+    "lastError": "HTTP 403: Blocked",
+    "firstSeenAt": "2025-08-30T06:06:35.160Z",
+    "lastSeenAt": "2025-08-30T06:06:35.160Z",
+    "count": 1
+  },
+  {
+    "url": "https://www.reddit.com/r/advertising/.rss",
+    "name": "Reddit r/advertising",
+    "category": "marketingForums",
+    "lastError": "HTTP 403: Blocked",
+    "firstSeenAt": "2025-08-30T06:06:35.263Z",
+    "lastSeenAt": "2025-08-30T06:06:35.263Z",
+    "count": 1
+  },
+  {
+    "url": "https://www.reddit.com/r/sales/.rss",
+    "name": "Reddit r/sales",
+    "category": "salesForums",
+    "lastError": "HTTP 403: Blocked",
+    "firstSeenAt": "2025-08-30T06:07:16.471Z",
+    "lastSeenAt": "2025-08-30T06:07:16.471Z",
+    "count": 1
+  },
+  {
+    "url": "https://www.reddit.com/r/entrepreneur/.rss",
+    "name": "Reddit r/Entrepreneur",
+    "category": "salesForums",
+    "lastError": "HTTP 403: Blocked",
+    "firstSeenAt": "2025-08-30T06:07:16.575Z",
+    "lastSeenAt": "2025-08-30T06:07:16.575Z",
+    "count": 1
+  },
+  {
+    "url": "https://www.reddit.com/r/startups/.rss",
+    "name": "Reddit r/startups",
+    "category": "startupsForums",
+    "lastError": "HTTP 403: Blocked",
+    "firstSeenAt": "2025-08-30T06:09:06.306Z",
+    "lastSeenAt": "2025-08-30T06:09:06.306Z",
     "count": 1
   }
 ]
