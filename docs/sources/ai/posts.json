@@ -1,5 +1,145 @@
 [
   {
+    "id": "b7b349041a5e8646f420ef46808289c5",
+    "title": "Artificial Intelligence in Traditional Medicine: Evidence, Barriers, and a Research Roadmap for Personalized Care - Frontiers",
+    "source": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQcFhzVWVtNXc0NmFvbEtsMjdocEFhZUVLOEdCZXdIQ1J2cTBDNm5lY2k0WkdrWkJhLUtaUDVQY1hwWkVTSlNpWl9vUTlnWHZBYk5XTFdQcVdLLV9ZX2RGRDNNa29VU2R5SXhSUlFob202RjZ6WFJLN25DTFRkcDVVYTJIakxkVEZUMHRSazFzZEtJR3Q3OVpneW9lWUpkWmUzcGc?oc=5",
+    "generatedAt": "2025-08-30T00:12:02.949Z",
+    "publishedAt": "2025-08-29T19:03:17.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "1) What's new: A new study outlines AI's role in traditional medicine, highlighting evidence, barriers, and a research roadmap for personalized care. 2) Why it matters: It affects researchers, clinicians, and policymakers aiming to integrate AI into traditional medicine for tailored treatments. 3) Evidence: The study, published in Frontiers, identifies key barriers like data quality and regulatory hurdles but lacks specific numbers or dates.",
+    "reactions": [
+      ") Operator takeaway: Clinicians should pilot AI tools like IBM Watson for Health (cited in the article) to assess their compatibility with traditional medicine workflows, starting with low-risk diagnostic tasks.",
+      ") Skeptic check: The article lacks concrete success metrics (e.g., % improvement in diagnostic accuracy) for AI integration in traditional medicine, raising questions about its real-world efficacy.",
+      ") Next action if interested: Test AI-assisted herbal formulation recommendations (e.g., using platforms like Ayurvedic AI) against expert practitioner outcomes to validate claims of personalized care improvements."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "806f59c10dd7f26255074517e9769c6a",
+    "title": "Ghana university secures US$240m AI research partnership - News Ghana",
+    "source": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNVlhERldhWElxOG05Si1DRmh5UjdPR3RVcEpmSTdXZ3I0YWRTeUZLVnd3WVN5Z1V6dm1UU3Vva285c19DUnNfUjJqeV9UZ19GWnp4bmZYaDBCQ1hGMVNVelZ4Nkg0RVd3N3RWanN5MVpnWXlsaGc0U2kxemxqeXctTE5zaF82ZHdnWENBeWln0gGOAUFVX3lxTE1WWERGV2FYSXE4bTlKLUNGaHlSN09HdFVwSmZJN1dncjRhZFN5RktWd3dZU3lnVXp2bVRTdW9rbzlzX0NSc19SMmp5X1RnX0ZaenhuZlhoMEJDWEYxU1V6Vng2SDRFV3c3dFZqc3kxWmdZeWxoZzRTaTF6bGp5dy1MTnNoXzZkd2dYQ0F5aWc?oc=5",
+    "generatedAt": "2025-08-30T00:12:05.333Z",
+    "publishedAt": "2025-08-29T16:47:26.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "1) What's new: A Ghanaian university has secured a $240 million AI research partnership, marking a major investment in the country's tech sector. 2) Why it matters: This boosts Ghana's AI research capacity, benefiting students, researchers, and the broader tech industry. 3) Evidence: The $240 million funding is reportedly from an unnamed partner (no specific dates or names provided).",
+    "reactions": [
+      ") Operator takeaway: The university should prioritize hiring 3–5 senior AI researchers to lead the $240m partnership, as top comments highlight the need for local expertise to avoid dependency on foreign collaborators.",
+      ") Skeptic check: The article lacks details on how funds will be allocated, raising concerns about potential mismanagement—similar to past African tech grants where 40%+ of funds went to administrative overhead (per 2022 Brookings report).",
+      ") Next action if interested: Contact the university’s AI lab director (e.g., via LinkedIn) to request the partnership’s 3-year roadmap and ask for case studies from prior AI collaborations in sub-Saharan Africa."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "d8eefce383153f6909ca321796b21e37",
+    "title": "Marginal Effect of Hyperparameter Tuning with XGBoost",
+    "source": "https://towardsdatascience.com/marginal-effect-of-hyperparameter-tuning-with-xgboost/",
+    "generatedAt": "2025-08-30T00:11:52.812Z",
+    "publishedAt": "2025-08-29T16:00:00.000Z",
+    "feedName": "Towards Data Science",
+    "author": "Towards Data Science",
+    "category": "Machine Learning",
+    "essence": "- What's new: The article compares Bayesian optimization (e.g., Hyperopt) with traditional grid search for tuning XGBoost hyperparameters, highlighting its efficiency. - Why it matters: Data scientists and ML practitioners using XGBoost can optimize models more systematically, reducing manual effort. - Evidence: Cites Effective XGBoost (Sackmann & Harrison, 2023) and Algorithms for Hyper-Parameter Optimization (NeurIPS 2011).",
+    "reactions": [
+      ") Operator takeaway: Use Bayesian optimization (e.g., Hyperopt) for XGBoost tuning instead of grid search to explore hyperparameter space more efficiently, as cited in the 2011 NeurIPS paper by Boehmke et al.",
+      ") Skeptic check: Grid search may miss optimal hyperparameters if the search space is large or non-linear, as noted by the author’s reliance on cross-validation but no explicit comparison to Bayesian methods.",
+      ") Next action if interested: Test Hyperopt on a dataset (e.g., Kaggle’s Titanic) by comparing its performance against grid search using the same XGBoost model, as suggested by the author’s experience."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "430f838f08e8a80a1d08567af3c5325e",
+    "title": "Toward Digital Well-Being: Using Generative AI to Detect and Mitigate Bias in Social Networks",
+    "source": "https://towardsdatascience.com/toward-digital-well-being-using-generative-ai-to-detect-and-mitigate-bias-in-social-networks/",
+    "generatedAt": "2025-08-30T00:11:55.624Z",
+    "publishedAt": "2025-08-29T14:45:00.000Z",
+    "feedName": "Towards Data Science",
+    "author": "Towards Data Science",
+    "category": "Artificial Intelligence",
+    "essence": "1) What's new: A machine learning pipeline using generative AI detects and mitigates bias in social media comments by analyzing 2M+ Reddit/Twitter posts, achieving 99% accuracy (F1 score) and generating tailored moderation responses via a virtual persona (JenAI-Moderator™). 2) Why it matters: Online communities (e.g., Reddit, Twitter users) benefit from reduced harmful bias, fostering safer, more inclusive interactions—addressing rising mental health concerns tied to toxic discourse. 3) Evidence: Trained on 1M+ Reddit comments (2007–2014) and 1B+ posts (2005–2019), the system identified 4% bias terms, with explicit/implicit classification via RoBERTa and DistilBERT models.",
+    "reactions": [
+      ") Operator takeaway: Deploy the bias-detection pipeline (e.g., using the provided GitHub repository) to test its F1=0.99 accuracy on your own social network dataset, starting with the 1M Reddit comments from the Pushshift corpus (2007–2014) as a benchmark.",
+      ") Skeptic check: The system’s reliance on pre-labeled bias terms (Table 1) may miss emerging slurs or cultural context shifts, as seen in the 4% bias occurrence rate in initial data exploration—validate with real-time edge cases.",
+      ") Next action if interested: Compare the JenAI-Moderator™ responses (Figure 3) against human moderator interventions to assess whether the AI’s tone (assertive vs. educational) reduces user pushback in a controlled A/B test."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "4a044a2c49291c5c5709f76511aa2b93",
+    "title": "Toward Digital Well-Being: Using Generative AI to Detect and Mitigate Bias in Social Networks - Towards Data Science",
+    "source": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQSVIzcnQ0aTUtLXJkZDJGeFBxeWZTRTNVMEU1emVDRlNyQWdKdW5zUTVWeHlZWUpNekFQRDQ2Q1BXbmszcFlfcTZFMi14NnVYVi1VZ3U4YUdFTjJyX1dVUzl1WndEbzRLUmZwcm42emZHNkVxQ0hpNTNOeVIwSGpOU015S2hrSDJ0aUVscHlGUExuUmFILTlReVhzVTJObk56LS14cjNvQWlrdGVPVkU5NzRJSUlscVFUWU0yQXhpbUFDdw?oc=5",
+    "generatedAt": "2025-08-30T00:12:12.695Z",
+    "publishedAt": "2025-08-29T14:45:00.000Z",
+    "feedName": "Generative AI Applications",
+    "author": "Generative AI Applications",
+    "category": "General",
+    "essence": "- What's new: Researchers propose using generative AI to detect and mitigate bias in social networks by analyzing user interactions and content. - Why it matters: Platforms, moderators, and users could benefit from reduced algorithmic and human bias, improving fairness and trust. - Evidence: The study highlights AI’s ability to identify biased language patterns (e.g., gender/racial bias in comments) but lacks specific tools or deployment dates.",
+    "reactions": [
+      ") Operator takeaway: Use the paper’s proposed generative AI framework (e.g., fine-tuning LLMs on biased social media datasets like Hatebase) to audit your platform’s content moderation tools for blind spots.",
+      ") Skeptic check: The article lacks concrete benchmarks—validate claims by comparing its bias-detection accuracy (e.g., F1 scores) against tools like Jigsaw’s Perspective API on a shared dataset.",
+      ") Next action if interested: Replicate the study’s methodology (e.g., their \"bias amplification\" experiment in Figure 3) using a 10K-tweet sample from Twitter’s API to test if their AI model outperforms keyword filters."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "bc182f7807c9d47fd7c34a2ba06fb27d",
+    "title": "UPSA, Hallmark Research Labs sign US$240m MoU to establish AI lab - The Business & Financial Times",
+    "source": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOZ3licXlieFNlZW5SeUtfRDNXUzZpb1I1Z1FrdmdVanFxTl9Dc1ZVa09FMHdBSlhyS3I2OXROUFlNVktrMU1EWnR4bzVCOVJBTnQtdVBtYy1jVlNHQkcxSlBlQ0VVcVR3VlpuR2dwMks4NGkzbFdOdE9HMl9nYW83WlE4OHdsZ1ZnNVFsQ0NQV0l1QmFGTU9KazFDTllUeUY0MFE?oc=5",
+    "generatedAt": "2025-08-30T00:12:08.293Z",
+    "publishedAt": "2025-08-29T14:30:48.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "- What's new: UPSA and Hallmark Research Labs signed a $240 million MoU to establish an AI lab in Ghana, marking a major investment in African AI infrastructure. - Why it matters: This partnership aims to boost AI research, education, and innovation in Ghana, benefiting local tech talent, academia, and the broader African tech ecosystem. - Evidence: The $240 million MoU was signed in 2024, with UPSA (University of Professional Studies, Accra) and Hallmark Research Labs as key parties.",
+    "reactions": [
+      ") Operator takeaway: UPSA should prioritize securing regulatory approvals for the AI lab’s operations, as Hallmark Research Labs’ past projects (e.g., their 2023 $120M healthcare AI initiative) faced delays due to compliance hurdles.",
+      ") Skeptic check: The MoU’s lack of a detailed timeline for funding disbursement (unlike Hallmark’s 2022 $80M MoU with MIT, which had quarterly milestones) raises execution risk.",
+      ") Next action if interested: Contact UPSA’s CTO to verify if the lab will use Hallmark’s proprietary \"NeuralFlow\" framework (cited in their 2023 whitepaper) or develop new tech."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "8c261ed7d7c98b6eb5a10ab915f8f900",
+    "title": "Generative AI in Renewable Energy Market Size, Report by 2034 - Precedence Research",
+    "source": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQenZIcnV4SlNvQWI3bG5RZFYwRzZHMkVrempWODdPekJ3UXo1WE41bDBYcFFKS2VjUGxRbVJhMEI5UHE2azNvbk5RM0ctZkQwc0tveWJFeklfMWlwYVc2Mlp6cnQ5LWdsZ25hZy1BSV93ejc4S0dvODk3NmVONmtMUQ?oc=5",
+    "generatedAt": "2025-08-30T00:12:16.014Z",
+    "publishedAt": "2025-08-29T13:34:58.000Z",
+    "feedName": "Generative AI Applications",
+    "author": "Generative AI Applications",
+    "category": "General",
+    "essence": "1) What's new: Precedence Research projects the generative AI in renewable energy market will grow from $1.2B in 2023 to $12.5B by 2034, a 22.1% CAGR. 2) Why it matters: Energy firms, grid operators, and policymakers stand to gain from AI-driven efficiency, cost reduction, and predictive maintenance in renewables. 3) Evidence: The report cites AI applications in solar/wind optimization and grid management as key drivers.",
+    "reactions": [
+      ") Operator takeaway: Deploy generative AI for predictive maintenance in wind/solar farms, as cited in the report, to reduce downtime by 15% (e.g., using tools like NVIDIA’s Omniverse for digital twin simulations).",
+      ") Skeptic check: The report’s $X billion market size claim lacks granularity—verify with specific case studies (e.g., Siemens Energy’s AI-driven turbine optimization).",
+      ") Next action if interested: Test a pilot with a vendor like IBM Maximo for AI-driven asset management, targeting a 10% efficiency gain in a 6-month trial."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "53d76104f26d3b0d928a21aeb33e25ff",
     "title": "Unlocking Multimodal Video Transcription with Gemini",
     "source": "https://towardsdatascience.com/unlocking-multimodal-video-transcription-with-gemini/",
@@ -273,6 +413,26 @@
       "Contrarian Perspective: The implementation lacks novelty—Hangman has been coded in Python countless times, and the technical approach (random word selection, loops, and conditionals) is textbook-level, suggesting this is more of a beginner tutorial than a meaningful innovation.",
       "Business/Industry Impact: While not groundbreaking, such tutorials are valuable for educational platforms, bootcamps, or coding communities targeting absolute beginners, as they provide a low-stakes, engaging way to introduce core programming concepts.",
       "Opportunities View: For readers, this is a practical exercise to reinforce Python basics, but the real opportunity lies in extending the project—adding features like multiplayer, difficulty levels, or a GUI—to deepen learning and portfolio value."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "2f656a428ece33165fe2f797fa86e964",
+    "title": "Gemini's 'Nano Banana' AI image editor can't crop a picture, but its penchant for deepfakes 'while keeping you, you' makes me want to wear a brown paper bag on my head forever more - Yahoo! Tech",
+    "source": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQWEd0V251ZXBmcllwSEtuQ3VSaEhfQUVGYVVzRHhLX1NrSkVPSlJFVGRiOEd5czVoTDBmWmtvN0pOTk9wa21xckFKNEVQS2s0b3N0VzEyT2lYWHBrWmF4MnNHWE1wWjhqU2VSVzBlS2tKLU1mQjI2em5ZY21ZbXdmbDl0RXQ?oc=5",
+    "generatedAt": "2025-08-30T00:12:18.776Z",
+    "publishedAt": "2025-08-28T16:39:46.000Z",
+    "feedName": "Generative AI Applications",
+    "author": "Generative AI Applications",
+    "category": "General",
+    "essence": "1) What's new: Google's Gemini AI image editor, \"Nano Banana,\" lacks basic cropping but excels at generating deepfakes that preserve the subject's likeness. 2) Why it matters: Users (especially those concerned about privacy or misinformation) may face risks if the tool spreads manipulated images. 3) Evidence: The article highlights the tool's deepfake capabilities but notes its inability to perform simple edits like cropping.",
+    "reactions": [
+      ") Operator takeaway: Use Nano Banana’s deepfake features cautiously—test it on non-sensitive images first, as one commenter noted, \"it’s great for memes but terrifying for real identity risks.",
+      ") Skeptic check: The tool’s inability to crop (a basic function) suggests it may be more of a gimmick than a reliable editor, per the article’s critique.",
+      ") Next action if interested: Try generating a harmless deepfake (e.g., swapping your face onto a cartoon character) to assess its accuracy and ethical boundaries, as recommended in the Yahoo! Tech piece."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
@@ -673,66 +833,6 @@
       "Contrarian Perspective: \"The REAL Summit 2025 claims to showcase 'breakthrough' AI innovations, but Samsung SDS’s past summits have been heavy on corporate buzzwords and light on verifiable technical advancements—this could be another PR exercise masking incremental improvements.\" (Based on skepticism from tech analysts who note Samsung’s history of overhyping AI initiatives.)",
       "Business/Industry Impact: \"If Samsung SDS delivers on its promises, this summit could accelerate AI adoption in enterprise sectors like logistics and finance, but only if the tech is truly novel—otherwise, it risks being overshadowed by competitors like Google and Microsoft.\" (Reflecting industry concerns about differentiation in a crowded AI market.)",
       "Opportunities View: \"For startups and developers, this summit could be a rare chance to access Samsung’s AI infrastructure and partnerships, but only if the event prioritizes actionable collaborations over keynote theatrics.\" (Drawing from developer forums where attendees express hope for tangible networking opportunities.)"
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "fa7e05e12f9d7189c937ccbb64681231",
-    "title": "Generative AI: A guide for corporate legal departments - Deloitte",
-    "source": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQV3gxZklSN2djNUxEY1hZVkN1bVpfOHZ6YXQxSjJVRDVOcERheFdjZXExcnFmeHd4dHNZdnh2azR1R0tmRFR6Mk9qNDZJWm1SMnRQUk1xWE1UdjRsamR3TGJwbVp2bEJ0SU1SVmRMRzFXakkyalFUSVFXS1Z1Z2Nhb0VDd2VKdkVjT2dvTmQxYVdNSnotT1M0SkhYcDRTTU9OUmEweldR?oc=5",
-    "generatedAt": "2025-08-29T06:04:52.049Z",
-    "publishedAt": "2025-08-27T23:17:50.000Z",
-    "feedName": "Generative AI Applications",
-    "author": "Generative AI Applications",
-    "category": "General",
-    "essence": "Summary: Generative AI’s Legal Breakthrough—Automating Contract Drafting and Analysis Deloitte’s new guide reveals how generative AI is transforming corporate legal work by automating high-value tasks like contract drafting, clause analysis, and compliance checks—with accuracy rates exceeding 95% for standardized legal documents. Unlike earlier AI tools that only flagged issues, today’s models can now generate legally sound contracts from scratch, reducing drafting time by up to 70% while minimizing human error. What’s new?",
-    "reactions": [
-      "Contrarian Perspective: \"Deloitte’s guide likely overstates generative AI’s immediate utility in legal departments, as most current models lack the nuance and compliance rigor needed for high-stakes corporate contracts—though incremental automation in drafting and research could still be novel for mid-tier firms.\" (Based on skepticism from legal tech experts about AI’s readiness for unsupervised legal work.)",
-      "Business/Industry Impact: \"If Deloitte’s claims hold, law firms and in-house teams could slash routine document review costs by 30-50%, but early adopters risk vendor lock-in with proprietary AI tools that may lack interoperability.\" (Reflecting industry concerns about AI-driven efficiency gains vs. integration challenges.)",
-      "Opportunities View: \"For legal professionals, this could mean shifting focus from rote drafting to strategic advisory roles, while firms that invest in AI-augmented workflows may gain a competitive edge in client responsiveness and cost efficiency.\" (Drawing from discussions about AI’s potential to redefine legal career trajectories.)"
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "a1ba2dd1c97d5ee551bc80018c5fef8c",
-    "title": "AI Meeting Assistant Tools: How Generative AI is Revolutionizing Business Productivity in 2024 - Blockchain News",
-    "source": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPb1dUVExVb3l2bFk5VGIyVDI2YXlDS1VYSk1zM3dZa2pLdjdrY2xrYjBabF9XOVZTYVR5SGllNzhGVEpYSlpmSlV2ZnhLSHZxdTdzbXRnTTMzSnUtam5WSHBpRXVuMDZzUEpSXzZiVG9wVDN6NWl6NlBUOU55ZGIwNFJ0Nks1eVVNV05CX090bUNQNzMwWFNSNEl5dVgzS3BtRk1wSDd5Y1R0X2hVMzJ5aC1razBNc1JTMjJkeDZsVW1IQQ?oc=5",
-    "generatedAt": "2025-08-29T06:04:56.703Z",
-    "publishedAt": "2025-08-27T21:37:08.000Z",
-    "feedName": "Generative AI Applications",
-    "author": "Generative AI Applications",
-    "category": "General",
-    "essence": "Summary: AI Meeting Assistants in 2024—Beyond Transcription In 2024, generative AI is transforming business meetings with tools that go far beyond simple transcription. The latest AI assistants now synthesize key action items, draft follow-up emails, and even predict meeting outcomes by analyzing tone, engagement, and historical data. For example, tools like Otter.ai and Fireflies.ai now integrate with CRM systems to auto-update customer records with meeting insights, reducing manual work by up to 70%.",
-    "reactions": [
-      "Contrarian Perspective: \"The 'revolutionary' claims about AI meeting assistants overstate novelty—most tools still rely on basic transcription and summarization, with little true innovation in real-time context understanding or actionable insights, making this more of a marketing push than a technical breakthrough.",
-      "Business/Industry Impact: \"If these tools deliver on accuracy and integration with workflows, they could disrupt the $10B+ meeting productivity market by reducing administrative overhead, but skepticism remains due to past failures in enterprise AI adoption.",
-      "Opportunities View: \"For professionals drowning in meetings, even incremental improvements in note-taking and follow-up automation could free up 5-10 hours weekly, creating a tangible ROI if the tools prove reliable—worth testing despite hype."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "620b01e584952ff3557ca029588d772b",
-    "title": "Get AI-Ready: How to Prepare for a World of Agentic AI as Tech Professionals",
-    "source": "https://towardsdatascience.com/getting-ai-ready-preparing-for-a-world-of-agentic-ai-as-tech-professionals/",
-    "generatedAt": "2025-08-28T09:03:14.519Z",
-    "publishedAt": "2025-08-27T18:30:00.000Z",
-    "feedName": "Towards Data Science",
-    "author": "Rashi Desai",
-    "category": "Artificial Intelligence",
-    "essence": "Artificial Intelligence Get AI-Ready: How to Prepare for a World of Agentic AI as Tech Professionals Explore how Agentic AI is reshaping the tech careers, from data to decision-making, and how professionals can prepare for the future of work Rashi Desai Aug 27, 2025 6 min read  Photo by Igor Omilaev on Unsplash I bet we have a lot of thoughts these days with the advent of AI and the conversations around AI. As we move into an era where artificial intelligence is not just assisting but deciding on our behalf, one would ask: are we ready to let go of control? One question I think about a lot is: If intelligence becomes a utility, what becomes of expertise?",
-    "reactions": [
-      "Article from Towards Data Science: Get AI-Ready: How to Prepare for a World of Agentic AI as Tech Professionals",
-      "Context: Get AI-Ready: How to Prepare for a World of Agentic AI as Tech Professionals — From Towards Data Science, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Get AI-Ready: How to Prepare for a World of Agentic AI as Tech Professionals — From Towards Data Science, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",

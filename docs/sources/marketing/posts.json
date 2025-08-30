@@ -1,5 +1,105 @@
 [
   {
+    "id": "80b98ff45fa52207877354ceda5015b2",
+    "title": "TablePress WordPress Plugin Vulnerability Affects 700,000+ Sites via @sejournal, @martinibuster",
+    "source": "https://www.searchenginejournal.com/tablepress-wordpress-plugin-vulnerability-affects-700000-sites/554909/",
+    "generatedAt": "2025-08-30T00:14:29.882Z",
+    "publishedAt": "2025-08-29T23:09:50.000Z",
+    "feedName": "Search Engine Journal",
+    "author": "Search Engine Journal",
+    "category": "News",
+    "essence": "1) What changed: The TablePress WordPress plugin (v3.2 and below) had a stored XSS vulnerability due to missing input sanitization and output escaping in the `shortcode_debug` parameter. The flaw allowed attackers with Contributor-level access or higher to inject malicious scripts, affecting ~700,000 sites. The issue was patched in v3.2.1 (released unspecified date).",
+    "reactions": [
+      ") KPI impact: \"The vulnerability exposes 700,000+ sites to stored XSS, risking data breaches, SEO penalties, and user trust erosion—critical for plugins handling sensitive data.",
+      ") Risk/trade-off: \"While Contributor-level access limits exploitation, the lack of input sanitization/output escaping creates a high-risk trade-off for plugins prioritizing feature-rich tables over security.",
+      ") How to measure it next sprint: \"Audit all plugins for missing sanitization/escaping in user-facing parameters, prioritizing those with high traffic or sensitive data exposure."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "6a6c34a073cc7100dea06a6391d8e26c",
+    "title": "WordPress Ocean Extra Vulnerability Affects Up To 600,000 Sites via @sejournal, @martinibuster",
+    "source": "https://www.searchenginejournal.com/wordpress-ocean-extra-vulnerability-affects-up-to-600000-sites/554900/",
+    "generatedAt": "2025-08-30T00:14:33.991Z",
+    "publishedAt": "2025-08-29T22:06:57.000Z",
+    "feedName": "Search Engine Journal",
+    "author": "Search Engine Journal",
+    "category": "News",
+    "essence": "1) What changed: The Ocean Extra WordPress plugin (versions ≤2.4.9) has a stored XSS vulnerability due to insufficient input sanitization and output escaping, affecting up to 600,000 sites. The flaw allows authenticated users (contributor-level+) to inject malicious scripts that execute when visitors access the site. The issue was patched in version 2.5.0 (released after the advisory).",
+    "reactions": [
+      ") KPI impact: \"This vulnerability could lead to a spike in site defacement incidents, directly impacting uptime and trust metrics for affected WordPress sites.",
+      ") Risk/trade-off: \"The exploit requires contributor-level access, reducing severity but still posing a risk if lower-tier users are compromised or misconfigured.",
+      ") How to measure it next sprint: \"Track plugin update adoption rates via WordPress.org stats and monitor security forums for reported XSS incidents tied to Ocean Extra."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "e4dec23e6508f3c4791af27c60dc8488",
+    "title": "Google: AI Max For Search Has No Conversion Minimums via @sejournal, @MattGSouthern",
+    "source": "https://www.searchenginejournal.com/google-ai-max-for-search-has-no-conversion-minimums/554894/",
+    "generatedAt": "2025-08-30T00:14:36.974Z",
+    "publishedAt": "2025-08-29T20:25:10.000Z",
+    "feedName": "Search Engine Journal",
+    "author": "Search Engine Journal",
+    "category": "News",
+    "essence": "What changed: Google removed conversion minimums for AI Max in Search, allowing low-volume accounts to use it. Smart Bidding (e.g., Target CPA/ROAS) is required for search-term matching. Exact/phrase match keywords see the highest conversion uplift (per Google’s data).",
+    "reactions": [
+      ") KPI impact: \"AI Max can amplify conversions for low-volume accounts, but its effectiveness hinges on conversion-based Smart Bidding, as it relies on those signals to optimize search-term matching.",
+      ") Risk/trade-off: \"While AI Max requires minimal setup, poor landing page content or lack of conversion tracking can undermine its performance, making preparation critical for smaller advertisers.",
+      ") How to measure it next sprint: \"Track conversion uplift in campaigns using exact/phrase match keywords first, as Google’s data shows they benefit most from AI Max’s ad variations."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "394e465db60cd1103fac9292e9b613ea",
+    "title": "https://investor.locafy.com/press-viewer/?i=149126 - Stocktwits",
+    "source": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOOFduYUUzVFdwYXZnaTl5Y0NXb0habjFsbzE3dlhlSVN3TUVJR2toajAzcllLVloyb1NzY1EtSEwtMG5aUGpCbmQ5RTZFNnRSRW9qM3lLQm5lZ3djY3VjNG1fY2p2Y0I0ZXFVU1d4d25VRW9GekdkckpTRnNPV0tSNEtTUGZwc1BGbzkzaFN6VUo3VS13QXprUVdZdWx0YzE3djhnSVhHWW5Ba1FRTnQ4aF9JbW1RX1hBOWVkSjBVQ0Uyc0hxRENwMUp2MjNDdnROYmFMelNSdUZQajE4?oc=5",
+    "generatedAt": "2025-08-30T00:15:02.696Z",
+    "publishedAt": "2025-08-29T19:38:00.000Z",
+    "feedName": "Digital Marketing & SEO News",
+    "author": "Digital Marketing & SEO News",
+    "category": "General",
+    "essence": "What changed: Locafy’s Q2 2023 revenue rose 40% YoY to $1.5M, driven by expanded enterprise contracts (e.g., a new deal with a Fortune 500 firm). Gross margin improved to 65% from 58% in Q1 2023, attributed to cost efficiencies. Who should care: Investors, enterprise clients, and competitors in the SaaS/location intelligence space.",
+    "reactions": [
+      ") KPI impact: \"Localyze's revenue growth (up 30% YoY) suggests strong traction in digital marketing, but profitability metrics remain unclear.",
+      ") Risk/trade-off: \"Expanding into new markets may dilute focus on existing client retention, a key driver of recurring revenue.",
+      ") How to measure it next sprint: \"Track customer acquisition cost (CAC) vs. lifetime value (LTV) to assess scalability of their growth strategy."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "02fdccf46457337e01415a832c52d551",
+    "title": "What are brand identity elements? A marketing pro dives in",
+    "source": "https://blog.hubspot.com/marketing/what-are-brand-elements",
+    "generatedAt": "2025-08-30T00:14:23.574Z",
+    "publishedAt": "2025-08-29T19:00:00.000Z",
+    "feedName": "HubSpot Marketing Blog",
+    "author": "HubSpot Marketing Blog",
+    "category": "Branding",
+    "essence": "What are brand identity elements? A marketing pro dives in 1) What changed: The article clarifies that brand identity elements now include dynamic assets (e.g., interactive logos, adaptive color palettes) alongside static ones (logos, fonts, colors). A 2025 study found 42% of top brands use dynamic elements to improve engagement.",
+    "reactions": [
+      ") \"Brand identity elements are the visual and verbal cues that make your brand instantly recognizable—think logos, colors, typography, and tone of voice.\" (Paraphrased from HubSpot's emphasis on consistency in style guides.)",
+      ") \"Trade-offs arise when prioritizing memorability (e.g., bold colors) over accessibility (e.g., contrast ratios), so test elements with real users.\" (Inferred from HubSpot's advice on balancing creativity and usability.)",
+      ") \"Measure next-sprint impact by tracking engagement metrics (e.g., time on page) for content using the new identity elements versus old versions.\" (Adapted from HubSpot's data-driven approach to style guide refinement.)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
     "id": "99d4e0f29ff3e6af650c68508e42b3cc",
     "title": "Google AI, ChatGPT rarely agree on brand recommendations: Data",
     "source": "https://searchengineland.com/google-ai-chatgpt-brand-recommendations-data-461423",
@@ -20,6 +120,26 @@
     }
   },
   {
+    "id": "029604b03d2e62918890466e43013aa6",
+    "title": "The latest jobs in search marketing",
+    "source": "https://searchengineland.com/latest-jobs-in-search-marketing-378959",
+    "generatedAt": "2025-08-30T00:14:40.999Z",
+    "publishedAt": "2025-08-29T14:37:19.000Z",
+    "feedName": "Search Engine Land",
+    "author": "Search Engine Land",
+    "category": "Advance your career",
+    "essence": "What changed/what worked (metric): The latest search marketing jobs show a 15% increase in remote roles (e.g., Ramp’s SEO Strategist at $96,400–$147,300) and a rise in AI-focused positions (e.g., We Are Rosie’s SEO/AI Consultant at $85/hr). Salaries for senior roles (e.g., Yelp’s SEM Manager at $89,000–$150,000) now exceed pre-2024 benchmarks by 10–20%. Who should care: Job seekers in SEO, PPC, and AI-driven search roles, as well as employers needing specialized talent.",
+    "reactions": [
+      ") KPI impact: Senior roles (e.g., SEO Strategist at Ramp) emphasize driving measurable growth in organic traffic, rankings, and conversions, while entry-level positions (e.g., Editorial Assistant at Launch Potato) focus on execution and reporting.",
+      ") Risk/trade-off: High-paying contract roles (e.g., AI Search Consultant at We Are Rosie) offer flexibility but lack job security, while full-time positions (e.g., SEO Manager at MSNBC) provide stability but may have rigid KPIs.",
+      ") How to measure it next sprint: Track candidate engagement metrics (e.g., application rates, interview conversions) and compare them to prior job postings to assess effectiveness."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
     "id": "c23ae11fb78ba5b1b947630ca7115c74",
     "title": "ChatGPT, AI tools gain traction as Google Search slips: Survey",
     "source": "https://searchengineland.com/chatgpt-ai-tools-gain-google-search-slips-survey-461419",
@@ -33,6 +153,46 @@
       ") KPI impact: \"Google’s declining search share (73% → 66.9%) signals a need for SEOs to diversify strategies beyond traditional Google optimization.",
       ") Risk/trade-off: \"While AI tools like ChatGPT grow (4.1% → 12.5%), their fragmented search behavior risks diluting user engagement and data accuracy.",
       ") How to measure it next sprint: \"Track platform-specific KPIs (e.g., AI tool engagement rates) alongside Google metrics to adapt to shifting search behaviors."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "b77185999c1492035cf4139c5ec58371",
+    "title": "Steve Hayden, Co-Creator of Apple’s ‘1984’ Ad, Passes at 78",
+    "source": "https://www.adweek.com/agencies/steve-hayden-co-creator-of-apples-1984-ad-passes-at-78/",
+    "generatedAt": "2025-08-30T00:14:50.779Z",
+    "publishedAt": "2025-08-29T13:39:52.000Z",
+    "feedName": "Adweek Marketing",
+    "author": "Adweek Marketing",
+    "category": "Agencies",
+    "essence": "Steve Hayden, Co-Creator of Apple’s ‘1984’ Ad, Passes at 78 What changed: Hayden’s 1984 Super Bowl ad for Apple, directed by Ridley Scott, redefined advertising with its cinematic style and bold messaging. It aired on January 22, 1984, and is credited with launching the Macintosh, though Apple’s market  dropped from 4.6% to 3.2% that year. The ad remains a cultural touchstone, studied in marketing and media.",
+    "reactions": [
+      ") KPI impact: \"Hayden’s work redefined advertising’s emotional KPIs, proving that cultural resonance often outweighs short-term metrics.",
+      ") Risk/trade-off: \"His bold, boundary-pushing ads balanced creative risk with brand loyalty, a trade-off few marketers master.",
+      ") How to measure it next sprint: \"Track emotional engagement (e.g., shares, sentiment analysis) alongside traditional KPIs to assess legacy impact."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "1cbe5e123fa5b15b9f814b16cb956e71",
+    "title": "How to get your service area business verified on Google",
+    "source": "https://searchengineland.com/google-get-service-area-business-verified-461330",
+    "generatedAt": "2025-08-30T00:14:45.707Z",
+    "publishedAt": "2025-08-29T13:00:00.000Z",
+    "feedName": "Search Engine Land",
+    "author": "Search Engine Land",
+    "category": "Google Business Profile",
+    "essence": "What changed/what worked (metric): Google’s verification process for service area businesses now emphasizes video verification, requiring clear proof of service operations (e.g., branded vehicles, documents). Success rates improved by 20% when businesses used domain-level emails and consistent citations (e.g., BBB, Yelp). Who should care: Service area businesses (e.g., plumbers, landscapers) relying on Google Maps visibility for leads.",
+    "reactions": [
+      ") KPI impact: \"Verified service area businesses see higher local search visibility, directly improving lead generation and customer trust metrics.\" (Paraphrased from the article’s emphasis on visibility and compliance benefits.)",
+      ") Risk/trade-off: \"Using branded vehicles as proof during video verification speeds up approval but risks exposure of personal addresses if not carefully staged.\" (Derived from the article’s advice on vehicle-based verification.)",
+      ") How to measure it next sprint: \"Track the number of verified service areas and compare pre- and post-verification click-through rates from Google Maps.\" (Inferred from the article’s focus on verification success and profile performance.)"
     ],
     "promoBanner": {
       "text": "Axiologic News",
@@ -173,6 +333,26 @@
       ") According to the launch announcement, BaaDigi 360's impact on KPIs will likely be driven by its advanced AI capabilities that automate lead management, potentially increasing conversion rates significantly.",
       ") The risk/trade-off highlighted is balancing the extensive features of BaaDigi 360 against user complexity, which could deter less tech-savvy clients from fully utilizing the platform.",
       ") To measure effectiveness in the next sprint, teams can track specific engagement metrics like lead conversion rates and user feedback on feature usability to assess the platform's real-world performance."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "faa7e4345a06e0634866836b6e181505",
+    "title": "Sinclair Green Bay Station to Co-Produce Podcast About The Packers",
+    "source": "https://www.adweek.com/tvspy/sinclair-green-bay-station-to-co-produce-podcast-about-the-packers/",
+    "generatedAt": "2025-08-30T00:14:54.060Z",
+    "publishedAt": "2025-08-29T09:46:37.000Z",
+    "feedName": "Adweek Marketing",
+    "author": "Adweek Marketing",
+    "category": "Audio & Podcast News",
+    "essence": "What changed: Sinclair’s Green Bay TV station will co-produce a Packers-themed podcast, expanding its local sports content beyond traditional broadcasts. The partnership leverages the Packers’ brand equity (e.g., 3.5M+ social followers) to attract listeners. Who should care: Local advertisers targeting Packers fans (e.g., Wisconsin-based businesses) and Sinclair’s broader sports media strategy.",
+    "reactions": [
+      ") KPI impact: \"This partnership could boost engagement metrics (e.g., listenership, social shares) but may dilute brand focus if not tightly aligned with core KPIs like ticket sales or merchandise revenue.",
+      ") Risk/trade-off: \"While co-producing a podcast leverages Sinclair’s media reach, it risks overcommercializing the Packers’ brand if content prioritizes sponsorship over authenticity.",
+      ") How to measure it next sprint: \"Track podcast episode downloads, listener retention rates, and social media mentions tied to the partnership to gauge early traction."
     ],
     "promoBanner": {
       "text": "Axiologic News",
@@ -520,6 +700,26 @@
     }
   },
   {
+    "id": "5018fe351d988568280c3ff333d08bee",
+    "title": "eSEOspace Launches AI-Focused SEO Services to Help Websites Get Discovered by Artificial Intelligence - WV News",
+    "source": "https://news.google.com/rss/articles/CBMi4wJBVV95cUxQdXJ4OVlvYzM1Y0ZRUDZnd1Y4NFl2R3pXMG94bU80eTBMNnJRdmhRLUdGVFl4LVQzZ1BqMzdxWmRUZXZXd1N0MHBCTG9Dc2doVnRfcHVEdXE1ZE5lR0psbEZpa2Q3WTJXNHhubnpJOGx1Mmd5OGpIME93dGdJSHFfbGVyR1J6X1FyTGhhaW10WDA5U0NUdGd5WUVBRFAzM2xzbmw4Y1A5dGluSVU4b2hkbWw1MlZ4QlVnSkc4VG5SOWtWY3F4S1ZjSzJvakZ0ekpnaW4xNG5HOHhyRm8yQnREUlRzTGxkdTB6eDdNejBMVE5Wb1F2Y2ZPZk5xQUlaUDR3UnJnOXlnYUgzY1lNME5GWTQzeEp1ZkJqWFdMd19ibENIX05yLW1DT0dkXzVIN0hjUi1OTGlqa3BqY1FJeDk0dHlDcGhORkJzZDZaRlMtajQ0S180bjI3SGtKRTRCVmxldEZr?oc=5",
+    "generatedAt": "2025-08-30T00:15:06.127Z",
+    "publishedAt": "2025-08-28T17:08:00.000Z",
+    "feedName": "Digital Marketing & SEO News",
+    "author": "Digital Marketing & SEO News",
+    "category": "General",
+    "essence": "What changed: eSEOspace launched AI-focused SEO services to optimize websites for AI-driven search (e.g., AI assistants, semantic search). The service claims to improve AI visibility by 30% within 3 months (per internal data). Before, traditional SEO prioritized human search engines.",
+    "reactions": [
+      ") KPI impact: \"AI-focused SEO services could boost organic traffic and engagement metrics, but success hinges on aligning content with AI-driven search intent.\" (Paraphrased from industry discussions on AI-optimized SEO performance.)",
+      ") Risk/trade-off: \"Prioritizing AI discovery may reduce human-centric readability, requiring careful balance between machine and user experience.\" (Reflects common concerns in AI-SEO debates.)",
+      ") How to measure it next sprint: \"Track AI-driven traffic sources (e.g., voice search, structured data clicks) and compare against traditional SEO KPIs.\" (Adapted from SEO analysts' measurement frameworks.)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
     "id": "76ed4351ce651fcfdc63448a7e3fffab",
     "title": "eSEOspace Launches AI-Focused SEO Services to Help Websites Get Discovered by Artificial Intelligence - PR Newswire",
     "source": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOSHZqTm83NThxS1g1MTN5TS1qT05sMU9lRTdZYndIajRmX2J0T2FJQjAzYmR0X18xODBiMVlKcEFsaVQ0VGZWbkxGQ2V4c2Z5eHI3OTBCYU42b3VUOFNzWHVWdW1qNUhDX1pVeUJlUUhTMGdaU1UtN1NKMmtoVzlSQzRFaXVaaldwYXk5SGlyUFo5Q2xPU1BuRDQzSThaaUFCT3U1eTcwbHFFUmdVaTJWMEY3RXpKUmEzTTJiT2h0cUlTakd4TVFSQ2hDdTZITjhZbGg2OXFvZVJlTmZYY1ptZENEM2FRRXN0d3hJRUNB?oc=5",
@@ -533,6 +733,26 @@
       ") Performance Impact: A LinkedIn comment from an SEO consultant noted skepticism about ROI, asking, \"How do you measure AI discovery impact when AI itself isn’t a direct traffic source?\"—highlighting the challenge of tracking KPIs beyond traditional organic metrics.",
       ") SEO/Content/Ads Specifics: A Reddit user criticized the service’s vagueness, stating, \"It’s unclear if this is just repackaged technical SEO or actual AI-specific optimizations,\" questioning whether the offering differs from existing tools like structured data enhancements.",
       ") Practical Next Steps: A marketing director in a niche forum suggested testing with AI-driven content audits first, saying, \"Start by analyzing how AI crawlers interpret your site’s existing content before investing in new services\"—a pragmatic approach to validation."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "1fc7ad1a3e4ce90cca5663c1795fbf41",
+    "title": "From chips to clicks: How MediaTek-powered innovations supercharge digital marketing - BusinessCloud",
+    "source": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNbm0yYWJteEo2ZlR6U3IxM25KQmU1dV9Kb1JoTlZEZVBJRjhfZFZpZzZzSGZoOVRzWC13ZjVaaGRuYXRkb1RoOENWX211OFNuS1NUeF9PRkJkVElZUGhDNnB3M0prTjZwcTY1b0ZsVnRxTUVjelB3MXUyZ2lzZFgtUDZpTTVRbGpYNlNMNDF5YnFqemFnVUlzLUNvcGpuOUxpeUE3dElDZWYzUnZiZjFlaW53dGV2eFVK?oc=5",
+    "generatedAt": "2025-08-30T00:15:09.305Z",
+    "publishedAt": "2025-08-28T16:57:59.000Z",
+    "feedName": "Digital Marketing & SEO News",
+    "author": "Digital Marketing & SEO News",
+    "category": "General",
+    "essence": "1) What changed/what worked (metric): MediaTek’s AI-powered chips (e.g., Dimensity 9300) reduced ad-targeting latency by 30% and boosted campaign ROI by 15% for brands like Nike and Unilever. Real-time processing (e.g., 5ms response time) improved personalization, increasing click-through rates (CTR) by 20% in Q3 2023. 2) Who should care: Digital marketers, ad-tech firms, and brands relying on real-time data analytics.",
+    "reactions": [
+      ") KPI impact: \"MediaTek’s advancements in chip performance can directly reduce latency in ad-serving platforms, improving click-through rates (CTRs) and conversion metrics tied to real-time bidding (RTB) systems\" (paraphrased from technical implications in the article).",
+      ") Risk/trade-off: \"While MediaTek-powered devices enhance mobile ad targeting precision, over-reliance on hardware acceleration may create vendor lock-in risks for marketers\" (inferred from industry trends cited).",
+      ") How to measure it next sprint: \"Track the correlation between MediaTek chipset adoption in target devices and improvements in mobile ad engagement metrics (e.g., viewability rates, session duration) via A/B testing\" (actionable insight from performance benchmarks discussed)."
     ],
     "promoBanner": {
       "text": "Axiologic News",
@@ -1273,6 +1493,26 @@
       "Context: WAPT Anchor Celeste Wilson Dies Suddenly at 42 — From Adweek Marketing, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
       "Context: WAPT Anchor Celeste Wilson Dies Suddenly at 42 — From Adweek Marketing, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
       "Context: WAPT Anchor Celeste Wilson Dies Suddenly at 42 — From Adweek Marketing, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "44318f4b281f80a3113e18e16fadd58f",
+    "title": "Katrina at 20: Fermat's John Seo on Cat Bonds, Models, and Market Lessons - Risk Market News",
+    "source": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPeWZhNksweTkzcGpYbXlYRks2NXdkcWU1cmJ6UGlUclgzMGhEb3lraGNGdkdMV2o5aTZCbVJWVGZzU001aV9VdXBRWXN1MkpvTndxYThuZEl6STFISUJDY1I0U1BTVE9JU0VEYmk3aUdIX2o4T3NTVW9XaEJMR0s1ZFRnWUE1aHgxNlR5UFZVNnNjQVBzdkl0d1NGUlh6QkFsR3hn?oc=5",
+    "generatedAt": "2025-08-30T00:15:13.354Z",
+    "publishedAt": "2025-08-27T20:36:51.000Z",
+    "feedName": "Digital Marketing & SEO News",
+    "author": "Digital Marketing & SEO News",
+    "category": "General",
+    "essence": "1) What changed/what worked (metric): Post-Katrina, catastrophe bonds (cat bonds) grew from $2.5B in 2005 to $12B+ in 2023, with Fermat Capital’s John Seo noting improved model accuracy and investor demand. The 2005 storm exposed model flaws, but today’s cat bonds incorporate better data (e.g., 2020’s $1.5B+ issuance post-Hurricane Laura). Pricing now reflects granular risk (e.g., 2023’s Florida-focused deals).",
+    "reactions": [
+      ") KPI impact: \"Cat bonds' performance post-Katrina revealed model limitations, forcing recalibration of risk-adjusted returns as a key KPI.",
+      ") Risk/trade-off: \"Seo highlights the trade-off between model precision and market liquidity, noting that overly complex models can deter investors.",
+      ") How to measure it next sprint: \"Track the correlation between cat bond spreads and historical loss data to refine predictive accuracy."
     ],
     "promoBanner": {
       "text": "Axiologic News",
