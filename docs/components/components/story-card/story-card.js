@@ -903,11 +903,9 @@ export class StoryCard {
             const capApplied = maxTotal > maxHViewport;
             const bodies = this.element.querySelectorAll('.card-body');
             bodies.forEach(b => {
-                // Allow body to scroll only when needed
+                // Allow body to scroll only when needed; padding is handled via CSS uniformly
                 b.style.overflowY = capApplied ? 'auto' : 'hidden';
-                // Reduce unused whitespace on short slides
                 b.style.minHeight = '0';
-                b.style.paddingBottom = '12px';
             });
         } catch (_) { /* ignore */ }
     }

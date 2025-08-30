@@ -17,10 +17,15 @@ export class NewsFeedPage {
         this.touchEndX = 0;
         this._navLock = false; // prevents double-advance on same gesture
         this.isLoadingMore = false;
+        this._postsLoaded = false;
         this.invalidate();
     }
 
     async beforeRender() {
+        if (this._postsLoaded) {
+            try { window.logTS('NF: beforeRender skipped (already loaded)'); } catch (_) {}
+            return;
+        }
         try { if (window.__LOGS_ENABLED) { console.time('NF: full load'); console.time('NF: waiting UI'); } } catch (_) {}
         // Always start on selection card; do not jump to first news automatically
         this.startAtFirstNews = false;
@@ -212,6 +217,7 @@ export class NewsFeedPage {
             // This should now only happen if both local storage and JSON are empty
             this.posts = [this.createFallbackPost()];
         }
+        this._postsLoaded = true;
     }
 
     afterRender() {
@@ -343,17 +349,18 @@ export class NewsFeedPage {
         for (let i = start; i <= end; i++) {
             this.createCardAt(i);
         }
-        // Remove outside
+        // Do not remove cards above the current window to avoid scroll position jumps.
+        // Optionally prune only far-below cards to keep DOM light.
+        const pruneThreshold = end + 4; // keep a small tail below
         for (const idx of Array.from(this.cardEls.keys())) {
-            if (idx < start || idx > end) this.removeCardAt(idx);
+            if (idx > pruneThreshold) this.removeCardAt(idx);
         }
     }
 
     setupScrollDetection() {
         const container = this.element.querySelector('.news-feed-container');
         if (!container) return;
-        // Disable snap while on the selection card so nothing auto-centers it
-        try { container.style.scrollSnapType = 'none'; } catch (_) {}
+        // Use fully native scrolling; no scroll-snap tweaks
 
         let isScrolling = false;
         let scrollTimeout;
@@ -378,11 +385,6 @@ export class NewsFeedPage {
             const activeEl = this.cardEls.get(this.currentStoryIndex) || cards[0];
             if (activeEl) {
                 activeEl.classList.add('active-card');
-                // Also mark neighbor classes initially
-                const prevEl = this.cardEls.get(this.currentStoryIndex - 1);
-                const nextEl = this.cardEls.get(this.currentStoryIndex + 1);
-                if (prevEl) prevEl.classList.add('prev-card');
-                if (nextEl) nextEl.classList.add('next-card');
                 // Ensure starting position is the selection card on all viewports
                 // Always align to start for first two cards as well
                 activeEl.scrollIntoView({ behavior: 'auto', block: 'start' });
@@ -448,24 +450,34 @@ export class NewsFeedPage {
         const cards = container.querySelectorAll('story-card');
         const containerRect = container.getBoundingClientRect();
 
-        // Determine first fully visible card from top to bottom
-        const tol = 4; // tolerance px to avoid off-by-1 with borders/margins
+        // Determine active card using robust geometry:
+        // 1) Prefer the first card fully inside the container (top>=top+1, bottom<=bottom-1)
+        // 2) If none fully inside, choose the card whose center is closest to the container center
         let newActive = this.currentStoryIndex;
         const nearTop = (container.scrollTop || 0) <= 24;
         if (nearTop && this.cardEls.has(0)) {
             newActive = 0;
         } else {
-            // Iterate in DOM order; pick first fully visible
+            const centerY = containerRect.top + containerRect.height / 2;
+            let bestByCenter = { dist: Infinity, idx: null };
+            let fullyFound = null;
             for (const card of cards) {
                 const rect = card.getBoundingClientRect();
-                const fullyVisible = rect.top >= (containerRect.top + tol) && rect.bottom <= (containerRect.bottom - tol);
-                if (fullyVisible) {
-                    const absIndex = parseInt(card.getAttribute('data-index'), 10);
-                    if (Number.isFinite(absIndex)) {
-                        newActive = absIndex;
-                        break;
-                    }
+                const absIndex = parseInt(card.getAttribute('data-index'), 10);
+                if (!Number.isFinite(absIndex)) continue;
+                const fully = (rect.top >= containerRect.top + 1) && (rect.bottom <= containerRect.bottom - 1);
+                if (fully && fullyFound === null) {
+                    fullyFound = absIndex;
+                    break;
                 }
+                const cardCenter = rect.top + rect.height / 2;
+                const dist = Math.abs(cardCenter - centerY);
+                if (dist < bestByCenter.dist) bestByCenter = { dist, idx: absIndex };
+            }
+            if (fullyFound !== null) {
+                newActive = fullyFound;
+            } else if (bestByCenter.idx !== null) {
+                newActive = bestByCenter.idx;
             }
         }
 
@@ -485,18 +497,12 @@ export class NewsFeedPage {
 
             // Set new active and start
             this.currentStoryIndex = newActive;
-            // Re-enable snapping only after leaving selection card
-            try { container.style.scrollSnapType = (this.currentStoryIndex === 0) ? 'none' : 'y proximity'; } catch (_) {}
+                // Keep native scrolling (no scroll-snap)
             // Ensure window includes neighbors
             this.ensureVirtualWindow(this.currentStoryIndex);
             const activePresenter = this.storyCardsMap.get(newActive);
             const activeEl = this.cardEls.get(newActive);
             if (activeEl) activeEl.classList.add('active-card');
-            // Mark neighbors
-            const prevEl = this.cardEls.get(newActive - 1);
-            const nextEl = this.cardEls.get(newActive + 1);
-            if (prevEl) prevEl.classList.add('prev-card');
-            if (nextEl) nextEl.classList.add('next-card');
             if (activePresenter) activePresenter.startCarousel();
             
             // Mark this post as having been centered
@@ -506,16 +512,11 @@ export class NewsFeedPage {
         } else {
             // Maintain active class on current
             const activeEl = this.cardEls.get(this.currentStoryIndex);
-            const prevEl = this.cardEls.get(this.currentStoryIndex - 1);
-            const nextEl = this.cardEls.get(this.currentStoryIndex + 1);
             cards.forEach(el => el.classList.remove('active-card', 'prev-card', 'next-card'));
             if (activeEl) activeEl.classList.add('active-card');
-            if (prevEl) prevEl.classList.add('prev-card');
-            if (nextEl) nextEl.classList.add('next-card');
             // Ensure current active is registered as centered
             await this.markAsCentered(this.currentStoryIndex);
-            // Keep snap disabled while on selection card
-            try { container.style.scrollSnapType = (this.currentStoryIndex === 0) ? 'none' : 'y proximity'; } catch (_) {}
+            // Keep native scrolling (no scroll-snap)
         }
     }
 

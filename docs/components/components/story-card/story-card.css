@@ -39,7 +39,6 @@
 .card-time { margin-left: 8px; }
 
 .favorite-btn {
-    display: none; /* hidden by default; shown only when active or in favorites page */
     grid-column: 2;
     align-self: center;
     justify-self: end;
@@ -50,11 +49,13 @@
     border-radius: 14px;
     width: 28px;
     height: 28px;
-    display: inline-flex;
+    display: inline-flex; /* always reserve space to avoid layout shift */
     align-items: center;
     justify-content: center;
     cursor: pointer;
     transition: transform 0.15s ease, background 0.2s ease, color 0.2s ease, opacity 0.2s ease, border-color 0.2s ease;
+    visibility: hidden; /* hidden by default; shown when active or in favorites page */
+    opacity: 0;
 }
 
 .favorite-btn:hover { transform: scale(1.05); }
@@ -63,11 +64,11 @@
 .favorite-btn.favorited i { color: #ff4060; }
 
 /* Show heart only on the active (centered) card in the feed */
-story-card.active-card .favorite-btn { display: inline-flex; }
-story-card.prev-card .favorite-btn, story-card.next-card .favorite-btn { display: none !important; }
+story-card.active-card .favorite-btn { visibility: visible; opacity: 1; }
+story-card.prev-card .favorite-btn, story-card.next-card .favorite-btn { visibility: hidden !important; opacity: 0 !important; }
 
 /* In Favorites page, always show the heart */
-.favorites-wrapper story-card .favorite-btn { display: inline-flex; }
+.favorites-wrapper story-card .favorite-btn { visibility: visible; opacity: 1; }
 
 /* Hide favorite on selection card */
 .story-card.selection-mode .favorite-btn,
@@ -152,7 +153,8 @@ story-card.prev-card .favorite-btn, story-card.next-card .favorite-btn { display
     width: 100%;
     min-height: auto;
     height: 100%; /* Stretch to slide height */
-    padding: 24px 16px 16px 16px; /* extra top to avoid overlap with progress bars */
+    /* Reserve extra bottom space from the start for overlays/indicators */
+    padding: 24px 16px 48px 16px;
     color: var(--text);
     position: relative;
     z-index: 2;
@@ -274,7 +276,8 @@ story-card.prev-card .favorite-btn, story-card.next-card .favorite-btn { display
     overflow-y: auto;
     overflow-x: hidden;
     padding-right: 0;
-    padding-bottom: 16px; /* smaller bottom space */
+    /* Ensure consistent bottom space across all slides to prevent jumps */
+    padding-bottom: 32px;
     max-height: calc(100vh - 220px); /* softer cap */
     min-height: 200px; /* smaller minimum */
     scrollbar-width: thin;
