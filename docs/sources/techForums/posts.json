@@ -1,5 +1,25 @@
 [
   {
+    "id": "dd08a6ec00fe314dca523158a423f84c",
+    "title": "Bcachefs Goes to \"Externally Maintained\"",
+    "source": "https://lwn.net/Articles/1035736/",
+    "generatedAt": "2025-08-31T06:08:43.240Z",
+    "publishedAt": "2025-08-30T13:07:41.000Z",
+    "feedName": "Hacker News (Frontpage)",
+    "author": "Hacker News (Frontpage)",
+    "category": "General",
+    "essence": "Bcachefs Maintainer Status Change Context: Linus Torvalds reclassified bcachefs as \"externally maintained,\" signaling reduced integration with the mainline Linux kernel. The change implies no imminent removal but limits future upstreaming. Pro: \"Bcachefs remains in the kernel, just not actively maintained by Torvalds' team\"—ensures continued availability.",
+    "reactions": [
+      ") Top comment – The code will likely remain in the kernel but stagnate without further upstream changes, raising questions about maintenance and bit-rot.",
+      ") Practitioner – Designating a new maintainer is challenging, as it risks burnout or recreating the same conflicts with Linus over release processes.",
+      ") Skeptic – Distros can package bcachefs independently, but Debian’s past issues show downstream maintainers may not align with upstream priorities."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
     "id": "3d18c8f1607badaf2ba3ae890aeb565f",
     "title": "Open sourced my building energy optimization platform - lessons learned from solo development",
     "source": "https://www.reddit.com/r/programming/comments/1n35dsa/open_sourced_my_building_energy_optimization/",
