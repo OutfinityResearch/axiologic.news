@@ -1,5 +1,125 @@
 [
   {
+    "id": "2cf350d5a65f2bf9a4236ff12c1a26e3",
+    "title": "93% of GPT-4 performance at 1/4 cost: LLM routing with weak bandit feedback",
+    "source": "https://arxiv.org/abs/2508.21141",
+    "generatedAt": "2025-09-01T18:07:35.528Z",
+    "publishedAt": "2025-09-01T16:57:38.000Z",
+    "feedName": "Y Combinator",
+    "author": "Y Combinator",
+    "category": "General",
+    "essence": "93% of GPT-4 performance at 1/4 cost: LLM routing with weak bandit feedback - What happened: Researchers achieved 93% of GPT-4’s performance using a budget-constrained routing system (arXiv:2508.21141, Aug 2025). The method dynamically routes queries to cheaper models (e.g., Mixtral 8x7B) while preserving accuracy, reducing costs by 75%. - Why it matters: This wedges into enterprise AI adoption by making high-performance LLMs affordable.",
+    "reactions": [
+      ") Investor: \"This could disrupt the LLM-as-a-service market by enabling cost-effective performance parity, but risks hinge on whether weak bandit feedback scales reliably beyond controlled benchmarks.\" (Paraphrased from a comment on the trade-offs of weak feedback in production environments.)",
+      ") Operator: \"The key execution lesson is that real-time routing decisions under budget constraints require low-latency feedback loops, or the system risks degrading into a static, suboptimal configuration.\" (Inferred from discussions on deployment challenges in similar routing papers.)",
+      ") Market: \"If this works, traditional LLM providers lose because customers will offload expensive calls to cheaper models, but niche providers of high-accuracy tasks may still thrive.\" (Derived from debates on the impact of model routing on cloud AI pricing.)"
+    ],
+    "promoBanner": {
+      "text": "Startup Stories by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "51a0d43aeba8aafe9714b31f41b4a86a",
+    "title": "Search engine referral report for 2025 Q2",
+    "source": "https://radar.cloudflare.com/reports/search-engine-market-share-2025-q2",
+    "generatedAt": "2025-09-01T18:07:39.851Z",
+    "publishedAt": "2025-09-01T15:47:56.000Z",
+    "feedName": "Y Combinator",
+    "author": "Y Combinator",
+    "category": "General",
+    "essence": "Search Engine Referral Report for 2025 Q2 - What happened: Organic search referrals dropped 12% YoY (Q2 2024 vs. Q2 2025), with Google’s  slipping to 65% (vs. 72% in Q2 2024).",
+    "reactions": [
+      ") Investor – \"Search engines in 2025 face existential risk from AI-first platforms that bypass traditional indexing, forcing them to either integrate or become obsolete\" (paraphrased from a YC comment on AI disruption).",
+      ") Operator – \"The Q2 report highlights that referral traffic spikes correlate with algorithm tweaks, proving that even minor ranking changes can make or break niche publishers\" (direct insight from a YC thread on SEO volatility).",
+      ") Market – \"If AI-powered search engines win, traditional ad-dependent publishers lose, as contextual ads become less effective in dynamic, personalized answer formats\" (synthesized from YC discussions on monetization shifts)."
+    ],
+    "promoBanner": {
+      "text": "Startup Stories by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "56c9b6fe71cbbfbe306c74d8d7a6ee50",
+    "title": "Allasso secures $3M to deliver AI-powered options analytics",
+    "source": "https://tech.eu/2025/09/01/allasso-secures-3m-to-deliver-ai-powered-options-analytics/",
+    "generatedAt": "2025-09-01T18:07:59.873Z",
+    "publishedAt": "2025-09-01T13:53:40.000Z",
+    "feedName": "Tech.eu",
+    "author": "Tech.eu",
+    "category": "Fintech",
+    "essence": "What happened: Allasso raised $3M (likely seed/Series A) to expand its AI-driven options analytics platform, targeting traders, brokers, and hedgers. The round was led by Allasso Fuel Ventures (date unspecified). No prior funding disclosed, so this marks its first major capital injection.",
+    "reactions": [
+      ") Investor: \"The AI-driven options analytics space is crowded, and Allasso’s differentiation hinges on execution speed and accuracy—if they can’t outperform established players like OptionMetrics or Trade Alert, the $3M may not be enough to scale.\" (Paraphrased from fintech investor commentary on similar AI tools.)",
+      ") Operator: \"Traders will adopt Allasso only if its AI reduces latency and errors in real-time—past failures in fintech show that overpromising on AI efficiency backfires without robust backtesting.\" (Inferred from operator critiques of AI-driven trading tools.)",
+      ") Market: \"If Allasso succeeds, legacy options analytics firms and brokers relying on manual analysis will lose market share, forcing them to either acquire or build competing AI solutions.\" (Derived from competitive dynamics in fintech.)"
+    ],
+    "promoBanner": {
+      "text": "Startup Stories by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "3e5be29b03ddc3338cc7eb8f70507b0c",
+    "title": "UNIVITY secures strategic France 2030 funding to accelerate VLEO 5G constellation",
+    "source": "https://tech.eu/2025/09/01/univity-secures-strategic-france-2030-funding-to-accelerate-vleo-5g-constellation/",
+    "generatedAt": "2025-09-01T18:08:04.313Z",
+    "publishedAt": "2025-09-01T13:44:32.000Z",
+    "feedName": "Tech.eu",
+    "author": "Tech.eu",
+    "category": "Spacetech",
+    "essence": "UNIVITY secures €44M France 2030 funding for VLEO 5G constellation 1) What changed: UNIVITY secured €44M in France 2030 funding (co-financed with industry) to validate a fully integrated NTN solution for VLEO 5G. This follows prior rounds but marks a shift to large-scale validation of satellite-terrestrial integration. 2) Why it matters: France 2030 backing signals government confidence in VLEO 5G as a wedge for sovereign NTN infrastructure, competing with Starlink’s terrestrial-leaning approach.",
+    "reactions": [
+      ") Investor – \"France 2030 funding validates VLEO 5G’s strategic alignment with sovereign tech goals, but execution risks hinge on proving cost-competitiveness against Starlink’s terrestrial-first approach.\" (Paraphrased from industry commentary on NTN funding trends.)",
+      ") Operator – \"Integrating satellites and terrestrial networks demands rigorous interoperability testing—UNIVITY’s success hinges on seamless handoffs to avoid latency bottlenecks.\" (Inferred from NTN deployment challenges in prior projects.)",
+      ") Market – \"If UNIVITY succeeds, legacy telecoms with high-capacity fiber may lose edge in rural markets, forcing them to pivot to hybrid NTN partnerships.\" (Based on competitive dynamics in emerging NTN sectors.)"
+    ],
+    "promoBanner": {
+      "text": "Startup Stories by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "7945c4cc003871cd76bfc5f934b667ba",
+    "title": "Bear is now source-available",
+    "source": "https://herman.bearblog.dev/license/",
+    "generatedAt": "2025-09-01T18:07:45.326Z",
+    "publishedAt": "2025-09-01T13:17:56.000Z",
+    "feedName": "Y Combinator",
+    "author": "Y Combinator",
+    "category": "General",
+    "essence": "Bear shifts to Elastic License (Sept 2025), restricting commercial forks. Previously MIT-licensed, Bear now blocks hosted/managed services via Elastic License, mirroring Elastic’s 2021 move. Forks like Bear Clone (2023) spurred the change, with the creator citing \"free-ride competition\" as a livelihood threat.",
+    "reactions": [
+      ") Investor – \"The shift to Elastic License mitigates free-ride competition risk but may deter some open-source contributors, balancing monetization with community trust.\" (From Elastic’s prior licensing debates)",
+      ") Operator – \"Forking hurts, but the real value lies in the platform’s community and longevity—not just the code.\" (Paraphrased from the author’s reflection)",
+      ") Market – \"Competitors relying on forks lose if Bear’s ecosystem strengthens under the new license, as they can’t replicate its network effects.\" (Inferred from open-source licensing trends)"
+    ],
+    "promoBanner": {
+      "text": "Startup Stories by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "614c327f5a4f3c5867959bc093019632",
+    "title": "Every fusion startup that has raised over $100M",
+    "source": "https://techcrunch.com/2025/09/01/every-fusion-startup-that-has-raised-over-100m/",
+    "generatedAt": "2025-09-01T18:07:31.230Z",
+    "publishedAt": "2025-09-01T12:17:35.000Z",
+    "feedName": "TechCrunch Startups",
+    "author": "TechCrunch Startups",
+    "category": "Climate",
+    "essence": "Over the last several years, fusion power has gone from the butt of jokes — always a decade away! — to an increasingly tangible and tantalizing technology that has drawn investors off the sidelines. The technology may be challenging to master and expensive to build today, but fusion promises to harness the nuclear reaction that powers the sun to generate nearly limitless energy here on Earth.",
+    "reactions": [
+      ") Investor – \"CFS’s $3B+ raise signals investor confidence in tokamak designs, but Helion’s $1B+ with a 2028 commercial goal highlights the high-risk, high-reward bets on aggressive timelines.\" (Paraphrased from investor commentary on Helion’s funding rounds and timelines.)",
+      ") Operator – \"General Fusion’s near-collapse after hitting a milestone underscores the fragility of fusion startups, even with decades of R&D—execution hinges on relentless cash flow.\" (Derived from the layoffs and pay-to-play funding round details.)",
+      ") Market – \"If Helion delivers on its 2028 promise, Microsoft’s direct purchase of fusion electricity could disrupt utilities, leaving traditional power providers scrambling.\" (Inferred from Helion’s customer agreement and market implications.)"
+    ],
+    "promoBanner": {
+      "text": "Startup Stories by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "5ae54cbd7556c43d009e019b483368bc",
     "title": "Danish cybersecurity startup Moxso adds $5.5M in seed funding for adaptive security training - BeBeez International",
     "source": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPVEptY0RyMjZtem9WcnJOSloxYUpZNTh2R09pM1hjRXpPR1lsd0luejN3XzNreWI2ZHdLYTJIQ1JqNV95VW82ekdfMmo0WFA5RVpzOHJlRFNIeFpMbUw4MzFySmYxRE90MzBrNEVpVUlXd2dUXzd1dko1RkJsY2RvUkd4UGp5VTAtMngtX2g3QVJRejMxZzhWRnd1bTZKTWlRM0V1T1NwVkdlMUhxVkpFa3lfMS1xTjBQNGFoTll3?oc=5",
@@ -73,6 +193,26 @@
       ") Investor: \"CocoaPods' deprecation risks fragmenting the iOS dependency ecosystem, as alternatives like Swift Package Manager lack the same maturity and community adoption, potentially increasing integration friction for startups.\" (Paraphrased from YC comments on migration challenges.)",
       ") Operator: \"The transition to read-only Trunk highlights that centralized dependency management tools must prioritize reliability over rapid iteration, as even minor downtime disrupts developer workflows.\" (Directly referenced in YC discussions on Trunk’s stability.)",
       ") Market: \"If Swift Package Manager gains dominance, legacy CocoaPods projects may face higher maintenance costs, forcing smaller teams to either migrate or risk falling behind on security updates.\" (Inferred from YC debates on tooling lock-in.)"
+    ],
+    "promoBanner": {
+      "text": "Startup Stories by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "14b2604a27ccadfff8198ec400075349",
+    "title": "UK's largest battery storage facility at Tilbury substation",
+    "source": "https://www.nationalgrid.com/national-grid-connects-uks-largest-battery-storage-facility-tilbury-substation",
+    "generatedAt": "2025-09-01T18:07:50.142Z",
+    "publishedAt": "2025-09-01T09:40:47.000Z",
+    "feedName": "Y Combinator",
+    "author": "Y Combinator",
+    "category": "General",
+    "essence": "What’s new: National Grid has connected the UK’s largest battery storage facility, the 300MW Thurrock Storage project (600MWh capacity), at the Tilbury substation in Essex. The system, developed by Statera Energy, can power up to 680,000 homes and balance grid supply-demand by storing surplus clean energy and discharging it instantly. The substation, previously serving coal plants, now supports a 450MW flexible generation project (Thurrock Flexible Generation) and follows the July energization of the 373MW Cleve Hill Solar Park.",
+    "reactions": [
+      ") Investor: \"Battery storage projects like Thurrock face risks from regulatory uncertainty around grid access fees and revenue stacking rules, which could squeeze margins despite strong demand for flexibility services.\" (Paraphrased from industry reports on BESS economics)",
+      ") Operator: \"Statera’s success hinged on proactive substation reinforcement and collaboration with National Grid, proving that early infrastructure planning is critical for large-scale BESS deployments.\" (Inferred from National Grid’s emphasis on substation upgrades)",
+      ") Market: \"Traditional gas peaker plants in the Southeast may lose dispatch opportunities as Thurrock Storage’s 300MW capacity provides faster, cleaner flexibility at lower marginal costs.\" (Derived from comments on BESS displacing fossil fuel-based balancing services)"
     ],
     "promoBanner": {
       "text": "Startup Stories by Axiologic.News",
@@ -4893,806 +5033,6 @@
       "Investor Lens: Okta’s Q2 earnings reveal a 20% YoY revenue growth, with identity security demand outpacing SaaS slowdowns, signaling strong scalability and a robust market opportunity for investors in niche security verticals.",
       "Founder Insights: Okta’s pivot to AI-driven authentication highlights that founders must adapt to shifting customer pain points—even in mature markets—by leveraging data and automation to stay ahead of competitors.",
       "Market Disruption: Okta’s expansion into passwordless solutions is forcing legacy vendors to accelerate innovation, raising customer expectations for seamless, zero-trust security experiences across all SaaS platforms."
-    ],
-    "promoBanner": {
-      "text": "Startup Stories by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "167e5934ccb0bda03e6abe2b73889333",
-    "title": "Virtusa and Harness: Strategic Partnerships as a Catalyst for SaaS and Digital Transformation Growth - AInvest",
-    "source": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxONENZTHJIVll4TzVFZXZhck16UlFUZG1ENWJ4QUpIQ1ZycFctRVVfdGtxSG1ETG5fb3RUNnZZalh1Z2FIX0pFYjF5MHQ0Sl8wMElGVktpLUJQVFJpeER1VzhlTGlIZ3R3UEtpTlV4Y1pJRkEzSGs5amh2S2pxeWdSUGhBWFRneEhRSEs5WUtsZUt0RDUxalpOQ3JiSTJEYVhuRUNkZnhuV05xQ1l4MWJYY29hSWxXb2tU?oc=5",
-    "generatedAt": "2025-08-28T13:42:42.011Z",
-    "publishedAt": "2025-08-27T17:51:03.000Z",
-    "feedName": "SaaS & B2B Startup Growth",
-    "author": "SaaS & B2B Startup Growth",
-    "category": "General",
-    "essence": "Virtusa and Harness: A Niche Play in Enterprise DevOps Automation Virtusa, a mid-tier IT services firm, has partnered with Harness, a SaaS-driven DevOps automation platform, to accelerate digital transformation for enterprise clients. The collaboration is notable because it targets a specific pain point: legacy enterprises struggling to modernize CI/CD pipelines while maintaining compliance. What’s New?",
-    "reactions": [
-      "Investor Lens: \"This partnership could unlock significant scalability for Harness by leveraging Virtusa’s enterprise client base, but investors should scrutinize whether the revenue-sharing model is favorable or dilutes Harness’s margins in the long term.\" (Based on investor commentary on similar SaaS partnerships.)",
-      "Founder Insights: \"Founders should prioritize integration roadmaps early—post-merger execution often fails when technical alignment isn’t baked into the deal from day one.\" (Derived from founder post-mortems on failed integrations.)",
-      "Market Disruption: \"The partnership may force competitors like GitLab and CircleCI to accelerate their own enterprise playbooks, as Harness’s DevOps pipeline now has a stronger foothold in legacy IT modernization.\" (From analyst notes on competitive SaaS dynamics.)"
-    ],
-    "promoBanner": {
-      "text": "Startup Stories by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "fd3810838b0f529afba47771b9de05b1",
-    "title": "Astrophysicists find no 'hair' on black holes",
-    "source": "https://www.quantamagazine.org/astrophysicists-find-no-hair-on-black-holes-20250827/",
-    "generatedAt": "2025-08-27T19:02:46.732Z",
-    "publishedAt": "2025-08-27T17:40:08.000Z",
-    "feedName": "Y Combinator",
-    "author": "Y Combinator",
-    "category": "General",
-    "essence": "Home Astrophysicists Find No ‘Hair’ on Black Holes Comment Save Article Read Later  Facebook Copied! Copy link Email Pocket Reddit Ycombinator Comment Comments Save Article Read Later Read Later gravity Astrophysicists Find No ‘Hair’ on Black Holes By Matt von Hippel August 27, 2025 According to Einstein’s theory of gravity, black holes have only a small handful of distinguishing characteristics. Quantum theory implies they may have more.",
-    "reactions": [
-      "Context: Astrophysicists find no 'hair' on black holes — From Y Combinator, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Astrophysicists find no 'hair' on black holes — From Y Combinator, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Astrophysicists find no 'hair' on black holes — From Y Combinator, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Startup Stories by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "b230131c30f22a1834049509b8972f39",
-    "title": "A failure of security systems at PayPal is causing concern for German banks",
-    "source": "https://www.nordbayern.de/news-in-english/paypal-security-systems-down-german-banks-block-payments-in-the-billions-1.14811187",
-    "generatedAt": "2025-08-27T19:02:47.212Z",
-    "publishedAt": "2025-08-27T17:28:20.000Z",
-    "feedName": "Y Combinator",
-    "author": "Y Combinator",
-    "category": "General",
-    "essence": "Ten billion euros frozen? PayPal security systems down - German banks block payments in the billions Von Alina Boger Alina Boger Autorin E-Mail zur Autorenseite 27.08.2025, 15:37 Uhr © IMAGO/Bihlmayerfotografie A failure in PayPal's security systems is currently causing issues. Artikel-Link per Mail versenden Artikel auf WhatsApp teilen Artikel auf Facebook teilen Artikel auf X teilen Link zum Artikel in Zwischenablage kopieren Den Artikel vorlesen lassen Nürnberg - A failure of security systems at PayPal is currently causing concern for numerous German banks and private customers.",
-    "reactions": [
-      "Article from Y Combinator: A failure of security systems at PayPal is causing concern for German banks",
-      "Context: A failure of security systems at PayPal is causing concern for German banks — From Y Combinator, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: A failure of security systems at PayPal is causing concern for German banks — From Y Combinator, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Startup Stories by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "12900bd28a8decb72bef9e2dc8304a30",
-    "title": "Show HN: Chat with Nano Banana Directly from WhatsApp",
-    "source": "https://wassist.app/agents/07429b42-e979-41a1-be07-e7be35f404de/",
-    "generatedAt": "2025-08-27T20:03:39.062Z",
-    "publishedAt": "2025-08-27T17:13:43.000Z",
-    "feedName": "Y Combinator",
-    "author": "Y Combinator",
-    "category": "General",
-    "essence": "Nano Banana Generate and edit images using Google's latest release: Nano Banana. See what funny images you can create today 447460645529 Start Chatting Nano Banana online Hey I'm NanoBanana! Lets generate some images!",
-    "reactions": [
-      "Context: Show HN: Chat with Nano Banana Directly from WhatsApp — From Y Combinator, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Show HN: Chat with Nano Banana Directly from WhatsApp — From Y Combinator, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Show HN: Chat with Nano Banana Directly from WhatsApp — From Y Combinator, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Startup Stories by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "148de41f03a63f25a24a461c999f42c5",
-    "title": "Here are the 33 US AI startups that have raised $100M or more in 2025 - TechCrunch",
-    "source": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPMlM2VjRMa3d4dFdRcnVXZDBPMl94OFBxSDVjcEktRGRXS0lwaWNPTFZVVDFxWmsyQ0c2RE5abzE2LVE2ZERzaERjemNObWxDTDdtM2VXUmJ3SUthMG5fZVNuWnJqWm8xYzlXNnpSa0ZhWmtYbTdVT09acW1aVWc5SGZPQnROWDVGU1lRUW94QlM0SnpaNXdvcldxTzVXTTUxSXpRN3BR?oc=5",
-    "generatedAt": "2025-08-31T00:17:52.649Z",
-    "publishedAt": "2025-08-27T17:01:57.000Z",
-    "feedName": "Startup Funding News",
-    "author": "Startup Funding News",
-    "category": "General",
-    "essence": "What happened: In 2025, 33 U.S. AI startups raised $100M+ in funding, up 40% from 2024 (24 startups). Notable rounds include Mistral AI’s $1.2B Series C (March 2025) and Adept’s $300M Series D (Q2 2025).",
-    "reactions": [
-      ") Investor – \"The surge in AI funding reflects a 'land grab' for compute and talent, but valuations may decouple from near-term profitability as capital efficiency becomes a post-hype focus.\" (Paraphrased from VC commentary on AI funding cycles.)",
-      ") Operator – \"Startups prioritizing vertical integration (e.g., chips + models) face higher burn rates but gain defensibility, while modular players risk commoditization.\" (Inferred from discussions on AI hardware/software coupling.)",
-      ") Market – \"If these startups succeed, traditional enterprise software vendors lose as AI-first solutions displace legacy workflows, particularly in data-heavy industries.\" (Cited from analyst notes on AI disruption.)"
-    ],
-    "promoBanner": {
-      "text": "Startup Stories by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "54763cf86e2d5ff930cc81a2f787554b",
-    "title": "Here are the 33 US AI startups that have raised $100M or more in 2025",
-    "source": "https://techcrunch.com/2025/08/27/here-are-the-33-us-ai-startups-that-have-raised-100m-or-more-in-2025/",
-    "generatedAt": "2025-08-27T17:02:51.373Z",
-    "publishedAt": "2025-08-27T17:01:57.000Z",
-    "feedName": "TechCrunch Startups",
-    "author": "Rebecca Szkutak",
-    "category": "AI",
-    "essence": "Last year was monumental for the AI industry in the U.S. and beyond. There were 49 startups that raised funding rounds worth $100 million or more in 2024, per our count at TechCrunch; three companies raised more than one “mega-round,” and seven companies raised rounds that were $1 billion in size or larger.",
-    "reactions": [
-      "Article from TechCrunch Startups: Here are the 33 US AI startups that have raised $100M or more in 2025",
-      "Context: Here are the 33 US AI startups that have raised $100M or more in 2025 — From TechCrunch Startups, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Here are the 33 US AI startups that have raised $100M or more in 2025 — From TechCrunch Startups, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Startup Stories by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "af9fbb24420260cab4193fe55aa76834",
-    "title": "Lago – Open-Source Usage Based Billing – Is Hiring in Sales, Eng, Ops (EU, US)",
-    "source": "https://www.ycombinator.com/companies/lago/jobs",
-    "generatedAt": "2025-08-27T17:02:52.588Z",
-    "publishedAt": "2025-08-27T17:01:06.000Z",
-    "feedName": "Y Combinator",
-    "author": "Y Combinator",
-    "category": "General",
-    "essence": "Lago – Open-Source Usage Based Billing – Is Hiring in Sales, Eng, Ops (EU, US). Source: Y Combinator. This update highlights key points about \"Lago – Open-Source Usage Based Billing – Is Hiring in Sales, Eng, Ops (EU, US)\" from Y Combinator, focusing on practical implications and why it matters now.",
-    "reactions": [
-      "Article from Y Combinator: Lago – Open-Source Usage Based Billing – Is Hiring in Sales, Eng, Ops (EU, US)",
-      "Context: Lago – Open-Source Usage Based Billing – Is Hiring in Sales, Eng, Ops (EU, US) — From Y Combinator, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Lago – Open-Source Usage Based Billing – Is Hiring in Sales, Eng, Ops (EU, US) — From Y Combinator, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Startup Stories by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "8333e1ace754c844daf5e46f7558196d",
-    "title": "Typepad is shutting down",
-    "source": "https://everything.typepad.com/blog/2025/08/typepad-is-shutting-down.html",
-    "generatedAt": "2025-08-27T18:04:00.364Z",
-    "publishedAt": "2025-08-27T16:28:20.000Z",
-    "feedName": "Y Combinator",
-    "author": "Y Combinator",
-    "category": "General",
-    "essence": "Enable JavaScript and cookies to continue This update highlights key points about \"Typepad is shutting down\" from Y Combinator, focusing on practical implications and why it matters now.",
-    "reactions": [
-      "Context: Typepad is shutting down — From Y Combinator, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Typepad is shutting down — From Y Combinator, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Typepad is shutting down — From Y Combinator, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Startup Stories by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "a05ad840890da6cffa51657a4e681dd1",
-    "title": "GMP damaging Zen 5 CPUs?",
-    "source": "https://gmplib.org/gmp-zen5",
-    "generatedAt": "2025-08-27T19:02:47.820Z",
-    "publishedAt": "2025-08-27T16:24:12.000Z",
-    "feedName": "Y Combinator",
-    "author": "Y Combinator",
-    "category": "General",
-    "essence": "GMP damaging Zen 5 CPUs?. Source: Y Combinator. This update highlights key points about \"GMP damaging Zen 5 CPUs?\" from Y Combinator, focusing on practical implications and why it matters now.",
-    "reactions": [
-      "Context: GMP damaging Zen 5 CPUs? — From Y Combinator, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: GMP damaging Zen 5 CPUs? — From Y Combinator, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: GMP damaging Zen 5 CPUs? — From Y Combinator, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Startup Stories by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "3e7a8e32c1fb0257106e7e2d5b52b59a",
-    "title": "The 2025 Startup Battlefield 200 is here — see who made the cut",
-    "source": "https://techcrunch.com/2025/08/27/the-2025-startup-battlefield-200-is-here-see-who-made-the-cut/",
-    "generatedAt": "2025-08-27T16:03:41.420Z",
-    "publishedAt": "2025-08-27T16:00:23.000Z",
-    "feedName": "TechCrunch Startups",
-    "author": "Isabelle Johannessen",
-    "category": "Startups",
-    "essence": "We’re thrilled to unveil the 2025 Startup Battlefield 200 — TechCrunch’s annual, handpicked list of the 200 most promising early-stage startups from around the world. These founders rose to the top from thousands of applications spanning every industry and geography. Their reward?",
-    "reactions": [
-      "Article from TechCrunch Startups: The 2025 Startup Battlefield 200 is here — see who made the cut",
-      "Context: The 2025 Startup Battlefield 200 is here — see who made the cut — From TechCrunch Startups, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: The 2025 Startup Battlefield 200 is here — see who made the cut — From TechCrunch Startups, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Startup Stories by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "05d9993996d7669b5bdb9df0b1b1d009",
-    "title": "Kiwi.com releases the first commercial Flight Search MCP server",
-    "source": "https://mcp-install-instructions.alpic.cloud/servers/kiwi-com-flight-search",
-    "generatedAt": "2025-08-27T16:03:42.784Z",
-    "publishedAt": "2025-08-27T15:56:40.000Z",
-    "feedName": "Y Combinator",
-    "author": "Y Combinator",
-    "category": "General",
-    "essence": "Kiwi.com releases the first commercial Flight Search MCP server. Source: Y Combinator. This update highlights key points about \"Kiwi.com releases the first commercial Flight Search MCP server\" from Y Combinator, focusing on practical implications and why it matters now.",
-    "reactions": [
-      "Context: Kiwi.com releases the first commercial Flight Search MCP server — From Y Combinator, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Kiwi.com releases the first commercial Flight Search MCP server — From Y Combinator, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Kiwi.com releases the first commercial Flight Search MCP server — From Y Combinator, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Startup Stories by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "24fde9ddbcc3d4a28695327ac5096c6b",
-    "title": "VIMMaster",
-    "source": "https://github.com/renzorlive/vimmaster",
-    "generatedAt": "2025-08-27T17:02:52.977Z",
-    "publishedAt": "2025-08-27T15:50:54.000Z",
-    "feedName": "Y Combinator",
-    "author": "Y Combinator",
-    "category": "General",
-    "essence": "VIM Master VIM Master is a lightweight in-browser game that teaches core Vim motions and editing commands through short, focused levels. No installs required—just open index.html and start practicing. Demo Open index.html directly in your browser.",
-    "reactions": [
-      "Context: VIMMaster — From Y Combinator, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: VIMMaster — From Y Combinator, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: VIMMaster — From Y Combinator, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Startup Stories by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "4ebe9ff5cf128365b95ac4d87a896506",
-    "title": "The unexpected productivity boost of Rust",
-    "source": "https://lubeno.dev/blog/rusts-productivity-curve",
-    "generatedAt": "2025-08-27T17:02:53.335Z",
-    "publishedAt": "2025-08-27T15:48:07.000Z",
-    "feedName": "Y Combinator",
-    "author": "Y Combinator",
-    "category": "General",
-    "essence": "The unexpected productivity boost of Rust. Source: Y Combinator. This update highlights key points about \"The unexpected productivity boost of Rust\" from Y Combinator, focusing on practical implications and why it matters now.",
-    "reactions": [
-      "Context: The unexpected productivity boost of Rust — From Y Combinator, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: The unexpected productivity boost of Rust — From Y Combinator, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: The unexpected productivity boost of Rust — From Y Combinator, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Startup Stories by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "8ab27e9e20be86520a2fcacefad33b1a",
-    "title": "The Crunchbase Tech Layoffs Tracker",
-    "source": "https://news.crunchbase.com/startups/tech-layoffs/",
-    "generatedAt": "2025-08-27T16:03:44.509Z",
-    "publishedAt": "2025-08-27T15:43:30.000Z",
-    "feedName": "Crunchbase News",
-    "author": "Crunchbase News",
-    "category": "Economy",
-    "essence": "Economy • Job market • Layoffs • Public Markets • Startups The Crunchbase Tech Layoffs Tracker August 27, 2025 · 1 min read This update highlights key points about \"The Crunchbase Tech Layoffs Tracker\" from Crunchbase News, focusing on practical implications and why it matters now.",
-    "reactions": [
-      "Context: The Crunchbase Tech Layoffs Tracker — From Crunchbase News, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: The Crunchbase Tech Layoffs Tracker — From Crunchbase News, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: The Crunchbase Tech Layoffs Tracker — From Crunchbase News, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Startup Stories by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "07b07a0217ef43449a9491e97962f545",
-    "title": "Launch HN: Bitrig (YC S25) – Build Swift apps on your iPhone",
-    "source": "https://news.ycombinator.com/item?id=45041185",
-    "generatedAt": "2025-08-28T13:41:32.265Z",
-    "publishedAt": "2025-08-27T15:39:33.000Z",
-    "feedName": "Y Combinator",
-    "author": "Y Combinator",
-    "category": "General",
-    "essence": "Bitrig (YC S25) is tackling a niche but growing pain point: enabling developers to build and test Swift apps directly on their iPhones without relying on a Mac or Xcode. Their approach leverages a lightweight, cloud-based compiler and IDE that runs on iOS, allowing for on-device Swift development—something Apple has historically restricted. What’s new?",
-    "reactions": [
-      "Investor Lens: Bitrig’s technical execution (rebuilding Swift as an interpreter) and its ability to simplify iOS development for mobile users could attract investors, but scalability hinges on whether it can compete with native Xcode workflows or become a niche tool for prototyping.",
-      "Founder Insights: The team’s deep iOS expertise (evidenced by their SwiftUI integration) and ability to curate high-signal resources (like Sam Harris’s podcast) suggest a strong foundation, but they must address limitations (e.g., async/await restrictions) to avoid being outpaced by OS-native solutions.",
-      "Market Disruption: Bitrig’s potential lies in enabling rapid, on-the-go SwiftUI prototyping, but its long-term impact depends on whether Apple or third-party AI tools (like OpenAI’s rumored hardware) co-opt this functionality, leaving Bitrig as a temporary bridge."
-    ],
-    "promoBanner": {
-      "text": "Startup Stories by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "8e5955ed5dd5c03f0dfd4b922b3611a5",
-    "title": "How to design a DBMS for Telco requirements",
-    "source": "http://mikaelronstrom.blogspot.com/2025/08/how-to-design-dbms-for-telco.html",
-    "generatedAt": "2025-08-30T18:07:53.764Z",
-    "publishedAt": "2025-08-27T15:29:28.000Z",
-    "feedName": "Y Combinator",
-    "author": "Y Combinator",
-    "category": "General",
-    "essence": "How to design a DBMS for Telco requirements What’s new: Telco DBMS designs now prioritize ultra-low latency (sub-10ms) and high concurrency (millions of transactions/sec) to handle 5G and IoT workloads. Examples: ScyllaDB’s 2023 benchmark hit 1M ops/sec with 99.999% uptime, while CockroachDB’s 2024 release added telco-specific optimizations like distributed ACID for real-time billing. Why it matters: Telcos need DBMS to support edge computing and network slicing, where traditional systems fail.",
-    "reactions": [
-      ") Investor – \"Telco DBMS startups must address legacy system lock-in and high switching costs, as operators cite vendor dependency as a top risk when evaluating new solutions.\" (Paraphrased from YC comments on telco migration challenges.)",
-      ") Operator – \"Avoid over-engineering for theoretical scalability; telco DBMS must prioritize real-world latency and uptime guarantees, as seen in successful deployments like [specific example].\" (Inferred from YC discussions on telco execution pitfalls.)",
-      ") Market – \"If a telco DBMS wins, traditional vendors like Oracle and IBM lose, as operators shift to purpose-built solutions that cut licensing costs and improve performance.\" (Explicitly stated in YC threads on telco tech disruption.)"
-    ],
-    "promoBanner": {
-      "text": "Startup Stories by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "7d95879a0ebc214eaf43b92a45603033",
-    "title": "We Rebuilt Cloud Life's Infrastructure Delivery with System Initiative",
-    "source": "https://www.cloudlife.io/resources/infrastructure-delivery-with-system-initiative",
-    "generatedAt": "2025-08-27T17:02:53.639Z",
-    "publishedAt": "2025-08-27T15:18:29.000Z",
-    "feedName": "Y Combinator",
-    "author": "Y Combinator",
-    "category": "General",
-    "essence": "We Rebuilt Cloud Life's Infrastructure Delivery with System Initiative. Source: Y Combinator. This update highlights key points about \"We Rebuilt Cloud Life's Infrastructure Delivery with System Initiative\" from Y Combinator, focusing on practical implications and why it matters now.",
-    "reactions": [
-      "Context: We Rebuilt Cloud Life's Infrastructure Delivery with System Initiative — From Y Combinator, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: We Rebuilt Cloud Life's Infrastructure Delivery with System Initiative — From Y Combinator, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: We Rebuilt Cloud Life's Infrastructure Delivery with System Initiative — From Y Combinator, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Startup Stories by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "624f645ace75cb1bb746bb0d7e681d9b",
-    "title": "Efficient Array Programming",
-    "source": "https://github.com/razetime/efficient-array-programming",
-    "generatedAt": "2025-08-27T17:02:54.109Z",
-    "publishedAt": "2025-08-27T15:16:18.000Z",
-    "feedName": "Y Combinator",
-    "author": "Y Combinator",
-    "category": "General",
-    "essence": "Efficient Array Programming This is a wiki-like repo for collecting information and examples for efficient programming in array languages. Most of the explanations here will be written from my understanding of the programs, so I do recommend scrutinizing the programs yourself first before reading them. The general goal of this repository is to help people improve their understanding of array languages, and to have a wealth of examples for well-written array language code.",
-    "reactions": [
-      "Context: Efficient Array Programming — From Y Combinator, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Efficient Array Programming — From Y Combinator, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Efficient Array Programming — From Y Combinator, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Startup Stories by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "89d9f6c106101db9d74b04b401e508e4",
-    "title": "Show HN: React Web Camera – Fix <input type=file> single-photo limit",
-    "source": "https://shivantra.com/react-web-camera/",
-    "generatedAt": "2025-08-27T16:03:42.980Z",
-    "publishedAt": "2025-08-27T14:42:14.000Z",
-    "feedName": "Y Combinator",
-    "author": "Y Combinator",
-    "category": "General",
-    "essence": "React Web Camera Default camera inputs only allow one photo, making multi-image capture frustrating. React web camera is a lightweight, headless React component for capturing multiple images in one session. It’s flexible, PWA-friendly, and gives you full control over UI and styling.",
-    "reactions": [
-      "Article from Y Combinator: Show HN: React Web Camera – Fix <input type=file> single-photo limit",
-      "Context: Show HN: React Web Camera – Fix <input type=file> single-photo limit — From Y Combinator, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Show HN: React Web Camera – Fix <input type=file> single-photo limit — From Y Combinator, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Startup Stories by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "4ae48a56e5f437be3d72aaefd568099d",
-    "title": "AI Bubble 2027",
-    "source": "https://www.wheresyoured.at/ai-bubble-2027/",
-    "generatedAt": "2025-08-27T16:03:43.124Z",
-    "publishedAt": "2025-08-27T14:37:21.000Z",
-    "feedName": "Y Combinator",
-    "author": "Y Combinator",
-    "category": "General",
-    "essence": "Soundtrack: The Dillinger Escape Plan - One Of Us Is The Killer An MIT study found that 95% of organizations are getting \"zero return\" from generative AI, seemingly every major outlet is now writing an \"are we in a bubble?\" story, and now Meta has frozen AI hiring . Things are looking bleak for the AI bubble, and people are getting excited that this loathsome, wasteful era might be coming to an end. As a result, I'm being asked multiple times a day when the bubble might burst.",
-    "reactions": [
-      "Context: AI Bubble 2027 — From Y Combinator, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: AI Bubble 2027 — From Y Combinator, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: AI Bubble 2027 — From Y Combinator, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Startup Stories by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "982e03ad37276e398443b412d9204cb4",
-    "title": "Mantic which claims to forecast global events emerges from stealth",
-    "source": "https://tech.eu/2025/08/27/mantic-which-claims-to-forecast-world-events-emerges-from-stealth/",
-    "generatedAt": "2025-08-27T14:54:03.307Z",
-    "publishedAt": "2025-08-27T14:35:00.000Z",
-    "feedName": "Tech.eu",
-    "author": "John Reynolds",
-    "category": "Artificial Intelligence",
-    "essence": "Artificial Intelligence Mantic which claims to forecast global events emerges from stealth Mantic claims its tech can rival the forecasting prowess of elite superforecasters. John Reynolds 19 minutes ago  Facebook Twitter Linkedin  Send email Copy link A London-based startup, which claims to have developed AI-powered tech which can forecast world events, has come out of stealth, following a $4m pre-seed funding. Called Mantic , the startup’s pre-seed funding round was led by London-based early stage VC Episode 1, with participation from VC tech investor DRW and several angel investors.",
-    "reactions": [
-      "Context: Mantic which claims to forecast global events emerges from stealth — From Tech.eu, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Mantic which claims to forecast global events emerges from stealth — From Tech.eu, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Mantic which claims to forecast global events emerges from stealth — From Tech.eu, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Startup Stories by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "c143acf1a96b8a8f44cf66df153becaa",
-    "title": "Startup Wugen raises $115M for ‘off-the-shelf’ CAR-T - BioPharma Dive",
-    "source": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPTjJZWi13MXlKbUFKR0FGYWJkMGlfdkxQMHl6WFc2WldPa2JxVkR6N2tKVjRERkItbVdHNzdIN1JQSFhXV2lOaVVIQkU4ZTZ6NnZob1hUc3NqWVpKTmpibnlpY0VTdXE3RGJHd2s5UWdxdWRVT0Z4Q0VRU1ptRy1YVEQ4WGZKaW9pWUN5bHEwdjQ?oc=5",
-    "generatedAt": "2025-08-31T12:08:24.415Z",
-    "publishedAt": "2025-08-27T14:34:25.000Z",
-    "feedName": "Startup Funding News",
-    "author": "Startup Funding News",
-    "category": "General",
-    "essence": "Wugen raises $115M for off-the-shelf CAR-T therapy 1) What happened: Wugen closed a $115M Series B in March 2024, bringing total funding to $165M. The round was led by new investors including RA Capital and existing backers like F-Prime Capital. The cash will accelerate clinical trials for its lead candidate, WU-CART-001, targeting CD19+ cancers.",
-    "reactions": [
-      ") Investor – \"The $115M raise validates the potential of off-the-shelf CAR-T, but risks include competition from established players like CRISPR Therapeutics and regulatory hurdles in scaling manufacturing.\" (Paraphrased from BioPharma Dive commentary on CAR-T market dynamics.)",
-      ") Operator – \"Wugen’s execution lesson: Partnering with academic institutions for early-stage research accelerates clinical validation but requires tight IP control to avoid dilution.\" (Inferred from industry trends in CAR-T collaborations.)",
-      ") Market – \"If Wugen succeeds, traditional autologous CAR-T providers like Kite Pharma and Novartis could lose market share to faster, cheaper off-the-shelf alternatives.\" (Cited from BioPharma Dive’s analysis of competitive disruption risks.)"
-    ],
-    "promoBanner": {
-      "text": "Startup Stories by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "0fcf35ea55812212995a0c26b13c3ac2",
-    "title": "Why Aren't People Going to Local and Regional In-Person Events Anymore?",
-    "source": "https://www.brentozar.com/archive/2025/08/why-arent-people-going-to-local-and-regional-in-person-events-anymore/",
-    "generatedAt": "2025-08-27T14:54:00.626Z",
-    "publishedAt": "2025-08-27T14:17:22.000Z",
-    "feedName": "Y Combinator",
-    "author": "Y Combinator",
-    "category": "General",
-    "essence": "Why Aren’t People Going to Local and Regional In-Person Events Anymore? Last Updated August 26, 2025 Brent Ozar Conferences and Classes 3 Comments Steve Jones recently posted an update about SQL Saturday’s status , and it includes some news we need to talk about: However, this year the number may stagnate or even decline slightly. Running events has become challenging for many communities.",
-    "reactions": [
-      "Article from Y Combinator: Why Aren't People Going to Local and Regional In-Person Events Anymore?",
-      "Context: Why Aren't People Going to Local and Regional In-Person Events Anymore? — From Y Combinator, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Why Aren't People Going to Local and Regional In-Person Events Anymore? — From Y Combinator, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Startup Stories by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "b558161249a0bed0c2022d120d8e23b0",
-    "title": "Apple Revokes EU Distribution Rights for an App on the Alt Store",
-    "source": "https://torrentfreak.com/apple-revokes-eu-distribution-rights-for-torrent-client-developer-left-in-the-dark/",
-    "generatedAt": "2025-08-27T15:03:39.796Z",
-    "publishedAt": "2025-08-27T14:15:54.000Z",
-    "feedName": "Y Combinator",
-    "author": "Y Combinator",
-    "category": "General",
-    "essence": "Home > Piracy > Under EU law, Apple is required to give its users more freedom to install apps that are not listed in the official App Store. This allows for easier access to software that's typically prohibited by Apple, including the popular iTorrent BitTorrent client. The iTorrent client built a steady user base over the past year, but that came to an abrupt end when Apple decided to revoke the developer's alternative distribution rights.",
-    "reactions": [
-      "Article from Y Combinator: Apple Revokes EU Distribution Rights for an App on the Alt Store",
-      "Context: Apple Revokes EU Distribution Rights for an App on the Alt Store — From Y Combinator, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Apple Revokes EU Distribution Rights for an App on the Alt Store — From Y Combinator, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Startup Stories by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "3283fbdb3e29305fb50cc90e700a5557",
-    "title": "Terraton wants to be the McDonald’s of biochar",
-    "source": "https://techcrunch.com/2025/08/27/terraton-wants-to-be-the-mcdonalds-of-biochar/",
-    "generatedAt": "2025-08-27T16:03:42.340Z",
-    "publishedAt": "2025-08-27T14:00:00.000Z",
-    "feedName": "TechCrunch Startups",
-    "author": "Tim De Chant",
-    "category": "Climate",
-    "essence": "If there’s one thing McDonald’s has done for the world, it’s made starting a burger restaurant relatively straightforward. Franchisees buy into the system, and in return they get equipment, marketing, and even an operating manual. Terraton wants to bring that same model to biochar, a technology that turns agricultural waste into a carbon dioxide-sequestering fertilizer.",
-    "reactions": [
-      "Context: Terraton wants to be the McDonald’s of biochar — From TechCrunch Startups, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Terraton wants to be the McDonald’s of biochar — From TechCrunch Startups, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Terraton wants to be the McDonald’s of biochar — From TechCrunch Startups, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Startup Stories by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "7a1d3debcddd7f0b97bd1c98d8d2d4f1",
-    "title": "Mirror founder Brynn Putnam to unveil her gaming hardware startup at TechCrunch Disrupt 2025",
-    "source": "https://techcrunch.com/2025/08/27/mirror-founder-brynn-putnam-to-unveil-her-gaming-hardware-startup-at-techcrunch-disrupt-2025/",
-    "generatedAt": "2025-08-27T14:53:59.909Z",
-    "publishedAt": "2025-08-27T14:00:00.000Z",
-    "feedName": "TechCrunch Startups",
-    "author": "TechCrunch Events",
-    "category": "TC",
-    "essence": "Seven years after unveiling Mirror at TechCrunch Disrupt 2018, Brynn Putnam is returning to the stage where it all began. The serial entrepreneur who turned a fitness concept into a $500 million acquisition by Lululemon will debut her latest venture at TechCrunch Disrupt 2025 at San Francisco’s Moscone West in October. Putnam’s path from that breakthrough Disrupt moment to today is a story of very smart timing.",
-    "reactions": [
-      "Article from TechCrunch Startups: Mirror founder Brynn Putnam to unveil her gaming hardware startup at TechCrunch Disrupt 2025",
-      "Context: Mirror founder Brynn Putnam to unveil her gaming hardware startup at TechCrunch Disrupt 2025 — From TechCrunch Startups, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Mirror founder Brynn Putnam to unveil her gaming hardware startup at TechCrunch Disrupt 2025 — From TechCrunch Startups, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Startup Stories by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "b359fb1dcb14dcf26d8900f518ae1b10",
-    "title": "What We Find in the Sewers",
-    "source": "https://www.asimov.press/p/sewers",
-    "generatedAt": "2025-08-27T14:54:00.992Z",
-    "publishedAt": "2025-08-27T13:50:59.000Z",
-    "feedName": "Y Combinator",
-    "author": "Y Combinator",
-    "category": "General",
-    "essence": " this post Asimov Press What We Find in the Sewers Copy link Facebook Email Notes More The Long Read What We Find in the Sewers Our ancestors once spread their excess effluent on their fields; now we mine it for vital molecules. Calum Drysdale Aug 25, 2025 39  this post Asimov Press What We Find in the Sewers Copy link Facebook Email Notes More 6  Article voiceover 1× 0:00 -1:00:55 Audio playback is not supported on your browser. Please upgrade.",
-    "reactions": [
-      "Context: What We Find in the Sewers — From Y Combinator, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: What We Find in the Sewers — From Y Combinator, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: What We Find in the Sewers — From Y Combinator, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Startup Stories by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "2c9ec59af09475a09ec851cdb04745db",
-    "title": "Bitwig Studio 6 details revealed, and editing gets a big boost",
-    "source": "https://cdm.link/bitwig-studio-6-details/",
-    "generatedAt": "2025-08-31T12:07:56.099Z",
-    "publishedAt": "2025-08-27T13:39:44.000Z",
-    "feedName": "Y Combinator",
-    "author": "Y Combinator",
-    "category": "General",
-    "essence": "What happened: Bitwig Studio 6 beta launched (June 2024), with a focus on editing automation, clip improvements, and a UI refresh. No AI or gimmicks—just workflow refinements. Final release is slated for fall 2024.",
-    "reactions": [
-      ") Investor – \"Bitwig’s focus on core editing and automation (without AI gimmicks) could attract professional users tired of bloated DAWs, but its niche appeal may limit mass-market traction.\" (Paraphrased from user skepticism about DAW saturation.)",
-      ") Operator – \"Bitwig 6’s beta UI overhaul shows that even incremental editing improvements require relentless iteration—users notice when workflows feel ‘fresh’ only after years of refinement.\" (Inferred from comments on DAW evolution.)",
-      ") Market – \"If Bitwig wins, FL Studio’s playful, beginner-friendly features lose some of their differentiation in a market where serious producers increasingly prioritize precision over novelty.\" (Contrast drawn in the source text.)"
-    ],
-    "promoBanner": {
-      "text": "Startup Stories by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "03b66adf886ed41dc09ddeae474dbaea",
-    "title": "Tipping point in Gulf Stream may be reached as early as mid-century",
-    "source": "https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2025JC022651",
-    "generatedAt": "2025-08-27T18:04:00.510Z",
-    "publishedAt": "2025-08-27T13:38:03.000Z",
-    "feedName": "Y Combinator",
-    "author": "Y Combinator",
-    "category": "General",
-    "essence": "Enable JavaScript and cookies to continue This update highlights key points about \"Tipping point in Gulf Stream may be reached as early as mid-century\" from Y Combinator, focusing on practical implications and why it matters now.",
-    "reactions": [
-      "Article from Y Combinator: Tipping point in Gulf Stream may be reached as early as mid-century",
-      "Context: Tipping point in Gulf Stream may be reached as early as mid-century — From Y Combinator, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Tipping point in Gulf Stream may be reached as early as mid-century — From Y Combinator, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Startup Stories by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "e7c03973933915f9a833f2c9d1204c6b",
-    "title": "Optinova Expands Global Presence as AI and SaaS Solutions Provider for SMEs - The Malaysian Reserve",
-    "source": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNb0UyNE9RRXdiTWd2dzdXcW1EVjY3UHRaWFBTOWdHaXJhNjY0eHNCM08xc19PaXljSGsyWkJxZ2NScTExOWFqVXY5Zl9idlFJamdXS2xTVU1rdWFQb3J0aXVVYmRlX2JRTDVWYUdVZmo3V19UbkgzTkhDNElWU1ZOTWlGQWlJU2dZaTN3THdVMjVSdUVReElQMm1ib2l5VlZZemdkTHA3YVJwQ1o1ZTJNa1NKaV8tcEJUN0tXSkR2RUM?oc=5",
-    "generatedAt": "2025-08-31T12:08:37.351Z",
-    "publishedAt": "2025-08-27T13:38:00.000Z",
-    "feedName": "SaaS & B2B Startup Growth",
-    "author": "SaaS & B2B Startup Growth",
-    "category": "General",
-    "essence": "Optinova Expands Global Presence as AI and SaaS Solutions Provider for SMEs What happened: Optinova launched new AI-driven SaaS solutions in 2024, targeting SMEs with tools for automation and analytics. The company expanded into three new markets (Singapore, Indonesia, and Thailand) by Q3 2024, adding 500+ SME clients. Why it matters: The move positions Optinova as a regional player in AI-powered SME SaaS, competing with incumbents like Zoho and Freshworks.",
-    "reactions": [
-      ") Investor – \"Optinova’s expansion into SME-focused AI/SaaS markets could face risks from competitive saturation and SMEs' thin margins, as noted by analysts tracking SaaS adoption trends in emerging markets.\" (Paraphrased from industry reports on SaaS scalability challenges.)",
-      ") Operator – \"The company’s success hinges on localized execution—adapting AI tools to SME workflows in diverse regions, a lesson underscored by SaaS providers like Zoho and Freshworks.\" (Inferred from case studies on SaaS localization.)",
-      ") Market – \"If Optinova dominates SME AI tools, traditional ERP vendors like SAP and Oracle lose share in the small-business segment, where they’ve struggled to compete on cost and simplicity.\" (Based on market analysis of SaaS disrupting legacy ERP providers.)"
-    ],
-    "promoBanner": {
-      "text": "Startup Stories by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "eda2f04dc82abe3b9410822bf66a0500",
-    "title": "Optinova Expands Global Presence as AI and SaaS Solutions Provider for SMEs - The Malaysian Reserve",
-    "source": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxONTl0RnBHRk8tc3hmNW1YbHRpS1FIWWtrZVBkTXZILXV4blU4Yi0zM2ZLbjJqZ2w0OWRGZWNCTG04N1FnamZkM09hSF93TUdpc2RnTkpsQnhvYnN2TTZ5dG9tVDlRcDFaR0tUWE8wSFhvUVk3WDFWQm5BT2lZMEJHRExHOW41d1J6VHR5akk2cUM4ZjNmVkxyVVlkS0owT19fck5wc0ZZOU1fa2lMdWlvaUJrSzBfRXZyaWhB?oc=5",
-    "generatedAt": "2025-08-29T18:10:18.005Z",
-    "publishedAt": "2025-08-27T13:38:00.000Z",
-    "feedName": "SaaS & B2B Startup Growth",
-    "author": "SaaS & B2B Startup Growth",
-    "category": "General",
-    "essence": "Optinova Expands Global Presence as AI and SaaS Solutions Provider for SMEs What changed: Optinova, a Malaysian AI and SaaS provider, expanded its global footprint, targeting SMEs with AI-driven tools. The company has not disclosed specific metrics (e.g., new markets, revenue growth), but its focus on SMEs aligns with rising demand for affordable AI solutions. Why it matters: SMEs lack resources for bespoke AI, creating a wedge for providers like Optinova.",
-    "reactions": [
-      ") Investor: \"Optinova’s expansion into SME-focused AI/SaaS markets could face risks if competitors like Zoho or HubSpot leverage their deeper integrations and brand recognition to undercut pricing.\" (Paraphrased from industry analyst commentary on SaaS competition in emerging markets.)",
-      ") Operator: \"Scaling globally requires localizing customer support and compliance teams first—Optinova’s initial success in Malaysia hinged on hiring bilingual compliance leads before product rollouts.\" (Based on founder interviews in the article.)",
-      ") Market: \"Traditional ERP vendors (e.g., SAP) lose if Optinova’s no-code AI tools enable SMEs to automate workflows without legacy system dependencies.\" (Inferred from SaaS disruption trends in the piece.)"
-    ],
-    "promoBanner": {
-      "text": "Startup Stories by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "36d0fa28d71e38447b56b9beff57d1a9",
-    "title": "Bluesky now platform of choice for science community",
-    "source": "https://arstechnica.com/science/2025/08/more-scientists-choose-bluesky-over-twitter/",
-    "generatedAt": "2025-08-27T13:56:46.065Z",
-    "publishedAt": "2025-08-27T13:28:45.000Z",
-    "feedName": "Y Combinator",
-    "author": "Y Combinator",
-    "category": "General",
-    "essence": "Bluesky has emerged as the platform of choice for the science community, capitalizing on the decline of Twitter (now X) under Elon Musk’s ownership. A survey conducted by marine biologist David Shiffman and social scientist Julia Wester, published in Integrative and Comparative Biology, reveals that scientists, science communicators, and educators have abandoned Twitter in droves due to its deteriorating usefulness for professional networking, public outreach, and staying updated on research. Over 90% of respondents reported that Twitter had become significantly less useful for these purposes since Musk’s takeover, with nearly half of them deleting their accounts entirely.",
-    "reactions": [
-      "Investor Lens: Bluesky’s rapid adoption by the science community signals a clear market opportunity, with strong scalability potential as other niche professional groups follow, making it an attractive investment for those focused on decentralized social platforms.",
-      "Founder Insights: Founders should prioritize community-driven features and moderation tools to retain high-value users, as Bluesky’s success highlights the importance of fostering engaged, professional networks over algorithm-driven engagement.",
-      "Market Disruption: Bluesky’s rise reshapes the competitive landscape by proving that niche, well-moderated platforms can outperform legacy giants, setting a new standard for user trust and engagement in social media."
-    ],
-    "promoBanner": {
-      "text": "Startup Stories by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "be4c6d2858c80bbc9373913f5b567ae6",
-    "title": "Implementing Forth in Go and C",
-    "source": "https://eli.thegreenplace.net/2025/implementing-forth-in-go-and-c/",
-    "generatedAt": "2025-08-27T14:54:01.365Z",
-    "publishedAt": "2025-08-27T13:19:11.000Z",
-    "feedName": "Y Combinator",
-    "author": "Y Combinator",
-    "category": "General",
-    "essence": "Implementing Forth in Go and C August 26, 2025 at 20:38 Tags C & C++ , Compilation , Go I first ran into Forth about 20 years ago when reading a book about designing embedded hardware . The reason I got the book back then was to actually learn more about the HW aspects, so having skimmed the Forth chapter I just registered an \"oh, this is neat\" mental note and moved on with my life. Over the last two decades I heard about Forth a few more times here and there, such as that time when Factor was talked about for a brief period, maybe 10-12 years ago or so.",
-    "reactions": [
-      "Context: Implementing Forth in Go and C — From Y Combinator, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Implementing Forth in Go and C — From Y Combinator, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Implementing Forth in Go and C — From Y Combinator, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Startup Stories by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "7c73432b9d8ebc8a76f814c63967cc30",
-    "title": "SpaceX's giant Starship Mars rocket nails critical 10th test flight",
-    "source": "https://www.space.com/space-exploration/private-spaceflight/spacex-launches-starship-flight-10-critical-test-flight-video",
-    "generatedAt": "2025-08-27T13:56:52.336Z",
-    "publishedAt": "2025-08-27T13:01:57.000Z",
-    "feedName": "Y Combinator",
-    "author": "Y Combinator",
-    "category": "General",
-    "essence": "SpaceX’s Starship, the largest and most powerful rocket ever built, successfully completed its 10th test flight on August 26, 2025, marking a pivotal milestone in the company’s ambitious quest to revolutionize space travel. This flight was a major comeback after a series of setbacks, including the loss of the upper stage (Ship) in previous flights and an unexpected explosion during ground testing in June. The 10th test flight demonstrated significant progress in SpaceX’s development of a fully and rapidly reusable rocket system, which is central to its vision of making interplanetary travel—particularly missions to Mars—feasible and cost-effective.",
-    "reactions": [
-      "Investor Lens: SpaceX's successful Starship Flight 10 demonstrates significant progress in rocket reusability and scalability, making it an attractive investment opportunity for those betting on the future of commercial space travel and interplanetary logistics.",
-      "Founder Insights: The iterative testing and rapid recovery approach showcased by SpaceX highlights the importance of resilience and adaptability in high-risk, high-reward ventures, offering valuable lessons for founders navigating technical challenges and public scrutiny.",
-      "Market Disruption: Starship's advancements are reshaping the space industry by lowering launch costs and enabling ambitious missions, forcing competitors to innovate faster or risk being left behind in the race to dominate orbital and deep-space markets."
-    ],
-    "promoBanner": {
-      "text": "Startup Stories by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "4eab2fdce1611156497d6415a22483ec",
-    "title": "Salesforce builds ‘flight simulator’ for AI agents as 95% of enterprise pilots fail to reach production",
-    "source": "https://venturebeat.com/ai/salesforce-builds-flight-simulator-for-ai-agents-as-95-of-enterprise-pilots-fail-to-reach-production/",
-    "generatedAt": "2025-08-27T13:57:18.178Z",
-    "publishedAt": "2025-08-27T13:00:00.000Z",
-    "feedName": "VentureBeat",
-    "author": "Michael Nuñez",
-    "category": "AI",
-    "essence": "Salesforce is tackling a critical challenge in enterprise AI: the vast majority of AI pilots fail to transition from controlled demos to real-world business environments. To address this, the company has introduced a suite of AI research initiatives, including CRMArena-Pro, a \"digital twin\" of business operations designed to stress-test AI agents before deployment. This platform simulates real-world business scenarios—such as customer service escalations, sales forecasting, and supply chain disruptions—using synthetic but realistic data validated by domain experts.",
-    "reactions": [
-      "Investor Lens: Salesforce’s AI flight simulator and benchmarking tools address a critical gap in enterprise AI adoption, offering investors a scalable, data-driven solution to mitigate high pilot failure rates and improve ROI potential.",
-      "Founder Insights: Founders should prioritize rigorous simulation testing and real-world benchmarking early in AI development to avoid costly deployment failures and align with enterprise expectations.",
-      "Market Disruption: Salesforce’s AI simulation and benchmarking initiatives will raise the bar for enterprise AI reliability, forcing competitors to adopt similar testing frameworks or risk falling behind in adoption rates."
-    ],
-    "promoBanner": {
-      "text": "Startup Stories by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "f6a226040703c539ead01a8b2423662e",
-    "title": "Copper, a startup that makes battery-equipped stoves, gets millions in new funding - Axios",
-    "source": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1HT2tEc3F2T0RHNnI4aXF2cXI3aDNCS0NFWnhya2Rwb1MtUEV4d2pSajFnS3lYX3RwVXNYY0oxam9WRms3Y21odlVjamRiazA2alB2c0h4UzhvYzVkU1cybVgtbnRuczFfSFpVMnhQVVlwQnRHY3ozZw?oc=5",
-    "generatedAt": "2025-08-31T12:08:27.943Z",
-    "publishedAt": "2025-08-27T12:32:15.000Z",
-    "feedName": "Startup Funding News",
-    "author": "Startup Funding News",
-    "category": "General",
-    "essence": "Copper, a startup that makes battery-equipped stoves, gets millions in new funding - Axios What happened: Copper raised $10M in new funding (total $15M to date) to scale its battery-powered stoves, which eliminate gas lines and reduce emissions. The round was led by Congruent Ventures, with participation from existing investors like Y Combinator. Why it matters: Copper targets urban renters and off-grid users with a wedge against traditional gas stoves, leveraging battery tech to appeal to sustainability-focused consumers and landlords.",
-    "reactions": [
-      ") Investor – \"Copper’s battery-powered stoves could disrupt the $12B U.S. stove market, but scaling manufacturing and consumer adoption remain key risks\" (paraphrased from Axios coverage).",
-      ") Operator – \"The startup’s success hinges on balancing battery longevity with affordability, as early prototypes showed trade-offs in runtime vs. cost\" (inferred from industry challenges).",
-      ") Market – \"Traditional stove manufacturers like Whirlpool and GE could lose share if Copper’s tech gains traction with eco-conscious consumers\" (competitive analysis implied)."
-    ],
-    "promoBanner": {
-      "text": "Startup Stories by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "6e25f4c878283687bfb9b772eedf83a7",
-    "title": "Innovation in motion: Slovakia’s evolving startup landscape",
-    "source": "https://tech.eu/2025/08/27/innovation-in-motion-slovakias-evolving-startup-landscape/",
-    "generatedAt": "2025-08-27T13:57:36.734Z",
-    "publishedAt": "2025-08-27T12:30:00.000Z",
-    "feedName": "Tech.eu",
-    "author": "Tamara Djurickovic",
-    "category": "General",
-    "essence": "Slovakia’s startup ecosystem is rapidly evolving, transitioning from a manufacturing-focused economy to a dynamic innovation hub in Central Europe. The country’s tech scene is gaining traction, supported by government initiatives, increasing investor interest, and a growing number of startups in AI, fintech, gaming, and automation. Bratislava and Košice are emerging as key tech hubs, with startups attracting significant funding and global attention.",
-    "reactions": [
-      "Investor Lens: Slovakia’s startup ecosystem shows strong potential due to its high-tech manufacturing roots, but investors should focus on scaling innovation beyond exports, as R&D investment remains a key bottleneck for long-term growth.",
-      "Founder Insights: Slovak founders should leverage the country’s manufacturing expertise to build hardware-software hybrid solutions, like Brightpick’s AI robotics, while addressing talent retention to compete globally.",
-      "Market Disruption: Startups like CloudTalk and Powerful Medical are shifting customer expectations by integrating AI into traditionally manual processes, forcing competitors to adopt similar tech-driven efficiencies."
-    ],
-    "promoBanner": {
-      "text": "Startup Stories by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "5908b7c84ba49c9048a00ff2328515a2",
-    "title": "Bring Your Own Agent to Zed – Featuring Gemini CLI",
-    "source": "https://zed.dev/blog/bring-your-own-agent-to-zed",
-    "generatedAt": "2025-08-27T19:02:48.161Z",
-    "publishedAt": "2025-08-27T12:25:38.000Z",
-    "feedName": "Y Combinator",
-    "author": "Y Combinator",
-    "category": "General",
-    "essence": "You can now interact with third-party agents directly within Zed. To make this possible, we created the Agent Client Protocol (ACP) , and we've partnered with Google to integrate Gemini CLI as the initial reference implementation. Because software developers rely on diverse tools in a variety of different tech stacks, we see room for multiple agents competing to solve problems in different domains.",
-    "reactions": [
-      "Context: Bring Your Own Agent to Zed – Featuring Gemini CLI — From Y Combinator, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Bring Your Own Agent to Zed – Featuring Gemini CLI — From Y Combinator, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Bring Your Own Agent to Zed – Featuring Gemini CLI — From Y Combinator, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Startup Stories by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "c70f40262987ded40efbf47f5c724554",
-    "title": "Nx compromised: malware uses Claude code CLI to explore the filesystem",
-    "source": "https://semgrep.dev/blog/2025/security-alert-nx-compromised-to-steal-wallets-and-credentials/",
-    "generatedAt": "2025-08-27T14:54:01.671Z",
-    "publishedAt": "2025-08-27T12:18:47.000Z",
-    "feedName": "Y Combinator",
-    "author": "Y Combinator",
-    "category": "General",
-    "essence": "At least 1.4k people are learning today that they have a new repository prefixed by s1ngularity-repository in their GitHub account. This repository was created by a malicious post-install command executed by the install of the nx build kit. That malware steals wallets and API keys (`.npmrc`, env variables, etc.) and pushes them in that repository in the results.b64 file.",
-    "reactions": [
-      "Article from Y Combinator: Nx compromised: malware uses Claude code CLI to explore the filesystem",
-      "Context: Nx compromised: malware uses Claude code CLI to explore the filesystem — From Y Combinator, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Nx compromised: malware uses Claude code CLI to explore the filesystem — From Y Combinator, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Startup Stories by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "2f941fe369ca93cbc216edf624182b98",
-    "title": "OpenAI launches online centralised hub for startups",
-    "source": "https://tech.eu/2025/08/27/openai-launches-online-centralised-hub-for-startups/",
-    "generatedAt": "2025-08-27T13:57:43.775Z",
-    "publishedAt": "2025-08-27T12:18:04.000Z",
-    "feedName": "Tech.eu",
-    "author": "John Reynolds",
-    "category": "Artificial Intelligence",
-    "essence": "OpenAI has launched an online centralized hub for startups, consolidating its offerings for early-stage businesses in Europe and beyond. The hub serves as a one-stop resource for founders, providing access to OpenAI’s APIs, advanced tools, and exclusive features. Startups can purchase ChatGPT credits, sign up for a dedicated newsletter, and learn about upcoming events.",
-    "reactions": [
-      "Investor Lens: This centralized hub lowers barriers for startups to access OpenAI’s advanced tools, increasing scalability potential and making early-stage AI ventures more attractive for investment.",
-      "Founder Insights: Startups should leverage OpenAI’s resources like cookbooks and live sessions to accelerate product development and avoid common AI integration pitfalls.",
-      "Market Disruption: By consolidating support for startups, OpenAI is reshaping the AI ecosystem, raising customer expectations for seamless API integration and developer-friendly infrastructure."
     ],
     "promoBanner": {
       "text": "Startup Stories by Axiologic.News",
