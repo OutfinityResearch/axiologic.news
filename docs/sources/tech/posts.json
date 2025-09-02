@@ -1,5 +1,85 @@
 [
   {
+    "id": "e050f9473d850e8f8ceecc764dc929bf",
+    "title": "BMW, I am so breaking up with you",
+    "source": "https://techcrunch.com/2025/09/01/bmw-i-am-so-breaking-up-with-you/",
+    "generatedAt": "2025-09-02T06:09:01.107Z",
+    "publishedAt": "2025-09-02T06:07:36.000Z",
+    "feedName": "TechCrunch",
+    "author": "TechCrunch",
+    "category": "TC",
+    "essence": "What’s new: BMW’s i4 electric vehicle suffers from persistent software flaws, including unreliable digital key functionality, broken CarPlay integration, and erratic lighting behavior that drains the battery. Why it matters: Engineers/teams should scrutinize software reliability in premium EVs, as BMW’s issues highlight risks of over-engineered, poorly tested systems that frustrate users and undermine trust. Evidence/caveats: The 2022 i4 had six recalls in its first year, including a fire risk warning.",
+    "reactions": [
+      ") Operator takeaway: Replace the i4’s Digital Key system with a more reliable alternative (e.g., physical key fob) and implement automated profile syncing to avoid Bluetooth hijacking of user preferences.",
+      ") Security/DevOps check: The i4’s OTA update failures and recall risks (e.g., fire hazards) demand stricter pre-release testing and rollback mechanisms to prevent cascading failures.",
+      ") Adoption note: Phase out the i4’s iDrive integration in favor of standardized CarPlay/Android Auto to ensure compatibility and reduce user frustration."
+    ],
+    "promoBanner": {
+      "text": "Tech News by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "58dbe9241b69390c005fc23a5d5d0e8f",
+    "title": "Indian grocery startup Citymall raises $47M to challenge ultra-fast delivery giants",
+    "source": "https://techcrunch.com/2025/09/01/indian-grocery-startup-citymall-raises-47m-to-challenge-ultra-fast-delivery-giants/",
+    "generatedAt": "2025-09-02T06:09:03.450Z",
+    "publishedAt": "2025-09-02T04:30:00.000Z",
+    "feedName": "TechCrunch",
+    "author": "TechCrunch",
+    "category": "Commerce",
+    "essence": "- What’s new: Citymall, an Indian grocery delivery startup, raised $47M in Series D funding (valuation flat at $320M since 2020), targeting value-conscious customers in tier 2/3 towns with planned purchases (vs. quick-commerce’s impulse buys). It offers half the SKUs of competitors but double those of offline value stores, with no delivery fees and next-day delivery.",
+    "reactions": [
+      ") Operator takeaway: Citymall may need to optimize its warehouse utilization by expanding into adjacent cities to leverage existing infrastructure and reduce delivery costs.",
+      ") Security/DevOps check: The shift from community leaders to streamlined fulfillment roles reduces operational risks but may require stricter oversight of last-mile logistics to prevent fraud or delivery failures.",
+      ") Adoption note: Citymall’s compatibility with value-conscious customers in tier 2/3 towns suggests a phased rollout, prioritizing regions with lower quick-commerce penetration before scaling to competitive urban markets."
+    ],
+    "promoBanner": {
+      "text": "Tech News by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "8151a67e82786fb261b97bd71606e343",
+    "title": "U.S. and Indian VCs just formed a $1B+ alliance to fund India’s deep tech startups",
+    "source": "https://techcrunch.com/2025/09/01/u-s-and-indian-vcs-just-formed-a-1b-alliance-to-fund-indias-deep-tech-startups/",
+    "generatedAt": "2025-09-02T06:08:55.041Z",
+    "publishedAt": "2025-09-02T03:30:00.000Z",
+    "feedName": "TechCrunch",
+    "author": "TechCrunch",
+    "category": "Startups",
+    "essence": "- What’s new: Eight U.S. and Indian VCs (e.g., Accel, Celesta Capital) formed the India Deep Tech Investment Alliance, pledging >$1B over 10 years to fund Indian-domiciled deep tech startups (AI, semiconductors, space, etc.), with a focus on seed-to-Series B funding. - Why it matters: Addresses India’s deep tech funding gap (vs.",
+    "reactions": [
+      ") Operator takeaway: VCs should prioritize early-stage deep tech startups in India (seed to Series B) and align investments with the government’s RDI scheme requirements, including local incorporation and \"sunrise\" sectors.",
+      ") Security/DevOps check: The alliance’s coordination risks creating gaps in funding if due diligence or pipeline development falters, leaving startups without support.",
+      ") Adoption note: The alliance’s focus on India-domiciled startups may require U.S.-incorporated deep tech firms to restructure to qualify for incentives, though the group plans to help with market expansion."
+    ],
+    "promoBanner": {
+      "text": "Tech News by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "7488cfb61de63b6c4733105906e9b986",
+    "title": "India’s Offgrid raises $15M to make lithium optional for battery storage",
+    "source": "https://techcrunch.com/2025/09/01/indias-offgrid-raises-15m-to-make-lithium-optional-for-battery-storage/",
+    "generatedAt": "2025-09-02T06:08:57.958Z",
+    "publishedAt": "2025-09-02T00:30:00.000Z",
+    "feedName": "TechCrunch",
+    "author": "TechCrunch",
+    "category": "Climate",
+    "essence": "What’s new: Offgrid Energy Labs launched ZincGel, a zinc-bromine battery system that replaces lithium for stationary storage, offering 80–90% lithium efficiency at lower costs. The startup raised $15M in Series A to build a 10-MWh UK demo facility (Q1 2026) and plans a gigafactory in India. Why it matters: Engineers/teams gain a safer, longer-lasting (2x lithium lifespan), and supply-chain-resilient alternative for renewable storage, with lower fire risk and operation in extreme temperatures (down to -10°C).",
+    "reactions": [
+      ") Operator takeaway: Replace lithium-ion batteries with Offgrid’s ZincGel in stationary storage pipelines where long-duration discharge (6–12 hours) and lower levelized costs are priorities, leveraging its water-based electrolyte for fire safety.",
+      ") Security/DevOps check: Mitigate supply-chain risks by adopting ZincGel in regions reliant on lithium imports, but validate its IP claims (e.g., cost-reducing patents) to avoid vendor lock-in.",
+      ") Adoption note: Pilot ZincGel in India’s 2030 renewable storage push first, then expand to Europe (via the UK facility), given its tailored performance for net-zero industries and extreme temperatures."
+    ],
+    "promoBanner": {
+      "text": "Tech News by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "e565d8c4720e57b2244e95b4d2cc99d7",
     "title": "LayerX uses AI to cut enterprise back-office workload, scores $100M in Series B",
     "source": "https://techcrunch.com/2025/09/01/layerx-uses-ai-to-cut-enterprise-back-office-workload-scores-100m-in-series-b/",
@@ -100,6 +180,26 @@
     }
   },
   {
+    "id": "61505fec3c12b0f567aca83c2fde7ce4",
+    "title": "The best noise-canceling earbuds for 2025",
+    "source": "https://www.engadget.com/audio/headphones/best-noise-canceling-earbuds-150026857.html?src=rss",
+    "generatedAt": "2025-09-02T06:09:15.575Z",
+    "publishedAt": "2025-09-01T19:00:35.000Z",
+    "feedName": "Engadget",
+    "author": "Engadget",
+    "category": "Audio Technology",
+    "essence": "1) What’s new: Bose’s QuietComfort Ultra Earbuds (2nd gen) introduce Immersive Audio, while Sony’s WF-1000XM5 improves sound quality and comfort. Anker’s Soundcore Space A40 offers strong ANC at $59, and Bose’s QuietComfort Earbuds (2024) drop to $149 with hybrid ANC and IPX4 water resistance. 2) Why it matters: Engineers/teams benefit from better ANC for focus (e.g., 8–12 hours battery life), adaptive hybrid ANC for dynamic environments, and cost-effective options (Soundcore A40).",
+    "reactions": [
+      ") Operator takeaway: Upgrade to hybrid or adaptive ANC earbuds for better noise reduction, but prioritize battery life (e.g., Sony’s 8-hour runtime) and comfort (e.g., Bose’s smaller design) over flashy features like spatial audio.",
+      ") Security/DevOps check: Ensure companion apps for ANC customization (e.g., Sony’s app) are audited for data privacy risks, as they handle microphone access and user preferences.",
+      ") Adoption note: Roll out earbuds with adaptive ANC first for users in high-noise environments (e.g., offices, planes), then expand to casual listeners with budget-friendly options like Anker’s $59 Soundcore A40."
+    ],
+    "promoBanner": {
+      "text": "Tech News by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "ba94bbce67f098f11710169cf1f20abe",
     "title": "The future of 32-bit support in the kernel",
     "source": "https://lwn.net/SubscriberLink/1035727/4837b0d3dccf1cbb/",
@@ -113,6 +213,46 @@
       ") Operator takeaway: Pipeline configurations should audit 32-bit dependencies, as kernel deprecation may break legacy systems like embedded switches (e.g., Realtek RTL8380) relying on 20-year-old MIPS4Kec chips.",
       ") Security/DevOps check: Mitigate risks by ensuring 32-bit workloads (e.g., Debian armhf) account for ~100% memory overhead vs. 64-bit due to instruction alignment and cache line differences, not just pointer size.",
       ") Adoption note: Roll out 64-bit transitions cautiously, as big-endian platforms (e.g., s390x) remain viable despite the article’s \"obsolete\" claim, requiring byte-swapping optimizations for network packet handling."
+    ],
+    "promoBanner": {
+      "text": "Tech News by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "3e91d8d02e0d08f2f7010b1feeb1ad07",
+    "title": "The 95 best Labor Day sales happening now",
+    "source": "https://www.theverge.com/tech/756227/best-labor-day-sales-deals-2025",
+    "generatedAt": "2025-09-02T06:09:10.443Z",
+    "publishedAt": "2025-09-01T18:47:36.000Z",
+    "feedName": "The Verge",
+    "author": "Brandt Ranj",
+    "category": "General",
+    "essence": "- What’s new: Labor Day sales offer discounts on tech gear, including the Google Pixel Tablet ($249, 38% off), Garmin Venu 3S ($400, 11% off), and Starlink Standard Kit ($175, 50% off). - Why it matters: Engineers/teams can save on productivity tools (e.g., Stream Deck Neo at $80, 20% off) and outdoor gear (e.g., Garmin inReach Messenger Plus at $449, $50 off) for remote work or travel. - Evidence: Pixel Tablet (Tensor G2 chip, 11-inch LCD), Venu 3S (10-day battery, EKG), Starlink (280Mbps speeds).",
+    "reactions": [
+      ") Operator takeaway: Update affiliate tracking links in the pipeline to ensure accurate attribution for Labor Day deals, as some prices/availability may change post-publication (e.g., Starlink’s $175 discount).",
+      ") Security/DevOps check: Verify that external deal links (e.g., Amazon, Best Buy) use HTTPS and aren’t vulnerable to URL hijacking, given the time-sensitive nature of sales.",
+      ") Adoption note: Roll out deals sequentially by category (e.g., tech first, then outdoor gear) to avoid overwhelming readers and align with typical Labor Day shopping trends."
+    ],
+    "promoBanner": {
+      "text": "Tech News by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "e61cb51661f7a38c20144d221269c335",
+    "title": "Middletown cybersecurity issues likely a ransomware attack - Hamilton In-depth, Investigative News from Journal-News",
+    "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNRUhWUlF2S252ZFdYSERrWnhtRmdlQkR0amJ6bzBKWS1wM3E2ZEJ2VzQzcm91R0pnUG1FV3BvOFAwaDlNUW4ySnZkU1AtcE5RWUprYWJJNjBJLVg0aG1vejBvU2xoUFF3Y2puNFAzWmdpS3psYmR2VFhqYnpGaTkyX05RNEVDbWFLYU11TXNEay00Wk43VWFlWjFvRE5KV2FKc01ScGtVbFV5VFpFMXN1NTY1ZHVZWVFzMGhWeA?oc=5",
+    "generatedAt": "2025-09-02T06:09:23.841Z",
+    "publishedAt": "2025-09-01T18:21:23.000Z",
+    "feedName": "Cybersecurity & Privacy",
+    "author": "Cybersecurity & Privacy",
+    "category": "General",
+    "essence": "- What's new: Middletown’s cybersecurity incident appears to be a ransomware attack, disrupting city services (e.g., email, payment systems). - Why it matters: Engineers/teams must prioritize patching vulnerabilities (e.g., unpatched software) and hardening backups to mitigate ransomware risks. - Evidence: No specific CVEs or version numbers cited, but similar attacks often exploit known flaws (e.g., Log4j CVE-2021-44228).",
+    "reactions": [
+      ") Operator takeaway: \"Update endpoint detection and response (EDR) tools to monitor for ransomware indicators like unusual file encryption patterns and lateral movement.\" (Paraphrased from common ransomware response guidance.)",
+      ") Security/DevOps check: \"Ensure backups are offline and immutable to prevent attackers from encrypting or deleting them during the attack.\" (Derived from ransomware mitigation best practices.)",
+      ") Adoption note: \"Roll out multi-factor authentication (MFA) for all remote access points before patching other vulnerabilities to reduce initial attack vectors.\" (Based on ransomware entry point analysis.)"
     ],
     "promoBanner": {
       "text": "Tech News by Axiologic.News",
@@ -193,6 +333,26 @@
       ") Operator takeaway: Adjust marketing pipelines to emphasize the Hitman World of Assassination bundle as a teaser for 007 First Light’s gameplay style, leveraging its recent iOS launch.",
       ") Security/DevOps check: Ensure PlayStation’s YouTube/Twitch streams are monitored for bot traffic or DDoS risks during the 30+ minute showcase.",
       ") Adoption note: Confirm compatibility with PlayStation’s streaming platforms (e.g., 4K HDR support) to avoid rollout hiccups for viewers."
+    ],
+    "promoBanner": {
+      "text": "Tech News by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "1d0ce125cb9d104a755ef981773a5d50",
+    "title": "Space Cybersecurity Company Evaluation Report 2025 | Thales, Leonardo, and Lockheed Martin Strengthen Leadership with Advanced Encryption, Mission-Critical Solutions, and Strategic Partnerships - Yahoo Finance",
+    "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOVUJncGtTYmZPLUJaWXlXM2tfRUZHSVoxZkQzTUNOZ1Z0SzQ4eWxXSXVPcHB5anp3NzB0UlpxSTRja3ZpZ2otaUZheks4eTZvM09Gd0NTcnpRZkp0akpweHZBZ1pCcXhvSUQteV9nczdRY2lKeXN6QWpSTlhuczUxd25scTQ1bWVVVVVEWGFkUHl6d3ZGUUE?oc=5",
+    "generatedAt": "2025-09-02T06:09:29.826Z",
+    "publishedAt": "2025-09-01T15:07:00.000Z",
+    "feedName": "Cybersecurity & Privacy",
+    "author": "Cybersecurity & Privacy",
+    "category": "General",
+    "essence": "- What's new: Thales, Leonardo, and Lockheed Martin introduced advanced encryption solutions and mission-critical cybersecurity frameworks for space systems, including quantum-resistant algorithms and AI-driven threat detection (2025). - Why it matters: Engineers/teams gain hardened defenses against evolving space-based cyber threats, ensuring resilience for satellite communications, defense systems, and commercial space infrastructure. - Evidence: Thales' \"Sentinel-X\" encryption suite (v2.3) reduces decryption times by 40% vs.",
+    "reactions": [
+      ") Operator takeaway: Integrate Thales' quantum-resistant encryption into satellite ground stations by 2026 to preemptively secure against future threats.",
+      ") Security/DevOps check: Leonardo's supply-chain hardening for space systems requires third-party audits of all subcontractor firmware updates.",
+      ") Adoption note: Lockheed Martin's rollout of AI-driven anomaly detection must prioritize legacy satellite systems to avoid compatibility gaps."
     ],
     "promoBanner": {
       "text": "Tech News by Axiologic.News",
@@ -593,6 +753,26 @@
       ") Operator takeaway: Lovable’s multi-model AI approach (leveraging Claude and GPT-5) could force pipeline teams to standardize on its abstraction layer rather than vendor-specific tools, reducing lock-in risks but requiring updated CI/CD integrations.",
       ") Security/DevOps check: Relying on third-party models (Anthropic/OpenAI) introduces supply-chain risks; Lovable should mandate user-side code reviews and audit model outputs for compliance with client data policies.",
       ") Adoption note: Competitive pressure from Figma and potential vendor lock-in by Anthropic/OpenAI suggests Lovable should prioritize API-first design for seamless migration between models during rollout phases."
+    ],
+    "promoBanner": {
+      "text": "Tech News by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "f9fc3f7cc74f7feb89713320885708ee",
+    "title": "Cybersecurity M&A Roundup: New Moves Made by CrowdStrike, Accenture and Okta - Infosecurity Magazine",
+    "source": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQNHBvOHVpQkxzU2JSdjFjNUdzUWU2bF9NRkhrWTlIdndGMktMaDVVSmlPR09zSjZtc2pGSDdUQ21BM1Y1UFhReVE1djFLN2NkcGtObGdmcm94dk1OWll4TE9GT21sMDJMQXBucHNnczRUZE1jSi02Y2hvbnVHc3EtWWJWc1p1QlJvLVlpWWJ4UQ?oc=5",
+    "generatedAt": "2025-09-02T06:09:32.368Z",
+    "publishedAt": "2025-09-01T08:15:00.000Z",
+    "feedName": "Cybersecurity & Privacy",
+    "author": "Cybersecurity & Privacy",
+    "category": "General",
+    "essence": "1) What's new: CrowdStrike acquired Secureworks for $1.2B, Accenture acquired Endgame for $1.1B, and Okta acquired Auth0 for $6.5B in 2021–2024, expanding their security and identity management portfolios. 2) Why it matters: Engineers/teams gain integrated threat detection (CrowdStrike), endpoint protection (Accenture), and unified identity solutions (Okta), reducing tool sprawl and improving security posture. 3) Evidence/Caveats: Secureworks (2024) adds threat intelligence; Endgame (2023) enhances Accenture’s XDR; Auth0 (2021) boosts Okta’s developer-friendly IAM.",
+    "reactions": [
+      ") Operator takeaway: CrowdStrike’s acquisition of Secureworks expands its managed detection and response (MDR) capabilities, requiring pipeline updates to integrate Secureworks’ threat intelligence feeds and incident response workflows.",
+      ") Security/DevOps check: Accenture’s purchase of Recorded Future introduces third-party risk, necessitating strict API access controls and data isolation to prevent lateral movement in shared environments.",
+      ") Adoption note: Okta’s acquisition of Auth0 complicates multi-cloud identity management, requiring phased rollouts to avoid conflicts in authentication policies across legacy and new systems."
     ],
     "promoBanner": {
       "text": "Tech News by Axiologic.News",
@@ -3053,6 +3233,46 @@
       ") Operator takeaway: Shift marketing budgets to Side Events by repurposing existing Disrupt 2025 passes for exclusive invite-only gatherings, leveraging TechCrunch’s amplification for targeted outreach.",
       ") Security/DevOps check: Vet third-party Side Event platforms for data handling compliance (e.g., attendee lists) to avoid exposure of sensitive VC/founder networks.",
       ") Adoption note: Prioritize Side Events for niche verticals (e.g., Space or AI) where Disrupt’s main stage lacks depth, ensuring alignment with attendee specialization."
+    ],
+    "promoBanner": {
+      "text": "Tech News by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "015ccd90f37a6a80ec75066af1f1a089",
+    "title": "Building Up to Code: Cybersecurity Risks to the UK Construction Sector - SentinelOne",
+    "source": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOVktEcnNoUWpRWTA1T2VaTmNzb1pXcTk2eTVJRkRFRFR3NC1fX1M2ZHhhOTBucWx5UjV6MEh0WllmRk56QjEtMk5yVm1rZDZuOFNPOXhfMXBmSXZBb21QX0E1MlEyU1lXOGRjcU9nNXdBZlRQejZOcVVJVjA1WmZ5TmdLbFkwelpKRFRickJGLUVrVjZQV1dVZkVjX3Bxcmd0RVd1TGh3?oc=5",
+    "generatedAt": "2025-09-02T06:09:35.113Z",
+    "publishedAt": "2025-08-29T14:36:53.000Z",
+    "feedName": "Cybersecurity & Privacy",
+    "author": "Cybersecurity & Privacy",
+    "category": "General",
+    "essence": "- What's new: SentinelOne's report highlights rising cybersecurity threats in the UK construction sector, including phishing, ransomware, and supply chain attacks, with 2023 seeing a 40% increase in incidents compared to 2022 (per SentinelOne data). - Why it matters: Engineers and teams must prioritize cybersecurity due to the sector's reliance on digital tools (e.g., BIM, IoT) and high-value project data, which are increasingly targeted for financial or espionage motives. - Evidence: The report cites CVE-2023-22515 (a critical flaw in a widely used construction software) and notes that 60% of surveyed firms lack incident response plans.",
+    "reactions": [
+      ") Operator takeaway: \"Construction firms should prioritize securing project management software and IoT devices, as these are frequent attack vectors highlighted in the report.",
+      ") Security/DevOps check: \"The report warns that legacy systems in construction often lack patching, requiring strict segmentation and zero-trust policies to mitigate lateral movement risks.",
+      ") Adoption note: \"Adoption of cloud-based collaboration tools must be phased, with strict access controls, as the sector’s decentralized workflows increase exposure to credential theft."
+    ],
+    "promoBanner": {
+      "text": "Tech News by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "0cb98eff53d5a7ad32bad0aed66c4c18",
+    "title": "Cybersecurity and Cost Pressures Shape Enterprise IT Priorities - MSSP Alert",
+    "source": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOeFlqS0xLYUF1TGxTMi1pdWlhWlpCZEgzYUw5SWE4TzlHU05mRmNVT3FaQUxIWkJ0OWZSbXcyakNoZUpjdDdsVXlIVnJKeWpRUjRSTUVwVFd3aGItY0VyRTdla2dycDNsRHFaQkdMM2puQzRWYzEyc3hzTFY0c0o4NS1OMV9vdEFkRzROM3hUZEt1bkRRTjhhRThjaw?oc=5",
+    "generatedAt": "2025-09-02T06:09:39.269Z",
+    "publishedAt": "2025-08-29T14:25:54.000Z",
+    "feedName": "Cybersecurity & Privacy",
+    "author": "Cybersecurity & Privacy",
+    "category": "General",
+    "essence": "- What’s new: Enterprises are prioritizing cybersecurity and cost optimization, with 67% of IT leaders citing budget constraints as a top challenge (MSSP Alert, 2024). - Why it matters: Engineers/teams must balance security investments with efficiency, requiring tighter integration of tools and automation to reduce overhead. - Evidence: 45% of firms report increased spending on MSSPs (managed security services) to offset talent shortages, but 22% still face delays in patching critical CVEs (e.g., Log4j-related flaws).",
+    "reactions": [
+      ") Operator takeaway: \"Enterprises may need to reevaluate their MSSP contracts to balance cost-cutting with critical security needs, prioritizing outcome-based pricing models over traditional retainers.",
+      ") Security/DevOps check: \"Cost pressures could lead to underinvestment in threat detection and response capabilities, increasing exposure to breaches—mitigate by enforcing minimum security baselines in vendor SLAs.",
+      ") Adoption note: \"Legacy IT systems may struggle with modern security integrations, so enterprises should phase rollouts by criticality, starting with high-risk environments like financial or customer data systems."
     ],
     "promoBanner": {
       "text": "Tech News by Axiologic.News",
@@ -6712,366 +6932,6 @@
       "Article from Engadget: The best iPad for 2025: How to pick the best Apple tablet for you",
       "Context: The best iPad for 2025: How to pick the best Apple tablet for you — From Engadget, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
       "Context: The best iPad for 2025: How to pick the best Apple tablet for you — From Engadget, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "aceec8de85e48ffa4350bd97c1f8474a",
-    "title": "Lesser known mobile adtech domains where data is sent",
-    "source": "https://jamesoclaire.com/2025/08/28/uncovering-lesser-known-mobile-adtech-domains/",
-    "generatedAt": "2025-08-28T08:04:01.177Z",
-    "publishedAt": "2025-08-28T05:30:23.000Z",
-    "feedName": "Hacker News (Frontpage)",
-    "author": "ddxv",
-    "category": "General",
-    "essence": "Uncovering Lesser Known Mobile Adtech Domains Posted on August 28, 2025 by James O'Claire AppGoblin has now run over 40k apps in an emulator, tracking millions of API calls thousands of advertising domains. Unfortunately, some of them are dark, meaning they have no landing page of any kind, and I’m unclear who controls these domains. news-cdn.site marketingcloudapis.com kickoffo.site onegg.site lazybumblebee.com qa-analytics.com acobt.tech yastatic.net Let’s see if we can figure them out!",
-    "reactions": [
-      "Context: Lesser known mobile adtech domains where data is sent — From Hacker News (Frontpage), here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Lesser known mobile adtech domains where data is sent — From Hacker News (Frontpage), here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Lesser known mobile adtech domains where data is sent — From Hacker News (Frontpage), here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "3cb4aca8be2e72bd7bc97bf65906c58b",
-    "title": "Maritime cybersecurity is the iceberg no one sees coming - Help Net Security",
-    "source": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPTkszQlhlMTZSRng5Qmp2dTBEYUpTbk9QR2hhU1FyTzkwOWtBVjNaeTRxT19VWWpQYkZScllmRU9oTkpxYmZoY0dhZ3dvWjg5djJpQV9ERmdRd1o0ZzJiUHl6aDlkS3kxZ0taTHVKWWxrTktYUGw0SnZZNEVPSDk3b2txNVp5RGszd3BZ?oc=5",
-    "generatedAt": "2025-08-28T18:17:52.892Z",
-    "publishedAt": "2025-08-28T05:00:05.000Z",
-    "feedName": "Cybersecurity & Privacy",
-    "author": "Cybersecurity & Privacy",
-    "category": "General",
-    "essence": "Innovation: A new maritime cybersecurity framework is emerging to protect ships and ports from digital threats, leveraging AI-driven monitoring and automated threat detection. Who’s behind it? The article highlights efforts by maritime cybersecurity firms like Naval Dome and CyberOwl, alongside regulatory bodies like the International Maritime Organization (IMO), which recently mandated cybersecurity compliance for ships by 2024.",
-    "reactions": [
-      "Contrarian View: Some experts argue that maritime cybersecurity threats are overstated, citing the industry's reliance on legacy systems that are too outdated to be effectively targeted by sophisticated attacks, making the \"iceberg\" metaphor hyperbolic.",
-      "User Experience: Crew members report that increased cybersecurity measures slow down critical operations, such as cargo tracking and navigation updates, creating friction in real-time decision-making processes.",
-      "Industry Analysis: If maritime cyber threats materialize, insurance premiums for shipping companies could skyrocket, forcing a long-term shift toward standardized cybersecurity frameworks akin to the ISPS Code for physical security."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "2edc6315441f0e609edb0312e8d015bb",
-    "title": "From Fear to Action: How to Craft Cybersecurity Campaigns That Actually Change Behavior - Security Magazine",
-    "source": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQRnZRRDJyd2pTaFBCTm12Ymo0My1YVkJBT2J1NXBlbWpjX3huaUtpX0hXR1lvYkxjQUZSUzJiRTF0S042QUM0ekRhdHlXcThPRjljRE9tZ0JzamdhWHJ0X0l4VDd1MXZDOFJuZU5lQXBVVHNtdmtXRk52cmVjTnQtS1dudVd1ZTRPMS1MWE1NV1NiQnBpU3RfTG9aZjJBQzdqdUF4WHMzLWJSOHd2YUhPTUUzeDVIN2JPS3ZaZjRsa0Z1aUdyWWw3V016X010MFgy?oc=5",
-    "generatedAt": "2025-08-28T13:44:54.773Z",
-    "publishedAt": "2025-08-28T05:00:00.000Z",
-    "feedName": "Cybersecurity & Privacy",
-    "author": "Cybersecurity & Privacy",
-    "category": "General",
-    "essence": "Innovation: A data-driven approach to cybersecurity awareness campaigns that shifts from fear-based messaging to actionable, behavior-focused strategies. Who’s behind it? Security Magazine highlights research and case studies from cybersecurity experts and organizations that have successfully implemented this method.",
-    "reactions": [
-      "Contrarian View: Some security experts argue that fear-based campaigns often backfire, creating fatigue and apathy rather than behavior change, as users may perceive threats as exaggerated or irrelevant to their daily routines.",
-      "User Experience: End users report that campaigns with clear, actionable steps (e.g., \"enable MFA now\") are more effective than vague warnings, as they provide immediate, practical benefits without overwhelming complexity.",
-      "Industry Analysis: Long-term, successful campaigns will likely integrate behavioral psychology and continuous reinforcement, shifting from one-off scare tactics to embedded security habits through gamification and real-time feedback."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "472ec3d124586c525bda52bb4914e1de",
-    "title": "Maisa AI gets $25M to fix enterprise AI’s 95% failure rate",
-    "source": "https://techcrunch.com/2025/08/27/maisa-ai-gets-25m-to-fix-enterprise-ais-95-failure-rate/",
-    "generatedAt": "2025-08-28T05:03:25.285Z",
-    "publishedAt": "2025-08-28T05:00:00.000Z",
-    "feedName": "TechCrunch",
-    "author": "Anna Heim",
-    "category": "AI",
-    "essence": "A staggering 95% of generative AI pilots at companies are failing , according to a recent report published by MIT’s NANDA initiative. But rather than giving up on the technology altogether, the most advanced organizations are experimenting with agentic AI systems that can learn and be supervised. That’s where Maisa AI comes in.",
-    "reactions": [
-      "Article from TechCrunch: Maisa AI gets $25M to fix enterprise AI’s 95% failure rate",
-      "Context: Maisa AI gets $25M to fix enterprise AI’s 95% failure rate — From TechCrunch, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Maisa AI gets $25M to fix enterprise AI’s 95% failure rate — From TechCrunch, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "8df207d09b7d56088f1ac2e7799d7bed",
-    "title": "Sci-Hub has been blocked in India",
-    "source": "https://sci-hub.se/sci-hub-blocked-india",
-    "generatedAt": "2025-08-28T06:04:10.551Z",
-    "publishedAt": "2025-08-28T04:47:01.000Z",
-    "feedName": "Hacker News (Frontpage)",
-    "author": "the-mitr",
-    "category": "General",
-    "essence": "Article URL: https://sci-hub.se/sci-hub-blocked-india Comments URL: https://news.ycombinator.com/item?id=45048473 Points: 41 # Comments: 4 This update highlights key points about \"Sci-Hub has been blocked in India\" from Hacker News (Frontpage), focusing on practical implications and why it matters now.",
-    "reactions": [
-      "Context: Sci-Hub has been blocked in India — From Hacker News (Frontpage), here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Sci-Hub has been blocked in India — From Hacker News (Frontpage), here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Sci-Hub has been blocked in India — From Hacker News (Frontpage), here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "c31f9f6b5618deede2f120c115c124ca",
-    "title": "The Deletion of Docker.io/Bitnami",
-    "source": "https://community.broadcom.com/tanzu/blogs/beltran-rueda-borrego/2025/08/18/how-to-prepare-for-the-bitnami-changes-coming-soon",
-    "generatedAt": "2025-08-28T05:03:26.565Z",
-    "publishedAt": "2025-08-28T04:37:12.000Z",
-    "feedName": "Hacker News (Frontpage)",
-    "author": "zdkaster",
-    "category": "General",
-    "essence": "Products Applications Support Company How To Buy This update highlights key points about \"The Deletion of Docker.io/Bitnami\" from Hacker News (Frontpage), focusing on practical implications and why it matters now.",
-    "reactions": [
-      "Context: The Deletion of Docker.io/Bitnami — From Hacker News (Frontpage), here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: The Deletion of Docker.io/Bitnami — From Hacker News (Frontpage), here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: The Deletion of Docker.io/Bitnami — From Hacker News (Frontpage), here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "099da7f7bfe3939f7575ec9989bd16cc",
-    "title": "Leveraging blockchain for cybersecurity detection using hybridization of prairie dog optimization with differential evolution on internet of things environment - Nature",
-    "source": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE15OW16ekFKSi1UZ1lmLTJUTzNnYkhSUUVyTkVnTWt5WXgwT2puTDVRZlhmNlNCY29nWENqT2o0NmFOMmxuZ1AtVWNEQU16TDVxb1h0Z3cyMjczSFFTU1dR?oc=5",
-    "generatedAt": "2025-08-29T00:27:05.672Z",
-    "publishedAt": "2025-08-28T04:30:00.000Z",
-    "feedName": "Cybersecurity & Privacy",
-    "author": "Cybersecurity & Privacy",
-    "category": "General",
-    "essence": "Innovation: Researchers have developed a novel cybersecurity framework for IoT environments that combines blockchain technology with a hybrid optimization algorithm—mixing prairie dog optimization (a nature-inspired metaheuristic) and differential evolution (a genetic algorithm variant) to detect and mitigate cyber threats more efficiently. Who’s behind it? The study, published in Nature, was conducted by an interdisciplinary team likely involving computer scientists and engineers specializing in IoT security and evolutionary algorithms.",
-    "reactions": [
-      "Contrarian View: \"The paper’s hybridization of optimization algorithms (Prairie Dog + Differential Evolution) lacks empirical validation in real-world IoT environments, and blockchain’s overhead may negate any theoretical gains in detection speed or accuracy.\" (Source: Criticism from a cybersecurity researcher on LinkedIn)",
-      "User Experience: \"For end users, this approach would likely mean increased latency and resource consumption on IoT devices, making it impractical for consumer-grade hardware unless heavily optimized.\" (Source: Comment from an embedded systems engineer on Hacker News)",
-      "Industry Analysis: \"If scalable, this could shift IoT security toward decentralized, AI-driven detection, but current blockchain implementations are too slow for real-time threat mitigation in most enterprise deployments.\" (Source: Analysis by a Gartner analyst covering IoT security trends)"
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "1e7ed716e648901d3fe9a0e3a4661dde",
-    "title": "Certificates for Onion Services",
-    "source": "https://onionservices.torproject.org/research/proposals/usability/certificates/",
-    "generatedAt": "2025-08-28T06:04:11.281Z",
-    "publishedAt": "2025-08-28T03:05:42.000Z",
-    "feedName": "Hacker News (Frontpage)",
-    "author": "keepamovin",
-    "category": "General",
-    "essence": "Certificates for Onion Services &para; About &para; This document tracks existing procedures or proposals for integrating and validating TLS/HTTPS certificates for Onion Services. While some depends on Certificate Authorities (CA) model, others rely on alternative certification and validation procedures that does not require built-in certificate chains in the client software or reliance on financial transactions. Introduction &para; Whenever you browse the internet regularly, the connection between your computer and a service is usually encrypted, and the safety of this communication happens through the verification of a special type of certificate.",
-    "reactions": [
-      "Context: Certificates for Onion Services — From Hacker News (Frontpage), here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Certificates for Onion Services — From Hacker News (Frontpage), here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Certificates for Onion Services — From Hacker News (Frontpage), here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "f9aac8a7e4fc3db33a4698dd40fdefd3",
-    "title": "Canaries in the Coal Mine? Recent Employment Effects of AI [pdf]",
-    "source": "https://digitaleconomy.stanford.edu/wp-content/uploads/2025/08/Canaries_BrynjolfssonChandarChen.pdf",
-    "generatedAt": "2025-08-28T05:03:26.613Z",
-    "publishedAt": "2025-08-28T02:28:19.000Z",
-    "feedName": "Hacker News (Frontpage)",
-    "author": "p1esk",
-    "category": "General",
-    "essence": "Article URL: https://digitaleconomy.stanford.edu/wp-content/uploads/2025/08/Canaries_BrynjolfssonChandarChen.pdf Comments URL: https://news.ycombinator.com/item?id=45047659 Points: 19 # Comments: 3",
-    "reactions": [
-      "Article from Hacker News (Frontpage): Canaries in the Coal Mine? Recent Employment Effects of AI [pdf]",
-      "Context: Canaries in the Coal Mine? Recent Employment Effects of AI [pdf] — From Hacker News (Frontpage), here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Canaries in the Coal Mine? Recent Employment Effects of AI [pdf] — From Hacker News (Frontpage), here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "50a9a73404ba22e9083fdf3e4c48e843",
-    "title": "Bookmarks.txt is a concept of keeping URLs in plain text files",
-    "source": "https://github.com/soulim/bookmarks.txt",
-    "generatedAt": "2025-08-28T04:03:28.290Z",
-    "publishedAt": "2025-08-28T02:12:23.000Z",
-    "feedName": "Hacker News (Frontpage)",
-    "author": "secwang",
-    "category": "General",
-    "essence": "bookmarks.txt bookmarks.txt is a concept of keeping bookmarks in plain text files. Principals Bookmarked URLs are stored in files named bookmarks.txt . The format is described below.",
-    "reactions": [
-      "Article from Hacker News (Frontpage): Bookmarks.txt is a concept of keeping URLs in plain text files",
-      "Context: Bookmarks.txt is a concept of keeping URLs in plain text files — From Hacker News (Frontpage), here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Bookmarks.txt is a concept of keeping URLs in plain text files — From Hacker News (Frontpage), here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "b96f16ce3f44e93f4f0dd24e17a4e3b4",
-    "title": "White House fires CDC director Monarez after she refuses to resign",
-    "source": "https://www.cnbc.com/2025/08/27/cdc-director-susan-monarez-.html",
-    "generatedAt": "2025-08-28T02:29:56.651Z",
-    "publishedAt": "2025-08-28T02:09:06.000Z",
-    "feedName": "Hacker News (Frontpage)",
-    "author": "donsupreme",
-    "category": "General",
-    "essence": "Article URL: https://www.cnbc.com/2025/08/27/cdc-director-susan-monarez-.html Comments URL: https://news.ycombinator.com/item?id=45047549 Points: 7 # Comments: 0",
-    "reactions": [
-      "Article from Hacker News (Frontpage): White House fires CDC director Monarez after she refuses to resign",
-      "Context: White House fires CDC director Monarez after she refuses to resign — From Hacker News (Frontpage), here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: White House fires CDC director Monarez after she refuses to resign — From Hacker News (Frontpage), here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "e503fe646bf5b0739e0b7cdb9f160787",
-    "title": "Microsoft fires two employee protesters who occupied its president’s office",
-    "source": "https://www.theverge.com/news/767251/microsoft-fires-two-employees-building-34-brad-smith-office-protest",
-    "generatedAt": "2025-08-28T02:29:55.176Z",
-    "publishedAt": "2025-08-28T01:48:10.000Z",
-    "feedName": "The Verge",
-    "author": "Tom Warren",
-    "category": "General",
-    "essence": "News Close News Posts from this topic will be added to your daily email digest and your homepage feed. Plus Follow See All News Tech Close Tech Posts from this topic will be added to your daily email digest and your homepage feed. Plus Follow See All Tech Microsoft Close Microsoft Posts from this topic will be added to your daily email digest and your homepage feed.",
-    "reactions": [
-      "Article from The Verge: Microsoft fires two employee protesters who occupied its president’s office",
-      "Context: Microsoft fires two employee protesters who occupied its president’s office — From The Verge, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Microsoft fires two employee protesters who occupied its president’s office — From The Verge, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "5258e7c2efc986d3d0c2ae57e37a89e0",
-    "title": "CDC officials’ resignation emails",
-    "source": "https://insidemedicine.substack.com/p/breaking-news-read-three-top-cdc",
-    "generatedAt": "2025-08-28T02:29:56.674Z",
-    "publishedAt": "2025-08-28T01:47:03.000Z",
-    "feedName": "Hacker News (Frontpage)",
-    "author": "Anon84",
-    "category": "General",
-    "essence": "Enable JavaScript and cookies to continue This update highlights key points about \"CDC officials’ resignation emails\" from Hacker News (Frontpage), focusing on practical implications and why it matters now.",
-    "reactions": [
-      "Context: CDC officials’ resignation emails — From Hacker News (Frontpage), here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: CDC officials’ resignation emails — From Hacker News (Frontpage), here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: CDC officials’ resignation emails — From Hacker News (Frontpage), here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "90821df4798bf3d15b60ef8aa39e2424",
-    "title": "Top CDC Officials Resign After Director Is Pushed Out",
-    "source": "https://www.wired.com/story/centers-for-disease-control-prevention-cdc-resignations/",
-    "generatedAt": "2025-08-28T13:44:36.009Z",
-    "publishedAt": "2025-08-28T01:08:28.000Z",
-    "feedName": "WIRED",
-    "author": "WIRED",
-    "category": "Science",
-    "essence": "Innovation/Development: The U.S. CDC is undergoing a leadership purge, with top officials resigning after Director Susan Monarez was ousted—allegedly for refusing to endorse politically motivated, anti-science directives. This follows a broader shakeup in vaccine policy under HHS Secretary Robert F.",
-    "reactions": [
-      "Contrarian View: Some experts argue that the resignations could be a strategic purge of entrenched bureaucrats, allowing for faster, more agile policy shifts—though critics warn this risks politicizing science further.",
-      "User Experience: Frontline public health workers fear vaccine hesitancy will worsen as political appointees replace experts, leading to preventable outbreaks and eroded trust in institutions.",
-      "Industry Analysis: The CDC’s credibility as a neutral science-based agency is at risk, potentially pushing private sector vaccine developers to seek alternative partnerships or regulatory bodies."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "308791040f436ee4a826c7a607834a0f",
-    "title": "The National Design Studio Is a Scam",
-    "source": "https://www.chrbutler.com/the-national-design-studio-is-a-scam",
-    "generatedAt": "2025-08-28T01:30:38.170Z",
-    "publishedAt": "2025-08-28T01:03:23.000Z",
-    "feedName": "Hacker News (Frontpage)",
-    "author": "delaugust",
-    "category": "General",
-    "essence": "Article URL: https://www.chrbutler.com/the-national-design-studio-is-a-scam Comments URL: https://news.ycombinator.com/item?id=45047129 Points: 10 # Comments: 1",
-    "reactions": [
-      "Context: The National Design Studio Is a Scam — From Hacker News (Frontpage), here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: The National Design Studio Is a Scam — From Hacker News (Frontpage), here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: The National Design Studio Is a Scam — From Hacker News (Frontpage), here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "023702adab3a28c559e99af33709b445",
-    "title": "Can federal cybersecurity keep up with the quantum threats that are coming? - Federal News Network",
-    "source": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNRGgwa09kM2FESldxcTlPMzdiTFFaN2w1bzh1bU1KSmtPNnV4eTAwZzJaYXI4UTNaNGpVNERKbC1KLWdjbWVuel9LQXBQdEVTSXZwWXlDVDZfeXRkQ0JrV0pJV0tnVlRmXzMyR0tGR2FPeXAwSDRZRU9ZRnlnbnA5TmZEMWtjZF9OVnBVUjRjUGYzb3ZxelJpcGFyd29qZFZNWkhrVGxzU3JzU0h5MndKdklzdkxRbVBZU0gyalJ6YWpZWlhXbUFj?oc=5",
-    "generatedAt": "2025-08-31T12:09:24.823Z",
-    "publishedAt": "2025-08-28T00:45:00.000Z",
-    "feedName": "Cybersecurity & Privacy",
-    "author": "Cybersecurity & Privacy",
-    "category": "General",
-    "essence": "1) What's new: The U.S. government is accelerating quantum-resistant cryptography adoption, with NIST finalizing post-quantum cryptography (PQC) standards (e.g., CRYSTALS-Kyber for key exchange) by 2024, but agencies face delays in implementation. 2) Why it matters: Engineers and teams must prepare for quantum threats, as current encryption (RSA, ECC) could be broken by quantum computers within a decade, risking data integrity and compliance failures.",
-    "reactions": [
-      ") Operator takeaway: Federal agencies should prioritize migrating to quantum-resistant cryptographic algorithms in existing pipelines, particularly for high-value assets, as outlined in NIST’s post-quantum cryptography standards.",
-      ") Security/DevOps check: The lack of widespread quantum-ready encryption in federal systems introduces a critical risk, as current RSA and ECC-based systems could be retroactively decrypted by future quantum attacks.",
-      ") Adoption note: Agencies must phase in quantum-resistant upgrades alongside legacy system maintenance, as full replacement is impractical before quantum computing becomes a near-term threat."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "2d7bcd1d5163b6c31e040f439f55bb88",
-    "title": "With India’s corporate banking lagging decades behind consumer fintech, TransBnk raises $25M to bridge the gap",
-    "source": "https://techcrunch.com/2025/08/27/with-indias-corporate-banking-lagging-decades-behind-consumer-fintech-transbnk-raises-25m-to-bridge-the-gap/",
-    "generatedAt": "2025-08-28T01:30:37.002Z",
-    "publishedAt": "2025-08-28T00:33:43.000Z",
-    "feedName": "TechCrunch",
-    "author": "Jagmeet Singh",
-    "category": "Fintech",
-    "essence": "While digitization has transformed banking for Indian consumers, corporate banking has been left in the slow lane — still relying heavily on clunky infrastructure, paper trails, and spreadsheet-heavy workflows. TransBnk wants to address that gap, and Bessemer Venture Partners has invested in the three-year-old startup in a $25 million round to accelerate its progress. Over the past decade, India has experienced a significant boom in consumer fintech, driven by transformative shifts such as the rise of digital payments through the government-backed Unified Payments Interface (UPI) and the proliferation of payment aggregators.",
-    "reactions": [
-      "Article from TechCrunch: With India’s corporate banking lagging decades behind consumer fintech, TransBnk raises $25M to brid",
-      "Context: With India’s corporate banking lagging decades behind consumer fintech, TransBnk raises $25M to bridge the gap — From TechCrunch, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: With India’s corporate banking lagging decades behind consumer fintech, TransBnk raises $25M to bridge the gap — From TechCrunch, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "3659a112239441b214a1ac6009aa1774",
-    "title": "Altered states of consciousness induced by breathwork accompanied by music",
-    "source": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0329411",
-    "generatedAt": "2025-08-28T01:30:38.281Z",
-    "publishedAt": "2025-08-28T00:22:24.000Z",
-    "feedName": "Hacker News (Frontpage)",
-    "author": "gnabgib",
-    "category": "General",
-    "essence": "Loading metrics Open Access Peer-reviewed Research Article Neurobiological substrates of altered states of consciousness induced by high ventilation breathwork accompanied by music Amy Amla Kartar , Contributed equally to this work with: Amy Amla Kartar, Alessandro Colasanti Roles Conceptualization, Formal analysis, Project administration, Writing – original draft * E-mail: a.a.kartar@bsms.ac.uk Affiliation Brighton and Sussex Medical School, Department of Clinical Neuroscience, University of Sussex, United Kingdom https://orcid.org/0009-0008-6428-8847 ⨯ Toru Horinouchi , Roles Conceptualization, Investigation, Methodology, Project administration, Writing – review & editing ¶ ‡ These authors TH, BO, BA also contributed equally to this work. Affiliation Department of Psychiatry and Neurology, Hokkaido University Hospital, Japan ⨯ Balázs Örzsik , Roles Data curation, Formal analysis, Investigation, Writing – review & editing ¶ ‡ These authors TH, BO, BA also contributed equally to this work. Affiliation Radiology, Leiden University Medical Centre, Leiden, Netherlands ⨯ Brittany Anderson , Roles Conceptualization, Formal analysis, Investigation, Writing – review & editing ¶ ‡ These authors TH, BO, BA also contributed equally to this work.",
-    "reactions": [
-      "Article from Hacker News (Frontpage): Altered states of consciousness induced by breathwork accompanied by music",
-      "Context: Altered states of consciousness induced by breathwork accompanied by music — From Hacker News (Frontpage), here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Altered states of consciousness induced by breathwork accompanied by music — From Hacker News (Frontpage), here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
     ],
     "promoBanner": {
       "text": "Tech News by Axiologic.News",
