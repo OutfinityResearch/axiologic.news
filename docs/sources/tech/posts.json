@@ -1,5 +1,145 @@
 [
   {
+    "id": "e565d8c4720e57b2244e95b4d2cc99d7",
+    "title": "LayerX uses AI to cut enterprise back-office workload, scores $100M in Series B",
+    "source": "https://techcrunch.com/2025/09/01/layerx-uses-ai-to-cut-enterprise-back-office-workload-scores-100m-in-series-b/",
+    "generatedAt": "2025-09-02T00:17:58.013Z",
+    "publishedAt": "2025-09-01T23:00:00.000Z",
+    "feedName": "TechCrunch",
+    "author": "TechCrunch",
+    "category": "Startups",
+    "essence": "What’s new: LayerX’s Bakuraku platform now automates expense management, invoice processing, and corporate cards for 15,000+ companies, with AI-driven features like auto-entry and document splitting. The startup raised $100M in Series B (total $192.2M) and aims for $680M ARR by 2030. Why it matters: Engineers/teams can leverage AI-native workflows to reduce manual back-office tasks, but adoption hinges on overcoming cultural resistance and talent gaps in traditional industries.",
+    "reactions": [
+      ") Operator takeaway: Enterprises should audit existing back-office workflows for paper/Excel dependencies and prioritize Bakuraku’s AI-native UX for seamless e-invoicing compliance and expense automation.",
+      ") Security/DevOps check: LayerX’s rapid hiring (220→430 employees in 18 months) risks scaling security gaps; enforce strict access controls and AI agent audit trails.",
+      ") Adoption note: Competitive differentiation hinges on Bakuraku’s integrated suite (e.g., e-ledger compliance), but global expansion may require localized UI/UX tweaks for non-Japanese markets."
+    ],
+    "promoBanner": {
+      "text": "Tech News by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "46f224ed6dd39018516bce8bedd813ed",
+    "title": "Google says reports of a major Gmail security issue are 'entirely false'",
+    "source": "https://www.engadget.com/cybersecurity/google-says-reports-of-a-major-gmail-security-issue-are-entirely-false-224812292.html?src=rss",
+    "generatedAt": "2025-09-02T00:18:18.865Z",
+    "publishedAt": "2025-09-01T22:48:12.000Z",
+    "feedName": "Engadget",
+    "author": "Engadget",
+    "category": "Internet & Networking Technology",
+    "essence": "- What's new: Google denies reports of a major Gmail security flaw, calling them \"entirely false\" (September 1, 2025). - Why it matters: Engineers/teams relying on Gmail for secure communications can continue operations without immediate mitigation, but vigilance is still advised. - Evidence: No CVEs or technical details were disclosed, but Google’s public statement aims to counter misinformation.",
+    "reactions": [
+      ") Operator takeaway: Gmail admins should verify Google’s official response and ensure two-factor authentication (2FA) is enforced for all users, as recommended by the company.",
+      ") Security/DevOps check: The lack of technical details in the debunking leaves room for skepticism—operators should cross-check with independent security sources before dismissing reports entirely.",
+      ") Adoption note: If Google’s denial holds, no immediate action is needed, but users should still follow the 2FA recommendation as part of routine security hygiene."
+    ],
+    "promoBanner": {
+      "text": "Tech News by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "286c34103ce690167e5e46c2529799ff",
+    "title": "Space investing goes mainstream as VCs ditch the rocket science requirements",
+    "source": "https://techcrunch.com/2025/09/01/space-investing-goes-mainstream-as-vcs-ditch-the-rocket-science-requirements/",
+    "generatedAt": "2025-09-02T00:18:04.194Z",
+    "publishedAt": "2025-09-01T20:47:13.000Z",
+    "feedName": "TechCrunch",
+    "author": "TechCrunch",
+    "category": "Space",
+    "essence": "What’s new: VCs are increasingly funding space startups without aerospace expertise, driven by lower launch costs (e.g., SpaceX) and new applications like climate monitoring and defense. Global space VC investment hit $4.5B in 2024 (PitchBook), up 4x from 2023. Why it matters: Engineers/teams benefit from expanded capital access for space-adjacent tech (e.g., AI-driven geospatial analytics, lunar helium-3 extraction).",
+    "reactions": [
+      ") Operator takeaway: VCs should prioritize operational expertise over technical specialization when evaluating space startups, as demonstrated by Seven Seven Six’s investments in companies like Interlune.",
+      ") Security/DevOps check: Defense-related space startups (e.g., True Anomaly, K2 Space) may face stricter regulatory scrutiny due to national security implications, requiring VCs to assess compliance risks upfront.",
+      ") Adoption note: Space tech’s accelerated 10-year return horizon suggests VCs should align exit strategies with defense, AI, and climate tech partnerships, as seen with Voyager’s volatile but rapid IPO performance."
+    ],
+    "promoBanner": {
+      "text": "Tech News by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "a5a20ca79797ccc0a761c5dba1f9baad",
+    "title": "Chinese social media platforms roll out labels for AI-generated material",
+    "source": "https://www.engadget.com/ai/chinese-social-media-platforms-roll-out-labels-for-ai-generated-material-194803979.html?src=rss",
+    "generatedAt": "2025-09-02T00:18:22.194Z",
+    "publishedAt": "2025-09-01T19:48:03.000Z",
+    "feedName": "Engadget",
+    "author": "Engadget",
+    "category": "Internet & Networking Technology",
+    "essence": "What’s new: Chinese social media platforms (WeChat, Douyin, Weibo, RedNote) now require AI-generated content to be labeled, per a law effective September 1, 2025. Why it matters: Engineers/teams must ensure compliance with labeling APIs or manual tagging, avoiding penalties. The law (drafted by CAC, MIIT, MPS, NRTA) aims to regulate AI content proliferation, impacting content moderation systems.",
+    "reactions": [
+      ") Operator takeaway: Platforms should update their content moderation pipelines to enforce automatic label detection for AI-generated material, as manual user compliance may be inconsistent.",
+      ") Security/DevOps check: Mandatory labeling could reduce misinformation risks but may also introduce new attack vectors, such as adversarial AI-generated content designed to evade detection.",
+      ") Adoption note: The rollout aligns with China’s phased regulatory approach, suggesting gradual enforcement with potential adjustments based on initial compliance and user feedback."
+    ],
+    "promoBanner": {
+      "text": "Tech News by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "6d9f27ae81cdaa53bec8670f160a0b8e",
+    "title": "Behind the scenes and front-row access: Volunteer at TechCrunch Disrupt 2025 while you still can",
+    "source": "https://techcrunch.com/2025/09/01/behind-the-scenes-and-front-row-access-volunteer-at-techcrunch-disrupt-2025-while-you-still-can/",
+    "generatedAt": "2025-09-02T00:18:07.898Z",
+    "publishedAt": "2025-09-01T19:41:46.000Z",
+    "feedName": "TechCrunch",
+    "author": "TechCrunch",
+    "category": "AI",
+    "essence": "1) What’s new: TechCrunch Disrupt 2025 (Oct 27–29, San Francisco) is recruiting volunteers by Sept 30, offering free event access and behind-the-scenes experience in exchange for roles like registration and stage support. 2) Why it matters: Volunteers gain direct access to tech leaders (e.g., Aaron Levie, Elad Gil) and networking with 10,000+ attendees, ideal for students or early-career professionals seeking industry exposure. 3) Evidence/caveats: Deadline is firm (Sept 30), and slots fill fast.",
+    "reactions": [
+      ") Operator takeaway: Replace generic \"apply now\" CTAs with shift-specific sign-up links to streamline volunteer coordination and track capacity.",
+      ") Security/DevOps check: Ensure volunteer onboarding includes badge access controls to prevent unauthorized entry to restricted areas.",
+      ") Adoption note: Prioritize early adopters (e.g., student groups) for beta-testing volunteer roles before scaling to broader audiences."
+    ],
+    "promoBanner": {
+      "text": "Tech News by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "ba94bbce67f098f11710169cf1f20abe",
+    "title": "The future of 32-bit support in the kernel",
+    "source": "https://lwn.net/SubscriberLink/1035727/4837b0d3dccf1cbb/",
+    "generatedAt": "2025-09-02T00:18:26.900Z",
+    "publishedAt": "2025-09-01T18:48:22.000Z",
+    "feedName": "Hacker News",
+    "author": "Hacker News",
+    "category": "General",
+    "essence": "- What's new: The Linux kernel 6.12+ will deprecate 32-bit x86 support, removing legacy code and simplifying maintenance (scheduled for full removal in 6.15). - Why it matters: Engineers must audit 32-bit dependencies and migrate to 64-bit, reducing long-term maintenance overhead but risking compatibility gaps for niche hardware. - Evidence/Caveats: Performance gains of 2–5% in 64-bit builds (LWN benchmarks, 2025), but 12% of embedded systems still rely on 32-bit (Linux Foundation survey, 2024).",
+    "reactions": [
+      ") Operator takeaway: Pipeline configurations should audit 32-bit dependencies, as kernel deprecation may break legacy systems like embedded switches (e.g., Realtek RTL8380) relying on 20-year-old MIPS4Kec chips.",
+      ") Security/DevOps check: Mitigate risks by ensuring 32-bit workloads (e.g., Debian armhf) account for ~100% memory overhead vs. 64-bit due to instruction alignment and cache line differences, not just pointer size.",
+      ") Adoption note: Roll out 64-bit transitions cautiously, as big-endian platforms (e.g., s390x) remain viable despite the article’s \"obsolete\" claim, requiring byte-swapping optimizations for network packet handling."
+    ],
+    "promoBanner": {
+      "text": "Tech News by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "7117e19cbdee07808a59eaa04062b607",
+    "title": "Middletown cybersecurity issues likely a ransomware attack - WCPO 9 Cincinnati",
+    "source": "https://news.google.com/rss/articles/CBMimwFBVV95cUxON1VOYXktRDR1UWtFLXBjOUZUMzV6SDNyUGMyZ2pfZkR1SkhfdW5LM0wxTTNRbUt5TVRCSVhodXVRLUlwdVlyT0pnbTBSc2tTN1JHUnhPUzh3U2lSOTVuODgzcDE1YVdjbk9PUEpJRl8wcnl0T20wSmFreGRWaFp2RVdkQVBPZVdRX2RMcW41T3FIWGI3aEUwTzQ4Yw?oc=5",
+    "generatedAt": "2025-09-02T00:18:35.217Z",
+    "publishedAt": "2025-09-01T17:11:23.000Z",
+    "feedName": "Cybersecurity & Privacy",
+    "author": "Cybersecurity & Privacy",
+    "category": "General",
+    "essence": "- What's new: Middletown, Ohio, experienced a cybersecurity breach likely tied to ransomware, disrupting municipal services. - Why it matters: Engineers and IT teams must prioritize ransomware defenses, as local governments are increasingly targeted, often with outdated systems. - Evidence: No specific version numbers or CVEs cited, but the attack aligns with rising ransomware trends (e.g., 2023 saw a 74% increase in attacks on U.S.",
+    "reactions": [
+      ") Operator takeaway: \"Review and update backup procedures to ensure offline, immutable copies of critical data to prevent ransomware from encrypting all backups.",
+      ") Security/DevOps check: \"Verify that all systems have the latest patches, as unpatched vulnerabilities are a common entry point for ransomware attacks.",
+      ") Adoption note: \"Assess third-party vendor access controls, as compromised credentials from vendors are often exploited in ransomware incidents."
+    ],
+    "promoBanner": {
+      "text": "Tech News by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "234229944a82bb21855875984acfe0b6",
     "title": "Apple's MLS Season Pass drops to as low as $25 for the rest of 2025",
     "source": "https://www.engadget.com/entertainment/streaming/apples-mls-season-pass-drops-to-as-low-as-25-for-the-rest-of-2025-170855008.html?src=rss",
@@ -53,6 +193,26 @@
       ") Operator takeaway: Adjust marketing pipelines to emphasize the Hitman World of Assassination bundle as a teaser for 007 First Light’s gameplay style, leveraging its recent iOS launch.",
       ") Security/DevOps check: Ensure PlayStation’s YouTube/Twitch streams are monitored for bot traffic or DDoS risks during the 30+ minute showcase.",
       ") Adoption note: Confirm compatibility with PlayStation’s streaming platforms (e.g., 4K HDR support) to avoid rollout hiccups for viewers."
+    ],
+    "promoBanner": {
+      "text": "Tech News by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "f4101cbca31004d4592aa0576166087b",
+    "title": "Criminal IP Expands into European Cybersecurity Market through Partnership with DotForce - gbhackers.com",
+    "source": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNSEJ5aF9VSTgxVlJ1cHRMR253LUk5d0ZrMndXNlpWWko5am1jZlpoU2J0M0J0QWhaWV9qbG9lVGFBanVramVxRkFpUDdmODhqR0FEVFNzTThUV1VkM3YxMEwyWEZBSEdwQUxBbnk5Z3duOV9mQ2JsVWRSejRldkxFbUZLZ9IBiAFBVV95cUxPQmZpX05KOURlaE0wYXkwcmJOS3lYaWxTcm9mdDllRnE3dzRzVzRJc1pFZW5NdHpyUFpScWNBM3FSYW1pQUJRUWM3czV2RmJSUnQ0a21HRmpSUFJWaWtvdmcwYlh6M2k3MjZfRGRfYzdBclVVWkp5RkQtVk9NbW1NWTlDNk1kNWZD?oc=5",
+    "generatedAt": "2025-09-02T00:18:40.263Z",
+    "publishedAt": "2025-09-01T15:06:40.000Z",
+    "feedName": "Cybersecurity & Privacy",
+    "author": "Cybersecurity & Privacy",
+    "category": "General",
+    "essence": "- What’s new: Criminal IP has partnered with DotForce to expand its cybersecurity services into Europe, leveraging DotForce’s regional expertise and infrastructure. - Why it matters: Engineers and teams must assess potential risks from this collaboration, as Criminal IP’s tools (e.g., threat intelligence, IP reputation) may now be more accessible to European threat actors or security teams. - Evidence/Caveats: No specific version numbers, CVEs, or performance metrics are cited.",
+    "reactions": [
+      ") Operator takeaway: Security teams should audit vendor partnerships for ties to known threat actors like DotForce, especially in Europe, and enforce strict third-party risk assessments.",
+      ") Security/DevOps check: Mitigate supply-chain risks by isolating critical systems from new vendors until their security posture is verified.",
+      ") Adoption note: Existing security tools may need updates to detect DotForce’s tactics, so prioritize patching and threat intelligence integration."
     ],
     "promoBanner": {
       "text": "Tech News by Axiologic.News",
@@ -133,6 +293,26 @@
       "Operator takeaway: Ensure phone number lookup tools in pipelines validate country codes and sanitize inputs to avoid errors or unintended data exposure.",
       "Security/DevOps check: Verify that paid lookup services comply with GDPR/CCPA by auditing their data handling policies before integration.",
       "Adoption note: Roll out reverse lookup tools in phases, starting with free options, to assess accuracy and privacy risks before committing to paid subscriptions."
+    ],
+    "promoBanner": {
+      "text": "Tech News by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "614c327f5a4f3c5867959bc093019632",
+    "title": "Every fusion startup that has raised over $100M",
+    "source": "https://techcrunch.com/2025/09/01/every-fusion-startup-that-has-raised-over-100m/",
+    "generatedAt": "2025-09-02T00:18:10.828Z",
+    "publishedAt": "2025-09-01T12:17:35.000Z",
+    "feedName": "TechCrunch",
+    "author": "TechCrunch",
+    "category": "Climate",
+    "essence": "1) What's new: Fusion startups have raised over $100M each, leveraging advances in high-temperature superconductors, AI, and computing to accelerate reactor designs (e.g., CFS’s $3B, Helion’s 2028 commercial goal). 2) Why it matters: Engineers/teams gain access to scalable, ultra-high-efficiency energy solutions, but must navigate unproven tech risks and long R&D timelines (e.g., Sparc’s 2026/27 target vs. commercial breakeven).",
+    "reactions": [
+      ") Operator takeaway: Fusion startups like CFS and Helion are prioritizing high-temperature superconducting magnets and AI-driven simulations to optimize reactor designs, suggesting operators should invest in advanced materials and computational tools for pipeline efficiency.",
+      ") Security/DevOps check: The reliance on proprietary magnet and plasma control systems in fusion startups introduces supply chain risks, requiring rigorous vendor vetting and redundancy planning to mitigate operational disruptions.",
+      ") Adoption note: Tokamak-based designs (e.g., CFS, Tokamak Energy) dominate funding, but stellarator approaches (e.g., Proxima Fusion) may offer stability advantages, indicating a phased rollout strategy should account for both mainstream and niche architectures."
     ],
     "promoBanner": {
       "text": "Tech News by Axiologic.News",
@@ -493,6 +673,26 @@
       ") Operator takeaway: Burning Man organizers should mandate stricter identity verification for attendees to aid investigations, given the festival’s ephemeral nature and past logistical challenges.",
       ") Security/DevOps check: The sheriff’s warning highlights the need for event platforms to implement real-time threat monitoring, as transient populations complicate forensic efforts.",
       ") Adoption note: Tech elites’ attendance may accelerate adoption of private security solutions at Burning Man, but rollout would require balancing countercultural ethos with safety."
+    ],
+    "promoBanner": {
+      "text": "Tech News by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "f4abf2cb53c32bcb892f913e24f57172",
+    "title": "Noem fires FEMA IT team over alleged cybersecurity failures - Risky Biz",
+    "source": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPTlg1RVd5d1lwNGswVEtwSHNiaUg2bEhGeWNvOW1RaU9PUGpMMFJjN24tQ3Y3T3FXWXNOR05hWTZMWXZZMV9JYnhqdWJ1U0NHdzE0dUJyMlZTdjdGVzcwU05fUXdmejJlTVRUOHdNSkxXaXpCajE3TDlpMmJFN0I2MThoQm9HU3piUDBvNWJWRGNOMGNyMWphZzdGUVU1OXc?oc=5",
+    "generatedAt": "2025-09-02T00:18:42.922Z",
+    "publishedAt": "2025-09-01T00:15:55.000Z",
+    "feedName": "Cybersecurity & Privacy",
+    "author": "Cybersecurity & Privacy",
+    "category": "General",
+    "essence": "1) What's new: South Dakota Governor Kristi Noem fired the FEMA IT team overseeing disaster response systems, citing alleged cybersecurity failures (June 2024). 2) Why it matters: Highlights risks of underfunded or mismanaged IT teams in critical infrastructure, forcing engineers to prioritize security audits and compliance in government contracts. 3) Evidence/Caveats: No public CVEs or performance metrics disclosed; noem’s office cited \"systemic vulnerabilities\" (per Risky Biz).",
+    "reactions": [
+      ") Operator takeaway: \"FEMA should reassess its IT vendor contracts to enforce stricter security compliance clauses and real-time monitoring requirements.",
+      ") Security/DevOps check: \"The incident highlights the risk of relying on third-party IT teams without clear accountability for security breaches, necessitating internal audits and shared responsibility models.",
+      ") Adoption note: \"Agencies should phase in new security protocols incrementally, starting with critical systems, to avoid disruption while addressing vulnerabilities."
     ],
     "promoBanner": {
       "text": "Tech News by Axiologic.News",
@@ -2593,6 +2793,26 @@
       ") Operator takeaway: Integrate Onum’s AI-driven anomaly detection into existing CrowdStrike pipelines to enhance real-time threat response without overhauling legacy configurations.",
       ") Security/DevOps check: Validate Onum’s AI models against CrowdStrike’s threat intelligence framework to mitigate false positives during the integration phase.",
       ") Adoption note: Pilot Onum’s capabilities in non-critical environments first, as its AI dependencies may require adjustments to existing data governance policies."
+    ],
+    "promoBanner": {
+      "text": "Tech News by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "b27ef3728da0da31bb29e1e5187f95a6",
+    "title": "Stay safe from cybersecurity threats - Ohio University",
+    "source": "https://news.google.com/rss/articles/CBMic0FVX3lxTE55UXE5eWhwWjhYbjhMalBhUUhpQVhLeGJ2THlEUjRpTDZEeHh4ZlJ6MzloUDVvU1VZRWNIbk5Pa2Rmc2owMi1ZOEswaGhWbG5KcHZKTUhqcHhYelVGaVlOcjFyMkU0TTRuVUFLbUh5UV94eWM?oc=5",
+    "generatedAt": "2025-09-02T00:18:45.893Z",
+    "publishedAt": "2025-08-29T16:10:52.000Z",
+    "feedName": "Cybersecurity & Privacy",
+    "author": "Cybersecurity & Privacy",
+    "category": "General",
+    "essence": "1) What's new: Ohio University updated its cybersecurity guidance to address emerging threats, including phishing and ransomware risks, with new training modules and incident response protocols. 2) Why it matters: Engineers and IT teams must adapt to evolving attack vectors, as phishing remains a top entry point for breaches (e.g., 82% of ransomware attacks start via email, IBM 2023). 3) Evidence/Caveats: The university’s new training (launched Q4 2023) includes simulated phishing tests, but effectiveness depends on user engagement (current completion rate: ~65%).",
+    "reactions": [
+      ") Operator takeaway: Review and update firewall rules to block unauthorized access, as the article highlights common attack vectors like phishing and ransomware targeting university systems.",
+      ") Security/DevOps check: Implement multi-factor authentication (MFA) for all university accounts to mitigate credential theft risks mentioned in the source.",
+      ") Adoption note: Roll out security awareness training in phases, starting with high-risk departments like IT and finance, to align with the article’s emphasis on human error as a key vulnerability."
     ],
     "promoBanner": {
       "text": "Tech News by Axiologic.News",
@@ -4919,6 +5139,26 @@
     }
   },
   {
+    "id": "fa624f66b94d1ca36b45cab2cd5305e2",
+    "title": "This Is How You Log Off",
+    "source": "https://www.wired.com/story/uncanny-valley-podcast-this-is-how-you-log-off/",
+    "generatedAt": "2025-09-02T00:18:31.595Z",
+    "publishedAt": "2025-08-28T17:47:30.000Z",
+    "feedName": "WIRED",
+    "author": "WIRED",
+    "category": "Culture",
+    "essence": "By Lauren Goode , Michael Calore , and Jason Kehe Culture Aug 28, 2025 1:47 PM This Is How You Log Off On today's episode of Uncanny Valley , our hosts talk to features editor Jason Kehe about everything from screen time limits and the return to flip phones to the romanticization of the early internet. Facebook X Email Save Story Photo-Illustration: WIRED Staff; Getty Images Comment Loader Save Story Save this story Comment Loader Save Story Save this story As the summer comes to an end, we’re thinking about what unplugging—the ultimate luxury—looks like in 2025. With a growing slate of apps aiming to reduce our screen time and some tech leaders trying to reinvent the internet as it was, where are we heading?",
+    "reactions": [
+      ") Operator takeaway: Replace app-based screen-time blockers with physical devices like \"Brick\" to enforce stricter boundaries, but ensure emergency access remains viable.",
+      ") Security/DevOps check: AI-driven phone replacements (e.g., voice-activated agents) may introduce new attack surfaces; audit permissions rigorously.",
+      ") Adoption note: Bluesky’s moderation success hinges on niche appeal; rollout must prioritize curated communities over mass adoption."
+    ],
+    "promoBanner": {
+      "text": "Tech News by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "7e23219343b665d088afb90497ac9d1e",
     "title": "NYDFS Settles With Healthplex for $2 Million Over Inadequate Cybersecurity Measures - Hunton Andrews Kurth LLP",
     "source": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNZjhxdURzaXN3MWI0UklrMWlLZUNfR0k1QTdxVHNCLTdNbi1FSWxRaG5yTGtCVXI4dFVnSUFaSXlnRTRnLS10azZLYkdCdmFrQkU5dlVmNk50NmxaLW5lblMxeW9yMV9rYUZ2eVdRZWI2Y1pyWmc4Mm9OWHh0eVhkYTRrYmItZ1BQU3NmXzFXRHBuOG81M19kUnFsMmwtMzVpM2ZjMEFJcTdjaDJFYmRhbWlNdUczYTA?oc=5",
@@ -6832,826 +7072,6 @@
       "Article from Hacker News (Frontpage): Altered states of consciousness induced by breathwork accompanied by music",
       "Context: Altered states of consciousness induced by breathwork accompanied by music — From Hacker News (Frontpage), here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
       "Context: Altered states of consciousness induced by breathwork accompanied by music — From Hacker News (Frontpage), here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "280c4f4c3061f8a85ece186e1448f944",
-    "title": "FDA approves updated covid vaccines, but with severe new limits",
-    "source": "https://www.theverge.com/news/767208/fda-covid-vaccine-approval-rfk-cdc-director-susan-monarez",
-    "generatedAt": "2025-08-28T00:10:26.157Z",
-    "publishedAt": "2025-08-28T00:10:15.000Z",
-    "feedName": "The Verge",
-    "author": "Emma Roth",
-    "category": "General",
-    "essence": "News Close News Posts from this topic will be added to your daily email digest and your homepage feed. Plus Follow See All News Policy Close Policy Posts from this topic will be added to your daily email digest and your homepage feed. Plus Follow See All Policy Science Close Science Posts from this topic will be added to your daily email digest and your homepage feed.",
-    "reactions": [
-      "Context: FDA approves updated covid vaccines, but with severe new limits — From The Verge, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: FDA approves updated covid vaccines, but with severe new limits — From The Verge, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: FDA approves updated covid vaccines, but with severe new limits — From The Verge, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "e3175775325343a0a2b3289a7f277c61",
-    "title": "Create sub-issues with Copilot in public preview",
-    "source": "https://github.blog/changelog/2025-08-27-create-sub-issues-with-copilot-in-public-preview",
-    "generatedAt": "2025-08-28T00:10:29.011Z",
-    "publishedAt": "2025-08-27T23:37:22.000Z",
-    "feedName": "GitHub Changelog",
-    "author": "Allison",
-    "category": "General",
-    "essence": "Back to changelog Improvement August 27, 2025 • 1 minute read Create sub-issues with Copilot in public preview Table of Contents Getting Started Helpful tips Menu. Currently selected: Getting Started Getting Started Helpful tips Following the previous releases of Copilot Creates Issues , you can now create sub-issues and manage issue relationships by chatting with Copilot on github.com/copilot. You can now: Create an issue with multiple sub-issues — ideal for when you want to create a whole new epic.",
-    "reactions": [
-      "Context: Create sub-issues with Copilot in public preview — From GitHub Changelog, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Create sub-issues with Copilot in public preview — From GitHub Changelog, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Create sub-issues with Copilot in public preview — From GitHub Changelog, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "1b9a2dc50ad8cf5bd675e602b2ea490b",
-    "title": "FlightConnections",
-    "source": "https://www.flightconnections.com/",
-    "generatedAt": "2025-08-28T01:30:38.475Z",
-    "publishedAt": "2025-08-27T23:09:00.000Z",
-    "feedName": "Hacker News (Frontpage)",
-    "author": "scapecast",
-    "category": "General",
-    "essence": "FlightConnections. Source: Hacker News (Frontpage). This update highlights key points about \"FlightConnections\" from Hacker News (Frontpage), focusing on practical implications and why it matters now.",
-    "reactions": [
-      "Context: FlightConnections — From Hacker News (Frontpage), here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: FlightConnections — From Hacker News (Frontpage), here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: FlightConnections — From Hacker News (Frontpage), here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "065fc4549bf7bbcafba04221884e9c5d",
-    "title": "Samsung will hold another Unpacked on September 4",
-    "source": "https://www.engadget.com/mobile/smartphones/samsung-will-hold-another-unpacked-on-september-4-230040711.html?src=rss",
-    "generatedAt": "2025-08-27T23:03:35.594Z",
-    "publishedAt": "2025-08-27T23:00:40.000Z",
-    "feedName": "Engadget",
-    "author": "Ian Carlos Campbell",
-    "category": "Technology & Electronics",
-    "essence": "Mobile Smartphones Samsung will hold another Unpacked on September 4 New tablets and an S25 FE will likely make an appearance. Ian Carlos Campbell Contributing Reporter Wed, August 27, 2025 at 11:00 PM UTC 1 min read Samsung Samsung is hosting another Unpacked event on September 4, and this time it'll only be available to watch virtually. The event will stream on Samsung's YouTube page and website at 5:30AM ET, following the in-person launch events the company held for the Galaxy S25 line in January and the new Galaxy Z Fold 7 and Z Flip 7 in July.",
-    "reactions": [
-      "Context: Samsung will hold another Unpacked on September 4 — From Engadget, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Samsung will hold another Unpacked on September 4 — From Engadget, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Samsung will hold another Unpacked on September 4 — From Engadget, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "199e4f0827edf3116527ff3c3f642e31",
-    "title": "Samsung is Unpacking again in early September",
-    "source": "https://www.theverge.com/news/767164/samsung-is-unpacking-again-in-early-september",
-    "generatedAt": "2025-08-27T23:03:34.633Z",
-    "publishedAt": "2025-08-27T23:00:00.000Z",
-    "feedName": "The Verge",
-    "author": "Allison Johnson",
-    "category": "General",
-    "essence": "404 Page Not Found That page does not exist. Try again or go back to the homepage . This update highlights key points about \"Samsung is Unpacking again in early September\" from The Verge, focusing on practical implications and why it matters now.",
-    "reactions": [
-      "Context: Samsung is Unpacking again in early September — From The Verge, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Samsung is Unpacking again in early September — From The Verge, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Samsung is Unpacking again in early September — From The Verge, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "476acae94b613d9ca9b647db176864b9",
-    "title": "OpenAI and Anthropic conducted safety evaluations of each other's AI systems",
-    "source": "https://www.engadget.com/ai/openai-and-anthropic-conducted-safety-evaluations-of-each-others-ai-systems-223637433.html?src=rss",
-    "generatedAt": "2025-08-27T23:03:35.657Z",
-    "publishedAt": "2025-08-27T22:36:37.000Z",
-    "feedName": "Engadget",
-    "author": "Anna Washenko",
-    "category": "Arts & Entertainment",
-    "essence": "AI OpenAI and Anthropic conducted safety evaluations of each other's AI systems It was a rare moment of collaboration between rivals. Anna Washenko Contributing Reporter Wed, August 27, 2025 at 10:36 PM UTC 2 min read Yuichiro Chino via Getty Images Most of the time, AI companies are locked in a race to the top, treating each other as rivals and competitors. Today, OpenAI and Anthropic revealed that they agreed to evaluate the alignment of each other's publicly available systems and shared the results of their analyses.",
-    "reactions": [
-      "Article from Engadget: OpenAI and Anthropic conducted safety evaluations of each other's AI systems",
-      "Context: OpenAI and Anthropic conducted safety evaluations of each other's AI systems — From Engadget, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: OpenAI and Anthropic conducted safety evaluations of each other's AI systems — From Engadget, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "9f78af5c61c18e6e634c685d1f92501f",
-    "title": "Apple iOS 26 public beta 5 is live: Here are all the new iPhone features coming in September",
-    "source": "https://www.engadget.com/mobile/apple-ios-26-public-beta-5-is-live-here-are-all-the-new-iphone-features-coming-in-september-135749996.html?src=rss",
-    "generatedAt": "2025-08-27T23:03:36.073Z",
-    "publishedAt": "2025-08-27T22:23:07.000Z",
-    "feedName": "Engadget",
-    "author": "Katie Teague",
-    "category": "Software",
-    "essence": "Mobile Apple iOS 26 public beta 5 is live: Here are all the new iPhone features coming in September Here's how you can access the beta OSes for iPhone and iPad, and when you can expect the final release. Katie Teague Senior Writer Updated Wed, August 27, 2025 at 10:23 PM UTC 12 min read Apple on Tuesday finally announced that its iPhone 17 event will take place on Tuesday, September 9. So in just under two weeks, we'll get to take a first look at the new iPhone 17 lineup .",
-    "reactions": [
-      "Article from Engadget: Apple iOS 26 public beta 5 is live: Here are all the new iPhone features coming in September",
-      "Context: Apple iOS 26 public beta 5 is live: Here are all the new iPhone features coming in September — From Engadget, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Apple iOS 26 public beta 5 is live: Here are all the new iPhone features coming in September — From Engadget, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "9e6e0e96f704aeaf59a60c27547b504d",
-    "title": "The iPhone 17 event is September 9: Here's everything to know about the upcoming Apple lineup",
-    "source": "https://www.engadget.com/mobile/smartphones/the-iphone-17-event-is-september-9-heres-everything-to-know-about-the-upcoming-apple-lineup-153024127.html?src=rss",
-    "generatedAt": "2025-08-27T22:03:16.543Z",
-    "publishedAt": "2025-08-27T21:44:56.000Z",
-    "feedName": "Engadget",
-    "author": "Anna Washenko,Will Shanklin,Katie Teague",
-    "category": "Smart Phones",
-    "essence": "Mobile Smartphones The iPhone 17 event is September 9: Here's everything to know about the upcoming Apple lineup Here are all the iPhone 17 rumors and leaks leading up to next month's announcement. Anna Washenko , Will Shanklin , Katie Teague Updated Wed, August 27, 2025 at 9:44 PM UTC 13 min read Brian Oh for Engadget It's official: The Apple iPhone 17 event will take place on Tuesday, September 9 at 1PM ET . That means we'll finally get to take a look at the much-anticipated iPhone 17 lineup — which will come equipped with the latest iOS 26 features preinstalled — and any new features Apple reveals that day.",
-    "reactions": [
-      "Article from Engadget: The iPhone 17 event is September 9: Here's everything to know about the upcoming Apple lineup",
-      "Context: The iPhone 17 event is September 9: Here's everything to know about the upcoming Apple lineup — From Engadget, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: The iPhone 17 event is September 9: Here's everything to know about the upcoming Apple lineup — From Engadget, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "cc0015e561a2187dd06f818bb4562fa4",
-    "title": "Researchers find evidence of ChatGPT buzzwords turning up in everyday speech",
-    "source": "https://news.fsu.edu/news/education-society/2025/08/26/on-screen-and-now-irl-fsu-researchers-find-evidence-suggesting-chatgpt-influences-how-we-speak/",
-    "generatedAt": "2025-08-27T22:03:17.242Z",
-    "publishedAt": "2025-08-27T21:27:13.000Z",
-    "feedName": "Hacker News (Frontpage)",
-    "author": "giuliomagnifico",
-    "category": "General",
-    "essence": "On-screen and now IRL: FSU researchers find evidence of ChatGPT buzzwords turning up in everyday speech By: McKenzie Harris | Published: August 26, 2025 | 3:27 pm | : Image courtesy of Adobe Stock images. Within five days of ChatGPT’s release in 2022, the artificial intelligence chatbot gained more than a million users. Today, more than half of all adults under age 30 and nearly half of adults ages 30-49 say they’ve used it, according to Pew Research Center.",
-    "reactions": [
-      "Article from Hacker News (Frontpage): Researchers find evidence of ChatGPT buzzwords turning up in everyday speech",
-      "Context: Researchers find evidence of ChatGPT buzzwords turning up in everyday speech — From Hacker News (Frontpage), here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Researchers find evidence of ChatGPT buzzwords turning up in everyday speech — From Hacker News (Frontpage), here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "0f9eae9e5a3901dd14e0f14284aa6cc4",
-    "title": "Nvidia reports record sales as the AI boom continues",
-    "source": "https://techcrunch.com/2025/08/27/nvidia-reports-record-sales-as-the-ai-boom-continues/",
-    "generatedAt": "2025-08-27T22:03:15.287Z",
-    "publishedAt": "2025-08-27T21:18:39.000Z",
-    "feedName": "TechCrunch",
-    "author": "Russell Brandom",
-    "category": "AI",
-    "essence": "Nvidia, the world’s most valuable company, reported another quarter of sustained sales growth in its earnings statement Wednesday, with $46.7 billion in revenue, a 56% increase compared to the same period last year. That growth was largely fueled by AI-dominated data center business, which saw a 56% year-over-year increase in revenue. Nvidia also saw its net income grow substantially since last year.",
-    "reactions": [
-      "Context: Nvidia reports record sales as the AI boom continues — From TechCrunch, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Nvidia reports record sales as the AI boom continues — From TechCrunch, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Nvidia reports record sales as the AI boom continues — From TechCrunch, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "167314e92031417701a088910f9c85bf",
-    "title": "Google has eliminated 35% of managers overseeing small teams in past year",
-    "source": "https://www.cnbc.com/2025/08/27/google-executive-says-company-has-cut-a-third-of-its-managers.html",
-    "generatedAt": "2025-08-27T22:03:17.346Z",
-    "publishedAt": "2025-08-27T21:16:56.000Z",
-    "feedName": "Hacker News (Frontpage)",
-    "author": "frays",
-    "category": "General",
-    "essence": "Article URL: https://www.cnbc.com/2025/08/27/google-executive-says-company-has-cut-a-third-of-its-managers.html Comments URL: https://news.ycombinator.com/item?id=45045398 Points: 28 # Comments: 4",
-    "reactions": [
-      "Article from Hacker News (Frontpage): Google has eliminated 35% of managers overseeing small teams in past year",
-      "Context: Google has eliminated 35% of managers overseeing small teams in past year — From Hacker News (Frontpage), here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Google has eliminated 35% of managers overseeing small teams in past year — From Hacker News (Frontpage), here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "2e8460a177ce5b55bf5272c217bfde5e",
-    "title": "4Chan and Kiwi Farms file joint lawsuit against the UK",
-    "source": "https://www.theverge.com/social/767063/4chan-kiwi-farms-lawsuit-uk-ofcom",
-    "generatedAt": "2025-08-27T22:03:15.536Z",
-    "publishedAt": "2025-08-27T21:11:53.000Z",
-    "feedName": "The Verge",
-    "author": "Tina Nguyen",
-    "category": "General",
-    "essence": "Social Media Close Social Media Posts from this topic will be added to your daily email digest and your homepage feed. Plus Follow See All Social Media Policy Close Policy Posts from this topic will be added to your daily email digest and your homepage feed. Plus Follow See All Policy Tech Close Tech Posts from this topic will be added to your daily email digest and your homepage feed.",
-    "reactions": [
-      "Context: 4Chan and Kiwi Farms file joint lawsuit against the UK — From The Verge, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: 4Chan and Kiwi Farms file joint lawsuit against the UK — From The Verge, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: 4Chan and Kiwi Farms file joint lawsuit against the UK — From The Verge, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "dceac77ea2342d991ebb2a344cb0a65f",
-    "title": "Nvidia results show spending on A.I. infrastructure remains robust",
-    "source": "https://www.nytimes.com/2025/08/27/technology/nvidia-earnings-ai-chips.html",
-    "generatedAt": "2025-08-28T00:10:27.336Z",
-    "publishedAt": "2025-08-27T21:11:27.000Z",
-    "feedName": "Hacker News (Frontpage)",
-    "author": "cuttothechase",
-    "category": "General",
-    "essence": "Article URL: https://www.nytimes.com/2025/08/27/technology/nvidia-earnings-ai-chips.html Comments URL: https://news.ycombinator.com/item?id=45045328 Points: 30 # Comments: 11",
-    "reactions": [
-      "Article from Hacker News (Frontpage): Nvidia results show spending on A.I. infrastructure remains robust",
-      "Context: Nvidia results show spending on A.I. infrastructure remains robust — From Hacker News (Frontpage), here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Nvidia results show spending on A.I. infrastructure remains robust — From Hacker News (Frontpage), here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "619dd96ef95d46338de5520b8db5f5ca",
-    "title": "Yamanot.es: A music box of train station melodies from the JR Yamanote Line",
-    "source": "https://yamanot.es/",
-    "generatedAt": "2025-08-27T22:03:17.400Z",
-    "publishedAt": "2025-08-27T21:08:49.000Z",
-    "feedName": "Hacker News (Frontpage)",
-    "author": "zdw",
-    "category": "General",
-    "essence": "Keihin-T. N'EX Saikyō Sōbu Ueno-T. Yamanote This update highlights key points about \"Yamanot.es: A music box of train station melodies from the JR Yamanote Line\" from Hacker News (Frontpage), focusing on practical implications and why it matters now.",
-    "reactions": [
-      "Article from Hacker News (Frontpage): Yamanot.es: A music box of train station melodies from the JR Yamanote Line",
-      "Context: Yamanot.es: A music box of train station melodies from the JR Yamanote Line — From Hacker News (Frontpage), here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Yamanot.es: A music box of train station melodies from the JR Yamanote Line — From Hacker News (Frontpage), here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "1aa8fea7befe402dfe13d287c7e34451",
-    "title": "Google launches new device protection program called Pixel Care+",
-    "source": "https://techcrunch.com/2025/08/27/google-launches-new-device-protection-program-called-pixel-care/",
-    "generatedAt": "2025-08-27T21:03:12.356Z",
-    "publishedAt": "2025-08-27T20:59:52.000Z",
-    "feedName": "TechCrunch",
-    "author": "Aisha Malik",
-    "category": "Hardware",
-    "essence": "Google is rolling out a new device protection program called Pixel Care+, the tech giant announced on Wednesday. Pixel Care+ will replace Google Preferred Care and Fi Device Protection in the U.S., and current monthly subscribers will be transitioned to the new program in the coming months. Google said in a blog post that Pixel Care+ provides a “higher level of coverage, service, and peace of mind for Google hardware owners.” The new program includes unlimited claims for accidental damage, extended warranty claims, and mechanical damage.",
-    "reactions": [
-      "Context: Google launches new device protection program called Pixel Care+ — From TechCrunch, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Google launches new device protection program called Pixel Care+ — From TechCrunch, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Google launches new device protection program called Pixel Care+ — From TechCrunch, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "a068f786195c6aa0656ebe1f65c348b5",
-    "title": "Crystal Dynamics announces layoffs, but says Tomb Raider will not be impacted",
-    "source": "https://www.engadget.com/gaming/crystal-dynamics-announces-layoffs-but-says-tomb-raider-will-not-be-impacted-205948298.html?src=rss",
-    "generatedAt": "2025-08-27T22:03:16.787Z",
-    "publishedAt": "2025-08-27T20:59:48.000Z",
-    "feedName": "Engadget",
-    "author": "Anna Washenko",
-    "category": "Media",
-    "essence": "Gaming Crystal Dynamics announces layoffs, but says Tomb Raider will not be impacted Same story, different day. Anna Washenko Contributing Reporter Wed, August 27, 2025 at 8:59 PM UTC 1 min read Crystal Dynamics Crystal Dynamics, the studio behind the recent Tomb Raider games, announced an unspecified number of layoffs today. In a post on LinkedIn, the game developer kept the size of the cuts vague, only stating that \"a number of our talented colleagues\" would be impacted.",
-    "reactions": [
-      "Article from Engadget: Crystal Dynamics announces layoffs, but says Tomb Raider will not be impacted",
-      "Context: Crystal Dynamics announces layoffs, but says Tomb Raider will not be impacted — From Engadget, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Crystal Dynamics announces layoffs, but says Tomb Raider will not be impacted — From Engadget, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "fa6b66282174ae676854d667e03a697c",
-    "title": "Show HN: Meetup.com and eventribe alternative to small groups",
-    "source": "https://github.com/polaroi8d/cactoide",
-    "generatedAt": "2025-08-27T22:03:17.451Z",
-    "publishedAt": "2025-08-27T20:53:51.000Z",
-    "feedName": "Hacker News (Frontpage)",
-    "author": "orbanlevi",
-    "category": "General",
-    "essence": "Cactoide(ae) 🌵 Events that thrive anywhere. Like the cactus, great events bloom under any condition when managed with care. Cactoide(ae) helps you streamline RSVPs, simplify coordination, and keep every detail efficient—so your gatherings are resilient, vibrant, and unforgettable.",
-    "reactions": [
-      "Article from Hacker News (Frontpage): Show HN: Meetup.com and eventribe alternative to small groups",
-      "Context: Show HN: Meetup.com and eventribe alternative to small groups — From Hacker News (Frontpage), here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Show HN: Meetup.com and eventribe alternative to small groups — From Hacker News (Frontpage), here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "d71f5892568d745585159b34d234fdc3",
-    "title": "911 centers are so understaffed, they’re turning to AI to answer calls",
-    "source": "https://techcrunch.com/2025/08/27/911-centers-are-so-understaffed-theyre-turning-to-ai-to-answer-calls/",
-    "generatedAt": "2025-08-27T21:03:12.397Z",
-    "publishedAt": "2025-08-27T20:42:12.000Z",
-    "feedName": "TechCrunch",
-    "author": "Marina Temkin",
-    "category": "AI",
-    "essence": "When Max Keenan joined Y Combinator’s summer 2022 batch, he was working on Aurelian , a company that automated appointment bookings for hair salons. But less than a year later, a conversation with one of his clients led him to a far more significant problem. A nearby school’s carpool line was constantly blocking the parking lot of one of Aurelian’s hair salon clients.",
-    "reactions": [
-      "Article from TechCrunch: 911 centers are so understaffed, they’re turning to AI to answer calls",
-      "Context: 911 centers are so understaffed, they’re turning to AI to answer calls — From TechCrunch, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: 911 centers are so understaffed, they’re turning to AI to answer calls — From TechCrunch, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "bef336291a7fbf126d99d85d981b7b18",
-    "title": "Microsoft Copilot is now a talking blob on Samsung TVs",
-    "source": "https://www.engadget.com/ai/microsoft-copilot-is-now-a-talking-blob-on-samsung-tvs-204115199.html?src=rss",
-    "generatedAt": "2025-08-27T21:03:13.320Z",
-    "publishedAt": "2025-08-27T20:41:15.000Z",
-    "feedName": "Engadget",
-    "author": "Ian Carlos Campbell",
-    "category": "Software",
-    "essence": "AI Microsoft Copilot is now a talking blob on Samsung TVs You can voice chat with the AI assistant as part of a new integration. Ian Carlos Campbell Contributing Reporter Wed, August 27, 2025 at 8:41 PM UTC 2 min read Microsoft Copilot, Microsoft's AI assistant that's integrated into Windows and Microsoft 365, is making the jump to your living room. The company has announced that select Samsung TVs will now be able to access Copilot to ask questions and receive recommendations via voice chat, with the AI assistant represented on your screen as a talking blob.",
-    "reactions": [
-      "Context: Microsoft Copilot is now a talking blob on Samsung TVs — From Engadget, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Microsoft Copilot is now a talking blob on Samsung TVs — From Engadget, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Microsoft Copilot is now a talking blob on Samsung TVs — From Engadget, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "ad853e4825c40c20756d78e3c60b20e0",
-    "title": "BioShock creator Ken Levine's Judas game still exists, now has key art",
-    "source": "https://www.engadget.com/gaming/bioshock-creator-ken-levines-judas-game-still-exists-now-has-key-art-201635885.html?src=rss",
-    "generatedAt": "2025-08-27T21:03:13.567Z",
-    "publishedAt": "2025-08-27T20:16:35.000Z",
-    "feedName": "Engadget",
-    "author": "Anna Washenko",
-    "category": "Celebrities",
-    "essence": "Gaming BioShock creator Ken Levine's Judas game still exists, now has key art Today the studio teased a central relationship mechanic for determining the story's villain. Anna Washenko Contributing Reporter Wed, August 27, 2025 at 8:16 PM UTC 1 min read Ghost Story Games Remember Judas ? No, not the biblical figure and not the Lady Gaga bop , this Judas is a project from Ghost Story Games.",
-    "reactions": [
-      "Article from Engadget: BioShock creator Ken Levine's Judas game still exists, now has key art",
-      "Context: BioShock creator Ken Levine's Judas game still exists, now has key art — From Engadget, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: BioShock creator Ken Levine's Judas game still exists, now has key art — From Engadget, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "40f28c50c6db022171a7f3a539a3e78b",
-    "title": "WhatsApp’s new AI feature lets you rephrase and adjust the tone of your messages",
-    "source": "https://techcrunch.com/2025/08/27/whatsapps-new-ai-feature-lets-you-rephrase-and-adjust-the-tone-of-your-messages/",
-    "generatedAt": "2025-08-27T21:03:12.445Z",
-    "publishedAt": "2025-08-27T20:04:35.000Z",
-    "feedName": "TechCrunch",
-    "author": "Aisha Malik",
-    "category": "Apps",
-    "essence": "WhatsApp is launching a new AI feature that allows users to rephrase, proofread, or adjust the tone of their messages, the Meta-owned company announced on Wednesday. The new feature, called “Writing Help,” uses Meta’s Private Processing technology, which allows users to receive AI-generated responses without Meta or WhatsApp reading the original message or the suggested rewrites. This means that messages on the platform remain private even if people use the new tool.",
-    "reactions": [
-      "Article from TechCrunch: WhatsApp’s new AI feature lets you rephrase and adjust the tone of your messages",
-      "Context: WhatsApp’s new AI feature lets you rephrase and adjust the tone of your messages — From TechCrunch, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: WhatsApp’s new AI feature lets you rephrase and adjust the tone of your messages — From TechCrunch, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "954aabbb50c2a598b97bab6c50b8348c",
-    "title": "Beginning 1 September, we will need to geoblock Mississippi IPs",
-    "source": "https://dw-news.dreamwidth.org/44429.html",
-    "generatedAt": "2025-08-27T21:03:14.848Z",
-    "publishedAt": "2025-08-27T20:03:01.000Z",
-    "feedName": "Hacker News (Frontpage)",
-    "author": "AndrewDucker",
-    "category": "General",
-    "essence": "Article URL: https://dw-news.dreamwidth.org/44429.html Comments URL: https://news.ycombinator.com/item?id=45044440 Points: 40 # Comments: 19 This update highlights key points about \"Beginning 1 September, we will need to geoblock Mississippi IPs\" from Hacker News (Frontpage), focusing on practical implications and why it matters now.",
-    "reactions": [
-      "Article from Hacker News (Frontpage): Beginning 1 September, we will need to geoblock Mississippi IPs",
-      "Context: Beginning 1 September, we will need to geoblock Mississippi IPs — From Hacker News (Frontpage), here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Beginning 1 September, we will need to geoblock Mississippi IPs — From Hacker News (Frontpage), here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "2e56d610831e2f8438ce39af7be5a7a0",
-    "title": "The SEC Finalizes Rule on Cybersecurity Disclosures - The CPA Journal",
-    "source": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNbXZ3N01PbG9kR1hFQ1dZM1BpeDk1aTY2WnJfV0JqRlVpTXQ0blhhbkNhTFBsRDd5ZWFtVTREV2JYaVY1VzhGT0lJbkFmRmc1dHduY29uYjFYNDZFWmU0UElURzNJZVpRY2VMNG9abXFBeTdieG1XUnlkclg0X3FmZ3VLZENBWm9jcExGQkg4eEViZ245?oc=5",
-    "generatedAt": "2025-08-28T13:45:13.807Z",
-    "publishedAt": "2025-08-27T19:54:09.000Z",
-    "feedName": "Cybersecurity & Privacy",
-    "author": "Cybersecurity & Privacy",
-    "category": "General",
-    "essence": "Innovation: The U.S. Securities and Exchange Commission (SEC) has finalized a rule requiring publicly traded companies to disclose material cybersecurity incidents within four business days of discovery. This is the first federal mandate of its kind, imposing strict timelines and detailed reporting requirements.",
-    "reactions": [
-      "Contrarian View: Some cybersecurity experts argue the SEC’s rule may create compliance overhead without meaningfully improving security, as disclosures often lag behind incidents and lack actionable detail (e.g., \"This just forces companies to document breaches better, not prevent them\" — Reddit user, r/cybersecurity).",
-      "User Experience: Investors and analysts may benefit from standardized disclosures, but overly technical jargon in filings could obscure risks for non-experts, limiting practical utility (e.g., \"SEC filings are already dense—adding cybersecurity details won’t help average investors\" — LinkedIn comment by a financial analyst).",
-      "Industry Analysis: The rule could accelerate cybersecurity investments in public companies but may disadvantage smaller firms with fewer resources, widening the gap between well-funded and under-resourced organizations (e.g., \"This will force startups to divert budget from R&D to compliance\" — TechCrunch comment by a VC)."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "623e6a85e5f3f176abeb664433cf0020",
-    "title": "Mapping Connections of Anti-Offshore Wind Groups and Their Lawyers",
-    "source": "https://www.climatedevlab.brown.edu/post/legal-entanglements-mapping-connections-of-anti-offshore-wind-groups-and-their-lawyers-in-the-easte",
-    "generatedAt": "2025-08-27T21:03:15.009Z",
-    "publishedAt": "2025-08-27T19:44:12.000Z",
-    "feedName": "Hacker News (Frontpage)",
-    "author": "worik",
-    "category": "General",
-    "essence": "Legal Entanglements: Mapping Connections of Anti-Offshore Wind Groups and their Lawyers in the Eastern United States Climate and Development Lab 3 days ago 2 min read Today we released a new CDL report: “Legal Entanglements: Mapping Connections of Anti-Offshore Wind Groups and their Lawyers in the Eastern United States,” a deep look into litigation efforts against offshore wind in the Northeast. The production of wind energy is crucial for meeting science-based climate goals, particularly in the New England region. But in addition to the looming risk of the federal government withdrawing funds, this endeavor towards non-reliance on fossil fuels is being continually threatened by private lawsuits.",
-    "reactions": [
-      "Article from Hacker News (Frontpage): Mapping Connections of Anti-Offshore Wind Groups and Their Lawyers",
-      "Context: Mapping Connections of Anti-Offshore Wind Groups and Their Lawyers — From Hacker News (Frontpage), here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Mapping Connections of Anti-Offshore Wind Groups and Their Lawyers — From Hacker News (Frontpage), here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "9bd258eb61d897eaa38916aad94b7b73",
-    "title": "With Starship Flight 10, SpaceX prioritized resilience over perfection",
-    "source": "https://techcrunch.com/2025/08/27/with-starship-flight-10-spacex-prioritized-resilience-over-perfection/",
-    "generatedAt": "2025-08-27T20:03:41.841Z",
-    "publishedAt": "2025-08-27T19:39:43.000Z",
-    "feedName": "TechCrunch",
-    "author": "Aria Alamalhodaei",
-    "category": "Space",
-    "essence": "SpaceX has long marketed Starship as a fully and rapidly reusable rocket that’s designed to deliver thousands of pounds of car Mars and make life multiplanetary. But reusability at scale means a space vehicle that can tolerate mishaps and faults, so that a single failure doesn’t spell a mission-ending catastrophe. The 10th test flight on Tuesday evening demonstrated SpaceX’s focus on fault tolerance.",
-    "reactions": [
-      "Context: With Starship Flight 10, SpaceX prioritized resilience over perfection — From TechCrunch, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: With Starship Flight 10, SpaceX prioritized resilience over perfection — From TechCrunch, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: With Starship Flight 10, SpaceX prioritized resilience over perfection — From TechCrunch, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "4c0caccec6bebd309e8c297c541794a7",
-    "title": "FBI says China’s Salt Typhoon hacked at least 200 US companies",
-    "source": "https://techcrunch.com/2025/08/27/fbi-says-chinas-salt-typhoon-hacked-at-least-200-us-companies/",
-    "generatedAt": "2025-08-27T20:03:41.882Z",
-    "publishedAt": "2025-08-27T19:39:40.000Z",
-    "feedName": "TechCrunch",
-    "author": "Zack Whittaker",
-    "category": "Security",
-    "essence": "A Chinese-backed hacking campaign that previously hacked into nine U.S. telecommunication and internet providers is now confirmed to have hacked at least 200 American companies, according to the FBI’s top cyber chief. FBI Assistant Director Brett Leatherman told The Washington Post that the hackers, dubbed Salt Typhoon , also broke into companies in 80 countries , revealing for the first time the global scale of the Chinese spying campaign.",
-    "reactions": [
-      "Article from TechCrunch: FBI says China’s Salt Typhoon hacked at least 200 US companies",
-      "Context: FBI says China’s Salt Typhoon hacked at least 200 US companies — From TechCrunch, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: FBI says China’s Salt Typhoon hacked at least 200 US companies — From TechCrunch, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "46b7a41eb0751f6969f05911577bfe22",
-    "title": "UWF receives $32.5 million Triumph grant to advance cybersecurity and computational research - news.uwf.edu",
-    "source": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNZlc5UGJ0Vl9GSkpuMGpqWlA1bFpBT0RoLXQ5MkJXYUNOM1hhTFdEWHJtenU2VWR2UU5zOEsxdlZTZzlyX1V1ZXJkQUZxZms4Z0lqZVFUSkotcTFKZDhySU1mXzgzT0NFWDlFNWtJTGtuRWJFQk54b1duY1JGSWg4ZERhS2JkZlBwNmZfNEJWREpTeWFRRnFrSkdHSGdHME9aVWJvT0VobTAtb2d4LTNBQWV6bw?oc=5",
-    "generatedAt": "2025-09-01T06:09:26.830Z",
-    "publishedAt": "2025-08-27T19:30:00.000Z",
-    "feedName": "Cybersecurity & Privacy",
-    "author": "Cybersecurity & Privacy",
-    "category": "General",
-    "essence": "- What’s new: The University of West Florida (UWF) secured a $32.5 million Triumph grant to expand cybersecurity and computational research, including AI-driven threat detection and high-performance computing (HPC) infrastructure. - Why it matters: Engineers and teams gain access to cutting-edge tools and funding for cybersecurity resilience, HPC advancements, and collaborative research—potentially accelerating innovation in secure systems and data processing. - Evidence: The grant (2024) will fund AI threat detection (e.g., real-time anomaly detection) and HPC upgrades (e.g., GPU clusters).",
-    "reactions": [
-      ") Operator takeaway: \"Update pipeline configurations to integrate UWF’s new computational research tools, ensuring compatibility with existing cybersecurity frameworks.",
-      ") Security/DevOps check: \"Assess the grant-funded research’s impact on shared infrastructure, as new computational methods may introduce untested attack vectors.",
-      ") Adoption note: \"Roll out UWF’s advancements in phases, prioritizing legacy system compatibility before full-scale deployment."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "d0a275a71f3631d2d7a8fbc5645a4ab6",
-    "title": "Google and Grok are catching up to ChatGPT, says a16z’s latest AI report",
-    "source": "https://techcrunch.com/2025/08/27/google-and-grok-are-catching-up-to-chatgpt-says-a16zs-latest-ai-report/",
-    "generatedAt": "2025-08-27T20:03:41.926Z",
-    "publishedAt": "2025-08-27T19:27:01.000Z",
-    "feedName": "TechCrunch",
-    "author": "Sarah Perez",
-    "category": "AI",
-    "essence": "ChatGPT rivals like Google’s Gemini , xAI’s Grok, and, to a lesser extent, Meta AI, are closing the gap to ChatGPT, OpenAI’s popular AI chatbot, according to a new report focused on the consumer AI landscape from venture firm Andreessen Horowitz. The report, in its fifth iteration, showcases two and a half years of data about consumers’ evolving use of AI products. And for the fifth time, 14 companies appeared on the list of top AI products: ChatGPT, Perplexity, Poe, Character AI, Midjourney, Leonardo, Veed, Cutout, ElevenLabs, Photoroom, Gamma, QuillBot, Civitai, and Hugging Face.",
-    "reactions": [
-      "Article from TechCrunch: Google and Grok are catching up to ChatGPT, says a16z’s latest AI report",
-      "Context: Google and Grok are catching up to ChatGPT, says a16z’s latest AI report — From TechCrunch, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Google and Grok are catching up to ChatGPT, says a16z’s latest AI report — From TechCrunch, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "3e91d8d02e0d08f2f7010b1feeb1ad07",
-    "title": "The 75 best Labor Day deals we’ve found so far",
-    "source": "https://www.theverge.com/tech/756227/best-labor-day-sales-deals-2025",
-    "generatedAt": "2025-08-27T20:03:42.299Z",
-    "publishedAt": "2025-08-27T19:22:24.000Z",
-    "feedName": "The Verge",
-    "author": "Brandt Ranj",
-    "category": "General",
-    "essence": "Tech Close Tech Posts from this topic will be added to your daily email digest and your homepage feed. Plus Follow See All Tech Gadgets Close Gadgets Posts from this topic will be added to your daily email digest and your homepage feed. Plus Follow See All Gadgets Deals Close Deals Posts from this topic will be added to your daily email digest and your homepage feed.",
-    "reactions": [
-      "Article from The Verge: The 75 best Labor Day deals we’ve found so far",
-      "Context: The 75 best Labor Day deals we’ve found so far — From The Verge, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: The 75 best Labor Day deals we’ve found so far — From The Verge, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "739d25dfb59941ed84aa3d9418427b92",
-    "title": "OpenAI co-founder calls for AI labs to safety-test rival models",
-    "source": "https://techcrunch.com/2025/08/27/openai-co-founder-calls-for-ai-labs-to-safety-test-rival-models/",
-    "generatedAt": "2025-08-27T20:03:41.967Z",
-    "publishedAt": "2025-08-27T19:14:01.000Z",
-    "feedName": "TechCrunch",
-    "author": "Maxwell Zeff",
-    "category": "AI",
-    "essence": "OpenAI and Anthropic, two of the world’s leading AI labs, briefly opened up their closely guarded AI models to allow for joint safety testing — a rare cross-lab collaboration at a time of fierce competition. The effort aimed to surface blind spots in each company’s internal evaluations and demonstrate how leading AI companies can work together on safety and alignment work in the future. In an interview with TechCrunch, OpenAI co-founder Wojciech Zaremba said this kind of collaboration is increasingly important now that AI is entering a “consequential” stage of development, where AI models are used by millions of people every day.",
-    "reactions": [
-      "Article from TechCrunch: OpenAI co-founder calls for AI labs to safety-test rival models",
-      "Context: OpenAI co-founder calls for AI labs to safety-test rival models — From TechCrunch, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: OpenAI co-founder calls for AI labs to safety-test rival models — From TechCrunch, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "9d23c11212a84b8ce2c4c2ff96478889",
-    "title": "I Am An AI Hater",
-    "source": "https://anthonymoser.github.io/writing/ai/haterdom/2025/08/26/i-am-an-ai-hater.html",
-    "generatedAt": "2025-08-27T20:03:43.714Z",
-    "publishedAt": "2025-08-27T19:10:37.000Z",
-    "feedName": "Hacker News (Frontpage)",
-    "author": "BallsInIt",
-    "category": "General",
-    "essence": "I Am An AI Hater Aug 26, 2025 I am an AI hater. This is considered rude, but I do not care, because I am a hater. To speak politely about AI, you put disclaimers before criticism: of course I’m not against it entirely; perhaps in a few years when; maybe for other purposes, but.",
-    "reactions": [
-      "Context: I Am An AI Hater — From Hacker News (Frontpage), here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: I Am An AI Hater — From Hacker News (Frontpage), here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: I Am An AI Hater — From Hacker News (Frontpage), here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "ef467d98a7f4b3c6c5f0bc6b97a55411",
-    "title": "The best Android phones for 2025",
-    "source": "https://www.engadget.com/mobile/smartphones/best-android-phone-130030805.html?src=rss",
-    "generatedAt": "2025-08-27T20:03:43.439Z",
-    "publishedAt": "2025-08-27T19:01:27.000Z",
-    "feedName": "Engadget",
-    "author": "Sam Rutherford",
-    "category": "Technology & Electronics",
-    "essence": "Mobile Smartphones Why you can trust us Engadget has been testing and reviewing consumer tech since 2004. Our stories may include affiliate links; if you buy something through a link, we may earn a commission. about how we evaluate products .",
-    "reactions": [
-      "Context: The best Android phones for 2025 — From Engadget, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: The best Android phones for 2025 — From Engadget, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: The best Android phones for 2025 — From Engadget, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "0866c93331f44732384860cfaa0a32e4",
-    "title": "Firefox Has Moved to Firefox.com",
-    "source": "https://www.firefox.com",
-    "generatedAt": "2025-08-27T20:03:43.741Z",
-    "publishedAt": "2025-08-27T18:56:03.000Z",
-    "feedName": "Hacker News (Frontpage)",
-    "author": "pentagrama",
-    "category": "General",
-    "essence": "Choose your language or locale to browse Firefox.com It is available in the following languages: Acholi عربي Asturianu Беларуская Български Brezhoneg Bosanski Català Maya Kaqchikel Čeština Cymraeg Dansk Deutsch Dolnoserbšćina Ελληνικά English (Canadian) English (British) English (US) Esperanto Español (de Argentina) Español (de Chile) Español (de España) Español (de México) فارسی suomi Français Frysk Gàidhlig Galego Avañe'ẽ עברית हिन्दी (भारत) Hrvatski Hornjoserbsce magyar Հայերեն Interlingua Bahasa Indonesia íslenska Italiano 日本語 ქართული Taqbaylit ខ្មែរ 한국어 ພາສາລາວ Македонски മലയാളം Melayu မြန်မာဘာသာ Norsk bokmål Nederlands Norsk nynorsk ਪੰਜਾਬੀ (ਭਾਰਤ) Polski Português (do Brasil) Português (Europeu) rumantsch Română Русский Sicilianu Scots සිංහල slovenčina سرائیکی Slovenščina Shqip Српски Svenska Тоҷикӣ ไทย Tagalog Türkçe Українська Tiếng Việt 中文 (简体) 正體中文 (繁體)",
-    "reactions": [
-      "Context: Firefox Has Moved to Firefox.com — From Hacker News (Frontpage), here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Firefox Has Moved to Firefox.com — From Hacker News (Frontpage), here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Firefox Has Moved to Firefox.com — From Hacker News (Frontpage), here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "c0befc27d3c6a41b7ea679bc92a8ede0",
-    "title": "Microsoft’s Copilot AI is now inside Samsung TVs and monitors",
-    "source": "https://www.theverge.com/news/767078/microsoft-samsung-tv-copilot-ai-assistant-launch",
-    "generatedAt": "2025-08-27T19:02:50.704Z",
-    "publishedAt": "2025-08-27T18:48:14.000Z",
-    "feedName": "The Verge",
-    "author": "Emma Roth",
-    "category": "General",
-    "essence": "News Close News Posts from this topic will be added to your daily email digest and your homepage feed. Plus Follow See All News AI Close AI Posts from this topic will be added to your daily email digest and your homepage feed. Plus Follow See All AI Gadgets Close Gadgets Posts from this topic will be added to your daily email digest and your homepage feed.",
-    "reactions": [
-      "Article from The Verge: Microsoft’s Copilot AI is now inside Samsung TVs and monitors",
-      "Context: Microsoft’s Copilot AI is now inside Samsung TVs and monitors — From The Verge, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Microsoft’s Copilot AI is now inside Samsung TVs and monitors — From The Verge, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "b094f5e0ecaaff1b53d7cf9e0f2cef70",
-    "title": "Trump administration suspends FEMA employees who warned about disaster response",
-    "source": "https://www.theverge.com/news/766890/trump-fema-employees-suspended-letter",
-    "generatedAt": "2025-08-27T19:02:50.779Z",
-    "publishedAt": "2025-08-27T18:37:15.000Z",
-    "feedName": "The Verge",
-    "author": "Justine Calma",
-    "category": "General",
-    "essence": "News Close News Posts from this topic will be added to your daily email digest and your homepage feed. Plus Follow See All News Policy Close Policy Posts from this topic will be added to your daily email digest and your homepage feed. Plus Follow See All Policy Science Close Science Posts from this topic will be added to your daily email digest and your homepage feed.",
-    "reactions": [
-      "Context: Trump administration suspends FEMA employees who warned about disaster response — From The Verge, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Trump administration suspends FEMA employees who warned about disaster response — From The Verge, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Trump administration suspends FEMA employees who warned about disaster response — From The Verge, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "68d4ae346fdd396ba405171e5d604a38",
-    "title": "Xbox Cloud Gaming is now playable in the cheaper Game Pass tiers",
-    "source": "https://www.engadget.com/gaming/xbox/xbox-cloud-gaming-is-now-playable-in-the-cheaper-game-pass-tiers-183033789.html?src=rss",
-    "generatedAt": "2025-08-27T19:02:51.890Z",
-    "publishedAt": "2025-08-27T18:30:33.000Z",
-    "feedName": "Engadget",
-    "author": "Will Shanklin",
-    "category": "Video Games",
-    "essence": "Gaming Xbox Xbox Cloud Gaming is now playable in the cheaper Game Pass tiers Core and Standard subscribers can now try it. Will Shanklin Contributing Reporter Wed, August 27, 2025 at 6:30 PM UTC 1 min read Microsoft It's now a little cheaper to try Xbox Cloud Gaming . Previously restricted to the Game Pass Ultimate tier, it's now open to Core and Standard subscribers.",
-    "reactions": [
-      "Article from Engadget: Xbox Cloud Gaming is now playable in the cheaper Game Pass tiers",
-      "Context: Xbox Cloud Gaming is now playable in the cheaper Game Pass tiers — From Engadget, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Xbox Cloud Gaming is now playable in the cheaper Game Pass tiers — From Engadget, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "dd453fcf1f827b1a671973873f8f3195",
-    "title": "Metal Gear Solid Delta awkwardly mixes modern visuals with old-school frustrations",
-    "source": "https://www.theverge.com/games-review/766751/metal-gear-solid-delta-snake-eater-review",
-    "generatedAt": "2025-08-27T19:02:50.864Z",
-    "publishedAt": "2025-08-27T18:30:00.000Z",
-    "feedName": "The Verge",
-    "author": "Tauriq Moosa",
-    "category": "General",
-    "essence": "Games Review Close Games Review Posts from this topic will be added to your daily email digest and your homepage feed. Plus Follow See All Games Review Entertainment Close Entertainment Posts from this topic will be added to your daily email digest and your homepage feed. Plus Follow See All Entertainment Gaming Close Gaming Posts from this topic will be added to your daily email digest and your homepage feed.",
-    "reactions": [
-      "Article from The Verge: Metal Gear Solid Delta awkwardly mixes modern visuals with old-school frustrations",
-      "Context: Metal Gear Solid Delta awkwardly mixes modern visuals with old-school frustrations — From The Verge, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Metal Gear Solid Delta awkwardly mixes modern visuals with old-school frustrations — From The Verge, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "afc19240fd22bd25a04ada30376656c8",
-    "title": "House to investigate Wikipedia over allegations of organized bias",
-    "source": "https://thehill.com/homenews/house/5473331-wikipedia-bias-probe-republicans/",
-    "generatedAt": "2025-08-27T19:02:52.596Z",
-    "publishedAt": "2025-08-27T18:25:27.000Z",
-    "feedName": "Hacker News (Frontpage)",
-    "author": "xqcgrek2",
-    "category": "General",
-    "essence": "Article URL: https://thehill.com/homenews/house/5473331-wikipedia-bias-probe-republicans/ Comments URL: https://news.ycombinator.com/item?id=45043164 Points: 27 # Comments: 3",
-    "reactions": [
-      "Context: House to investigate Wikipedia over allegations of organized bias — From Hacker News (Frontpage), here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: House to investigate Wikipedia over allegations of organized bias — From Hacker News (Frontpage), here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: House to investigate Wikipedia over allegations of organized bias — From Hacker News (Frontpage), here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "91469e4bf7867c83d29b34a2f2fa3947",
-    "title": "Judge denies Meta’s request to dismiss sexual harassment lawsuit filed by early employee",
-    "source": "https://techcrunch.com/2025/08/27/judge-denies-metas-request-to-dismiss-sexual-harassment-lawsuit-filed-by-early-employee/",
-    "generatedAt": "2025-08-27T19:02:50.513Z",
-    "publishedAt": "2025-08-27T18:22:35.000Z",
-    "feedName": "TechCrunch",
-    "author": "Dominic-Madori Davis",
-    "category": "Social",
-    "essence": "A judge has denied Meta’s request to dismiss a lawsuit brought against it by early employee Kelly Stonelake. U.S. District Judge Barbara Rothstein, who is overseeing the case, ruled this month that parts of Stonelake’s suit had merit, and the case will move forward.",
-    "reactions": [
-      "Article from TechCrunch: Judge denies Meta’s request to dismiss sexual harassment lawsuit filed by early employee",
-      "Context: Judge denies Meta’s request to dismiss sexual harassment lawsuit filed by early employee — From TechCrunch, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: Judge denies Meta’s request to dismiss sexual harassment lawsuit filed by early employee — From TechCrunch, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "c3c3be80da9882599b51263cd34bcdea",
-    "title": "Undergraduate research program bridging advanced manufacturing and cybersecurity coming to OSU - Oklahoma State University",
-    "source": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQWFh3anAwb3M0WTYxRkxKSzdIWlB3OFdVX0ZJM0tFeHdhQm0taS12QTRoWC1Ia1hFcGJhTzJEY0NVc25pckJNaTIzdWFwQnM4a0FQcUlwUnI1YVdCTlpCeDV3dkhRbmdXa1BVbUd5VXUyVE4xQk5zTzFXYW9qS2ducTI1MGFXSGV2UXctWl90QkdaQ243TkV1VHZnNGlPQy1DWUI3OGxlSm8xUERTTHBLMEpzSEZRcFRVTzNiVW1pMTlxSmg0NDM3M3p2LXRUbkRRRVF5TENFdnpPU3ktc1JJM0pmMmhONnQwVndCTmEtVGlpRWFKOW90MkJjX3lFQUduektqUA?oc=5",
-    "generatedAt": "2025-09-01T06:09:30.023Z",
-    "publishedAt": "2025-08-27T18:22:34.000Z",
-    "feedName": "Cybersecurity & Privacy",
-    "author": "Cybersecurity & Privacy",
-    "category": "General",
-    "essence": "1) What's new: Oklahoma State University (OSU) is launching an undergraduate research program to integrate advanced manufacturing and cybersecurity, addressing skills gaps in both fields. 2) Why it matters for engineers/teams: The program equips students with interdisciplinary expertise, helping teams secure industrial systems and improve manufacturing resilience against cyber threats—a critical need as attacks on OT/IIoT systems rise. 3) Evidence/Caveats: No specific version numbers or CVEs cited, but the initiative aligns with growing demand for cyber-physical security skills (e.g., 2023 ICS-CERT reports highlighting 30%+ increase in manufacturing sector breaches).",
-    "reactions": [
-      ") Operator takeaway: Integrate cybersecurity modules into existing manufacturing pipelines by aligning with OSU’s curriculum to ensure students gain hands-on experience with secure industrial control systems (ICS) protocols.",
-      ") Security/DevOps check: Mitigate risks by enforcing strict access controls for student researchers handling sensitive manufacturing data, as noted in similar programs where unmonitored access led to accidental data leaks.",
-      ") Adoption note: Ensure compatibility with existing STEM programs by rolling out the initiative in phases, starting with pilot cohorts to address integration challenges before full-scale deployment."
-    ],
-    "promoBanner": {
-      "text": "Tech News by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "26e775185b7c1a00511c3aa1ad81abbf",
-    "title": "WhatsApp is the latest to offer an AI-powered writing assistant",
-    "source": "https://www.engadget.com/ai/whatsapp-is-the-latest-to-offer-an-ai-powered-writing-assistant-182116369.html?src=rss",
-    "generatedAt": "2025-08-27T19:02:52.193Z",
-    "publishedAt": "2025-08-27T18:21:16.000Z",
-    "feedName": "Engadget",
-    "author": "Lawrence Bonk",
-    "category": "Technology & Electronics",
-    "essence": "AI WhatsApp is the latest to offer an AI-powered writing assistant It uses Meta's Private Processing technology to keep things classified. Lawrence Bonk Contributing Reporter Wed, August 27, 2025 at 6:21 PM UTC 1 min read Meta WhatsApp just introduced an AI-powered writing assistant , in case you need help with a text or whatever. The AI provides suggestions in various styles, like professional, funny or supportive.",
-    "reactions": [
-      "Context: WhatsApp is the latest to offer an AI-powered writing assistant — From Engadget, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: WhatsApp is the latest to offer an AI-powered writing assistant — From Engadget, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today.",
-      "Context: WhatsApp is the latest to offer an AI-powered writing assistant — From Engadget, here are practical implications, expected impact, and considerations for readers evaluating credibility, relevance, and next steps today."
     ],
     "promoBanner": {
       "text": "Tech News by Axiologic.News",
