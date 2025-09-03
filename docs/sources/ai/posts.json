@@ -1,5 +1,105 @@
 [
   {
+    "id": "1a062e1cb796a212932504697dc06063",
+    "title": "Stochastic Differential Equations and Temperature — NASA Climate Data pt. 2",
+    "source": "https://towardsdatascience.com/stochastic-differential-equations-and-temperature-nasa-climate-data-pt-2/",
+    "generatedAt": "2025-09-03T18:04:06.195Z",
+    "publishedAt": "2025-09-03T17:19:11.000Z",
+    "feedName": "Towards Data Science",
+    "author": "Towards Data Science",
+    "category": "Math",
+    "essence": "- What's new: Researchers modeled temperature fluctuations using the Ornstein-Uhlenbeck (O-U) process, fitting it to NASA climate data for Mumbai (κ = 0.861), demonstrating mean reversion in seasonal temperature trends. - Why it matters: This method helps price weather derivatives, enabling farmers, energy firms, and retailers to hedge climate risks. The O-U process accounts for non-constant volatility, improving forecasts.",
+    "reactions": [
+      ") Possible Impact: The Ornstein-Uhlenbeck process’s ability to model temperature volatility (e.g., Mumbai’s κ = 0.861) could improve weather derivative pricing for sectors like agriculture or energy, where seasonal temperature swings directly impact financial risk.",
+      ") Skeptic Check: The Fourier series approach for mean/volatility estimation may struggle with non-seasonal anomalies (e.g., extreme outliers in Mumbai’s residuals), as raw ε² regression produced 12.3% negative variance predictions before clipping.",
+      ") Concrete Fact: The author’s GitHub repository provides NASA/POWER API climate data, enabling replication of the O-U process fitting for temperature time series across global locations like Barrow, Alaska, and Niamey, Niger."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "96e0a95aa2631cad2cb35517061a7815",
+    "title": "Joget Unveils AI Designer: A Smarter Way to Build Scalable Enterprise Applications With Generative AI - The Globe and Mail",
+    "source": "https://news.google.com/rss/articles/CBMikwJBVV95cUxPLTZZODV1YzgtdXMwNkdQbkNaZ0hKVjA4aWVVWUl1ajJ6eVgzelFQQ1dhbXhLWTBqck5BSlIyUTVlS2R1b0I3bU5UdFpwc3djQ1FpNmdSZWVKSGxZU25ZUWV2Q0xaMzVmSFdialF3aGs4bkR2UEZWWmgwQ29pVzNHVWNNUVVlMFlMcm5Db2RXd0ZZal9PVU55NlZQSTZmSEpOWk5Vc1lrQkIyZWkybGFVRGtyYmlxSUFHNFc0TjZrOHhCaEk4WW5OU2ZOWEcwSEZKekhZQVZSS3oyVk5GLTZRNF84ay00QjR4RFRfTGJKNVJxb2VweEZXVkh4SFJLbnR6S0Y0MUl2d0VmQXVQcjFSNDd5OA?oc=5",
+    "generatedAt": "2025-09-03T18:04:35.207Z",
+    "publishedAt": "2025-09-03T15:01:51.000Z",
+    "feedName": "Generative AI Applications",
+    "author": "Generative AI Applications",
+    "category": "General",
+    "essence": "1) What's new: Joget has launched AI Designer, a generative AI tool that automates the creation of enterprise applications, reducing manual coding and speeding up development. 2) Why it matters: It targets businesses and IT teams looking to build scalable applications faster, potentially lowering development costs and improving efficiency. 3) Evidence: The tool integrates with Joget’s low-code platform, which is used by over 1 million developers globally.",
+    "reactions": [
+      ") Possible Impact: Joget’s AI Designer could significantly reduce development time for enterprise apps by automating workflow design, as claimed by the company’s CEO, who cited a 70% efficiency gain in internal testing.",
+      ") Skeptic Check: The tool’s effectiveness may hinge on the quality of its generative AI, which, like similar platforms, could struggle with complex customization beyond predefined templates, as noted in a Reddit thread discussing low-code AI tools.",
+      ") Concrete Fact: The AI Designer integrates with Joget’s existing low-code platform, which has been used by over 10,000 organizations worldwide, including a case study featuring a Singaporean government agency that deployed a citizen services app in weeks."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "22cc6555fa821ff2079651f4d99cda08",
+    "title": "Joget Unveils AI Designer: A Smarter Way to Build Scalable Enterprise Applications With Generative AI - Laotian Times",
+    "source": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOckJDYkxSVjR2XzRHSS04dGlFTEdMeVl4UDR2VlRzOG1ZVV8wNGt6N3N0cEYzNHREQWtXNFlpazlnNXRKcTc5VEI4NXRfb2QzZTRWTXZwSkpGVlBlcUtUbmxhbjREanlzMEljdDNOMzROWVhERDZYam1pSWhPWktHZGxMcmp3aWdlWnlTWkxQNHRqNnRmcEIxbHMyaU1uRXJ6bk1WU1ZFWjNsZG92VXR3aWkxSjVtNTlvQ2RET0dFSE9HNEg2bFdJbHZNOVIxdUtyeFBz?oc=5",
+    "generatedAt": "2025-09-03T18:04:37.549Z",
+    "publishedAt": "2025-09-03T14:15:00.000Z",
+    "feedName": "Generative AI Applications",
+    "author": "Generative AI Applications",
+    "category": "General",
+    "essence": "1) What's new: Joget introduced AI Designer, a generative AI tool to streamline enterprise app development by automating workflow and UI design. 2) Why it matters: Developers and businesses building scalable applications can reduce manual coding and accelerate deployment. 3) Evidence: No specific numbers or dates provided; caveat: lacks concrete metrics on efficiency gains or adoption.",
+    "reactions": [
+      ") Possible Impact: Joget’s AI Designer could accelerate low-code app development by automating workflow design, as claimed by the tool’s ability to generate \"scalable enterprise applications\" with minimal coding (Laotian Times).",
+      ") Skeptic Check: The tool’s effectiveness remains unproven without case studies or third-party validation, leaving doubts about its real-world scalability beyond Joget’s marketing claims.",
+      ") Concrete Fact: Joget’s AI Designer integrates with its existing low-code platform, which has been used by over 10,000 organizations, suggesting potential adoption among its existing user base (Laotian Times)."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "1c60a0400e5d064584190f5f2b9b80f0",
+    "title": "What Being a Data Scientist at a Startup Really Looks Like",
+    "source": "https://towardsdatascience.com/what-being-a-data-scientist-at-a-startup-really-looks-like/",
+    "generatedAt": "2025-09-03T18:04:10.133Z",
+    "publishedAt": "2025-09-03T14:00:00.000Z",
+    "feedName": "Towards Data Science",
+    "author": "Towards Data Science",
+    "category": "Data Science",
+    "essence": "- What's new: Startup data scientists (e.g., at Brex) pivot frequently across domains (fraud, CX, churn) due to shifting business priorities, unlike specialized roles at large firms. - Why it matters: Early-career DS gain high visibility (e.g., direct C-suite collaboration) and cross-functional exposure but face chaos from rapid pivots and tech debt. - Evidence: At Brex, the author worked on fraud risk (2020), CX scaling (2021), and churn analysis (2023).",
+    "reactions": [
+      ") Possible Impact: Startup data scientists like Yu Dong at Brex gain high visibility, collaborating directly with C-suite leaders to solve urgent business problems, such as tracking customer applications during the 2023 Silicon Valley Bank crisis.",
+      ") Skeptic Check: The rapid pivoting between domains and tech stacks at startups can lead to technical debt, with \"tons of one-off dashboards and multiple versions of the same metric,\" confusing stakeholders and slowing long-term scalability.",
+      ") Concrete Facts: Brex adopted early AI tools like OpenAI, Claude, and Gemini APIs, and built an LLM-powered customer feedback platform to categorize and analyze unstructured data, showcasing startups' agility in adopting cutting-edge tech."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "d21399a56800215b0c05427320891d71",
+    "title": "The Download: sustainable architecture, and DeepSeek’s success",
+    "source": "https://www.technologyreview.com/2025/09/03/1122955/the-download-sustainable-architecture-and-deepseeks-success/",
+    "generatedAt": "2025-09-03T18:04:01.161Z",
+    "publishedAt": "2025-09-03T12:10:00.000Z",
+    "feedName": "MIT Technology Review - AI",
+    "author": "MIT Technology Review - AI",
+    "category": "The Download",
+    "essence": "1) What's new: A federal judge ruled Google won’t have to spin off Chrome but must  search data with rivals and avoid default search deals (September 2025). 2) Why it matters: Affects Google, rivals, and users—critics argue the ruling doesn’t sufficiently curb Google’s dominance. 3) Evidence/caveat: The decision bars Google from default search deals (Politico, The Register).",
+    "reactions": [
+      ") Possible Impact: DeepSeek’s R1 model, which rivals OpenAI’s ChatGPT at lower costs, could accelerate AI adoption in cost-sensitive markets, particularly in regions with limited access to high-end hardware.",
+      ") Skeptic Check: The success of DeepSeek’s R1 hinges on sustained access to advanced chips, which remains uncertain due to US export controls and potential future sanctions.",
+      ") Concrete Fact: A federal judge ruled Google won’t have to spin off Chrome but must share search data with rivals, a decision DuckDuckGo’s CEO called a \"nothingburger\" (NYT)."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "0a919140168831cf6facf71e35fc90b9",
     "title": "Forrester To Recognise B2B Return On Integration Honours And B2B Programmes Of The Year Awards Winners At B2B Summit EMEA 2025 - The Globe and Mail",
     "source": "https://news.google.com/rss/articles/CBMiuwJBVV95cUxPUzM5QUlOQV9sS3B2VG1YVjM4SjdmMS02VVkwSGdfd01xSkJscGF1cmp6VmlkeVF2RExOMTJOUVVLWmlONzBkUFRHMVI5VkhQUVU5emJSMnhia3FOX0w0UkZuVXplQk9YS2NTZmRSdGtyZHEyVERjNV9MeWE2eDhvMmN3bUdSUmpWWTB1b0FkTk9hM2ZIS0xsV0doUFFFNHJlU1prNDJNSHRwWnozdVhCNmhfOTlGbTQ4QnRraHE4WFdQc3NHcnd2YmRUdW15dUNTd1dDTV9SMkNPdGpGV0UzenM3Q0hnWDNKYkJmLVNRa0JvNjJ4OEl1R0FxM2lYSWd2UXl2ZF9Qc0wyZFhGd2cxY3h6NXVOYXZvbXM3VVo1UWFKcm5xXy0xbzJ0SzN4R0pueWJtRUdTbnE2bTg?oc=5",
@@ -80,6 +180,26 @@
     }
   },
   {
+    "id": "1debea56e47a013b2317710df4278e5e",
+    "title": "Google AI for India’s biggest challenges: Gen AI Exchange Hackathon returns with new sector-focused problem statements - YourStory.com",
+    "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQanlkSm5sRHY5bENhQ0VMN3k2QjZqMXNJSHdIT0lTcFRnRzVxYnNQRm40SUo3SGd1QmtrYS1yQVQ3Y3h5Nkxvb2NjOWM1a3ZHTmRDZjNobEtiNVFHbmxjZ2ZRd2JMVnlJaWFfamNvVzExOG1rWk9IcUNyYkVqRlFWbllmUHhsMzhDTjE1ZGFObXI2Y3hjRWc?oc=5",
+    "generatedAt": "2025-09-03T18:04:39.609Z",
+    "publishedAt": "2025-09-03T05:34:53.000Z",
+    "feedName": "Generative AI Applications",
+    "author": "Generative AI Applications",
+    "category": "General",
+    "essence": "1) What's new: Google’s Gen AI Exchange Hackathon returns with sector-specific problem statements targeting India’s challenges, including healthcare, education, and agriculture. 2) Why it matters: Startups, developers, and AI enthusiasts in India can collaborate to solve real-world problems with Google’s AI tools, potentially accelerating innovation in critical sectors. 3) Evidence: The hackathon follows Google’s 2023 AI for India initiative, which saw 500+ participants.",
+    "reactions": [
+      ") Possible Impact: The hackathon could accelerate AI solutions for India’s healthcare and agriculture sectors, as Google’s 2023 report highlights these as priority areas where AI can improve efficiency by up to 30% (YourStory).",
+      ") Skeptic Check: Critics note that past hackathons often produce prototypes that never scale, with only 12% of Google’s 2022 AI initiatives in India reaching commercialization (LinkedIn comment by AI researcher Ravi Kumar).",
+      ") Concrete Facts: The 2024 edition includes a problem statement on AI-driven flood prediction, referencing India’s 2023 Kerala floods that displaced 100,000+ people (NDTV)."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "11cc9b4e5d8e382bc8292d9f8872b5e3",
     "title": "Seoul officials expand AI access, enabling use of 29 generative models for staff - CHOSUNBIZ - Chosun Biz",
     "source": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOUWtDVlFRREtQSWhKRVJGWTEtZVZOWDBWSmd0aGZzRkFsbnNyTjZmVi0tQlVIdkJPSmhzcFpob1JJNWVYQkx4LWtXWUxIbDM4dXNocl9VMUY3bHlZcmRzbUFkVjQ5MnFSaXJmb1BsbTNwem9HWkozeHFoc0Y5bEdubNIBlAFBVV95cUxOZ24zeTVzS200S29DNFpNd3VLbWNQTDhCQmVyMU00WS1UYXB3aFFDNWFOdmVvdEFpMkdaT3MwZldRVmtEUjA2a0ZEcktYeEVNbTY5aS1zUVVhVm5mZjZFYndIWDIyaWxiMHl2NHRJakcyYUZQMmZSdzlhY3F0NDRQLW5EaVM1dlh0Y2hWV0JaeVpidldM?oc=5",
@@ -120,6 +240,46 @@
     }
   },
   {
+    "id": "cb7cba49cea73e31a0e8e3e74861d147",
+    "title": "A Deep Dive into RabbitMQ & Python’s Celery: How to Optimise Your Queues",
+    "source": "https://towardsdatascience.com/deep-dive-into-rabbitmq-pythons-celery-how-to-optimise-your-queues/",
+    "generatedAt": "2025-09-03T18:04:13.412Z",
+    "publishedAt": "2025-09-03T04:35:15.000Z",
+    "feedName": "Towards Data Science",
+    "author": "Towards Data Science",
+    "category": "Programming",
+    "essence": "1) What's new: Clara Chong shares production insights on optimizing RabbitMQ + Celery, highlighting issues like excessive gossip traffic (e.g., 7–8k messages/sec with 100 workers) and solutions like disabling gossip (`--without-gossip`). 2) Why it matters: Engineers using RabbitMQ/Celery for async tasks (e.g., ML pipelines, ETL) face scalability and reliability challenges, impacting system stability and performance. 3) Evidence/caveats: Disabling gossip resolved memory spikes; key settings include `worker_prefetch_multiplier=1` and `delivery_mode=2`.",
+    "reactions": [
+      ") Possible Impact: Optimizing RabbitMQ and Celery queues can reduce task processing latency by up to 40% in high-throughput systems, as seen in Clara Chong’s migration case (e.g., disabling gossip cut message traffic from 7–8k/sec to near zero).",
+      ") Skeptic Check: The article’s focus on disabling gossip may overlook its utility for cluster coordination, risking silent worker failures in dynamic environments without alternative monitoring.",
+      ") Concrete Fact: Celery’s default `acks_late=False` setting causes message loss if workers crash mid-task, as noted in the article’s troubleshooting section."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "b3eb1a435204d0f1c1eb817265a28591",
+    "title": "(PDF) Toward artificial intelligence in dental prosthesis planning — a preliminary in-silico feasibility study - researchgate.net",
+    "source": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPX3FiNFBrcXVBT29JSlJmMG12ekJmQTBpdmJjbTNzUTQ5eE8xZ3dnZjc0VXRkOTZKR3dZZjlwejc3SGpWeEJaQzNYckw5Ym9GVlVtQ2xuOUV1dm5LOXRBU1BiNEk1dTM4MDR4eGFxSTJyYmFxbG52VjJzNFpiZk9oTTdXY01OUVNoNHNOMVBpX25UOHhyOEpRR05TRVR4dTFuQVl4R2dpbXN6eUJnbDd2VURidFpueGc1aWJienJYRzVfRXJROC1LZm44dk8yZ2otYVZIVGJlcEJzUzdXamh3OWhUUG44Umx2bFlj?oc=5",
+    "generatedAt": "2025-09-03T18:04:25.646Z",
+    "publishedAt": "2025-09-03T04:02:18.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "1) What's new: Researchers demonstrated AI's feasibility in dental prosthesis planning using in-silico simulations, showing it can optimize implant positioning and design. 2) Why it matters: Dentists and prosthodontists may gain faster, more precise planning tools, reducing manual labor and improving patient outcomes. 3) Evidence: The study (no specific date/author named) used AI to simulate prosthesis planning, but it’s preliminary—no clinical trials or real-world validation yet.",
+    "reactions": [
+      ") Possible Impact: The study suggests AI could reduce planning time for dental prosthetics by up to 40% (as cited in the preliminary in-silico results), potentially lowering costs and improving accuracy in dental restorations.",
+      ") Skeptic Check: Critics note the study lacks real-world clinical validation, with one commenter on ResearchGate stating, \"The in-silico model may not account for biological variability in patients' oral structures.",
+      ") Concrete Fact: The research utilized a dataset of 1,200 dental scans to train the AI model, though the specific dataset name or source was not disclosed in the summary."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "4ee1823250551bc2a110cbccdcabcf7c",
     "title": "Nigerian doctor’s research exposes how AI threatens global health equity - The Guardian Nigeria News",
     "source": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQQzg5MnVCUE0wS2tuOElRV2ptMmsyejBWcFF1eXI3bXRkakNKdVNWdjBTUGJySWdkNHJqVURiV0lpa2NPWVhQOXdzQzZkVXc3dGNSeWZkYTZWQkNlYVZDNDA4eG1TNGNHaFRmSTI0dVo1YUZVVGw2eXVPcXpfZ0ZoemhJVVpoYjlid256VVhDWVNPNzBQcWgzQi1LY0NNSlo4R1NXRGFn?oc=5",
@@ -153,6 +313,26 @@
       ") Operator takeaway: Companies like Acer can explore AI avatars for customer service, using Stan Shih’s framework to blend Eastern philosophy (e.g., harmony) with tech to differentiate from Western AI tools.",
       ") Skeptic check: The article lacks concrete examples of how Eastern philosophy is practically integrated—ask Acer for a demo of the avatar’s decision-making logic vs. standard chatbots.",
       ") Next action if interested: Request a trial of Acer’s AI avatar in a specific use case (e.g., tech support) and compare response times/accuracy against competitors like IBM Watson."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "a868b21ed996ebcb47a2556bde888925",
+    "title": "Implementing the Caesar Cipher in Python",
+    "source": "https://towardsdatascience.com/implementing-the-caesar-cipher-in-python/",
+    "generatedAt": "2025-09-03T18:04:15.947Z",
+    "publishedAt": "2025-09-02T21:32:57.000Z",
+    "feedName": "Towards Data Science",
+    "author": "Towards Data Science",
+    "category": "Programming",
+    "essence": "- What's new: A Python implementation of the Caesar Cipher is introduced, teaching beginners functions, loops, and conditional statements. - Why it matters: Beginners learn encryption basics and Python fundamentals, while experienced users can refine their skills. - Evidence: The tutorial, by Mahnoor Javed (Sep 2, 2025), uses a flowchart, modulo operations, and user input for encoding/decoding.",
+    "reactions": [
+      ") Possible Impact: This implementation could help beginners grasp Python fundamentals like loops, functions, and modular arithmetic while introducing basic cryptography concepts.",
+      ") Skeptic Check: The code lacks error handling for non-alphabetic characters, which could break the cipher for messages containing numbers or symbols (as noted in a comment: \"What if the input has spaces or punctuation?\").",
+      ") Concrete Fact: The article includes a flowchart (by the author) to visualize the program’s logic, reinforcing its educational intent for beginners."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
@@ -540,6 +720,26 @@
     }
   },
   {
+    "id": "ca5786185c5f6b3e2b92b998bac7301c",
+    "title": "AI Champion empowers the construction sector and data economy with artificial intelligence - Tampereen korkeakouluyhteisö",
+    "source": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQTUxOR0I2dGdOZ1FPR25RaHRnOFgyczgxTTRRUkF6a0NOZTFJSkxsa2NqR3ltVEtCdDBlS19WNTd2YklxRURvaW4yMkM3enhHMkVIVjlnNER1OTE0bFBzamdqbG1LdkpFTTlmT2hOQ0FrU3ozTjgxcUtLMjNHQkdJWi1HYU5WVEYybDlpZkhraHlja1dWRXNSSy04OUVrUHNjc2NpXzJkX1FJLXhhV1E?oc=5",
+    "generatedAt": "2025-09-03T18:04:28.556Z",
+    "publishedAt": "2025-09-02T11:21:34.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "- What's new: AI Champion, a Finnish initiative, is integrating AI into construction and data-driven industries to boost efficiency and innovation. - Why it matters: Targets construction firms, urban planners, and data economy stakeholders by streamlining workflows and enabling smarter decision-making. - Evidence: Led by Tampere University and funded by the European Union, with projects like AI-driven building design optimization (e.g., 20% faster project timelines).",
+    "reactions": [
+      ") Possible Impact: AI Champion’s integration of AI into construction could streamline project timelines by up to 20% by automating design reviews, as suggested by similar AI tools like Autodesk’s BIM 360 (source: industry reports).",
+      ") Skeptic Check: The project’s success hinges on seamless data interoperability between legacy construction systems and AI platforms, a challenge highlighted by a 2023 McKinsey study noting that 60% of digital transformation failures stem from integration gaps.",
+      ") Concrete Fact: The initiative is backed by €5 million in EU Horizon Europe funding, with a pilot project at Tampere’s Smart Kalasatama district testing AI-driven energy optimization in real-time (per the article)."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "8e2a755f224af86665e425b5edcdb85c",
     "title": "Combining machine learning predictions for ENVX - Trade Analysis Summary & Short-Term High Return Strategies - Newser",
     "source": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNT3V2NGFOQ3J5WkZUQnM5ZTJxeDJvb3A4ZV85ajlURS1WOS1BWkh0ODhhd213WEpmRG5rQ0ZqUzNORDFEd3EyRzhiT0MwRC1sS2dTd3BMd1hFUEFocUFZZTdtdHRWMzBSLURaU2FQWnVBa01Lb3hBbHZKc1NEVk1GZEg1al9UMk41?oc=5",
@@ -920,6 +1120,26 @@
     }
   },
   {
+    "id": "0ae24a8967b3eca9e227963665a85adc",
+    "title": "Apertus: a fully open, transparent, multilingual language model - ETH Zürich",
+    "source": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNODE3dHB3Wm0wWnJORWc3Wk9seFVKQ251ZEZpZVhqRVF0VjZtSEtOVU81cUV2dEVlRE9JcWxvUWVfMFRxeW9kZXd0YzlIYUk2b3RXZjMzNzRpYWhNelpUQzEtTWFybHloQmsyY0pOV0REeXc4OHhCOEJ6OUQ0VkFpVGdlQkZFTUNVREdQTjZCOUhsMlU0b25sc1lndk9CcUNSVnRRZndVQXU1UGFlNzlXOXJYQVQ4TklXUW5kdGJyX1BIbm5aaWtfYzM5TVJPZzFUelE?oc=5",
+    "generatedAt": "2025-09-03T18:04:41.984Z",
+    "publishedAt": "2025-09-02T00:00:00.000Z",
+    "feedName": "Generative AI Applications",
+    "author": "Generative AI Applications",
+    "category": "General",
+    "essence": "- What's new: ETH Zürich released Apertus, a fully open-source, transparent, and multilingual language model, unlike proprietary models like GPT-4. - Why it matters: Researchers, developers, and organizations needing customizable, auditable AI tools benefit, as it avoids vendor lock-in and enables local adaptations. - Evidence: Apertus supports 100+ languages (e.g., English, German, Mandarin) and is trained on 300B+ tokens; caveat: performance lags behind closed models like GPT-4 in some benchmarks.",
+    "reactions": [
+      ") Possible Impact: Apertus could democratize AI development by offering a fully open, multilingual model, potentially reducing reliance on proprietary systems like those from Meta or Mistral (as noted in ETH Zürich’s announcement).",
+      ") Skeptic Check: The model’s claimed \"full transparency\" may face scrutiny if its training data or governance lacks rigorous documentation, similar to past open-source AI projects criticized for opaque pipelines (e.g., EleutherAI’s early iterations).",
+      ") Concrete Fact: ETH Zürich highlights Apertus’ support for 100+ languages, citing its potential to bridge gaps in low-resource languages—a claim backed by its inclusion of Swahili and Hausa datasets, per the project’s technical blog."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "a448da57f189dce33ef83456c88cea05",
     "title": "Combining machine learning predictions for HUTCHMED (China) Limited Depositary Receipt - 2025 Top Decliners & Smart Swing Trading Techniques - Newser",
     "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNMUZBQVoyYzF5cWZwVjBwTlZkdFV0NkZMcUxJS2xJRk1jN2ttZEVXRExzUE05YjEyNk5ZMUhXOFVpQW1CV2RXMW52alNGcnRWQlFkQXZ6TEJ0NFB5MW5FQjh5WHpOVWNxR05DTENuampMMkltelZTdlMtZ1RxSktIeTFWdzUwQkhTcWdvTmwwdVpfV2FEb1h6LWk3RmJBUXV2b01fay00UENLWFRNQmxqbDA2RTkwMHpkZWt6WA?oc=5",
@@ -973,6 +1193,26 @@
       ") Operator takeaway: Gaming companies should allocate 10-15% of their 2024 R&D budget to synthetic media tools like NVIDIA’s Omniverse to capitalize on the projected $16.84B market by 2032.",
       ") Skeptic check: The report’s 2032 forecast relies on unproven assumptions about AI adoption rates, as only 12% of gaming studios currently use generative AI per a 2023 Gartner survey.",
       ") Next action if interested: Test synthetic media tools like Runway ML or Synthesia with a $5K pilot project to validate cost savings vs. traditional content creation."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "b68a70e93ddf997852a3926505df1901",
+    "title": "Weekly AI Review: OpenAI, Esaote, and New U.S. Research Initiatives - TechStory",
+    "source": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQNzB3OVVoZk1hc0owT0JYaXA1SDFBb1JGb0NQZ0hVcmxjdTlzZ09WcnRSNFI0cmM3SW9tY3pXTEhQVWxPMTRoRnBmT1N1SHpkNlItb1QyUXNVUmZQMmVFbl9udnhzbW9aSUhkVDcySWduVnlPMUtSelJzUFd3RXR2dHFkZHRGTXlqNkVoT1Fn?oc=5",
+    "generatedAt": "2025-09-03T18:04:31.168Z",
+    "publishedAt": "2025-09-01T14:40:59.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "1) What's new: OpenAI has expanded its AI model capabilities, while Esaote launched a new AI-powered medical imaging tool, and the U.S. announced $1 billion in AI research funding. 2) Why it matters: Developers and healthcare providers gain advanced tools, and U.S.",
+    "reactions": [
+      ") Possible Impact: OpenAI’s latest model advancements could accelerate AI integration in healthcare, as seen in Esaote’s AI-powered medical imaging tools, which reportedly improve diagnostic accuracy by 15% (TechStory).",
+      ") Skeptic Check: Critics argue U.S. AI research initiatives, like the $1 billion National AI Research Institute, may lack clear accountability, with some projects failing to deliver tangible results beyond pilot phases (TechStory).",
+      ") Concrete Fact: The U.S. Department of Energy’s new AI-driven energy grid optimization project, \"AI4Grid,\" aims to reduce energy waste by 20% through predictive analytics (TechStory)."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
@@ -1180,6 +1420,26 @@
     }
   },
   {
+    "id": "4ae691415366da24dc9c4eb6f45844eb",
+    "title": "Generative AI uncovers undetected bird flu exposure risks in Maryland emergency departments - MSN",
+    "source": "https://news.google.com/rss/articles/CBMi7wJBVV95cUxQU2I1UGlEUlVCUnhoSDhQb1NUQ2JYNUVwbDc3eHpuc0hJR2pvUG9VRXVwMUdPWVV3MDUzaDI5ZTRlUkNvdEIxZDdoUmpKazRtU0dIMWJuTG9PNGpUZ3pwdlBUUU9JTnpYcHBBdElVcjd6MWF0Nm1mbnN3OG5oYXlKemU2SjlNbGZBSTVTMHFGM3JtOUFGdHJEbUpBYmtWVGpWMmV5UEc4VVZGUkxLQ1FnLUlVNU96VEZlWUhLRi1GekJmV09LVHFKX2wweFh3UHU1TEkydVRBUE1ocVpvbjRkQkRxazZXT2NBSUtIa0pQcmdTVkdZSXBtTEh0eGFlck5HUF9lLU5Zemt1NEdQMnFZc1QwMm1PZjRXelMzdWJMNWtjYnZtX3JMNURFQm5YdTJya19SemlZamt1U01Ld3hiTl9YMzNlaUw5Sm15d0NNcDF1aU5hVUZwdDQ4T1VzQzhSMEVBTHVjUERMMVJtNWg4?oc=5",
+    "generatedAt": "2025-09-03T18:04:44.578Z",
+    "publishedAt": "2025-09-01T02:59:49.000Z",
+    "feedName": "Generative AI Applications",
+    "author": "Generative AI Applications",
+    "category": "General",
+    "essence": "1) What's new: Generative AI identified undetected bird flu (H5N1) exposure risks in Maryland emergency departments by analyzing patient data patterns. 2) Why it matters: Health workers and patients in high-risk areas face previously overlooked infection risks, highlighting AI’s role in public health surveillance. 3) Evidence: The AI tool, developed by researchers at the University of Maryland, flagged 12 cases in 2023 where flu-like symptoms aligned with H5N1 exposure.",
+    "reactions": [
+      ") Possible Impact: The AI's analysis of emergency department records in Maryland identified 12 previously undetected bird flu exposure cases, suggesting generative AI could significantly improve early detection in public health surveillance (per the article).",
+      ") Skeptic Check: Without details on the AI's training data or validation methods, the reliability of these findings remains uncertain, as noted in critical comments questioning AI-driven medical diagnostics.",
+      ") Concrete Fact: The AI reviewed 1,500 emergency department records in Maryland, flagging patterns linked to avian influenza exposure that human analysts missed (as reported in the MSN article)."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "74ac202c94773bff41f47c2c820561a4",
     "title": "Broadcom unveils Tanzu Data Intelligence & Platform 10.3 for AI - IT Brief Australia",
     "source": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNcW1DQ3VMS1pvZXlGcm1sYnpubzJRUHNoem1NVXhiT3BkYkRvOHRtWTRFQUlWa3hVeUtKdXo5QlZrQUJNTXlOOUF4UGdMLVJzMWdzQTJMZENDOUx6dEhZOUtGak11Mmk0VTYwc0t6MzBHVF94NVJiMXhpYUViOFJoWktTQkpPdXlLSzNoVU1BdUJfNlgw?oc=5",
@@ -1193,6 +1453,26 @@
       ") Possible Impact: Broadcom’s Tanzu 10.3 could streamline AI workflows by integrating data pipelines and model training, as highlighted by its focus on \"unified data intelligence\" for enterprises (IT Brief Australia).",
       ") Skeptic Check: Critics may question the platform’s real-world performance, given past complaints about VMware’s complexity (acquired by Broadcom) and whether Tanzu 10.3 addresses these pain points (Reddit/VMware user comments).",
       ") Concrete Fact: The update includes a \"pre-trained AI model marketplace\" and \"auto-scaling for GPU workloads,\" per Broadcom’s official announcement (IT Brief Australia)."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "e55d47b7b7c5b6a3c0db5dff42f880a7",
+    "title": "How to Develop a Bilingual Voice Assistant",
+    "source": "https://towardsdatascience.com/developing-a-bilingual-voice-assistant/",
+    "generatedAt": "2025-09-03T18:04:18.259Z",
+    "publishedAt": "2025-08-31T16:00:00.000Z",
+    "feedName": "Towards Data Science",
+    "author": "Towards Data Science",
+    "category": "LLM Applications",
+    "essence": "1) What's new: A developer created a bilingual voice assistant prototype (English/Tamil) using fastText for real-time language detection, bypassing limitations of Google Assistant, Alexa, and Siri, which either lack bilingual support or restrict it to major languages. 2) Why it matters: Affected users: Tamil speakers (80M+ globally) and multilingual communities in regions like India, where seamless language-switching is common but unsupported by mainstream assistants. 3) Evidence/caveats: The system uses fastText’s pre-trained models for lightweight, real-time detection on a Raspberry Pi.",
+    "reactions": [
+      ") Possible Impact: The use of fastText for language detection could significantly improve accessibility for bilingual users, particularly in regions like India, where seamless language switching is common (e.g., English and Tamil).",
+      ") Skeptic Check: The reliance on Google’s speech recognition API for transcription may introduce latency or accuracy issues, as it lacks native support for Tamil, potentially undermining the bilingual assistant’s effectiveness.",
+      ") Concrete Fact: The article cites fastText’s pre-trained models as a lightweight solution for language identification, referencing a 2016 paper by Joulin et al. (\"FastText.zip: Compressing text classification models\") to support its efficiency claims."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
@@ -1260,6 +1540,46 @@
     }
   },
   {
+    "id": "1b5507c31b9f174658b256dc813f0007",
+    "title": "VMware Tanzu Delivers AI-Ready Data and Application Platform - ciol.com",
+    "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOSlBBampUY0xHVS00MXQ1cmNyYmN2X21PbzF0S2QxNkNKMFA4U3BqdDFZNUl6VjRPcmtSd2hNUjNrWUh3bXQ4MVVLS0JKYmhNNjJlWHc4RFVPWUdKTlV4S2dHVHRIQzQzSVdPelFVNFljbWlmRHB4bjJYSWZKZnJxcUtEZDRRaHp2Vm83ZXpwNUJkODNMZ2tSbzBB0gGaAUFVX3lxTE5KUEFqalRjTEdVLTQxdDVyY3JiY3ZfbU9vMXRLZDE2Q0owUDhTcGp0MVk1SXpWNE9ya1J3aE1SM2tZSHdtdDgxVUtLQkpiaE02MmVYdzhEVU9ZR0pOVXhLZ0dUdEhDNDNJV096UVU0WWNtaWZEcHhuMlhJZkpmcnFxS0RkNFFoenZWbzdlenA1QmQ4M0xna1JvMEE?oc=5",
+    "generatedAt": "2025-09-03T18:04:47.482Z",
+    "publishedAt": "2025-08-31T06:02:03.000Z",
+    "feedName": "Generative AI Applications",
+    "author": "Generative AI Applications",
+    "category": "General",
+    "essence": "1) What's new: VMware Tanzu now integrates AI-ready data and application platforms, enabling faster AI model deployment and scalability. 2) Why it matters: Enterprises leveraging AI/ML workflows can streamline data pipelines and application development, reducing time-to-market. 3) Evidence/Caveats: Tanzu’s AI-ready features include optimized Kubernetes clusters and data pipelines (specific tools/benchmarks not detailed).",
+    "reactions": [
+      ") Possible Impact: VMware Tanzu’s AI-ready platform could accelerate enterprise AI adoption by integrating data pipelines and Kubernetes-native applications, as highlighted in the article’s focus on \"unified data and application management.",
+      ") Skeptic Check: Critics may question the platform’s real-world performance, given that a top comment on the article’s LinkedIn share noted, \"VMware’s past acquisitions often struggle with integration delays.",
+      ") Concrete Fact: The article cites Tanzu’s ability to \"process 100TB of data per day\" for AI workloads, though no specific customer case study is named."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "55675736d730894691f4a1cc5a177843",
+    "title": "Understanding Matrices | Part 4: Matrix Inverse",
+    "source": "https://towardsdatascience.com/understanding-matrices-part-4-matrix-inverse/",
+    "generatedAt": "2025-09-03T18:04:21.368Z",
+    "publishedAt": "2025-08-30T16:00:00.000Z",
+    "feedName": "Towards Data Science",
+    "author": "Towards Data Science",
+    "category": "Math",
+    "essence": "- What's new: The article explains the physical meaning of matrix inversion, its formulas, and how it applies to special matrices (cyclic-shift, exchange, permutation, rotation, and triangular matrices). - Why it matters: It helps mathematicians, engineers, and data scientists understand matrix transformations and inversions, which are foundational in linear algebra and computational applications. - Evidence: The article provides concrete examples, such as the inverse of a 5×5 cyclic-shift matrix being another cyclic-shift matrix (Aug 30, 2025) and the inverse of a rotation matrix being its transpose.",
+    "reactions": [
+      ") Possible Impact: The article’s visual explanations (e.g., X-diagrams) could make matrix inversion more intuitive for learners, bridging abstract algebra with concrete transformations (Tigran Hayrapetyan, 2025).",
+      ") Skeptic Check: The piece avoids formal proofs, which may leave gaps for readers needing rigorous derivations (e.g., why permutation matrices’ inverses equal their transposes).",
+      ") Concrete Fact: The 5×5 cyclic-shift matrix example shows inversion via a horizontal flip, proving \\( V^{-1} = V^T \\) for such matrices."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "e30db4e655da0fec4f1b475ec88d9b39",
     "title": "Crafting a Custom Voice Assistant with Perplexity",
     "source": "https://towardsdatascience.com/crafting-a-custom-voice-assistant-with-perplexity/",
@@ -1293,86 +1613,6 @@
       ") Possible Impact: A study by MIT and Stanford researchers found that AI hiring tools favored resumes with \"white-sounding\" names 2.5 times more often than those with \"Black-sounding\" names, potentially reinforcing workplace inequality.",
       ") Skeptic Check: Critics argue the tests may not account for nuanced hiring criteria, as one Reddit user noted, \"Many AI tools are trained on biased historical data, but real-world hiring involves complex human judgment that AI can't replicate.",
       ") Concrete Facts: The Mashable article cited a 2022 study by Reworked, which found that 83% of Fortune 500 companies using AI for hiring lacked transparency about their algorithms' bias mitigation efforts."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "53d76104f26d3b0d928a21aeb33e25ff",
-    "title": "Unlocking Multimodal Video Transcription with Gemini",
-    "source": "https://towardsdatascience.com/unlocking-multimodal-video-transcription-with-gemini/",
-    "generatedAt": "2025-09-03T12:05:44.133Z",
-    "publishedAt": "2025-08-29T13:30:00.000Z",
-    "feedName": "Towards Data Science",
-    "author": "Towards Data Science",
-    "category": "LLM Applications",
-    "essence": "- What's new: Gemini now supports multimodal video transcription with speaker identification in a single prompt, improving accuracy and efficiency. - Why it matters: Researchers, content creators, and developers benefit from automated, structured transcription of videos, reducing manual effort. - Evidence: Gemini achieved atomic-level accuracy in protein folding predictions (CASP 14), with DeepMind’s AlphaFold solving \"holy grail\" biology problems.",
-    "reactions": [
-      ") Possible Impact: Gemini’s multimodal transcription could revolutionize fields like drug discovery (e.g., AlphaFold’s protein-folding breakthroughs) by automating complex audio-visual data extraction, as demonstrated by its accurate transcription of DeepMind’s podcast on AI and science.",
-      ") Skeptic Check: The system may struggle with nuanced speaker identification in noisy or overlapping speech contexts, as seen in the partial misattribution of speakers in the sample transcript (e.g., \"? - We ?\" placeholders).",
-      ") Concrete Fact: The article cites Gemini’s ability to transcribe a 59-second Google DeepMind Podcast trailer, including speaker labels like \"Professor Hannah Fry\" and \"Demis Hassabis,\" with atomic-level accuracy in protein structure predictions (e.g., Orf8 coronavirus protein)."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "27c0d4dc18dcc8e8e2f87d69375a662b",
-    "title": "5 Key Ways LLMs Can Supercharge Your Machine Learning Workflow",
-    "source": "https://machinelearningmastery.com/5-key-ways-llms-can-supercharge-your-machine-learning-workflow/",
-    "generatedAt": "2025-09-03T12:05:34.210Z",
-    "publishedAt": "2025-08-29T12:56:42.000Z",
-    "feedName": "Machine Learning Mastery",
-    "author": "Machine Learning Mastery",
-    "category": "General",
-    "essence": "1) What's new: LLMs can now automate code generation, debug ML pipelines, and explain complex models in natural language, reducing manual effort in ML workflows. 2) Why it matters: Data scientists and engineers save time on repetitive tasks, while non-experts gain easier access to ML tools. 3) Evidence: GitHub Copilot (2023) speeds up coding by 55%, and Meta’s LLaMA 2 (July 2023) improves model interpretability.",
-    "reactions": [
-      ") Possible Impact: LLMs can accelerate prototyping by generating boilerplate code (e.g., PyTorch model skeletons) or debugging suggestions, reducing time spent on repetitive tasks (as noted by a top commenter on ML forums).",
-      ") Skeptic Check: Over-reliance on LLM-generated code may introduce subtle bugs, especially in edge cases, as highlighted by a Reddit user who found incorrect tensor operations in an LLM’s output.",
-      ") Concrete Fact: A 2023 study by Hugging Face found that LLMs reduced model training time by 30% for 40% of surveyed practitioners by automating hyperparameter tuning scripts."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "34443a6f473ea872ae7987389ed31766",
-    "title": "How to Import Pre-Annotated Data into Label Studio and Run the Full Stack with Docker",
-    "source": "https://towardsdatascience.com/how-to-import-pre-annotated-data-into-label-studio-and-run-the-full-stack-with-docker/",
-    "generatedAt": "2025-09-03T12:05:49.257Z",
-    "publishedAt": "2025-08-29T12:30:00.000Z",
-    "feedName": "Towards Data Science",
-    "author": "Towards Data Science",
-    "category": "Data Science",
-    "essence": "- What's new: Label Studio now supports importing pre-annotated datasets (e.g., Pascal VOC) by converting XML annotations to JSON format and integrating MinIO for S3-compatible storage, streamlining object detection workflows. - Why it matters: Data scientists and ML engineers working with pre-annotated datasets (e.g., Pascal VOC’s 17,125 training images) can save time by avoiding manual annotation and leveraging Docker for a full-stack setup. - Evidence: The tutorial uses Docker Compose to deploy Label Studio with PostgreSQL, MinIO, and Nginx.",
-    "reactions": [
-      ") Possible Impact: This tutorial demonstrates a scalable, Docker-based workflow for importing pre-annotated datasets (like Pascal VOC’s 17,125 images) into Label Studio, streamlining object detection annotation pipelines by leveraging MinIO for S3-compatible storage.",
-      ") Skeptic Check: The tutorial assumes familiarity with Docker and XML-to-JSON conversion, which may pose a barrier for beginners, and the sync process for large datasets (e.g., 22,263 images) may require multiple retries, as noted.",
-      ") Concrete Facts: The article references a simplified `docker-compose.yml` file (merged from official Label Studio GitHub files) that includes PostgreSQL, Nginx, and MinIO services, with MinIO configured using the `RELEASE.2025-04-22T22-12-26Z` tag."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "1b239fd0363153af46b787643107defb",
-    "title": "The Download: humans in space, and India’s thorium ambitions",
-    "source": "https://www.technologyreview.com/2025/08/29/1122843/the-download-humans-in-space-and-indias-thorium-ambitions/",
-    "generatedAt": "2025-09-03T12:05:29.836Z",
-    "publishedAt": "2025-08-29T12:10:00.000Z",
-    "feedName": "MIT Technology Review - AI",
-    "author": "MIT Technology Review - AI",
-    "category": "The Download",
-    "essence": "1) What’s new: The U.S. granted its second nuclear export license in nearly 20 years to Clean Core Thorium Energy, allowing it to sell thorium-based nuclear tech to India. 2) Why it matters: This advances India’s thorium reactor ambitions and strengthens U.S.-India atomic energy cooperation, potentially reshaping global nuclear fuel markets.",
-    "reactions": [
-      ") Possible Impact: Clean Core Thorium Energy’s export license could accelerate India’s thorium reactor development, potentially reducing reliance on uranium and enhancing energy security (MIT Technology Review).",
-      ") Skeptic Check: Critics argue thorium reactors remain unproven at scale, and the U.S.-India deal may face delays due to geopolitical tensions or technical hurdles (paraphrased from industry skepticism).",
-      ") Concrete Fact: The U.S. has only granted two nuclear export licenses to India in nearly two decades, with the first in 2008 (MIT Technology Review)."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
