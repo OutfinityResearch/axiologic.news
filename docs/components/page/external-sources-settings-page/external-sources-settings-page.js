@@ -7,65 +7,69 @@ export class ExternalSourcesSettingsPage {
     }
 
     async beforeRender() {
-        // Load sources (new format) or fallback to legacy array of URLs
-        const storedSources = await window.LocalStorage.get('externalPostSources');
-        const legacyUrls = await window.LocalStorage.get('externalPostsUrls');
-        if (Array.isArray(storedSources)) {
-            this.sources = storedSources.filter(s => s && s.url).map(s => ({ url: s.url, tag: s.tag || this.deriveTag(s.url) }));
-        } else if (Array.isArray(legacyUrls)) {
-            this.sources = legacyUrls.map(u => ({ url: u, tag: this.deriveTag(u) }));
-        } else {
-            this.sources = [];
-        }
-        // Persist normalized structure
-        await window.LocalStorage.set('externalPostSources', this.sources);
+        // Load sources (categories + externals) from SourcesManager
+        this.sources = await window.SourcesManager.getAllSources();
     }
 
     afterRender() {
-        this.renderUrlList();
+        this.renderList();
         this.setupEventListeners();
     }
 
-    renderUrlList() {
-        const urlList = this.element.querySelector('#url-list');
-        if (!urlList) return;
+    renderList() {
+        const list = this.element.querySelector('#url-list');
+        if (!list) return;
 
-        urlList.innerHTML = '';
+        list.innerHTML = '';
 
-        if (this.sources.length === 0) {
-            urlList.innerHTML = '<div class="empty-state">No external sources configured yet</div>';
+        if (!Array.isArray(this.sources) || this.sources.length === 0) {
+            list.innerHTML = '<div class="empty-state">No sources found</div>';
             return;
         }
 
         this.sources.forEach((src, index) => {
-            const urlItem = document.createElement('div');
-            urlItem.className = 'url-item';
-            urlItem.innerHTML = `
-                <span class="url-text">${src.url}</span>
-                <input class="tag-input" data-index="${index}" type="text" value="${this.escapeHtml(src.tag)}" placeholder="#hashtag" />
-                <button class="remove-button" data-index="${index}">Remove</button>
+            const item = document.createElement('div');
+            item.className = 'url-item';
+            const isExternal = src.type === 'external';
+            const label = isExternal ? `${this.escapeHtml(src.tag || 'external')} — ${this.escapeHtml(src.url)}` : this.escapeHtml(src.id);
+            item.innerHTML = `
+                <label>
+                  <input type=\"checkbox\" class=\"visible-toggle\" data-index=\"${index}\" ${src.visible ? 'checked' : ''}>
+                  <span class=\"url-text\">${label}</span>
+                </label>
+                ${isExternal ? '<button class="remove-button" data-index="'+index+'">Remove</button>' : ''}
             `;
-            urlList.appendChild(urlItem);
+            list.appendChild(item);
         });
 
-        // Add remove button listeners
-        urlList.querySelectorAll('.remove-button').forEach(button => {
-            button.addEventListener('click', (e) => {
-                const index = parseInt(e.target.dataset.index);
-                this.removeSource(index);
-            });
-        });
-
-        // Save tag edits on blur
-        urlList.querySelectorAll('.tag-input').forEach(input => {
-            input.addEventListener('blur', async (e) => {
+        // Bind toggles
+        list.querySelectorAll('.visible-toggle').forEach(cb => {
+            cb.addEventListener('change', async (e) => {
                 const idx = parseInt(e.target.dataset.index);
-                const val = (e.target.value || '').trim();
-                this.sources[idx].tag = this.normalizeTag(val) || this.deriveTag(this.sources[idx].url);
-                await window.LocalStorage.set('externalPostSources', this.sources);
-                this.renderUrlList();
+                const src = this.sources[idx];
+                if (!src) return;
+                src.visible = !!e.target.checked;
+                await window.SourcesManager.updateAllSources(this.sources);
             });
         });
+
+        // Bind remove for external
+        list.querySelectorAll('.remove-button').forEach(btn => {
+            btn.addEventListener('click', async (e) => {
+                const idx = parseInt(e.target.dataset.index);
+                const src = this.sources[idx];
+                if (src && src.type === 'external') {
+                    await window.SourcesManager.removeSource(src.id || src.url);
+                    this.sources = await window.SourcesManager.getAllSources();
+                    this.renderList();
+                }
+            });
+        });
+
+        // Update toggle-all button label
+        const allVisible = this.sources.length > 0 && this.sources.every(s => s.visible);
+        const toggleBtn = this.element.querySelector('#toggle-all-button');
+        if (toggleBtn) toggleBtn.textContent = allVisible ? 'Deselect All' : 'Select All';
     }
 
     setupEventListeners() {
@@ -76,87 +80,54 @@ export class ExternalSourcesSettingsPage {
             });
         }
 
-        const addButton = this.element.querySelector('#add-url-button');
-        if (addButton) {
-            addButton.addEventListener('click', async () => {
+        const addBtn = this.element.querySelector('#add-url-button');
+        if (addBtn) {
+            addBtn.addEventListener('click', async () => {
                 try {
                     const res = await window.webSkel.showModal('add-external-source-modal', {}, true);
-                    const data = res && res.data;
+                    const data = res && (res.data || res.detail || res);
                     if (!data) return;
                     const { url, tag } = data;
                     if (!url) return;
-                    if (this.sources.find(s => s.url === url)) {
-                        alert('This URL is already in the list');
+                    const statusEl = this.element.querySelector('#settings-status');
+                    if (statusEl) { statusEl.textContent = 'Testing URL…'; }
+                    const okFetch = await this.testPostsUrl(url);
+                    if (!okFetch) {
+                        if (statusEl) { statusEl.textContent = 'Invalid posts.json (not reachable or not an array)'; }
                         return;
                     }
-                    this.sources.push({ url, tag: this.normalizeTag(tag) || this.deriveTag(url) });
-                    await window.LocalStorage.set('externalPostSources', this.sources);
-                    this.renderUrlList();
-                } catch (e) {
-                    console.error('Add external source modal error:', e);
-                }
+                    await window.SourcesManager.addSource({ type: 'external', url, tag, visible: true, removable: true });
+                    this.sources = await window.SourcesManager.getAllSources();
+                    this.renderList();
+                    if (statusEl) { statusEl.textContent = 'Added ✓'; setTimeout(() => { statusEl.textContent = ''; }, 2000); }
+                } catch (e) { console.error('Add source failed', e); }
+            });
+        }
+
+        const toggleAllBtn = this.element.querySelector('#toggle-all-button');
+        if (toggleAllBtn) {
+            toggleAllBtn.addEventListener('click', async () => {
+                const allVisible = this.sources.length > 0 && this.sources.every(s => s.visible);
+                this.sources.forEach(s => { s.visible = !allVisible; });
+                await window.SourcesManager.updateAllSources(this.sources);
+                this.renderList();
             });
         }
     }
 
-    async addSource(url, tag) {
-        url = url.trim();
-        
-        if (!url) {
-            alert('Please enter a valid URL');
-            return;
-        }
-
-        // Basic URL validation
-        try {
-            new URL(url);
-        } catch (e) {
-            alert('Please enter a valid URL');
-            return;
-        }
-
-        // Check if URL already exists
-        if (this.sources.find(s => s.url === url)) {
-            alert('This URL is already in the list');
-            return;
-        }
-
-        const tagNorm = this.normalizeTag(tag) || this.deriveTag(url);
-        this.sources.push({ url, tag: tagNorm });
-        await window.LocalStorage.set('externalPostSources', this.sources);
-        
-        // Clear input and re-render
-        const urlInput = this.element.querySelector('#new-url-input');
-        if (urlInput) urlInput.value = '';
-        const tagInput = this.element.querySelector('#new-tag-input');
-        if (tagInput) tagInput.value = '';
-        
-        this.renderUrlList();
-    }
-
-    async removeSource(index) {
-        this.sources.splice(index, 1);
-        await window.LocalStorage.set('externalPostSources', this.sources);
-        this.renderUrlList();
-    }
-
-    deriveTag(url) {
-        try {
-            const u = new URL(url);
-            const parts = u.pathname.split('/').filter(Boolean);
-            const i = parts.indexOf('sources');
-            if (i !== -1 && parts[i + 1]) return this.normalizeTag(parts[i + 1]);
-            const host = u.hostname.replace(/^www\./, '');
-            return this.normalizeTag(host.split('.')[0]);
-        } catch { return 'external'; }
-    }
-
-    normalizeTag(s) {
-        if (!s) return '';
-        return String(s).trim().replace(/^#/, '').replace(/[^a-zA-Z0-9_-]+/g, '').slice(0, 24);
-    }
-
     escapeHtml(str) {
-        return String(str || '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+        return String(str || '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '\"': '&quot;' }[c]));
+    }
+
+    async testPostsUrl(url) {
+        try {
+            const ac = new AbortController();
+            const t = setTimeout(() => ac.abort(), 8000);
+            const resp = await fetch(url, { cache: 'no-store', signal: ac.signal });
+            clearTimeout(t);
+            if (!resp.ok) return false;
+            const data = await resp.json();
+            return Array.isArray(data);
+        } catch (_) { return false; }
     }
 }

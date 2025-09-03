@@ -183,11 +183,11 @@ story-card.prev-card .favorite-btn, story-card.next-card .favorite-btn { visibil
 .story-card.selection-mode .card-slide { position: relative; transform: none; }
 .story-card.selection-mode .card-header { margin-bottom: 6px; padding-bottom: 6px; }
 .story-card.selection-mode .card-title { font-size: calc(16px * var(--content-scale, 1)); }
-.story-card.selection-mode .apply-sources-btn { margin-top: 6px; padding: 5px 10px; font-size: 12px; border-radius: 12px; }
 .story-card.selection-mode .sources-list { max-height: none !important; gap: 4px 6px; }
 .story-card.selection-mode .sources-list { background: transparent; border: none; box-shadow: none; }
 .story-card.selection-mode .source-item { padding: 4px 4px; }
 .story-card.selection-mode .source-checkbox { margin-right: 6px; }
+.story-card.selection-mode .source-radio { margin-right: 6px; }
 .story-card.selection-mode .card-slide.active {
     position: relative !important;
     transform: none !important;
@@ -633,6 +633,14 @@ story-card.prev-card .favorite-btn, story-card.next-card .favorite-btn { visibil
     accent-color: var(--primary);
 }
 
+.source-radio {
+    width: 14px;
+    height: 14px;
+    margin-right: 6px;
+    cursor: pointer;
+    accent-color: var(--primary);
+}
+
 .source-label {
     flex: 1;
     font-size: calc(13px * var(--content-scale, 1));
@@ -660,29 +668,6 @@ story-card.prev-card .favorite-btn, story-card.next-card .favorite-btn { visibil
 
 
 
-.apply-sources-btn {
-    width: 100%;
-    margin-top: 8px;
-    padding: 8px 14px;
-    background: var(--primary);
-    color: var(--surface);
-    border: none;
-    border-radius: 14px;
-    font-size: 12.5px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.15s ease;
-}
-
-.apply-sources-btn:hover {
-    background: var(--secondary);
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(0, 115, 177, 0.3);
-}
-
-.apply-sources-btn:active {
-    transform: translateY(0);
-}
 .sources-actions {
     display: flex;
     justify-content: space-between;
@@ -695,25 +680,6 @@ story-card.prev-card .favorite-btn, story-card.next-card .favorite-btn { visibil
     border: 1px solid var(--border);
 }
 
-.sources-actions .select-all-btn,
-.sources-actions .clear-all-btn {
-    background: transparent;
-    border: none;
-    color: var(--primary);
-    font-size: 12px;
-    font-weight: 600;
-    cursor: pointer;
-    padding: 4px 8px;
-    transition: background-color 0.2s;
-    border-radius: 4px;
-}
-
-.sources-actions .select-all-btn:hover,
-.sources-actions .clear-all-btn:hover {
-    background: rgba(0, 0, 0, 0.05);
-}
-
-.sources-actions .clear-all-btn { color: var(--text-secondary); }
 /* Hide header completely for selection card */
 .story-card.selection-mode .card-slide[data-id="main"] .card-header { 
     display: none !important;

@@ -43,11 +43,11 @@ export class NewsFeedPage {
         let jsonPosts = [];
         try {
             if (window.__LOGS_ENABLED) console.time('NF: beforeRender total');
-            // Try to load from configured external URLs first (support tagged sources)
+            // Load external selection if any
             const externalSources = await window.LocalStorage.get('externalPostSources') || [];
             const allExternal = Array.isArray(externalSources) ? externalSources.map(s => s.url) : (await window.LocalStorage.get('externalPostsUrls') || []);
             const selectedExternal = await window.LocalStorage.get('selectedExternalPostsUrls');
-            const externalUrls = (Array.isArray(selectedExternal) ? selectedExternal : allExternal).filter(Boolean);
+            const externalUrls = (Array.isArray(selectedExternal) ? selectedExternal : []).filter(Boolean);
             if (window.__LOGS_ENABLED) window.logTS('NF: selected external URLs', { count: externalUrls.length });
 
             // Fetch external sources in parallel
@@ -57,8 +57,18 @@ export class NewsFeedPage {
                     .catch(err => { console.error(`Could not fetch posts from ${url}:`, err); return []; })
             ));
 
-            // Load from selected local source categories (default to 'default')
-            const selected = await window.LocalStorage.get('selectedSourceCategories') || ['default'];
+            // Load selected categories; if none, default to first available from SourcesManager
+            let selected = await window.LocalStorage.get('selectedSourceCategories');
+            if (!Array.isArray(selected) || selected.length === 0) {
+                try {
+                    const allCats = await window.SourcesManager.getAllSources();
+                    const first = (allCats || []).find(s => s && s.type === 'category');
+                    selected = first ? [first.id] : ['default'];
+                    await window.LocalStorage.set('selectedSourceCategories', selected);
+                } catch (_) {
+                    selected = ['default'];
+                }
+            }
             if (window.__LOGS_ENABLED) window.logTS('NF: selected categories', { count: selected.length });
 
             // Fetch category sources in parallel
@@ -76,14 +86,12 @@ export class NewsFeedPage {
                 }
             });
 
-            // Run both groups in parallel and time them individually
+            // Run category group in parallel and time them
             const extPromise = Promise.all(externalFetches);
             const catPromise = Promise.all(categoryFetches);
             if (window.__LOGS_ENABLED) {
-                console.time('NF: fetch externals');
-                extPromise.then(() => console.timeEnd('NF: fetch externals'));
-                console.time('NF: fetch categories');
-                catPromise.then(() => console.timeEnd('NF: fetch categories'));
+                console.time('NF: fetch externals'); extPromise.then(() => console.timeEnd('NF: fetch externals'));
+                console.time('NF: fetch categories'); catPromise.then(() => console.timeEnd('NF: fetch categories'));
             }
             const [externalResults, categoryResults] = await Promise.all([extPromise, catPromise]);
             let extPosts = 0, catPosts = 0;

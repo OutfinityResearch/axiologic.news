@@ -14,54 +14,58 @@ class SourcesManager {
     async initialize() {
         if (this.initialized) return this.sources;
 
-        // Load saved sources first; if present, skip fetching defaults to avoid blocking
-        const savedSources = await window.LocalStorage.get('allNewsSources');
+        // Always load categories from sources/sources.json (no hardcoded fallbacks)
         let defaultSources = [];
-
-        if (savedSources && Array.isArray(savedSources) && savedSources.length > 0) {
-            this.sources = [...savedSources];
-        } else {
-            // First-time initialization: get defaults from cache or config file
-            try {
-                const cachedCfg = await window.LocalStorage.get('defaultSourcesConfig');
-                if (cachedCfg && Array.isArray(cachedCfg.sources)) {
-                    defaultSources = cachedCfg.sources;
-                } else {
-                    const resp = await fetch('./default_sources.json', { cache: 'force-cache' });
-                    if (resp.ok) {
-                        const cfg = await resp.json();
-                        defaultSources = cfg.sources || [];
-                        await window.LocalStorage.set('defaultSourcesConfig', cfg);
-                    }
-                }
-            } catch (error) {
-                console.warn('Default sources config unavailable, using minimal fallback:', error);
-                defaultSources = [
-                    { id: 'default', type: 'category', url: '/sources/default/posts.json', tag: 'default', removable: false, visible: true },
-                    { id: 'tech', type: 'category', url: '/sources/tech/posts.json', tag: 'tech', removable: false, visible: true }
-                ];
+        try {
+            const cachedCfg = await window.LocalStorage.get('sourcesJsonConfig');
+            if (cachedCfg && Array.isArray(cachedCfg)) {
+                defaultSources = cachedCfg;
             }
-            this.sources = [...defaultSources];
+            if (!Array.isArray(defaultSources) || defaultSources.length === 0) {
+                const resp = await fetch('./sources/sources.json', { cache: 'force-cache' });
+                if (resp.ok) {
+                    const cfg = await resp.json();
+                    defaultSources = Array.isArray(cfg) ? cfg : [];
+                    await window.LocalStorage.set('sourcesJsonConfig', defaultSources);
+                }
+            }
+        } catch (error) {
+            console.warn('Sources config unavailable:', error);
+            defaultSources = [];
         }
 
-        // Load and apply visibility settings
+        // Build category list from sources.json entries
+        // sources.json format: [{ name: "categoryName" }, ...]
+        const categories = (defaultSources || [])
+            .map(entry => (entry && (entry.name || entry.id || '').toString().trim()))
+            .filter(Boolean);
+
+        this.sources = categories.map(name => ({
+            id: name,
+            name: name,
+            type: 'category',
+            url: `/sources/${name}/posts.json`,
+            tag: name,
+            removable: false,
+            visible: true
+        }));
+
+        // Apply saved visibility to categories if present
         const visibleSourcesInCard = await window.LocalStorage.get('visibleSourcesInCard');
-        if (visibleSourcesInCard && Array.isArray(visibleSourcesInCard)) {
-            this.sources.forEach(source => {
-                const key = source.id || source.url;
-                source.visible = visibleSourcesInCard.includes(key);
+        if (Array.isArray(visibleSourcesInCard)) {
+            this.sources.forEach(src => {
+                const key = src.id || src.url;
+                src.visible = visibleSourcesInCard.includes(key);
             });
-        } else {
-            // Save initial visibility state
-            await this.saveVisibility();
         }
 
-        // Add external sources
+        // Merge external sources managed by users
         await this.syncExternalSources();
-        
-        // Save the merged state
+
+        // Persist visibility and sources
+        await this.saveVisibility();
         await this.saveSources();
-        
+
         this.initialized = true;
         return this.sources;
     }
@@ -121,6 +125,7 @@ class SourcesManager {
         if (!this.initialized) {
             await this.initialize();
         }
+        // Return all sources (categories + externals) marked visible
         return this.sources.filter(s => s.visible === true);
     }
 
@@ -145,9 +150,33 @@ class SourcesManager {
             await window.LocalStorage.set('hasSelectedSourcesBefore', true);
         }
         
-        // Ensure we have at least default if nothing is selected
-        if (!selectedCategories) selectedCategories = ['default'];
-        if (!selectedExternal) selectedExternal = [];
+        // Normalize and migrate to single selection (radio semantics)
+        selectedCategories = Array.isArray(selectedCategories) ? selectedCategories : [];
+        selectedExternal = Array.isArray(selectedExternal) ? selectedExternal : [];
+
+        // If both are set, prefer category selection and clear externals
+        if (selectedCategories.length > 0 && selectedExternal.length > 0) {
+            selectedExternal = [];
+        }
+        // Keep only first in each list (radio semantics)
+        if (selectedCategories.length > 1) selectedCategories = [selectedCategories[0]];
+        if (selectedExternal.length > 1) selectedExternal = [selectedExternal[0]];
+
+        // If neither set, default to first category from /sources (fallback to 'default')
+        if (selectedCategories.length === 0 && selectedExternal.length === 0) {
+            try {
+                const all = await this.getAllSources();
+                const firstCat = (all || []).find(s => s.type === 'category');
+                selectedCategories = firstCat ? [firstCat.id] : ['default'];
+            } catch (_) {
+                selectedCategories = ['default'];
+            }
+        }
+
+        // Persist normalized selection
+        await window.LocalStorage.set('selectedSourceCategories', selectedCategories);
+        await window.LocalStorage.set('selectedExternalPostsUrls', selectedExternal);
+        await window.LocalStorage.set('hasSelectedSourcesBefore', true);
         
         return {
             categories: selectedCategories,
@@ -172,9 +201,16 @@ class SourcesManager {
      * Update all sources (used by manage modal)
      */
     async updateAllSources(updatedSources) {
-        this.sources = updatedSources;
-        await this.saveSources();
+        // Update visibility for known sources (categories or externals); do not add or remove here
+        if (!Array.isArray(updatedSources)) return;
+        const byKey = (s) => s.id || s.url;
+        const incoming = new Map(updatedSources.map(s => [byKey(s), s]));
+        this.sources.forEach(s => {
+            const inc = incoming.get(byKey(s));
+            if (inc && typeof inc.visible === 'boolean') s.visible = !!inc.visible;
+        });
         await this.saveVisibility();
+        await this.saveSources();
         await this.syncExternalToLegacy();
     }
 
@@ -182,27 +218,21 @@ class SourcesManager {
      * Add a new source
      */
     async addSource(source) {
-        // Check for duplicates
-        if (source.url && this.sources.find(s => s.url === source.url)) {
-            return false;
-        }
-        
-        // Add ID if missing
-        if (!source.id) {
-            source.id = `external-${Date.now()}-${Math.random()}`;
-        }
-        
-        // Ensure required fields
-        source.type = source.type || 'external';
-        source.removable = source.removable !== false;
-        source.visible = source.visible !== false;
-        source.tag = source.tag || this.deriveTag(source.url);
-        
-        this.sources.push(source);
+        // Allow adding external sources only
+        if (!source || source.type !== 'external' || !source.url) return false;
+        if (this.sources.find(s => s.url === source.url)) return false;
+        const entry = {
+            id: source.id || `external-${Date.now()}-${Math.random()}`,
+            url: source.url,
+            tag: this.normalizeTag(source.tag) || this.deriveTag(source.url),
+            type: 'external',
+            removable: true,
+            visible: source.visible !== false
+        };
+        this.sources.push(entry);
         await this.saveSources();
         await this.saveVisibility();
         await this.syncExternalToLegacy();
-        
         return true;
     }
 
@@ -210,19 +240,15 @@ class SourcesManager {
      * Remove a source
      */
     async removeSource(sourceId) {
-        const index = this.sources.findIndex(s => 
-            (s.id === sourceId) || (s.url === sourceId)
-        );
-        
-        if (index !== -1 && this.sources[index].removable) {
-            this.sources.splice(index, 1);
-            await this.saveSources();
-            await this.saveVisibility();
-            await this.syncExternalToLegacy();
-            return true;
-        }
-        
-        return false;
+        const idx = this.sources.findIndex(s => (s.id === sourceId) || (s.url === sourceId));
+        if (idx === -1) return false;
+        const src = this.sources[idx];
+        if (src.type !== 'external' || src.removable === false) return false;
+        this.sources.splice(idx, 1);
+        await this.saveSources();
+        await this.saveVisibility();
+        await this.syncExternalToLegacy();
+        return true;
     }
 
     /**

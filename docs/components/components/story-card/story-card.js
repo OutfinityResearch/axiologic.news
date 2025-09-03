@@ -935,17 +935,9 @@ export class StoryCard {
         if (essenceElement) essenceElement.style.display = 'none';
         
         const sourcesList = selector.querySelector('.sources-list');
-        const applyBtn = selector.querySelector('.apply-sources-btn');
-        const selectAllBtn = selector.querySelector('.select-all-btn');
-        const clearAllBtn = selector.querySelector('.clear-all-btn');
         const manageSourcesBtn = selector.querySelector('.manage-sources-btn');
         const actionsBar = selector.querySelector('.sources-actions');
-        // Reserve space for the Apply button from the start (visibility hidden keeps layout stable)
-        if (applyBtn) {
-            applyBtn.style.display = 'block';
-            applyBtn.style.visibility = 'hidden';
-        }
-        // Move actions bar to footer area (below Apply), so Apply stays near the checkboxes
+        // Keep actions bar where it is; only "Manage Sources" is shown now
         if (actionsBar) {
             try { selector.appendChild(actionsBar); } catch (_) {}
         }
@@ -956,13 +948,24 @@ export class StoryCard {
         
         // Get currently selected sources from service
         const selected = await window.SourcesManager.getSelectedSources();
-        const selectedSet = new Set(selected.all);
+        const selectedCategory = Array.isArray(selected.categories) && selected.categories.length ? selected.categories[0] : null;
+        const selectedExternal = Array.isArray(selected.external) && selected.external.length ? selected.external[0] : null;
         
         // Populate sources list
         sourcesList.innerHTML = '';
-        const onChange = () => {
-            if (applyBtn) applyBtn.style.visibility = 'visible';
-            // Height stays stable; reserved space prevents growth on toggle
+        const onChange = async (src) => {
+            // Save single selected item (category OR external) and refresh using same code as header button
+            const cat = src.type === 'category' ? [src.id] : [];
+            const ext = src.type === 'external' ? [src.url] : [];
+            await window.SourcesManager.saveSelectedSources(cat, ext);
+            try { await window.LocalStorage.set('jumpToFirstNews', false); } catch (_) {}
+            const refreshButton = document.querySelector('#refresh-button');
+            try {
+                refreshButton?.classList.add('spinning');
+                await window.webSkel.changeToDynamicPage('news-feed-page', 'app');
+            } finally {
+                refreshButton?.classList.remove('spinning');
+            }
         };
 
         // Check if there are any visible sources
@@ -972,7 +975,8 @@ export class StoryCard {
             return;
         }
 
-        // Render visible sources
+        // Render visible category sources as radio buttons
+        const radioName = 'category-source-select';
         visibleSourcesOnly.forEach(source => {
             const sourceItem = document.createElement('div');
             sourceItem.className = 'source-item';
@@ -980,20 +984,17 @@ export class StoryCard {
                 sourceItem.classList.add('removable');
             }
             
-            const checkbox = document.createElement('input');
-            checkbox.type = 'checkbox';
-            checkbox.className = 'source-checkbox';
+            const radio = document.createElement('input');
+            radio.type = 'radio';
+            radio.name = radioName;
+            radio.className = 'source-radio';
             
             // Set ID based on source type
-            const sourceId = source.type === 'external' ? 
-                `source-url:${encodeURIComponent(source.url)}` : 
-                `source-${source.id}`;
-            checkbox.id = sourceId;
+            const sourceId = source.type === 'external' ? `source-url:${encodeURIComponent(source.url)}` : `source-${source.id}`;
+            radio.id = sourceId;
             
             // Check if selected
-            checkbox.checked = source.type === 'external' ? 
-                selectedSet.has(source.url) :
-                selectedSet.has(source.id);
+            radio.checked = (source.type === 'category' && source.id === selectedCategory) || (source.type === 'external' && source.url === selectedExternal);
             
             const label = document.createElement('label');
             label.className = 'source-label';
@@ -1003,64 +1004,26 @@ export class StoryCard {
             if (source.tag) {
                 label.textContent = source.tag;
                 label.classList.add('hashtag');
-            } else if (source.type === 'external') {
-                label.textContent = source.url.split('/').pop().replace('.json', '');
-                label.classList.add('hashtag');
             } else {
                 // For sources without tag, use name or derive from id
                 label.textContent = source.name || source.id;
             }
             
-            sourceItem.appendChild(checkbox);
+            sourceItem.appendChild(radio);
             sourceItem.appendChild(label);
             
-            // Add delete button for removable sources
-            if (source.removable) {
-                const deleteBtn = document.createElement('button');
-                deleteBtn.className = 'delete-source-btn';
-                deleteBtn.innerHTML = '×';
-                deleteBtn.title = 'Remove source';
-                deleteBtn.addEventListener('click', async (e) => {
-                    e.stopPropagation();
-                    e.preventDefault();
-                    
-                    // Remove from allSources
-                    const updatedSources = allSources.filter(s => {
-                        if (source.type === 'external') {
-                            return s.url !== source.url;
-                        }
-                        return s.id !== source.id;
-                    });
-                    
-                    await window.LocalStorage.set('allNewsSources', updatedSources);
-                    
-                    // Also remove from legacy storage for external sources
-                    if (source.type === 'external') {
-                        const extSources = await window.LocalStorage.get('externalPostSources') || [];
-                        const updatedExt = extSources.filter(s => s.url !== source.url);
-                        await window.LocalStorage.set('externalPostSources', updatedExt);
-                        
-                        const selectedExt = await window.LocalStorage.get('selectedExternalPostsUrls') || [];
-                        const updatedSelExt = selectedExt.filter(url => url !== source.url);
-                        await window.LocalStorage.set('selectedExternalPostsUrls', updatedSelExt);
-                    }
-                    
-                    // Refresh the selector
-                    this.setupDataSourcesSelector();
-                });
-                sourceItem.appendChild(deleteBtn);
-            }
+            // No delete button; categories are managed from /sources
             
             sourcesList.appendChild(sourceItem);
-            
+
             // Make the whole item clickable (except delete button)
             sourceItem.addEventListener('click', (e) => {
-                if (e.target !== checkbox && !e.target.classList.contains('delete-source-btn')) {
-                    checkbox.checked = !checkbox.checked;
-                    onChange();
+                if (e.target !== radio && !e.target.classList.contains('delete-source-btn')) {
+                    radio.checked = true;
+                    onChange(source);
                 }
             });
-            checkbox.addEventListener('change', onChange);
+            radio.addEventListener('change', () => onChange(source));
         });
 
         // Padding bottom managed by card height computation; keep list padding minimal
@@ -1087,56 +1050,7 @@ export class StoryCard {
             });
         }
 
-        // Add handlers for select all / clear all
-        if (selectAllBtn) selectAllBtn.addEventListener('click', () => {
-            sourcesList.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = true);
-            onChange();
-        });
-        if (clearAllBtn) clearAllBtn.addEventListener('click', () => {
-            sourcesList.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
-            onChange();
-        });
         // Initial sizing is handled by afterRender promise chain
-        // Actions removed (Select all / Clear all)
-
-        // Handle apply button
-        applyBtn.addEventListener('click', async () => {
-            const newCategories = [];
-            const newExternal = [];
-            
-            // Get all checked sources (only from visible ones)
-            const visibleSourcesNow = await window.SourcesManager.getVisibleSources();
-            visibleSourcesNow.forEach(source => {
-                let checkbox;
-                if (source.type === 'external') {
-                    checkbox = document.getElementById(`source-url:${encodeURIComponent(source.url)}`);
-                    if (checkbox && checkbox.checked) {
-                        newExternal.push(source.url);
-                    }
-                } else {
-                    checkbox = document.getElementById(`source-${source.id}`);
-                    if (checkbox && checkbox.checked) {
-                        newCategories.push(source.id);
-                    }
-                }
-            });
-
-            // Save through service
-            await window.SourcesManager.saveSelectedSources(newCategories, newExternal);
-
-            try { await window.LocalStorage.set('jumpToFirstNews', false); } catch (_) {}
-            // Refresh the existing news-feed-page in place to avoid any jump
-            try {
-                const pageEl = this.element.closest('news-feed-page');
-                if (pageEl && window.webSkel?.refreshElement) {
-                    window.webSkel.refreshElement(pageEl);
-                } else {
-                    await window.webSkel.changeToDynamicPage('news-feed-page', 'app');
-                }
-            } catch (_) {
-                try { await window.webSkel.changeToDynamicPage('news-feed-page', 'app'); } catch (e) {}
-            }
-        });
 
 
     }

@@ -4,17 +4,19 @@
     </header>
     
     <div class="settings-content">
-        <p class="page-subtitle">Add external posts.json URLs (with a short hashtag label). These appear on the first card.</p>
+        <p class="page-subtitle">Configure which categories appear in the selection card.</p>
         <div class="settings-section">
-          <h2>Configure External Posts Sources</h2>
-          <p class="section-description">Add URLs to external posts.json files from other servers</p>
-          
-          <div class="url-list" id="url-list">
-            <!-- URLs will be added here dynamically -->
+          <h2>Manage Sources</h2>
+          <p class="section-description">Toggle which sources (categories and external) appear on the selection card. Add new external sources below.</p>
+
+          <div class="list-toolbar">
+            <button id="toggle-all-button" class="action-button">Select All</button>
+            <button id="add-url-button" class="action-button">Add Source</button>
+            <span id="settings-status" class="inline-status"></span>
           </div>
-          
-          <div class="add-url-section">
-            <button id="add-url-button" class="add-button">Add Source</button>
+
+          <div class="url-list" id="url-list">
+            <!-- Items populated dynamically -->
           </div>
         </div>
     </div>

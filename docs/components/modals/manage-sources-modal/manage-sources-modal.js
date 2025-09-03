@@ -92,10 +92,13 @@ export class ManageSourcesModal {
         const cancelButton = this.element.querySelector('#cancel-button');
         const saveButton = this.element.querySelector('#save-button');
         const addButton = this.element.querySelector('#add-source-button');
+        const addToolbarButton = this.element.querySelector('#add-modal-source-button');
         const filterInput = this.element.querySelector('#filter-text');
         const onlyVisibleToggle = this.element.querySelector('#only-visible');
-        const selectAllButton = this.element.querySelector('#select-all-button');
-        const deselectAllButton = this.element.querySelector('#deselect-all-button');
+        const toggleAllButton = this.element.querySelector('#toggle-all-button');
+        // Keep embedded add form hidden; use toolbar button to trigger add modal
+        const addSection = this.element.querySelector('.add-source-section');
+        if (addSection) addSection.style.display = 'none';
 
         if (closeButton) {
             closeButton.addEventListener('click', () => {
@@ -116,11 +119,37 @@ export class ManageSourcesModal {
             });
         }
 
-        if (addButton) {
-            addButton.addEventListener('click', () => {
-                this.addNewSource();
+        // Wire toolbar Add Source (uses existing add-external-source-modal)
+        const bindAddHandler = (btn) => {
+            if (!btn) return;
+            btn.addEventListener('click', async () => {
+                try {
+                    const res = await window.webSkel.showModal('add-external-source-modal', {}, true);
+                    const data = res && (res.data || res.detail || res);
+                    if (!data) return;
+                    const { url, tag } = data;
+                    if (!url) return;
+                    // Validate URL returns JSON array before adding
+                    const statusEl = this.element.querySelector('#list-status');
+                    if (statusEl) { statusEl.textContent = 'Testing URL…'; }
+                    const okFetch = await this.testPostsUrl(url);
+                    if (!okFetch) {
+                        if (statusEl) { statusEl.textContent = 'Invalid posts.json (not reachable or not an array)'; }
+                        return;
+                    }
+                    const ok = await window.SourcesManager.addSource({ type: 'external', url, tag, visible: true, removable: true });
+                    if (ok) {
+                        this.sources = await window.SourcesManager.getAllSources();
+                        this.renderSourcesTable();
+                        this.hasChanges = true;
+                        if (statusEl) { statusEl.textContent = 'Added ✓'; setTimeout(() => { statusEl.textContent = ''; }, 2000); }
+                    }
+                } catch (e) { console.error('Add source failed', e); }
             });
-        }
+        };
+        bindAddHandler(addToolbarButton);
+        // Legacy embedded add button (kept disabled visually)
+        if (addButton) addButton.style.display = 'none';
         // Auto-fill tag on URL blur if tag empty
         const urlInput = this.element.querySelector('#new-source-url');
         const tagInput = this.element.querySelector('#new-source-tag');
@@ -139,33 +168,47 @@ export class ManageSourcesModal {
             onlyVisibleToggle.addEventListener('change', () => this.renderSourcesTable());
         }
         
-        if (selectAllButton) {
-            selectAllButton.addEventListener('click', () => {
+        if (toggleAllButton) {
+            const applyToggleAllLabel = () => {
+                const boxes = Array.from(this.element.querySelectorAll('.visibility-checkbox'));
+                const allChecked = boxes.length > 0 && boxes.every(cb => cb.checked);
+                toggleAllButton.textContent = allChecked ? 'Deselect All' : 'Select All';
+            };
+            // Initial label
+            applyToggleAllLabel();
+            // Update label on any checkbox change
+            this.element.addEventListener('change', (e) => {
+                if (e.target && e.target.classList && e.target.classList.contains('visibility-checkbox')) {
+                    applyToggleAllLabel();
+                }
+            });
+            toggleAllButton.addEventListener('click', () => {
                 const checkboxes = this.element.querySelectorAll('.visibility-checkbox');
+                const allChecked = Array.from(checkboxes).length > 0 && Array.from(checkboxes).every(cb => cb.checked);
+                const next = !allChecked;
                 checkboxes.forEach(cb => {
-                    cb.checked = true;
+                    cb.checked = next;
                     const index = parseInt(cb.dataset.index);
                     if (this.sources[index]) {
-                        this.sources[index].visible = true;
+                        this.sources[index].visible = next;
                     }
                 });
                 this.hasChanges = true;
+                applyToggleAllLabel();
             });
         }
-        
-        if (deselectAllButton) {
-            deselectAllButton.addEventListener('click', () => {
-                const checkboxes = this.element.querySelectorAll('.visibility-checkbox');
-                checkboxes.forEach(cb => {
-                    cb.checked = false;
-                    const index = parseInt(cb.dataset.index);
-                    if (this.sources[index]) {
-                        this.sources[index].visible = false;
-                    }
-                });
-                this.hasChanges = true;
-            });
-        }
+    }
+
+    async testPostsUrl(url) {
+        try {
+            const ac = new AbortController();
+            const t = setTimeout(() => ac.abort(), 8000);
+            const resp = await fetch(url, { cache: 'no-store', signal: ac.signal });
+            clearTimeout(t);
+            if (!resp.ok) return false;
+            const data = await resp.json();
+            return Array.isArray(data);
+        } catch (_) { return false; }
     }
 
     async addNewSource() {
