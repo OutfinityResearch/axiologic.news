@@ -23,31 +23,19 @@
     "defaultText": "Axiologic News",
     "defaultUrl": "https://axiologic.news",
     "customBanners": {
-      "tech": {
-        "text": "Tech News by Axiologic.News",
-        "url": "https://axiologic.news/"
-      },
       "ai": {
         "text": "AI Insights by Axiologic.News",
         "url": "https://axiologic.news/"
       },
-      "startups": {
+      "default": {
         "text": "Startup Stories by Axiologic.News",
-        "url": "https://axiologic.news/"
-      },
-      "science": {
-        "text": "Science Discoveries by Axiologic.News",
-        "url": "https://axiologic.news/"
-      },
-      "world": {
-        "text": "World News by Axiologic.News",
         "url": "https://axiologic.news/"
       }
     }
   },
   "contentSettings": {
     "maxPostsPerFeed": 50,
-    "maxTokensPerRequest": 500,
+    "maxTokensPerRequest": 1000,
     "contentFetchTimeout": 10000,
     "requestTimeout": 30000,
     "historyDays": 3

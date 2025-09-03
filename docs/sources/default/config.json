@@ -19,11 +19,125 @@
       "name": "Reddit r/worldnews",
       "url": "https://www.reddit.com/r/worldnews/.rss",
       "enabled": true
+    },
+    {
+      "name": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/rss/all.xml",
+      "enabled": true
+    },
+    {
+      "name": "Nature News",
+      "url": "https://www.nature.com/nature.rss",
+      "enabled": true
+    },
+    {
+      "name": "Science Magazine",
+      "url": "https://www.science.org/rss/news_current.xml",
+      "enabled": true
+    },
+    {
+      "name": "NASA Breaking News",
+      "url": "https://www.nasa.gov/rss/dyn/breaking_news.rss",
+      "enabled": true
+    },
+    {
+      "name": "Phys.org",
+      "url": "https://phys.org/rss-feed/",
+      "enabled": true
+    },
+    {
+      "name": "arXiv cs.AI",
+      "url": "https://export.arxiv.org/rss/cs.AI",
+      "enabled": true
+    },
+    {
+      "name": "TechCrunch",
+      "url": "https://techcrunch.com/feed/",
+      "enabled": true
+    },
+    {
+      "name": "The Verge",
+      "url": "https://www.theverge.com/rss/index.xml",
+      "enabled": true
+    },
+    {
+      "name": "Ars Technica",
+      "url": "https://feeds.arstechnica.com/arstechnica/technology-lab",
+      "enabled": true
+    },
+    {
+      "name": "Engadget",
+      "url": "https://www.engadget.com/rss.xml",
+      "enabled": true
+    },
+    {
+      "name": "GitHub Changelog",
+      "url": "https://github.blog/changelog/feed/",
+      "enabled": true
+    },
+    {
+      "name": "Hacker News",
+      "url": "https://news.ycombinator.com/rss",
+      "enabled": true
+    },
+    {
+      "name": "WIRED",
+      "url": "https://www.wired.com/feed/rss",
+      "enabled": true
+    },
+    {
+      "name": "Cybersecurity & Privacy",
+      "url": "https://news.google.com/rss/search?q=cybersecurity%20OR%20%22data%20privacy%22+when:7d&hl=en-US&gl=US&ceid=US:en",
+      "enabled": true
+    },
+    {
+      "name": "ScienceDaily Health",
+      "url": "https://www.sciencedaily.com/rss/health_medicine.xml",
+      "enabled": true
+    },
+    {
+      "name": "Medical Xpress – Health",
+      "url": "https://medicalxpress.com/rss-feed/health-news/",
+      "enabled": true
+    },
+    {
+      "name": "BBC World",
+      "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "enabled": true
+    },
+    {
+      "name": "Al Jazeera",
+      "url": "https://www.aljazeera.com/xml/rss/all.xml",
+      "enabled": true
+    },
+    {
+      "name": "Guardian World",
+      "url": "https://www.theguardian.com/world/rss",
+      "enabled": true
+    },
+    {
+      "name": "NYTimes World",
+      "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
+      "enabled": true
+    },
+    {
+      "name": "BBC News (Twitter)",
+      "url": "https://news.google.com/rss/search?q=site:twitter.com/BBCWorld+when:7d&hl=en-US&gl=US&ceid=US:en",
+      "enabled": true
+    },
+    {
+      "name": "Reuters (Twitter)",
+      "url": "https://news.google.com/rss/search?q=site:twitter.com/Reuters+when:7d&hl=en-US&gl=US&ceid=US:en",
+      "enabled": true
+    },
+    {
+      "name": "Geopolitics & International Relations",
+      "url": "https://news.google.com/rss/search?q=geopolitics%20OR%20%22international%20relations%22+when:7d&hl=en-US&gl=US&ceid=US:en",
+      "enabled": true
     }
   ],
   "topPostsPerFeed": 5,
-  "defaultBackgroundColor": "green",
-  "selectionPrompt": "Pick only stories with a clear 'what changed' (policy passed, law signed, company action, casualty figures updated, verdict delivered) from credible sources. Prefer hard numbers and primary documents. Skip unverified or speculative reports.",
-  "essencePrompt": "Return 3 bullets: 1) What happened (one sentence, new info), 2) Why it matters and to whom, 3) Evidence (numbers/dates/names) + one uncertainty if relevant. 60–120 words total.",
-  "perspectivesPrompt": "Three one‑sentence views: 1) Immediate impact on stakeholders, 2) What could change next (specific trigger), 3) One practical implication for readers."
+  "selectionPrompt": "Pick only stories with a clear news (policy passed, law signed, company action, casualty figures updated, verdict delivered, new discovery, new revolutionary product, etc) from credible sources. Prefer hard numbers and primary documents. Skip unverified or speculative reports.",
+  "essencePrompt": "Return 3 bullets: 1) News summary (one sentence), 2) Novelty, claim for fame in a short sentence, 3) Evidence (numbers/dates/names) + one uncertainty if relevant. 60–120 words total.",
+  "perspectivesPrompt": "Three one‑sentence views: 1) World Impact, 2) What could change next (speculation), 3) Practical implication for readers."
 }

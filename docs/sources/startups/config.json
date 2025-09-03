@@ -39,6 +39,81 @@
             "name": "SaaS & B2B Startup Growth",
             "url": "https://news.google.com/rss/search?q=(saas%20OR%20%22b2b%20startup%22)%20AND%20(growth%20OR%20metrics)+when:7d&hl=en-US&gl=US&ceid=US:en",
             "enabled": true
+        },
+        {
+            "name": "Guardian Business",
+            "url": "https://www.theguardian.com/uk/business/rss",
+            "enabled": true
+        },
+        {
+            "name": "MarketWatch Top Stories",
+            "url": "https://feeds.content.dowjones.io/public/rss/mw_topstories",
+            "enabled": true
+        },
+        {
+            "name": "Financial Times",
+            "url": "https://www.ft.com/?format=rss",
+            "enabled": true
+        },
+        {
+            "name": "The Economist",
+            "url": "https://www.economist.com/finance-and-economics/rss.xml",
+            "enabled": true
+        },
+        {
+            "name": "Sales Hacker",
+            "url": "https://www.saleshacker.com/feed/",
+            "enabled": true
+        },
+        {
+            "name": "HubSpot Sales Blog",
+            "url": "https://blog.hubspot.com/sales/rss.xml",
+            "enabled": true
+        },
+        {
+            "name": "Close Sales Blog",
+            "url": "https://blog.close.com/rss/",
+            "enabled": true
+        },
+        {
+            "name": "Salesforce Blog",
+            "url": "https://www.salesforce.com/blog/feed/",
+            "enabled": true
+        },
+        {
+            "name": "MarketingProfs",
+            "url": "https://www.marketingprofs.com/rss/atom.xml",
+            "enabled": true
+        },
+        {
+            "name": "HubSpot Marketing Blog",
+            "url": "https://blog.hubspot.com/marketing/rss.xml",
+            "enabled": true
+        },
+        {
+            "name": "Moz Blog",
+            "url": "https://moz.com/blog/feed",
+            "enabled": true
+        },
+        {
+            "name": "Search Engine Journal",
+            "url": "https://www.searchenginejournal.com/feed/",
+            "enabled": true
+        },
+        {
+            "name": "Search Engine Land",
+            "url": "https://searchengineland.com/feed",
+            "enabled": true
+        },
+        {
+            "name": "Adweek Marketing",
+            "url": "https://www.adweek.com/category/marketing/feed/",
+            "enabled": true
+        },
+        {
+            "name": "Digital Marketing & SEO News",
+            "url": "https://news.google.com/rss/search?q=%22digital%20marketing%22%20OR%20SEO%20OR%20SEM+when:7d&hl=en-US&gl=US&ceid=US:en",
+            "enabled": true
         }
     ],
     "topPostsPerFeed": 5,

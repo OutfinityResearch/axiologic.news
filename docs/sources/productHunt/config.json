@@ -6,28 +6,13 @@
             "enabled": true
         },
         {
-            "name": "AI Product Launches",
-            "url": "https://news.google.com/rss/search?q=%22AI%20product%22%20OR%20%22AI%20tool%22%20AND%20(launch%20OR%20release)+when:7d&hl=en-US&gl=US&ceid=US:en",
-            "enabled": true
-        },
-        {
-            "name": "New SaaS Products",
-            "url": "https://news.google.com/rss/search?q=%22new%20saas%20product%22%20OR%20%22new%20saas%20launch%22+when:7d&hl=en-US&gl=US&ceid=US:en",
-            "enabled": true
-        },
-        {
-            "name": "New Dev Tools",
-            "url": "https://news.google.com/rss/search?q=%22new%20developer%20tool%22%20OR%20%22dev%20tool%20release%22+when:7d&hl=en-US&gl=US&ceid=US:en",
-            "enabled": true
-        },
-        {
             "name": "TechCrunch Product Launches",
             "url": "https://techcrunch.com/tag/launch/feed/",
             "enabled": true
         }
     ],
     "topPostsPerFeed": 20,
-    "historyDays": 5,
+    "historyDays": 10,
     "selectionPrompt": "Select launches with clear target users, public demo/pricing, and a credible wedge (unique capability, speed, or workflow). Skip landing‑page vapor.",
     "essencePrompt": "3 bullets: 1) What it is and for whom, 2) Why it’s different (1 feature with evidence), 3) How to try/buy (link/pricing). 60–100 words.",
     "perspectivesPrompt": "Three one‑liners: 1) Target user — where it fits in workflow, 2) Competitor — edge or gap, 3) Investor — thesis/risk. Be concrete."

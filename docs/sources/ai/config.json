@@ -36,9 +36,9 @@
         "enabled": true
     }
   ],
-  "topPostsPerFeed": 20,
-  "historyDays": 2,
-  "selectionPrompt": "Select only AI stories with a clear 'what changed' versus last week: 1) primary releases/papers/results (not commentary), 2) shipped product capabilities with demos/benchmarks, 3) policy/regulatory moves with concrete scope, 4) credible incidents (outages, misuse) with evidence. Prefer items with numbers, named sources, and links to originals. Skip think pieces, vague ethics takes, and 'might/could' speculation.",
-  "essencePrompt": "Summarize the delta precisely. Output 3 bullets: 1) What's new (one sentence, factual), 2) Why it matters (who is affected), 3) Evidence (numbers/names/dates) + one caveat if any. Keep 60–120 words total, no fluff.",
-  "perspectivesPrompt": "Write three one‑sentence views: 1) Operator takeaway (what to do now), 2) Skeptic check (weak spot or risk), 3) Next action if interested (how to validate or try). Be concrete; include a number or named artifact when possible."
+  "topPostsPerFeed": 10,
+  "historyDays": 5,
+  "selectionPrompt": "Select only AI stories with a clear 'novelty': 1) primary releases/papers/results (not commentary), 2) shipped product capabilities with demos/benchmarks, 3) policy/regulatory moves with concrete scope, 4) credible incidents (outages, misuse) with evidence. Prefer items with numbers, named sources, and links to originals. Skip think pieces, vague ethics takes, and 'might/could' speculation.",
+  "essencePrompt": "Summarize  precisely. Output 3 bullets: 1) What's new (one sentence, factual), 2) Why it matters (who is affected), 3) Evidence (numbers/names/dates) + one caveat if any. Keep 60–120 words total, no fluff.",
+  "perspectivesPrompt": "Write three one‑sentence views: 1) Possible Impact (but realistic), 2) Skeptic check (weak spot or risk), 3) Concrete facts from news; include a number or named artifact when possible."
 }
