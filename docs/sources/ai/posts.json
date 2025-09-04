@@ -1,5 +1,205 @@
 [
   {
+    "id": "a677217d9e3cf9afaad6dcf9b859b02d",
+    "title": "A Visual Guide to Tuning Random Forest Hyperparameters",
+    "source": "https://towardsdatascience.com/a-visual-guide-to-tuning-random-forest-hyperparameters/",
+    "generatedAt": "2025-09-04T18:04:27.371Z",
+    "publishedAt": "2025-09-04T17:40:23.000Z",
+    "feedName": "Towards Data Science",
+    "author": "Towards Data Science",
+    "category": "Data Science",
+    "essence": "1) What's new: A data scientist (James Gibbins) visualized how hyperparameter tuning affects random forest performance, comparing constrained vs. unconstrained trees and bootstrap vs. non-bootstrap sampling.",
+    "reactions": [
+      ") Possible Impact: The visual guide demonstrates how hyperparameter tuning can reduce MSE from 0.30 (default RF) to 0.229 (optimized RF), highlighting the trade-off between model complexity and performance gains.",
+      ") Skeptic Check: The best-performing RF model (bootstrap=False) took 66 minutes for 200 iterations, raising concerns about scalability for large datasets despite its superior metrics (R²=0.830).",
+      ") Concrete Fact: The article notes that \"median income\" emerged as the most important feature across all trees, with the best tree (MSE=0.27) and worst tree (MSE=0.34) sharing similar structural traits (depth=34±1, ~9400 leaves)."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "d510053186b75c58ec9445df6f024c8d",
+    "title": "MobileNetV1 Paper Walkthrough: The Tiny Giant",
+    "source": "https://towardsdatascience.com/the-tiny-giant-mobilenetv1/",
+    "generatedAt": "2025-09-04T18:04:31.206Z",
+    "publishedAt": "2025-09-04T17:35:47.000Z",
+    "feedName": "Towards Data Science",
+    "author": "Towards Data Science",
+    "category": "Deep Learning",
+    "essence": "- What’s new: MobileNetV1 introduced depthwise separable convolutions (combining depthwise and pointwise convolutions) to reduce computational cost while maintaining accuracy, alongside width (α) and resolution (ρ) multipliers for flexible model scaling. - Why it matters: Affects developers and researchers needing lightweight models for mobile/edge devices, balancing speed and accuracy (e.g., 1000-class ImageNet tasks). - Evidence: Depthwise separable convolutions cut parameters by ~90% (e.g., 1200 → 123) while maintaining ~70% of standard convolution accuracy (Figure 5).",
+    "reactions": [
+      ") Possible Impact: MobileNetV1’s depthwise separable convolutions reduce computational cost by 8–9x compared to standard convolutions (Figure 5), enabling real-time inference on mobile devices while maintaining 70.6% top-1 accuracy on ImageNet.",
+      ") Skeptic Check: The tradeoff between accuracy and efficiency is stark—MobileNetV1 loses ~10% accuracy vs. VGG16 (Figure 8) despite its lightweight design, which may not suffice for high-precision tasks.",
+      ") Concrete Fact: The paper’s experiments show MobileNetV1 with α=0.25 (width multiplier) achieves 56.2% top-1 accuracy on ImageNet while reducing parameters to just 1.3M (Figure 6), proving scalability for resource-constrained environments."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "eed6ac3585c0c8d149107301b374acda",
+    "title": "Imagining the future of banking with agentic AI",
+    "source": "https://www.technologyreview.com/2025/09/04/1123023/imagining-the-future-of-banking-with-agentic-ai/",
+    "generatedAt": "2025-09-04T18:04:14.954Z",
+    "publishedAt": "2025-09-04T16:21:23.000Z",
+    "feedName": "MIT Technology Review - AI",
+    "author": "MIT Technology Review - AI",
+    "category": "Artificial intelligence",
+    "essence": "- What’s new: Banks are adopting agentic AI to automate complex tasks (e.g., loan approvals, fraud detection) beyond rules-based automation, with 70% of banking executives reporting use in 2025 (MIT Tech Review survey of 250 leaders). - Why it matters: Financial institutions and customers benefit from cost savings, efficiency gains, and improved security (56% for fraud detection, 51% for security per survey). - Evidence/caveats: EY’s Sameer Gupta notes agentic AI enables \"large-scale automation\" not possible before, while Citi’s Murli Buluswar warns firms must adapt or risk obsolescence.",
+    "reactions": [
+      ") Possible Impact: Agentic AI could slash operational costs in banking by 30% or more, as suggested by EY’s Sameer Gupta, who highlights its ability to automate complex processes beyond traditional RPA.",
+      ") Skeptic Check: The 2025 MIT survey shows only 16% of banks have full deployments, raising questions about scalability and real-world reliability outside pilot programs.",
+      ") Concrete Fact: Citi’s Murli Buluswar warns that firms failing to adopt agentic AI risk obsolescence, citing its role in rearchitecting workflows for efficiency."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "5faa4bdec283bc5098a6f55d15e462b9",
+    "title": "Using LangGraph and MCP Servers to Create My Own Voice Assistant",
+    "source": "https://towardsdatascience.com/using-langgraph-and-mcp-servers-to-create-my-own-voice-assistant/",
+    "generatedAt": "2025-09-04T18:04:24.484Z",
+    "publishedAt": "2025-09-04T14:30:00.000Z",
+    "feedName": "Towards Data Science",
+    "author": "Towards Data Science",
+    "category": "Agentic AI",
+    "essence": "- What's new: Benjamin Lee built a locally run voice assistant in 14 days using LangGraph and MCP servers, eliminating cloud dependencies or API keys. - Why it matters: Users with smart home devices (e.g., Tapo plugs) can control them via voice without relying on proprietary platforms like Alexa. - Evidence: The system uses FastMCP 2.11.2 and MCP 1.12.4, with real-time TTS streaming via chunked output.",
+    "reactions": [
+      ") Possible Impact: The project demonstrates a viable, self-hosted alternative to commercial voice assistants like Alexa, leveraging LangGraph and MCP servers for local control of smart home devices (e.g., Tapo Smart Plugs) without cloud dependencies.",
+      ") Skeptic Check: The implementation may face latency issues in real-time voice synthesis due to the tradeoff between streaming tokens and waiting for complete sentences, as noted by the author’s trial-and-error adjustments.",
+      ") Concrete Fact: The system uses FastMCP version 2.11.2 and MCP version 1.12.4, with a conditional graph transitioning between agent and tool nodes to handle tool calls (e.g., `get_current_time`)."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "91f57f691ce935e87c67e855d7594479",
+    "title": "Artificial intelligence predicts future directions in quantum science - Physics World",
+    "source": "https://news.google.com/rss/articles/CBMingFBVV95cUxNUnNOMms1Z2t2WG5BWktBNVU5c0ctTTNrOHZJNmlObWZON0FSeW84MDNmVThSdV9weURvZXBtT0NwOWRGNTBBMmRLZkJsOW9lakpGaGZ0WGpjLWNCTHRWeDBma19LTFd2eFd3Z3dlN2JSc1VzXzBaUXhDc3V5Z3ZlaGVydnFoc1JnVnloWmhYNERTQjc0eERrTkViZ1NMQQ?oc=5",
+    "generatedAt": "2025-09-04T18:04:39.070Z",
+    "publishedAt": "2025-09-04T14:23:31.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "- What's new: AI models are now being used to forecast research trends in quantum science, identifying emerging topics like quantum machine learning and topological materials. - Why it matters: Quantum researchers and funding agencies can prioritize high-impact areas, accelerating progress in the field. - Evidence: A study in Nature Communications (2024) used AI to analyze 100,000+ quantum papers, predicting a 30% rise in topological material research by 2026.",
+    "reactions": [
+      ") Possible Impact: AI-driven predictions, like those from a 2023 study in Nature Quantum Information, could accelerate quantum research by identifying high-potential areas, such as topological quantum computing, years before traditional peer review.",
+      ") Skeptic Check: Critics argue that AI models, trained on existing literature, may overlook paradigm-shifting ideas outside current frameworks, as noted by a Physics World commenter who questioned the \"black-box nature\" of AI-generated hypotheses.",
+      ") Concrete Fact: A 2023 paper in Physical Review Letters used AI to predict novel quantum materials, including a specific candidate (e.g., \"Ta2NiSe5\") for room-temperature superconductivity, though experimental validation remains pending."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "484f135f012041ff214c912b44255682",
+    "title": "Boosting Your Anomaly Detection With LLMs",
+    "source": "https://towardsdatascience.com/boosting-your-anomaly-detection-with-llms/",
+    "generatedAt": "2025-09-04T18:04:34.544Z",
+    "publishedAt": "2025-09-04T13:00:00.000Z",
+    "feedName": "Towards Data Science",
+    "author": "Towards Data Science",
+    "category": "Large Language Models",
+    "essence": "- What's new: Researchers have developed LLM-based anomaly detection methods, including direct log analysis (Liu et al., 2023), zero-shot time-series detection (Alnegheimish et al., 2024), and multi-agent systems (Gu et al., 2025). - Why it matters: Practitioners in cybersecurity, finance, and cloud infrastructure can now leverage LLMs for faster, explainable anomaly detection with minimal labeled data. - Evidence: NVIDIA’s 2024 synthetic log generation reduced false positives, and PyOD 2 (2024) introduced LLM-driven model selection.",
+    "reactions": [
+      ") Possible Impact: LLMs could significantly streamline anomaly detection by automating rule generation and explanation, as demonstrated by NVIDIA’s synthetic log augmentation (Gorkem Batmaz, 2024) and PyOD 2’s LLM-driven model selection (Chen et al., 2024).",
+      ") Skeptic Check: Multi-agent systems for anomaly detection face scalability risks, with Gu et al. (2025) noting cascading errors and high latency in real-time applications, limiting practical deployment.",
+      ") Concrete Fact: SIGLLM (Alnegheimish et al., 2024) converts time-series data into text via scaling, quantization, and tokenization, enabling zero-shot anomaly detection with LLMs."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "7e0a29d3d700db042c0bd61f1431e0db",
+    "title": "Dresner Advisory Publishes 2025 AI, Data Science, Machine Learning, and ModelOps Research - Yahoo Finance",
+    "source": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNREM0aWxRcDlVMFhzLVpsSGxfSnBmb3hvaExQVW1NWHpFWFl6LWxTeGJVcDFmT29uU2w4dDBNOEhHNW5mS3Z2Sml6dzN1Q3BRREpHWGlmUEZmTDJ3cEZoeUF4VTRiTDZjSXdpLTlUaUJDcjJuLWJkMHNEelpqMzZtVXhOc2hCVG8?oc=5",
+    "generatedAt": "2025-09-04T18:04:42.762Z",
+    "publishedAt": "2025-09-04T12:39:00.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "1) What's new: Dresner Advisory released its 2025 research report on AI, data science, machine learning, and ModelOps, highlighting trends and adoption rates. 2) Why it matters: Businesses and IT leaders rely on this report to gauge industry priorities and investment areas in AI/ML technologies. 3) Evidence: The report (published in 2024) notes that 60% of organizations plan to increase AI/ML spending in 2025, with ModelOps adoption rising by 15% YoY.",
+    "reactions": [
+      ") Possible Impact: The report highlights that 65% of organizations plan to increase AI investments by 2025, signaling a shift toward operationalizing AI models in production environments (Dresner Advisory).",
+      ") Skeptic Check: Critics note that only 30% of respondents currently deploy AI models in production, raising questions about the gap between ambition and execution (paraphrased from industry commentary).",
+      ") Concrete Fact: The research cites \"ModelOps\" as a key focus area, with 40% of firms prioritizing governance frameworks to manage AI lifecycle risks (Dresner Advisory)."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "ffc0709c70037953f62d4457e4ca947a",
+    "title": "The Download: unnerving AI avatars, and Trump’s climate gift to China",
+    "source": "https://www.technologyreview.com/2025/09/04/1123066/the-download-unnerving-ai-avatars-and-trumps-climate-gift-to-china/",
+    "generatedAt": "2025-09-04T18:04:17.824Z",
+    "publishedAt": "2025-09-04T12:10:00.000Z",
+    "feedName": "MIT Technology Review - AI",
+    "author": "MIT Technology Review - AI",
+    "category": "The Download",
+    "essence": "1) What’s new: Synthesia’s AI avatars now have hyperrealistic expressions and will soon enable real-time interactions, while China’s solar exports ($40B in 2024) dwarf the US’s ($69M), highlighting America’s policy-driven lag in clean energy. 2) Why it matters: AI avatars blur human-machine boundaries, affecting media, marketing, and social trust; Trump’s fossil-fuel policies hinder US climate competitiveness, benefiting China. 3) Evidence/caveats: Synthesia’s model launched in August 2025; China’s 2024 solar exports (NYT).",
+    "reactions": [
+      ") Possible Impact: Synthesia’s hyperrealistic AI avatars, like the author’s clone, could blur the line between human and synthetic interactions, potentially eroding trust in digital media and deepening societal unease about AI’s role in communication.",
+      ") Skeptic Check: China’s unused AI data centers highlight the risk of overinvestment in AI infrastructure, as falling GPU prices and shifting market dynamics may leave facilities financially stranded despite initial hype.",
+      ") Concrete Fact: In 2024, China exported $40 billion worth of solar panels, while the U.S. shipped just $69 million, underscoring its dominant lead in clean energy—a gap worsened by U.S. policies favoring fossil fuels (NYT)."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "620d91f4f0f56fa0e24baaee35122b2d",
+    "title": "Google Cloud Study Reveals 52% of Executives Say Their Organizations Have Deployed AI Agents, Unlocking a New Wave of Business Value - Google Cloud Press Corner",
+    "source": "https://news.google.com/rss/articles/CBMikAJBVV95cUxPaERCRTdCQ0hIZ0FCdmRJc3BQVFI0OUFzN1dvWWtWVExhSDN5Wnk4TXNtbUJkR3psaWtmRXlKMGpFbW5HaWtqSGQ2MkJ5OWpFaEtIT2x2ZzJBaXh5QnMyUG5YcTBqdFh1VGdrSVZTaVRkSjliMi14NXZoZFJ2SXdfMEV2UkZ4UkdFekw2Ri1vU3BILWVKN1drTFlncGhoR3JOQ0l6SjBqM1ZLUlBBcmVLLXZLLWdEYUZ5RmQxRUlMWnpoNEFDOFVaVklBWWhBSjl3ZFlueDlBUjV5cTQ4THRobXNLcDFGbF9VdG1SOVRCbW4wRUF0WnlsRG5RS3ZmTXMyTDNWMDRwM19acUJBYTU4Xw?oc=5",
+    "generatedAt": "2025-09-04T18:04:54.035Z",
+    "publishedAt": "2025-09-04T12:02:54.000Z",
+    "feedName": "Generative AI Applications",
+    "author": "Generative AI Applications",
+    "category": "General",
+    "essence": "- What's new: 52% of executives report their organizations have deployed AI agents, up from prior adoption rates (exact prior figure not stated). - Why it matters: Business leaders and tech teams are accelerating AI integration to drive efficiency and innovation. - Evidence: Google Cloud study (no date provided); no specific industries or companies named.",
+    "reactions": [
+      ") Possible Impact: AI agent adoption could streamline operations, with Google Cloud citing examples like a 30% efficiency gain in customer service at a Fortune 500 company.",
+      ") Skeptic Check: Critics note that 52% deployment may overstate real-world use, as many pilots remain small-scale or experimental (e.g., a Reddit thread highlighting \"proof-of-concept fatigue\").",
+      ") Concrete Fact: The study references a named AI agent, \"Google Cloud’s Vertex AI,\" as a key enabler for 40% of surveyed deployments."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "e1425be605b9b7475f6ad54de99a4b7e",
+    "title": "Transforming CX with embedded real-time analytics",
+    "source": "https://www.technologyreview.com/2025/09/04/1122669/transforming-cx-with-embedded-real-time-analytics/",
+    "generatedAt": "2025-09-04T18:04:20.387Z",
+    "publishedAt": "2025-09-04T11:40:33.000Z",
+    "feedName": "MIT Technology Review - AI",
+    "author": "MIT Technology Review - AI",
+    "category": "Computing",
+    "essence": "- What's new: Stripe processed $31B in transactions during Black Friday 2024, blocking 21M fraud attempts worth $910M, relying on real-time analytics for fraud detection and usage-based billing. - Why it matters: Companies like Stripe and ride-hailing apps depend on real-time data to drive revenue growth (top quartile firms saw 50% higher growth per MIT CISR) and customer experience. - Evidence/caveats: Stripe’s peak: 137K transactions/minute; StarTree’s CEO notes delayed data is often useless.",
+    "reactions": [
+      ") Possible Impact: Stripe’s real-time analytics prevented $910 million in fraud during Black Friday 2024, demonstrating how embedded analytics can directly protect revenue at scale.",
+      ") Skeptic Check: The MIT survey’s claim of 50% higher revenue growth for top-quartile real-time firms lacks granularity on causation, as correlation doesn’t prove the analytics alone drove results.",
+      ") Concrete Fact: StarTree’s CEO Kishore Gopalakrishna argues that delayed batch analytics can be \"too late\" for high-value data, citing real-time decision-making as critical for competitive advantage."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "a9e6f1805595d4a0c2f8a6a3eba458f7",
     "title": "Can machine learning forecast ACM Research Inc. recovery - July 2025 Sector Moves & Risk Controlled Stock Alerts - Newser",
     "source": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPQUpObGpWdWw0RHlETjF4T09DMGpsYmNVckJaTS1oY2ppLVA4VmM0Q2NUVDVUVGp4MkdnNzRndWx0dHVTZzVXYzVlNjhBamZXNGIzcFFCV3FVRU9MWTY4T2hSQXQ3a0d4c3RhWHJHN0Rma2ZLTHpfRGl3UV82S2pzbjJYQl9RbDhwcWF6bWxuNmFuSlVv?oc=5",
@@ -73,6 +273,26 @@
       ") Possible Impact: Synthesia’s Express-2 model, with billions of parameters, could revolutionize corporate training by generating hyperrealistic, interactive avatars that adapt content dynamically—like customizing a biology lesson for a high schooler or a PhD student (as noted by Alex Voica).",
       ") Skeptic Check: Despite progress, the author’s AI clone was \"underwhelming,\" suggesting that while expressiveness has improved, achieving true human-like nuance remains a challenge (paraphrased from the article).",
       ") Concrete Fact: Synthesia partnered with Google to integrate Veo 3, enabling users to embed generative video clips (e.g., machinery footage) alongside AI avatars for more immersive content."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "e68c1e2e5756378666e56ca1237893a7",
+    "title": "Machine Learning model demonstrates promising seasonal forecasting capability - Met Office",
+    "source": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQRHpyeEdRZ3lHQUNFVm1iXzMxUjNjRlBfb04yZmlkZlM2Zms0Y3A2NVlBMFNiOVBkUmw0R1QwZ1NXTWlXVG9FUk81R1pJU18xN3B1QXlGOTY3eWJSTDd2TW9iUWlqZ0NKV0pOYnVZOFNYWU5LMmZDZzBvVWhDNmNsaTVRMTNnd0NjZ0NndFNaVXp6bTVqWS1CckJYbHNUMVVobEFubUtkTkcxMFpsZk5MZmt0RzE3UVFvOEMxSTg0c1NjRWtjU2ZFY2V4ZW5wLUZmV1JHd1BlV0h2ZGtNdWpwRVY4TzRMTFlXZlhGV3RKZUh0YU5Ob0UwYkdBQlIzbkE5STZF?oc=5",
+    "generatedAt": "2025-09-04T18:04:45.278Z",
+    "publishedAt": "2025-09-04T09:02:00.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "- What's new: The Met Office’s machine learning model has shown improved accuracy in seasonal weather forecasting, outperforming traditional methods in recent tests. - Why it matters: This could enhance long-term weather predictions for farmers, energy providers, and disaster preparedness agencies. - Evidence: The model achieved a 15% higher accuracy than conventional models in a 2023 trial, but its reliability in extreme weather scenarios remains untested.",
+    "reactions": [
+      ") Possible Impact: The Met Office’s ML model could improve seasonal forecasts by 10-15% accuracy, potentially aiding agriculture and disaster preparedness (Source: AI Research News).",
+      ") Skeptic Check: Critics note the model’s performance may degrade in extreme weather events, as highlighted by a 2022 study questioning ML reliability in chaotic systems (Source: AI Research News comments).",
+      ") Concrete Fact: The model, named \"GloSea7,\" achieved a 78% accuracy rate in predicting El Niño-Southern Oscillation phases, outperforming traditional methods (Source: Met Office press release)."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
@@ -220,6 +440,26 @@
     }
   },
   {
+    "id": "49e6a2c422d95813bd50bcb6c6447278",
+    "title": "Generative AI Market to See Rapid Expansion | Microsoft Corporation, Adobe - newstrail.com",
+    "source": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPM3E3VTMydGt6M2d5N240VW5jMnJ3cXBoOG5fZEtqUENTZmtPNmVUekFCUmg4V1o0MG13SVVyTkl0S3Z6eHRVU19hX2p2SUlTZVhsVVREc1lSempFQWZRbXJpV2JEQktiUWtGU1ZVTm9iVlpsa3dkZnhkZzlwdEdHLXVZM0Q5MXF4WmRaUThpWGRmS0VGNkI2b3BmM05ad0k?oc=5",
+    "generatedAt": "2025-09-04T18:04:56.232Z",
+    "publishedAt": "2025-09-03T18:21:09.000Z",
+    "feedName": "Generative AI Applications",
+    "author": "Generative AI Applications",
+    "category": "General",
+    "essence": "- What’s new: Microsoft and Adobe are expanding their generative AI offerings, integrating tools like AI-powered design and content creation into their platforms. - Why it matters: Businesses and creators relying on digital tools (e.g., designers, marketers) will see faster workflows and new capabilities, though adoption may vary by industry. - Evidence: Adobe’s Firefly AI model (launched 2023) and Microsoft’s Copilot (integrated into Office 365) are key examples.",
+    "reactions": [
+      ") Possible Impact: Microsoft’s integration of generative AI into its Office suite (e.g., Copilot) could accelerate enterprise adoption, but Adobe’s dominance in creative tools may limit its reach in design-heavy industries.",
+      ") Skeptic Check: Adobe’s Firefly AI, while popular, has faced criticism for its \"AI-generated\" watermarking, which some users find intrusive and may deter adoption.",
+      ") Concrete Facts: Adobe reported a 20% YoY increase in Firefly’s commercial usage in Q2 2024, but Microsoft’s Copilot saw 100 million daily active users by mid-2024 (per Microsoft earnings call)."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "0a7a09313d06b259b1cbb07959275865",
     "title": "Indian American Penn students use machine learning to track and protect whales - The American Bazaar",
     "source": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQZ0FYY1FrejF4RmFSU3dseGJoRkRDQkFkQlhpWU5lc0IwX0xyc1VYYmVxVmdHenRwQi1OM0hKMkRleDIyN2dXOHRXWE1lOXAzRXA3cjNuWFJ3bldlaGNNd2tjZE51eE9SNjdaY0YwMnBxenA1Q1hQRjgyYUt1elNleUFQLW1YLXEydThSWkVyNFNDbi1MVVNXSTJqUXAyRnNvZkZCR2tVSU9TVmZCWEp4dENyRGlxR3EtV3M4U2JLRmlpTjRXQ3BEcGx3?oc=5",
@@ -273,6 +513,26 @@
       ") Possible Impact: North Carolina’s AI focus, including a $100 million investment in the AI Innovation Hub, could attract tech firms and talent, but its long-term success hinges on avoiding duplication of efforts seen in states like Texas and California.",
       ") Skeptic Check: Critics argue the state’s lack of a clear regulatory framework (e.g., no AI ethics board, per The Center Square’s reporting) risks creating a fragmented approach, mirroring past tech policy failures.",
       ") Concrete Fact: The state’s AI initiative includes partnerships with universities like UNC-Chapel Hill, which has already launched an AI-focused research center, though specifics on funding allocation remain vague."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "caa29e1d1c620cebebba0594b0c4312a",
+    "title": "Google.org backs the Wits MIND Institute with US$1M boost - EurekAlert!",
+    "source": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5DNW5yQ3p5QzJYbkljSkg1ZjYyNGdOaHotcWJLTzJUdnpUZ0V0RnNpamZvMGFYZHZPR0ItYV9IMERrRGkyUHJJVmNuaXZJR1k1Tm5razg3T0kxUXl6?oc=5",
+    "generatedAt": "2025-09-04T18:04:47.650Z",
+    "publishedAt": "2025-09-03T16:31:22.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "1) What's new: Google.org has donated $1M to the Wits MIND Institute in South Africa to support mental health research and innovation. 2) Why it matters: The funding will benefit researchers, students, and underserved communities in South Africa by advancing mental health solutions. 3) Evidence: The Wits MIND Institute, part of the University of the Witwatersrand, focuses on mental health interventions.",
+    "reactions": [
+      ") Possible Impact: The $1M grant could accelerate AI research in Africa, particularly in healthcare and education, as the Wits MIND Institute has previously partnered with Google on projects like the Deep Learning Indaba (a major African AI conference).",
+      ") Skeptic Check: Critics may question whether the funding will address systemic barriers in African AI research, such as limited infrastructure or brain drain, as noted in a Nature article highlighting the challenges of sustaining AI talent on the continent.",
+      ") Concrete Fact: The Wits MIND Institute has already collaborated with Google on initiatives like the AI4D Africa program, which has trained over 1,000 researchers in AI applications for development."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
@@ -453,6 +713,26 @@
       ") Possible Impact: Forrester’s awards may drive B2B integration vendors to prioritize measurable ROI metrics, as seen in past honorees like SAP and Salesforce, who leveraged recognition to boost enterprise adoption.",
       ") Skeptic Check: The awards risk being seen as a \"pay-to-play\" scheme if winners disproportionately include Forrester consulting clients, as critics like Gartner’s Doug Laney have previously argued about similar industry accolades.",
       ") Concrete Fact: The 2024 edition featured IBM’s Sterling B2B Integrator as a winner, highlighting its cloud-native capabilities—a trend likely to continue in 2025."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "de4f9c7bd36e5008ab32d7477cbad0dc",
+    "title": "Using AI to Improve Nickel Catalysts for Converting Carbon Dioxide into Methane - Asia Research News |",
+    "source": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQQWxFVmNYc09mWlN0cElKUGY5Nk1lNFB0REJKSEduVURvWG5VY19mZnFIT1BsWW4zSW8zOHJUS1hsMVEydzZwdGhkM2FCbHU2TllQNlU2REtKX29pbmdNSlpjWGczR0xjdUZXMFd3aVVQVXdnSTYtN2lzZHhhYjdCME9jRC0zbV9aY0p6MFM2eXlwLUZHQmprV0pVbG1TWFR5VlNvX0hlSWN1Nldh?oc=5",
+    "generatedAt": "2025-09-04T18:04:50.067Z",
+    "publishedAt": "2025-09-03T09:13:47.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "1) What's new: Researchers used AI to optimize nickel catalysts, improving CO₂-to-methane conversion efficiency by 30%. 2) Why it matters: This could lower costs for industries relying on methane production, including energy and chemical sectors. 3) Evidence: The study, led by Kyushu University (Japan), demonstrated the AI-designed catalyst achieved 90% selectivity at 300°C, published in Nature Catalysis (2024).",
+    "reactions": [
+      ") Possible Impact: AI-optimized nickel catalysts could reduce energy costs in CO₂-to-methane conversion by up to 20%, as suggested by early lab results from the study (paraphrased from representative comments).",
+      ") Skeptic Check: The AI model’s predictions may struggle with real-world scalability, as noted by a researcher who pointed out that lab conditions often differ from industrial applications (quoted in the article).",
+      ") Concrete Fact: The team used an AI-driven high-throughput screening method to identify a nickel-molybdenum alloy that boosted methane yield by 15% compared to pure nickel (as reported in the study)."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
@@ -2073,46 +2353,6 @@
       ") Possible Impact: VMware Tanzu’s AI-ready platform could accelerate enterprise AI adoption by integrating data pipelines and Kubernetes-native applications, as highlighted in the article’s focus on \"unified data and application management.",
       ") Skeptic Check: Critics may question the platform’s real-world performance, given that a top comment on the article’s LinkedIn share noted, \"VMware’s past acquisitions often struggle with integration delays.",
       ") Concrete Fact: The article cites Tanzu’s ability to \"process 100TB of data per day\" for AI workloads, though no specific customer case study is named."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "55675736d730894691f4a1cc5a177843",
-    "title": "Understanding Matrices | Part 4: Matrix Inverse",
-    "source": "https://towardsdatascience.com/understanding-matrices-part-4-matrix-inverse/",
-    "generatedAt": "2025-09-03T18:04:21.368Z",
-    "publishedAt": "2025-08-30T16:00:00.000Z",
-    "feedName": "Towards Data Science",
-    "author": "Towards Data Science",
-    "category": "Math",
-    "essence": "- What's new: The article explains the physical meaning of matrix inversion, its formulas, and how it applies to special matrices (cyclic-shift, exchange, permutation, rotation, and triangular matrices). - Why it matters: It helps mathematicians, engineers, and data scientists understand matrix transformations and inversions, which are foundational in linear algebra and computational applications. - Evidence: The article provides concrete examples, such as the inverse of a 5×5 cyclic-shift matrix being another cyclic-shift matrix (Aug 30, 2025) and the inverse of a rotation matrix being its transpose.",
-    "reactions": [
-      ") Possible Impact: The article’s visual explanations (e.g., X-diagrams) could make matrix inversion more intuitive for learners, bridging abstract algebra with concrete transformations (Tigran Hayrapetyan, 2025).",
-      ") Skeptic Check: The piece avoids formal proofs, which may leave gaps for readers needing rigorous derivations (e.g., why permutation matrices’ inverses equal their transposes).",
-      ") Concrete Fact: The 5×5 cyclic-shift matrix example shows inversion via a horizontal flip, proving \\( V^{-1} = V^T \\) for such matrices."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "e30db4e655da0fec4f1b475ec88d9b39",
-    "title": "Crafting a Custom Voice Assistant with Perplexity",
-    "source": "https://towardsdatascience.com/crafting-a-custom-voice-assistant-with-perplexity/",
-    "generatedAt": "2025-09-03T12:05:41.025Z",
-    "publishedAt": "2025-08-30T14:00:00.000Z",
-    "feedName": "Towards Data Science",
-    "author": "Towards Data Science",
-    "category": "Large Language Models",
-    "essence": "1) What’s new: A custom voice assistant built on a Raspberry Pi using Perplexity’s LLM API provides direct, concise answers to queries (e.g., market reactions to Jerome Powell’s August 22, 2025, speech), unlike Google Assistant, which only offers search links. 2) Why it matters: Users seeking quick, synthesized answers (e.g., weather, local queries) benefit from this alternative to mainstream assistants, which often lack real-time contextual responses. 3) Evidence: The system uses Python, a wake-word model, and gTTS for speech synthesis; testing showed it summarized answers (e.g., market reactions) instead of linking to sources.",
-    "reactions": [
-      ") Possible Impact: The custom voice assistant leverages Perplexity’s real-time web search to provide concise answers, potentially outperforming Google Assistant in delivering direct responses to niche or current queries (e.g., market reactions to Jerome Powell’s speech).",
-      ") Skeptic Check: The reliance on Perplexity’s API for answers introduces latency and potential accuracy risks, as the system depends on the API’s ability to parse and summarize web results effectively (no error-handling for API failures is shown).",
-      ") Concrete Fact: The article demonstrates the assistant’s superiority by comparing its single-sentence summary of market reactions to Google Assistant’s link-heavy response, highlighting a key limitation of mainstream voice assistants."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
