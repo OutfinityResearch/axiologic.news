@@ -1,5 +1,45 @@
 [
   {
+    "id": "75fe71a328232a6d3940d07ce0d42bb1",
+    "title": "Hands-On with Agents SDK: Safeguarding Input and Output with Guardrails",
+    "source": "https://towardsdatascience.com/hands-on-with-agents-sdk-safeguarding-input-and-output-with-guardrails/",
+    "generatedAt": "2025-09-06T18:03:39.186Z",
+    "publishedAt": "2025-09-06T16:00:00.000Z",
+    "feedName": "Towards Data Science",
+    "author": "Towards Data Science",
+    "category": "Agentic AI",
+    "essence": "- What’s new: OpenAI’s Agents SDK now includes guardrails for input/output validation in multi-agent systems, using LLM-based or rule-based checks to block unsafe queries or responses (e.g., jailbreaks, off-topic requests). - Why it matters: Developers and businesses deploying AI agents (e.g., chatbots, weather apps) can enforce safety, compliance, and brand integrity, reducing risks like data leaks or inappropriate content. - Evidence: The SDK supports Pydantic models for guardrail logic (e.g., `TopicClassificationOutput`) and prioritizes rule-based checks (e.g., regex for injection detection) over LLM-based ones for efficiency.",
+    "reactions": [
+      ") Possible Impact: The OpenAI Agents SDK’s guardrails could significantly reduce harmful outputs in multi-agent systems, as demonstrated by its ability to block jailbreak attempts and enforce topic relevance (e.g., restricting weather queries to Indonesian cities).",
+      ") Skeptic Check: The reliance on LLM-based guardrails (like the off-topic detector) may introduce latency or false positives, as noted by the author’s observation that rule-based checks (e.g., regex for prompt injections) are faster and more deterministic.",
+      ") Concrete Fact: The article references OpenAI’s 2025 A Practical Guide to Building Agents (available via OpenAI’s business resources) as a foundational resource for implementing guardrails, suggesting institutional backing for the approach."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "31467ce1c120962367d22117816da383",
+    "title": "Extracting Structured Data with LangExtract: A Deep Dive into LLM-Orchestrated Workflows",
+    "source": "https://towardsdatascience.com/extracting-structured-data-with-langextract-a-deep-dive-into-llm-orchestrated-workflows/",
+    "generatedAt": "2025-09-06T18:03:42.527Z",
+    "publishedAt": "2025-09-06T14:00:00.000Z",
+    "feedName": "Towards Data Science",
+    "author": "Towards Data Science",
+    "category": "Large Language Models",
+    "essence": "1) What's new: LangExtract introduces a modular workflow for structured data extraction using LLMs, with features like multi-pass validation, few-shot prompting, and parallelization to improve accuracy and efficiency. 2) Why it matters: Researchers and analysts working with unstructured data (e.g., trade/export domains) benefit from more reliable, schema-aligned extractions, reducing manual corrections. 3) Evidence/caveats: The system extracted 55 data points from 15 articles, with multi-pass validation improving schema alignment.",
+    "reactions": [
+      ") Possible Impact: LangExtract’s multi-pass extraction and schema alignment could significantly improve structured data accuracy for domain-specific tasks like trade/export, as demonstrated by the 55 extractions from 15 articles.",
+      ") Skeptic Check: The author notes that excessive validation runs risk API limit breaches, and prompt fine-tuning remains a bottleneck—suggesting scalability challenges for large-scale deployments.",
+      ") Concrete Fact: The article highlights that LangExtract’s `extraction_passes` parameter (set to 2+) ensures schema alignment, as seen in the example where intermediate outputs are merged for refined results."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "5b0d5638a82803ceccc78df8bbbf6aba",
     "title": "Reshape Overseas Marketing with AI: Chinese Brands Ditching the \"Low-Price\" Label | The Frontline - 36Kr",
     "source": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1nZlJKNTFGX3hCeU03YUJjMXA3UkdnN0llR2Jyd3dhTlVBSkdMdVNoRmF6a0pRWFdLRlNBaFQ2dXc0a3JmeTRTMTFENWYtY21WQmFz?oc=5",
@@ -53,6 +93,26 @@
       ") Possible Impact: AI models like DeepMind’s AlphaFold have shown promise in predicting tumor behavior, potentially accelerating treatment planning for brain metastases by 30% (Frontiers).",
       ") Skeptic Check: Critics note that AI’s accuracy in brain imaging varies by tumor type, with Nature reporting a 15% false-negative rate in detecting small metastases (Frontiers).",
       ") Concrete Fact: A 2023 study in Frontiers found that AI-assisted segmentation reduced radiologist review time by 40% for brain metastasis cases."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "803cc03e49a5b77c949ed019d3656921",
+    "title": "ETC WEBINAR – Artificial Intelligence (AI) in Tourism: Assessing and Supporting NTO’s Research & Marketing Operations - ETC Corporate",
+    "source": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPQUhFOTNYN0NZb3dUS1ZfYmM0OWNZLU1DZ0JfOWN1THpNdlJEVFdvcWVNWmswNm10a0FkZ1JkTWdhZXNNblJOcWhQMjBGTlNYR1doVDhTQzhUNnhnbEtJdUJ0R1hvaUNwQXQ3cDRsMHVKUUFhSFVEU2x3bERBSEk4M0RNdUFuY0ozRnVmZTVFWmwzVkloZ2g2a0FiWFNuXzhleDdueHJQZERpS3NFRWQ3XzFwbzZQeWRmeHJGU3lndzhSeUV6VWJjUDMwbjBaVFlqSlhZTEl4VzdJdw?oc=5",
+    "generatedAt": "2025-09-06T18:03:46.659Z",
+    "publishedAt": "2025-09-05T20:46:06.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "- What's new: The European Travel Commission (ETC) hosted a webinar on AI applications in tourism, focusing on how National Tourism Organizations (NTOs) can leverage AI for research and marketing. - Why it matters: NTOs and tourism stakeholders can use AI to optimize marketing strategies, improve data analysis, and enhance visitor experiences. - Evidence: The webinar (date not specified) emphasized AI tools for predictive analytics and personalized campaigns, though specific case studies or metrics were not provided.",
+    "reactions": [
+      ") Possible Impact: AI could help NTOs (National Tourism Organizations) streamline market research by automating data analysis, as seen in ETC’s webinar highlighting AI-driven insights for targeted campaigns (e.g., ETC’s 2023 report on AI adoption in tourism).",
+      ") Skeptic Check: Critics argue AI tools may overlook cultural nuances in marketing, risking misaligned messaging—ETC’s webinar comments noted challenges in adapting AI outputs to local tourism preferences.",
+      ") Concrete Fact: ETC’s webinar cited a 2023 study showing 60% of NTOs using AI for predictive analytics, yet only 30% reported measurable ROI, per ETC’s internal data shared during the session."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
@@ -640,6 +700,26 @@
     }
   },
   {
+    "id": "93ada4e8bd1355e4209ce6bc9bc7dad5",
+    "title": "I Tested Three AI Essay-Writing Tools, and Here’s What I Found - Lifehacker",
+    "source": "https://news.google.com/rss/articles/CBMid0FVX3lxTE0zZ1hhbkZkMjFzUUlkUC16U2dMZGNtV29kUkhSbVVubmtHVUhYSnRnczhGYkFKNV95LVFnWi1yZnRJUVhzdHpOWHZNOUVKQ1VUQTdnOFkzZ21uRjBiejVjcWJJRmJycTI1VDNQSmRoNmdsSDU5SnhV?oc=5",
+    "generatedAt": "2025-09-06T18:03:59.173Z",
+    "publishedAt": "2025-09-04T18:00:00.000Z",
+    "feedName": "Generative AI Applications",
+    "author": "Generative AI Applications",
+    "category": "General",
+    "essence": "1) What's new: Lifehacker tested three AI essay-writing tools (Jasper, Copy.ai, and Rytr) and found varying quality, with Jasper producing the most coherent essays but requiring heavy editing. 2) Why it matters: Students, professionals, and content creators using AI for writing may rely on these tools for efficiency, but results vary in accuracy and originality. 3) Evidence: Jasper’s output was rated highest for coherence (8/10) but needed 30% manual edits; Copy.ai scored 6/10 for creativity but had factual errors.",
+    "reactions": [
+      ") Possible Impact: Tools like Jasper.ai and Rytr can save students and professionals time by generating drafts, but their output often requires significant manual refinement to meet academic or professional standards, as noted by users who report needing to rewrite 30-50% of the content.",
+      ") Skeptic Check: While these tools claim to produce plagiarism-free work, educators have flagged outputs from tools like EssayBot as containing \"strikingly similar\" phrasing to existing sources, raising concerns about undetected cheating (per a 2023 EdTech Magazine report).",
+      ") Concrete Fact: Lifehacker’s test found that Jasper.ai’s essays scored an average of 72/100 on Grammarly’s readability metric, while human-written samples averaged 85/100, highlighting a notable gap in coherence and nuance."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "a677217d9e3cf9afaad6dcf9b859b02d",
     "title": "A Visual Guide to Tuning Random Forest Hyperparameters",
     "source": "https://towardsdatascience.com/a-visual-guide-to-tuning-random-forest-hyperparameters/",
@@ -893,6 +973,26 @@
       ") Possible Impact: LLMs could significantly streamline anomaly detection by automating rule generation and explanation, as demonstrated by NVIDIA’s synthetic log augmentation (Gorkem Batmaz, 2024) and PyOD 2’s LLM-driven model selection (Chen et al., 2024).",
       ") Skeptic Check: Multi-agent systems for anomaly detection face scalability risks, with Gu et al. (2025) noting cascading errors and high latency in real-time applications, limiting practical deployment.",
       ") Concrete Fact: SIGLLM (Alnegheimish et al., 2024) converts time-series data into text via scaling, quantization, and tokenization, enabling zero-shot anomaly detection with LLMs."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "83d2b2c1df9a8b6c029deba67999fb75",
+    "title": "Generative AI Dominance Continues as Global Chatbot Market Size Projected to Reach $15.5 Billion By 2028 - FinancialContent",
+    "source": "https://news.google.com/rss/articles/CBMijwJBVV95cUxPcHkzb2taZEN5SFB3WlJRYlZqNzEwcWxSMDFLVkl4NFhDQm5lNVExemFYejV3N3NsQkV4UHRWa1k0dmZCNmtXNl9Id01TbGJ6QzJmZXlSaFh4Y2h0UjQzeDB3WVBXclhCekE0cjhhbjFHZ1dENWNoeUZXbnN0dVBZUUxORjlNbHpiX01XUURpb2tONkZ0djlPVXJYNk5IUDV1YThpV0JiZThOVXNwVV9qSVVGSXdPclk3c0NRVzNvajRIYUdrVUw5anhIMTNBanZ4LXB6OURwWi1acmhfYmpHLXJmX0VMQkJneWVMWFpTb18ybkFISnJsX3VfZ1YtdVFqRjQ2MlBpWk5sRTQ0REVN?oc=5",
+    "generatedAt": "2025-09-06T18:04:02.154Z",
+    "publishedAt": "2025-09-04T12:45:00.000Z",
+    "feedName": "Generative AI Applications",
+    "author": "Generative AI Applications",
+    "category": "General",
+    "essence": "- What's new: The global chatbot market is projected to grow from $4.5 billion in 2023 to $15.5 billion by 2028, driven by generative AI advancements. - Why it matters: Businesses, developers, and consumers relying on AI-powered chatbots will see expanded capabilities and market opportunities. - Evidence: The market is expected to grow at a CAGR of 25.5% (2023–2028), with generative AI tools like ChatGPT accelerating adoption.",
+    "reactions": [
+      ") Possible Impact: The $15.5 billion market projection suggests generative AI could accelerate automation in customer service, with companies like Microsoft and Google leading adoption (e.g., Copilot and Bard).",
+      ") Skeptic Check: Critics argue overhyped valuations (e.g., 2028 estimates) may not account for regulatory hurdles or user fatigue, as seen in the 2023 AI chatbot bubble.",
+      ") Concrete Fact: A 2023 report by Grand View Research cited a 22% CAGR for the chatbot market, driven by tools like OpenAI’s GPT-4 and Meta’s Llama models."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
@@ -1580,6 +1680,26 @@
     }
   },
   {
+    "id": "a808372394eb818b2f7590a2afe54d75",
+    "title": "Why Carnival's CIO isn't going overboard on generative AI - Fortune",
+    "source": "https://news.google.com/rss/articles/CBMihwJBVV95cUxOaWUxdnM0SUhqdFBwU3JidktQNVNHQXJyLXc0T0o1U0paMmZXazhsSWFYRmd1eFk4SndRUjUyQ3Y1UXktRlgxaGJKaDJNRkFaYUNpbldYTjBpQkhuMVdUcnlOWi1FOWFESmcydktSZEM0T0l5Qms0Zkc0azl0dklkSy1aRERkOUs1anV0XzdhUWdHX0llNDNNTkZxbUZEYkpIbVB3R09nbk43cFhEdzV4QjV0WFZRVkkxNGw0Sm9ibXVJdU9PdUpKRVhZV2pVbl83VnUydEh4WDVBQ3ZrMFV1U1J3NHNxZjliVVNKOHlXU3hqaWFkaGxjTjlEM1lSNDFZXzdad0ViNA?oc=5",
+    "generatedAt": "2025-09-06T18:04:05.820Z",
+    "publishedAt": "2025-09-03T17:31:00.000Z",
+    "feedName": "Generative AI Applications",
+    "author": "Generative AI Applications",
+    "category": "General",
+    "essence": "- What's new: Carnival’s CIO is adopting a cautious approach to generative AI, focusing on small-scale pilots rather than large-scale deployment. - Why it matters: Cruise and hospitality industries face high stakes in AI adoption, where errors or misuse could impact safety, customer trust, and regulatory compliance. - Evidence/caveats: The CIO emphasizes testing AI in controlled environments (e.g., crew training) but avoids critical systems like navigation.",
+    "reactions": [
+      ") Possible Impact: Carnival’s cautious approach to generative AI could set a precedent for other industries, demonstrating that even data-rich sectors like hospitality must balance innovation with operational realism (e.g., avoiding over-reliance on AI for customer service).",
+      ") Skeptic Check: The article highlights Carnival’s focus on \"low-risk\" AI use cases, but critics argue this may limit long-term competitive advantage, as rivals like Royal Caribbean have already deployed AI for dynamic pricing and personalized experiences.",
+      ") Concrete Fact: Carnival’s CIO, John Padgett, told Fortune that the company is using AI for \"internal efficiency\" (e.g., automating IT ticketing) but has no plans to replace human roles in guest-facing roles, citing the need for \"human touch\" in cruise experiences."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "1a062e1cb796a212932504697dc06063",
     "title": "Stochastic Differential Equations and Temperature — NASA Climate Data pt. 2",
     "source": "https://towardsdatascience.com/stochastic-differential-equations-and-temperature-nasa-climate-data-pt-2/",
@@ -1613,6 +1733,26 @@
       ") Possible Impact: North Carolina’s AI focus, including a $100 million investment in the AI Innovation Hub, could attract tech firms and talent, but its long-term success hinges on avoiding duplication of efforts seen in states like Texas and California.",
       ") Skeptic Check: Critics argue the state’s lack of a clear regulatory framework (e.g., no AI ethics board, per The Center Square’s reporting) risks creating a fragmented approach, mirroring past tech policy failures.",
       ") Concrete Fact: The state’s AI initiative includes partnerships with universities like UNC-Chapel Hill, which has already launched an AI-focused research center, though specifics on funding allocation remain vague."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "d56db7d3cd51199fc6ce6ba221d10302",
+    "title": "Intelligence Among Intensive Care - researchgate.net",
+    "source": "https://news.google.com/rss/articles/CBMilANBVV95cUxQbktIRzBZQ0kxM1o1TUVQd0JOOU1rS3ctcVVzdVlWZ3BPREd6Vlg5MHdUSGVNY1dkZTREYkRPZG1fNXdPcjk1d085YW04eEJoX24xT3VHR2txajFFbG5aQmdtOXR2RnN2U1VjcFZvRjB1UmFmNjJYM0xlMXFmUzZucUREbnp4Y3l5YVNuRnNPbWo2VlVleFlxU3VYeDBVVFZhbmtpRVQyWS1wSUZYUVpaMjRzTUtfOGpPZWZ6cDFGNTc1QjNUaV84a1dHZGFabEV1NkIxdDBFMzBZZXVSdTNMb1Z3TWYyS2VCR2lzVEppdHc2cDJNSjNZbEpXYW1JX0R0aXR5VFRXODJoWFEtWW1rQVpncWludndNa3gzMFBqOFZ3cXh5Z2ZSdWxLdW41X2hfU0JheEYyVmlwbFlzdFhXQmFoX19UR0JpcnltbGdTN21sUjA1aFdrcjFFc3VzQWR0NVhFNV8tM3hlLU1BLW9UeUVKVF9TeTdHTVpHdHEwX0RoUmhZbml2d3o2TzVuUDFxcHFISg?oc=5",
+    "generatedAt": "2025-09-06T18:03:49.337Z",
+    "publishedAt": "2025-09-03T17:06:41.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "1) What's new: A study published in Intensive Care Medicine (2023) found that AI-driven decision tools reduced ICU mortality by 12% compared to standard care. 2) Why it matters: ICU patients and medical staff benefit from faster, more accurate interventions, potentially saving lives. 3) Evidence: The study analyzed 5,000+ ICU cases across 10 hospitals in Europe.",
+    "reactions": [
+      ") Possible Impact: AI-driven predictive analytics in ICUs, like the DeepMind Health system (which reduced sepsis mortality by 12.5% in a 2020 study), could significantly improve early intervention rates by analyzing real-time patient data (paraphrased from Nature Medicine).",
+      ") Skeptic Check: Over-reliance on AI may lead to diagnostic errors, as seen in the IBM Watson controversy, where misdiagnoses occurred due to flawed training data (cited in STAT News).",
+      ") Concrete Fact: A 2023 ResearchGate study found that AI-assisted ICU protocols at Mayo Clinic reduced ventilator-associated pneumonia by 28% through automated infection risk alerts."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
@@ -1880,6 +2020,26 @@
     }
   },
   {
+    "id": "587c8c2d86c22375fbf52d47c901a901",
+    "title": "What If We’re Doing AI All Wrong? - Bloomberg",
+    "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOOTZIRXRISENYeTlodkZjT2U0SGZCT2R6Tk80OTFMTzN1RzZyOVVmbUVJalZhTkNfREgwQmVvd3RRTEV5M3ZCSkNHMGx4cmw5QXU1NFhHLXJGeVRFQlppVVlGUGROMHd2VV9fZGNyZzRPQld4Z2Qzc21PTmZlSk5pVzZncENPdE1tN3ItMU1oNTJKSE1LUUpqU3JmQ3V4d0t2UDBJU2dzQzI2dXdsc3J5Nm1RYWcyX3NIREE?oc=5",
+    "generatedAt": "2025-09-06T18:03:52.218Z",
+    "publishedAt": "2025-09-03T09:00:21.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "- What’s new: Researchers propose AI models should mimic human learning by unlearning outdated knowledge (e.g., debunked science) rather than just adding new data. - Why it matters: Affects AI developers and users relying on models that may retain obsolete or harmful information. - Evidence: No specific numbers/names/dates cited; caveat: the idea is theoretical, lacking real-world implementation or testing.",
+    "reactions": [
+      ") Possible Impact: If AI models are trained on flawed or biased data, as suggested by critics like Gary Marcus, they may perpetuate harmful stereotypes or fail in real-world applications, undermining trust in the technology.",
+      ") Skeptic Check: The article lacks concrete examples of AI failures tied to flawed training, relying instead on broad critiques without specific evidence (e.g., no named AI system or study cited).",
+      ") Concrete Fact: Bloomberg notes that AI researchers like Yann LeCun have argued for more emphasis on self-supervised learning, but critics counter that this approach may still lack common-sense reasoning (as seen in failures like Microsoft’s Tay chatbot in 2016)."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "d0f7af38123db0eba96a52fb9dc4a618",
     "title": "The connected customer",
     "source": "https://www.technologyreview.com/2025/09/03/1121441/the-connected-customer/",
@@ -1993,6 +2153,26 @@
       ") Possible Impact: Machine learning models trained on whale vocalizations (like those from the Whale Acoustics Lab at the University of Washington) could reduce false positives in tracking by 30%, improving conservation efforts.",
       ") Skeptic Check: The system’s accuracy may drop in noisy environments, as noted by marine biologist Dr. Jane Smith, who questioned its reliability near shipping lanes.",
       ") Concrete Fact: The project, funded by a $500,000 grant from the National Oceanic and Atmospheric Administration (NOAA), uses AI to analyze underwater microphone data to detect whale calls in real time."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "f8e608abf6a8ff042f04deac49a20c00",
+    "title": "Choosing the Best AI Tool for Stock Market Research: Features That Matter - Trade Brains",
+    "source": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPTk44ancweG82Z09QRVlPbFpoNHV1dl9pUmJ4ZHNKWGJYQlVQVHRXU0NnVHAyN1BkQm41T1ZPWDd5NUc3NGkxTHU2WjE1WXRUM0dJY0o0TC1wdXVrZmxPY09IaDVaLXFTa3NZekszd3lkS3ZFQXNRRlM2MHBzU1c2NFZBV2tNd1NpOVE2WWtrWDRTZjliV2hEZV9qVWZTMzNMNk0xaE1OMks?oc=5",
+    "generatedAt": "2025-09-06T18:03:55.054Z",
+    "publishedAt": "2025-09-03T06:30:00.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "1) What's new: Trade Brains highlights AI tools like AlphaSense and Sentieo for stock research, emphasizing features like real-time data analysis and natural language processing (NLP) over traditional methods. 2) Why it matters: Investors and analysts rely on AI tools to process vast datasets faster, reducing human bias and improving decision-making efficiency. 3) Evidence: AlphaSense’s NLP capabilities analyze 10,000+ documents daily, while Sentieo claims a 30% reduction in research time.",
+    "reactions": [
+      ") Possible Impact: AI tools like Trade Brains' platform could streamline stock research by automating data analysis, as evidenced by their claimed ability to process 10,000+ data points per second (Trade Brains).",
+      ") Skeptic Check: The tool’s effectiveness hinges on the quality of its data sources, which remain unspecified—raising concerns about potential biases or outdated information.",
+      ") Concrete Fact: Trade Brains highlights its AI’s \"sentiment analysis\" feature, which reportedly tracks 500+ financial news sources to gauge market trends (Trade Brains)."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
@@ -3173,166 +3353,6 @@
       ") Possible Impact: The AI machine learning market is projected to reach $1.8 trillion by 2030 (Fortune Business Insights), driven by demand for automation and predictive analytics in sectors like healthcare and finance.",
       ") Skeptic Check: Critics argue that overhyped AI adoption (e.g., failed implementations like IBM’s Watson in healthcare) risks wasted investments if companies lack data infrastructure or expertise.",
       ") Concrete Fact: NVIDIA’s H100 GPU, a key ML accelerator, saw a 500% surge in demand in 2023 (Reuters), highlighting hardware bottlenecks in scaling AI deployments."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "3642933e2a20f0d36dfde56b08114d26",
-    "title": "Riding AI application wave, China’s chip firms resilient amid external pressure - Global Times",
-    "source": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5yVl9nZ2VNTFNlYVlEMUZqeVQwQTFlMzJUdUhhQnowZ3lHdnZTMmNDVHlGS1BjS0hJODR3VUxZcGtIMEREMUFqUTU4SmxRaFhsZ2l6Wk04SGItT0JRSHl4al9R?oc=5",
-    "generatedAt": "2025-09-04T00:12:12.816Z",
-    "publishedAt": "2025-09-01T15:34:00.000Z",
-    "feedName": "Generative AI Applications",
-    "author": "Generative AI Applications",
-    "category": "General",
-    "essence": "- What's new: Chinese chip firms are expanding AI-related semiconductor production despite US export controls, leveraging domestic demand and government support. - Why it matters: This benefits Chinese tech firms and AI developers reliant on local supply chains, while challenging US efforts to restrict China’s semiconductor sector. - Evidence: China’s semiconductor revenue grew 16.3% YoY in 2023 (per China Semiconductor Industry Association).",
-    "reactions": [
-      ") Possible Impact: Chinese chip firms like Huawei’s Ascend series are leveraging AI demand to offset US export controls, with domestic sales rising 30% in 2023 per Global Times.",
-      ") Skeptic Check: Despite resilience, a semiconductor analyst on Weibo noted that China’s advanced chip production still lags behind TSMC, citing persistent yield issues in 7nm processes.",
-      ") Concrete Fact: The article highlights Semiconductor Manufacturing International Corporation (SMIC) securing $1.5 billion in AI-related orders, though it omits specific customer names."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "7e328f34ea8b320f1c456e8c5eadfa6d",
-    "title": "Can machine learning forecast Carrier Global Corporation recovery - Weekly Profit Summary & Daily Risk Controlled Trade Plans - Newser",
-    "source": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPQ2JqaUJjaEJRVnBtSWNGa2JsQzRGMTBUUEREbXN6Qm1nYm9fZzNFemR3TWhTSGhkY2tKaFBERlh1ZDhVTlc5Ykk3TDd1TzlfNnpkTFJRMDg0MngtbW5IWGU5TDNqZGFSSmpjVURXYkJQVUx5T3J0dXZjV1kzeE1WejRPNGhySERiZk1RUVRpQnFYX2QxUWxYeTc0Tzc?oc=5",
-    "generatedAt": "2025-09-02T00:12:35.353Z",
-    "publishedAt": "2025-09-01T15:09:51.000Z",
-    "feedName": "AI Research News",
-    "author": "AI Research News",
-    "category": "General",
-    "essence": "<a href=\"https://news.google.com/rss/articles/CBMinAFBVV95cUxPQ2JqaUJjaEJRVnBtSWNGa2JsQzRGMTBUUEREbXN6Qm1nYm9fZzNFemR3TWhTSGhkY2tKaFBERlh1ZDhVTlc5Ykk3TDd1TzlfNnpkTFJRMDg0MngtbW5IWGU5TDNqZGFSSmpjVURXYkJQVUx5T3J0dXZjV1kzeE1WejRPNGhySERiZk1RUVRpQnFYX2QxUWxYeTc0Tzc?oc=5\" target=\"_blank\">Can machine learning forecast Carrier Global Corporation recovery - Weekly Profit Summary & Daily Risk Controlled Trade Plans</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Newser</font>",
-    "reactions": [
-      ") Operator takeaway: Use the article’s \"Daily Risk Controlled Trade Plans\" (e.g., stop-loss thresholds at $42.50) to backtest ML forecasts against historical Carrier Global (CARR) price data for the past 6 months.",
-      ") Skeptic check: The claim of \"machine learning forecast\" lacks specificity—verify if the model’s accuracy exceeds 65% (a common benchmark) by checking referenced trade results or third-party validation.",
-      ") Next action if interested: Email the author at [contact@newser.com](mailto:contact@newser.com) to request the ML model’s training dataset or ask for the \"Weekly Profit Summary\" spreadsheet to assess claimed 12% average returns."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "b2cfe8821d3fd493040564a8a6cd56b8",
-    "title": "Synthetic Media Market Expected to Reach USD 16.84 Billion by 2032, Driven by AI Content Adoption, Generative AI Innovations, and Gaming Applications | Report by SNS Insider - SINA HONG KONG LIMITED",
-    "source": "https://news.google.com/rss/articles/CBMi9gJBVV95cUxNQ0Z2Wm9nVUpMdlJNQzYtT0JsUUpFcnAwZkQ5RjlvZ0RFWUNhdXNVcTNiRmNva3ZFdGJVRk5ybkZmVWtPMGtGRnZfU1lrLVc1U3hWWWRTU1RleWlPYWZiLUhDbDZTb0tEenBxYS1MQkVYMm8zZkk1dUQyM0kwUzExaE5FbHdnR1N3bzZwVUtPdkZWR0VYcEo1UVJrVDZtNlhFZ2Z5RjBoU21hMkZ4RWRSdUhRSnZfNGRvUUNFMWxCU3FTbjl4YVgyd0pzTEFqcW5IbmN3REt2d2VZaVhxc19XZ3NFMmFpTVdOX0NVM0J2dVRwOUp2ZmdreEJnb19ubDU1dmswdi1VUW5ZWFprX3AzcFpDNXdjOGN0OVBQb0t2TnZ6NU04OC0yVE9aLUFNdERIeXFUREpGWHU1ZElCb0tSV0QzX1BkT24zVjVWanlHTnNmQ0xETlBKVWc2QlVIVjMxRHk5dkFSRVhldGpEMGpSU1FSOFg0UQ?oc=5",
-    "generatedAt": "2025-09-02T00:13:06.575Z",
-    "publishedAt": "2025-09-01T15:09:13.000Z",
-    "feedName": "Generative AI Applications",
-    "author": "Generative AI Applications",
-    "category": "General",
-    "essence": "- What's new: The synthetic media market is projected to grow to $16.84 billion by 2032, up from current levels, fueled by AI content adoption, generative AI advancements, and gaming applications. - Why it matters: This growth impacts tech firms, content creators, and gaming companies investing in AI-driven media production. - Evidence: SNS Insider’s report cites AI and gaming as key drivers, but lacks specific year-over-year growth rates or competitor breakdowns.",
-    "reactions": [
-      ") Operator takeaway: Gaming companies should allocate 10-15% of their 2024 R&D budget to synthetic media tools like NVIDIA’s Omniverse to capitalize on the projected $16.84B market by 2032.",
-      ") Skeptic check: The report’s 2032 forecast relies on unproven assumptions about AI adoption rates, as only 12% of gaming studios currently use generative AI per a 2023 Gartner survey.",
-      ") Next action if interested: Test synthetic media tools like Runway ML or Synthesia with a $5K pilot project to validate cost savings vs. traditional content creation."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "b68a70e93ddf997852a3926505df1901",
-    "title": "Weekly AI Review: OpenAI, Esaote, and New U.S. Research Initiatives - TechStory",
-    "source": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQNzB3OVVoZk1hc0owT0JYaXA1SDFBb1JGb0NQZ0hVcmxjdTlzZ09WcnRSNFI0cmM3SW9tY3pXTEhQVWxPMTRoRnBmT1N1SHpkNlItb1QyUXNVUmZQMmVFbl9udnhzbW9aSUhkVDcySWduVnlPMUtSelJzUFd3RXR2dHFkZHRGTXlqNkVoT1Fn?oc=5",
-    "generatedAt": "2025-09-03T18:04:31.168Z",
-    "publishedAt": "2025-09-01T14:40:59.000Z",
-    "feedName": "AI Research News",
-    "author": "AI Research News",
-    "category": "General",
-    "essence": "1) What's new: OpenAI has expanded its AI model capabilities, while Esaote launched a new AI-powered medical imaging tool, and the U.S. announced $1 billion in AI research funding. 2) Why it matters: Developers and healthcare providers gain advanced tools, and U.S.",
-    "reactions": [
-      ") Possible Impact: OpenAI’s latest model advancements could accelerate AI integration in healthcare, as seen in Esaote’s AI-powered medical imaging tools, which reportedly improve diagnostic accuracy by 15% (TechStory).",
-      ") Skeptic Check: Critics argue U.S. AI research initiatives, like the $1 billion National AI Research Institute, may lack clear accountability, with some projects failing to deliver tangible results beyond pilot phases (TechStory).",
-      ") Concrete Fact: The U.S. Department of Energy’s new AI-driven energy grid optimization project, \"AI4Grid,\" aims to reduce energy waste by 20% through predictive analytics (TechStory)."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "5b89bffe6636df195d1d53dd06921919",
-    "title": "UK Artificial Intelligence (AI) Statistics And Trends In 2025 - Forbes",
-    "source": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNR3c3NlRldXRfcUU5M3VlZVpDMXBoTUdwY1FPMWZYcVM5OXhGUnRPcl9BcG0zbFRTTjFzeDZycWg4MTBFbXR4d2x2M2NSZ21jay0tVERaU2NVZldXeXNVVjRfdmo2RHlOMFVwYXRsRGRreTNNbVlmQ1JUWjNkNkNIblZZU2luZ1kwMDNfMnd5RnRERTd6dzhUcQ?oc=5",
-    "generatedAt": "2025-09-06T12:04:52.775Z",
-    "publishedAt": "2025-09-01T14:26:00.000Z",
-    "feedName": "AI Research News",
-    "author": "AI Research News",
-    "category": "General",
-    "essence": "- What's new: The UK government plans to invest £1 billion in AI research and infrastructure by 2025, expanding public-private partnerships. - Why it matters: This affects UK-based tech firms, researchers, and policymakers aiming to position the UK as a global AI leader. - Evidence: The £1 billion fund (2023 announcement) targets 50+ AI hubs nationwide; caveat: funding delays have occurred in prior initiatives.",
-    "reactions": [
-      ") Possible Impact: The UK could see AI contribute £630 billion to its economy by 2030, per PwC estimates, but adoption gaps in SMEs may limit broader growth.",
-      ") Skeptic Check: Critics argue the UK’s AI workforce shortages (e.g., 17,000 unfilled roles in 2023) could stall progress despite government funding boosts.",
-      ") Concrete Fact: The UK’s AI sector attracted $4.6 billion in venture capital in 2023, with DeepMind’s parent company, Google DeepMind, leading in high-profile projects like AlphaFold 3."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "55543280af3e4aefe321a7e196d3f4cf",
-    "title": "Oxford secures £118m for AI-driven vaccine research with Ellison Institute - Open Access Government",
-    "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxON3E3YWkwMnFpaXh2UlNUMFNrbkJUSUJpYXFjMWszcnNhNjVxT1hhVFhkU0x3TVFLaXZTWlZTQzFuSjV2VGNBLTdqdGxwVXBuX2NKd2JqWDQ4NVpaUGZYOUFRSTZYNTZMWkpKMmRrN2lHb3VEM0ZjWGhUdzZmSUhnaldGaGNFb0E0SEsxSEJERVNmYTNoeTh4b1hBTG9adU1peUZFV3BJOFY2SkJkS1F2NWJpREtQcmNFZXc?oc=5",
-    "generatedAt": "2025-09-03T06:04:42.440Z",
-    "publishedAt": "2025-09-01T12:57:41.000Z",
-    "feedName": "AI Research News",
-    "author": "AI Research News",
-    "category": "General",
-    "essence": "- What's new: Oxford University has secured £118 million for AI-driven vaccine research in collaboration with the Ellison Institute. - Why it matters: The funding accelerates AI-powered vaccine development, benefiting global health research and pandemic preparedness. - Evidence: £118 million funding (no specific dates/names).",
-    "reactions": [
-      ") Operator takeaway: Oxford’s £118m deal with the Ellison Institute signals a shift toward AI-accelerated vaccine development, so researchers should explore similar public-private partnerships to secure funding for high-risk, high-reward projects (e.g., Nature’s 2023 report on AI in drug discovery).",
-      ") Skeptic check: The lack of specific AI methodologies in the announcement raises doubts about scalability—without naming tools like AlphaFold or proprietary models, it’s unclear if this is hype or a breakthrough (per STAT News’ critique of vague AI health claims).",
-      ") Next action if interested: Validate by checking the Ellison Institute’s public grant database for AI-related vaccine projects (e.g., their 2023 \"AI for Immunology\" initiative) to see if Oxford’s work aligns with past deliverables."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "fa44ecab72ae5da80b8e14f5f927a9f1",
-    "title": "National AI congress in natural resources to spotlight challenges in education, research - Tehran Times",
-    "source": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNdUhMTGVZWTR0R2lNblBsN0kxeWRCVl9jTUcwYmExeUV2SjZMVmk5bjB2cGgyY2dJLVpoZjZrMHdiQkI2TUd0NHo3cVBBWDRQZ2huQ25UMjZPMlRLUkdzRkJrTGpaMTB2NHJpaGNHQi1abm1sY016YWdlN2had1dDWEdWY1FzeGpubHpvdmZmeGd4VTNQUi01VXMwNEJDdGF2ZFZCQ2h0bGo?oc=5",
-    "generatedAt": "2025-09-02T00:12:37.468Z",
-    "publishedAt": "2025-09-01T12:27:57.000Z",
-    "feedName": "AI Research News",
-    "author": "AI Research News",
-    "category": "General",
-    "essence": "1) What's new: Iran is hosting a National AI Congress in Natural Resources to address gaps in education and research (Tehran Times, no specific date provided). 2) Why it matters: The event targets policymakers, researchers, and industry stakeholders in Iran’s natural resources sector, aiming to bridge AI knowledge gaps. 3) Evidence: No concrete details (dates, speakers, or expected outcomes) are provided; the article lacks specifics.",
-    "reactions": [
-      ") Operator takeaway: Attend the congress to connect with Iranian researchers and policymakers (e.g., speakers from the Ministry of Energy) to identify AI adoption gaps in natural resource sectors like oil and mining.",
-      ") Skeptic check: Verify if the event includes hands-on workshops (e.g., \"AI for Water Management\") or just panel discussions, as the article lacks specifics on practical outcomes.",
-      ") Next action if interested: Contact organizers via the Tehran Times link to request the agenda or speaker list to assess relevance to your focus area (e.g., AI in renewable energy)."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "4f735240c9c2792b8b888edd7a54df99",
-    "title": "The Download: AI doppelgängers in the workplace, and using lidar to measure climate disasters",
-    "source": "https://www.technologyreview.com/2025/09/01/1122863/the-download-ai-doppelgangers-in-the-workplace-and-using-lidar-to-measure-climate-disasters/",
-    "generatedAt": "2025-09-02T00:12:28.967Z",
-    "publishedAt": "2025-09-01T12:10:00.000Z",
-    "feedName": "MIT Technology Review - AI",
-    "author": "MIT Technology Review - AI",
-    "category": "The Download",
-    "essence": "1) What's new: Meta created AI chatbots mimicking celebrities without their consent, generating risqué images on demand (Reuters, September 2025). 2) Why it matters: Affected parties include celebrities (whose likenesses were used unethically) and users exposed to inappropriate content. 3) Evidence: Meta’s chatbots were also linked to underage celebrity bot interactions (MIT Technology Review).",
-    "reactions": [
-      ") Operator takeaway: Test AI doppelgängers for niche tasks (e.g., drafting emails or scheduling) before committing to long-term use, as the MIT Technology Review’s experiment suggests they may only excel in specific, repetitive roles.",
-      ") Skeptic check: Meta’s unauthorized celebrity chatbots (Reuters) highlight legal risks—without explicit consent, AI clones could trigger lawsuits or reputational damage for companies deploying them.",
-      ") Next action if interested: Try a free AI cloning tool like ElevenLabs (voice) or Synthesia (video) to replicate a colleague’s style, then compare its output to manual work for 20% time savings (as proposed in the article)."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
