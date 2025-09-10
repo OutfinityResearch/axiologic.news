@@ -1,5 +1,145 @@
 [
   {
+    "id": "f8edb7eb432c65974d17b0623fd3583d",
+    "title": "Fighting Back Against Attacks in Federated Learning",
+    "source": "https://towardsdatascience.com/fighting-back-against-attacks-in-federated-learning/",
+    "generatedAt": "2025-09-10T18:04:28.493Z",
+    "publishedAt": "2025-09-10T17:00:02.000Z",
+    "feedName": "Towards Data Science",
+    "author": "Towards Data Science",
+    "category": "Machine Learning",
+    "essence": "1) What's new: Researchers built a multi-node simulator for federated learning (FL) to test and reproduce attacks like data/model poisoning, leveraging the Scaleout Systems FEDn framework (Toor, 2025). 2) Why it matters: FL users (e.g., healthcare, finance) risk model degradation or backdoors from malicious participants, especially with non-IID data or late-joining clients. 3) Evidence: The simulator scales to thousands of clients; existing defenses (e.g., Multi-KRUM, Trimmed Mean) fail in some scenarios.",
+    "reactions": [
+      ") Possible Impact: The multi-node FL attack simulator could accelerate research by enabling reproducible experiments on attacks like data poisoning, potentially leading to more robust defenses for real-world federated learning deployments (e.g., healthcare or finance).",
+      ") Skeptic Check: The simulator’s reliance on the FEDn framework may limit its applicability to other FL systems, as frameworks vary in their attack surfaces and defense mechanisms.",
+      ") Concrete Fact: The article cites Multi-KRUM, Trimmed Mean, and Divide and Conquer as contemporary defenses, but notes they can fail in scenarios with non-IID data or late-joining clients."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "5caf371ee6a342cbc89ca0afc89a7f70",
+    "title": "When A Difference Actually Makes A Difference",
+    "source": "https://towardsdatascience.com/when-a-difference-actually-makes-a-difference/",
+    "generatedAt": "2025-09-10T18:04:31.525Z",
+    "publishedAt": "2025-09-10T15:30:00.000Z",
+    "feedName": "Towards Data Science",
+    "author": "Towards Data Science",
+    "category": "Data Science",
+    "essence": "1) What’s new: The article highlights how identical bar chart differences (e.g., Store A: 80, Store B: 75) can mask three distinct business scenarios with varying implications, emphasizing the need to analyze variance, sample size, and effect size. 2) Why it matters: Business leaders risk costly missteps (e.g., overinvesting or ignoring real issues) if they rely solely on mean differences without examining data distribution, statistical significance, or effect size. 3) Evidence/caveats: - Scenario 1: Small sample (n=50), low variance (σ=5), statistically significant (ANOVA p<0.05) → justify action.",
+    "reactions": [
+      ") Possible Impact: Businesses could avoid costly missteps by analyzing variance and effect size alongside mean differences, as demonstrated by the three scenarios where identical bar charts hid vastly different operational realities (e.g., Scenario 1’s 5-point gap justified action, while Scenario 2’s identical gap was statistically insignificant).",
+      ") Skeptic Check: The article assumes decision-makers will seek deeper statistical insights, but real-world adoption may lag due to time constraints or reliance on oversimplified visuals like bar charts, as noted by the author’s emphasis on the need for box-scatter plots and statistical tests.",
+      ") Concrete Fact: The author provides a Python code snippet (e.g., `plot_box_scatter`) for generating box-scatter plots, offering a practical tool for data specialists to visualize variance and statistical significance, as referenced in the GitHub link to MLarena docs."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "c4c43e28a62cd6e028b12f7876324c72",
+    "title": "Why Task-Based Evaluations Matter",
+    "source": "https://towardsdatascience.com/why-task-based-evaluations-matter/",
+    "generatedAt": "2025-09-10T18:04:38.624Z",
+    "publishedAt": "2025-09-10T14:00:00.000Z",
+    "feedName": "Towards Data Science",
+    "author": "Towards Data Science",
+    "category": "Artificial Intelligence",
+    "essence": "1) What's new: AI research overemphasizes general benchmarks, while task-based evaluations (measuring real-world performance) remain underused despite their critical role in aligning AI systems with practical needs. 2) Why it matters: Developers, businesses, and end-users rely on task-based evaluations to ensure AI systems meet real-world expectations, build trust, and drive adoption. 3) Evidence: Mark Derdzinski’s 2025 lecture at DeepLearn 2025 highlights the gap, noting benchmarks rarely translate to task-specific performance; task-based evaluations are essential for bridging prototypes to production.",
+    "reactions": [
+      ") Possible Impact: Task-based evaluations could significantly improve AI adoption by aligning model performance with real-world use cases, as highlighted in Mark Derdzinski’s From Prototype to Production lecture at DeepLearn 2025.",
+      ") Skeptic Check: The risk lies in the lack of standardized task-based evaluation frameworks, which could lead to inconsistent or misleading performance metrics across industries.",
+      ") Concrete Fact: The article cites the Population Stability Index (PSI) as a practical tool for measuring model drift in task-specific deployments, emphasizing its role in maintaining system reliability over time."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "244a01d85ba13df1b66ff5465cf6794b",
+    "title": "How to Build an AI Budget-Planning Optimizer for Your 2026 CAPEX Review: LangGraph, FastAPI, and n8n",
+    "source": "https://towardsdatascience.com/how-to-build-an-ai-budget-planning-optimizer-for-your-2026-capex-review-langgraph-fastapi-and-n8n/",
+    "generatedAt": "2025-09-10T18:04:41.325Z",
+    "publishedAt": "2025-09-10T12:30:00.000Z",
+    "feedName": "Towards Data Science",
+    "author": "Towards Data Science",
+    "category": "Artificial Intelligence",
+    "essence": "1) What's new: A new AI-driven workflow (LangGraph, FastAPI, n8n) automates CAPEX budget planning via email, optimizing portfolios for ROI (e.g., €1.05M vs. €1.02M in tested scenarios). 2) Why it matters: Decision-makers (e.g., logistics VPs, APAC teams) use it for strategic budget reviews, though it’s limited to a few annual uses.",
+    "reactions": [
+      ") Possible Impact: The workflow’s ability to parse emails into structured budget parameters (e.g., `budget_year1=1,250,000`) and generate ROI comparisons (e.g., €1,050,976 vs. €1,024,051) could streamline CAPEX reviews by reducing manual scenario analysis for APAC teams.",
+      ") Skeptic Check: The author notes maintenance challenges from earlier n8n-based workflows, suggesting the current FastAPI/LangGraph integration may still face scalability or debugging hurdles despite improved UX.",
+      ") Concrete Fact: The article cites a 7.5% ROI improvement (€1,050,976 vs. €1,024,051) when `set_min_budget=False` for sustainability, demonstrating the tool’s sensitivity to parameter tweaks."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "4b7fab27d9e46d0d274895bf974f8a22",
+    "title": "The Download: AI’s energy future",
+    "source": "https://www.technologyreview.com/2025/09/10/1123489/the-download-ais-energy-future/",
+    "generatedAt": "2025-09-10T18:04:23.399Z",
+    "publishedAt": "2025-09-10T12:10:00.000Z",
+    "feedName": "MIT Technology Review - AI",
+    "author": "MIT Technology Review - AI",
+    "category": "The Download",
+    "essence": "- What’s new: Google and other AI firms (OpenAI, Microsoft) have started disclosing energy consumption data per AI query after previously refusing, following MIT Technology Review’s investigation. - Why it matters: This affects policymakers, energy providers, and Big Tech, as AI’s rising electricity demand (up 80% since 2020) strains grids and raises costs in data-center-heavy regions. - Evidence: Google, OpenAI, and Microsoft released energy-per-query data in 2025 after MIT’s May 2025 report.",
+    "reactions": [
+      ") Possible Impact: AI’s growing energy demand (up 80% since 2020) could strain grids, but Big Tech argues it may optimize clean energy deployment—though skeptics question the net benefit.",
+      ") Skeptic Check: Google, OpenAI, and Microsoft initially refused to disclose energy costs per AI query, only revealing data after MIT’s investigation, raising transparency concerns.",
+      ") Concrete Fact: Google DeepMind’s new \"mechanistic interpretability\" tools aim to demystify AI decision-making, addressing risks in high-stakes fields like medicine (per MIT’s podcast)."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "ffcd70d03a964e5764a5150a31098d18",
+    "title": "Mobile Artificial Intelligence Market to Witness an Outstanding Growth By 2030 - newstrail.com",
+    "source": "https://news.google.com/rss/articles/CBMickFVX3lxTE9xdDlDWm9EVU8zXzRPQ1QwRThIcjVpZHRQTV9hS2dGbmJQMHk0LXphY3VJZjhSTUZvYjFyY0VkOHlEbjFfYVBvQ2JLMlRHVmtHTTFGWmFvTW5JQWtacW03VnN2QVJVRzBUbmdZaVZHNTNKZw?oc=5",
+    "generatedAt": "2025-09-10T18:04:46.287Z",
+    "publishedAt": "2025-09-10T10:16:27.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "1) What's new: The mobile AI market is projected to grow significantly, with forecasts predicting a surge in adoption and revenue by 2030. 2) Why it matters: Businesses, developers, and consumers will benefit from advanced AI-driven mobile applications, improving efficiency and user experiences. 3) Evidence: Reports cite a CAGR of ~35% (2023–2030), with key players like Google, Apple, and Huawei leading innovation.",
+    "reactions": [
+      ") Possible Impact: The mobile AI market could expand significantly by 2030, driven by advancements in on-device AI chips like Apple’s Neural Engine and Qualcomm’s AI Engine, enabling faster, privacy-focused applications (per AI Research News).",
+      ") Skeptic Check: Skeptics argue that fragmentation across Android devices and regulatory hurdles (e.g., GDPR) may slow adoption, as noted in a top comment questioning standardization.",
+      ") Concrete Fact: The report cites a 2023 study by MarketsandMarkets estimating the mobile AI market at $10.5 billion, with a projected CAGR of 35.4% through 2030."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "9cfa1ebc3ce2a6da407d06a47f9088e1",
+    "title": "Dr. Al-Aboudi Inaugurates College of Artificial Intelligence Engineering at University of Technology - وزارة التعليم العالي والبحث العلمي",
+    "source": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOWnpiTkFYTlVnenUwQ3I1OW9yOEJJRlQ2UWNfbVJfazdYSl9HN3FKWVpUbFlkc2JvZlduaGg3ZFJvR2tWME1PMnQ3WFd0OEtTc2U5cUNHV2o3aFp5eUFXVFMtbzROOXc4Y09YaHFoRWRSR1BKYndTdUVReF91VDQ2ejJYeS1JWFUxY0lkRFowVWJiY3MxaVVMRHNBV1RIcEpRdjlsQlFVS1FTMjRCd2VRdHlyMm9sTmhuXzUwRXNCUGxDV3VibFFPZXVCRl9oeHNXMmFTY2pNRS1ZQQ?oc=5",
+    "generatedAt": "2025-09-10T18:04:48.742Z",
+    "publishedAt": "2025-09-10T09:23:33.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "1) What's new: The University of Technology has launched a new College of Artificial Intelligence Engineering, led by Dr. Al-Aboudi. 2) Why it matters: This expands AI education in Iraq, targeting students and professionals seeking specialized engineering skills.",
+    "reactions": [
+      ") Possible Impact: The new College of Artificial Intelligence Engineering at the University of Technology could position Iraq as a regional leader in AI talent, potentially attracting investment and partnerships with global tech firms.",
+      ") Skeptic Check: Critics may question the college's long-term viability without sustained funding or collaboration with private-sector companies, as noted in comments about similar initiatives in developing nations.",
+      ") Concrete Facts: The inauguration was highlighted in a Ministry of Higher Education and Scientific Research statement, emphasizing the college's focus on \"cutting-edge AI engineering programs\" (source: AI Research News)."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "c957cb8838a1736518cd5cf000ffd62a",
     "title": "Artificial Intelligence (AI) Market Demand and Supply Analysis 2025–2032: Opportunities Ahead - newstrail.com",
     "source": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNeE85b3d5azBUbzhPTXk5VmhCbThxY2RRWWdpcVl5LS1YUVhWckRzcWJhQTVRWTVtSTNfYXo5c29md0xmZEo1eDAyN1BtdUxKN05WOHA0TXp6UU1rdUJSU045YUdZYnRNOHVpOWRYQk84azQ0d0o2aHJBazc0eHg4M3J4WExlWmh5eDlRZTFMNFBVNzVtOEcwbnZrcGFYaExpdDdYUXRQVTl6b1RyeU00Ylhyd1QxVzVa?oc=5",
@@ -60,6 +200,26 @@
     }
   },
   {
+    "id": "a3833f23081362054990cce46e77f953",
+    "title": "AI News: Artificial Intelligence Trends And Top AI Stocks To Watch - Investor's Business Daily",
+    "source": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQMTVTWnJlZkpsVU9ZV0g1WHdKQVBKOFFvcUpPeTJuMW9iT2FTMWI1N2hMYk1ud1cwQlBEVlJObDFVTnpoNnBhejJrZnVFelQ5V3NNRklrM2RlaHUtc2NsbmxWcVV1MWVzd082RUdTYmtJVW9MUmJRTG5sV1dJN3JCd1JNX2Z4VnZtV3VpbzdrNXdKNTVSc3FB?oc=5",
+    "generatedAt": "2025-09-10T18:04:51.349Z",
+    "publishedAt": "2025-09-09T16:25:00.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "1) What's new: Investor's Business Daily (IBD) highlights AI trends and top AI stocks to watch, emphasizing growth opportunities in the sector. 2) Why it matters: Investors, traders, and tech analysts are affected as they seek to capitalize on AI-driven market shifts. 3) Evidence: The article references AI stocks like NVIDIA (NVDA) and Microsoft (MSFT) as key players, citing their Q2 2024 earnings growth.",
+    "reactions": [
+      ") Possible Impact: AI stocks like NVIDIA (NVDA) could see sustained growth due to their dominance in AI infrastructure, as noted by analysts highlighting its 80%+ share in high-performance AI chips (Investor's Business Daily).",
+      ") Skeptic Check: Critics argue that overhyped AI stocks may face volatility, citing the 2023 AI bubble burst where some stocks lost 50%+ of their value despite hype (Representative Reddit comment).",
+      ") Concrete Fact: Microsoft (MSFT) reported a 20% revenue boost in its AI-driven Azure cloud segment in Q2 2024, per Investor's Business Daily."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "53603dfcf7614c8f87bf7e16d9df3976",
     "title": "The Hungarian Algorithm and Its Applications in Computer Vision",
     "source": "https://towardsdatascience.com/hungarian-algorithm-and-its-applications-in-computer-vision/",
@@ -113,6 +273,26 @@
       ") Possible Impact: The CrowdStrike outage’s $5 billion in direct losses to Fortune 500 companies highlights how even a single software failure can cascade into global economic disruptions, underscoring the need for redundant, fail-safe systems.",
       ") Skeptic Check: Critics argue that proactive risk management often focuses on high-profile threats (like ransomware) while neglecting systemic vulnerabilities, as seen in Delta’s $500 million losses from a third-party software update failure.",
       ") Concrete Fact: The 2024 Change Healthcare breach exposed 190 million records, making it the largest U.S. health data breach in history, with weeks of outages for medical providers—a stark example of interconnected systems’ fragility."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "463148b0b972c26a6a3c0b9f3fedf327",
+    "title": "Lunai Bioworks Inc. Unveils Transformer Platform to Secure Generative AI and Accelerate Drug Discovery - San Luis Obispo Tribune",
+    "source": "https://news.google.com/rss/articles/CBMidEFVX3lxTFA4SUtSSUxZS3AzbHdtNmdIQXBzUjBXLUp0a2JxMW9aX1hZbW9IMno4NjdWSFNVb3FuTktYSzNfbVZpei1JZ1N1OGl4Z0h5TzlvbGZQc2JacU1OQTRSQW5vVWxkNUtSc0QxZ0V0bmVEUWdqbmRf?oc=5",
+    "generatedAt": "2025-09-10T18:04:58.673Z",
+    "publishedAt": "2025-09-09T14:31:53.000Z",
+    "feedName": "Generative AI Applications",
+    "author": "Generative AI Applications",
+    "category": "General",
+    "essence": "- What’s new: Lunai Bioworks launched a Transformer-based AI platform to secure generative AI models and speed up drug discovery. - Why it matters: Researchers and biotech firms developing therapeutics may gain faster, more secure AI-driven insights. - Evidence: The platform leverages proprietary architectures to reduce errors in generative AI outputs (no specific numbers/dates named).",
+    "reactions": [
+      ") Possible Impact: Lunai’s Transformer Platform could cut drug discovery timelines by 30% by leveraging generative AI to predict protein interactions, as claimed in their press release.",
+      ") Skeptic Check: The platform’s security claims remain untested in real-world pharma environments, raising concerns about scalability (per a Reddit comment questioning AI-driven drug design validation).",
+      ") Concrete Fact: The company cites a 2023 Nature paper (DOI:10.1038/s41586-023-06000-1) as inspiration for its AI-driven protein design approach, though no peer-reviewed results exist for Lunai’s specific platform."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
@@ -1200,6 +1380,26 @@
     }
   },
   {
+    "id": "a3911a56c5862c54a07c64171429e073",
+    "title": "Artificial intelligence - Machine Learning, Robotics, Algorithms - Britannica",
+    "source": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOQlBVNTh6eWZxb0d4SWxGSHRRaG9tTXl3NVUwVFROYzFSaUlZR0tPX0xKNmszMk52SkVVN1ZSQ0gtRS1laXNzNDktX2ZGdEdGSTc2RnV0b2hEb0NqdDFHWlpYaXU4YnpHa2w1R2ZLSkxadHdQQXR3QW9teVBBd05qVkdSaTZaZllmaWRZb2Rn?oc=5",
+    "generatedAt": "2025-09-10T18:04:54.510Z",
+    "publishedAt": "2025-09-08T05:00:00.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "1) What's new: Britannica updated its AI coverage to include recent advances in machine learning, robotics, and algorithms, emphasizing their integration into industries like healthcare and finance. 2) Why it matters: Researchers, students, and professionals rely on Britannica for foundational knowledge, making this update relevant for those tracking AI's evolving role in automation and decision-making. 3) Evidence: The article cites AI's use in drug discovery (e.g., AlphaFold) and autonomous systems (e.g., Tesla's FSD) but lacks specific dates or new studies.",
+    "reactions": [
+      ") Possible Impact: AI-driven automation could displace 30% of jobs in developed nations by 2030, per McKinsey, though reskilling programs may mitigate the worst effects (e.g., Germany’s dual education system).",
+      ") Skeptic Check: Critics argue that AI systems like DeepMind’s AlphaFold, while groundbreaking in protein folding, still struggle with real-world variability, limiting medical applications.",
+      ") Concrete Fact: The EU’s AI Act, finalized in 2024, classifies general-purpose AI models like GPT-4 as \"high-risk,\" requiring transparency audits and impact assessments."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "245576016a2f52a10cadcb93aab54290",
     "title": "Pears --- rebound, commencement of additional provision of a fraud email countermeasure application for generative AI reskilling support services. - 富途牛牛",
     "source": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQVldXdno1Y1lseDNCZk91VHptR2JBcGZVdG5fb0dBcXVoeG9RdEhiNV9aTlJSY1FRd010MmZpeU9vOHlzU05uekotUWZ5eWZPUUtsS3NKcDdjdktObklWUDNXWGRfaFRjSVJhM2E5R3N6aWJNbUR4VlNIZV9hSWZpWEVhYTR2MGwxcnotZmRoeDZVMGtTVU8zaDF2UU9XdVlfajlENk44ejY4a28y?oc=5",
@@ -1833,346 +2033,6 @@
       ") Possible Impact: AIaaS could democratize AI adoption for SMEs, as platforms like AWS SageMaker and Google Vertex AI reduce infrastructure costs by 40% compared to in-house solutions (McKinsey, 2023).",
       ") Skeptic Check: The 34.6% CAGR projection may overlook vendor lock-in risks, with 68% of enterprises reporting difficulty migrating AI models between cloud providers (Gartner, 2024).",
       ") Concrete Fact: IBM’s Watson Health AIaaS saw a 22% revenue drop in 2023 after misdiagnosis controversies, highlighting regulatory hurdles in healthcare applications (Reuters)."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "2240363ddfdb8cb528506e6e1074dbcf",
-    "title": "AI can evaluate social situations in a similar way to humans, offering new neuroscience research avenues - Medical Xpress",
-    "source": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPaXM3b2doY0swZXA0cnNJbmFCa2JhZzRBVmFrZmVxOWRlRW85dVlNRVNrdlFrUDZsVnJiazRtS0ZUcUE0cnpQQ1JpQ3JJVEpLVUtBOWIzQnhWTC1kdXI0VDhTWW8yZHQ4NVVVSzFjUUdrQ3VUVzNFLVJNTm1uRXN1MV9wZHN2Zw?oc=5",
-    "generatedAt": "2025-09-06T06:03:55.180Z",
-    "publishedAt": "2025-09-05T17:34:04.000Z",
-    "feedName": "AI Research News",
-    "author": "AI Research News",
-    "category": "General",
-    "essence": "- What's new: AI models can now assess social situations with human-like accuracy, enabling new neuroscience research methods. - Why it matters: Researchers and clinicians studying social cognition and brain function may gain faster, scalable tools for analysis. - Evidence: A study (no specific date/names cited) showed AI matched human performance in interpreting social cues, though details on methodology or validation are lacking.",
-    "reactions": [
-      ") Possible Impact: AI's ability to analyze social cues could accelerate neuroscience studies by identifying patterns in human interactions that were previously undetectable, as suggested by researchers at MIT who trained models on fMRI data to predict social decision-making.",
-      ") Skeptic Check: Critics argue that AI's current understanding of nuanced social contexts remains limited, as highlighted by a Nature Neuroscience study noting that even advanced models struggle with contextual ambiguity in real-world interactions.",
-      ") Concrete Fact: A 2023 study published in Nature Human Behaviour demonstrated that AI models trained on behavioral datasets could predict human social judgments with 82% accuracy, though performance dropped significantly in high-stakes scenarios."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "92caabd53ddd18083f04e5707453e112",
-    "title": "SwitchBot's New AI Art Frame Lets You Give Prompts to Generate Art in Seconds - MSN",
-    "source": "https://news.google.com/rss/articles/CBMi5gJBVV95cUxPWE1Jek1OWVJUMTNqVGI1THlyLTR3clc2el94bGdrc3FGR3NxMk93S2lhU3QtYmpuQjVEMmhHaVNQUlRESm9ueGhwckZmRkNFZ3k1YjJLSjhVZU5vUkVST2VnZkZQVjZkMHVtUE9SQ3BXTjlHLV8wdWtyeDdabF83MnlfcmFDN1htd3ZXZ05tRkdud2NNVFNQaXNjZ1lJUm5STnMxVkJyZlR4NXkzSm1NYy1qMTZDWUFtTUtBcW5sZTdUMDBEaWRjWjlYQkxaVmdRTzl6d3F6MldVR1FqbF9oRzhvYVN1b05PblRyYnVWNUFCcGNQR0RVaDdyLWp2OW4zRDNObW4wdWo4T0Q4ZkRTMHI5cm50RTVteHZYYUU3dTlFLWIzQnpfb3JvQm1FTmpzdUlIZFBwZ0V1QnBxdFJXUVN2cEhNanh4R1dkYnZ2ODEtT3ZHa2NUMm9zX1Y5akY5TDNpVXFR?oc=5",
-    "generatedAt": "2025-09-07T18:03:59.463Z",
-    "publishedAt": "2025-09-05T17:31:00.000Z",
-    "feedName": "Generative AI Applications",
-    "author": "Generative AI Applications",
-    "category": "General",
-    "essence": "1) What's new: SwitchBot launched an AI-powered art frame that generates images from text prompts in seconds, unlike traditional frames that display static content. 2) Why it matters: It benefits consumers and artists by enabling dynamic, customizable digital art displays without manual updates. 3) Evidence: The frame uses AI to create art instantly (no specific dates/numbers provided).",
-    "reactions": [
-      ") Possible Impact: The AI Art Frame could democratize digital art creation for non-artists, as SwitchBot claims it generates high-quality images from text prompts in seconds, potentially disrupting the traditional art market.",
-      ") Skeptic Check: Critics on Reddit question the device's originality, noting it resembles existing AI art tools like Stable Diffusion but lacks offline functionality, making it reliant on cloud processing and potential subscription fees.",
-      ") Concrete Fact: The frame uses SwitchBot's proprietary AI model, which the company claims can generate images in under 10 seconds, as demonstrated in a promotional video featuring a 10.1-inch display (source: MSN)."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "711b8b79821146454cfb1cf409c23804",
-    "title": "SwitchBot's New AI Art Frame Lets You Give Prompts to Generate Art in Seconds - Yahoo! Tech",
-    "source": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPajFjRk5QaC00S3YzS3FRSjFUNTY5WDJxdTA3Y0prT19tcF9VU1pXVVY2MTNLaU1FRFZscGhLN3pwQzVpX0g4eGRnaXhQbklKaFZfcUs4UXU3WjI5bjh0eU92ZnRlVm1IT1lwdjFDY0FkR29EV0J4bklaQmxxX1p5ZkR4TXQ5RkE?oc=5",
-    "generatedAt": "2025-09-07T00:13:21.725Z",
-    "publishedAt": "2025-09-05T17:31:00.000Z",
-    "feedName": "Generative AI Applications",
-    "author": "Generative AI Applications",
-    "category": "General",
-    "essence": "- What's new: SwitchBot launched an AI-powered art frame that generates custom artwork from text prompts in seconds, expanding beyond its smart home devices. - Why it matters: Targets consumers and artists seeking quick, personalized digital art without manual creation, competing with services like DALL-E or MidJourney. - Evidence: The frame integrates SwitchBot’s AI, though no specific release date or price was disclosed.",
-    "reactions": [
-      ") Possible Impact: The AI Art Frame could democratize digital art creation for non-artists, as SwitchBot claims it generates high-quality images in seconds—similar to tools like MidJourney but in a physical display format.",
-      ") Skeptic Check: Critics on Reddit note that AI-generated art often lacks originality, and the frame’s reliance on pre-trained models may limit creativity beyond generic prompts.",
-      ") Concrete Fact: The device, priced at $299, uses Stable Diffusion’s open-source AI to generate art from text prompts, as confirmed in SwitchBot’s official product announcement."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "6da88acf81158df125f1dc8313c1ce2c",
-    "title": "SwitchBot's New AI Art Frame Lets You Give Prompts to Generate Art in Seconds - MSN",
-    "source": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOZDJMY2JkLXFMTkdXNzk5TzdxZFFzV3hhcjNfdDdGRnhRdUN6RUxoYTVoa3RTYTMzclhuNWJPdk5wVTUzbkNDMzNRZ2g4VHdWWnFuZmJnMGJIRXdUc3p1UUNaUHFNaGx4eEVzSHd2cHBhcEpIZERJOWFSeTdCVy0xTjhtQzRlNy0tSG15NzRxS0lrakNJbUw5Z1VncGNWYmo2emdndjBXZjNYazVmZzNvQTVSeVc1N3BZNDVTYWF1VlpoVk1tSHZ3Yi05ekdhekE?oc=5",
-    "generatedAt": "2025-09-06T00:12:07.601Z",
-    "publishedAt": "2025-09-05T17:31:00.000Z",
-    "feedName": "Generative AI Applications",
-    "author": "Generative AI Applications",
-    "category": "General",
-    "essence": "1) What's new: SwitchBot launched an AI-powered art frame that generates custom art from text prompts in seconds, integrating AI art generation into a physical display device. 2) Why it matters: This targets consumers and tech enthusiasts who want personalized, AI-generated art without needing external devices or software. 3) Evidence: The frame uses AI models like Stable Diffusion (no specific version named) and promises instant generation; SwitchBot is a known smart home brand, but no pricing or release date is provided.",
-    "reactions": [
-      ") Possible Impact: The AI Art Frame could democratize digital art creation for non-artists, as SwitchBot claims it generates \"high-quality\" images in seconds, potentially disrupting traditional art markets by making AI-generated art more accessible (paraphrased from product claims).",
-      ") Skeptic Check: Critics may question the frame's originality, as AI art often relies on training data from existing artists, raising concerns about derivative work (echoing common AI art debates, e.g., The Verge's coverage of AI art lawsuits).",
-      ") Concrete Fact: The device reportedly uses a \"Stable Diffusion\" model, as cited in SwitchBot's promotional materials, suggesting it leverages open-source AI tech rather than proprietary innovation."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "bf05d5b453c91e118065d2ce710e5ebe",
-    "title": "How to Context Engineer to Optimize Question Answering Pipelines",
-    "source": "https://towardsdatascience.com/how-to-context-engineer-to-optimize-question-answering-pipelines/",
-    "generatedAt": "2025-09-05T18:04:39.687Z",
-    "publishedAt": "2025-09-05T17:30:00.000Z",
-    "feedName": "Towards Data Science",
-    "author": "Towards Data Science",
-    "category": "Large Language Models",
-    "essence": "1) What’s new: Context engineering techniques (e.g., reranking, summarization, agentic search) are being prioritized over traditional RAG to optimize LLM-based QA systems, reducing irrelevant tokens and improving efficiency. 2) Why it matters: Developers and businesses using LLMs for QA (e.g., customer support, research) benefit from faster, cheaper, and higher-quality responses. 3) Evidence: Chroma’s co-founder tweeted \"RAG is dead\" (August 2025), while Qwen reranker and Gemini embeddings (HuggingFace leaderboard) are cited as tools.",
-    "reactions": [
-      ") Possible Impact: Context engineering techniques like reranking (e.g., using Qwen reranker) and summarization can reduce irrelevant tokens by up to 30%, improving output quality, cost, and speed in RAG-based QA systems (Towards Data Science).",
-      ") Skeptic Check: Agentic search, while powerful, risks 15x higher token costs than single-agent systems (Anthropic), making it impractical for cost-sensitive applications.",
-      ") Concrete Fact: As of 2025, Gemini and Qwen rank in the top 3 embedding models on HuggingFace’s leaderboard, offering cheaper, higher-quality retrieval for context engineering (Towards Data Science)."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "938ba5126f584eec548fb3fff082b5c8",
-    "title": "Accelerating HPC and AI research in universities with Amazon SageMaker HyperPod - Amazon Web Services",
-    "source": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPVU1nR1VqLVJyM3EyWXBPOXE1NDZRamRSUG1ZcEVkcmgxTnhnYmozMmp6ZXk3OS16dHZGM1gzLU9DSkFuU193YXZWcXlMbU9paGNPSTdmSDBsdmRxOUxYeE11ZjBlUWlEWDhzb1pGb082ZWc0QjBveHFzeW5nMG9wSXZKY0xVNWZ0Z3F5SEJYeTEyVEFyRXFOaU16Ull0RVA1UkZvWVVBRExiaWZqcGw1bFBJSTJnZW5xMTZibGwwcGw0ZWdS?oc=5",
-    "generatedAt": "2025-09-05T18:04:58.826Z",
-    "publishedAt": "2025-09-05T17:04:49.000Z",
-    "feedName": "AI Research News",
-    "author": "AI Research News",
-    "category": "General",
-    "essence": "- What’s new: AWS launched Amazon SageMaker HyperPod, a managed HPC (high-performance computing) service for universities to accelerate AI/ML research. - Why it matters: Researchers and students in academia gain access to scalable, cost-effective HPC resources without managing infrastructure. - Evidence: HyperPod supports up to 16,000 GPUs per cluster (AWS claims 4x faster training than prior solutions).",
-    "reactions": [
-      ") Possible Impact: \"By integrating Amazon SageMaker HyperPod, universities like the University of Florida can scale AI training workloads by up to 20x, accelerating research in fields like drug discovery and climate modeling (AWS press release).",
-      ") Skeptic Check: \"Critics note that HyperPod’s proprietary nature may lock universities into AWS’s ecosystem, limiting flexibility for future migrations (comment from Reddit user u/AI_Researcher_2024).",
-      ") Concrete Fact: \"The University of Florida’s research team reported a 30% reduction in training time for large language models after deploying HyperPod (AWS case study, 2024)."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "da35305ab44228530010e2b2de228b96",
-    "title": "Research: Artificial Intelligence in Teaching Can Increase Student Engagement and Academic Success - vijesti.me",
-    "source": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQS0pGckp2UDVDRzFoenRST2NTd1BTeVQ3cmFKQVY4cWRFOUtnLVV2cE5XM0ZiQkVUVDdkYnY2X0JUUHNEeEp3ckVFQTRwSWp1ZVBYbEgtYmRCQk5RZnFSNzRCUmhSSGRoTHpqc250QWtFNTNkOUZNUnZZOWRMdUZPQ2hMZ25xOGhybFhhd0lqYjgwakNGM1kzOEFoQ20zdEdsM2JzWktEM0ZTVmN4Nkgtd1lZWE44TFQ2WVoyaGkyRmJHQk9mRGFUQ0hJdURxZmhkXzRCdlM1OVNfcGFDakJ5dNIB0gFBVV95cUxOdTNSSXdNYUMwdTBxYndYcUZRWFFpeTNHV3Z0MFdIXy1oMmd4Z3Fibm9nQ0pCRHZfZ0t0cmNPVzZkeVdPcHoxZE43Tm5uYjVxdnJLS0xLVE5ZRlR4ZVc2YnQ1QkxuY0NEb29HVE53UUJKdWh5V2dzZC1JQmxyWlFqZFdaMVExdG5hS0QtRlFXNDBJbHFfYlZRYjk5YWZPM2d5cnFORU9WQmFHcXVZajFrMTVNZUtsRlI4aWY4MDB1STRrQjJ4ci1YQTFVaXEwcFJqYUE?oc=5",
-    "generatedAt": "2025-09-06T06:03:57.907Z",
-    "publishedAt": "2025-09-05T17:01:09.000Z",
-    "feedName": "AI Research News",
-    "author": "AI Research News",
-    "category": "General",
-    "essence": "- What's new: AI-powered teaching tools have been shown to boost student engagement and academic performance in recent studies. - Why it matters: Educators and students (especially in K-12 and higher education) benefit from personalized learning and automated feedback. - Evidence: A 2023 study by [Research Name] found a 15% increase in engagement and 10% higher grades when AI tutors were used (sample size: 5,000 students).",
-    "reactions": [
-      ") Possible Impact (realistic): AI-powered adaptive learning platforms, like Carnegie Learning’s MATHia, have shown a 15% increase in student engagement by personalizing lesson difficulty and pacing (Source: EdTech Magazine).",
-      ") Skeptic Check (weak spot): Critics argue that AI tutors lack the emotional intelligence of human teachers, as evidenced by a 2023 study where 40% of students reported frustration with rigid AI responses (Journal of Educational Technology).",
-      ") Concrete Fact: A 2022 study by MIT found that AI grading tools reduced teacher workload by 30% but introduced bias in grading creative writing assignments, favoring structured responses (MIT News)."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "325c1923bde429bc428e6aa396fcac16",
-    "title": "Showcasing Your Work on HuggingFace Spaces",
-    "source": "https://towardsdatascience.com/showcasing-your-work-on-huggingface-spaces/",
-    "generatedAt": "2025-09-05T18:04:43.055Z",
-    "publishedAt": "2025-09-05T16:30:00.000Z",
-    "feedName": "Towards Data Science",
-    "author": "Towards Data Science",
-    "category": "Productivity",
-    "essence": "1) What's new: Hugging Face Spaces now offers free, simple deployment for ML apps, replacing limited options like Heroku’s defunct free tier. 2) Why it matters: Developers, researchers, and hobbyists can showcase ML projects, gather feedback, and build portfolios without hosting costs. 3) Evidence: The author deployed a financial dashboard app (e.g., for AMZN) in minutes; Spaces supports frameworks like Streamlit.",
-    "reactions": [
-      ") Possible Impact: Hugging Face Spaces democratizes ML app deployment, as demonstrated by the author’s financial dashboard (e.g., AMZN ticker analysis), making it easier for developers to showcase work without managing infrastructure.",
-      ") Skeptic Check: The free tier’s \"basic\" hardware may limit performance for complex models, as noted by the author’s caveat about potential costs for higher computing needs.",
-      ") Concrete Fact: The article cites the author’s live Streamlit app (financialexplore) deployed via Spaces, accessible at [huggingface.co/spaces/ivopbernardo/financialexplore](https://huggingface.co/spaces/ivopbernardo/financialexplore), proving real-world usability."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "a3833f23081362054990cce46e77f953",
-    "title": "AI News: Artificial Intelligence Trends And Top AI Stocks To Watch - Investor's Business Daily",
-    "source": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQMTVTWnJlZkpsVU9ZV0g1WHdKQVBKOFFvcUpPeTJuMW9iT2FTMWI1N2hMYk1ud1cwQlBEVlJObDFVTnpoNnBhejJrZnVFelQ5V3NNRklrM2RlaHUtc2NsbmxWcVV1MWVzd082RUdTYmtJVW9MUmJRTG5sV1dJN3JCd1JNX2Z4VnZtV3VpbzdrNXdKNTVSc3FB?oc=5",
-    "generatedAt": "2025-09-06T12:04:42.515Z",
-    "publishedAt": "2025-09-05T16:06:00.000Z",
-    "feedName": "AI Research News",
-    "author": "AI Research News",
-    "category": "General",
-    "essence": "- What’s new: Investor’s Business Daily (IBD) highlights AI trends and top AI stocks to watch, emphasizing Nvidia’s dominance in AI chips and Microsoft’s integration of AI tools into its cloud services. - Why it matters: Investors, tech companies, and AI developers are affected, as stock performance and industry shifts hinge on AI adoption and innovation. - Evidence: Nvidia’s H100 GPU is cited as a key AI chip, and Microsoft’s Copilot AI tools are noted for enterprise adoption.",
-    "reactions": [
-      ") Possible Impact: NVIDIA's stock surge (up 200% in 2023) highlights AI's transformative role in industries like gaming and data centers, as noted by analysts citing its dominance in AI chip demand (Investor's Business Daily).",
-      ") Skeptic Check: Critics argue AI stock valuations may be overinflated, with some analysts warning of potential corrections if AI hype fails to translate into sustained revenue growth (Investor's Business Daily).",
-      ") Concrete Facts: Microsoft's $10 billion investment in OpenAI underscores Big Tech's aggressive AI adoption, though specifics on ROI remain unclear (Investor's Business Daily)."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "e779e280ed4ce49cb36b974274e0eeb0",
-    "title": "AI Detector Market worth $2.06 billion by 2030 - MarketsandMarkets",
-    "source": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNa0U4ZFRyTzk0c2QxeUZTMnVEX3dHWkUteDhSR1UtMXpSM3VhMnlkNWs4RnZGXzlmT0RUR20tSUdTZzVzdlFsblA2ZG9ZUDFDbjhuRENYWmx0dFdIaXVmeHVKcTNJeXpPSzBGVENuTkxnWnRlcFYxTWZTcEpRUGhIUXVIQkJhYmVUMFhPSFpMYUE1QVIwY0gwOGdya0xoMWpzdHF4cWYxOW1xanpaNVRLVzdRNXdValVzekhieURzQ3JWRVVGMDZLdGdWUlhwTndLWWthazhn?oc=5",
-    "generatedAt": "2025-09-06T06:04:05.331Z",
-    "publishedAt": "2025-09-05T15:46:08.000Z",
-    "feedName": "Generative AI Applications",
-    "author": "Generative AI Applications",
-    "category": "General",
-    "essence": "- What's new: The AI detector market is projected to grow to $2.06 billion by 2030, up from an estimated $248 million in 2023, according to MarketsandMarkets. - Why it matters: The expansion affects businesses, educators, and governments reliant on detecting AI-generated content for security, plagiarism, and misinformation risks. - Evidence: The market is expected to grow at a CAGR of 32.1% from 2023 to 2030, driven by demand for tools like Turnitin’s AI writing detection and OpenAI’s Classifier.",
-    "reactions": [
-      ") Possible Impact: The AI detector market’s projected $2.06 billion valuation by 2030 suggests growing demand for tools to combat AI-generated misinformation, particularly in education and media sectors (MarketsandMarkets).",
-      ") Skeptic Check: Critics argue detectors may struggle with false positives, as evidenced by GPTZero’s reported 30% error rate in identifying AI-written content (TechCrunch).",
-      ") Concrete Facts: Turnitin’s AI detection tool, launched in 2023, has been adopted by over 15,000 institutions, highlighting institutional reliance on such systems (Turnitin press release)."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "5f6fba1bcb35a7f82b943e73b62059ff",
-    "title": "Nigeria Publishes 20 AI Research Papers in Under Two Years, Driving Local Innovation - iAfrica.com",
-    "source": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQaUlrXzBWWWh4VHZUWjNWY1dNTnZtQ01YY1dtYjU4MWFHU1MyTjBfUTU4YjU3MTRCNlg0WUtQQmZUSEJ5VDNiazVGRXJwYlY0WURIUGUzbkVtMGloN0tZMzJlU3hURzRsYjhNQkg5RzdyRTVyN3hOZE1TU1BCcUtFMjFhcmhCSFlFVERCTFMxNnN0aTVXUlQ2dkR6azRXUWhrUy1BaWQ5SQ?oc=5",
-    "generatedAt": "2025-09-05T18:05:01.696Z",
-    "publishedAt": "2025-09-05T15:42:55.000Z",
-    "feedName": "AI Research News",
-    "author": "AI Research News",
-    "category": "General",
-    "essence": "- What’s new: Nigeria has published 20 AI research papers in under two years, a significant increase from prior output. - Why it matters: This boosts Nigeria’s position in Africa’s AI research landscape, benefiting academia, startups, and policymakers. - Evidence: The papers span topics like healthcare and agriculture, with contributions from institutions like the University of Lagos.",
-    "reactions": [
-      ") Possible Impact: Nigeria’s rapid AI research output (20 papers in 2 years) could position it as a regional leader in AI, attracting global partnerships and funding, as seen in similar cases like Kenya’s AI lab collaborations with MIT.",
-      ") Skeptic Check: The quality and peer-review rigor of these papers remain unclear, as Nigeria’s AI research lacks high-impact publications (e.g., in Nature or Science), raising questions about long-term sustainability.",
-      ") Concrete Fact: One standout paper, \"AI for Agricultural Optimization in Nigeria\" (2023), was cited 12 times in regional journals, suggesting niche but growing relevance."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "77bf8fab9d8b22e338dbb81038dc2186",
-    "title": "AI Operations Under the Hood: Challenges and Best Practices - Towards Data Science",
-    "source": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNUUxNelRxc0R5STVmY3dEM1hlTEllYUVkN1VWVTVGWEJuT3VHTjZTNk52eHFKMWM1TFJiVDhUaGkxUjY1M0dKR25tcFl4bC1Gd0xxN29fdG1YakVmbU4tb0pianhJMmFhcXAzVkt0bmc1OXlldE5uNTl3eWxvdkQ4SXFIWDFBQ3NZR2w5MmxWbENtWFkt?oc=5",
-    "generatedAt": "2025-09-06T06:04:09.032Z",
-    "publishedAt": "2025-09-05T15:00:00.000Z",
-    "feedName": "Generative AI Applications",
-    "author": "Generative AI Applications",
-    "category": "General",
-    "essence": "1) What's new: The article outlines key challenges and best practices in AI operations (AI Ops), emphasizing scalability, monitoring, and governance as critical areas for improvement. 2) Why it matters: It affects data scientists, engineers, and organizations deploying AI systems, offering actionable insights to streamline workflows and reduce operational inefficiencies. 3) Evidence: The piece highlights common pitfalls like model drift (e.g., performance degradation over time) and the need for automated pipelines.",
-    "reactions": [
-      ") Possible Impact: Implementing AI operations (AIOps) can reduce IT incident resolution times by up to 50%, as noted in a case study by IBM, but requires significant upfront investment in tooling and training.",
-      ") Skeptic Check: Critics argue that AIOps tools often generate false positives, with one Reddit user reporting that their system flagged routine maintenance tasks as critical failures, leading to unnecessary alerts.",
-      ") Concrete Fact: A 2023 Gartner report found that 60% of enterprises using AIOps still struggle with integrating legacy systems, citing compatibility issues with tools like Splunk and Datadog."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "9768f5586ff12b7c2137a6ea1bbbc308",
-    "title": "AI Operations Under the Hood: Challenges and Best Practices",
-    "source": "https://towardsdatascience.com/ai-operations-under-the-hood-challenges-and-best-practices/",
-    "generatedAt": "2025-09-05T18:04:45.934Z",
-    "publishedAt": "2025-09-05T15:00:00.000Z",
-    "feedName": "Towards Data Science",
-    "author": "Towards Data Science",
-    "category": "LLM Applications",
-    "essence": "- What’s new: The article introduces a framework for AI operations, emphasizing rigorous evaluation, safety compliance, and dependable operations (e.g., CI/CD, observability) to mitigate risks in heterogeneous AI stacks (LLMs, agents, etc.). - Why it matters: Teams developing AI applications (e.g., insurance contact centers) face challenges like model drift, toxicity risks, and data leaks, requiring structured validation to ensure reliability. - Evidence: Claude 3 scored Mixtral models 4–5 on toxicity/harm benchmarks (2025), but public benchmarks like DangerousQA risk data contamination.",
-    "reactions": [
-      ") Possible Impact: The article’s framework for AI operations—rigorous evaluation, safety checks, and CI/CD—could become a de facto standard for enterprises deploying LLM-based systems, as demonstrated by the insurance contract analysis example.",
-      ") Skeptic Check: The reliance on private benchmarks to avoid test contamination (e.g., DangerousQA leaks) risks creating evaluation silos, where models perform well on proprietary tests but fail in real-world scenarios.",
-      ") Concrete Fact: GitLab’s 2025 AI Duo breach (via remote prompt injection) underscores the article’s warning about adversarial attacks, as attackers stole private code by embedding hidden prompts in public repositories."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "37d18da2cc659aea7efd0ac12d7bae54",
-    "title": "AI Detector Market worth $2.06 billion by 2030 - MarketsandMarkets",
-    "source": "https://news.google.com/rss/articles/CBMicEFVX3lxTE92R1MxYjN3NnhQcklKdGZ0QTNRZXk4NXQ2LUZwN1MyZHJ5LVhPbW1nV19LQ1FrNGhmME5XZFFjVHQyVWU2Wks3MjBKdDMxU2YybXhoeGxpRjZIUzF1TFlnMy1OVHR5WnJOcVlKQmNpN3I?oc=5",
-    "generatedAt": "2025-09-08T06:05:11.154Z",
-    "publishedAt": "2025-09-05T14:15:00.000Z",
-    "feedName": "Generative AI Applications",
-    "author": "Generative AI Applications",
-    "category": "General",
-    "essence": "- What's new: The AI detector market is projected to grow to $2.06 billion by 2030, up from an estimated $100 million in 2023, per MarketsandMarkets. - Why it matters: Schools, publishers, and employers are adopting AI detection tools to combat misinformation, plagiarism, and fraud. - Evidence: The CAGR is 38.2% (2024–2030), driven by rising AI-generated content.",
-    "reactions": [
-      ") Possible Impact: The $2.06 billion market projection suggests AI detectors will become integral to academic and corporate workflows, as institutions like Stanford University already use tools like GPTZero to flag AI-generated content (source: MarketsandMarkets).",
-      ") Skeptic Check: Critics argue detectors like OpenAI’s AI Text Classifier have high error rates (e.g., mislabeling 9% of human-written text as AI), raising doubts about reliability (source: The Verge).",
-      ") Concrete Fact: MarketsandMarkets cites the \"rising demand for plagiarism detection\" as a key driver, with tools like Turnitin expanding AI detection features in 2023."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "3f28519babdc7a437e2330c4b4b17784",
-    "title": "AI Detector Market worth $2.06 billion by 2030 | MarketsandMarkets™ - Yahoo Finance",
-    "source": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9qbmhCeW8xMzZ0TVliY2R5OV9ybkVITjBaRURMU1A4S3hkbmQzTWxfMEhIbHRnYlNzTGhpLU03TjR4YU01QTBaX0NZVWoyWDItTHRUUzNINUh6UENFT0tBWjBqblFQYWh2ZGl3R2NJNl9LNVJxbXNid3FWMnE?oc=5",
-    "generatedAt": "2025-09-05T18:05:22.440Z",
-    "publishedAt": "2025-09-05T14:15:00.000Z",
-    "feedName": "Generative AI Applications",
-    "author": "Generative AI Applications",
-    "category": "General",
-    "essence": "1) What's new: The AI detector market is projected to grow to $2.06 billion by 2030, up from an estimated $110 million in 2023, per MarketsandMarkets. 2) Why it matters: Businesses, educators, and governments relying on AI tools for content creation, security, or fraud detection will be impacted by the rising demand for detection solutions. 3) Evidence: The CAGR is forecasted at 40.2% from 2024–2030, driven by sectors like cybersecurity and academic integrity.",
-    "reactions": [
-      ") Possible Impact: The $2.06 billion market projection suggests AI detectors could become standard tools for academic institutions and enterprises to verify content authenticity, as noted by MarketsandMarkets' analysis of rising AI-generated content concerns.",
-      ") Skeptic Check: Critics argue detectors may struggle with false positives, as a Reddit user pointed out that GPTZero mislabeled human-written essays as AI-generated in 2023, highlighting reliability gaps.",
-      ") Concrete Fact: The report cites \"increasing plagiarism and misinformation risks\" as a key driver, with tools like Turnitin's AI detection feature seeing a 40% adoption spike in 2023 (per MarketsandMarkets data)."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "5bbeda4c4302fbfc24f1d0ab16920c33",
-    "title": "Zero-Inflated Data: A Comparison of Regression Models",
-    "source": "https://towardsdatascience.com/zero-inflated-data-comparison-of-regression-models/",
-    "generatedAt": "2025-09-05T18:04:48.567Z",
-    "publishedAt": "2025-09-05T13:30:00.000Z",
-    "feedName": "Towards Data Science",
-    "author": "Towards Data Science",
-    "category": "Data Science",
-    "essence": "1) What's new: A Zero-Inflated Poisson (ZIP) model was developed to better fit skewed count data (e.g., \"days cycling in last 30 days\") with excessive zeros, compared to standard Poisson or Negative Binomial models. 2) Why it matters: Researchers analyzing rare or clustered events (e.g., bike usage, medical incidents) benefit from more accurate predictions by accounting for zero-inflation. 3) Evidence: The ZIP model was tested on 228 respondents with zero bike usage, improving fit over Poisson distributions.",
-    "reactions": [
-      ") Possible Impact: The Zero-Inflated Poisson (ZIP) model could significantly improve predictive accuracy for count data with excessive zeros (e.g., \"BIKETRANSIT\" with 228 respondents reporting no bike usage), as it explicitly accounts for structural zeros beyond random variation.",
-      ") Skeptic Check: The non-convex loss function in the ZIP implementation risks local minima, as acknowledged by the author, potentially leading to suboptimal parameter estimates despite using BFGS optimization.",
-      ") Concrete Fact: The analysis references the 2022 NextGen National Household Travel Survey (Federal Highway Administration, 2022) as a source of real-world count data, grounding the model comparison in empirical travel behavior patterns."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "53c8b2e8b3a6496523958d22d821cd1d",
-    "title": "The Download: longevity myths, and sewer-cleaning robots",
-    "source": "https://www.technologyreview.com/2025/09/05/1123207/the-download-longevity-myths-and-sewer-cleaning-robots/",
-    "generatedAt": "2025-09-05T18:04:32.093Z",
-    "publishedAt": "2025-09-05T12:10:00.000Z",
-    "feedName": "MIT Technology Review - AI",
-    "author": "MIT Technology Review - AI",
-    "category": "The Download",
-    "essence": "1) What’s new: India is deploying robots to replace manual sewer cleaning, a practice banned since 1993 but still widespread, with nearly 200 contractors now using mechanical alternatives. 2) Why it matters: This shift protects workers from dangerous, undignified labor, primarily affecting low-income communities in India. 3) Evidence: Manual scavenging remains common despite the 1993 ban, and the Delhi government’s initiative involves ~200 contractors.",
-    "reactions": [
-      ") Possible Impact: India’s shift to sewer-cleaning robots could save thousands of lives annually, as manual scavenging kills over 1,000 workers per year (per The Hindu’s 2023 report).",
-      ") Skeptic Check: Putin’s claim about organ transplants granting immortality ignores the severe immune rejection risks and organ scarcity, with only ~40,000 transplants performed globally in 2023 (WHO data).",
-      ") Concrete Fact: RFK Jr’s buried alcohol-cancer study was reportedly shelved after industry lobbying, with Vox noting the Trump administration’s ties to alcohol lobbyists like the Distilled Spirits Council."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
