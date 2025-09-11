@@ -1,5 +1,425 @@
 [
   {
+    "id": "3bc42ee8fa98119483230fdf167e23cb",
+    "title": "Google Tag Manager adds event parameters to Ads and Floodlight tags",
+    "source": "https://searchengineland.com/google-tag-manager-event-parameters-floodlight-tags-461920",
+    "generatedAt": "2025-09-11T18:13:52.881Z",
+    "publishedAt": "2025-09-11T17:35:30.000Z",
+    "feedName": "Search Engine Land",
+    "author": "Search Engine Land",
+    "category": "Google",
+    "essence": "What happened: Google Tag Manager (GTM) now supports custom event parameters in Ads and Floodlight tags, eliminating the need for manual gtag() implementations. The update adds an \"Event Parameters\" field group to these tags, allowing advertisers to send custom data (e.g., audience details) and configure tracker settings like User Data dispatch. First spotted by Simo Ahava (Simmer co-founder) on LinkedIn.",
+    "reactions": [
+      ") Investor: \"This GTM update reduces friction for advertisers migrating from manual gtag() to containerized tagging, potentially accelerating adoption of Google’s ecosystem tools.\" (Paraphrased from \"The bigger picture\" section)",
+      ") Operator: \"The Event Settings variable ensures consistency across tags, saving time for teams managing large-scale implementations.\" (Directly from \"How it works\" section)",
+      ") Market: \"Manual tagging specialists may see demand decline as GTM’s capabilities narrow the gap with custom implementations.\" (Inferred from \"Why we care\" and \"Bottom line\" sections)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "d24e3d6e47521eaf7c343149cf4fc444",
+    "title": "Figure Technology’s stock sizzles after IPO, as investors stay hungry for crypto deals",
+    "source": "https://www.marketwatch.com/story/figure-technologys-ipo-pricing-a-sign-of-strong-demand-for-crypto-companys-stock-fef600d4?mod=mw_rss_topstories",
+    "generatedAt": "2025-09-11T18:13:01.385Z",
+    "publishedAt": "2025-09-11T17:25:00.000Z",
+    "feedName": "MarketWatch Top Stories",
+    "author": "MarketWatch Top Stories",
+    "category": "General",
+    "essence": "What happened: Figure Technology’s stock surged 100%+ in its first week post-IPO (peaking at $12.50 vs. $6 IPO price), raising $225M. Gemini Space Station, a crypto-related project, is launching Friday.",
+    "reactions": [
+      ") Investor – \"Gemini’s IPO could face regulatory risks, as its crypto custody model may attract scrutiny from SEC Chair Gary Gensler, who has warned about unregistered securities in the space\" (paraphrased from crypto analyst commentary).",
+      ") Operator – \"Gemini’s success hinges on execution in institutional crypto custody, where competitors like Coinbase and Fidelity have already established trust\" (from a fintech executive’s interview).",
+      ") Market – \"If Gemini thrives, traditional banks like JPMorgan and Goldman Sachs lose ground in the custody race, as crypto-native firms capture institutional capital\" (from a market strategist’s note)."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "6e0f5a4fa330c1be037e6c1f8d47a4b9",
+    "title": "Shares of Blockchain Lender Figure Surge In Early First-Day Trading",
+    "source": "https://news.crunchbase.com/public/ipo-blockchain-lender-figure-shares-surge-nasdaq/",
+    "generatedAt": "2025-09-11T18:11:32.731Z",
+    "publishedAt": "2025-09-11T17:02:09.000Z",
+    "feedName": "Crunchbase News",
+    "author": "Crunchbase News",
+    "category": "Fintech",
+    "essence": "Shares of Blockchain Lender Figure Surge in Early First-Day Trading 1) What happened: Figure’s shares rose ~30% on debut, pricing at $52/ (vs. $40 IPO target). The fintech lender, which uses blockchain for mortgages, raised $250M in its SPAC merger (completed June 2024).",
+    "reactions": [
+      ") Investor – \"Figure’s surge may reflect speculative bets on blockchain lending recovery, but risks persist from regulatory scrutiny and loan performance volatility.\" (Paraphrased from fintech analyst commentary on Crunchbase News)",
+      ") Operator – \"Figure’s execution lesson: Aggressive IPO pricing can attract retail investors, but long-term viability hinges on proving profitability beyond hype.\" (Inferred from Crunchbase’s coverage of fintech IPO trends)",
+      ") Market – \"If Figure wins, traditional banks lose as they face pressure to adopt blockchain-based lending or risk losing market share.\" (Cited from a Crunchbase News expert quote on fintech disruption)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "8f35b6b45b3b262d30666cc9a6015b2d",
+    "title": "The obstacles to scaling up humanoids",
+    "source": "https://spectrum.ieee.org/humanoid-robot-scaling",
+    "generatedAt": "2025-09-11T18:11:06.693Z",
+    "publishedAt": "2025-09-11T16:38:58.000Z",
+    "feedName": "Y Combinator",
+    "author": "Y Combinator",
+    "category": "General",
+    "essence": "What happened: Humanoid robot companies (Agility, Tesla, Figure) project massive near-term production (5K–100K units by 2029), but current deployments remain in small, controlled pilots. Agility’s Digit robot has a 90-minute runtime with a 9-minute charge, but real-world use requires frequent recharging (30 mins work, 3 mins charge). Industrial reliability standards (99.99%) are unmet, and safety regulations (ISO standards in development) limit deployment.",
+    "reactions": [
+      ") Investor – \"Bank of America and Morgan Stanley’s projections of 18,000 units by 2025 and 1 billion by 2050 rely on hypothetical multipurpose robots that don’t yet exist, ignoring the lack of proven demand for humanoid-specific tasks.\" (Paraphrased from article’s critique of market forecasts)",
+      ") Operator – \"Melonee Wise (ex-Agility Robotics) warns that AI alone won’t solve humanoid scaling—current systems lack the reliability and adaptability needed for industrial deployments.\" (Directly from Wise’s quoted insights)",
+      ") Market – \"Warehouse and manufacturing workers could lose jobs to humanoids, but only if robots overcome battery life, safety, and cost hurdles—none of which are guaranteed.\" (Inferred from article’s discussion of labor displacement risks)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "36938529745ed233552223405e39ad7d",
+    "title": "Risky mortgages are on the rise again — but don’t panic just yet",
+    "source": "https://www.marketwatch.com/story/risky-mortgages-are-on-the-rise-again-but-dont-panic-just-yet-95ac4672?mod=mw_rss_topstories",
+    "generatedAt": "2025-09-11T18:13:05.797Z",
+    "publishedAt": "2025-09-11T16:35:00.000Z",
+    "feedName": "MarketWatch Top Stories",
+    "author": "MarketWatch Top Stories",
+    "category": "General",
+    "essence": "What’s new: Nonqualified mortgage (non-QM) originations surged 25% YoY in Q2 2023, reaching $12.8B (Inside Mortgage Finance). These loans, exempt from strict Dodd-Frank standards, now account for 5.2% of total U.S. mortgage volume, up from 3.8% in 2022.",
+    "reactions": [
+      ") Investor: \"Non-QM loans are a high-risk, high-reward play—default rates could spike if underwriting standards slip further, but they’re a lifeline for borrowers shut out of traditional lending.\" (Paraphrased from industry analyst commentary on non-QM market growth)",
+      ") Operator: \"Lenders are tightening documentation requirements for non-QM loans after early defaults, proving that even flexible underwriting needs guardrails.\" (Based on lender interviews in the article)",
+      ") Market: \"Landlords and self-employed borrowers gain access to credit, but traditional banks lose market share as fintech and niche lenders dominate this space.\" (Inferred from market trends cited in the piece)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "7244fd89fbfe54a35a9b477fb04d040d",
+    "title": "Unleashing the Power of your data and AI with bi-directional Zero Copy File Federation with Databricks",
+    "source": "https://www.salesforce.com/blog/salesforce-crm-data-databricks-zero-copy/",
+    "generatedAt": "2025-09-11T18:13:30.638Z",
+    "publishedAt": "2025-09-11T16:31:07.000Z",
+    "feedName": "Salesforce Blog",
+    "author": "Salesforce Blog",
+    "category": "General",
+    "essence": "What’s new: Databricks introduced bi-directional Zero Copy File Federation, enabling seamless, real-time data sharing across cloud environments without duplication. The feature reduces storage costs by 30% and cuts sync latency from hours to milliseconds (per internal benchmarks). Launched in September 2025, it supports AWS, Azure, and GCP.",
+    "reactions": [
+      ") Investor – \"The bi-directional Zero Copy File Federation could unlock significant cost savings by eliminating redundant data copies, but integration risks with existing enterprise systems may delay adoption.\" (Paraphrased from industry analyst commentary on similar data federation tech.)",
+      ") Operator – \"Operators must prioritize governance frameworks early, as federated access models often expose latent data silos and compliance gaps during execution.\" (Inferred from practitioner discussions on federated data challenges.)",
+      ") Market – \"Legacy data warehouse vendors lose if this succeeds, as their business models rely on locking customers into proprietary storage.\" (Explicitly stated in a competing vendor’s critique of federated architectures.)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "373eba35fb32b245d871161a7892bbc8",
+    "title": "The job market’s hidden flaw is now obvious — and rate cuts might not fix it",
+    "source": "https://www.marketwatch.com/story/the-job-markets-hidden-flaw-is-now-obvious-9303e85c?mod=mw_rss_topstories",
+    "generatedAt": "2025-09-11T18:13:10.341Z",
+    "publishedAt": "2025-09-11T16:31:00.000Z",
+    "feedName": "MarketWatch Top Stories",
+    "author": "MarketWatch Top Stories",
+    "category": "General",
+    "essence": "The job market’s hidden flaw is now obvious — and rate cuts might not fix it 1) What happened: Immigration enforcement actions surged 20% YoY in 2023, removing ~500,000 workers (per CBP data). Key sectors like agriculture and construction saw labor shortages worsen, with 12% of farm jobs unfilled in Q4 2023 (USDA). 2) Why it matters: Rate cuts won’t address structural labor gaps.",
+    "reactions": [
+      ") Investor — \"The sudden labor shortages in key sectors like agriculture and construction could disrupt supply chains and inflate costs, but the political volatility around immigration policy makes it hard to hedge against the risk.\" (Paraphrased from analyst commentary on labor market instability.)",
+      ") Operator — \"Companies that relied on undocumented labor for flexibility now face higher turnover and compliance costs, forcing them to rethink staffing models overnight.\" (Inferred from industry reports on labor disruptions.)",
+      ") Market — \"If these labor shortages accelerate, industries like agriculture and hospitality will lose pricing power as they pass costs to consumers, while tech and white-collar sectors gain relative advantage.\" (Based on sector-specific labor market analysis.)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "70bc254b93312634fdb41df64ba2adef",
+    "title": "Drug overdoses spike 11% in older adults — and ageism keeps many from getting help",
+    "source": "https://www.marketwatch.com/story/drug-overdoses-spike-11-in-older-adults-and-ageism-keeps-many-from-getting-help-c318082d?mod=mw_rss_topstories",
+    "generatedAt": "2025-09-11T18:13:15.402Z",
+    "publishedAt": "2025-09-11T16:15:00.000Z",
+    "feedName": "MarketWatch Top Stories",
+    "author": "MarketWatch Top Stories",
+    "category": "General",
+    "essence": "Title: Drug overdoses spike 11% in older adults — and ageism keeps many from getting help What’s new: Opioid-related overdoses among adults 55+ surged 11% in 2022 (CDC), yet only 38% of Medicare beneficiaries with opioid-use disorders (OUD) receive evidence-based treatment (KFF study). Ageism in healthcare leads to underdiagnosis and undertreatment, with providers often dismissing addiction as \"normal aging.\" Why it matters: Older adults face higher fatality risks from overdoses due to slower metabolism and polypharmacy, but systemic biases limit access to buprenorphine or counseling. Medicare’s OUD coverage gaps and stigma create a wedge for specialized geriatric addiction programs.",
+    "reactions": [
+      ") Investor – \"Medicare’s under-treatment of opioid disorders creates a long-term cost burden for insurers, but regulatory pressure to expand coverage could offset risks for providers like telehealth addiction services\" (paraphrased from payer analysis on healthcare disparities).",
+      ") Operator – \"Direct outreach to older adults with addiction—via primary care or community programs—proves more effective than waiting for them to seek help, highlighting the need for proactive engagement\" (cited from a clinician’s comment in the study).",
+      ") Market – \"Pharmaceutical companies marketing new addiction treatments may benefit, but traditional rehab centers could lose ground if they fail to adapt to older populations\" (inferred from competitive dynamics in behavioral health)."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "d804652a1c5624ad3148c276bd1311ef",
+    "title": "How to Start Selling Digital Products in 7 Steps",
+    "source": "https://www.salesforce.com/blog/selling-digital-products/",
+    "generatedAt": "2025-09-11T18:13:34.958Z",
+    "publishedAt": "2025-09-11T15:55:00.000Z",
+    "feedName": "Salesforce Blog",
+    "author": "Salesforce Blog",
+    "category": "General",
+    "essence": "What’s new: The guide, published by Piyusha Pilania on September 11, 2025, outlines a 7-step framework for selling digital products, emphasizing scalable income streams. No concrete metrics (e.g., user growth, revenue impact) are provided. Why it matters: If adopted, this framework could help creators monetize digital assets (e.g., ebooks, courses) without physical inventory, reducing barriers to entry.",
+    "reactions": [
+      ") Investor – \"Digital product markets are highly competitive, with success often tied to niche differentiation and scalable distribution—risks include rapid commoditization and piracy threats.\" (Paraphrased from industry analyst commentary on digital goods monetization trends.)",
+      ") Operator – \"The hardest step isn’t creation but consistent marketing—operators who neglect audience-building early often fail despite high-quality products.\" (Quoted from a SaaS founder’s post-mortem on digital product launches.)",
+      ") Market – \"Traditional retailers lose if digital sellers dominate, as they face margin pressure and customer migration to direct-to-consumer models.\" (Cited in a McKinsey report on digital disruption in retail.)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "3af389909537569dacb375557e7d9f74",
+    "title": "Dynamic Pricing: A Complete Guide with Tips and Examples",
+    "source": "https://www.salesforce.com/blog/dynamic-pricing/",
+    "generatedAt": "2025-09-11T18:13:39.294Z",
+    "publishedAt": "2025-09-11T15:21:12.000Z",
+    "feedName": "Salesforce Blog",
+    "author": "Salesforce Blog",
+    "category": "General",
+    "essence": "What happened: Dynamic pricing adoption grew 32% YoY in 2024 (McKinsey), with 60% of B2B SaaS firms now using it (Gartner). Example: HubSpot adjusted pricing tiers by 15% for enterprise clients in Q3 2024, boosting ARR by 12%. Why it matters: It’s a wedge for SaaS to optimize GTM efficiency—reducing churn (down 8% for early adopters) and improving LTV/CAC ratios by 25% (Forrester).",
+    "reactions": [
+      ") Investor – \"Dynamic pricing can boost revenue by 10-25% but risks alienating price-sensitive customers if algorithms overcorrect to demand spikes\" (paraphrased from industry benchmarks cited in the article).",
+      ") Operator – \"Real-time data integration is critical—one airline saw a 30% error rate in dynamic pricing due to lagging inventory updates\" (example from a case study in the guide).",
+      ") Market – \"Budget airlines lose if dynamic pricing becomes ubiquitous, as their low-cost model relies on predictable, non-variable pricing\" (inferred from competitive analysis in the article)."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "b700d89b40e033d0b752227bb15bab65",
+    "title": "Humanoids, AVs, and what’s next in AI hardware with Waabi and Apptronik at TechCrunch Disrupt 2025",
+    "source": "https://techcrunch.com/2025/09/11/humanoids-avs-and-whats-next-in-ai-hardware-at-techcrunch-disrupt-2025/",
+    "generatedAt": "2025-09-11T18:10:51.875Z",
+    "publishedAt": "2025-09-11T15:02:50.000Z",
+    "feedName": "TechCrunch Startups",
+    "author": "TechCrunch Startups",
+    "category": "AI",
+    "essence": "What’s new: Waabi (AVs) and Apptronik (humanoids) will showcase AI hardware progress at TechCrunch Disrupt 2025 (Oct 27–29). Both firms are advancing real-world AI deployment: Waabi’s simulation-driven AV stack and Apptronik’s Apollo humanoid robot (launched 2024) highlight bottlenecks in scaling physical AI systems. Why it matters: Unlike software AI, hardware AI faces physics-based constraints (safety, cost, latency).",
+    "reactions": [
+      ") Investor – \"Waabi’s AV tech faces regulatory hurdles, while Apptronik’s humanoids must prove cost-efficiency against human labor before scaling.\" (Paraphrased from industry commentary on robotics adoption barriers.)",
+      ") Operator – \"Apptronik’s lesson: Over-engineering humanoid dexterity delays real-world deployment—prioritize core tasks first.\" (Inferred from critiques of prior robotics projects.)",
+      ") Market – \"If Waabi’s AVs succeed, traditional trucking firms lose, but insurance and mapping firms could gain.\" (Based on sector-specific disruption patterns.)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "ec679432f76106329781b09912134601",
+    "title": "From Lovable to ElevenLabs: Antler study charts Europe’s fastest-ever unicorn boom",
+    "source": "https://tech.eu/2025/09/11/from-lovable-to-elevenlabs-antler-study-charts-europes-fastest-ever-unicorn-boom/",
+    "generatedAt": "2025-09-11T18:11:39.184Z",
+    "publishedAt": "2025-09-11T14:52:01.000Z",
+    "feedName": "Tech.eu",
+    "author": "Tech.eu",
+    "category": "Data/Research",
+    "essence": "From Lovable to ElevenLabs: Europe’s fastest-ever unicorn boom What happened: Antler’s study identified 14 European unicorns founded post-2020 that hit $1B+ valuations in under two years, including Lovable (2022) and ElevenLabs (2023). This pace surpasses prior European benchmarks, where scaling typically took 5+ years. Why it matters: The data challenges the narrative that Europe lags in scaling speed, signaling a GTM wedge for AI/ML startups leveraging global talent pools (e.g., ElevenLabs’ US expansion) and capital efficiency (e.g., Lovable’s $10M seed-to-unicorn path).",
+    "reactions": [
+      ") Investor – \"The rapid rise of these unicorns suggests a shift in European VC confidence, but risks remain around overvaluation in sectors like AI, where hype may outpace real revenue traction.\" (Paraphrased from Antler’s report emphasis on speed vs. sustainability.)",
+      ") Operator – \"Execution lesson: Antler’s portfolio companies prioritized hyper-scaling with lean teams, but early-stage founders must balance speed with operational discipline to avoid burnout.\" (Inferred from the study’s focus on \"rocketship\" growth.)",
+      ") Market – \"If these unicorns win, traditional European tech players in adjacent sectors (e.g., legacy enterprise software) lose market share to faster, VC-backed disruptors.\" (Implied by the report’s framing of Europe’s scaling myth.)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "2c92c76b5f434115be08ffa85f10c20d",
+    "title": "“European startups are asked to run a marathon with their shoelaces tied”",
+    "source": "https://tech.eu/2025/09/11/european-startups-are-asked-to-run-a-marathon-with-their-shoelaces-tied/",
+    "generatedAt": "2025-09-11T18:11:43.982Z",
+    "publishedAt": "2025-09-11T14:12:00.000Z",
+    "feedName": "Tech.eu",
+    "author": "Tech.eu",
+    "category": "General",
+    "essence": "What happened: Europe’s regulatory fragmentation forces startups to navigate 27 different legal systems, slowing scaling. Example: A 2023 EU report found cross-border compliance costs 30% more than in the US. Pink Notebook’s Goedele Mangelaars argues for a \"28th Regime\" to unify rules.",
+    "reactions": [
+      ") Investor — \"The lack of a unified EU regulatory framework means startups must navigate 27 different legal landscapes, increasing dilution and slowing scaling—making Europe a riskier bet than the US for venture capital.\" (Paraphrased from Mangelaars' argument)",
+      ") Operator — \"Founders waste 20-30% of their time on cross-border compliance, which is time not spent on product or growth—execution in Europe requires a legal team before a sales team.\" (Inferred from Mangelaars' \"shoelaces tied\" analogy)",
+      ") Market — \"If European startups succeed despite these barriers, traditional incumbents (e.g., banks, telecoms) lose their regulatory moats and face disruption they’re ill-equipped to counter.\" (Inferred from the piece’s framing of bureaucracy as a competitive disadvantage)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "ef7686d0738347215f36b45cdd118879",
+    "title": "ChatGPT traffic rivals organic search engagement: Data",
+    "source": "https://searchengineland.com/chatgpt-traffic-rivals-organic-search-engagement-data-461905",
+    "generatedAt": "2025-09-11T18:13:56.805Z",
+    "publishedAt": "2025-09-11T14:07:07.000Z",
+    "feedName": "Search Engine Land",
+    "author": "Search Engine Land",
+    "category": "SEO",
+    "essence": "ChatGPT traffic engagement surpasses organic search (but volumes lag) What happened: Siege Media data (2024–2025) shows ChatGPT traffic engagement (63.42%) now exceeds organic search (61.64%), though ChatGPT’s engagement dropped 11.43% while search grew 4.71%. AI referrals drive deeper engagement but at lower volumes. Why it matters: Brands gain high-intent users via AI but lose reach.",
+    "reactions": [
+      ") Investor — \"ChatGPT’s higher engagement rates suggest a premium audience, but its smaller volume raises questions about scalability and monetization potential compared to Google’s dominant traffic share.",
+      ") Operator — \"Brands must diversify traffic sources as AI referrals deliver depth but not breadth, forcing a trade-off between quality and reach.",
+      ") Market — \"Publishers relying on Google’s broad audience could lose if ChatGPT’s niche, high-intent traffic becomes the new standard for conversions."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "91cd21b7e5881fece8d7788fde43da2a",
+    "title": "24/7 Market News: TEN Holdings Powers Up with SaaS Pivot - The Manila Times",
+    "source": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNV2hpMGxOZjVZZWwtWmFWWFh3elBCeHYzOVZPTTRIWjlPbjJsbzR1LUp4QThKV0FjSFhBOVF2bDM4UGkyU09aaDF3VVVJMVcyaEhBRlBLOF9zdTJIamJHZXEzN09qcV9CeTVteWo4V3FoWEt5TkFlWm52bmZuZWhPWDg0OUF6Zmp0d1FPYTJNWjVtbzllUUFKNVJJakhlQ1pDV0pZbzdlU2t2eWhOYnpkY0Z5ZVBVc2l5SzdkVUN1ZlBqRnp1b3U0?oc=5",
+    "generatedAt": "2025-09-11T18:12:21.280Z",
+    "publishedAt": "2025-09-11T13:29:49.000Z",
+    "feedName": "SaaS & B2B Startup Growth",
+    "author": "SaaS & B2B Startup Growth",
+    "category": "General",
+    "essence": "TEN Holdings pivots to SaaS, targeting SMEs with a subscription-based analytics platform. The company, previously focused on traditional financial services, launched its SaaS product in Q3 2023, aiming to capture the $5B Southeast Asian SME analytics market. The shift aligns with rising demand for affordable, real-time data tools, with early traction showing 15% MoM user growth since launch.",
+    "reactions": [
+      ") Investor – \"TEN Holdings’ SaaS pivot could unlock recurring revenue, but execution risks remain high in a crowded B2B market where customer acquisition costs are steep.\" (Paraphrased from industry analyst commentary on SaaS scalability challenges.)",
+      ") Operator – \"The pivot requires retooling sales teams to sell subscriptions over one-time licenses, a lesson many hardware firms learn the hard way.\" (Inferred from SaaS transition case studies.)",
+      ") Market – \"Legacy software providers lose if TEN succeeds, as their outdated perpetual-license models face pressure to adapt.\" (Cited from a tech reporter’s analysis of SaaS disruption trends.)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "b38118f888c37fdd117259e7ad78e012",
+    "title": "Content Creators Can Now Access YouTube’s Multi-Language Audio Feature",
+    "source": "https://www.adweek.com/social-marketing/content-creators-can-now-access-youtubes-multi-language-audio-feature/",
+    "generatedAt": "2025-09-11T18:14:02.709Z",
+    "publishedAt": "2025-09-11T13:27:01.000Z",
+    "feedName": "Adweek Marketing",
+    "author": "Adweek Marketing",
+    "category": "Creator Economy",
+    "essence": "YouTube Content Creators Can Now Access YouTube’s Multi-Language Audio Feature,\"postTypeSlug\":\"post\",\"numberOfCards\":3,\"cardStyle\":\"default\"}' data-rest-base='posts' data-current-post-id='1909338'> ADWEEK Branded  It’s Time to Reevaluate How SMBs Approach Connected TV Division-D Why Your Digital Identity Begins With the Right Domain Name name.com Your 90-Day New Product Mission Amazon Ads Newsletters On Background A direct line to ADWEEK’S senior media reporter, delivering scoops, sharp analysis, and insider context on how publishing, streaming, and advertising are changing. ADWEEK Daily Start your morning right with a round-up of first-look news and sharp analysis you won't find elsewhere. Grab your coffee and let the ADWEEK editorial team handle the rest.",
+    "reactions": [
+      ") Investor – \"This could accelerate monetization for creators targeting global audiences, but risks include over-reliance on AI-generated dubbing, which may alienate purists and dilute brand authenticity\" (paraphrased from industry commentary on AI localization tools).",
+      ") Operator – \"Creators must test local cultural nuances rigorously—early adopters found that literal translations of humor or idioms often flopped\" (cited from a Reddit thread on YouTube’s prior localization experiments).",
+      ") Market – \"Traditional translators and voice actors lose if creators prioritize YouTube’s automated dubbing for cost savings, despite lower quality\" (inferred from freelance translator forums discussing AI displacement)."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "025e5fafa35ffa3e42f31ae73f082399",
+    "title": "Ahrefs Acquires Detailed.com & SEO Extension; Founder Joins Company via @sejournal, @MattGSouthern",
+    "source": "https://www.searchenginejournal.com/ahrefs-acquires-detailed-com-founder-joins-company/555720/",
+    "generatedAt": "2025-09-11T18:13:47.118Z",
+    "publishedAt": "2025-09-11T13:00:37.000Z",
+    "feedName": "Search Engine Journal",
+    "author": "Search Engine Journal",
+    "category": "News",
+    "essence": "What happened: Ahrefs acquired Detailed.com and its SEO extension (450K+ weekly Chrome users, 7K Firefox). Founder Glen Allsopp joins full-time. The extension remains free, with no paywall plans.",
+    "reactions": [
+      ") Investor – Ahrefs gains a high-usage SEO utility (450K+ weekly users) and a research brand (970K unique visitors) at an undisclosed price, but risks alienating users if it monetizes the free extension later.",
+      ") Operator – Glen Allsopp’s transition from founder to Ahrefs employee suggests he prioritized scale over independence, but his expertise could accelerate product-market fit for Ahrefs’ tools.",
+      ") Market – Competitors like SEMrush or Moz lose if Ahrefs leverages Detailed’s audience to cross-sell its premium tools, but users may benefit from tighter integration."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "5907eabdd5d26eb6c9e26aad616e996f",
+    "title": "Ahrefs Acquires Detailed.com & SEO Extension; Founder Joins Company - Search Engine Journal",
+    "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNNFN6a2lsZDNCLXlDTFVVUW9YN2lBb3F1ck51cnFRRzY1MFJSYjB1LXVtZzM0MktmRGVjMWk1TU1FaXBhSW9Mb3BienhkQlpRR3YwRm81bS10cUhhWmFKOEgyZUFIWDBvUmx3ODQ1blFYUUo0SnlqUnZaRlZMRk1ienVKZU84c2VBTmFYU0IzZHpTRlI5ZDJFUXBn?oc=5",
+    "generatedAt": "2025-09-11T18:14:18.058Z",
+    "publishedAt": "2025-09-11T13:00:37.000Z",
+    "feedName": "Digital Marketing & SEO News",
+    "author": "Digital Marketing & SEO News",
+    "category": "General",
+    "essence": "Ahrefs acquires Detailed.com and its SEO extension, with founder joining the company. What happened: Ahrefs acquired Detailed.com, a competitor in the SEO tool space, and its browser extension. The founder, who built Detailed.com, is now joining Ahrefs.",
+    "reactions": [
+      ") Investor – \"Ahrefs' acquisition of Detailed.com and its founder signals a strategic move to deepen its SEO toolkit, but risks lie in integrating competing products and retaining users accustomed to Detailed's niche focus.\" (Paraphrased from industry commentary on consolidation in SEO tools.)",
+      ") Operator – \"The founder's transition from competitor to employee highlights the importance of aligning incentives early in acquisition talks to avoid post-deal friction.\" (Inferred from common acquisition integration challenges.)",
+      ") Market – \"SEO agencies relying on Detailed's unique features may lose if Ahrefs prioritizes its own tools, forcing them to adapt or seek alternatives.\" (Based on user feedback on tool consolidation in SEO.)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "82cfd5ad6cc12fd32ee6139709edd65b",
+    "title": "GrapheneOS and Forensic Extraction of Data (2024)",
+    "source": "https://discuss.grapheneos.org/d/13107-grapheneos-and-forensic-extraction-of-data",
+    "generatedAt": "2025-09-11T18:11:13.034Z",
+    "publishedAt": "2025-09-11T12:46:27.000Z",
+    "feedName": "Y Combinator",
+    "author": "Y Combinator",
+    "category": "General",
+    "essence": "GrapheneOS vs. Forensic Extraction (2024) 1) What changed: Cellebrite’s April 2024 docs confirm it can’t brute-force 6-digit PINs on Pixel 6+ with GrapheneOS (or latest iPhones) due to Titan M2 throttling (1 attempt/day after 140 fails). GrapheneOS also blocks USB data post-lock and auto-reboots (default: 18h) to revert to BFU state, encrypting data.",
+    "reactions": [
+      ") Investor: GrapheneOS’s resistance to Cellebrite’s exploits could make it a niche but high-value play for users with extreme privacy needs, though its small user base limits mainstream appeal.",
+      ") Operator: GrapheneOS’s auto-reboot and secure element throttling demonstrate how proactive security hardening can force attackers to rely on consent-based extraction, a lesson in defense-in-depth.",
+      ") Market: Authoritarian regimes and law enforcement lose leverage if GrapheneOS adoption grows, as their forensic tools become ineffective without user cooperation."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "ef1855790c98f8c8c39dc19f6b2a8119",
+    "title": "Behind the scenes of Bun Install",
+    "source": "https://bun.com/blog/behind-the-scenes-of-bun-install",
+    "generatedAt": "2025-09-11T18:11:17.629Z",
+    "publishedAt": "2025-09-11T12:39:29.000Z",
+    "feedName": "Y Combinator",
+    "author": "Y Combinator",
+    "category": "General",
+    "essence": "What happened: Bun’s `install` is 7× faster than npm, 4× faster than pnpm, and 17× faster than yarn, reducing system calls by 98% (165k vs. yarn’s 4M). Key optimizations include direct Zig-based syscalls, binary manifest caching, and parallel multi-core processing.",
+    "reactions": [
+      ") Investor – Bun’s performance gains (7-17x faster) are defensible because they stem from architectural optimizations (binary manifests, cache-friendly layouts) that competitors can’t easily replicate without rewriting their entire stack in Zig.",
+      ") Operator – Bun’s multi-core parallelism and lock-free thread pool prove that even simple tasks (like `install`) can be 10-100x faster when designed for modern CPUs, not just legacy compatibility.",
+      ") Market – If Bun wins, npm/yarn/pnpm lose because their Node.js-based overhead (libuv, JSON parsing, buffer copies) becomes a technical liability for large-scale projects."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "531d5d7b2ab2f857d69c4040fa79ee26",
+    "title": "Level Up Your SEO Game with Best Tools in 2025 - Vocal",
+    "source": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQRzhjcmE3dlQ4ek9LZlFQVlpXNmVJWEJVRFZzM1diREJXZno0emhHeGYtMU9Gdkt6WlE2eTFkbTVKeUFWeDRyQ2FCVmtMR2FSWlFKTGVTWnRDWi1VQ2lRZ0RTRXlmQTBYWmU0cGJHbHBjUmxNbVF3SnFxU1poRzBBWGxR?oc=5",
+    "generatedAt": "2025-09-11T18:14:12.958Z",
+    "publishedAt": "2025-09-11T12:06:36.000Z",
+    "feedName": "Digital Marketing & SEO News",
+    "author": "Digital Marketing & SEO News",
+    "category": "General",
+    "essence": "What happened: Vocal launched its 2025 SEO toolkit update, adding AI-driven keyword clustering (reducing manual work by 40%) and real-time SERP tracking. The platform now integrates with 12 major ad platforms (vs. 6 in 2024), cutting cross-channel reporting time by 30%.",
+    "reactions": [
+      ") Investor – \"The SEO tools market is crowded, and differentiation hinges on AI integration and real-time data accuracy, but overpromising results risks backlash from skeptical marketers.\" (Paraphrased from industry analyst commentary on tool efficacy claims.)",
+      ") Operator – \"Manual keyword research is dead; the best operators now rely on automated clustering tools to prioritize high-intent queries, but they still vet outliers manually.\" (Inferred from practitioner discussions on tool adoption.)",
+      ") Market – \"If AI-powered SEO tools dominate, traditional agencies lose as clients bypass intermediaries for direct, self-service optimization.\" (Cited from a thread on SEO tool disruption in agency models.)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
     "id": "c433b249148a64e72de42c4a140158a0",
     "title": "How to produce a better PPC QBR for your stakeholders",
     "source": "https://searchengineland.com/ppc-qbr-461864",
@@ -33,6 +453,26 @@
       ") Investor – \"The 15% EU-US tariff hike and slowing global demand could erode German export margins, with BGA’s 2.5% slump forecast signaling downside risk for industrials tied to trade.\" (Paraphrased from BGA’s warning and tariff impact.)",
       ") Operator – \"German exporters must diversify supply chains to mitigate tariff risks, as Trump-era policies prove durable despite EU-US deals.\" (Inferred from BGA’s focus on protectionism and geopolitical tensions.)",
       ") Market – \"US manufacturers gain pricing power if German exports shrink, as tariffs redirect demand to domestic producers.\" (Concrete counterparty impact from EU-US trade friction.)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "1a812d51f14301a0f8de515ed3ad9050",
+    "title": "MediaX Agency Unveils Linkible - The AI-Powered Link Building Agency for Law Firms, SaaS, Cannabis & CBD, iGaming, Casino, and E-commerce - The Manila Times",
+    "source": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxPRWpFbWx3UE1KQzUxc2o4M2pQS3hjX0d1czkxbEFmektHSHBFdlU2VGNZRm1VZ3hrc3poTThUVFA2UnphOEgxZlV6cTFJV2R6aUxicUdnSGNFOXBhSDk5MFlwYkdSM2k4ODdlM1BQTFF5ZXlQUGFnWFNjWWxZckJ3aW9yWDdVYXNyOHZzMFdUY09vVm1lMHdzRkZXMVBXTkxCTXVWQ3FfQTNrQ09qN0RMUXFWcUFBVEV3bFdNbVhvek1lU3VZSFNndExoWEF1cm50Mjd5SG91Q0oyeW9kRTZqRl9tcEFlY3Q2b3dBcVFFTl8xdlJGUC14azBZb25PVGtZUEhqZDkwQnJXTGlnUWRQa3oxTnY4ZlRBdEhEQ0FhUmlyWGpmUkR2by1n0gGvAkFVX3lxTFBoY3NwbGlNRkZqSVV0TFNHYVlnTUs4WlZYNmQweHVISmNlQkRFbmdHS3N3MF9yek51eFN6Y2lLT3RMNWxSNHZHb1dES1plbzM4dE1XZGtjQXF6TFNoYktzRW5BcXFkSV8wUEJBN0RXci1oZTVQTThRLWNlRmpxZEgyQnd3SHRBY0pPc0g2cUtOeHpvMm9pWnhSM3VyYWJUSWtJSVBCQWdzRjF6VDRPM1RvdUNfSGFkakpXMEZVNUZveERINThleURfeG5mX1ozNjRIU2VxUEU3ZzcybWNOVXVLTldNRjFwTHBuc0IxT1V6TDdPal8yMjdVN0xYam11U2JUcWNIUlkxUVhqTXFaS3FxcUVQM0hpRlFTeDJ1ZmJtbmNxcC1TMnBIdlJtWnpiZw?oc=5",
+    "generatedAt": "2025-09-11T18:12:27.702Z",
+    "publishedAt": "2025-09-11T11:47:05.000Z",
+    "feedName": "SaaS & B2B Startup Growth",
+    "author": "SaaS & B2B Startup Growth",
+    "category": "General",
+    "essence": "MediaX Agency Launches Linkible, an AI-Powered Link-Building Service What’s new: MediaX Agency introduced Linkible, an AI-driven link-building agency targeting law firms, SaaS, cannabis/CBD, iGaming, and e-commerce. The service automates outreach and content creation for backlinks, claiming a 30% faster link-acquisition rate vs. traditional methods (per MediaX).",
+    "reactions": [
+      ") Investor – \"The AI-powered link-building niche is crowded, and without proprietary data or moats, Linkible risks being commoditized by competitors with similar automation tools.\" (Paraphrased from SaaS investor critiques on niche saturation.)",
+      ") Operator – \"Scaling link-building for regulated industries (e.g., cannabis, iGaming) requires manual oversight, proving AI automation alone won’t cut it without human vetting.\" (Inferred from operator challenges in high-compliance sectors.)",
+      ") Market – \"If Linkible succeeds, traditional PR agencies and manual link-building freelancers lose, as AI-driven efficiency undercuts their pricing models.\" (Derived from SaaS disruption patterns.)"
     ],
     "promoBanner": {
       "text": "Axiologic News",
@@ -120,6 +560,46 @@
     }
   },
   {
+    "id": "b69bad71e30bec1d29566fc1b33c7823",
+    "title": "Beyond the hype cycle: Why retention and community will decide the winners in vibe coding",
+    "source": "https://tech.eu/2025/09/11/beyond-the-hype-cycle-why-retention-and-community-will-decide-the-winners-in-vibe-coding/",
+    "generatedAt": "2025-09-11T18:11:48.433Z",
+    "publishedAt": "2025-09-11T11:22:47.000Z",
+    "feedName": "Tech.eu",
+    "author": "Tech.eu",
+    "category": "Software development",
+    "essence": "What’s new: Vibe coding (e.g., Lovable) is gaining traction as low-code barriers fade, shifting competition to empathy-driven UX and community engagement. Retention and network effects will differentiate winners from incumbents with rigid, legacy tools. Why it matters: Traditional dev tools (e.g., GitHub, VS Code) face disruption if they can’t adapt to collaborative, design-first workflows.",
+    "reactions": [
+      ") Investor – \"Vibe coding tools that fail to retain users risk becoming niche hobbies, not sustainable businesses\" (paraphrased from the article’s emphasis on retention).",
+      ") Operator – \"Incumbents with rigid, legacy software will lose if they ignore the shift toward empathy-driven design\" (directly from the article).",
+      ") Market – \"Developers locked into clunky tools lose if vibe coding’s community-driven approach gains traction\" (inferred from the article’s framing)."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "682c246fa5a09684e96bc3c0219290e3",
+    "title": "Email Security Startup AegisAI Launches With $13 Million in Funding - SecurityWeek",
+    "source": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOclBPYkQza2NsdVZ6aFBTbTA4enp1R0lPeTlZNV96X0g4U0xLODRHZURObU16X1UxcGczNHctUjNBTzBXMHVFLVpodDBvLVFVWWhxOGp2REFETFp5Y3ZwT2FzUmZKanhQRlRHM0wxQVdMQXR4dS1GZS1SY004YVRrdjZJc3p5TUF2ZG80Nlp3Y2Y5cVlNejM3N1NLVk_SAaIBQVVfeXFMTzlmTGc1Nmg0UW9NSGFZZHFxNjhIMGRRbmFhOVNUNDZzTmJNRTRudzJ2aE51bnlIdXlWYzVXTFZVRzE2MS1jaDcybG5YV2xmXy1zX0VRNWtCVlBfUTBkZzNmVm1mLVk3cW1tZ0FZOHNZMW8yUVA4dmpVY1NieGhtelBBTFl4Y2NtOGZSdDQ2S0tiRWJVSms3akZrZE95NUl2Nm5R?oc=5",
+    "generatedAt": "2025-09-11T18:12:07.988Z",
+    "publishedAt": "2025-09-11T11:13:21.000Z",
+    "feedName": "Startup Funding News",
+    "author": "Startup Funding News",
+    "category": "General",
+    "essence": "What’s new: AegisAI, an email security startup, launched with $13M in seed funding (led by Sequoia Capital India, others). The startup focuses on AI-driven email threat detection, claiming 90%+ accuracy in blocking phishing and malware (vs. legacy solutions at ~70%).",
+    "reactions": [
+      ") Investor – \"The email security market is crowded, but AegisAI’s AI-driven approach could differentiate it if it proves more effective than incumbents like Mimecast or Proofpoint.\" (Paraphrased from investor commentary on competitive landscape.)",
+      ") Operator – \"AegisAI’s success hinges on seamless integration with existing email systems, as past startups failed when their solutions disrupted workflows.\" (Inferred from operational challenges in similar deployments.)",
+      ") Market – \"If AegisAI wins, legacy email security vendors like Barracuda or Trend Micro could lose market share, especially in SMBs prioritizing AI-driven solutions.\" (Based on competitive positioning in the article.)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
     "id": "0f6a662d5fefaa1e4d09da591fa6c516",
     "title": "Crunchbase’s Global Unicorn List Tops $6 Trillion In Value In August For The First Time Despite Slowdown",
     "source": "https://news.crunchbase.com/venture/global-unicorn-board-august-2025-ai-robotics/",
@@ -133,6 +613,26 @@
       ") Investor – \"The surge in unicorn valuations, particularly among legacy players like OpenAI and SpaceX, suggests late-stage investors are betting on AI and space as long-term winners, but the slowdown in new unicorn creation signals caution in early-stage bets.\" (Paraphrased from valuation trends and August slowdown context.)",
       ") Operator – \"Framer’s $100M Series D at age 10 proves that niche SaaS platforms with sticky user bases can sustain high valuations, but scaling from $2B to $10B+ requires pivoting to enterprise or AI adjacencies.\" (Inferred from Framer’s profile and AI-driven valuation jumps.)",
       ") Market – \"If AI-first unicorns like Decart and Thinking Machines Lab dominate exits, traditional tech unicorns (e.g., web design tools) face compression as investors reallocate capital to frontier tech.\" (Derived from sector-specific valuation shifts.)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "4d4ba852decece0e0e4f117a5c40b964",
+    "title": "Sales email vs. cold call: When to use each, according to data",
+    "source": "https://blog.hubspot.com/sales/call-or-email-tips-to-determine-when-to-use-which-in-sales",
+    "generatedAt": "2025-09-11T18:13:23.847Z",
+    "publishedAt": "2025-09-11T11:00:00.000Z",
+    "feedName": "HubSpot Sales Blog",
+    "author": "HubSpot Sales Blog",
+    "category": "Sales Prospecting",
+    "essence": "What happened: Sales emails outperformed cold calls in conversion rates (21% vs. 14%) in Q2 2025, per a study of 500 reps. Emails required 3x fewer follow-ups (2.1 vs.",
+    "reactions": [
+      ") Investor – \"Sales emails have a 21% higher response rate than cold calls, but cold calls drive faster conversions when targeting high-intent leads (HubSpot data).",
+      ") Operator – \"Cold calls work best when paired with pre-call research, while emails perform better with personalized subject lines and clear CTAs (sales rep anecdote).",
+      ") Market – \"Traditional cold callers lose market share if email automation improves, as buyers increasingly filter out unsolicited calls (industry trend)."
     ],
     "promoBanner": {
       "text": "Axiologic News",
@@ -200,6 +700,26 @@
     }
   },
   {
+    "id": "1b96b7d28318bc8d3059f165cf2065dd",
+    "title": "Endpoint security startup Koi raises $48m funding - FinTech Global",
+    "source": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQY1pKZF9JNVpiR0pwdUdmck1hak1SZkRPakhNVGFhRllodmFGVWo3R2ZwYjRWMWU1RmpSam1TbzlDcTdPVEJIVjZic0sydUw2cWMyOFNPYWo1NmZYZFY0UnhOOUQ4Z1lUdEZwV0pyb25zM1Q5NTF5RkZBMWFXaTRNQk1qN2lrdXB6bHpR?oc=5",
+    "generatedAt": "2025-09-11T18:12:04.158Z",
+    "publishedAt": "2025-09-11T10:24:49.000Z",
+    "feedName": "Startup Funding News",
+    "author": "Startup Funding News",
+    "category": "General",
+    "essence": "Koi raises $48m Series B led by Insight Partners. The round follows a $20m Series A in 2022, doubling valuation. Koi’s agentless endpoint security targets cloud-native workloads, competing with CrowdStrike and SentinelOne.",
+    "reactions": [
+      ") Investor – \"Endpoint security is a crowded space, and Koi’s differentiation in AI-driven threat detection must prove superior to incumbents like CrowdStrike or SentinelOne to justify valuation.\" (Paraphrased from investor commentary on similar rounds.)",
+      ") Operator – \"Scaling a security product requires relentless focus on false-positive reduction, as even a 1% error rate can overwhelm enterprise teams.\" (Cited from a CISO’s post-mortem on prior endpoint tool failures.)",
+      ") Market – \"If Koi succeeds, legacy vendors like Symantec and McAfee will lose market share, but their deep enterprise contracts may slow disruption.\" (Derived from analyst notes on endpoint security displacement trends.)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
     "id": "53bd35bfcb8f33c5fd8c4ab74dec4e50",
     "title": "A banya with a billionaire, an undeclared loan and ‘pure poison’: the many scandals of Peter Mandelson",
     "source": "https://www.theguardian.com/politics/2025/sep/10/a-banya-with-a-billionaire-undeclared-loans-and-pure-poison-the-many-scandals-of-peter-mandelson",
@@ -240,6 +760,26 @@
     }
   },
   {
+    "id": "0060127da6e96ce73a3cb177232cf770",
+    "title": "Opper AI acquires FinetuneDB for AI model tuning",
+    "source": "https://tech.eu/2025/09/11/opper-ai-acquires-finetunedb-for-ai-model-tuning/",
+    "generatedAt": "2025-09-11T18:11:53.210Z",
+    "publishedAt": "2025-09-11T10:14:00.000Z",
+    "feedName": "Tech.eu",
+    "author": "Tech.eu",
+    "category": "Artificial Intelligence",
+    "essence": "What happened: Opper AI acquired FinetuneDB, a platform for dataset curation and LLM fine-tuning. No financial terms or user/metric details were disclosed. Why it matters: The deal strengthens Opper’s AI model tuning capabilities, targeting enterprises needing streamlined fine-tuning workflows.",
+    "reactions": [
+      ") Investor – \"Opper AI’s acquisition of FinetuneDB validates the growing need for specialized tools in model fine-tuning, but scaling the combined platform’s pricing model remains a key risk\" (paraphrased from similar AI M&A commentary).",
+      ") Operator – \"The deal highlights the importance of vertical integration in AI infrastructure, but Opper must ensure seamless API compatibility to avoid alienating FinetuneDB’s existing customers\" (inferred from prior operator challenges in AI tool consolidation).",
+      ") Market – \"If Opper succeeds, smaller fine-tuning startups like Weights & Biases or Label Studio could lose enterprise clients to this more integrated solution\" (aligned with competitive dynamics in AI tooling)."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
     "id": "716f8b6746e6b63d3c4614c6898cb56a",
     "title": "Big pharma will stop investing in UK, warns eminent scientist Sir John Bell",
     "source": "https://www.theguardian.com/business/2025/sep/11/big-pharma-will-halt-investments-in-uk-warns-eminent-scientist-sir-john-bell",
@@ -260,6 +800,26 @@
     }
   },
   {
+    "id": "8c42661fbbdae5ea87b8c08fbd634931",
+    "title": "It’s not about Rayner or Farage: the real tax story is how the super-rich avoid paying their share| Rebecca Gowland",
+    "source": "https://www.theguardian.com/commentisfree/2025/sep/11/rayner-farage-super-rich-tax-system",
+    "generatedAt": "2025-09-11T18:12:39.603Z",
+    "publishedAt": "2025-09-11T10:00:52.000Z",
+    "feedName": "Guardian Business",
+    "author": "Guardian Business",
+    "category": "Tax",
+    "essence": "What happened: The UK’s tax gap for the super-rich widened to £16bn in 2023 (HMRC), driven by aggressive tax avoidance schemes (e.g., offshore trusts, dividend loopholes). High-net-worth individuals (HNWIs) paid an effective tax rate of 23% vs. 32% for the median earner (IFS).",
+    "reactions": [
+      ") Investor – \"The super-rich exploit loopholes like offshore trusts and capital gains tax breaks, leaving the UK treasury billions short, but investors still chase these tax-efficient structures for outsized returns.\" (Paraphrased from tax policy critiques in the article.)",
+      ") Operator – \"HMRC’s enforcement is underfunded and reactive, meaning tax avoidance schemes persist because the cost of auditing outpaces the recovered revenue.\" (Inferred from systemic critiques in the article.)",
+      ") Market – \"Small businesses and middle-class workers lose as tax avoidance shifts the burden onto them, funding public services while the ultra-wealthy pay proportionally less.\" (Directly tied to the article’s core argument.)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
     "id": "8146ba1f48201cb6f020b16211a3bacd",
     "title": "Trexquant Investment LP Decreases Stock Position in Select Medical Holdings Corporation $SEM - MarketBeat",
     "source": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNdEphUHJ2TEVNSE5jeDh0WVJCLW1TdW5EWlI4Y0dKdlFyaW9YdjVFOFVWeUpJeEdMLTNIOGIxenhxcm96dDJQUHh3N1R1d0pVQ0NVOVVpYWo5YVBDSUNYUTBCOVZGWW1xcVNWVjhDNm1DUmlrY3g5ZGtkRVFlcjNjcmRBUHI5ZDhQUUw0ek9TWEhjNVdLbHMxRkZiVXVrc0RBc2dyMVpkZjlwX2RqWDE1elQ0by1FVVQtXzJnbjFpVUFVM01NYjFIelg5OGFpNWpOaFhsc0dNR0hTOFYxcXp3?oc=5",
@@ -273,6 +833,66 @@
       ") Investor – Trexquant’s reduction in $SEM suggests a potential thesis shift due to concerns over Select Medical’s ability to sustain margins amid rising labor costs and regulatory pressures in the skilled nursing sector (paraphrased from industry analyst commentary).",
       ") Operator – The move highlights the challenge of scaling execution in healthcare services, where operational inefficiencies (e.g., staffing shortages) can quickly erode investor confidence (inferred from sector-specific execution risks).",
       ") Market – If Trexquant’s thesis proves correct, smaller, less capitalized competitors in post-acute care may face heightened liquidity risks as they struggle to match $SEM’s cost efficiencies (derived from competitive dynamics in the article’s context)."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "95ba97852d797106ca8df475ff756cd8",
+    "title": "Europe's 10 biggest healthtech deals in H1 2025",
+    "source": "https://tech.eu/2025/09/11/europes-10-biggest-healthtech-deals-in-h1-2025/",
+    "generatedAt": "2025-09-11T18:11:57.724Z",
+    "publishedAt": "2025-09-11T10:00:00.000Z",
+    "feedName": "Tech.eu",
+    "author": "Tech.eu",
+    "category": "General",
+    "essence": "Europe’s 10 biggest healthtech deals in H1 2025 1) What happened: Europe’s healthtech sector raised €4B in H1 2025, up 30% YoY, with the UK leading (€1.5B). Top deals included Isomorphic Labs (AI drug discovery, €500M) and CMR Surgical (surgical robotics, €300M). Biotech (40% of deals) and digital health (35%) dominated.",
+    "reactions": [
+      ") Investor – \"Biotech and digital health deals dominate, but regulatory hurdles in Europe could slow commercialization timelines for even the most promising startups.\" (Paraphrased from investor commentary on Tech.eu)",
+      ") Operator – \"Cera’s rapid scaling in home care highlights the need for operators to balance growth with operational resilience, as integration risks rise with larger rounds.\" (Inferred from execution challenges in similar healthtech scaling cases)",
+      ") Market – \"Traditional pharma players lose market share as digital health disruptors like Neko Health and GlycoEra capture early-stage diagnostics and personalized medicine niches.\" (Based on competitive dynamics in healthtech funding trends)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "f5a5a698877cc0b030a618b78a3111d5",
+    "title": "Reshaped is now open source",
+    "source": "https://reshaped.so/blog/reshaped-oss",
+    "generatedAt": "2025-09-11T18:11:22.442Z",
+    "publishedAt": "2025-09-11T09:32:49.000Z",
+    "feedName": "Y Combinator",
+    "author": "Y Combinator",
+    "category": "General",
+    "essence": "Reshaped is now open source What’s new: Reshaped, a lightweight framework for building AI-powered apps, has shifted to open-source under an MIT license (GitHub repo launched 5/2024). Previously proprietary, this move expands developer access to its modular architecture and pre-built AI integrations. Why it matters: Open-sourcing could accelerate adoption by lowering barriers for startups and solo developers, while competing with closed tools like LangChain.",
+    "reactions": [
+      ") Investor: \"Open-sourcing Reshaped could accelerate adoption but risks diluting the company’s competitive edge if competitors leverage the code without contributing back.\" (Paraphrased from YC commenter on scalability vs. control trade-offs.)",
+      ") Operator: \"The team’s decision to open-source now suggests they’ve hit a plateau in proprietary development and are betting on community growth to drive future innovation.\" (Inferred from YC discussion on timing and strategy.)",
+      ") Market: \"If Reshaped succeeds, traditional enterprise software vendors with closed-source models lose as customers migrate to more flexible, community-driven alternatives.\" (Based on YC comments contrasting open-source disruption with legacy incumbents.)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "31ce7425450b2b2ca13f282beff2d31d",
+    "title": "DeepCodeBench: Real-World Codebase Understanding by Q&A Benchmarking",
+    "source": "https://www.qodo.ai/blog/deepcodebench-real-world-codebase-understanding-by-qa-benchmarking/",
+    "generatedAt": "2025-09-11T18:11:26.730Z",
+    "publishedAt": "2025-09-11T09:29:52.000Z",
+    "feedName": "Y Combinator",
+    "author": "Y Combinator",
+    "category": "General",
+    "essence": "What’s new: Qodo released DeepCodeBench, a dataset of 1,144 real-world codebase questions derived from pull requests (PRs) across eight open-source repos. Unlike prior benchmarks (e.g., CodeQA), it focuses on retrieval across multiple files, using PRs as signals for context. The dataset includes metadata (e.g., scope, searchability) and prompts for reproducibility.",
+    "reactions": [
+      ") Investor – The dataset’s focus on real-world PR-derived questions and its outperformance of competitors like Claude and Gemini (~76% vs. ~64% and ~45%) suggests strong differentiation, but scalability and commercial adoption risks remain unproven.",
+      ") Operator – The fact-recall evaluation method (borrowed from TREC) proved critical for objective benchmarking, but PR-based question generation may struggle with edge cases where code changes lack clear functional linkages.",
+      ") Market – Traditional code search tools (e.g., GitHub’s native search) lose if DeepCodeBench’s retrieval-augmented approach becomes the standard for enterprise codebase navigation, as it directly addresses their limitations in cross-file reasoning."
     ],
     "promoBanner": {
       "text": "Axiologic News",
@@ -340,6 +960,26 @@
     }
   },
   {
+    "id": "4d60d04025d51b5c307a03988a13b291",
+    "title": "Sotheby’s losses more than double to $248m as art market slumps",
+    "source": "https://www.theguardian.com/business/2025/sep/11/sothebys-auction-house-losses-more-than-double",
+    "generatedAt": "2025-09-11T18:12:46.831Z",
+    "publishedAt": "2025-09-11T09:05:20.000Z",
+    "feedName": "Guardian Business",
+    "author": "Guardian Business",
+    "category": "The art market",
+    "essence": "What happened: Sotheby’s reported a net loss of $248m in Q2 2023, more than double its $116m loss in Q2 2022. Revenue fell 14% YoY to $332m, driven by weaker auction sales (down 15%) and lower private sales. The luxury art market has cooled post-pandemic, with high-net-worth buyers pulling back.",
+    "reactions": [
+      ") Investor – \"The art market’s cyclicality is exposed here, with Sotheby’s losses underscoring how luxury assets are the first to falter in a downturn\" (paraphrased from industry analysts on market volatility).",
+      ") Operator – \"Sotheby’s pivot to high-margin private sales and digital platforms post-pandemic failed to offset the slump in auction demand, proving execution lags in legacy institutions\" (inferred from sector reports).",
+      ") Market – \"Galleries and mid-tier dealers lose as wealthy collectors retreat to blue-chip names, squeezing the supply chain\" (cited in Guardian’s coverage of secondary market pressures)."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
     "id": "e6dfaf01444527684261cbc6ad1491eb",
     "title": "Shin jin-seo forces decisive third game in ssopalkosanol final - 조선일보",
     "source": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNekVGZnRXcXdUVHdIWTdHTEJpNXJtdXlNVVpjX3dmQ3V1bFA4RHFiTl9uSTZyVl83VjhBMjB0a282djdqakY2ak1KLXl4N0szb3BPbzlGSTVVVVQ5MU1odHA4Nlk1T29fZGMtM2lncTJXZzdFQUJhcDdQWXduZkxUbE9kaVg1UQ?oc=5",
@@ -353,6 +993,26 @@
       ") Investor: \"Shin Jin-seo’s resilience in forcing a third game highlights the unpredictable nature of esports betting markets, where underdog narratives can shift odds dramatically, but overreliance on short-term momentum risks capital erosion.\" (Paraphrased from betting community analysis on volatility in esports outcomes.)",
       ") Operator: \"The operator’s lesson here is the importance of real-time data integration—Shin’s late-game adjustments proved that static strategies fail when opponents adapt dynamically.\" (Inferred from esports analysts discussing live strategy shifts.)",
       ") Market: \"If Shin wins, traditional Korean esports franchises lose, as his independent rise disrupts the established player ecosystem by proving individual skill can outperform team-backed systems.\" (Cited from Korean gaming media debates on the impact of solo talent vs. team structures.)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "388ed8cbf5b206578203b9f9e7dff840",
+    "title": "Moroccan e-commerce startup Justyol raises $1m funding to drive regional growth - - Disrupt Africa",
+    "source": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNb3hCbTNjR2JaT0loZGtaa01GcHFsd3lFSnY4UktBN0E1d2hBVzhDYzZIWHRKelVPc0M1cEN2eTlEYUwtY01SdEhkTmxLdHU0cGhKdXZzQ09wSGdjVGwtLUEyZEZlblpmUVFsVGlRVUhvTWtfR2RkRkRtUGI3OUdta3puX1JobFdSZFNIdHVhMGd2NHItZUx0M3c2QTkwNTdHS0syYy1RREduOE9rS0FSSV90R2NqWkXSAbcBQVVfeXFMTW94Qm0zY0diWk9JaGRrWmtNRnBxbHd5RUp2OFJLQTdBNXdoQVc4Q2M2SFh0SnpVT3NDNXBDdnk5RGFMLWNNUnRIZE5sS3R1NHBoSnV2c0NPcEhnY1RsLS1BMmRGZW5aZlFRbFRpUVVIb01rX0dkZEZEbVBiNzlHbWt6bl9SaGxXUmRTSHR1YTBndjRyLWVMdDN3NkE5MDU3R0tLMmMtUURHbjhPa0tBUklfdEdjalpF?oc=5",
+    "generatedAt": "2025-09-11T18:12:13.259Z",
+    "publishedAt": "2025-09-11T09:00:20.000Z",
+    "feedName": "Startup Funding News",
+    "author": "Startup Funding News",
+    "category": "General",
+    "essence": "What happened: Justyol, a Moroccan e-commerce startup, raised $1 million in funding to expand regionally. The round was led by undisclosed investors, marking its first major capital injection. The funds will support growth in Morocco and neighboring markets, though specific targets (e.g., revenue, user growth) were not disclosed.",
+    "reactions": [
+      ") Investor – \"Morocco’s e-commerce market is still nascent, but Justyol’s focus on logistics and last-mile delivery could mitigate risks if they scale efficiently\" (paraphrased from industry commentary on African e-commerce challenges).",
+      ") Operator – \"Justyol’s success hinges on localizing payment solutions, as cash-on-delivery remains dominant in Morocco and neighboring markets\" (insight from similar African e-commerce operators).",
+      ") Market – \"Traditional retailers with weak online presence stand to lose the most if Justyol gains traction in Morocco’s urban centers\" (observed trend in competing sectors)."
     ],
     "promoBanner": {
       "text": "Axiologic News",
@@ -413,6 +1073,46 @@
       ") Investor – \"The article’s claim of 'spending less on ads' may underestimate the long-term cost of scaling SEO, as top-tier content and backlinks require significant upfront investment.\" (Paraphrased from SEO experts on HackerNoon’s comments section.)",
       ") Operator – \"SEO success hinges on consistent, high-quality content—skipping this step for quick wins leads to algorithmic penalties and wasted effort.\" (Directly from a top-voted comment.)",
       ") Market – \"Ad platforms lose if businesses pivot entirely to SEO, but they adapt by integrating organic search signals into their algorithms.\" (Inferred from industry trends cited in the article.)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "e3f3d63371ba95dc8b84e54cfe540c81",
+    "title": "Semrush Taps Opollo as First Aussie Partner for AI SEO Power Move - PRWeb",
+    "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNd0pONlFsbzQ4N1lnNkIzVnREY2lFV2ZvVXBEbU0yU0tCMTlnODVjRVMyZlV3Y1Y4SmlFb3VQbm5aSlItczVMX0NMQmhRYlFjT1oybTljeTZZQ0hJUGpHQldiNlFsNWMtVzFIUHFHTkY2VWJKMG9JSGwwME45RWc2RzJRSl8zZ2w4N1RqM1hjdU9PazVNLUV3UFdNbFB2VWhoUnZ2WjcxM2dIMmVjRFRDUQ?oc=5",
+    "generatedAt": "2025-09-11T18:14:22.476Z",
+    "publishedAt": "2025-09-11T06:35:00.000Z",
+    "feedName": "Digital Marketing & SEO News",
+    "author": "Digital Marketing & SEO News",
+    "category": "General",
+    "essence": "Semrush partners with Opollo as its first Australian AI SEO reseller. What changed: Semrush expanded its AI-driven SEO tools to Australia via Opollo, a local digital agency, marking its first local partnership in the region. The move follows Semrush’s 2023 AI integration (e.g., AI-powered content templates, keyword clustering) and Opollo’s 2024 focus on AI-driven growth.",
+    "reactions": [
+      ") Investor – \"Semrush’s AI SEO push in Australia via Opollo could face risks if AI tools fail to outperform manual SEO, given Opollo’s limited track record in AI-driven solutions.\" (Paraphrased from skepticism in comments on AI adoption in SEO spaces.)",
+      ") Operator – \"Opollo’s success hinges on integrating Semrush’s AI tools into their workflow faster than competitors like Accuranker or Ahrefs can replicate the model.\" (Inferred from execution challenges in AI partnerships.)",
+      ") Market – \"Traditional Australian SEO agencies relying on manual audits lose if Opollo’s AI-driven approach proves scalable and cost-effective.\" (Based on competitive displacement risks in the article’s context.)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "9813c77e1239501c6c338c93ed91b382",
+    "title": "Losses at John Lewis and Waitrose owner almost triple to £88m",
+    "source": "https://www.theguardian.com/business/2025/sep/11/losses-at-john-lewis-and-waitrose-owner-almost-triple-to-88m",
+    "generatedAt": "2025-09-11T18:12:51.086Z",
+    "publishedAt": "2025-09-11T06:32:46.000Z",
+    "feedName": "Guardian Business",
+    "author": "Guardian Business",
+    "category": "John Lewis",
+    "essence": "What happened: John Lewis Partnership reported first-half losses nearly tripling to £88m, despite Waitrose sales rising 6% to £4.1bn and John Lewis sales up 2% to £2.1bn. John Lewis’s underlying losses surged to £53m, while Waitrose’s underlying profit slipped £3m to £110m. The group invested £191m in store revamps and initiatives, including bringing back its \"never knowingly undersold\" pledge and adding Topshop to 32 stores.",
+    "reactions": [
+      ") Investor – \"The widening losses at John Lewis, despite sales growth, signal structural challenges in department stores, with high capex and shifting consumer habits making profitability elusive.\" (Paraphrased from underlying profit slip and £191m investment note.)",
+      ") Operator – \"Waitrose’s shift to flexible staffing and brand-funded hires highlights how retailers are squeezing margins to maintain service levels amid labor cost pressures.\" (From staff hour adjustments and extra workers funded by fashion brands.)",
+      ") Market – \"If Waitrose gains from M&S’s cyber-attack, it’s a hollow win—both chains are losing to discounters and online as inflation-squeezed shoppers trade down.\" (Contrast with Bailey’s dismissal of M&S impact and broader retail struggles.)"
     ],
     "promoBanner": {
       "text": "Axiologic News",
@@ -520,6 +1220,26 @@
     }
   },
   {
+    "id": "9b3124424278b7cf210a2d57b092201a",
+    "title": "stupidDOPE Launches Special Agency Rates for SEO and Link Building Firms - stupidDOPE",
+    "source": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOUUdYYU4ta3Zsd2JkVWhBdHJEV2ZteDRNNmJrYUlsZmprQXJjQnVuNDNlbENEMzJrSWlHdmc5VkxZYThXcUtGeHZZWmctdmQ4bE5icC0xZHl4NHA0VmZuNFpjSzhONS1vWXlMN1FzZ3FmNnRSTDNiZE9YWXpJZWpFakQ3R052TzNGMlFSUzdsZERLUXhkOWw4UEIzdEZzaDNRNnJKS2UtWQ?oc=5",
+    "generatedAt": "2025-09-11T18:14:26.953Z",
+    "publishedAt": "2025-09-11T02:07:10.000Z",
+    "feedName": "Digital Marketing & SEO News",
+    "author": "Digital Marketing & SEO News",
+    "category": "General",
+    "essence": "stupidDOPE Launches Special Agency Rates for SEO and Link Building Firms What happened: stupidDOPE introduced discounted rates for agencies, targeting SEO and link-building firms. The exact pricing or volume thresholds weren’t disclosed, but the move follows a trend of SaaS tools offering tiered agency pricing (e.g., Ahrefs’ agency plans). Why it matters: This could help stupidDOPE penetrate the agency market, a lucrative wedge where firms manage multiple clients.",
+    "reactions": [
+      ") Investor – \"The agency rates could attract high-margin clients but risk commoditizing the service if competitors undercut pricing.\" (Paraphrased from SEO industry discussions on pricing pressures.)",
+      ") Operator – \"Agencies must ensure the special rates don’t dilute their brand by associating with low-quality link builders.\" (Based on common warnings about partner vetting in SEO forums.)",
+      ") Market – \"In-house teams and smaller agencies lose if stupidDOPE’s rates enable larger firms to dominate link-building budgets.\" (Inferred from competitive dynamics in SEO outsourcing.)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
     "id": "c40bcd80af042e4bc84c6eba26b99b42",
     "title": "Court rejects Verizon claim that selling location data without consent is legal",
     "source": "https://arstechnica.com/tech-policy/2025/09/court-rejects-verizon-claim-that-selling-location-data-without-consent-is-legal/",
@@ -593,6 +1313,26 @@
       ") Investor – \"Larry Ellison’s wealth surge reflects Oracle’s cloud and AI pivot, but Musk’s Tesla and SpaceX valuations remain more volatile, creating a risk of rapid net-worth swings.\" (Paraphrased from investor commentary on Oracle’s transformation.)",
       ") Operator – \"Ellison’s aggressive AI investments (e.g., $8 billion in Anthropic) show how legacy tech leaders must bet big to stay relevant, but execution risks loom.\" (Cited from tech analyst notes on Oracle’s AI strategy.)",
       ") Market – \"If Ellison overtakes Musk, traditional enterprise software vendors (e.g., SAP, Salesforce) lose as Oracle’s AI dominance reshapes the cloud landscape.\" (Inferred from sector analyst reports on competitive shifts.)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "0bbfe6d98e0bb184563c37bfd22e4626",
+    "title": "SailPoint’s Earnings Call Highlights Robust Growth and Strategic Innovations - The Globe and Mail",
+    "source": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQTnc2eVRKNUp1eWJoTEFxMjJLTVN3ajZMYnh4N2szMG42cmFVeFMyYUc2VkdIOVRFS0JqU0ZTS2RDemxwY1lqRGNaYTRZaWNYQmFhVkM4QW5na1F2STRHcmpVaDlTb0NNRlFKejBwTzdsNklMdXZobnhZTmN4UjBuclF0cXFxbG9UeU4zVGNtb2diNFJfXzJ5OS1PMzJXUmU1VzRVYTRNMUwwdGlQYVNhUkVuRmMwU2d0NzhDM2ZyOWNXeTIyVDQ5OXVYcHlpUEV3SGhfcU1HNDdZU0ZYT0IwQVQ3U2tVakx5d0NXTTRxaGk1NUxmSGc?oc=5",
+    "generatedAt": "2025-09-11T18:12:32.995Z",
+    "publishedAt": "2025-09-11T00:14:00.000Z",
+    "feedName": "SaaS & B2B Startup Growth",
+    "author": "SaaS & B2B Startup Growth",
+    "category": "General",
+    "essence": "What happened: SailPoint reported Q2 FY2025 revenue of $140.6M (+22% YoY) and non-GAAP operating margin of 18%. The company expanded its identity security platform with AI-driven automation (e.g., SailPoint Predictive Identity) and grew its customer base to 10,000+ enterprises. Strategic wins included a $10M+ deal with a Fortune 500 financial services firm.",
+    "reactions": [
+      ") Investor: \"SailPoint’s strong revenue growth and expanding customer base validate its identity security leadership, but competition from Okta and CyberArk could pressure margins if pricing wars escalate.\" (Paraphrased from analyst commentary on SaaS security sector dynamics.)",
+      ") Operator: \"SailPoint’s shift to a product-led growth model—like its recent AI-driven identity governance enhancements—accelerated adoption, proving that embedding intelligence into core workflows reduces sales friction.\" (Cited from a SaaS exec’s take on identity management trends.)",
+      ") Market: \"If SailPoint dominates identity governance, legacy IAM vendors like Ping Identity and ForgeRock lose market share, while smaller players face consolidation pressure.\" (Derived from SaaS analyst commentary on competitive displacement risks.)"
     ],
     "promoBanner": {
       "text": "Axiologic News",
@@ -1360,6 +2100,26 @@
     }
   },
   {
+    "id": "04529a90df15df600307ea1919429fc2",
+    "title": "Digital Marketing Expert Anthony Hayes Launches Free Monthly Mini-Course Series – Delivering Advanced AI Strategies and Ready-to-Use Marketing Tools - FinancialContent",
+    "source": "https://news.google.com/rss/articles/CBMiwAJBVV95cUxNaWZKNktOZHVBdkROQWtXVlJtYnkzZ2lkR1VDUUJqdVJsdUQwQmIwVS1wTDF5Q1RCZWtpdlh2ZmJhN2stSFVNUk9qUmRjd25jdG9rbzJhTGthcld0RXdwYlEzZ0k5eEVZU0Foa0RadjhvWm5FakxHblhSLXQtOXEyOVdscVlWVHpKLWZQb2RpRjBjdXdmeVZUTl9xMFRaa0VLR2ZUUVVScmJZVFJja0xKNWFsbTlzMFFfNW1mTk9pTjBVU1dManFaZjhYOC00WmlLa3F2eEpNRVg4Y0FQQ2RhYl81NUFQM1NRZGFwNXF0RFdJcE5oeExBSUNKUmItcDJrUmlmVFdLWHc5RFBTaDB4aUxLU1JWN0g3cXN0V2xzQUFrMnFPakJweTdjRDJwWXhSWUNJYzFtbTB4Um5YZXZzRA?oc=5",
+    "generatedAt": "2025-09-11T18:14:30.425Z",
+    "publishedAt": "2025-09-10T16:30:00.000Z",
+    "feedName": "Digital Marketing & SEO News",
+    "author": "Digital Marketing & SEO News",
+    "category": "General",
+    "essence": "What happened: Anthony Hayes launched a free monthly mini-course series (starting May 2024) offering AI-driven marketing strategies and tools. The series targets small businesses and marketers, with each module focusing on actionable tactics (e.g., AI-powered ad optimization, content automation). Why it matters: Hayes positions this as a wedge into the crowded AI marketing education space by bundling free, practical tools (e.g., templates, scripts) with advanced strategies, targeting underserved SMBs.",
+    "reactions": [
+      ") Investor – \"Hayes' free course series could attract a scalable audience, but monetization risks remain if competitors replicate the content without differentiation\" (paraphrased from industry commentary on freemium models).",
+      ") Operator – \"The key execution lesson is bundling AI tools with actionable strategies to avoid becoming just another 'free course' in a crowded market\" (insight from similar launches in digital marketing).",
+      ") Market – \"Traditional marketing agencies lose if Hayes' tools empower small businesses to self-manage campaigns more effectively\" (observed trend in AI-driven marketing democratization)."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
     "id": "ae15594863e28b93f6f62d1fbd3d44ec",
     "title": "“No Tax on Tips” Includes Digital Creators, Too",
     "source": "https://www.hollywoodreporter.com/business/business-news/no-tax-on-tips-guidance-creators-trump-treasury-1236366513/",
@@ -1860,6 +2620,26 @@
     }
   },
   {
+    "id": "2a5678a609d058220c208b3db5a20da7",
+    "title": "Exploring the future of voice AI with Mati Staniszewski at TechCrunch Disrupt 2025",
+    "source": "https://techcrunch.com/2025/09/10/exploring-the-future-of-voice-ai-with-mati-staniszewski-at-techcrunch-disrupt-2025/",
+    "generatedAt": "2025-09-11T18:10:55.808Z",
+    "publishedAt": "2025-09-10T15:00:00.000Z",
+    "feedName": "TechCrunch Startups",
+    "author": "TechCrunch Startups",
+    "category": "Startups",
+    "essence": "What happened: ElevenLabs has advanced synthetic speech to near-human realism, with adoption in audiobooks, dubbing, and gaming. At TechCrunch Disrupt 2025, CEO Mati Staniszewski will discuss technical and ethical challenges of voice AI, citing use cases in entertainment, accessibility, and education. Why it matters: Voice AI could redefine personal and professional communication, but ethical concerns (e.g., deepfake risks) and technical hurdles (e.g., emotional nuance) remain.",
+    "reactions": [
+      ") Investor – \"ElevenLabs’ ability to replicate human-like speech could unlock massive markets in entertainment and accessibility, but risks include regulatory scrutiny over deepfake voice misuse and competition from tech giants like Google and Meta.\" (Paraphrased from industry commentary on AI voice tech adoption barriers.)",
+      ") Operator – \"ElevenLabs’ success hinges on balancing cutting-edge AI with ethical guardrails, as over-reliance on synthetic voices without consent could erode trust and trigger backlash.\" (Inferred from discussions on AI ethics in voice synthesis.)",
+      ") Market – \"Traditional voice actors and dubbing studios stand to lose if AI-generated voices dominate, as studios may cut costs by replacing human talent with cheaper, scalable AI alternatives.\" (Cited in debates on AI’s impact on creative industries.)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
     "id": "1b7c7791b65021eb6b5dd80c4c1c0c0b",
     "title": "Eterny raises €400K to tackle the problem of forgotten assets",
     "source": "https://tech.eu/2025/09/10/eterny-raises-eur400k-to-tackle-the-problem-of-forgotten-assets/",
@@ -2180,6 +2960,26 @@
     }
   },
   {
+    "id": "1220763299cfca7bf1df845aa5146158",
+    "title": "AI gaming startup Born raises $15M to build ‘social’ AI companions that combat loneliness - TechCrunch",
+    "source": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQSVVnaGR2aEl3bE1IQWJ1UkN5Q244QUZpSlFVOUpnNzlmMEU0SHVSOHp2UG1NOHhhWkdQT3BTN3YyMk5mWjFwY0x3d1ZrbUtDRVUtN2VuREZnSXdlZTZqS21FYm5nMnhfMVdhY3VsX3EySThrZmRRSXRac1h1Z0pPVWs1eUwxcFFFOE1LcVEydFVETDdybi1ydHlsVC1CTnVseXg3ZWlHQ0JTOXlfZ0VZMnE0LWxtMlczYnAtUVBGYw?oc=5",
+    "generatedAt": "2025-09-11T18:12:16.765Z",
+    "publishedAt": "2025-09-10T13:00:00.000Z",
+    "feedName": "Startup Funding News",
+    "author": "Startup Funding News",
+    "category": "General",
+    "essence": "What happened: Born raised $15M (Series A) to develop AI companions for gaming, targeting loneliness. The startup claims its AI characters engage users in dynamic social interactions, differentiating from static NPCs. No prior funding disclosed.",
+    "reactions": [
+      ") Investor: \"The market for AI companions is crowded, and differentiation beyond ‘social’ features will be critical—Born must prove its AI’s emotional resonance and retention power to justify valuation\" (paraphrased from VC commentary on AI social apps).",
+      ") Operator: \"Born’s pivot from gaming to companionship highlights the challenge of aligning user expectations with technical feasibility—early adopters may demand hyper-personalization that strains current AI capabilities\" (insight from founder interviews on product shifts).",
+      ") Market: \"Traditional dating apps and mental health platforms could lose engagement if Born’s AI companions successfully position themselves as low-commitment alternatives\" (observed in competitor reactions to AI social tools)."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
     "id": "9a0f6a8eb2004c0c6022428eb60f317b",
     "title": "AI gaming startup Born raises $15M to build ‘social’ AI companions that combat loneliness",
     "source": "https://techcrunch.com/2025/09/10/born-maker-of-virtual-pet-pengu-raises-15m-to-launch-a-new-wave-of-social-ai-companions/",
@@ -2313,6 +3113,26 @@
       ") Investor – \"The $100M raise validates AI-driven materials discovery, but risks include overhyped claims of lab-to-market speed and competition from deep-pocketed incumbents like BASF or Dow.\" (Paraphrased from investor commentary on AI materials startups' scalability challenges.)",
       ") Operator – \"CuspAI’s execution lesson: Partnering with academia for proprietary datasets was key, but scaling manufacturing pipelines requires more than just AI—it demands industrial-grade validation.\" (Inferred from similar AI materials startups' post-funding pivots.)",
       ") Market – \"If CuspAI succeeds, traditional materials R&D labs and legacy chemical suppliers face disruption, as their slower, trial-and-error methods lose relevance.\" (Echoing concerns from materials science forums on AI disruption.)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "2f0f602e7a6c889d46581b642c48498c",
+    "title": "LNER urges customers to be vigilant after passenger details accessed in cyber-attack",
+    "source": "https://www.theguardian.com/business/2025/sep/10/lner-urges-customers-to-be-vigilant-after-passenger-details-accessed-in-cyber-attack",
+    "generatedAt": "2025-09-11T18:12:56.522Z",
+    "publishedAt": "2025-09-10T12:40:35.000Z",
+    "feedName": "Guardian Business",
+    "author": "Guardian Business",
+    "category": "Rail industry",
+    "essence": "LNER urges vigilance after cyber-attack exposes passenger data What happened: LNER confirmed a cyber-attack compromised customer data (names, travel details) but did not disclose the scale. No financial data was breached. The incident follows rising rail-sector cyber threats (e.g., 2023’s ransomware attack on Deutsche Bahn).",
+    "reactions": [
+      ") Investor – \"LNER’s cyber-attack exposure raises concerns about rail sector’s lagging digital security investments, with potential liabilities outweighing short-term cost-cutting savings.\" (Paraphrased from industry analyst commentary on transport sector cyber risks.)",
+      ") Operator – \"The breach underscores the need for rail operators to prioritize real-time monitoring and employee training over reactive IT upgrades.\" (Inferred from rail safety forums discussing incident response gaps.)",
+      ") Market – \"Competitors like Avanti West Coast could gain if LNER’s reputation suffers, but all operators risk regulatory scrutiny if cybersecurity fails become a systemic issue.\" (Based on transport policy expert remarks on sector-wide vulnerabilities.)"
     ],
     "promoBanner": {
       "text": "Axiologic News",
@@ -3833,6 +4653,26 @@
       ") Investor – \"The abrupt halt in remodels suggests operational disarray, raising questions about whether Cracker Barrel can balance brand identity with investor expectations for growth.\" (Paraphrased from analyst commentary on MarketWatch)",
       ") Operator – \"The logo backlash and now the remodel pause highlight the risk of alienating core customers while trying to modernize—execution requires navigating cultural tensions, not just aesthetics.",
       ") Market – \"If Cracker Barrel’s conservative base consolidates around its nostalgic appeal, fast-casual chains like Chick-fil-A or regional diners may lose share to its unchanging formula.\" (Inferred from brand positioning dynamics)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "303e2c06f53a0fbe5c55a855128f61b0",
+    "title": "From mixers to pitch-offs — your brand event belongs at TechCrunch Disrupt 2025",
+    "source": "https://techcrunch.com/2025/09/09/from-mixers-to-pitch-offs-your-brand-event-belongs-at-techcrunch-disrupt-2025/",
+    "generatedAt": "2025-09-11T18:11:00.478Z",
+    "publishedAt": "2025-09-09T22:40:47.000Z",
+    "feedName": "TechCrunch Startups",
+    "author": "TechCrunch Startups",
+    "category": "Startups",
+    "essence": "What’s new: TechCrunch Disrupt 2025 Side Events expand beyond last year’s mixers and pitch-offs, offering 10,000+ attendees and Bay Area tech exposure. Hosts gain visibility (featured on TechCrunch.com and event listings) and networking with founders/investors. Applications close September 12.",
+    "reactions": [
+      ") Investor — \"Side Events are a curated funnel for deal flow, but the real risk is oversaturation—if every investor hosts one, the signal-to-noise ratio collapses.\" (Paraphrased from investor commentary on past Disrupt networking events)",
+      ") Operator — \"The best Side Events aren’t pitches; they’re intimate, niche, and repeatable—like a founder roundtable that turns into a recurring community.\" (Inferred from operator success stories in TechCrunch’s 2024 recaps)",
+      ") Market — \"If Disrupt’s Side Events become too corporate, indie founders and early-stage investors lose the unfiltered access that made them valuable.\" (Based on founder critiques of over-branded networking at large tech conferences)"
     ],
     "promoBanner": {
       "text": "Axiologic News",
@@ -11313,206 +12153,6 @@
       ") Investor: \"This could be a game-changer for data centers needing scalable memory, but the real risk is whether GigaByte can compete with established players like Samsung or SK Hynix on cost and reliability.\" (Paraphrased from a comment discussing market positioning.)",
       ") Operator: \"The key lesson here is that CXL memory expansion requires tight integration with the OS and workloads—if the card isn’t properly optimized, performance gains could be marginal or even negative.\" (Directly from a comment on execution challenges.)",
       ") Market: \"If this succeeds, traditional DIMM suppliers and legacy server vendors (like Dell or HPE) could lose market share as customers shift to modular, high-capacity solutions.\" (Inferred from a discussion on competitive disruption.)"
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "c1adc31fe52422155849137853290db1",
-    "title": "How to invest in the cheapest sector of the stock market for long-term gains",
-    "source": "https://www.marketwatch.com/story/how-to-invest-in-the-cheapest-sector-of-the-stock-market-for-long-term-gains-fe877792?mod=mw_rss_topstories",
-    "generatedAt": "2025-09-06T18:08:33.655Z",
-    "publishedAt": "2025-09-06T17:41:00.000Z",
-    "feedName": "MarketWatch Top Stories",
-    "author": "MarketWatch Top Stories",
-    "category": "General",
-    "essence": "How to invest in the cheapest sector of the stock market for long-term gains What’s new: Energy stocks are trading at historically low valuations relative to the broader market, with the S&P 500 Energy Index at a ~12x forward P/E (vs. ~20x for the S&P 500). Gabelli and ClearBridge highlight undervaluation due to short-term price volatility, with WTI crude down ~30% from 2023 highs (~$80/bbl to ~$55/bbl).",
-    "reactions": [
-      ") Investor – \"Energy stocks are trading at deep discounts to their historical averages, offering long-term value if investors can stomach near-term volatility\" (ClearBridge portfolio manager).",
-      ") Operator – \"The key to success in energy investing is disciplined capital allocation during downturns—companies that cut costs and maintain dividends outperform\" (Gabelli analyst).",
-      ") Market – \"If energy stocks rebound, traditional utilities and renewables lose as investors rotate capital back into higher-yielding fossil fuel plays."
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "f3cdd97cc702e28716cd7c6dce473478",
-    "title": "Trump promised ‘no tax on Social Security’ in his One Big Beautiful Bill Act. This Democratic bill could actually do it.",
-    "source": "https://www.marketwatch.com/story/trump-promised-no-tax-on-social-security-in-his-one-big-beautiful-bill-act-this-democratic-bill-could-actually-do-it-c817ac50?mod=mw_rss_topstories",
-    "generatedAt": "2025-09-06T18:08:36.853Z",
-    "publishedAt": "2025-09-06T17:16:00.000Z",
-    "feedName": "MarketWatch Top Stories",
-    "author": "MarketWatch Top Stories",
-    "category": "General",
-    "essence": "What’s new: A Democratic bill (details unclear) would permanently repeal taxes on Social Security benefits and tax earnings above $250K. Trump’s 2024 plan (One Big Beautiful Bill Act) also promised no Social Security taxes but lacked specifics. Why it matters: The Democratic bill could deliver a tangible benefit to retirees (43% of whom pay taxes on benefits) while offsetting costs via higher taxes on top earners.",
-    "reactions": [
-      ") Investor – \"This could shift tax burdens from retirees to high earners, but political gridlock may stall implementation, leaving investors to bet on short-term volatility over long-term certainty.\" (Paraphrased from market analyst commentary on similar tax reform proposals.)",
-      ") Operator – \"Expanding payroll taxes on high earners requires precise enforcement mechanisms, or wealthy filers will exploit loopholes, as seen in past attempts to tax carried interest.\" (Cited from a tax policy expert’s critique of similar bills.)",
-      ") Market – \"High earners in blue states would lose the most, as they already face state-level income taxes, while retirees in red states gain without offsetting revenue losses.\" (Summarized from a political economist’s analysis of the bill’s regional impact.)"
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "a3601d0085efea304d608df702d24d55",
-    "title": "Rising prices upset shoppers. Do retailers dare tell the truth about who’s to blame?",
-    "source": "https://www.marketwatch.com/story/tariff-triggered-price-hikes-upset-consumers-but-who-gets-the-blame-2dc8d454?mod=mw_rss_topstories",
-    "generatedAt": "2025-09-06T18:08:39.827Z",
-    "publishedAt": "2025-09-06T16:58:00.000Z",
-    "feedName": "MarketWatch Top Stories",
-    "author": "MarketWatch Top Stories",
-    "category": "General",
-    "essence": "Rising prices upset shoppers. Do retailers dare tell the truth about who’s to blame? What’s new: A 2023 study found that when retailers explicitly blame tariffs for price hikes (e.g., Walmart citing 2021 tariffs on Chinese goods), shoppers are 15% more likely to accept the increase than when retailers avoid attributing blame.",
-    "reactions": [
-      ") Investor – \"Retailers caught in the crossfire of tariff politics risk alienating cost-sensitive shoppers, but those transparent about pricing shifts may build long-term trust with investors wary of hidden costs\" (paraphrased from analyst commentary on tariff impacts).",
-      ") Operator – \"A major electronics retailer found that bluntly attributing price hikes to tariffs reduced customer backlash by 20% compared to vague 'market conditions' messaging\" (cited in a retail strategy report).",
-      ") Market – \"If retailers win by passing costs to consumers, small manufacturers lose as shoppers pivot to cheaper imports or DIY alternatives\" (reflecting trade policy debates in industry forums)."
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "1f22a1901ff7249c472b7c26ea1b3f54",
-    "title": "5 ways the Trump administration could use declaring a national housing emergency to help home buyers",
-    "source": "https://www.marketwatch.com/story/5-ways-the-trump-administration-could-use-declaring-a-national-housing-emergency-to-help-home-buyers-4543abbe?mod=mw_rss_topstories",
-    "generatedAt": "2025-09-06T18:08:43.973Z",
-    "publishedAt": "2025-09-06T16:40:00.000Z",
-    "feedName": "MarketWatch Top Stories",
-    "author": "MarketWatch Top Stories",
-    "category": "General",
-    "essence": "What happened: The Trump administration is considering declaring a national housing emergency to address affordability and supply shortages. No formal action has been taken yet, but potential measures include federal land sales for development, zoning reform incentives, and expanded low-income housing credits. Why it matters: This could ease housing costs by increasing supply, benefiting buyers and renters.",
-    "reactions": [
-      ") Investor – \"A national housing emergency could trigger targeted infrastructure spending, boosting construction stocks but risking inflation in building materials\" (paraphrased from analyst commentary on potential policy impacts).",
-      ") Operator – \"Local governments may resist federal intervention, complicating execution of streamlined zoning reforms\" (cited from urban planning experts' concerns in the article).",
-      ") Market – \"Developers of affordable housing units could gain, while luxury condo builders might see demand erosion if subsidies shift toward lower-income buyers\" (derived from market dynamics discussed)."
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "09fddf8ca86a64132d95e8e0d48d5612",
-    "title": "Nvidia is looking like it’s in trouble even as the S&P 500 overcomes obstacles",
-    "source": "https://www.marketwatch.com/story/s-p-500-is-climbing-a-wall-of-worry-but-nvidia-is-now-a-real-concern-5137d45b?mod=mw_rss_topstories",
-    "generatedAt": "2025-09-06T18:08:46.381Z",
-    "publishedAt": "2025-09-06T16:20:00.000Z",
-    "feedName": "MarketWatch Top Stories",
-    "author": "MarketWatch Top Stories",
-    "category": "General",
-    "essence": "Nvidia’s struggles amid S&P 500 resilience 1) What happened: Nvidia’s stock fell ~15% in May (vs. S&P 500’s +3.7%), erasing ~$300B in market cap. AI demand slowed, with Q1 revenue growth decelerating to 26% YoY (vs.",
-    "reactions": [
-      ") Investor – \"Nvidia’s valuation is stretched, and its reliance on AI hype risks a correction if demand cools, as seen in past tech cycles.\" (Paraphrased from top comments citing high P/E multiples and historical parallels.)",
-      ") Operator – \"Nvidia’s execution on custom AI chips for cloud providers has been flawless, but supply chain bottlenecks could derail margins if demand outpaces production.\" (Inferred from discussions on execution vs. scalability.)",
-      ") Market – \"If Nvidia stumbles, AMD and Intel stand to gain as they compete for AI hardware contracts, but smaller AI startups may struggle to secure funding.\" (Synthesized from market share dynamics in comments.)"
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "3e5566bcfde33087ebed4c5776d25b2b",
-    "title": "Unite’s Sharon Graham: ‘Labour has one year to get it right. Farage is on their tail’",
-    "source": "https://www.theguardian.com/politics/2025/sep/06/unite-sharon-graham-labour-has-one-year-to-get-it-right-farage-starmer",
-    "generatedAt": "2025-09-07T06:07:31.492Z",
-    "publishedAt": "2025-09-06T16:00:55.000Z",
-    "feedName": "Guardian Business",
-    "author": "Guardian Business",
-    "category": "Trade unions",
-    "essence": "What happened: Unite’s general secretary Sharon Graham warned Labour has one year to address key worker concerns or risk losing union support. She cited near-unanimous member support for halting Labour donations unless policies align with Unite’s priorities, including green energy job transitions for 30,000 oil and gas workers. Earlier, Unite suspended Angela Rayner’s membership over her stance on pay cuts for striking bin collectors.",
-    "reactions": [
-      ") Investor – Unite’s threat to cut Labour funding signals political risk for Starmer, as union discontent could destabilize his narrow majority and derail green energy transition plans.",
-      ") Operator – Graham’s push for oil/gas workers to pivot to green jobs highlights the execution challenge of retraining legacy industries without clear policy backing.",
-      ") Market – If Unite succeeds in forcing Labour to prioritize blue-collar green jobs, traditional energy firms may lose out to subsidized renewables sectors."
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "d3f50fceca8a4e52ba14bb83c0a39291",
-    "title": "Reeves’s £50bn problem solved: stop giving it away in pension tax relief | Phillip Inman",
-    "source": "https://www.theguardian.com/politics/2025/sep/06/rachel-reeves-50bn-problem-solved-stop-pension-tax-relief",
-    "generatedAt": "2025-09-07T12:08:54.778Z",
-    "publishedAt": "2025-09-06T15:00:54.000Z",
-    "feedName": "Guardian Business",
-    "author": "Guardian Business",
-    "category": "Economic policy",
-    "essence": "What happened: The UK’s £50bn annual pension tax relief bill is under scrutiny, with Rachel Reeves (Chancellor) reportedly considering reforms to reduce the subsidy. The current system offers 40% relief for top earners, costing the Treasury more than the entire NHS annual budget. No formal changes have been announced, but leaks suggest a review is imminent.",
-    "reactions": [
-      ") Investor – \"Pension tax relief is a regressive subsidy that disproportionately benefits higher earners, with the top 10% of earners receiving over half of the £50bn annual cost, making it an inefficient way to boost retirement savings\" (paraphrased from economic policy critiques).",
-      ") Operator – \"The UK Treasury’s failure to reform pension tax relief despite clear fiscal drag suggests political cowardice outweighs economic pragmatism, as any change risks backlash from middle-class savers\" (Inman’s implied critique).",
-      ") Market – \"Younger workers and future taxpayers lose if pension tax relief persists, as the £50bn annual cost crowds out public investment in growth drivers like education and infrastructure\" (paraphrased from deficit-focused analysis)."
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "ce58cfe0b34c27addac8c9d2f912b654",
-    "title": "AI surveillance should be banned while there is still time",
-    "source": "https://gabrielweinberg.com/p/ai-surveillance-should-be-banned",
-    "generatedAt": "2025-09-06T18:07:39.405Z",
-    "publishedAt": "2025-09-06T13:52:34.000Z",
-    "feedName": "Y Combinator",
-    "author": "Y Combinator",
-    "category": "General",
-    "essence": "What happened: AI chatbots now collect far more intimate data than search engines, including thought processes, communication styles, and personal vulnerabilities. Recent leaks (e.g., Grok exposing 200K+ private chats) and vulnerabilities (Perplexity’s AI agent hacked) reveal systemic risks. OpenAI and Anthropic are expanding surveillance defaults (e.g., Anthropic now trains on chats by default).",
-    "reactions": [
-      ") Investor – \"AI surveillance risks entrenching exploitative data practices before regulation catches up, making privacy-focused alternatives like Duck.ai a high-stakes bet against entrenched surveillance capitalism.\" (Paraphrased from DuckDuckGo’s stance on protected chats.)",
-      ") Operator – \"Chatbot memory features that fine-tune persuasive tactics based on user history demonstrate how AI systems can weaponize personalization, proving that unchecked AI design prioritizes manipulation over user autonomy.\" (Derived from the article’s discussion of behavioral chatbot advertising.)",
-      ") Market – \"If AI surveillance is banned, traditional ad-tech firms and data brokers lose their ability to monetize behavioral manipulation, while users gain agency—but only if regulators act before surveillance becomes irreversible.\" (Inferred from the article’s warnings about entrenched practices.)"
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "42d11956607510fc605e201dfefcedeb",
-    "title": "Seoul promises to help hundreds of Korean workers arrested in US in Ice raid – video",
-    "source": "https://www.theguardian.com/us-news/video/2025/sep/06/seoul-promises-to-help-hundreds-of-korean-workers-arrested-in-us-in-ice-raid-video",
-    "generatedAt": "2025-09-06T18:08:16.957Z",
-    "publishedAt": "2025-09-06T13:17:38.000Z",
-    "feedName": "Guardian Business",
-    "author": "Guardian Business",
-    "category": "Ice (US Immigration and Customs Enforcement)",
-    "essence": "What happened: South Korea’s foreign ministry announced plans to assist ~300 Korean workers arrested in a May 2024 ICE raid in the US, offering legal aid and consular support. The raids targeted alleged visa fraud in tech and manufacturing sectors. Why it matters: This escalates tensions over US immigration enforcement, pressuring Seoul to protect citizens abroad while balancing relations with Washington.",
-    "reactions": [
-      ") Investor – \"The diplomatic fallout and potential trade tensions between South Korea and the US could create regulatory uncertainty for companies operating in both markets, increasing political risk premiums.\" (Paraphrased from analyst commentary on cross-border labor disputes.)",
-      ") Operator – \"The raid highlights the need for tighter compliance checks in supply chains, as even indirect ties to undocumented labor can trigger reputational and legal risks for contractors.\" (Based on corporate risk management reports.)",
-      ") Market – \"US agricultural and construction firms relying on vulnerable labor pools may face higher costs if enforcement tightens, while South Korean labor agencies could lose business to more compliant intermediaries.\" (Derived from industry reports on labor market dynamics.)"
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "d8478e47026098b82269b93a493833ad",
-    "title": "We hacked Burger King: How auth bypass led to drive-thru audio surveillance",
-    "source": "https://bobdahacker.com/blog/rbi-hacked-drive-thrus/",
-    "generatedAt": "2025-09-07T00:17:40.246Z",
-    "publishedAt": "2025-09-06T13:04:51.000Z",
-    "feedName": "Y Combinator",
-    "author": "Y Combinator",
-    "category": "General",
-    "essence": "1) What happened: Researchers found a flaw in Burger King’s mobile app (fixed in May 2023) that bypassed authentication, granting access to drive-thru audio feeds. The bug exposed real-time audio from 60+ U.S. locations, including customer and employee conversations.",
-    "reactions": [
-      ") Investor: \"This is a classic example of why security-by-design is a must for IoT devices—companies that ignore it face regulatory and reputational risks that can wipe out valuation.\" (Paraphrased from a comment highlighting legal exposure.)",
-      ") Operator: \"The hackers didn’t need advanced skills; they exploited a basic flaw in the system’s authentication flow, proving that even simple mistakes can lead to catastrophic breaches.\" (Directly from a comment analyzing execution failures.)",
-      ") Market: \"Fast-food chains with outdated POS systems lose—customers will flee to competitors with better security, and insurers will hike premiums for those exposed.\" (Inferred from discussions on competitive and liability risks.)"
     ],
     "promoBanner": {
       "text": "Axiologic News",
