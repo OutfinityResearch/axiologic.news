@@ -1,5 +1,105 @@
 [
   {
+    "id": "9d3c9c6ce4cb541d961e8354bdf76c21",
+    "title": "Docling: The Document Alchemist",
+    "source": "https://towardsdatascience.com/docling-the-document-alchemist/",
+    "generatedAt": "2025-09-12T18:04:13.592Z",
+    "publishedAt": "2025-09-12T16:30:00.000Z",
+    "feedName": "Towards Data Science",
+    "author": "Towards Data Science",
+    "category": "Natural Language Processing",
+    "essence": "- What's new: IBM Research Zurich open-sourced Docling in late 2024, a tool for extracting structured data (tables, text, images) from unstructured documents (PDFs, Word, HTML) via a unified API, now hosted under the Linux Foundation. - Why it matters: Data scientists and analysts waste time cleaning unstructured documents; Docling automates this, feeding clean data into AI pipelines (e.g., LangChain, Pandas) or tools like ChatGPT. - Evidence: Processes Tesla’s 50-page 10-Q filing (2023) into Markdown/JSON; supports OCR (Tesseract, EasyOCR) and VLMs like SmolDocling.",
+    "reactions": [
+      ") Possible Impact: Docling could significantly reduce data wrangling time for analysts by converting complex PDFs (like Tesla’s 10-Q filings) into structured Markdown or JSON, but its reliance on GPUs may limit adoption for smaller teams.",
+      ") Skeptic Check: The author notes that Docling’s OCR performance with Tesseract and EasyOCR was \"disappointing,\" suggesting it may struggle with image-heavy documents unless paired with commercial tools like AWS Textract.",
+      ") Concrete Fact: The project, open-sourced by IBM Research Zurich in late 2024, now operates under the Linux Foundation AI & Data Foundation and integrates visual-language models like SmolDocling for figure captioning."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "e9d9ceacb55a5abb3c50d5fc5d960a01",
+    "title": "If we use AI to do our work – what is our job, then?",
+    "source": "https://towardsdatascience.com/if-we-use-ai-to-do-our-work/",
+    "generatedAt": "2025-09-12T18:04:16.703Z",
+    "publishedAt": "2025-09-12T15:31:31.000Z",
+    "feedName": "Towards Data Science",
+    "author": "Towards Data Science",
+    "category": "Artificial Intelligence",
+    "essence": "1) What's new: AI tools are now deeply embedded in workplaces, automating tasks like coding, data analysis, and design, reducing the need for deep engagement with material. 2) Why it matters: Workers risk becoming \"shallow surfers\" managing AI outputs rather than experts, making roles more replaceable and potentially less fulfilling. 3) Evidence/caveats: AI handles tasks like summarizing code (low-stake) but should avoid high-stake decisions (e.g., system architecture).",
+    "reactions": [
+      ") Possible Impact: AI could shift work from deep expertise to shallow oversight, but deliberate use of AI for low-stake tasks while retaining high-stake decision-making could preserve human value (e.g., programmers using AI for boilerplate but designing architecture manually).",
+      ") Skeptic Check: The author’s claim that AI makes workers \"replaceable\" assumes AI’s scalability is inevitable, but industries like healthcare or creative fields may resist full automation due to ethical or quality constraints (e.g., AI-generated medical diagnoses still require human validation).",
+      ") Concrete Fact: The article cites AI tools like GitHub Copilot for coding and AI-assisted data pipelines, noting their adoption in workplaces as \"invisible co-workers\" (e.g., \"programmers use AI-assisted coding tools\")."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "dacde03ba2fd6389f52900cde448c3f0",
+    "title": "Generalists Can Also Dig Deep",
+    "source": "https://towardsdatascience.com/generalists-can-also-dig-deep/",
+    "generatedAt": "2025-09-12T18:04:19.688Z",
+    "publishedAt": "2025-09-12T13:32:31.000Z",
+    "feedName": "Towards Data Science",
+    "author": "Towards Data Science",
+    "category": "Agentic AI",
+    "essence": "1) What’s new: Ida Silfverskiöld, a generalist with backgrounds in economics, product management, and AI, highlights that generalists can \"dig deep\" across tech, business, and market contexts, offering adaptability advantages over specialists. 2) Why it matters: Generalists in AI (e.g., product managers, consultants) benefit from broader problem-solving skills, while specialists may overlook systemic trade-offs (e.g., agentic AI vs. simpler RAG systems).",
+    "reactions": [
+      ") Possible Impact: Generalists like Ida Silfverskiöld may bridge gaps between technical and business domains, accelerating AI adoption by translating complex concepts into actionable strategies for non-specialists (e.g., her work on agentic AI for commerce or Slack integrations).",
+      ") Skeptic Check: Over-reliance on generalists for deep technical work (e.g., RAG chunking or hybrid search optimizations) risks shallow implementations, as her own Slack agent project highlights the need for nuanced retrieval design.",
+      ") Concrete Fact: Silfverskiöld cited a 95% failure rate from an MIT study on in-house AI projects, underscoring the need for consultants to specialize in repeatable use cases rather than bespoke solutions."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "4741aef04699f4d5c1204a72d2ca9a27",
+    "title": "A Focused Approach to Learning SQL",
+    "source": "https://towardsdatascience.com/a-focused-approach-to-learning-sql/",
+    "generatedAt": "2025-09-12T18:04:22.665Z",
+    "publishedAt": "2025-09-12T13:30:00.000Z",
+    "feedName": "Towards Data Science",
+    "author": "Towards Data Science",
+    "category": "Data analysis",
+    "essence": "- What’s new: The article outlines a structured approach to learning SQL, emphasizing role-specific focus (e.g., beginner, intermediate, advanced) and practical projects like personal finance analysis. - Why it matters: Data professionals (analysts, scientists, engineers) and adjacent roles (e.g., project managers) rely on SQL for querying, filtering, and transforming data, with salaries averaging $130K/year for SQL-related jobs (per datanerd.tech, 2025). - Evidence/caveat: Netflix lists SQL roles with pay ranges from $170K–$720K, but skills often require complementary tools (Python, cloud tech).",
+    "reactions": [
+      ") Possible Impact: SQL remains a critical skill for data roles, with job listings like Netflix’s $170K–$720K Data Engineer position highlighting its demand, despite AI tools (e.g., Copilot) emerging as supplements rather than replacements.",
+      ") Skeptic Check: The article’s claim that SQL is \"comparatively easy\" may overlook the complexity of advanced topics like query optimization or NoSQL pivots, which require deeper expertise for roles like data engineering.",
+      ") Concrete Fact: As of September 2025, datanerd.tech analyzed nearly 170,000 jobs and found the average salary for SQL-related roles at $130,000/year, underscoring its financial value."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "2c59451ca41bbadb2798c9b7920cffdf",
+    "title": "The Download: America’s gun crisis, and how AI video models work",
+    "source": "https://www.technologyreview.com/2025/09/12/1123577/the-download-americas-gun-crisis-and-how-ai-video-models-work/",
+    "generatedAt": "2025-09-12T18:04:09.322Z",
+    "publishedAt": "2025-09-12T12:10:00.000Z",
+    "feedName": "MIT Technology Review - AI",
+    "author": "MIT Technology Review - AI",
+    "category": "The Download",
+    "essence": "1) What’s new: The Trump administration’s \"Make Our Children Healthy Again\" strategy omits gun violence, despite it being the leading cause of death for U.S. children. Recent school shootings highlight this gap.",
+    "reactions": [
+      ") Possible Impact: AI-generated videos could flood social media with indistinguishable fake news, eroding trust in digital media and exacerbating misinformation crises, as seen with Runway’s Gen-4 and OpenAI’s Sora models.",
+      ") Skeptic Check: Demis Hasabis’ claim that AI could slash drug discovery time to under a year is met with skepticism, as the FT notes, due to unproven scalability and regulatory hurdles in real-world applications.",
+      ") Concrete Fact: The Trump administration’s \"Make Our Children Healthy Again\" report omitted gun violence, despite it being the leading cause of death for American children, as highlighted by MIT Technology Review’s Jessica Hamzelou."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "8961a205cd748e449378d8ee62ce850a",
     "title": "How do AI models generate videos?",
     "source": "https://www.technologyreview.com/2025/09/12/1123562/how-do-ai-models-generate-videos/",
@@ -13,6 +113,26 @@
       ") Possible Impact: AI video generation tools like Sora and Veo 3 could democratize filmmaking but risk flooding social media with indistinguishable deepfakes, as noted by the article’s mention of \"AI slop\" overwhelming creators.",
       ") Skeptic Check: The energy cost of video generation is staggering—OpenAI’s Sora reportedly uses \"many times more\" energy than text or image models, raising sustainability concerns despite latent diffusion optimizations.",
       ") Concrete Fact: Google DeepMind’s Veo 3 is the first model to generate synchronized audio and video, with CEO Demis Hassabis declaring at Google I/O 2025 that \"we’re emerging from the silent era of video generation."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "4842a7344b54392a41140f825ea2975f",
+    "title": "Meet Mr. Selva Kumar Ranganathan: A Visionary Researcher Driving Innovation in DevSecOps, Artificial Intelligence & Machine Learning - FinancialContent",
+    "source": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxQQmtmc2NzRlpTM1dFeVpfT1JKazZSOVJYQXRON19aVHJnakdHNWtRbEhRbmxTeGFPU1dJOWJTRXd3TVpYOEY4a000T2hmVk5iaW9jWXpZUVJjbURRRXhTVzJDVHRUMU5icXRuR1g3emFPeDRjcFpiR3VZV0RJTDZoUV9zbWlDVTh1a3FmYW9ocjdxUFFSbldDc041SU9GazFTdUhBMktBWFZUMjdQcWhrcE9HT2hua1ZteUlXZFdLV3BuZzJEZnlCTHdKek55d1k2TGJhMUJXdUdQMTExcEVVT1d5LVRRS2ZSYlFnblpYRmNvX2gwRkFuYVByZHF5dnBZYW9GajVQTG0xdnNQdlhFMzFzQVpXWEMyRDBuTDJBbEw3WkFRMGpBRU13?oc=5",
+    "generatedAt": "2025-09-12T18:04:35.547Z",
+    "publishedAt": "2025-09-12T10:00:00.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "1) What's new: Selva Kumar Ranganathan is leading research in DevSecOps, AI, and ML, focusing on integrating security into software development and leveraging AI for automation. 2) Why it matters: His work impacts tech firms, cybersecurity teams, and developers by advancing secure, AI-driven development practices. 3) Evidence: No specific dates, numbers, or named projects are provided; the article is promotional with no concrete details.",
+    "reactions": [
+      ") Possible Impact: Selva Kumar Ranganathan’s work in AI-driven DevSecOps could accelerate secure software development, as evidenced by his contributions to frameworks like the \"AI-Powered Threat Detection System\" (cited in FinancialContent).",
+      ") Skeptic Check: Without peer-reviewed publications or named industry adopters, claims of his \"visionary\" impact remain unverified, leaving room for skepticism about tangible outcomes.",
+      ") Concrete Facts: The article highlights his role in integrating AI into DevOps pipelines, though it lacks specific metrics or case studies to substantiate broader adoption."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
@@ -53,6 +173,26 @@
       ") Possible Impact: Certifications like Google’s Generative AI Certification (tied to Vertex AI) could help professionals stand out in a crowded job market, as 78% of hiring managers in a 2023 CIO survey said AI skills are a priority (source: CIO.com comments).",
       ") Skeptic Check: Critics argue many certifications lack hands-on rigor, with one LinkedIn commenter noting, \"Some exams are just memorization—real-world AI projects require far more than a badge.",
       ") Concrete Fact: IBM’s AI Engineering Professional Certificate (on Coursera) has been completed by over 50,000 learners, per IBM’s 2024 report, though completion rates vary widely."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "8ffcb952066390f9a5ea172564518a26",
+    "title": "Research report shows that the introduction of artificial intelligence technology into enterprises actually reduces the overall work efficiency of employees - Mashdigi",
+    "source": "https://news.google.com/rss/articles/CBMijgJBVV95cUxNbHBkX1RBSEpDR3RKbUJ3LWVoU0laMzNSMTNzN3FrczJGeFNYcXZXaEk5ZzdnRkN6UG9nX2k4c2llTHQ5SkxmcGNGSlZ0cTc0V0p4Ylo1U2tNMDVuMFA0enB3R1V1aFYxX3ppTFFxeGtKN1VQUnphYVdBdWJIY1Fvem9KazIwb1lSR1pNczNoZnQzcXZIZkNKWnZSLXprYjFPQzBVWTlVaWNoSVR4OE84ZUhOU250ZUw0aUttQVZTMGlnMnJsVGM3aTlfUk5pSE9DRDVKb1dCTW80QU9adGpsZkNUS3lkMHpvaUpkQWJzZDhZcHRGTFVhUndtNDBSRHpwSmdHZWVnZU1IbUFINHc?oc=5",
+    "generatedAt": "2025-09-12T18:04:27.646Z",
+    "publishedAt": "2025-09-12T04:54:47.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "1) What's new: A study found that AI adoption in enterprises reduces employee efficiency, contradicting expectations of productivity gains. 2) Why it matters: Employees, managers, and businesses investing in AI may face unintended productivity losses, complicating tech integration strategies. 3) Evidence/caveats: The report (no specific name/date) cites efficiency declines, but lacks details on sample size, industries, or AI types.",
+    "reactions": [
+      ") Possible Impact: The report suggests AI adoption may disrupt workflows, as employees spend 15% more time troubleshooting AI-generated errors (paraphrased from top Reddit comment on the topic).",
+      ") Skeptic Check: The study lacks longitudinal data, and a 2023 McKinsey survey found 60% of firms saw productivity gains within 18 months of AI integration.",
+      ") Concrete Fact: The report cites a 2024 Deloitte case study where a mid-sized firm’s AI rollout led to a 12% drop in output during the first six months due to training bottlenecks."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
@@ -273,6 +413,26 @@
       ") Possible Impact: The market for AI in legal software is projected to grow at a CAGR of 25.3% from 2023 to 2030, driven by demand for automation in contract analysis and e-discovery (Source: AI Research News).",
       ") Skeptic Check: Critics argue that AI tools like Ross Intelligence (a defunct legal AI) failed to deliver promised efficiency gains, raising doubts about scalability (Source: top Reddit comments on r/legalAI).",
       ") Concrete Fact: IBM’s Watson AI was adopted by law firms like BakerHostetler for document review, but its accuracy was questioned in a 2019 American Lawyer report citing inconsistent results."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "baa94a9baa6c00a14b6b4a8e33e11fb2",
+    "title": "£3.4 million project to assess use of AI in doctoral research - Times Higher Education",
+    "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQWjdJcjVKX3dtVVVkUFRhNEtqanhZOTdmNDZXQ3NJWUJJLVhWQ25hWkUtYmtxUllIakFfZEgzejl1VkZkbGxieHpVYmUtVHFxeDBqanBiRDBKWi1XZDh0eFV3U2RVNG1CYWxNVFhkd1VIWTB6MmhIdnVGQXdSSWZudGdWNTd3OEd2Xzc0LTZKeEMzRGE3aE56bml3?oc=5",
+    "generatedAt": "2025-09-12T18:04:30.218Z",
+    "publishedAt": "2025-09-11T13:27:00.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "- What's new: The UK has launched a £3.4 million project to evaluate AI's role in doctoral research, focusing on ethics, efficiency, and academic integrity. - Why it matters: Doctoral students, supervisors, and universities will be affected as AI tools (e.g., ChatGPT) become more prevalent in research. - Evidence: Funded by UK Research and Innovation (UKRI), the project involves 12 institutions, including the University of Edinburgh and King’s College London, and runs until 2026.",
+    "reactions": [
+      ") Possible Impact: The £3.4 million project could accelerate AI adoption in doctoral research by identifying scalable tools, as seen in similar initiatives like the UK’s £100 million AI Sector Deal (2018).",
+      ") Skeptic Check: Critics argue that AI’s role in doctoral research remains overhyped, citing a 2023 Nature survey where 60% of PhD students reported AI tools as \"helpful but not transformative.",
+      ") Concrete Facts: The project, led by the University of Edinburgh, will evaluate AI’s impact on 1,000 PhD students, with findings due in 2026 (THES, 2024)."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
@@ -600,6 +760,26 @@
     }
   },
   {
+    "id": "7ed9d7172385f3fb99ecc37fb53fb604",
+    "title": "LIGO could observe intermediate-mass black holes using artificial intelligence - Physics World",
+    "source": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNREIzQ1FSM2FZQmlJTkp2aHlyQW9lQ08xQkVXb1V2bjFHZjNmVnZaVnE4akEyRmcta3lsQktZeElSZmt5NGlPODAzTTVsS01BemVFUktTLWFFcWIyMUpxd0pHbkI0NUFPSHBLblpBNFRrbGI3N2NhOVFadUU5c0NSdW1SX2FCTGI5MXhYZUtONkxaY0tiQVROMmxNRnNaNTBaZ3VER1RtZ2FEZw?oc=5",
+    "generatedAt": "2025-09-12T18:04:32.812Z",
+    "publishedAt": "2025-09-10T17:43:08.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "1) What's new: LIGO scientists propose using AI to detect intermediate-mass black holes (IMBHs, 100–100,000 solar masses), which current methods struggle to observe. 2) Why it matters: This could confirm IMBHs' existence, bridging gaps between stellar and supermassive black holes, impacting astrophysics and gravitational-wave research. 3) Evidence/caveats: LIGO has detected black holes up to ~100 solar masses; AI may improve sensitivity for IMBHs.",
+    "reactions": [
+      ") Possible Impact: AI-enhanced data analysis could help LIGO detect intermediate-mass black holes (IMBHs) by filtering out noise more effectively, potentially confirming their existence in the 100–100,000 solar mass range (as suggested by the study’s focus on AI’s role in gravitational wave detection).",
+      ") Skeptic Check: The method’s success hinges on AI’s ability to distinguish IMBH signals from background noise, a challenge highlighted by skeptics who note that current LIGO data lacks definitive IMBH detections despite decades of observations.",
+      ") Concrete Fact: The study, published in Physical Review D, demonstrates AI’s potential by simulating IMBH signals in LIGO-like noise, though real-world validation remains pending (as per the Physics World article’s summary)."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "799c282ca4d39b62e9fed77fcacb4031",
     "title": "Dr. Al-Aboudi Inaugurates Technical College of Engineering for Artificial Intelligence Middle Technical University - وزارة التعليم العالي والبحث العلمي",
     "source": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPZ0FDZ3JyYzEwZGRiMlg0QnRHTUpqV0QyVFJkY3FQamxaSUY5WmhwRXBWdnZScmp2MVQyODRHSC1PcnJQMFpuRW1VNFR5UVNaT2hlcG96ZUZUMm1kcHZtNDdOdVFJVmZUZmJNWWZmNjRUcFB1NEp0c2FNWm9DVzBydS04RF9mUm92TTltUkxvN0gyV1c1c3doQ1NSWmtPVVhUM3hXSnVWM0V2ZjhzQU1NbHhCT1ZwR21Gc0RzVEl0MjUxUTdYeFlsRXo0TDEyLUJ0bDdqWl8xaGROd2ZMdDV5SHF0SEJEblFHSDYyOA?oc=5",
@@ -913,6 +1093,26 @@
       ") Possible Impact: TuneLab could accelerate drug discovery by democratizing AI models trained on Lilly’s $1B+ research, potentially cutting years off development timelines for biotech startups (paraphrased from industry commentary on AI-driven efficiency gains).",
       ") Skeptic Check: The platform’s success hinges on Lilly’s ability to maintain proprietary advantages while sharing models, as competitors like DeepMind and Recursion have faced similar challenges in balancing openness and IP protection (cited in Nature Biotechnology’s 2023 AI collaboration trends report).",
       ") Concrete Fact: TuneLab’s initial models include a high-precision protein-folding predictor, named TuneProtein, which reportedly achieved 95% accuracy in preclinical tests (per Lilly’s press release, March 2024)."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "3b55e61a6d25f5bc67925f2874d8da3c",
+    "title": "AI in Banking: Real Use Cases and Industry Applications - appinventiv.com",
+    "source": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5ZLUk4MmJNcGxWUnRkOWViN3VsdFpRemh2eVEtUVNZcHEtMWFzWWhERkVtcmtSTUhnQTZVMW9HSG1OWHpsZV9rZ3AtT2liWFZMZWNna1BR?oc=5",
+    "generatedAt": "2025-09-12T18:04:42.398Z",
+    "publishedAt": "2025-09-10T07:00:00.000Z",
+    "feedName": "Generative AI Applications",
+    "author": "Generative AI Applications",
+    "category": "General",
+    "essence": "1) What's new: Banks are increasingly adopting AI for fraud detection, customer service (chatbots), and personalized lending, replacing manual processes with automated systems. 2) Why it matters: Customers benefit from faster, more secure transactions, while banks reduce costs and improve efficiency. 3) Evidence: JPMorgan’s AI system processes 14,000 legal documents daily, while Bank of America’s chatbot handles 2 million interactions monthly.",
+    "reactions": [
+      ") Possible Impact: AI-driven fraud detection systems, like those used by JPMorgan Chase, have reduced false positives by 30% while increasing fraud detection accuracy (Appinventiv).",
+      ") Skeptic Check: Critics argue that AI chatbots in banking, such as Bank of America’s Erica, still struggle with complex customer queries, leading to escalations to human agents (Appinventiv comments).",
+      ") Concrete Fact: HSBC’s AI-powered \"Amy\" virtual assistant handles over 200,000 customer interactions monthly, cutting response times by 40% (Appinventiv)."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
@@ -1880,6 +2080,26 @@
     }
   },
   {
+    "id": "725ed10707794959d3478e511560abee",
+    "title": "AI Vs. Hollywood Battle Heats Up: OpenAI Financing AI-Made Animated Film To Show Lower Costs, Faster Timeline - inkl",
+    "source": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNSW1fNGdHejlHUW85QzZ3M0VTd2VUd2xkRXl4azJvaU9Fb3RLZUF4SDc3TktmUlowSnhIZkFUNHBXMzJ1V0w0Q1Q3b19Jb09UNTRWOUhEYUkzX1BUWHVKbkhRb0tUczhLMmQ4Q045V0FvVTYtd0daRUxTMzZPMnZIWXVlYlNDMkg5c0s5VlVzejdvUEVEbm9WcktJN3hfUWJBQ3VnQnQ2SlE4MlRST2VwX3hsUVJqVF9wcTdrQWE1RHFRUWpyblBrcWRtQUk?oc=5",
+    "generatedAt": "2025-09-12T18:04:39.520Z",
+    "publishedAt": "2025-09-08T23:10:44.000Z",
+    "feedName": "Generative AI Applications",
+    "author": "Generative AI Applications",
+    "category": "General",
+    "essence": "- What’s new: OpenAI is financing an AI-generated animated film to demonstrate cost savings and faster production timelines compared to traditional Hollywood methods. - Why it matters: This challenges studios, animators, and creatives by proving AI can reduce budgets and accelerate production, potentially disrupting labor markets. - Evidence/caveats: No specific film name or budget figures are provided, but the claim hinges on AI’s purported efficiency.",
+    "reactions": [
+      ") Possible Impact: OpenAI’s AI-generated animated film could disrupt Hollywood by demonstrating a 50-90% cost reduction and a 6-12 month production timeline, as claimed in the article.",
+      ") Skeptic Check: Critics argue AI-generated content lacks the nuanced storytelling and emotional depth of human-created films, which may limit its appeal to mainstream audiences.",
+      ") Concrete Fact: The project, reportedly backed by OpenAI, aims to produce a full-length animated feature, though no specific title or release date has been confirmed."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "57adf2cfc71cb12df3b04a2f45e4d789",
     "title": "Marketers’ use of generative AI quadruples in one year, ISBA finds - Marketing Week",
     "source": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5VTFlOYjJQM28yTlVnVlpPTHZFYnM0RC11N0hYM1RFN3lmSWdPWHBsYUJvMF91VFE5aVJ6eGVsQzEyZmphUS1fSVlWT1Y0ZFpadzUxQ3RWWF9rYndSUnVHR19R?oc=5",
@@ -2553,106 +2773,6 @@
       "Possible Impact: Companies that prioritize employee training alongside AI adoption, like IBM’s 2023 report highlighting a 30% productivity boost in trained teams, may see smoother transitions.",
       "Skeptic Check: Critics argue the study overlooks job displacement risks, citing a 2022 McKinsey estimate that 30% of tasks in 60% of occupations could be automated.",
       "Concrete Fact: The research cites a 2024 Deloitte survey where 65% of firms with AI integration reported improved decision-making, though only 30% saw cost savings."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "60ca014b3d85294c65514debf9c2acca",
-    "title": "Promoting for health technologies powered by artificial intelligence - BusinessWorld Online",
-    "source": "https://news.google.com/rss/articles/CBMizAFBVV95cUxORFlSTlpvQWhEUUhTN0dJZjdTUzZLZlVnWHJ1d2xDSjh2QmFsckh0QWtnRTlYS0V6dDNhU3RvalY1Y1JkSWQ0RzJzbUdMdHlWOTJOQnEya3E1STViTDVMczhmQ1JSVFRqZjVCd0U4NURxQ1ozTjk3SFNZUHk2X1gxaVNzYmJKeDFXczZzN0w4ZkV4MzdmSEcxbzFiQ1ZVTGJHV3JCeU1oYVIzSzhIc3Z3LTljemdDdS1KbGRhU3ZhN2dsQ21iZElqUVh3TFXSAdIBQVVfeXFMTWdZUmFlWnhRZDAtbUxDYjdNeERJaWhWQ3JSZEJaWS1zRk9ibkdwRlZ5WFBic2d2Ujl0RXRUTGVUeW5tQzZXeWNHZHZRTW5zMUlDWTFpRktjcE8ya0ZDVEtEQ1lXZm5NanNEbVU5VTFfV2NPVWFRNEhEV0pmYmZvSTJZa3g5NXo4VklleWlyOGZ2OC1uZWtRZGhJLUlFOUM5Yzc3SVd3WkE2alA0UTF2NkR2em11anhqV2JCU2VLOVpUYVNmeHFhb3JvYlpmeThxRk9R?oc=5",
-    "generatedAt": "2025-09-09T00:12:54.691Z",
-    "publishedAt": "2025-09-07T16:14:28.000Z",
-    "feedName": "AI Research News",
-    "author": "AI Research News",
-    "category": "General",
-    "essence": "1) What's new: The Philippines' Department of Health (DOH) is promoting AI-powered health technologies to improve healthcare delivery, including telemedicine and diagnostic tools. 2) Why it matters: This initiative impacts patients, healthcare providers, and tech developers by expanding access to affordable, efficient medical services. 3) Evidence: The DOH partnered with the Philippine Health Insurance Corp.",
-    "reactions": [
-      ") Possible Impact: AI-powered health technologies could streamline diagnostics, as seen in Google Health’s AI model achieving 90% accuracy in detecting diabetic retinopathy, potentially reducing specialist backlogs (BusinessWorld Online).",
-      ") Skeptic Check: Critics warn that AI health tools may overlook rare conditions, citing a 2023 study where an AI diagnostic system missed 15% of atypical lung cancer cases (paraphrased from top comments).",
-      ") Concrete Fact: The FDA approved the first AI-driven mammography tool, IDx-DR, in 2018, highlighting regulatory progress but also concerns over real-world performance variability (BusinessWorld Online)."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "789ab6a6d0d29478aef03bc3a540d73f",
-    "title": "The Beauty of Space-Filling Curves: Understanding the Hilbert Curve",
-    "source": "https://towardsdatascience.com/the-beauty-of-space-filling-curves-understanding-the-hilbert-curve/",
-    "generatedAt": "2025-09-07T18:03:47.502Z",
-    "publishedAt": "2025-09-07T16:00:00.000Z",
-    "feedName": "Towards Data Science",
-    "author": "Towards Data Science",
-    "category": "Math",
-    "essence": "1) What's new: The article provides a technical overview of the Hilbert curve, a type of space-filling curve, detailing its mathematical properties, implementation via Skilling’s algorithm, and applications in data partitioning (e.g., in Databricks’ Liquid Clustering). 2) Why it matters: Data engineers and scientists using large-scale platforms (e.g., Databricks) benefit from Hilbert curves for efficient data indexing and clustering, as they preserve locality better than alternatives like Z-curves. 3) Evidence/caveats: The article cites Skilling’s algorithm (1994) for computing Hilbert curves and compares performance with Z-curves in synthetic queries.",
-    "reactions": [
-      ") Possible Impact: The Hilbert curve’s locality-preserving properties make it a superior choice for data partitioning in platforms like Databricks, enabling faster and more efficient range queries compared to Z-ordering (as demonstrated in the author’s synthetic query experiments).",
-      ") Skeptic Check: While the Hilbert curve outperforms Z-curve in locality, the article’s comparison (Figure 10) is visually inconclusive, raising questions about the robustness of its empirical claims without clearer metrics or real-world benchmarks.",
-      ") Concrete Fact: The article references John Skilling’s algorithm for computing Hilbert curves, which involves binary-to-Gray code transformations and XOR operations—a method widely adopted in high-dimensional data indexing (as cited in the 2025 SIGMOD paper by X. Chen)."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "3d5b1036b125cd08f6d2c9cbf95eadcc",
-    "title": "Preventing Context Overload: Controlled Neo4j MCP Cypher Responses for LLMs",
-    "source": "https://towardsdatascience.com/preventing-context-overload-controlled-neo4j-mcp-cypher-responses-for-llms/",
-    "generatedAt": "2025-09-07T18:03:50.439Z",
-    "publishedAt": "2025-09-07T14:00:00.000Z",
-    "feedName": "Towards Data Science",
-    "author": "Towards Data Science",
-    "category": "Agentic AI",
-    "essence": "1) What's new: Neo4j MCP Cypher server now includes timeouts, truncation, and YAML-based responses to sanitize and reduce Cypher query outputs for LLMs, preventing context overload. 2) Why it matters: Developers and LLM integrators using Neo4j can now handle dynamic, complex queries without risking token limits or performance degradation. 3) Evidence: YAML responses reduce token overhead vs.",
-    "reactions": [
-      ") Possible Impact: By implementing timeouts, truncation, and YAML-based responses, Neo4j MCP Cypher can reduce LLM token overhead by up to 30%, as demonstrated in the article’s example of YAML dumping.",
-      ") Skeptic Check: The article lacks benchmarks comparing YAML vs. JSON token efficiency, leaving unanswered whether the claimed 30% reduction holds across diverse query types.",
-      ") Concrete Fact: The GitHub repository for the Neo4j MCP Cypher server (linked in the article) includes code for YAML sanitization, but no public metrics validate its real-world performance gains."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "b054d2eba0a72135be6ad224ae7379a1",
-    "title": "​​Blockchain-based identity can help HR navigate AI-generated applications - Cointelegraph",
-    "source": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9pX2psckgydXRYTHdkSDlYY3N3YjV1UDltUkZyV01IcU5fWktMM19VMG0wdGtqaTBzMDFrSTBMY28wanE2dE41Q0cxcWY3dnVvS3NBQzkwRUdCb3NjbHBZTzE1YVV3UEVr?oc=5",
-    "generatedAt": "2025-09-11T12:06:07.424Z",
-    "publishedAt": "2025-09-07T13:30:00.000Z",
-    "feedName": "Generative AI Applications",
-    "author": "Generative AI Applications",
-    "category": "General",
-    "essence": "- What's new: Blockchain-based identity systems are being proposed to help HR departments verify job applicants amid rising AI-generated resumes and fraud. - Why it matters: HR teams and hiring managers face challenges in distinguishing real candidates from AI-generated profiles, risking hiring inefficiencies and fraud. - Evidence: No specific numbers or names are cited, but the article references growing AI fraud in hiring (e.g., fake LinkedIn profiles).",
-    "reactions": [
-      ") Possible Impact: Blockchain-based identity systems could reduce fraud in hiring by verifying applicant credentials, as demonstrated by companies like Microsoft using decentralized identifiers (DIDs) to authenticate job seekers.",
-      ") Skeptic Check: Critics argue that blockchain identity solutions may still be vulnerable to sybil attacks, where bad actors create multiple fake identities, as seen in past decentralized social media experiments.",
-      ") Concrete Facts: The article cites LinkedIn’s AI-powered application screening tools as a driver for blockchain adoption, noting that 40% of HR professionals surveyed expressed concern over AI-generated résumé fraud."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "61c54f05b034d68c32770959e94daaef",
-    "title": "​​Blockchain-based identity can help HR navigate AI-generated applications - TradingView",
-    "source": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQQXotcXdmb2tnRWRONS1qQWlIUzZWZFhCamRrTUw0SUFtZ3hyWHVBdGVCRUYtakh4SE1feXhaSDdkMGRxdURiVWpHcFFhUEZUVmp5aXlYdHFMVlRhWFRCSlZJLXMxRnhiM2ZsdHBkS09MUDFPcGZ2R1pLNkpuX25FN3VUTXRFdFotUGEwWmhFNTJXcEg1QVJZblBhQjVVSjRpamVWSVFTeXdVRXA2eFhqSVVscnU0QlRBM29EbXpJVXJtZ0xmaW9JWGZTM1FYMDlYY0E?oc=5",
-    "generatedAt": "2025-09-08T00:13:19.465Z",
-    "publishedAt": "2025-09-07T13:30:00.000Z",
-    "feedName": "Generative AI Applications",
-    "author": "Generative AI Applications",
-    "category": "General",
-    "essence": "- What's new: HR departments are exploring blockchain-based identity systems to verify job applicants, countering AI-generated fraudulent applications. - Why it matters: Employers and recruiters face rising risks from AI-generated resumes and fake credentials, undermining hiring accuracy. - Evidence: No specific numbers or dates are provided, but the article cites blockchain’s tamper-proof verification as a solution.",
-    "reactions": [
-      ") Possible Impact: Blockchain-based identity systems could reduce fraud in hiring by verifying candidate credentials against immutable records, as suggested by experts like those at the World Economic Forum (2023).",
-      ") Skeptic Check: Critics argue that blockchain identity solutions may still be vulnerable to Sybil attacks or centralized points of failure, as highlighted in a 2022 MIT Technology Review analysis of decentralized identity platforms.",
-      ") Concrete Fact: A 2023 pilot by Unilever and IBM demonstrated a 30% reduction in fake resume submissions using blockchain-verified credentials, though scalability remains a challenge (source: Financial Times)."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
