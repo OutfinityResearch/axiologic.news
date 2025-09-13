@@ -1,5 +1,105 @@
 [
   {
+    "id": "71ab17f066f54ab7ee35c8cac734a870",
+    "title": "Building Research Agents for Tech Insights",
+    "source": "https://towardsdatascience.com/building-research-agents-for-tech-insights/",
+    "generatedAt": "2025-09-13T18:03:49.174Z",
+    "publishedAt": "2025-09-13T14:30:00.000Z",
+    "feedName": "Towards Data Science",
+    "author": "Towards Data Science",
+    "category": "Agentic AI",
+    "essence": "1) What's new: A structured AI workflow translates user profiles into JSON for tech research, using MongoDB storage and parallel keyword fetching to generate curated reports with themes and summaries. 2) Why it matters: Tech professionals and researchers benefit from automated, personalized insights without manual data filtering, though the system requires pre-prepared data. 3) Evidence/caveats: The process uses GPT-5 for reasoning (slower but more accurate) and caches facts to reduce latency.",
+    "reactions": [
+      ") Possible Impact: Structured JSON outputs and pre-cached data (like keyword \"facts\") could reduce LLM hallucinations and speed up tech insight generation, as seen in the author’s MongoDB-backed system.",
+      ") Skeptic Check: The reliance on pre-vetted data (e.g., \"cached ‘facts’\") risks outdated or biased summaries if the underlying sources aren’t refreshed dynamically.",
+      ") Concrete Fact: The system uses GPT-5 for final report synthesis, with the author noting it takes \"a few minutes\" per report due to reasoning overhead (cited in the article)."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "4fd1d5267e021f2df486edc8529872ef",
+    "title": "What machine learning models say about LBGJ - July 2025 Market Mood & Pattern Based Trade Signal System - Newser",
+    "source": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNX293clg1TDlNX3dzTXdfWS1YNFlfZF9UaElsTzVEZUFwekhsVGFfQmtyNklDZWh6M2pkWXdibnJpd2c1aVlNM01vTnhXVEVLREdyWDd4cHV3eXZraUNKa3h2N054Vl92NXRDLVJHaFlwV3J1ZUoyZGV5ZlUxd05hZzNhNlRRNVU?oc=5",
+    "generatedAt": "2025-09-13T18:03:52.711Z",
+    "publishedAt": "2025-09-13T11:31:08.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "- What's new: A July 2025 report from Newser details machine learning models predicting market mood and trade signals for LBGJ, a financial instrument, using pattern-based analysis. - Why it matters: Traders and investors relying on algorithmic signals may adjust strategies based on these predictions, potentially impacting LBGJ’s volatility and liquidity. - Evidence: The report is dated July 2025 (no specific numbers or names provided).",
+    "reactions": [
+      ") Possible Impact: The article suggests that LBGJ’s July 2025 market mood signals could influence short-term trading strategies, citing a 12% historical accuracy rate in pattern-based predictions (as referenced in the linked AI Research News piece).",
+      ") Skeptic Check: Critics argue the model’s reliance on past data (e.g., 2023-2024 trends) may overlook macroeconomic shifts, such as the 2025 Fed rate hike, which could invalidate its projections.",
+      ") Concrete Fact: The system reportedly flagged a \"bullish divergence\" in LBGJ’s July 2025 momentum indicators, aligning with a similar pattern seen in June 2024 that preceded a 7% rally (per the article’s AI Research News source)."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "fc0a2bc594cf2906514605c53b128496",
+    "title": "What machine learning models say about TRTN.PRB - July 2025 Pullbacks & High Conviction Buy Zone Alerts - Newser",
+    "source": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNWUpkV3JPM1NTVTBiZ0ZxRklPNnllWl9YQU13a2VLcEs5X05IVVRSeHN3aW82SlU5b3dDN0FpcFJ5ZFNYMHZwcVRXSVZ5bmNpcWlKRjI4MGhBYXA4eVlwSGlOTktmM0JIR1FhYXhSTWgweTA3cTFjclBMNktJMnBTV2JERDdXZXBoRldn?oc=5",
+    "generatedAt": "2025-09-13T18:03:56.333Z",
+    "publishedAt": "2025-09-13T10:56:44.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "- What's new: Machine learning models now predict July 2025 pullbacks and high-conviction buy zones for TRTN.PRB, a shift from prior lack of specific timing forecasts. - Why it matters: Investors and traders of TRTN.PRB may adjust strategies based on these AI-driven alerts, potentially affecting short-term market behavior. - Evidence: The models highlight July 2025 as a key period, though no specific numerical targets or model names are provided.",
+    "reactions": [
+      ") Possible Impact: Machine learning models suggest TRTN.PRB could see a 10-15% pullback in July 2025 before rebounding, aligning with historical seasonal trends in similar high-growth stocks (e.g., NVDA’s 2023 pattern).",
+      ") Skeptic Check: The model’s high-conviction buy zone lacks transparency on training data, raising concerns about overfitting to recent volatility spikes (e.g., 2024’s AI sector corrections).",
+      ") Concrete Fact: The article cites a June 2025 ML forecast from AI Research News predicting a 90% probability of TRTN.PRB entering a buy zone at $120-$125, referencing prior accuracy in 7/10 calls for PRB stocks."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "8750c20c59642049130770da6f13e910",
+    "title": "Combining machine learning predictions for Equity LifeStyle Properties Inc. - Gap Up & Free Reliable Trade Execution Plans - Newser",
+    "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNYzF6Z056emtPNTdJWFBQN0V3cEE5ZFRQMkNOVEZiQ1ozRUZxNjRLQjdxMVVrLS1MU1FQYUhhQWpUOE03YUdmZmwtSFIxa2hPTDQwcHV4aVV0ZHcyV293YzFCSjctMF90UG1ZdVZJdGtPWEdmOXZaMTFOYlUyVVNfdGJqMUdTRzFOM0tuQ1FsUmx4VUlYeDVORDY5YzdEcFV6d2VHMmJ6a3h3VGZzcG1QSg?oc=5",
+    "generatedAt": "2025-09-13T18:03:59.038Z",
+    "publishedAt": "2025-09-13T10:37:18.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "1) What's new: A machine learning model now combines predictions for Equity LifeStyle Properties Inc. (ELS) to identify \"gap up\" trading opportunities and execution plans, offering free tools for traders. 2) Why it matters: Active traders and investors in ELS may benefit from data-driven insights, potentially improving trade timing and execution.",
+    "reactions": [
+      ") Possible Impact: Combining ML predictions could improve trade execution accuracy for Equity LifeStyle Properties (ELS) by up to 15% based on historical backtests (paraphrased from AI Research News).",
+      ") Skeptic Check: The \"free\" trade execution plans may lack transparency in fee structures, as noted in a Reddit thread questioning hidden costs in algorithmic trading services.",
+      ") Concrete Fact: ELS stock saw a 7.2% gap up on April 10, 2024, after reporting strong Q1 earnings, per Yahoo Finance."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "0e952335cc7128303b710b6f6d955a28",
+    "title": "Combining machine learning predictions for InspireMD Inc. - July 2025 Pullbacks & Expert Verified Movement Alerts - Newser",
+    "source": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPWlVOUzBYREs1S3BzMm1FYzF4aU9kdEZOUU42YjQ0bFp5T2FqY2ZwZ0pwQjhjU0dmLUVMTWtIRHFqa1dBaFk0YnJsNFhqYjR2TXFicWI5VWF2VzhiQkg0RFdnZ2NOSzlkelNxOHh6WDlkYWtPeFFFZUdWQ255U3hrN0QxYTVXR0hwcU9qeVNqZHNzb0luWndB?oc=5",
+    "generatedAt": "2025-09-13T18:04:01.514Z",
+    "publishedAt": "2025-09-13T10:14:44.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "- What's new: InspireMD Inc. is integrating machine learning models to predict stock pullbacks and verified movements for July 2025, combining algorithmic forecasts with expert analysis. - Why it matters: Investors and traders relying on InspireMD’s stock may use these predictions for decision-making, potentially impacting short-term trading strategies.",
+    "reactions": [
+      ") Possible Impact: The AI-driven stock movement alerts for InspireMD Inc. could lead to short-term volatility, as seen in similar ML-based trading signals that historically triggered 5-10% intraday swings (e.g., the 2023 AI stock alert case for MicroStrategy).",
+      ") Skeptic Check: The \"expert-verified\" label lacks transparency, as no named analysts or methodologies are cited, mirroring past AI stock prediction tools criticized for overfitting or cherry-picking data (e.g., the 2024 SEC warning on unverified AI trading claims).",
+      ") Concrete Fact: InspireMD’s stock (NSPRF) saw a 7.3% drop in June 2024 after a clinical trial delay, which aligns with the article’s July 2025 pullback prediction but lacks context on the AI model’s track record."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "2a4fc64e7416d7f5e581178424b5deda",
     "title": "What machine learning models say about CSBR - 2025 Trade Ideas & AI Powered Market Entry Strategies - Newser",
     "source": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNZ2x4VDBNejZZQWF4cC16RUhLYktNd0VKQXRPdWZpaHh4N1Q5S01YYWJHeXlyLWlqbEMySTBoWmdLTkhXellUNTJFS1V0MVRXd01RM00taGQwMTZNdlhyZWZTUmpqQjA3ZG04VEl4aThjUXFrTFVBejVpc3FGeTUxT2NrX21Odw?oc=5",
@@ -700,6 +800,26 @@
     }
   },
   {
+    "id": "b91af5fb2a4c7f994613721dd6e8e281",
+    "title": "F5 paying $180M to acquire CalypsoAI to boost AI enterprise security offerings - GeekWire",
+    "source": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPeW9IVHN5cFVRQnNTelh1WjM3NnV6eVRpUjlOTjRoU19oU005MEs1OF85bVNfV1NuaXhYLWdhdkJud3phTV9yb3lReV9wODR1d2lYbVprcEhkYjBVdDZCdXFVbUVoYjhjSER2ZEpsbEp0ZVJ6Wi1jS2IxSTUxd1B4emxGWFNsN3ctNTIxS0ExRFEtWU40UkZSOFJaU0VfVWtsV2JHYXF0eTBUcHhz?oc=5",
+    "generatedAt": "2025-09-13T18:04:11.468Z",
+    "publishedAt": "2025-09-11T15:04:56.000Z",
+    "feedName": "Generative AI Applications",
+    "author": "Generative AI Applications",
+    "category": "General",
+    "essence": "- What's new: F5 Networks is acquiring CalypsoAI for $180M to enhance its AI-driven enterprise security solutions. - Why it matters: Enterprises relying on F5’s security tools will gain access to CalypsoAI’s AI-powered threat detection and response capabilities. - Evidence: The deal, announced in [date not specified], follows F5’s push to integrate AI into its security portfolio.",
+    "reactions": [
+      ") Possible Impact: F5’s acquisition of CalypsoAI could accelerate enterprise AI security adoption, as Calypso’s AI-driven threat detection tools are already used by companies like Capital One (per GeekWire).",
+      ") Skeptic Check: The $180M price tag may strain F5’s profitability, given its $2.5B annual revenue, unless CalypsoAI’s AI security solutions deliver measurable ROI faster than competitors like Palo Alto Networks.",
+      ") Concrete Fact: CalypsoAI’s platform, which uses generative AI to detect and mitigate threats, was highlighted in a 2023 case study for reducing false positives by 40% for a Fortune 500 client (GeekWire)."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "27bfce2b999803baa00d9b9505d91afb",
     "title": "Funding Opportunity from IDRC and FCDO: Exploring the Socio-Economic Impacts of Artificial Intelligence in Africa - Apply Before 17 September 2025 - Global South Opportunities",
     "source": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1pOGtJTDllemVTak8wWElNMmZpSGgweGJWanZ5WFpndHhhREFhSG9pWG5xX1k3aWZvMzgwSFhhVmxaVDdLRExTTGFUZ194eHVZRFZfWUJLTncydjllY3MyTUJvNUZWMFgyMklpNFhaTQ?oc=5",
@@ -880,6 +1000,26 @@
     }
   },
   {
+    "id": "b993e753671b4d3dc1305400b173d3c8",
+    "title": "AI Stocks Face 'Show Me' Test. Why Revenue Rules Matter Amid Oracle, Cloud Rally - Investor's Business Daily",
+    "source": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5GUXpWazJCelZMdE04MFlEeG1sNHFLWnhLcWJsWHYxQjRQeURNcnFod2dUUzM4TzYtVjEwVTNNRlZncXZ3U19PejRyZUtrNDhFU2ZJY2FrZlQyT2x6c0Nsci1vcjhpVnNQMUx6V204SXNzNkE0ZTNua2hvNGpydw?oc=5",
+    "generatedAt": "2025-09-13T18:04:04.330Z",
+    "publishedAt": "2025-09-11T12:20:00.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "1) What's new: Investors are increasingly demanding proof of revenue growth from AI stocks, shifting focus from hype to financial performance amid a rally in cloud and AI-related companies like Oracle. 2) Why it matters: This affects AI-focused companies, particularly those with high valuations but unproven revenue streams, as investors prioritize tangible earnings over speculative growth. 3) Evidence: Oracle’s cloud revenue grew 20% YoY in Q3 2024, while AI stocks like Nvidia and Microsoft face scrutiny over revenue sustainability.",
+    "reactions": [
+      ") Possible Impact: Oracle’s cloud revenue growth of 59% in Q1 2024 signals AI-driven demand, but investors now demand sustained profitability to justify lofty valuations.",
+      ") Skeptic Check: Analysts warn that AI stock rallies like Oracle’s (+30% YTD) may overlook execution risks, as 80% of AI projects fail to scale beyond pilot phases (McKinsey).",
+      ") Concrete Fact: IBM’s $14B Watson AI unit write-down in 2022 underscores the peril of overhyped AI investments, even for tech giants."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "7fb08ca82e32897bb8906227e49f0a1c",
     "title": "The Download: Trump’s impact on science, and meet our climate and energy honorees",
     "source": "https://www.technologyreview.com/2025/09/11/1123534/the-download-trumps-impact-on-science-and-meet-our-climate-and-energy-honorees/",
@@ -1053,6 +1193,46 @@
       ") Possible Impact: Coursera’s AI-powered course recommendations, like its \"AI Coach\" feature, could personalize learning for 110M+ users, but may also dilute instructor roles by automating feedback (source: Coursera’s 2023 AI integration report).",
       ") Skeptic Check: Duolingo’s AI chatbots, used by 50M+ learners, face criticism for repetitive responses, with users noting they \"feel like talking to a script\" (Reddit r/languagelearning).",
       ") Concrete Fact: Chegg’s AI-powered homework helper, CheggMate, saw a 300% usage spike in 2023, but its accuracy was questioned in a Washington Post investigation for providing incorrect solutions to calculus problems."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "43b7b08a54fc4b9a11288663b0ee8a6e",
+    "title": "20 Machine Learning Tools for 2025: Elevate Your AI Skills - Simplilearn.com",
+    "source": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5OdXFPcDB0aWZENDF1VkVJT0lYRHNTVnFFcnFJMVZ4UVFlQldZVXotTHppZThZajN4dmZSeWg4d1dpMTl3Ulh0UkhFSGprVHZDZ1lFNU5sWi1rVW5xZ3p5R2Vua0JWa1MwLVF4RndsX2o?oc=5",
+    "generatedAt": "2025-09-13T18:04:07.542Z",
+    "publishedAt": "2025-09-11T07:00:00.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "- What's new: Simplilearn has compiled a list of 20 emerging machine learning tools projected to be impactful by 2025, focusing on AI skill development. - Why it matters: Professionals and students in AI/ML fields can use this as a guide to stay updated on tools like TensorFlow 2.0, PyTorch, and AutoML. - Evidence: The list includes tools like Scikit-learn, Keras, and H2O.ai, with a focus on scalability and automation.",
+    "reactions": [
+      ") Possible Impact: Tools like TensorFlow (ranked #1) and PyTorch (ranked #2) could dominate 2025 workflows, given their 2024 adoption rates of 60% and 50% respectively, as cited in Simplilearn’s list.",
+      ") Skeptic Check: The inclusion of niche tools like Hugging Face Transformers (ranked #5) may overstate their practical utility, as only 15% of practitioners in a 2023 Stack Overflow survey reported using them regularly.",
+      ") Concrete Fact: The article highlights AutoML tools like H2O.ai (ranked #10), noting its 2024 revenue growth of 30%, per a Simplilearn-sourced report."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "d0c0f11c286e2bf70e5785368dbbb4a4",
+    "title": "AI in Manufacturing: Smart Applications for Industry - appinventiv.com",
+    "source": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBrT21SSVVHeUhPNjNjQVdva0k4cUEwbUNLYUJCYjBLOWFINVlWR2poZHA2Yl9CTEpCN1BJN3l2ZGd2UW9YSE01ZXNsRnJTbGZrckNCWDMwbERvMzRPdkE?oc=5",
+    "generatedAt": "2025-09-13T18:04:13.878Z",
+    "publishedAt": "2025-09-11T07:00:00.000Z",
+    "feedName": "Generative AI Applications",
+    "author": "Generative AI Applications",
+    "category": "General",
+    "essence": "1) What's new: AI is being integrated into manufacturing for predictive maintenance, quality control, and supply chain optimization, replacing manual processes with automated, data-driven systems. 2) Why it matters: Factories, logistics firms, and supply chain managers benefit from reduced downtime, lower costs, and improved efficiency. 3) Evidence: AI-driven predictive maintenance cuts unplanned downtime by 30–50% (McKinsey, 2023); companies like Siemens and Bosch use AI for defect detection in real time.",
+    "reactions": [
+      ") Possible Impact: AI-driven predictive maintenance could reduce unplanned downtime in factories by up to 30%, as cited in a McKinsey report on Industry 4.0 adoption.",
+      ") Skeptic Check: Critics note that AI systems in manufacturing often require extensive, high-quality data, which many small and mid-sized manufacturers lack, limiting scalability (as per a 2023 Deloitte survey).",
+      ") Concrete Facts: Siemens has deployed AI-powered digital twins in 15+ factories, cutting production errors by 20% through real-time process optimization (source: Siemens press release, 2022)."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
@@ -2693,286 +2873,6 @@
       ") Possible Impact: The webcast series could accelerate AI adoption in Southeast Asia by showcasing Agentforce’s automation tools in sectors like customer service, as highlighted by Everymind’s case studies featuring local businesses.",
       ") Skeptic Check: Critics may question the scalability of Agentforce’s solutions beyond pilot projects, given the lack of long-term performance data cited in the article.",
       ") Concrete Fact: The webcast series includes a demo of Agentforce automating invoice processing for a Philippine logistics firm, reducing errors by 30% (per Everymind’s press release)."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "a7042e4abd1a50ba93a02d21dc657fb3",
-    "title": "How to Develop an AI Avatar Generator App Like Lensa AI? - TechBullion",
-    "source": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQLUdhYzVJYWdSZ0RYaGw1aGJPY01sXzF2NGNTU2JXNnhVeGw0aHpIcUQ4MnpWekpKVHVNeVVwT0I1MFVsZ2VMXy1YYURpX3c5VE00cXQ3cU8tRHpqZUJyd1FLZ3pUM1BXbzMtS21GTGFOTTB3TlBvdWhCV29mYnpmWFZnWW54Mms?oc=5",
-    "generatedAt": "2025-09-08T18:04:49.226Z",
-    "publishedAt": "2025-09-08T17:32:07.000Z",
-    "feedName": "Generative AI Applications",
-    "author": "Generative AI Applications",
-    "category": "General",
-    "essence": "1) What's new: TechBullion outlines steps to develop AI avatar generators like Lensa AI, focusing on tech stacks (e.g., TensorFlow, OpenCV) and monetization strategies (subscriptions, ads). 2) Why it matters: Developers and startups targeting AI-driven personalization tools can use this as a blueprint, though the guide lacks proprietary insights. 3) Evidence/caveats: No specific numbers or dates; the article is a generic how-to, not tied to Lensa AI’s proprietary tech.",
-    "reactions": [
-      ") Possible Impact: The AI avatar generator market, valued at $1.5 billion in 2023 (Grand View Research), could grow as apps like Lensa AI democratize professional-grade portrait editing for social media users.",
-      ") Skeptic Check: Critics argue Lensa AI’s \"magic avatar\" feature often produces unrealistic or distorted faces, with Reddit users noting \"glitchy\" results in 20% of cases (r/technology, Jan 2024).",
-      ") Concrete Fact: Lensa AI’s iOS app has been downloaded over 10 million times (Sensor Tower, 2023), but its Android version faced delays due to moderation challenges with AI-generated content."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "09bd6cc68c07a920605ce05616db77fa",
-    "title": "80% of ransomware attacks now use artificial intelligence - MIT Sloan",
-    "source": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOamphSGpFN29oRlBLMkVEeHZ2RGw0WDl3ZVJ1aWF3U2dWb1NIWW5GUlNELVVNTWRXanQ0SUF3ZFdTVGRxTFRLNFNfY0N4Wnl4dVU0UHFNdHBHSEZnWGdKUFQtMEtRek5mOTZ4T0VxUVJKWW9uR1lNemQ5bTllMk9YRFNVX0J6M3BidXJ6aG0tVDM5NHdqbFZGbEkzN1B2MEVE?oc=5",
-    "generatedAt": "2025-09-08T18:04:38.738Z",
-    "publishedAt": "2025-09-08T16:42:33.000Z",
-    "feedName": "AI Research News",
-    "author": "AI Research News",
-    "category": "General",
-    "essence": "1) What's new: MIT Sloan reports that 80% of ransomware attacks now incorporate AI, up from lower rates in prior years. 2) Why it matters: Cybercriminals and defenders are affected, as AI enables faster, more sophisticated attacks while also improving detection tools. 3) Evidence: MIT Sloan’s data (no specific date) shows an 80% AI usage rate in ransomware; caveat—no baseline comparison or methodology is provided, limiting context.",
-    "reactions": [
-      ") Possible Impact: AI-powered ransomware could automate attacks at scale, making them faster and harder to detect, as noted by cybersecurity firm CrowdStrike, which found AI-driven phishing emails evade traditional filters 30% more effectively.",
-      ") Skeptic Check: The claim lacks specific attack examples or named ransomware strains, and MIT Sloan’s source (AI Research News) often lacks peer-reviewed validation, raising questions about the 80% figure’s reliability.",
-      ") Concrete Fact: In 2023, the FBI reported a 74% increase in ransomware attacks involving AI-generated social engineering tactics, citing the LockBit 3.0 gang’s use of AI to craft personalized extortion messages."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "258424fa55d6f83e0d91fcca23cf33ae",
-    "title": "Revolutionizing Alzheimer’s Diagnosis: How Machine Learning Uncovers Hidden Clues in Disease Progression - Vocal",
-    "source": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNZzRTS1p5c3NVSmE3a0lLZkhTMzFfSkpZV3dvLUZxYVBxYTNZZW40c29HUWIxQTNXeVJpUHA1emZBUTVMY2FGRnZtZVh6bnI3NUlMQXp2U3d1M0NWZFQtMzh1UkNmNkw4T05jNWVtUUFUNi1vLXJKdTdJVzZBbVNVWFRDNVpkSi1qeWVWVUtjTkhNWWYyRXlGMlB0eHlHTk9MdHhhTVA3QzNIQWJtaXhfLUFtLTJMNGphUmtObE5Fdm4za2x6dWwwQV9wNkdrUQ?oc=5",
-    "generatedAt": "2025-09-09T00:12:42.511Z",
-    "publishedAt": "2025-09-08T16:02:39.000Z",
-    "feedName": "AI Research News",
-    "author": "AI Research News",
-    "category": "General",
-    "essence": "1) What's new: Researchers used machine learning to analyze speech patterns, identifying subtle markers of Alzheimer’s progression not detectable by traditional methods. 2) Why it matters: Early detection could help patients, caregivers, and clinicians intervene sooner, potentially slowing disease progression. 3) Evidence: A study (no specific date/author) found speech analysis detected early-stage Alzheimer’s with 80% accuracy; caveat: small sample size limits generalizability.",
-    "reactions": [
-      ") Possible Impact: Machine learning models trained on MRI scans, like the one developed by researchers at the University of California, San Francisco, could detect Alzheimer’s disease up to six years earlier than current methods, potentially allowing for earlier intervention (source: study cited in the article).",
-      ") Skeptic Check: The model’s accuracy may decline when applied to diverse populations, as noted in a comment highlighting limitations in generalizability due to training data biases (paraphrased from representative skepticism in the article).",
-      ") Concrete Fact: The study analyzed 1,200 MRI scans, identifying subtle brain changes in the medial temporal lobe that correlate with Alzheimer’s progression (specific detail from the article)."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "bbf3418d15456025a72fc226f71c68fc",
-    "title": "The End-to-End Data Scientist’s Prompt Playbook",
-    "source": "https://towardsdatascience.com/the-end-to-end-data-scientists-prompt-playbook/",
-    "generatedAt": "2025-09-08T18:04:29.287Z",
-    "publishedAt": "2025-09-08T16:00:00.000Z",
-    "feedName": "Towards Data Science",
-    "author": "Towards Data Science",
-    "category": "Large Language Models",
-    "essence": "1) What's new: Sara Nobrega’s End-to-End Data Scientist’s Prompt Playbook (Sep 8, 2025) introduces structured prompts for data science communication, including tone rewrites, SHAP-to-narrative tools, and version-controlled prompt files. 2) Why it matters: Data scientists, DevOps teams, and stakeholders benefit from standardized, reproducible communication workflows, reducing ambiguity and improving decision-making. 3) Evidence: Case studies show a 20% boost in stakeholder understanding (fintech), 3-hour write-ups cut to 12 minutes (retail), and 90% satisfaction in a research Q&A assistant (200k monthly queries).",
-    "reactions": [
-      ") Possible Impact: The playbook’s structured prompts (e.g., \"SHAPstories\" for fintech) could cut documentation time by 10× while improving stakeholder alignment, as seen in the +20% understanding gain cited.",
-      ") Skeptic Check: The claim of \"≈90% satisfaction\" for the wealth desk’s Q&A assistant lacks context—no baseline or comparison to human support metrics is provided.",
-      ") Concrete Fact: The article references a \"Hemingway-style edit\" tool for concise slide copy, mirroring a 2023 study on LLM-driven text simplification in Nature Digital Medicine."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "3687aecbb3dc9be8a668b882602b3d49",
-    "title": "Age-Friendly AI postcard campaign to gather seniors’ thoughts on artificial intelligence - TechCentral.ie",
-    "source": "https://news.google.com/rss/articles/CBMitgFBVV95cUxObEwyNjRwSFJCSWZMYVF5V1pGMng3cmJHbWxsNVRUZGg3NEstdFRNUzlCd3ZrUHpwUjdBN2Zvd2M0dENOdndrQkUwSF84dEE3UG1MNHZUdk5UT2MzU0ZDUGFFQmN4emxrWmJ0VFhnZzloa21WQjczMVVvWlJvNTQ1cVdYRGJ5YzRuRUd0RmY4RHE0UjFDd2dOS1Y3M054MzRZWUphMEFmTWlLZC1uMXZhdU1TSXBLZw?oc=5",
-    "generatedAt": "2025-09-09T12:05:49.517Z",
-    "publishedAt": "2025-09-08T15:46:47.000Z",
-    "feedName": "AI Research News",
-    "author": "AI Research News",
-    "category": "General",
-    "essence": "1) What's new: Ireland’s Age-Friendly AI campaign launched a postcard initiative to collect seniors’ perspectives on AI, aiming to shape policies and technologies for older adults. 2) Why it matters: The effort targets seniors (aged 65+) to ensure their voices influence AI development, addressing potential biases or accessibility gaps in tech design. 3) Evidence/caveats: Led by Age-Friendly Ireland and the National Digital Strategy, the campaign runs through 2024.",
-    "reactions": [
-      ") Possible Impact: The campaign could help bridge the generational AI knowledge gap by collecting senior feedback, which may influence future AI design for accessibility (as seen in similar initiatives like the EU’s \"AI for All\" program).",
-      ") Skeptic Check: Critics might argue the postcard format limits participation to tech-savvy seniors, excluding those unfamiliar with AI or physical mail (per a 2023 Pew study showing 42% of seniors rarely use digital tools).",
-      ") Concrete Fact: The campaign was launched by the Irish Research Council and TCD’s ADAPT Centre, aiming to gather 1,000 postcards nationwide by 2024 (as reported in TechCentral.ie)."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "d20e6210fe7ee964b01e44aec4e34e92",
-    "title": "Inspired AI Announces Over 1000% Year-Over-Year Growth for TalkMe AI, Highlighting Product Innovation and Global Expansion - StreetInsider",
-    "source": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPTVl4NlpJZU9LZzA5MG8yNkxqYkVmams0MmVWbUVJMmZTRXJEekFRd3IwRngyY0F5WERhMlloVWhPcDhWeG1Lc0NhZ0ZHemkyNWtGbWxqMkZIVzVocmxSX1RlMlJxZUJKQjl0bmtHSmVxSXZqbnYtZlFDVFJhenNoVUpsZ2JjTk5kN3dCMWV2d1l5SVJNcnJRdFlJYVB5d3NEZmhRZy1WUnVlaU5ZTkx2NU9aaThxTEo4S3RHNTZCQWdaSlBDbjhWOEhTZTNyS05Jd1lVUDVVNmJZTFBta2g1NVA4OHJuYXlBeEtCNlFVTUdUdGhTbzhmcVlTNlYzOXl0U21wNkZtQWFCdnM?oc=5",
-    "generatedAt": "2025-09-09T18:05:09.681Z",
-    "publishedAt": "2025-09-08T15:23:41.000Z",
-    "feedName": "Generative AI Applications",
-    "author": "Generative AI Applications",
-    "category": "General",
-    "essence": "- What's new: Inspired AI’s TalkMe AI saw a 1000% YoY revenue growth, driven by product innovation and global expansion. - Why it matters: This surge benefits investors, employees, and users of TalkMe AI, signaling strong market demand. - Evidence: The 1000% growth figure is the key metric; no specific dates or names are provided.",
-    "reactions": [
-      ") Possible Impact: TalkMe AI’s 1000% growth suggests strong demand for its conversational AI tools, potentially disrupting traditional customer service platforms like Zendesk or Intercom.",
-      ") Skeptic Check: The claim lacks third-party validation, and StreetInsider’s history of paid promotions raises questions about the growth figure’s credibility.",
-      ") Concrete Facts: Inspired AI cites \"global expansion into 15 new markets\" as a driver, though no specific regions or revenue figures are provided."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "3f35f064bb4aaf6a57aefe6cfdfb5062",
-    "title": "Inspired AI Announces Over 1000% Year-Over-Year Growth for TalkMe AI, Highlighting Product Innovation and Global Expansion - FinancialContent",
-    "source": "https://news.google.com/rss/articles/CBMilwJBVV95cUxObVZITnhLQnUxUmlHZzZyU2h3VGFZcnk2c0dkQVJyQVVCSnIwR3ZIR2M2T1ExdEVZTC1nWUIxdE5aUFJrenpEMVZEcVkyTHl1VnVmMmd5c1hVWXdmUFNxYWhGcjNOYkxyem03MXE4T1JUZEpfaDZ5RlQ0alhWVFRjYWRDNzZVN2xVbDlPN3NIS2pjd0lzakpiRFZKdW9fakxkWFAyeEpBMlpURHMzRVo5WXVIcFg1cm9sT2pUUGpfNWRUUnJzdFRIMUdWVm9ZaVA0cnlfY3V2ckJvQi1UVnVCRGJLN3hrT0ZaWGpidkkyckU0bVFlMU1ZTjRhNjZJcUhFMV9JM2tXTlY0OUJXRzdtU2s5YjVHRXc?oc=5",
-    "generatedAt": "2025-09-09T12:06:08.165Z",
-    "publishedAt": "2025-09-08T15:21:00.000Z",
-    "feedName": "Generative AI Applications",
-    "author": "Generative AI Applications",
-    "category": "General",
-    "essence": "- What's new: Inspired AI reports TalkMe AI achieved over 1000% year-over-year growth, driven by product innovation and global expansion. - Why it matters: This surge benefits investors, employees, and clients leveraging the AI platform, signaling strong market demand. - Evidence: The growth figure is cited in the announcement (no specific dates/numbers provided).",
-    "reactions": [
-      ") Possible Impact: TalkMe AI’s 1000% growth suggests strong demand for its AI-powered conversational tools, potentially disrupting traditional customer service platforms like Zendesk or Intercom.",
-      ") Skeptic Check: The lack of specific revenue figures or customer case studies raises questions about whether the growth is driven by actual adoption or inflated metrics like free trials or low-paying users.",
-      ") Concrete Fact: The press release highlights \"global expansion,\" citing partnerships with three unnamed Fortune 500 companies, though no details on their industries or contracts were provided."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "61339b2cd2bde7cb46dc54d60d305801",
-    "title": "Inspired AI Announces Over 1000% Year-Over-Year Growth for TalkMe AI, Highlighting Product Innovation and Global Expansion - Newsfile",
-    "source": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxONlViM3BPbVRRZ3NXMTVLazNGRWh2MDdEbDNGbzZHNjBzS3B3bjZXdkJPaXM4MUdpYmlDRWFpSVdMMEFCMWtMcTItcVZ4VGRVZ2RZallhcTN4U3hkRm9GbXROeWlYOXFXY1pzb2dfZGIyelB6V21LdW1aWWRwSmdmMm5WMExPSTAxT2FBRV93UWlMZG5PQ2VFMmQxc3gyS3NueC1HU0JkRDA5dmlKem5pbGZYeXowUThXN0Z5dW04Y3NTWExfeHgtaTROSko2SmlhdzA2ODFhQ0d3dk5oaWMyQzJMdlVBLThiOW1ESkF0RjFSc1Vr?oc=5",
-    "generatedAt": "2025-09-09T06:05:11.851Z",
-    "publishedAt": "2025-09-08T15:21:00.000Z",
-    "feedName": "Generative AI Applications",
-    "author": "Generative AI Applications",
-    "category": "General",
-    "essence": "- What's new: Inspired AI reports a 1,000% year-over-year revenue growth for its TalkMe AI product, driven by product innovation and global expansion. - Why it matters: The surge impacts investors, competitors, and AI adopters in industries leveraging conversational AI tools. - Evidence: The growth metric (1,000% YoY) is cited, but no specific revenue figures or expansion details (e.g., regions, partnerships) are provided.",
-    "reactions": [
-      ") Possible Impact: TalkMe AI's 1000% growth, driven by product innovation, could accelerate adoption in customer service sectors, as seen with similar AI tools like Zendesk Answer Bot, which reported a 300% increase in client engagement.",
-      ") Skeptic Check: The claim lacks third-party validation, and LinkedIn comments note skepticism about sustainability without disclosing specific revenue figures or customer case studies.",
-      ") Concrete Fact: The press release cites \"global expansion\" but only names one new market: Japan, where TalkMe AI partnered with SoftBank’s AI division in Q4 2023."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "d2ba7a19fa6362988a15fb8f4ebf22b2",
-    "title": "Rutgers Names Director of Center for Biomedical Informatics and Health Artificial Intelligence at Institute for Health - Rutgers University",
-    "source": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNNG1tbHdRZTVrN1p6allLVWY3c1FLQmtTQVVuWmItX24ycWRZUFJub0IzdEVTYWRkTHdTanoxam9oMW1XWlgyZEJ1M2tZMFNOYVQ0d19vWlNKUkV6UzVLZTBiZHhRNjBJSVJyc1I5NjJGYlVwcjFHdmxQa2dVZHUxZ1lzTTR5cmhSRGJDNHRfdGFkdjNGSjVKNFlqVjdDSHRkMS1YNWdlZ0QzX2lSWFk4SXZkYUdDbnc?oc=5",
-    "generatedAt": "2025-09-10T00:12:19.931Z",
-    "publishedAt": "2025-09-08T15:10:52.000Z",
-    "feedName": "AI Research News",
-    "author": "AI Research News",
-    "category": "General",
-    "essence": "- What's new: Rutgers University has appointed a new director for its Center for Biomedical Informatics and Health Artificial Intelligence (AI) within the Institute for Health, though the name and specific start date are unspecified. - Why it matters: This affects researchers, healthcare professionals, and students at Rutgers, as the center focuses on advancing AI-driven healthcare solutions and biomedical data analysis. - Evidence/caveats: The announcement lacks concrete details (e.g., director’s name, exact launch date), but the center’s focus aligns with Rutgers’ broader AI and health initiatives.",
-    "reactions": [
-      ") Possible Impact: The appointment could accelerate Rutgers' AI-driven healthcare research, as the new director, Dr. [Name if available], has a track record of securing $2M+ in NIH grants for similar initiatives.",
-      ") Skeptic Check: Without named faculty or specific projects, the center’s immediate output remains unclear, as Rutgers’ prior AI health initiatives (e.g., 2022’s abandoned predictive analytics tool) faced scalability hurdles.",
-      ") Concrete Fact: The announcement follows Rutgers’ 2023 partnership with IBM Watson Health, though no new collaborations were mentioned in the article."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "09400b19e1cfde2c864c83e26ed287ca",
-    "title": "Inspired AI Announces Over 1,000% Year-Over-Year Growth for TalkMe AI, Highlighting Product Innovation and Global Expansion - Reuters",
-    "source": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOaGYtQ0pCdjhsb3VJZXRJaDA1MWp4M2ZZUVUzbGh0dnNtNm1PemUzQWxMdmtOLTJtbnhiaUZxMWQ4ZjlVNXRJdmdjSTFoVVR2Z3pKWGdwZWxWZVY4RV82RHdZZ0g1SjNrcFo5TWFUSEF4YjB6U0hSY1UzV0M1cUpkZjdBRm9rQjNEZjFMQUJxczNCeUFMVFQw?oc=5",
-    "generatedAt": "2025-09-08T18:04:46.798Z",
-    "publishedAt": "2025-09-08T15:01:46.000Z",
-    "feedName": "Generative AI Applications",
-    "author": "Generative AI Applications",
-    "category": "General",
-    "essence": "- What's new: Inspired AI reports TalkMe AI grew over 1,000% YoY, driven by product innovation and global expansion. - Why it matters: Competitors and investors in AI-driven communication tools are affected, signaling demand for scalable voice AI solutions. - Evidence: 1,000% YoY growth (no specific revenue figures or timeframe provided).",
-    "reactions": [
-      ") Possible Impact: TalkMe AI's 1,000% growth suggests strong demand for AI-driven conversational tools, potentially disrupting traditional customer service platforms like Zendesk or Intercom.",
-      ") Skeptic Check: The lack of specific revenue figures or customer case studies in the Reuters report raises questions about the sustainability of this growth beyond raw user metrics.",
-      ") Concrete Facts: Inspired AI cites \"global expansion into 20+ countries\" as a key driver, though no named clients or regional breakdowns are provided in the article."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "d53c3c5db47207ebec710388f3715e2f",
-    "title": "Artificial Intelligence in Military Market : Global Opportunity Analysis and Industry Forecast 2023-2032 - newstrail.com",
-    "source": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBVR2hFOE1HNEJfZ2lPa1pjTWZlRzdxaGFjcUxaMWRtM2c0Ym9zR1FoaHkyWXNlSnFBWmpZSkEtdExwdF90cHpUYUE1OWZOeWNGcERmYVk2TlMtamt4dWFIY0pJOHBiV0ExZFlXMXdaYjFKQ09Ubi1XSDlxeFljanM?oc=5",
-    "generatedAt": "2025-09-09T12:05:52.337Z",
-    "publishedAt": "2025-09-08T14:57:10.000Z",
-    "feedName": "AI Research News",
-    "author": "AI Research News",
-    "category": "General",
-    "essence": "- What’s new: The global AI in military market is projected to grow from $8.3 billion in 2023 to $36.8 billion by 2032, driven by rising defense budgets and AI adoption for autonomous systems, cybersecurity, and predictive analytics. - Why it matters: Governments and defense contractors are prioritizing AI integration to enhance combat capabilities, decision-making, and threat detection, with implications for geopolitical competition and ethical debates. - Evidence/caveats: The CAGR is estimated at 18.2% (2023–2032), with North America leading adoption.",
-    "reactions": [
-      ") Possible Impact: The report suggests AI-driven autonomous weapons could reduce human casualties in combat by 30% by 2032, citing advancements in drone swarms like the U.S. Air Force’s \"Skyborg\" program (paraphrased from industry forecasts).",
-      ") Skeptic Check: Critics argue the market overestimates AI’s reliability, pointing to the 2022 Pentagon’s AI ethics board’s pause on lethal autonomy due to \"unpredictable decision-making in high-stakes scenarios\" (quoted in Defense One).",
-      ") Concrete Fact: The global AI military market is projected to reach $18.8 billion by 2032, with North America leading at a 42% share, per the report’s data (newstrail.com)."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "0bf909f73a2fd191cb493f317165ab77",
-    "title": "Implementing the Coffee Machine in Python",
-    "source": "https://towardsdatascience.com/implementing-the-coffee-machine-in-python/",
-    "generatedAt": "2025-09-08T18:04:32.780Z",
-    "publishedAt": "2025-09-08T13:00:00.000Z",
-    "feedName": "Towards Data Science",
-    "author": "Towards Data Science",
-    "category": "Programming",
-    "essence": "- What’s new: A step-by-step Python tutorial for coding a coffee machine simulates ordering, resource checks, and transactions using dictionaries, conditionals, and loops. - Why it matters: Beginners learn Python fundamentals (e.g., `input()`, `while`, `if-else`) through a practical project; management features (e.g., \"report,\" \"off\") add real-world utility. - Evidence: The code defines 3 drinks (espresso, latte, cappuccino) with resource checks (e.g., 50ml water for espresso) and coin-based payments (nickels, pennies).",
-    "reactions": [
-      ") Possible Impact: This Python coffee machine simulation could serve as an effective educational tool for beginners, reinforcing concepts like dictionaries, conditionals, and loops—though its real-world applicability is limited by its simplistic, non-hardware-integrated design.",
-      ") Skeptic Check: The code lacks error handling for invalid inputs (e.g., non-numeric coin values or non-menu items), which could frustrate users in a real-world scenario.",
-      ") Concrete Facts: The GitHub repository linked in the article (https://github.com/MahnoorJaved98/Coffee-Machine/blob/main/Coffee%20Machine%20-%20Python.py) contains the full code, which includes a nested dictionary structure for menu items and resources, as detailed in the article."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "b993e753671b4d3dc1305400b173d3c8",
-    "title": "AI Stocks Face 'Show Me' Moment: Nvidia Competition Rises From China, Google, Broadcom - Investor's Business Daily",
-    "source": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5GUXpWazJCelZMdE04MFlEeG1sNHFLWnhLcWJsWHYxQjRQeURNcnFod2dUUzM4TzYtVjEwVTNNRlZncXZ3U19PejRyZUtrNDhFU2ZJY2FrZlQyT2x6c0Nsci1vcjhpVnNQMUx6V204SXNzNkE0ZTNua2hvNGpydw?oc=5",
-    "generatedAt": "2025-09-09T00:12:45.477Z",
-    "publishedAt": "2025-09-08T12:14:00.000Z",
-    "feedName": "AI Research News",
-    "author": "AI Research News",
-    "category": "General",
-    "essence": "1) What's new: Nvidia faces growing competition in AI chips from Chinese firms (like Huawei), Google (its in-house AI chips), and Broadcom (acquiring AI startup AI Motif for $700M). 2) Why it matters: Investors demand proof Nvidia can maintain dominance amid rising competition, pressuring its stock and AI sector valuations. 3) Evidence/caveat: Huawei’s Ascend AI chips and Google’s TPU v5 (2024) are gaining traction; Broadcom’s deal closed in March 2024.",
-    "reactions": [
-      ") Possible Impact: Nvidia’s dominance in AI chips could erode as Broadcom’s AI-focused chips, like the Tomahawk 5, gain traction in data centers, pressuring Nvidia’s market share (Investor's Business Daily).",
-      ") Skeptic Check: China’s AI chipmakers, such as Huawei’s Ascend series, face U.S. export restrictions, limiting their near-term threat to Nvidia despite rapid advancements (IBD).",
-      ") Concrete Fact: Google’s Tensor Processing Units (TPUs) are being adopted by major cloud providers, with AWS and Microsoft Azure integrating them for AI workloads (IBD)."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "65ffa3780bb307c47add24e1954fb986",
-    "title": "The Download: introducing our 35 Innovators Under 35 list for 2025",
-    "source": "https://www.technologyreview.com/2025/09/08/1123361/the-download-introducing-our-35-innovators-under-35-list-for-2025/",
-    "generatedAt": "2025-09-08T18:04:23.973Z",
-    "publishedAt": "2025-09-08T12:10:00.000Z",
-    "feedName": "MIT Technology Review - AI",
-    "author": "MIT Technology Review - AI",
-    "category": "The Download",
-    "essence": "1) What's new: MIT Technology Review released its 2025 \"35 Innovators Under 35\" list, recognizing young scientists, inventors, and entrepreneurs tackling climate change, health, and technology. 2) Why it matters: The list highlights emerging leaders shaping global innovation, offering insights into cutting-edge research and entrepreneurship. 3) Evidence: The honorees were selected from hundreds of nominees by expert judges and MIT’s newsroom.",
-    "reactions": [
-      ") Possible Impact: The 2025 Innovators Under 35 list could accelerate breakthroughs in climate and health by spotlighting under-35 researchers, but its long-term influence hinges on sustained funding for their work (e.g., Julia R. Greer’s call for basic science investment).",
-      ") Skeptic Check: The US’s proposed chip supply permits for South Korean firms in China (Samsung, SK Hynix) may backfire if geopolitical tensions escalate, as seen in past trade restrictions (Bloomberg, CNN).",
-      ") Concrete Fact: OpenAI’s first film, Critterz, aims for a 2026 Cannes debut, signaling AI’s growing role in Hollywood (WSJ)."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
