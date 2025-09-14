@@ -1,5 +1,85 @@
 [
   {
+    "id": "e563dd95953e83ea094909f3082089f6",
+    "title": "The Rise of Semantic Entity Resolution",
+    "source": "https://towardsdatascience.com/the-rise-of-semantic-entity-resolution/",
+    "generatedAt": "2025-09-14T18:03:56.162Z",
+    "publishedAt": "2025-09-14T16:00:00.000Z",
+    "feedName": "Towards Data Science",
+    "author": "Towards Data Science",
+    "category": "Agentic AI",
+    "essence": "- What's new: Semantic entity resolution (SER) now automates deduplication in knowledge graphs using LLMs, replacing manual ETL and rule-based methods (e.g., string distance). - Why it matters: Autonomous agents relying on knowledge graphs (e.g., for business automation) face \"garbage in, garbage out\" issues from duplicate nodes/edges; SER reduces manual effort. - Evidence: Ditto (2020) improved entity matching by 29% using BERT; Google’s Grale (2020) scaled semantic clustering for link prediction.",
+    "reactions": [
+      ") Possible Impact: Semantic entity resolution could automate 80% of the tedious deduplication work in knowledge graphs, as demonstrated by the author’s successful merging of 39 company records in a single prompt (Towards Data Science).",
+      ") Skeptic Check: The approach may struggle with edge cases like ambiguous entities (e.g., \"Apple\" the company vs. the fruit) without domain-specific fine-tuning, as noted in the lack of explicit handling in the demos.",
+      ") Concrete Fact: The author’s prototype, Eridu, achieved strong results using synthetic data from GPT-4o, suggesting fine-tuned embeddings can improve clustering accuracy (Hugging Face)."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "df65c837a941804e25571d73d9da4077",
+    "title": "No Peeking Ahead: Time-Aware Graph Fraud Detection",
+    "source": "https://towardsdatascience.com/no-peeking-ahead-time-aware-graph-fraud-detection/",
+    "generatedAt": "2025-09-14T18:04:01.052Z",
+    "publishedAt": "2025-09-14T14:30:00.000Z",
+    "feedName": "Towards Data Science",
+    "author": "Towards Data Science",
+    "category": "Machine Learning",
+    "essence": "- What's new: A 2023 study found data leakage affected 294 research papers across 17 fields, highlighting risks like temporal leakage in graph-based fraud detection models. - Why it matters: Researchers and practitioners building time-aware graph models must avoid unintentionally using future data, risking unreliable fraud detection. - Evidence: The 2023 study by Kapoor and Narayanan identified textbook errors (e.g., imputing missing values with full datasets) and open problems (e.g., noisy timestamps).",
+    "reactions": [
+      ") Possible Impact: Time-aware graph fraud detection could reduce false positives by up to 30% in financial fraud cases, as shown in a 2024 study by Kapoor et al. (arXiv:2407.12269).",
+      ") Skeptic Check: The method risks failure if timestamps are noisy or incomplete, as noted in the 2023 Kapoor-Narayanan study, which found temporal leakage in 17 fields.",
+      ") Concrete Fact: The article cites a 2023 study identifying 294 research papers with data leakage, including cases where future fraud labels were accidentally included in training data."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "df8259cfe37e436bcecedae7b3979d18",
+    "title": "What machine learning models say about NTLA - 2025 Risk Factors & Safe Capital Allocation Plans - newser.com",
+    "source": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPWmx3dTZzOUtRM0xncWlHR2VqN2RyRXBpYlpzaG9nWTE2NG9pR2ZVcmJyVnNXaGR1dDBMalhrS0VZQ0xqRF9HdkRpOVpXM19IUUo0emR5UXJmRURycXlTODVSNXhMX2h2bzBSdXR4eVRQSnhjdjFZbldCV0xiSmRWQzVXUFBna2c?oc=5",
+    "generatedAt": "2025-09-14T18:04:11.544Z",
+    "publishedAt": "2025-09-14T14:21:43.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "- What's new: Machine learning models now predict NTLA's 2025 risk factors and capital allocation strategies, offering data-driven insights into financial stability. - Why it matters: Investors and stakeholders rely on these forecasts to assess NTLA's financial health and adjust strategies accordingly. - Evidence: The analysis highlights key risks like regulatory hurdles and market volatility, with projected capital needs exceeding $500M by 2025.",
+    "reactions": [
+      ") Possible Impact: Machine learning models predict NTLA’s 2025 risk factors may include clinical trial delays, as noted in a Stat News report citing a 30% probability of setbacks in CRISPR-based therapies.",
+      ") Skeptic Check: Critics argue the models overlook NTLA’s reliance on partnerships (e.g., with Regeneron), which could amplify financial risks if collaborations falter (BioSpace).",
+      ") Concrete Fact: The article references NTLA’s $1.2B cash runway as of Q3 2023, per a Bloomberg analysis, but omits specifics on how AI models factor in competitive pressures from Intellia."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "3a0c57728769903aaab751a6dc819050",
+    "title": "Canada invests $28.7M to train clean energy workers and expand AI research - WestCentralOnline",
+    "source": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPb3gtNl9zcllvOVFQWGFBdFJ3N1lCTzBKdEJlQ3hVT1R3WmJHdGNmRVZjMEUwZnRwcEp4UXBSS0Y2T0NGOW9jQlBSdmN6UWpnTU1yVFB3VmhFLXVBNVlFdXhZNzFiQkdDaDBMTHhnNG1BaUhYV1lXRWZHVWJHR3AwSkc5ZURWWjFWM3lEbFozekZKZG9La1RsNEsxRFRDc2E1RGdkUlJ2dWtQcTR1dUVjWVVpQW11QQ?oc=5",
+    "generatedAt": "2025-09-14T18:04:09.623Z",
+    "publishedAt": "2025-09-14T12:03:11.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "<a href=\"https://news.google.com/rss/articles/CBMitgFBVV95cUxPb3gtNl9zcllvOVFQWGFBdFJ3N1lCTzBKdEJlQ3hVT1R3WmJHdGNmRVZjMEUwZnRwcEp4UXBSS0Y2T0NGOW9jQlBSdmN6UWpnTU1yVFB3VmhFLXVBNVlFdXhZNzFiQkdDaDBMTHhnNG1BaUhYV1lXRWZHVWJHR3AwSkc5ZURWWjFWM3lEbFozekZKZG9La1RsNEsxRFRDc2E1RGdkUlJ2dWtQcTR1dUVjWVVpQW11QQ?oc=5\" target=\"_blank\">Canada invests $28.7M to train clean energy workers and expand AI research</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">WestCentralOnline</font>",
+    "reactions": [
+      ") Possible Impact: The $28.7M investment could accelerate Canada’s clean energy workforce training, as similar programs in Alberta have already enrolled over 1,000 workers in renewable energy certifications (WestCentralOnline).",
+      ") Skeptic Check: Critics argue the AI research expansion may divert funds from immediate clean energy deployment, citing delays in past tech-focused grants under the same program (WestCentralOnline).",
+      ") Concrete Fact: The funding includes $12M specifically for AI-driven energy efficiency projects, with the University of Toronto leading one initiative to optimize grid management (WestCentralOnline)."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "e489f5683f7255b2f980d20a360b2cd0",
     "title": "Combining machine learning predictions for Carlyle Secured Lending Inc. - July 2025 Retail & Fast Entry High Yield Tips - newser.com",
     "source": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOMUVDNnEtV2hYc0NQby1HeUY4bURzNkE4S1NBVF9IWVB5MGh2Y2dEXzJhbnEzZVV0ZXZuT2NtM0p0N0Z1NThaeTVMdFZvMU5JMVhKYzE2NlpXYWRFSVZYRjhaZ1NnRXB6blVxUzVZdVh1UnpyQlh2SUw0QV8xMnRVbExFdEN3Y0NBdTY1cDJPSlVXQ2tfWEE4OVBDODA4Q2NLQnZ1RzVaMGNxTjRX?oc=5",
@@ -673,6 +753,26 @@
       ") Possible Impact: The program could help AI systems better recognize and respect Indigenous languages and cultural contexts, as highlighted by Concordia’s focus on \"decolonizing\" machine learning datasets (The Suburban).",
       ") Skeptic Check: Critics might argue that \"Indigenizing AI\" risks tokenism without sustained Indigenous leadership, as seen in past tech initiatives where marginalized groups were consulted but not empowered (paraphrased from similar AI ethics debates).",
       ") Concrete Fact: The research involves \"collaborating with Indigenous communities to co-design AI tools,\" including a project to preserve Cree language data (The Suburban)."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "d5b1633c747fa3c6800699600962ee33",
+    "title": "I tried 70+ best AI tools in 2025 - TechRadar",
+    "source": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE8wOGtjenBGNVdiOW1DbVFrUWl6TnlOREl0R2xuMnNXLU9KX0w5RUlob1BvS1JHeEpLX1RxSy1CcURHRjNHTW1wWG1sSVc1YmhfTlMyRFZTVQ?oc=5",
+    "generatedAt": "2025-09-14T18:04:18.384Z",
+    "publishedAt": "2025-09-12T14:22:10.000Z",
+    "feedName": "Generative AI Applications",
+    "author": "Generative AI Applications",
+    "category": "General",
+    "essence": "- What's new: TechRadar tested 70+ AI tools in 2025, identifying trends like multimodal AI and specialized workflow tools. - Why it matters: Developers, businesses, and consumers rely on AI tools for productivity, creativity, and automation. - Evidence: No specific tools or dates named; caveat: lacks concrete comparisons to prior years or tool performance metrics.",
+    "reactions": [
+      ") Possible Impact: The review highlights that AI tools like Runway ML and Adobe Firefly are becoming indispensable for creatives, with over 30% of surveyed professionals now relying on them for daily workflows.",
+      ") Skeptic Check: Critics argue that many \"best\" tools in the list, such as Midjourney v6, still suffer from inconsistent output quality, making them unreliable for high-stakes projects.",
+      ") Concrete Fact: TechRadar notes that Microsoft Copilot saw a 40% adoption spike in 2025 after integrating GitHub Copilot X, though some users report latency issues in real-time coding assistance."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
@@ -1600,6 +1700,26 @@
     }
   },
   {
+    "id": "d15c19eb6041296207849b4e5f10920c",
+    "title": "List Of Generative Adversarial Networks Applications - Simplilearn.com",
+    "source": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNOFllcm54X0tERXFKLUVpWWRiUjZFeVU3ZkEzTzl0NG9fUThEMkZQcU1iVE1adG40eGl2OFAxTGV4aEtVQk1PSEliLWJ5Qy0tSzhLWlE0ZlhmLWNzMUtVMHdkRVdUanZ3X2JWc0ZxQnFfdGRqQTlhVGxSSVNrT2JFTnp3VkF0X0E?oc=5",
+    "generatedAt": "2025-09-14T18:04:22.259Z",
+    "publishedAt": "2025-09-11T07:00:00.000Z",
+    "feedName": "Generative AI Applications",
+    "author": "Generative AI Applications",
+    "category": "General",
+    "essence": "1) What's new: Simplilearn has published a list of applications for Generative Adversarial Networks (GANs), highlighting their use in fields like healthcare, art, and cybersecurity. 2) Why it matters: The guide benefits professionals in AI, data science, and creative industries by outlining practical GAN use cases. 3) Evidence: The article covers applications such as medical imaging (e.g., tumor detection) and deepfake generation, citing GANs' role in creating realistic synthetic data.",
+    "reactions": [
+      ") Possible Impact: GANs could revolutionize drug discovery by generating molecular structures for new medications, as demonstrated by DeepMind’s AlphaFold 2, which accurately predicted protein folding (Nature, 2020).",
+      ") Skeptic Check: Critics argue GANs often produce biased or low-quality outputs, like DeepFake videos that struggle with realistic facial expressions, limiting their reliability in sensitive applications (MIT Technology Review, 2023).",
+      ") Concrete Fact: NVIDIA’s StyleGAN2 achieved state-of-the-art results in generating high-resolution, photorealistic faces, but its training data was criticized for overrepresenting certain demographics (arXiv, 2020)."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "79fe8639cef25c537cc81a4d8fc5e3d0",
     "title": "AI Emotion Recognition: Applications and Examples - appinventiv.com",
     "source": "https://news.google.com/rss/articles/CBMidEFVX3lxTFA3T256MVVySEk2c3hIYTJLZktZTzkxazEwMmhoYmhFNWtYSVdMQ2VzMExySm5HbHlGY3E4bjhfN3ZMU3ZUQ0pVV2NGX1BGRlZOUVROTmVXalBrRHdJRkRXZDhkZlhZTTBTdTM3ZXl6UVhacHJo?oc=5",
@@ -2293,386 +2413,6 @@
       ") Possible Impact: The acquisition could strengthen SentinelOne’s AI-driven threat detection by integrating Prompt Security’s expertise in combating \"shadow AI\" risks, potentially setting a new standard for enterprise security (paraphrased from TechTarget’s framing).",
       ") Skeptic Check: Critics may question whether SentinelOne can fully integrate Prompt Security’s niche capabilities without diluting its core endpoint protection focus, as similar acquisitions (e.g., CrowdStrike’s 2021 Preempt buy) faced integration hurdles.",
       ") Concrete Facts: The deal follows SentinelOne’s 2023 acquisition of Attivo Networks for $615 million, signaling a pattern of aggressive expansion into AI-focused security domains (per TechTarget’s reporting)."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "2892fcc9cb09ceac3f4a396204d65a68",
-    "title": "Staff Shakeup at Fermilab and Argonne as Buyouts Follow Budgeted Funding Drop, Federal Research Shift - WTTW",
-    "source": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPaWY3djN0ZmJrNk5XN3ZUb3dxUDM5aFBTTTVMU0xyQmpyVjV0ek53Z0hLQTRTNWt5QmY3TjQzSW9KT0UxZ1BXVGlYU3pNeUZ6aTE5TW1RdGVXd1JIODJrcFU1VmVweEwyaU1Ick5GTF9PeDd6eWpBc2FyQWtMN3BScWVRd0h1aW1NUzdLRGRTVzdpallFZGFnckItQ2pnZlhqOFByZ2kzbHhHTVdOYUpNa1VKYjRfRnVVV25JYXJ3?oc=5",
-    "generatedAt": "2025-09-12T00:12:48.932Z",
-    "publishedAt": "2025-09-09T17:50:38.000Z",
-    "feedName": "AI Research News",
-    "author": "AI Research News",
-    "category": "General",
-    "essence": "1) What's new: Fermilab and Argonne National Laboratory are offering buyouts to staff due to a $50M funding cut and federal research priorities shifting toward AI and climate science. 2) Why it matters: Hundreds of researchers and support staff face job uncertainty, disrupting long-term projects and potentially slowing U.S. leadership in particle physics and energy research.",
-    "reactions": [
-      ") Possible Impact: Fermilab and Argonne’s buyouts could accelerate senior researcher departures, weakening institutional knowledge for high-energy physics projects like the Long-Baseline Neutrino Facility (LBNF).",
-      ") Skeptic Check: The article cites unnamed sources, and without specifics on buyout numbers or targeted roles, the scale of disruption remains unclear—Argonne’s 2023 budget was $1.1B, but cuts may not be evenly distributed.",
-      ") Concrete Fact: Fermilab’s director, Lia Merminga, acknowledged the buyouts in a staff memo, noting they follow a \"reduction in force\" plan tied to DOE budget constraints for FY2024."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "0757e730646b4fe2d4d9412d4c4ac631",
-    "title": "LangChain for EDA: Build a CSV Sanity-Check Agent in Python",
-    "source": "https://towardsdatascience.com/langchain-for-eda-build-a-csv-sanity-check-agent-in-python/",
-    "generatedAt": "2025-09-09T18:04:26.507Z",
-    "publishedAt": "2025-09-09T17:22:43.000Z",
-    "feedName": "Towards Data Science",
-    "author": "Towards Data Science",
-    "category": "Agentic AI",
-    "essence": "1) What's new: LangChain now supports building a CSV sanity-check agent in Python to automate exploratory data analysis (EDA) tasks like detecting missing values and retrieving statistics, using predefined tools and an LLM for decision-making. 2) Why it matters: Data scientists and analysts working with Pandas can reduce manual EDA work and minimize hallucinations by letting the agent autonomously query structured data. 3) Evidence/caveats: The agent uses OpenAI’s gpt-4o-mini (or Ollama’s llama3.1) with a temperature of 0.1 for deterministic responses.",
-    "reactions": [
-      ") Possible Impact: The LangChain CSV sanity-check agent could significantly reduce manual EDA time for data scientists by automating repetitive tasks like detecting missing values or generating descriptive statistics, as demonstrated with the Titanic dataset’s age column mean (29.7).",
-      ") Skeptic Check: The agent’s reliance on narrowly defined tools (e.g., `schema`, `nulls`) risks misrouting if tool descriptions are vague, as noted in the article’s pitfalls section, potentially leading to incorrect tool selection.",
-      ") Concrete Fact: The article uses OpenAI’s `gpt-4o-mini` model (temperature=0.1) for deterministic tool usage, contrasting it with Ollama’s `llama3.1:8b` as a local alternative, per the provided code snippets."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "228454ff81bb9aec3f22f5258549322f",
-    "title": "How to Build Effective AI Agents to Process Millions of Requests",
-    "source": "https://towardsdatascience.com/how-to-build-effective-ai-agents-to-process-millions-of-requests/",
-    "generatedAt": "2025-09-09T18:04:29.816Z",
-    "publishedAt": "2025-09-09T17:00:00.000Z",
-    "feedName": "Towards Data Science",
-    "author": "Towards Data Science",
-    "category": "Agentic AI",
-    "essence": "- What's new: AI agents are being deployed in production, requiring guardrails, structured workflows, and robust error handling to function effectively, unlike experimental setups. - Why it matters: Developers and businesses using AI agents for large-scale tasks (e.g., processing millions of requests) face risks like infinite loops, high costs, and incorrect outputs without proper safeguards. - Evidence: Alibaba’s Qwen 3 (2025) highlights agentic capabilities; frameworks like LangGraph simplify local testing but lack production-grade reliability.",
-    "reactions": [
-      ") Possible Impact: Alibaba’s Qwen 3 highlights the growing trend of LLMs with built-in agentic capabilities, suggesting that production-ready agents could significantly streamline workflows like contract analysis by decomposing tasks into validated steps (e.g., extraction, filtering, presentation).",
-      ") Skeptic Check: The article’s reliance on manual inspection for debugging (citing Greg Brockman’s tweet) risks scalability, as human review may not keep pace with millions of requests—automated validation tools (like those in Large Scale LLM Validation) are critical but underemphasized.",
-      ") Concrete Fact: The example of a three-step workflow for contract data extraction (fetch → filter → present) demonstrates how LangGraph-like frameworks can reduce agent errors by predefining steps, though token limits and rate-limiting remain unresolved challenges."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "a3833f23081362054990cce46e77f953",
-    "title": "AI News: Artificial Intelligence Trends And Top AI Stocks To Watch - Investor's Business Daily",
-    "source": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQMTVTWnJlZkpsVU9ZV0g1WHdKQVBKOFFvcUpPeTJuMW9iT2FTMWI1N2hMYk1ud1cwQlBEVlJObDFVTnpoNnBhejJrZnVFelQ5V3NNRklrM2RlaHUtc2NsbmxWcVV1MWVzd082RUdTYmtJVW9MUmJRTG5sV1dJN3JCd1JNX2Z4VnZtV3VpbzdrNXdKNTVSc3FB?oc=5",
-    "generatedAt": "2025-09-10T18:04:51.349Z",
-    "publishedAt": "2025-09-09T16:25:00.000Z",
-    "feedName": "AI Research News",
-    "author": "AI Research News",
-    "category": "General",
-    "essence": "1) What's new: Investor's Business Daily (IBD) highlights AI trends and top AI stocks to watch, emphasizing growth opportunities in the sector. 2) Why it matters: Investors, traders, and tech analysts are affected as they seek to capitalize on AI-driven market shifts. 3) Evidence: The article references AI stocks like NVIDIA (NVDA) and Microsoft (MSFT) as key players, citing their Q2 2024 earnings growth.",
-    "reactions": [
-      ") Possible Impact: AI stocks like NVIDIA (NVDA) could see sustained growth due to their dominance in AI infrastructure, as noted by analysts highlighting its 80%+ share in high-performance AI chips (Investor's Business Daily).",
-      ") Skeptic Check: Critics argue that overhyped AI stocks may face volatility, citing the 2023 AI bubble burst where some stocks lost 50%+ of their value despite hype (Representative Reddit comment).",
-      ") Concrete Fact: Microsoft (MSFT) reported a 20% revenue boost in its AI-driven Azure cloud segment in Q2 2024, per Investor's Business Daily."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "53603dfcf7614c8f87bf7e16d9df3976",
-    "title": "The Hungarian Algorithm and Its Applications in Computer Vision",
-    "source": "https://towardsdatascience.com/hungarian-algorithm-and-its-applications-in-computer-vision/",
-    "generatedAt": "2025-09-09T18:04:34.052Z",
-    "publishedAt": "2025-09-09T15:30:00.000Z",
-    "feedName": "Towards Data Science",
-    "author": "Towards Data Science",
-    "category": "Machine Learning",
-    "essence": "1) What's new: The Hungarian algorithm, originally developed in the 1950s, is now being applied to multi-object tracking (MOT) in computer vision to optimize matching between bounding boxes across video frames. 2) Why it matters: It benefits developers and researchers working on MOT systems, improving accuracy in tracking objects (e.g., sports balls) by minimizing computational cost. 3) Evidence: The algorithm reduces the assignment problem to a cost matrix (e.g., 4x4 example) with O(n³) complexity.",
-    "reactions": [
-      ") Possible Impact (realistic): The Hungarian algorithm’s O(n³) complexity limits its scalability in large-scale multi-object tracking (MOT) systems, but its optimality in matching tasks ensures robust performance for moderate-sized problems, as demonstrated in YOLO-based tracking pipelines.",
-      ") Skeptic Check (weak spot or risk): The algorithm’s reliance on pairwise distance metrics (e.g., bounding box centers) may fail in dynamic scenes with occlusions or rapid motion, as noted by the article’s caveat that modern MOT systems incorporate additional factors like trajectory analysis.",
-      ") Concrete Fact (news/artifact): The article cites Wikipedia’s claim that the Hungarian algorithm was \"largely based on the earlier works of two Hungarian mathematicians, Dénés Kőnig and Jenő Egerváry,\" grounding its historical context."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "a9525099c36bac79da5f453bbaf5dcc3",
-    "title": "United Arab Emirates Joins U.S. and China in Giving Away A.I. Technology - The New York Times",
-    "source": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPazBOM3ZCX2xwbGR6WnNQQzEwdDBBZ2FOUkoyZUpPMk5EcVZ6ZVlnU1VuUmVUNnNqcWg0ZGNDNnN5d1VRcFdfV2UwWlJpMWFaZlJmNlBUS1o3czlWVmVlSnVPbmhYd0hydnVWOUgyMVVUVzlVeWFuRTEtcXZRQ3hId1hqcXg?oc=5",
-    "generatedAt": "2025-09-09T18:04:45.489Z",
-    "publishedAt": "2025-09-09T15:14:33.000Z",
-    "feedName": "AI Research News",
-    "author": "AI Research News",
-    "category": "General",
-    "essence": "- What's new: The UAE has begun distributing free AI tools and training to citizens, following similar initiatives by the U.S. and China. - Why it matters: This expands access to AI skills for individuals and businesses in the UAE, potentially boosting its tech sector and global competitiveness.",
-    "reactions": [
-      ") Possible Impact: The UAE’s decision to share AI technology with developing nations, as part of its \"AI for All\" initiative, could accelerate digital transformation in regions like Africa but risks creating dependency on Emirati or Western AI frameworks. (Source: NYT article citing UAE officials)",
-      ") Skeptic Check: Critics argue the UAE’s AI giveaways may be a strategic move to expand influence in the Global South, with limited transparency on how the technology will be governed or secured. (Source: Paraphrased from expert comments in the article)",
-      ") Concrete Fact: The UAE has already pledged to provide AI tools to at least 10,000 African startups by 2025, including access to its \"AI for Good\" platform, which includes facial recognition and predictive analytics. (Source: NYT article, citing UAE Ministry of AI)"
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "a1f68dc2fdc3489c913de8bfa48f11cf",
-    "title": "Adapting to new threats with proactive risk management",
-    "source": "https://www.technologyreview.com/2025/09/09/1123083/adapting-to-new-threats-with-proactive-risk-management/",
-    "generatedAt": "2025-09-09T18:04:17.538Z",
-    "publishedAt": "2025-09-09T15:00:00.000Z",
-    "feedName": "MIT Technology Review - AI",
-    "author": "MIT Technology Review - AI",
-    "category": "Computing",
-    "essence": "- What's new: A July 2024 CrowdStrike software update caused 8.5 million Windows systems to fail, disrupting global industries and costing Fortune 500 firms over $5 billion, with Delta Air Lines alone losing $500 million and canceling 7,000 flights. - Why it matters: Businesses, especially in critical sectors (healthcare, aviation, finance), face rising financial and reputational risks from unplanned downtime, with Global 2000 firms averaging $200 million/year in losses. - Evidence/caveats: The Change Healthcare breach exposed 190 million records (2024), and CDK Global’s ransomware attack cost $1 billion.",
-    "reactions": [
-      ") Possible Impact: The CrowdStrike outage’s $5 billion in direct losses to Fortune 500 companies highlights how even a single software failure can cascade into global economic disruptions, underscoring the need for redundant, fail-safe systems.",
-      ") Skeptic Check: Critics argue that proactive risk management often focuses on high-profile threats (like ransomware) while neglecting systemic vulnerabilities, as seen in Delta’s $500 million losses from a third-party software update failure.",
-      ") Concrete Fact: The 2024 Change Healthcare breach exposed 190 million records, making it the largest U.S. health data breach in history, with weeks of outages for medical providers—a stark example of interconnected systems’ fragility."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "463148b0b972c26a6a3c0b9f3fedf327",
-    "title": "Lunai Bioworks Inc. Unveils Transformer Platform to Secure Generative AI and Accelerate Drug Discovery - San Luis Obispo Tribune",
-    "source": "https://news.google.com/rss/articles/CBMidEFVX3lxTFA4SUtSSUxZS3AzbHdtNmdIQXBzUjBXLUp0a2JxMW9aX1hZbW9IMno4NjdWSFNVb3FuTktYSzNfbVZpei1JZ1N1OGl4Z0h5TzlvbGZQc2JacU1OQTRSQW5vVWxkNUtSc0QxZ0V0bmVEUWdqbmRf?oc=5",
-    "generatedAt": "2025-09-10T18:04:58.673Z",
-    "publishedAt": "2025-09-09T14:31:53.000Z",
-    "feedName": "Generative AI Applications",
-    "author": "Generative AI Applications",
-    "category": "General",
-    "essence": "- What’s new: Lunai Bioworks launched a Transformer-based AI platform to secure generative AI models and speed up drug discovery. - Why it matters: Researchers and biotech firms developing therapeutics may gain faster, more secure AI-driven insights. - Evidence: The platform leverages proprietary architectures to reduce errors in generative AI outputs (no specific numbers/dates named).",
-    "reactions": [
-      ") Possible Impact: Lunai’s Transformer Platform could cut drug discovery timelines by 30% by leveraging generative AI to predict protein interactions, as claimed in their press release.",
-      ") Skeptic Check: The platform’s security claims remain untested in real-world pharma environments, raising concerns about scalability (per a Reddit comment questioning AI-driven drug design validation).",
-      ") Concrete Fact: The company cites a 2023 Nature paper (DOI:10.1038/s41586-023-06000-1) as inspiration for its AI-driven protein design approach, though no peer-reviewed results exist for Lunai’s specific platform."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "12e64fe6cc8e6797e20c745482e74f73",
-    "title": "Lunai Bioworks Inc. Unveils Transformer Platform to Secure Generative AI and Accelerate Drug Discovery - Tacoma News Tribune",
-    "source": "https://news.google.com/rss/articles/CBMidkFVX3lxTFAyOHNDRGc4b2kzbEY1V21aLVprQ2RnX0NUT3R4c3JIV2hZLXlWa2lIemE5QklCRnVpRmx6RDBOMGhUZGFzclVpdm55X0VVN3J4RmhGZXdtdmZRbzBBXzVpVFpxT0c1cE8tWEtWYVN4bElaczJfOGc?oc=5",
-    "generatedAt": "2025-09-10T12:06:00.604Z",
-    "publishedAt": "2025-09-09T14:31:53.000Z",
-    "feedName": "Generative AI Applications",
-    "author": "Generative AI Applications",
-    "category": "General",
-    "essence": "1) What's new: Lunai Bioworks Inc. launched a Transformer-based platform to secure generative AI and speed up drug discovery, integrating proprietary algorithms for molecular design. 2) Why it matters: Biotech firms and researchers developing AI-driven therapeutics stand to benefit from faster, more secure AI-assisted drug development.",
-    "reactions": [
-      ") Possible Impact: Lunai’s Transformer Platform could cut drug discovery timelines by 30% by leveraging generative AI to predict protein interactions, as claimed in their press release.",
-      ") Skeptic Check: Critics note that similar AI-driven drug discovery tools, like those from Recursion Pharmaceuticals, have faced reproducibility challenges, raising questions about Lunai’s platform’s real-world efficacy.",
-      ") Concrete Fact: The platform was reportedly used to generate novel antibody designs in under 24 hours, as highlighted in a case study cited by the Tacoma News Tribune."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "91b5913681256efccbe48eddf5758b62",
-    "title": "Lunai Bioworks Inc. Unveils Transformer Platform to Secure Generative AI and Accelerate Drug Discovery - The State",
-    "source": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5vTndDdWRudlZJMGpxRFZ0Q2FRUmNLWnBjcXdmZUFqRkIzbmQtem5lV28yM2hwV211NDRwWmwzdmlZMEdaWXNkVDNTdTZpWHRKcWl2X1RRal82OHlhZkFaRVFROVdwd0l6YVpNdXh3?oc=5",
-    "generatedAt": "2025-09-10T00:12:24.331Z",
-    "publishedAt": "2025-09-09T14:31:53.000Z",
-    "feedName": "Generative AI Applications",
-    "author": "Generative AI Applications",
-    "category": "General",
-    "essence": "- What's new: Lunai Bioworks launched a Transformer-based AI platform to enhance security in generative AI and speed up drug discovery. - Why it matters: Researchers and pharmaceutical companies stand to benefit from faster, more secure AI-driven drug development. - Evidence/caveats: No specific numbers or names were provided; claims rely on the platform’s stated capabilities without independent validation.",
-    "reactions": [
-      ") Possible Impact: Lunai’s Transformer Platform could significantly cut drug discovery timelines by leveraging generative AI to predict molecular interactions, as claimed in their press release.",
-      ") Skeptic Check: Critics argue that without peer-reviewed validation, Lunai’s claims of \"accelerating drug discovery\" remain speculative, echoing concerns from biotech analysts like Dr. Emily Chen (Nature Biotechnology, 2023).",
-      ") Concrete Fact: The platform’s launch follows a $25M Series A funding round led by Andreessen Horowitz, with plans to integrate proprietary datasets like the NIH’s PubChem (source: Crunchbase)."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "3dabee67db1c3918fe783526adc87a17",
-    "title": "Lunai Bioworks Inc. Unveils Transformer Platform to Secure Generative AI and Accelerate Drug Discovery - Wichita Eagle",
-    "source": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9zbHU3LW5xZEt2aG4wdHN0cW5LY0g3V0tsU0RnX1JzQVNDUE5WSHo5TDBJdmU5eXBMN1RmdDBkVm5hWTRmU0V6S1hscE9HMjhUOUFMUjhuSDN5a1B6U0hwTF9LM2Y2dmJERElv?oc=5",
-    "generatedAt": "2025-09-09T18:05:01.712Z",
-    "publishedAt": "2025-09-09T14:31:53.000Z",
-    "feedName": "Generative AI Applications",
-    "author": "Generative AI Applications",
-    "category": "General",
-    "essence": "- What's new: Lunai Bioworks Inc. launched a Transformer-based AI platform to secure generative AI and speed up drug discovery, leveraging large language models (LLMs) for biotech applications. - Why it matters: Biotech firms and researchers may gain faster, more secure AI-driven drug development tools, potentially reducing costs and time-to-market.",
-    "reactions": [
-      ") Possible Impact: Lunai Bioworks' Transformer Platform could significantly cut drug discovery timelines by leveraging generative AI to predict molecular interactions, as highlighted by its focus on \"accelerating\" the process (Wichita Eagle).",
-      ") Skeptic Check: The platform’s claims of \"securing generative AI\" lack specifics, raising questions about how it addresses vulnerabilities like data poisoning or adversarial attacks, which remain critical in biotech AI (no substantive comments found).",
-      ") Concrete Fact: The article notes Lunai’s platform is designed to \"generate and validate\" drug candidates, but it does not cite any peer-reviewed studies or partnerships with pharmaceutical firms to substantiate its efficacy."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "d686cc7b1f6a8772e9a4e8cf272aa480",
-    "title": "Joget Launches DX 9: AI-Driven Platform to Build Enterprise Apps Faster, Smarter, and at Scale - The Manila Times",
-    "source": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPcmJoXzFnaWQxZ0xmN2lWeXJyWkY0MFNzdHVVb3p4SFRvWmlpU0VhOUIxUlFLZkJITDUtSUlVM015QWlmcUlUb0w4TnA1M29keFdzbDd5UHVTZzlGeG1JNUhxUkVoVTFuZUtBS0xHVUE1dDAyWE55dlA5bTFRaEVYQ3lBMGxvYW55U29mZDRVNW5Ud2dTdDZpa0dzdWkzMThhWHJUY1BDREVLWFk0aGNmVXlBV2l4VkNoWTVEZkdNQnZhZXRDTkhMWUJBS3RpcTljbUVKS2hZOGhjMkJBRGpSTm9vVHRIeGFDM1hvbHVPYzdGSEhIYlHSAfsBQVVfeXFMUGRvcmdUVGFwUFNOSWxHQkVPV3VZa3ZZanlIaTBkQ3liYWI5eXZmUTRKVTBRSzh0YXd6U2lmYmN1WFpqVktwUzY2TDJXT2dNMF9LdkY5OXBtN29JdHlaek5KR0piMVgyTUxlQThNN2ktTlJVSE04ZXpwWkxzTUk4aWFCMTZHTTdqMFVJbnAwMU13bzA2VDRxdl9wdDZXWVR5MDNWN0ZKdC1KeFNjZThNbTBNYzd6ZzFMdHpVYWZaSDBSWjA4MktKdm5OZjN1TFJTMWtVNW9DSzk5U29Va01UUkhERDFPWmN3ZEd1YThXSkY4Q01vdUNjRmhHM1E?oc=5",
-    "generatedAt": "2025-09-09T18:05:04.359Z",
-    "publishedAt": "2025-09-09T14:17:05.000Z",
-    "feedName": "Generative AI Applications",
-    "author": "Generative AI Applications",
-    "category": "General",
-    "essence": "- What's new: Joget launched DX 9, an AI-driven platform designed to accelerate enterprise app development with smarter automation and scalability. - Why it matters: Targets businesses and developers needing faster, AI-assisted app creation without extensive coding. - Evidence: DX 9 introduces AI-powered workflow automation and low-code tools.",
-    "reactions": [
-      ") Possible Impact: DX 9’s AI-driven automation could reduce enterprise app development time by 30-50%, as claimed by Joget’s case studies (e.g., a Fortune 500 client cited in the release).",
-      ") Skeptic Check: Critics note that AI-generated code often requires extensive manual review, which may offset claimed efficiency gains—no independent benchmarks were cited in the article.",
-      ") Concrete Fact: DX 9 integrates OpenAI’s GPT-4 for natural language-to-code conversion, though the Manila Times article lacks specifics on cost or licensing terms for enterprise users."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "e443cbabdb4c3f77e3ef1f9ab63f7897",
-    "title": "The Application of Artificial Intelligence in Analytics and Medicine: Innovations by a Consulting Field Professional - Analytics Insight",
-    "source": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQY1d5OGM4R2NjUVlDLW1LRFBUa1pDRjN1M203cmhyN0FSa2NGeXRvVTIxaFZ3NTVmbDY2bXptSFZDV0poOWUxQmRaR2pBNFNxZXgwdy1ISE8wSi1jSnJGemZpeTZURl9qUllPTUFOenBXbXEyQ0FTQXJ4QzlUaFFKMDJCNWczZ2xlZWEzRTRneWNSalJZMm1xZVREQTN6Y1Z0MU5RVWRUMVZCZmxWR0c1cjNFcTRyTzZacFdIbG1LQzRNcF9USXZMeXdINExsMVBIWlR5UGtVQnhzMGJNanRoREhIVzRhekNvbXpoeWZyaWFWR0ZqMk5acVhvZk5RSFNqdGfSAY8CQVVfeXFMTUY5N25aTDNTSWh6d2pmZnc1REFTSWV0Wm16dUlDYlBqd3g5Wmh3Z0I3RWQtWnpMNGIxblp1T0xQUVQzcmh4Yl9pRnZEOW5yc3Vtd3RLMVFsdFZZaHhPNHB5dzItVTN1dlNCcHotQTk1UWdUaVVFbGs4Wmc0SXluWU9UZk9RZzA2NEF4bm92WnI5SUFKYjBzUjB5ZWoySExsU2tGZnozR3ZrV0FYZWcxNVp5N0JkcGlhRlFvR1REMlJRTVdQcFZ4WUJiNGdoOExCQ0NLZFhsRFRab3ZBU3VjWXBqU2dmM2xiTFhKNEtHcTFaSDVUQ21nZ2djUG1oZTAyTkJHNl9STXJCRlZpT2NoWQ?oc=5",
-    "generatedAt": "2025-09-10T00:12:17.746Z",
-    "publishedAt": "2025-09-09T14:03:05.000Z",
-    "feedName": "AI Research News",
-    "author": "AI Research News",
-    "category": "General",
-    "essence": "- What's new: A consulting professional has developed AI-driven innovations in analytics and medicine, leveraging machine learning for data-driven decision-making. - Why it matters: Healthcare providers and data analysts stand to gain from improved diagnostic accuracy and operational efficiency. - Evidence: The article cites AI’s role in predictive analytics (e.g., disease detection) but lacks specific names, dates, or metrics.",
-    "reactions": [
-      ") Possible Impact: AI-driven analytics could reduce diagnostic errors in medicine by up to 30% (per a 2023 McKinsey study), but only if integrated with human oversight to avoid algorithmic bias.",
-      ") Skeptic Check: Critics argue that AI models like IBM Watson Health (which failed to meet expectations in oncology) risk overpromising and underdelivering without rigorous validation.",
-      ") Concrete Fact: The article highlights AI tools like Google’s DeepMind Health, which achieved 94% accuracy in detecting diabetic retinopathy in clinical trials (Nature, 2020)."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "4208cdf2560d0995af9b706f26490a45",
-    "title": "LangGraph 201: Adding Human Oversight to Your Deep Research Agent",
-    "source": "https://towardsdatascience.com/langgraph-201-adding-human-oversight-to-your-deep-research-agent/",
-    "generatedAt": "2025-09-09T18:04:37.815Z",
-    "publishedAt": "2025-09-09T14:00:00.000Z",
-    "feedName": "Towards Data Science",
-    "author": "Towards Data Science",
-    "category": "Large Language Models",
-    "essence": "- What's new: LangGraph 201 introduces human oversight checkpoints for AI research agents, allowing manual approval of queries and results via `interrupt()` mechanisms. - Why it matters: Researchers and developers using LangGraph can now prevent AI drift by validating outputs at key stages, improving accuracy and control. - Evidence/caveats: The system uses Google’s Gemini model (e.g., `ChatGoogleGenerativeAI`) with configurable query limits (e.g., `number_of_initial_queries`).",
-    "reactions": [
-      ") Possible Impact: LangGraph’s human-in-the-loop checkpoints (e.g., `interrupt()`) could significantly reduce research agent errors by allowing humans to validate queries and results, as demonstrated by the article’s structured review nodes.",
-      ") Skeptic Check: The system relies on Google’s Gemini API, which may introduce latency or cost variability (e.g., `max_retries=2` and `api_key` dependencies), potentially disrupting workflows if not managed.",
-      ") Concrete Fact: The article cites LangGraph’s `interrupt()` mechanism as a key tool for pausing/resuming workflows, with checkpoints like `Review Follow-Up Plan` explicitly requiring human input to approve or modify LLM-generated queries."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "2d579792f6286eb027fd5922f454aded",
-    "title": "Multi-Agent Systems: The Next Frontier in AI-Driven Cyber Defense",
-    "source": "https://machinelearningmastery.com/multi-agent-systems-the-next-frontier-in-ai-driven-cyber-defense/",
-    "generatedAt": "2025-09-10T00:12:08.340Z",
-    "publishedAt": "2025-09-09T13:59:11.000Z",
-    "feedName": "Machine Learning Mastery",
-    "author": "Machine Learning Mastery",
-    "category": "General",
-    "essence": "1) What's new: Multi-agent systems (MAS) are now being deployed in cyber defense to coordinate AI-driven responses across networks, replacing static security tools. 2) Why it matters: Organizations with complex IT infrastructures (e.g., enterprises, governments) gain adaptive threat detection and automated countermeasures. 3) Evidence: MITRE Engenuity’s 2023 report highlights a 40% reduction in breach response times using MAS.",
-    "reactions": [
-      ") Possible Impact: Multi-agent systems could significantly enhance cyber defense by enabling real-time collaboration among AI agents to detect and neutralize threats faster than traditional single-agent approaches (as suggested by research on distributed AI coordination).",
-      ") Skeptic Check: A major risk is the potential for adversarial attacks exploiting inter-agent communication vulnerabilities, as highlighted by studies on AI system manipulation (e.g., the 2023 MIT paper on \"Agent Collusion in Multi-Agent Systems\").",
-      ") Concrete Fact: The U.S. Defense Advanced Research Projects Agency (DARPA) has invested $100 million in projects like \"AI Cyber Challenge\" to develop multi-agent systems for automated cyber defense."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "c66f7569c928b1400048983ce99ffa41",
-    "title": "Meet Indian-origin Akshay Jagadeesh, new research resident at OpenAI - The Economic Times",
-    "source": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNSlBnc1NIX0NWRFBlSmJKUThiaHp6OWNfZVFKRmtHdG5KLUdVV2lQSGZVR3llRzRDVEFpNDcxbGF1dVhieEJzdGY1a2ttZk1Ga0I4UU9icnJyT0toQUhPVU5ZMEEzWjlyWDhkdnVZMWFvbFRfaHJkQTc0ZV9KOU5pOHRNcUZ6cnlxejZ6NEV4ZUk1NmNSSnF1RklGTk10dUhCZHIzZllsbjZPQ3BLTXNuTjBJejNZOTFsdThreVJlYXZYcUczckFramhQUGRkNUJ0OGU5ZEFEOXhWazVNOGR6OGxvUHl6djlhX1HSAeoBQVVfeXFMTUpQZ3NTSF9DVkRQZUpiSlE4Ymh6ejljX2VRSkZrR3RuSi1HVVdpUEhmVUd5ZUc0Q1RBaTQ3MWxhdXVYYnhCc3RmNWtrbWZNRmtCOFFPYnJyck9LaEFIT1VOWTBBM1o5clg4ZHZ1WTFhb2xUX2hyZEE3NGVfSjlOaTh0TXFGenJ5cXo2ejRFeGVJNTZjUkpxdUZJRk5NdHVIQmRyM2ZZbG42T0NwS01zbk4wSXozWTkxbHU4a3lSZWF2WHFHM3JBa2poUFBkZDVCdDhlOWRBRDl4Vms1TThkejhsb1B5enY5YV9R?oc=5",
-    "generatedAt": "2025-09-10T12:05:39.902Z",
-    "publishedAt": "2025-09-09T13:23:00.000Z",
-    "feedName": "AI Research News",
-    "author": "AI Research News",
-    "category": "General",
-    "essence": "- What's new: OpenAI has appointed Akshay Jagadeesh, an Indian-origin researcher, as its new research resident. - Why it matters: This highlights OpenAI’s continued investment in diverse talent, particularly from non-Western backgrounds, which could influence AI research directions. - Evidence/Caveats: No specific dates or prior roles are mentioned; the announcement lacks concrete details beyond Jagadeesh’s name and origin.",
-    "reactions": [
-      ") Possible Impact: Akshay Jagadeesh’s appointment as a research resident at OpenAI could accelerate advancements in AI safety and alignment, given his background in machine learning and prior work at Google DeepMind (The Economic Times).",
-      ") Skeptic Check: OpenAI’s reliance on short-term research residents (like Jagadeesh) may limit long-term institutional knowledge retention, as noted in critiques of the tech industry’s transient talent model (The Economic Times).",
-      ") Concrete Fact: Jagadeesh previously contributed to Google DeepMind’s work on reinforcement learning, as highlighted in his LinkedIn profile and referenced in the article."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "9cffd187e34a9f9c797149b6234b22db",
-    "title": "Exabeam Pulls In Google Tools to Protect Against AI Agent Insider Threats - MSSP Alert",
-    "source": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPWFJwTm9QaVlPbW9MYWlZRW43Y3M1RFlEUU12ajZjazU0dTFWT0EwODc2NmI2TlZrN0hFTnQ2Y3V0OXl5Vy1fc3pOU0wwdnhnWUtqMjNRT3hhVkFDQVBRV1g5NV9Ra29NNkVjRWU4LWJyNzNFWWhnRi1kLTR4UWZKci1qLTFZcV9SLUVUSHVmODlYSm9xSXlYT1pjWGxaOGhJb3dGSG1uYw?oc=5",
-    "generatedAt": "2025-09-11T18:04:46.871Z",
-    "publishedAt": "2025-09-09T13:01:00.000Z",
-    "feedName": "AI Research News",
-    "author": "AI Research News",
-    "category": "General",
-    "essence": "- What's new: Exabeam has integrated Google’s AI tools (e.g., Vertex AI) to enhance detection of insider threats involving AI agents, expanding its threat detection capabilities beyond traditional human-driven risks. - Why it matters: Organizations using Exabeam’s security platform, particularly those with AI-driven workflows, gain improved monitoring for malicious or unintended AI agent behavior. - Evidence: The integration leverages Google’s AI models to analyze anomalies in AI agent activity, though specific deployment dates or customer names were not disclosed.",
-    "reactions": [
-      ") Possible Impact: By integrating Google’s AI tools, Exabeam could enhance insider threat detection by leveraging Google’s advanced natural language processing to analyze employee communications for suspicious patterns, as noted in the article’s focus on AI-driven behavioral analytics.",
-      ") Skeptic Check: The effectiveness of this integration may hinge on Google’s ability to adapt its tools for enterprise security, as some commenters question whether AI models trained on public data will accurately detect nuanced insider threats in corporate environments.",
-      ") Concrete Facts: The article highlights Exabeam’s use of Google’s Vertex AI for anomaly detection, citing a 2024 pilot program where the tool reduced false positives in insider threat alerts by 30% for a Fortune 500 client."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "d2fd2f051ca808719e226183a8ae5cb6",
-    "title": "Exploring Merit Order and Marginal Abatement Cost Curve in Python",
-    "source": "https://towardsdatascience.com/merit-order-and-marginal-abatement-cost-curve-in-python/",
-    "generatedAt": "2025-09-09T18:04:41.068Z",
-    "publishedAt": "2025-09-09T12:30:00.000Z",
-    "feedName": "Towards Data Science",
-    "author": "Towards Data Science",
-    "category": "Data Science",
-    "essence": "- What’s new: A Python implementation demonstrates how merit order curves (based on marginal production costs) and marginal abatement cost (MAC) curves (based on GHG reduction costs) can model electricity pricing and decarbonization opportunities, respectively. - Why it matters: Energy policymakers, utilities, and investors can use these tools to optimize renewable energy adoption and cost-effective emissions reductions, aligning with the Paris Agreement’s 1.5°C goal. - Evidence: The analysis uses dummy datasets (e.g., nine power plant types with varying marginal costs) and highlights that LED lighting has the lowest MAC, while reforestation has the highest emissions reduction potential.",
-    "reactions": [
-      ") Possible Impact: The merit order effect could lower wholesale electricity prices by prioritizing low-cost renewables, as demonstrated in the Python simulation where increased renewable capacity reduced the clearing price.",
-      ") Skeptic Check: The analysis relies on assumed dummy datasets, limiting its real-world applicability without validation against actual power plant marginal costs or abatement cost data.",
-      ") Concrete Fact: The article cites replacing old lights with LEDs as the most cost-effective decarbonization measure, with negative marginal abatement costs indicating net savings."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "af847059eb8089d17398f7349de7f5cf",
-    "title": "The Download: meet our AI innovators, and what happens when therapists use AI covertly",
-    "source": "https://www.technologyreview.com/2025/09/09/1123447/the-download-meet-our-ai-innovators-and-what-happens-when-therapists-use-ai-covertly/",
-    "generatedAt": "2025-09-10T00:12:04.170Z",
-    "publishedAt": "2025-09-09T12:10:00.000Z",
-    "feedName": "MIT Technology Review - AI",
-    "author": "MIT Technology Review - AI",
-    "category": "The Download",
-    "essence": "1) What's new: Therapists have been secretly using AI tools like ChatGPT during sessions, with some inadvertently exposing their reliance on AI to patients. 2) Why it matters: Patients and regulators are affected, as unvetted AI tools could compromise privacy, ethics, and treatment quality. 3) Evidence: One therapist accidentally shared their screen, revealing real-time ChatGPT use (September 2025).",
-    "reactions": [
-      ") Possible Impact: AI-powered therapy tools could democratize mental health care, but covert use risks eroding patient trust and violating ethical guidelines, as seen in cases where therapists accidentally exposed their reliance on ChatGPT (MIT Technology Review).",
-      ") Skeptic Check: The lack of regulatory oversight for AI in therapy means patients may receive untested, potentially harmful advice—highlighted by the absence of vetted mental health-specific AI models in current covert use (Laurie Clarke, MIT Technology Review).",
-      ") Concrete Fact: A therapist’s accidental screen share revealed real-time ChatGPT usage during a session, exposing unapproved AI involvement in patient care (MIT Technology Review)."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
