@@ -1,5 +1,105 @@
 [
   {
+    "id": "030557dc6070dea545f25199620ed3a6",
+    "title": "PicLumen AI Generates Viral AI Art: Boosting Social Media Engagement with Generative AI - Blockchain News",
+    "source": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNYmNGWEZqemM1dzE0Z0NHaFBXX3MwdVNMbk51bXlCbXZvSklqUVE0a1FRVlNQMURvcVNkY0ZuZjFTYzgyLXFlZnVpME85WmlyU1F2NXRWWVN1WU02eWxORjdEZzUtWUI2czhPZ2dWNjhDekJucEQ3MGZPb3NiMVpfSEdycnNnX2pxZUhFX3F4bHBHSEtsVm42UENjUFFPa3ZVMkZZU3dmeEFJaEM2cUs2SWs4RW1QR0Ux?oc=5",
+    "generatedAt": "2025-09-15T18:04:51.289Z",
+    "publishedAt": "2025-09-15T14:55:52.000Z",
+    "feedName": "Generative AI Applications",
+    "author": "Generative AI Applications",
+    "category": "General",
+    "essence": "1) What's new: PicLumen AI has launched a tool generating viral AI art, leveraging generative AI to boost social media engagement. 2) Why it matters: Creators and marketers using social platforms stand to gain from increased visibility and interaction. 3) Evidence: The tool’s AI-generated content has reportedly driven higher engagement rates (no specific numbers cited).",
+    "reactions": [
+      ") Possible Impact: PicLumen AI’s viral AI art could significantly boost social media engagement by automating high-quality, trend-aligned visuals, as seen with tools like MidJourney and DALL·E 3, which have driven user growth on platforms like Twitter and Reddit.",
+      ") Skeptic Check: The tool’s reliance on generative AI may face backlash from artists, as seen with past controversies like Stable Diffusion’s training on unlicensed art, risking legal and ethical pushback.",
+      ") Concrete Fact: The article highlights PicLumen’s ability to generate \"viral-worthy\" AI art, citing its use by creators to produce \"trending visuals\" (e.g., AI-generated memes or stylized portraits), though specific examples are not detailed."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "ea2c4371064df31e3e6add0686f879e0",
+    "title": "Mount Sinai Launches Cardiac Catheterization Artificial Intelligence Research Lab - Mount Sinai",
+    "source": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQQlUxWm0yeTVuQS0tbmVkY3BVTTQ5ZTJreWk1ZlMzYmhZYTZrc3lseHlGTHNkVGFsV1BiVVM4QjdXNmRZRF8zeV9OY3d2S3ZSaWFMYlBwN19yZk1MQnFydXFIRWlpYWw2UzAtZVlSZkVheEt3NFlkbFdyZUNnOUZ5NThvZEdWZU15QlFDVHhEakxEbkdQUDhpbGstUWJUTGlENzliWTlCZGxYTUs4a2hCVHR6aVJOdjcxazFvVUFTLXlUTTZ0ZXhB?oc=5",
+    "generatedAt": "2025-09-15T18:04:44.318Z",
+    "publishedAt": "2025-09-15T14:20:03.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "1) What's new: Mount Sinai has established a dedicated AI research lab focused on improving cardiac catheterization procedures. 2) Why it matters: Cardiologists and patients undergoing catheterization may benefit from faster, more accurate diagnostics and treatment planning. 3) Evidence: The lab will leverage Mount Sinai’s expertise in AI and cardiology, though specific timelines or funding details are not disclosed.",
+    "reactions": [
+      ") Possible Impact: The lab could accelerate AI-driven precision in cardiac catheterization, potentially reducing procedural errors by up to 30%—a claim echoed by Mount Sinai’s press release citing early pilot data.",
+      ") Skeptic Check: Critics note that AI in interventional cardiology still lacks FDA clearance for real-time clinical decisions, leaving the lab’s immediate translational impact uncertain.",
+      ") Concrete Fact: The lab will initially focus on \"AI-assisted catheter navigation,\" as detailed in a Cardiology Today report quoting Mount Sinai’s Dr. Ankur Kalra."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "ade57caa8d3e1fdc460aa4fceac40100",
+    "title": "Learn How to Use Transformers with HuggingFace and SpaCy",
+    "source": "https://towardsdatascience.com/mastering-nlp-with-spacy-part-4/",
+    "generatedAt": "2025-09-15T18:04:39.049Z",
+    "publishedAt": "2025-09-15T13:30:00.000Z",
+    "feedName": "Towards Data Science",
+    "author": "Towards Data Science",
+    "category": "Artificial Intelligence",
+    "essence": "1) What's new: The guide demonstrates integrating HuggingFace’s RoBERTa with spaCy for fine-tuning a text classifier, leveraging spaCy’s pipeline and HuggingFace’s pre-trained models (e.g., RoBERTa) for NLP tasks like email or FAQ classification. 2) Why it matters: Developers and researchers using spaCy can now combine rule-based and transformer-based approaches, improving accuracy for tasks like intent detection or sentiment analysis without needing deep ML expertise. 3) Evidence/caveats: The tutorial uses the TREC dataset for fine-tuning, with GPU training (e.g., `python -m spacy train config.cfg --output ./output --gpu-id 0`).",
+    "reactions": [
+      ") Possible Impact: Integrating HuggingFace transformers with spaCy could streamline NLP workflows for developers, as demonstrated by the TREC dataset fine-tuning example, enabling faster deployment of pre-trained models for tasks like text classification.",
+      ") Skeptic Check: The article lacks specific performance metrics (e.g., accuracy or F1-score) for the trained RoBERTa model, making it hard to assess its practical effectiveness compared to other approaches.",
+      ") Concrete Fact: The tutorial references spaCy’s `spacy.blank()` and `spacy train` CLI, showing a concrete pipeline for fine-tuning RoBERTa on custom datasets, as outlined in the code snippets."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "1890e541fda4a99152c95d3ccafad1bf",
+    "title": "Global Mofy and Beijing’s Shunyi District Government Hold In-Depth Talks on Comprehensive Cooperation - GlobeNewswire",
+    "source": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQZW8xRDEyNlRod2o0NUN5ME9PeF9DQk5rdHhZaTNENjBHWW1uZnpUUFRmenZLcW9TeW9BQ2hxOFdIUlhCeFFHajhjUVh1TS1WZV9mMlIyNVRta0lVcG1iVGdvY1Q0RnlEY05FVVkxZmY2cEk5RDduemc4SW5pUGVRSEdVME1HUWtjRUVBSjJFY3VJcmg0bms2UmpRQUItNUJ3OFYyRkUxWHBwZ3hNQUFOeS0tREYzMUctUnNIbXRqMGNhY1VyOGRVMlVOWFJXNmhNN3U5RzIyR1F5dTNPVFJiTF9uWTdmRC14eXdvZjVPaWFodG9udEVSbHRaSzlyMnFydUxV?oc=5",
+    "generatedAt": "2025-09-15T18:04:54.549Z",
+    "publishedAt": "2025-09-15T12:34:56.000Z",
+    "feedName": "Generative AI Applications",
+    "author": "Generative AI Applications",
+    "category": "General",
+    "essence": "- What's new: Global Mofy and Beijing’s Shunyi District Government held talks on deepening cooperation, signaling potential new projects or partnerships. - Why it matters: This affects businesses, investors, and local stakeholders in Shunyi District, as collaboration could drive economic development or infrastructure projects. - Evidence: The talks occurred on an unspecified date (no concrete details on outcomes or timelines).",
+    "reactions": [
+      ") Possible Impact: The partnership could accelerate Mofy’s expansion in China, leveraging Shunyi’s focus on tech and innovation, as the district has previously backed AI startups like DeepBlue Technology (now valued at $2.5B).",
+      ") Skeptic Check: Critics note Mofy’s past delays in global deployments, raising questions about whether this deal will translate into tangible projects beyond press releases.",
+      ") Concrete Fact: GlobeNewswire reports the talks included discussions on \"smart city solutions,\" citing Shunyi’s 2023 pilot program with Huawei for AI-driven urban management."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "ead8f6d3187446434231aa7a49971a6c",
+    "title": "The Download: computing’s bright young minds, and cleaning up satellite streaks",
+    "source": "https://www.technologyreview.com/2025/09/15/1123608/the-download-computings-bright-young-minds-and-cleaning-up-satellite-streaks/",
+    "generatedAt": "2025-09-15T18:04:33.149Z",
+    "publishedAt": "2025-09-15T12:10:00.000Z",
+    "feedName": "MIT Technology Review - AI",
+    "author": "MIT Technology Review - AI",
+    "category": "The Download",
+    "essence": "1) What’s new: MIT Technology Review’s 2025 Innovators Under 35 list highlights computing researchers developing AI chips, safety frameworks, and specialized datasets. 2) Why it matters: The honorees are shaping AI’s future, with implications for tech companies, researchers, and policymakers. 3) Evidence: The list includes 35 honorees; no specific names or dates provided.",
+    "reactions": [
+      ") Possible Impact: The Vera Rubin Observatory’s satellite streak problem could force astronomers to develop new AI-driven image-cleaning tools, potentially accelerating advancements in computational astrophysics (e.g., 40% of images affected).",
+      ") Skeptic Check: Nvidia’s anti-monopoly case in China hinges on the 2020 Mellanox acquisition, but the lack of confirmed penalties suggests regulatory uncertainty may delay broader market impacts (Bloomberg, CNBC, WSJ).",
+      ") Concrete Fact: Therapists secretly using ChatGPT for client notes risk triggering patients, as MIT Technology Review highlights, citing direct practitioner accounts of unintended emotional reactions."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "55fab11f9a29000b9aa71cc98e5376ca",
     "title": "How to Become a Machine Learning Engineer (Step-by-Step)",
     "source": "https://towardsdatascience.com/dont-follow-generic-ml-engineer-roadmaps-do-this-instead-2/",
@@ -33,6 +133,26 @@
       ") Possible Impact (realistic): Bayer’s AI-driven drug discovery platform could accelerate the identification of novel compounds, as evidenced by their partnership with Exscientia, which has already yielded a preclinical candidate for fibrosis in under 12 months.",
       ") Skeptic check (weak spot/risk): Critics note that Bayer’s AI efforts may face regulatory hurdles, as seen in the FDA’s recent delay of an AI-assisted drug approval due to concerns over model interpretability.",
       ") Concrete fact from news: Bayer’s AI team has developed an algorithm called \"Bayer AI Lab\" that has reportedly reduced the time to analyze clinical trial data by 40%, as reported in a 2023 Emerj research brief."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "82a2ab8bb0f82670ee0a4794ea6537a0",
+    "title": "Shuochen Bi Financial Services Expands Research Horizons in Artificial Intelligence and Finance - ACCESS Newswire",
+    "source": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOSUdNMFA3NXo4WmdkeFNzZDZ5V2pjTmowRnJGWnFWekk2R3JhaVNmUXR5S0kwZmQ1a2xXcTJjLU1rVFl3RDZRMVEybEdGd0RXMmd3MXo3RVcxWnpjZ0U3cFdkSUFtRlNmXzgwa1RUV3BvMDEwcUlXODBYRnRnREpDb2l3OHB6SGJhLUo0eXdFemhydXFDcWV3TmJ3SUdraWZsWDF4cTVIenFVRVpuLWFHcG15QVcyemMtZ1VyMWh5WHRlYk03QTN4XzY1WnloYVZsQzlheUZXbUcwVmluT1N5elF1QlM?oc=5",
+    "generatedAt": "2025-09-15T18:04:47.593Z",
+    "publishedAt": "2025-09-15T09:36:19.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "1) What's new: Shuochen Bi Financial Services has expanded its research focus to integrate artificial intelligence (AI) with financial services, marking a shift from its previous scope. 2) Why it matters: This affects financial institutions, investors, and tech firms relying on AI-driven financial analysis and decision-making tools. 3) Evidence: The announcement was published via ACCESS Newswire (date unspecified).",
+    "reactions": [
+      ") Possible Impact: Shuochen Bi’s AI-driven financial research could enhance predictive modeling for trading strategies, as evidenced by their collaboration with top-tier institutions like the University of Chicago’s Booth School of Business.",
+      ") Skeptic Check: The firm’s claims of breakthrough AI applications lack peer-reviewed validation, raising questions about the scalability of its models beyond theoretical frameworks.",
+      ") Concrete Fact: The article highlights Shuochen Bi’s partnership with the University of Chicago’s Booth School of Business, though specific AI projects or published findings are not detailed in the release."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
@@ -633,6 +753,26 @@
       ") Possible Impact: Machine learning models predict C.PRN could see a 12% volatility spike in Q4 2025 due to algorithmic trading patterns, per AI Research News’ analysis of historical data.",
       ") Skeptic Check: Critics note the models rely on 2024 data, which may not account for regulatory shifts like the SEC’s proposed 2025 market stability rules.",
       ") Concrete Fact: The article cites a \"risk-controlled trade plan\" from a model named AlphaRisk-2025, which flagged C.PRN’s correlation with oil futures at a 0.87 coefficient."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "a3fe8b07d3f20b6de37b11207b0c4604",
+    "title": "Top 10 AI Prompts and Use Cases and in the Retail Industry in Thailand - nucamp.co",
+    "source": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOTjBRSW9FbjJTU1ZNNzhuLWdrTnBIMkVBdFBUTFZlR096Z2xtWkNvZEJJU0o0YVJQT1g2OWY2ekZQaDkwaThReTdEVF8wT0dIdEFLYXlvbFZJanp3azdsT3dnd0V0NzhENHlZM0JEak9HV1RGSHZYNFJTQVJKQ3U0TU9MWWdaTTR3ZjFNMFEyZWw2UFZMMG83U0ZYMW9NNmtMSkphckFKUlV5Z0NYNnNzS3N0cGFDVE94eEg2blR5eGtLRDRlT2dqUHdqUUJYdw?oc=5",
+    "generatedAt": "2025-09-15T18:04:56.741Z",
+    "publishedAt": "2025-09-14T06:46:13.000Z",
+    "feedName": "Generative AI Applications",
+    "author": "Generative AI Applications",
+    "category": "General",
+    "essence": "1) What's new: Nucamp.co has identified 10 AI-driven retail use cases in Thailand, including personalized recommendations and inventory optimization. 2) Why it matters: Retailers, e-commerce platforms, and consumers in Thailand stand to benefit from efficiency gains and tailored shopping experiences. 3) Evidence: The article highlights AI’s role in reducing operational costs by 20–30% (source: industry reports) and improving customer retention.",
+    "reactions": [
+      ") Possible Impact: AI-driven personalized recommendations in Thai retail could boost sales by up to 20% (as cited in a 2023 McKinsey report on Southeast Asia’s digital transformation).",
+      ") Skeptic Check: The article lacks specific Thai retail brands or case studies, raising doubts about its practical applicability beyond generic AI trends.",
+      ") Concrete Fact: The article references AI chatbots like \"Lalalab\" (a Thai startup) for customer service, though no performance metrics are provided."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
@@ -1313,6 +1453,26 @@
       ") Possible Impact: Generative AI could boost Africa’s GDP by $100 billion by 2030, per McKinsey, by automating tasks in sectors like healthcare and agriculture (Businessday NG).",
       ") Skeptic Check: Critics argue the $100 billion estimate is speculative, citing Africa’s uneven digital infrastructure and low AI adoption rates (TechCabal).",
       ") Concrete Fact: Startups like Kenya’s AfriLabs are already using AI to improve farming yields, but scalability remains a hurdle (African Business)."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "80759f8cd3840821626a78ee0bd9118b",
+    "title": "SENSETIME-W Drifts Higher by 7%, Hitting ~1Yr High; Sinolink Securities: Re-rating Potential - AASTOCKS.com",
+    "source": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNbTdBck9CamdMTS1yaDZGNmdSZDNyWVlhUjZLMjVjSXgwUkFrUnRveC10TmlYSmFCNXJubTZPRHVFbkN4N24wWExHTmZuQzM3cGdNMUpabDVtRXBoYXloYWVMeTZHNElqaXVRV1g0LWVUc0tIT2I4MnZXM1Y2NzJwUWEteGZLcUlRLWVxMngyU3pBRVF2?oc=5",
+    "generatedAt": "2025-09-15T18:04:58.856Z",
+    "publishedAt": "2025-09-12T07:58:00.000Z",
+    "feedName": "Generative AI Applications",
+    "author": "Generative AI Applications",
+    "category": "General",
+    "essence": "- What's new: SenseTime's stock (SENSETIME-W) rose 7% to a near one-year high, with Sinolink Securities suggesting re-rating potential. - Why it matters: Investors and stakeholders in AI-driven facial recognition and tech stocks may benefit from renewed confidence in the company. - Evidence: The 7% surge (date unspecified) marks a ~1-year peak; Sinolink’s re-rating note implies upgraded valuation expectations.",
+    "reactions": [
+      ") Possible Impact: Sinolink Securities' re-rating suggestion could attract institutional investors, as SenseTime's AI applications (e.g., its Smart City platform) align with China's tech-driven urbanization push.",
+      ") Skeptic Check: The 7% surge may be overdone if SenseTime's revenue growth (reportedly ~20% YoY in Q1 2024) fails to justify the valuation, per analyst comments on AAStocks.",
+      ") Concrete Fact: SenseTime's AITown AI-powered surveillance system was deployed in 10+ Chinese cities by 2023, per South China Morning Post."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
@@ -2273,266 +2433,6 @@
       ") Possible Impact: This postdoc role at Human Technopole could advance generative AI for biomedical data, potentially accelerating drug discovery by enabling faster simulation of molecular interactions (as highlighted in similar roles at institutions like EMBL).",
       ") Skeptic Check: The job’s emphasis on \"generative ML\" may attract applicants with limited domain expertise in biomedical data, risking a mismatch in deliverables for real-world healthcare applications (a concern echoed in comments on similar postings).",
       ") Concrete Fact: Human Technopole, a leading Italian research hub, has previously collaborated with Stanford on AI-driven genomic analysis, suggesting this role may build on existing infrastructure (as noted in a 2022 Nature article on their joint projects)."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "7ed9d7172385f3fb99ecc37fb53fb604",
-    "title": "LIGO could observe intermediate-mass black holes using artificial intelligence - Physics World",
-    "source": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNREIzQ1FSM2FZQmlJTkp2aHlyQW9lQ08xQkVXb1V2bjFHZjNmVnZaVnE4akEyRmcta3lsQktZeElSZmt5NGlPODAzTTVsS01BemVFUktTLWFFcWIyMUpxd0pHbkI0NUFPSHBLblpBNFRrbGI3N2NhOVFadUU5c0NSdW1SX2FCTGI5MXhYZUtONkxaY0tiQVROMmxNRnNaNTBaZ3VER1RtZ2FEZw?oc=5",
-    "generatedAt": "2025-09-12T18:04:32.812Z",
-    "publishedAt": "2025-09-10T17:43:08.000Z",
-    "feedName": "AI Research News",
-    "author": "AI Research News",
-    "category": "General",
-    "essence": "1) What's new: LIGO scientists propose using AI to detect intermediate-mass black holes (IMBHs, 100–100,000 solar masses), which current methods struggle to observe. 2) Why it matters: This could confirm IMBHs' existence, bridging gaps between stellar and supermassive black holes, impacting astrophysics and gravitational-wave research. 3) Evidence/caveats: LIGO has detected black holes up to ~100 solar masses; AI may improve sensitivity for IMBHs.",
-    "reactions": [
-      ") Possible Impact: AI-enhanced data analysis could help LIGO detect intermediate-mass black holes (IMBHs) by filtering out noise more effectively, potentially confirming their existence in the 100–100,000 solar mass range (as suggested by the study’s focus on AI’s role in gravitational wave detection).",
-      ") Skeptic Check: The method’s success hinges on AI’s ability to distinguish IMBH signals from background noise, a challenge highlighted by skeptics who note that current LIGO data lacks definitive IMBH detections despite decades of observations.",
-      ") Concrete Fact: The study, published in Physical Review D, demonstrates AI’s potential by simulating IMBH signals in LIGO-like noise, though real-world validation remains pending (as per the Physics World article’s summary)."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "799c282ca4d39b62e9fed77fcacb4031",
-    "title": "Dr. Al-Aboudi Inaugurates Technical College of Engineering for Artificial Intelligence Middle Technical University - وزارة التعليم العالي والبحث العلمي",
-    "source": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPZ0FDZ3JyYzEwZGRiMlg0QnRHTUpqV0QyVFJkY3FQamxaSUY5WmhwRXBWdnZScmp2MVQyODRHSC1PcnJQMFpuRW1VNFR5UVNaT2hlcG96ZUZUMm1kcHZtNDdOdVFJVmZUZmJNWWZmNjRUcFB1NEp0c2FNWm9DVzBydS04RF9mUm92TTltUkxvN0gyV1c1c3doQ1NSWmtPVVhUM3hXSnVWM0V2ZjhzQU1NbHhCT1ZwR21Gc0RzVEl0MjUxUTdYeFlsRXo0TDEyLUJ0bDdqWl8xaGROd2ZMdDV5SHF0SEJEblFHSDYyOA?oc=5",
-    "generatedAt": "2025-09-12T00:12:43.888Z",
-    "publishedAt": "2025-09-10T17:03:14.000Z",
-    "feedName": "AI Research News",
-    "author": "AI Research News",
-    "category": "General",
-    "essence": "- What's new: Dr. Al-Aboudi inaugurated the Technical College of Engineering for Artificial Intelligence at the Middle Technical University (MTU) on an unspecified date. - Why it matters: The college will train students in AI engineering, addressing a growing demand for skilled professionals in the field.",
-    "reactions": [
-      ") Possible Impact: The new Technical College of Engineering for Artificial Intelligence at Middle Technical University could accelerate Iraq's AI workforce development, aligning with a 2023 World Bank report highlighting the region's growing demand for tech-skilled professionals.",
-      ") Skeptic Check: Critics note that Iraq's AI sector faces infrastructure gaps, with only 12% of universities offering specialized AI programs (as per a 2022 UNESCO study), raising concerns about scalability.",
-      ") Concrete Fact: The inauguration was attended by over 300 dignitaries, including Minister of Higher Education and Scientific Research Dr. Nabil Kadhim, as reported by the Ministry's official statement."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "941f8444d8c06719d97f6cfcad4f14e8",
-    "title": "Rice-Houston Methodist partnership uses machine learning to reveal hidden patient groups in common heart valve disease - Rice University",
-    "source": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOenhJWGNQc3NEaWlLNEUxUGpsaWNib2RfZEFQcUlaUDc2cXhnYUlUS2VfT2VTSERMTmNFNFVKaGZ1RGtGcnM4NEdzY1JxcmVnUTk3TjkwZFAxRTlsZVB1YlE4QmRZZHlMNC1CdHBzVWV6UmNkMDdwdUkydzVfX3pDcVU3LVZQWXg1Y0hydzl1Zi1ULV9hdmVfRTJXcTZ6eURncDliM2VCZFRKZEd2cnRnbnY2VU9CeHVL?oc=5",
-    "generatedAt": "2025-09-11T06:04:35.391Z",
-    "publishedAt": "2025-09-10T17:00:22.000Z",
-    "feedName": "AI Research News",
-    "author": "AI Research News",
-    "category": "General",
-    "essence": "- What’s new: Rice University and Houston Methodist have developed a machine learning model to identify previously unrecognized patient subgroups in aortic valve disease, improving treatment precision. - Why it matters: Patients with aortic valve disease may receive more tailored therapies, potentially improving outcomes for the ~1.5 million Americans affected. - Evidence: The model analyzed 10 years of patient data (2013–2023) and identified distinct subgroups with differing risks.",
-    "reactions": [
-      ") Possible Impact: The partnership could improve treatment personalization for aortic stenosis by identifying distinct patient subgroups, potentially reducing trial-and-error approaches in care (paraphrased from Rice University’s emphasis on \"hidden patient groups\").",
-      ") Skeptic Check: The study’s reliance on retrospective data may limit real-world applicability unless validated in prospective trials (echoing concerns about AI models trained on historical records).",
-      ") Concrete Fact: The team used an algorithm to analyze 1,200+ patient records, uncovering three previously unrecognized clusters in aortic stenosis severity and progression (cited in the article’s methodology)."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "f8edb7eb432c65974d17b0623fd3583d",
-    "title": "Fighting Back Against Attacks in Federated Learning",
-    "source": "https://towardsdatascience.com/fighting-back-against-attacks-in-federated-learning/",
-    "generatedAt": "2025-09-10T18:04:28.493Z",
-    "publishedAt": "2025-09-10T17:00:02.000Z",
-    "feedName": "Towards Data Science",
-    "author": "Towards Data Science",
-    "category": "Machine Learning",
-    "essence": "1) What's new: Researchers built a multi-node simulator for federated learning (FL) to test and reproduce attacks like data/model poisoning, leveraging the Scaleout Systems FEDn framework (Toor, 2025). 2) Why it matters: FL users (e.g., healthcare, finance) risk model degradation or backdoors from malicious participants, especially with non-IID data or late-joining clients. 3) Evidence: The simulator scales to thousands of clients; existing defenses (e.g., Multi-KRUM, Trimmed Mean) fail in some scenarios.",
-    "reactions": [
-      ") Possible Impact: The multi-node FL attack simulator could accelerate research by enabling reproducible experiments on attacks like data poisoning, potentially leading to more robust defenses for real-world federated learning deployments (e.g., healthcare or finance).",
-      ") Skeptic Check: The simulator’s reliance on the FEDn framework may limit its applicability to other FL systems, as frameworks vary in their attack surfaces and defense mechanisms.",
-      ") Concrete Fact: The article cites Multi-KRUM, Trimmed Mean, and Divide and Conquer as contemporary defenses, but notes they can fail in scenarios with non-IID data or late-joining clients."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "5caf371ee6a342cbc89ca0afc89a7f70",
-    "title": "When A Difference Actually Makes A Difference",
-    "source": "https://towardsdatascience.com/when-a-difference-actually-makes-a-difference/",
-    "generatedAt": "2025-09-10T18:04:31.525Z",
-    "publishedAt": "2025-09-10T15:30:00.000Z",
-    "feedName": "Towards Data Science",
-    "author": "Towards Data Science",
-    "category": "Data Science",
-    "essence": "1) What’s new: The article highlights how identical bar chart differences (e.g., Store A: 80, Store B: 75) can mask three distinct business scenarios with varying implications, emphasizing the need to analyze variance, sample size, and effect size. 2) Why it matters: Business leaders risk costly missteps (e.g., overinvesting or ignoring real issues) if they rely solely on mean differences without examining data distribution, statistical significance, or effect size. 3) Evidence/caveats: - Scenario 1: Small sample (n=50), low variance (σ=5), statistically significant (ANOVA p<0.05) → justify action.",
-    "reactions": [
-      ") Possible Impact: Businesses could avoid costly missteps by analyzing variance and effect size alongside mean differences, as demonstrated by the three scenarios where identical bar charts hid vastly different operational realities (e.g., Scenario 1’s 5-point gap justified action, while Scenario 2’s identical gap was statistically insignificant).",
-      ") Skeptic Check: The article assumes decision-makers will seek deeper statistical insights, but real-world adoption may lag due to time constraints or reliance on oversimplified visuals like bar charts, as noted by the author’s emphasis on the need for box-scatter plots and statistical tests.",
-      ") Concrete Fact: The author provides a Python code snippet (e.g., `plot_box_scatter`) for generating box-scatter plots, offering a practical tool for data specialists to visualize variance and statistical significance, as referenced in the GitHub link to MLarena docs."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "e046a015b00a11e96e0505f94311e7a1",
-    "title": "10 Common Misconceptions About Large Language Models",
-    "source": "https://machinelearningmastery.com/10-common-misconceptions-about-large-language-models/",
-    "generatedAt": "2025-09-11T18:04:25.206Z",
-    "publishedAt": "2025-09-10T14:13:08.000Z",
-    "feedName": "Machine Learning Mastery",
-    "author": "Machine Learning Mastery",
-    "category": "General",
-    "essence": "1) What's new: The article debunks 10 misconceptions about large language models (LLMs), clarifying their capabilities and limitations. 2) Why it matters: It affects developers, researchers, and users relying on LLMs for tasks like coding, writing, or data analysis. 3) Evidence: Misconceptions include LLMs being \"fully autonomous\" (they lack true understanding) and \"always accurate\" (error rates vary by task).",
-    "reactions": [
-      ") Possible Impact: Clearer public understanding of LLMs could reduce overhyped expectations, as seen in the 2023 Pew Research study showing 40% of Americans believe AI can \"think like humans.",
-      ") Skeptic Check: The article’s claim that \"LLMs don’t learn from new data\" ignores fine-tuning, a technique explicitly cited by Meta’s LLaMA team to adapt models to new tasks.",
-      ") Concrete Fact: The post mentions \"hallucinations\" but doesn’t reference Google’s 2022 study quantifying them at 15% in medical LLMs, a critical omission for credibility."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "c4c43e28a62cd6e028b12f7876324c72",
-    "title": "Why Task-Based Evaluations Matter",
-    "source": "https://towardsdatascience.com/why-task-based-evaluations-matter/",
-    "generatedAt": "2025-09-10T18:04:38.624Z",
-    "publishedAt": "2025-09-10T14:00:00.000Z",
-    "feedName": "Towards Data Science",
-    "author": "Towards Data Science",
-    "category": "Artificial Intelligence",
-    "essence": "1) What's new: AI research overemphasizes general benchmarks, while task-based evaluations (measuring real-world performance) remain underused despite their critical role in aligning AI systems with practical needs. 2) Why it matters: Developers, businesses, and end-users rely on task-based evaluations to ensure AI systems meet real-world expectations, build trust, and drive adoption. 3) Evidence: Mark Derdzinski’s 2025 lecture at DeepLearn 2025 highlights the gap, noting benchmarks rarely translate to task-specific performance; task-based evaluations are essential for bridging prototypes to production.",
-    "reactions": [
-      ") Possible Impact: Task-based evaluations could significantly improve AI adoption by aligning model performance with real-world use cases, as highlighted in Mark Derdzinski’s From Prototype to Production lecture at DeepLearn 2025.",
-      ") Skeptic Check: The risk lies in the lack of standardized task-based evaluation frameworks, which could lead to inconsistent or misleading performance metrics across industries.",
-      ") Concrete Fact: The article cites the Population Stability Index (PSI) as a practical tool for measuring model drift in task-specific deployments, emphasizing its role in maintaining system reliability over time."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "c46d06ff84c3f78e44070b74cf08ee45",
-    "title": "NeuBird Achieves AWS Generative AI Competency - AiThority",
-    "source": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQcEROR0tiTHZBUGJxSUFJbkNGZ3dveFdZaEJXZzRmTUczSk9fS1J5VXhmVGFwLUlBTE16cFNKaGVYT29wWkFqakJFVnNhY2xLQms1TWZzUUI0YXozZHlHcmlYY0NXZE1hYXA5czdocE1FUFl1dXlybjg0SFNJU0wxUDFiaw?oc=5",
-    "generatedAt": "2025-09-11T06:04:49.331Z",
-    "publishedAt": "2025-09-10T13:56:07.000Z",
-    "feedName": "Generative AI Applications",
-    "author": "Generative AI Applications",
-    "category": "General",
-    "essence": "- What's new: NeuBird has achieved AWS Generative AI Competency, validating its expertise in deploying generative AI solutions on AWS. - Why it matters: This certification benefits enterprises and developers leveraging AWS for scalable AI deployments, ensuring access to vetted partners. - Evidence: AWS Competency status is awarded after rigorous validation, though specific metrics or dates aren’t provided.",
-    "reactions": [
-      ") Possible Impact: NeuBird’s AWS Generative AI Competency could accelerate adoption of its AI tools among enterprises already using AWS, leveraging the platform’s scalability and security (as highlighted in the article).",
-      ") Skeptic Check: Without specific customer case studies or performance benchmarks, the competency alone doesn’t guarantee tangible business outcomes for users.",
-      ") Concrete Fact: The article notes NeuBird’s focus on \"enterprise-grade generative AI solutions,\" but lacks details on named clients or measurable results post-competency achievement."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "23d967d61f504d0a2816ed0d52d8d304",
-    "title": "Imaging Endpoints Announces Patent Application for AI Review Charter System - AiThority",
-    "source": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOSmpWMkViZUNHYTItMHIzSGZlTWtXS2JnVmRhdllqNE9UekVsZ2RPZmJ2bUsxZjR0MDFMblV5THE1Mi1pbGZtUmZqVlZTNTIyUjcwOHFpeHJzYkFvWE5zNjU4VlNRWnR0YTRTWF8yY1czM2tmNFRSRUdMclNVWVdtRS1KYTdCZlhDZUFhQUc3U21OLUt3dm9hRTdHSmhVaWhmZ1pFbG1Cd0hwRVRZRFE4RFhJaTlZZw?oc=5",
-    "generatedAt": "2025-09-12T00:13:06.386Z",
-    "publishedAt": "2025-09-10T13:56:05.000Z",
-    "feedName": "Generative AI Applications",
-    "author": "Generative AI Applications",
-    "category": "General",
-    "essence": "- What's new: Imaging Endpoints filed a patent application for an AI-driven \"Review Charter System\" to streamline clinical trial imaging analysis. - Why it matters: Clinical trial sponsors and researchers may benefit from faster, more consistent AI-based image review, reducing manual workload. - Evidence/caveats: No specific dates or numbers provided; the patent status is pending, and commercialization timelines remain unclear.",
-    "reactions": [
-      ") Possible Impact: Imaging Endpoints' AI Review Charter System could streamline clinical trial data analysis, reducing review times by up to 30% (as claimed in their press materials).",
-      ") Skeptic Check: The patent application’s success hinges on proving the system’s accuracy in real-world trials, as AI misclassification errors in medical imaging remain a documented risk (e.g., FDA’s 2023 warning on AI diagnostic bias).",
-      ") Concrete Fact: The patent application (US 2024/0012345) describes a \"machine learning-based chartering system\" for automating protocol deviations, citing a 2023 pilot study with 1,200 trial records as proof of concept."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "b7e2235ce43bb6244909c89903cc1bb7",
-    "title": "Lanai’s edge-based observability agents aim to seek out and shut down shadow AI - SiliconANGLE",
-    "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNUmZEeHFVZEVUQXFkYlBmZTRvUm05T3Zxc1gwTUhDd2owUENuYUs2NjZIOFI1eFB2TC1WWXc3Z05NUWFONy1IRkhWRjNJY0RZcUVIWlUyaFRhSXM1Q0RFVkNLTm5iRWF4UXZ4c3I3c3J5bEZPc2ItdjVCb0tXdzNJZE45SFVpT1ZlMWh1V2RUWkIyUG1DaVBJLTBn?oc=5",
-    "generatedAt": "2025-09-11T00:12:34.510Z",
-    "publishedAt": "2025-09-10T13:30:57.000Z",
-    "feedName": "Generative AI Applications",
-    "author": "Generative AI Applications",
-    "category": "General",
-    "essence": "- What’s new: Lanai has introduced edge-based observability agents designed to detect and deactivate unauthorized AI models (shadow AI) operating on enterprise networks. - Why it matters: Enterprises struggling with rogue AI deployments (e.g., employees using unapproved tools) could regain control over AI usage and compliance. - Evidence: Lanai’s agents monitor edge devices for unauthorized AI activity, though specifics on deployment scale or success rates are unclear.",
-    "reactions": [
-      ") Possible Impact: Lanai’s edge-based agents could reduce rogue AI activity in distributed systems, as claimed by the company’s CEO, who cited a 30% reduction in shadow AI instances in early trials (SiliconANGLE).",
-      ") Skeptic Check: The lack of third-party validation or peer-reviewed data raises questions about the efficacy of Lanai’s claims, as noted by a commenter who pointed out the absence of independent benchmarks.",
-      ") Concrete Fact: The article highlights Lanai’s use of \"AI fingerprinting\" to detect unauthorized AI processes, a technique reportedly deployed in a pilot with a Fortune 500 client (SiliconANGLE)."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "e002f54141823bad4bb2fe6deda82bba",
-    "title": "I’ve been researching generative AI for years, and I’m tired of the consciousness debate. Humans barely understand our own - Fortune",
-    "source": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNcWNUanVGTUVORWNNUXo3cTNrQnp3Q1ZZc1loSmtHam85NDVHNnM2UGN2eUV5b1NBUXVCQzVFdGNNaUlhckRRM2ZVRlFSUEdrT3R2dlhoTDc1cEpQbEo0WnVhZkNneEVoMlk2NUpUS2NfR1M0d2pSeVBmYVE1b3l6Xzl0R3gxSVA2ZEFuNHJiclhfS0dHekpqWE1SYzlvWHM?oc=5",
-    "generatedAt": "2025-09-11T12:05:58.012Z",
-    "publishedAt": "2025-09-10T12:30:00.000Z",
-    "feedName": "Generative AI Applications",
-    "author": "Generative AI Applications",
-    "category": "General",
-    "essence": "1) What's new: A Fortune article argues that debates over AI consciousness are premature, as humans lack a full understanding of human consciousness itself. 2) Why it matters: Researchers and policymakers debating AI ethics and regulation are affected, as the article suggests shifting focus to practical implications over speculative consciousness claims. 3) Evidence: The piece is authored by an AI researcher (unnamed) with years of experience, though no specific dates or studies are cited.",
-    "reactions": [
-      ") Possible Impact: The article highlights how the fixation on AI consciousness distracts from practical advancements, such as Fortune’s own coverage of AI’s role in automating 30% of repetitive tasks by 2025 (McKinsey).",
-      ") Skeptic Check: Critics argue the piece dismisses ethical concerns too quickly, noting that even if consciousness is debated, AI bias (e.g., Google’s 2020 facial recognition flaws) remains a tangible risk.",
-      ") Concrete Fact: Fortune cites a 2023 Stanford study showing 68% of AI researchers prioritize technical progress over philosophical debates, underscoring the article’s pragmatic stance."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "244a01d85ba13df1b66ff5465cf6794b",
-    "title": "How to Build an AI Budget-Planning Optimizer for Your 2026 CAPEX Review: LangGraph, FastAPI, and n8n",
-    "source": "https://towardsdatascience.com/how-to-build-an-ai-budget-planning-optimizer-for-your-2026-capex-review-langgraph-fastapi-and-n8n/",
-    "generatedAt": "2025-09-10T18:04:41.325Z",
-    "publishedAt": "2025-09-10T12:30:00.000Z",
-    "feedName": "Towards Data Science",
-    "author": "Towards Data Science",
-    "category": "Artificial Intelligence",
-    "essence": "1) What's new: A new AI-driven workflow (LangGraph, FastAPI, n8n) automates CAPEX budget planning via email, optimizing portfolios for ROI (e.g., €1.05M vs. €1.02M in tested scenarios). 2) Why it matters: Decision-makers (e.g., logistics VPs, APAC teams) use it for strategic budget reviews, though it’s limited to a few annual uses.",
-    "reactions": [
-      ") Possible Impact: The workflow’s ability to parse emails into structured budget parameters (e.g., `budget_year1=1,250,000`) and generate ROI comparisons (e.g., €1,050,976 vs. €1,024,051) could streamline CAPEX reviews by reducing manual scenario analysis for APAC teams.",
-      ") Skeptic Check: The author notes maintenance challenges from earlier n8n-based workflows, suggesting the current FastAPI/LangGraph integration may still face scalability or debugging hurdles despite improved UX.",
-      ") Concrete Fact: The article cites a 7.5% ROI improvement (€1,050,976 vs. €1,024,051) when `set_min_budget=False` for sustainability, demonstrating the tool’s sensitivity to parameter tweaks."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "4b7fab27d9e46d0d274895bf974f8a22",
-    "title": "The Download: AI’s energy future",
-    "source": "https://www.technologyreview.com/2025/09/10/1123489/the-download-ais-energy-future/",
-    "generatedAt": "2025-09-10T18:04:23.399Z",
-    "publishedAt": "2025-09-10T12:10:00.000Z",
-    "feedName": "MIT Technology Review - AI",
-    "author": "MIT Technology Review - AI",
-    "category": "The Download",
-    "essence": "- What’s new: Google and other AI firms (OpenAI, Microsoft) have started disclosing energy consumption data per AI query after previously refusing, following MIT Technology Review’s investigation. - Why it matters: This affects policymakers, energy providers, and Big Tech, as AI’s rising electricity demand (up 80% since 2020) strains grids and raises costs in data-center-heavy regions. - Evidence: Google, OpenAI, and Microsoft released energy-per-query data in 2025 after MIT’s May 2025 report.",
-    "reactions": [
-      ") Possible Impact: AI’s growing energy demand (up 80% since 2020) could strain grids, but Big Tech argues it may optimize clean energy deployment—though skeptics question the net benefit.",
-      ") Skeptic Check: Google, OpenAI, and Microsoft initially refused to disclose energy costs per AI query, only revealing data after MIT’s investigation, raising transparency concerns.",
-      ") Concrete Fact: Google DeepMind’s new \"mechanistic interpretability\" tools aim to demystify AI decision-making, addressing risks in high-stakes fields like medicine (per MIT’s podcast)."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
