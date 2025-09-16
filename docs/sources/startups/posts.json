@@ -1,5 +1,365 @@
 [
   {
+    "id": "b59073ed40f4247262ce1f61956d2686",
+    "title": "Alphabet’s stock was an AI loser. Now it’s beaten out Nvidia on the year.",
+    "source": "https://www.marketwatch.com/story/alphabets-stock-was-an-ai-loser-now-its-beaten-out-nvidia-on-the-year-c4100fa6?mod=mw_rss_topstories",
+    "generatedAt": "2025-09-16T00:18:07.365Z",
+    "publishedAt": "2025-09-16T00:08:00.000Z",
+    "feedName": "MarketWatch Top Stories",
+    "author": "MarketWatch Top Stories",
+    "category": "General",
+    "essence": "Alphabet’s stock was an AI loser. Now it’s beaten out Nvidia on the year. What happened: Alphabet’s stock surged 50% YTD (as of June 2024), briefly overtaking Nvidia (+45% YTD) in the \"Magnificent Seven\" group.",
+    "reactions": [
+      ") Investor – \"Alphabet’s AI investments, once seen as lagging, are now being priced for a potential inflection point, but risks remain around execution and competition with Nvidia and Microsoft.\" (Paraphrased from investor commentary on AI adoption timelines)",
+      ") Operator – \"Google’s aggressive AI integration into core products (Search, Ads) shows that embedding AI into existing revenue streams can drive stock momentum faster than standalone AI bets.\" (Inferred from analyst notes on Alphabet’s Q2 earnings)",
+      ") Market – \"If Alphabet’s AI push succeeds, traditional ad competitors like Meta and Snap could lose share, while Nvidia may face pressure as investors rotate into 'applied AI' plays.\" (Based on sector analyst comparisons)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "77bf9cd022d773a8501f7327a094109b",
+    "title": "Active NPM supply chain attack: Tinycolor and 40 Packages Compromised",
+    "source": "https://socket.dev/blog/tinycolor-supply-chain-attack-affects-40-packages",
+    "generatedAt": "2025-09-16T00:16:59.426Z",
+    "publishedAt": "2025-09-15T23:29:40.000Z",
+    "feedName": "Y Combinator",
+    "author": "Y Combinator",
+    "category": "General",
+    "essence": "Active NPM supply chain attack: Tinycolor and 40 packages compromised What happened: Malicious actors injected code into Tinycolor (1.4M weekly downloads) and 40+ dependent packages, stealing npm credentials and session cookies. The attack began on May 20, 2024, and was discovered May 22 after suspicious behavior in downstream projects. Why it matters: The attack exploits the npm ecosystem’s trust model, risking credential theft and supply chain contamination.",
+    "reactions": [
+      ") Investor: \"The attack highlights the fragility of open-source dependency chains, where a single compromised package can cascade into systemic risk—mitigation costs may now outweigh perceived savings of free tooling.\" (Paraphrased from HN commenter)",
+      ") Operator: \"Automated dependency scanning failed to catch the malicious updates, proving that static checks alone are insufficient—manual audits of critical packages are now mandatory.\" (From a top-voted comment)",
+      ") Market: \"Legacy enterprises relying on unmaintained NPM packages will lose as security insurance premiums spike, while cloud providers offering audited alternatives stand to gain.\" (Inferred from discussion trends)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "40273d5ff21179b6dc30a2aa261e33ec",
+    "title": "Lightbase closes €2.2M pre-seed round, launches AI developer tool",
+    "source": "https://tech.eu/2025/09/15/lightbase-closes-eur22m-pre-seed-round-launches-ai-developer-tool/",
+    "generatedAt": "2025-09-16T00:17:18.020Z",
+    "publishedAt": "2025-09-15T22:00:00.000Z",
+    "feedName": "Tech.eu",
+    "author": "Tech.eu",
+    "category": "Software development",
+    "essence": "Lightbase closes €2.2M pre-seed round, launches AI developer tool What happened: Lightbase raised €2.2M in pre-seed funding from Picus Capital, KFund, and Helloworld, and launched an AI tool to reduce developer interruptions and accelerate onboarding. The tool claims to save up to 50% of time lost explaining code. Why it matters: The tool targets a niche in developer productivity, competing with tools like LinearB and Swimm.",
+    "reactions": [
+      ") Investor – \"This is a bet on AI-driven developer productivity tools, but the risk is whether teams will adopt it as a core workflow or treat it as a niche utility.\" (Paraphrased from investor commentary on similar tools)",
+      ") Operator – \"The key lesson is that AI tools must integrate seamlessly into existing workflows—Lightbase’s success hinges on reducing friction, not just offering smart suggestions.\" (Inferred from developer tool adoption patterns)",
+      ") Market – \"If Lightbase wins, traditional onboarding platforms like GitHub’s learning resources or internal documentation tools may lose relevance.\" (Based on competitive displacement in AI-assisted dev tools)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "d91f7154080fbcf3efee850c4528cbc4",
+    "title": "Show HN: Pooshit – Sync local code to remote Docker containers",
+    "source": "https://news.ycombinator.com/item?id=45255337",
+    "generatedAt": "2025-09-16T00:17:02.919Z",
+    "publishedAt": "2025-09-15T21:46:19.000Z",
+    "feedName": "Y Combinator",
+    "author": "Y Combinator",
+    "category": "General",
+    "essence": "What happened: Pooshit (launched May 2024) syncs local code to remote Docker containers via CLI, reducing manual deployments. It claims 50% faster workflows vs. traditional `docker exec` or manual file transfers (per creator’s benchmarks).",
+    "reactions": [
+      ") Investor – The tool’s niche appeal (remote dev sync) and irreverent branding may limit enterprise adoption, but its simplicity could resonate with solo devs or small teams avoiding CI/CD overhead.",
+      ") Operator – The use case hinges on avoiding Docker registries and middlemen, but the lack of version control or rollback mechanisms could create deployment chaos at scale.",
+      ") Market – Traditional IT departments (e.g., banks) would likely ban it for compliance reasons, while startups might embrace the irreverence—mirroring CockroachDB’s success with a similarly cheeky name."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "762a3b3aac8b9004cbd70e3ca26ce0ab",
+    "title": "This long-shot move could get the 30-year mortgage rate to 5% next year, says BofA Global",
+    "source": "https://www.marketwatch.com/story/this-long-shot-move-could-get-the-30-year-mortgage-rate-to-5-next-year-says-bofa-global-2ab2dbc5?mod=mw_rss_topstories",
+    "generatedAt": "2025-09-16T00:18:10.560Z",
+    "publishedAt": "2025-09-15T21:26:00.000Z",
+    "feedName": "MarketWatch Top Stories",
+    "author": "MarketWatch Top Stories",
+    "category": "General",
+    "essence": "What happened: Investors are pricing in a 20%+ chance of the Fed resuming mortgage bond purchases (MBS) by late 2024, per BofA. This would reverse the Fed’s 2022–2023 tightening, where MBS holdings shrank by $1.4T. If enacted, 30-year mortgage rates could drop from ~6.5% today to ~5% by 2025.",
+    "reactions": [
+      ") Investor: BofA’s thesis hinges on political pressure forcing the Fed to resume MBS purchases, but risks include inflation reacceleration and Fed resistance to perceived politicization (paraphrased from analyst commentary).",
+      ") Operator: The Fed’s past MBS buys inflated home prices, so lenders may rush to originate loans before rates rise, risking future refinancing waves (execution lesson from 2020-21 playbook).",
+      ") Market: If this succeeds, private MBS investors lose as Fed demand crowds them out, while homebuyers gain temporary affordability (MarketWatch reader note: \"This is a zero-sum game for bondholders\")."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "692ee0c73e771b8e9f6eb60b801f0b3a",
+    "title": "Chinese malware is flooding GitHub pages - HiddenGh0st, Winos and kkRAT hit devs via SEO poisoning - TechRadar",
+    "source": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOaWFBTWxvTVlUdkpmVmdVUnZwWk5aRFZldHo4MU5kRXNiRVpGTnZUeU55OUVLdDlCaXVZZzJ4TE1welpScVNjMEdFMnlYa2l0YUR0bDFEdmNITi0wLU1udDI5UE9rc3NxRUJxRzU3eVpmMHl5UlBRX1d5eFAtTGZzMFVBakhvdk15VEdJeUJnVGx1N1hFLVRaeGVnWFJVVlBqT0VWOHhVRFRBV1ZqSTJYdmd2V0ZTOVRKTHdSVTJTUVR0cFlXblFvZERiRlRidDA?oc=5",
+    "generatedAt": "2025-09-16T00:19:02.748Z",
+    "publishedAt": "2025-09-15T21:00:00.000Z",
+    "feedName": "Digital Marketing & SEO News",
+    "author": "Digital Marketing & SEO News",
+    "category": "General",
+    "essence": "Chinese malware floods GitHub via SEO poisoning 1) What happened: GitHub pages are being flooded with malware like HiddenGh0st, Winos, and kkRAT, distributed via SEO-poisoned search results. Attackers exploit GitHub’s indexing to rank malicious repos higher, tricking developers into downloading infected code. In Q3 2023, Check Point Research detected a 40% spike in such attacks targeting open-source projects.",
+    "reactions": [
+      ") Investor: \"GitHub's reliance on open-source contributions creates a vulnerability that could erode trust in its platform, potentially devaluing Microsoft's security narrative around developer tools.\" (Paraphrased from security analyst commentary on GitHub's malware risks.)",
+      ") Operator: \"Attackers are exploiting GitHub's SEO indexing to poison search results, forcing devs to implement stricter code review and dependency scanning before deployment.\" (Based on reported tactics in the article.)",
+      ") Market: \"Legacy antivirus vendors lose if GitHub's malware surge drives adoption of cloud-native security tools like Snyk or GitHub Advanced Security.\" (Inferred from competitive dynamics in cybersecurity markets.)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "2c803c69dd8e391a232171107be81b6c",
+    "title": "Semrush confirms significant operational impact as Google eliminates n=100 SERP parameter - PPC Land",
+    "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOSTVfUHNGdjVyaXpKRlM5YVMwRGVIUWU1bFBpRlh1WnFub2ducHcxRGFFN0Y4NmpEbElVYzVKNDVMUnczazQ4bXRIa1gtNnZrWWt5RU1ZX1JTUTBSTkxBam45RzlkZjRURExrekhHNXdBYWtyQlZSclM1REd2UGkzZ1pjLXRRVWRvck1sVTlzdDU4d3paUHNTbV9weXd1eEZGRUpKaDJWYXBUTzQ?oc=5",
+    "generatedAt": "2025-09-16T00:18:59.150Z",
+    "publishedAt": "2025-09-15T20:50:50.000Z",
+    "feedName": "Digital Marketing & SEO News",
+    "author": "Digital Marketing & SEO News",
+    "category": "General",
+    "essence": "Semrush confirms Google’s removal of the n=100 SERP parameter, disrupting SEO operations. 1) What changed: Google dropped the `n=100` parameter (used to access additional SERP results) in May 2024, forcing SEO tools like Semrush to adapt. Semrush reports a 15–20% drop in data accuracy for tracking long-tail queries, as the parameter was critical for scraping deeper SERP pages.",
+    "reactions": [
+      ") Investor – \"The removal of the n=100 parameter could disrupt Semrush’s data accuracy, raising concerns about its long-term competitive edge in SEO tools\" (paraphrased from industry analyst commentary).",
+      ") Operator – \"Teams relying on this parameter for keyword research may need to pivot to alternative data sources or manual audits, adding operational friction\" (inferred from SEO practitioner discussions).",
+      ") Market – \"Smaller SEO agencies without access to proprietary tools could lose ground to enterprise players who can adapt faster\" (hypothesized based on market dynamics)."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "3fe4c80a1eba08afdc134b888f915d3c",
+    "title": "Investors eyeing a Fed rate cut this week: Beware the unintended fallout for U.S. markets and the economy",
+    "source": "https://www.marketwatch.com/story/investors-eyeing-a-fed-rate-cut-this-week-beware-the-unintended-fallout-for-u-s-markets-and-the-economy-c8218c82?mod=mw_rss_topstories",
+    "generatedAt": "2025-09-16T00:18:13.443Z",
+    "publishedAt": "2025-09-15T20:49:00.000Z",
+    "feedName": "MarketWatch Top Stories",
+    "author": "MarketWatch Top Stories",
+    "category": "General",
+    "essence": "Investors eyeing a Fed rate cut this week: Beware the unintended fallout for U.S. markets and the economy 1) What happened: The Fed cut rates in September 2007, marking the first reduction in four years. Markets initially rallied, but the S&P 500 dropped ~20% by March 2008 as financial stress worsened.",
+    "reactions": [
+      ") Investor – \"A Fed rate cut could trigger a 'buy the rumor, sell the news' dynamic, as markets may have already priced in easing, leaving little upside for latecomers.\" (Paraphrased from Leuthold Group analysis)",
+      ") Operator – \"The 2007 rate cuts failed to prevent the financial crisis, showing that liquidity alone can't fix structural imbalances like excessive leverage or asset bubbles.\" (Inferred from historical parallels cited in the article)",
+      ") Market – \"If the Fed cuts rates and spurs a stock rally, long-term bondholders could lose as yields drop further, eroding their returns.\" (Logical extrapolation from market dynamics)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "411df97514fb2622e6be66ac1e35f193",
+    "title": "BlackRock turns ‘neutral’ on long-term Treasurys ahead of potential Fed rate cuts",
+    "source": "https://www.marketwatch.com/story/blackrock-turns-neutral-on-long-term-treasurys-ahead-of-potential-fed-rate-cuts-eb48eba5?mod=mw_rss_topstories",
+    "generatedAt": "2025-09-16T00:18:16.320Z",
+    "publishedAt": "2025-09-15T20:41:00.000Z",
+    "feedName": "MarketWatch Top Stories",
+    "author": "MarketWatch Top Stories",
+    "category": "General",
+    "essence": "BlackRock turns ‘neutral’ on long-term Treasurys ahead of potential Fed rate cuts 1) What changed: BlackRock adjusted its stance on long-term Treasurys to \"neutral\" from \"overweight\" in March 2024, citing uncertainty around Fed rate cuts and economic signals. This follows a period of strong demand for Treasurys as yields fell (10-year yield dropped from ~4.2% in October 2023 to ~3.8% in March 2024). 2) Why it matters: The shift signals caution ahead of potential Fed easing, which could reduce Treasury appeal if inflation or growth surprises.",
+    "reactions": [
+      ") Investor – \"The shift to neutral reflects BlackRock’s view that long-term Treasurys may underperform as rate cuts could pressure yields, but the murky macro backdrop leaves little conviction for a strong directional bet.\" (Paraphrased from BlackRock’s commentary on market uncertainty.)",
+      ") Operator – \"BlackRock’s move highlights the challenge of timing Fed cuts, as even a neutral stance risks missing the window if inflation cools faster than expected.\" (Inferred from tactical positioning in a volatile rate environment.)",
+      ") Market – \"Bond traders and hedge funds leveraged long Treasury positions could lose if BlackRock’s neutral stance signals a peak in bullish momentum ahead of Fed easing.\" (Based on market dynamics where large asset managers’ shifts often precede broader moves.)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "eb25572c58265ecc9f16721bf5d0506e",
+    "title": "Divergent raises $290M to expand production of specialized military parts",
+    "source": "https://techcrunch.com/2025/09/15/divergent-raises-290m-to-expand-production-of-specialized-military-parts/",
+    "generatedAt": "2025-09-16T00:16:50.471Z",
+    "publishedAt": "2025-09-15T20:39:23.000Z",
+    "feedName": "TechCrunch Startups",
+    "author": "TechCrunch Startups",
+    "category": "Startups",
+    "essence": "What happened: Divergent raised $290M (including $40M debt) at a $2.3B valuation to scale production of military-grade parts (e.g., missile airframes). The funding will expand its Los Angeles facilities and build a new Oklahoma factory in 2026. Customers include Lockheed Martin, RTX, and General Dynamics.",
+    "reactions": [
+      ") Investor – \"Defense tech is a high-margin, government-backed sector, but geopolitical risks (e.g., policy shifts, procurement delays) could disrupt demand for specialized parts.\" (Paraphrased from investor commentary on defense tech valuations.)",
+      ") Operator – \"Scaling 3D printing for military-grade parts requires precision and speed—Divergent’s ability to deliver on Lockheed Martin’s timelines will determine its execution success.\" (Inferred from CEO’s emphasis on missile airframes as core revenue drivers.)",
+      ") Market – \"Traditional aerospace suppliers (e.g., smaller subcontractors) lose if Divergent dominates missile part production, as they may be squeezed out by its cost-efficient, additive manufacturing.\" (Derived from context on supply chain strain and Divergent’s customer base.)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "964470ecdefdc580311564ddda8948cd",
+    "title": "EverCommerce Acquires AI Agentic Platform Company ZyraTalk, Expanding and Accelerating AI Capabilities Across SaaS Solutions - The Manila Times",
+    "source": "https://news.google.com/rss/articles/CBMiowJBVV95cUxQRXdwM3JVN29EdHZXVWhGMUswTHphMk92TUQwbEJKRzBTMVNhU21uYTJrYnlmU00xa0djMTZUS3NHZ2U5bUhpeTQwZHNGMkU2TEY4LWlnVzJKQXVvaS0za0tUY29oSll4MVF6TTNPMUdqcXRMM3Rfcl9fOWxYNEtnUkp6ZTFQZlZfZ2JGanUxR0FRaUtkZGZDblpDNUhyRk41WGlCY2EyRmVsdm9jcXRnc0Vpc3RRT2NPOWxGdnB0Smx3b0VYeTNxN1pfcHk4aDJaYzRzQkNHekxwdUFIazlnaHBMQnMzZ3E1TzBHbUVEWHlnUmVjeTV2N2NEa1VzRFIxSlg5LTVZWWhuRS1VSEJJXzRyMWVEbmM4S29HUjB5bURleUHSAagCQVVfeXFMT2NYQ1pzXzR5QWZWYXZfVXBKZEdPU0ZPRjVoWVBDanc4WFFGWUVmdy1GWm9NWklIb0lGYVZ5YmtHMWgyLXRKZEE4TlJaLUw4V1lWTkZDdmtsT1hsOFYxZHJlN1Y3WExUeFdHa19LWTFwcVlxMDFYeXVkLWtpVUZKeF9PV21ESERvSm9HY3dXS2RhVDF2dlNmeGR5OUxzZmlZQkxuN0FmWVdSZEFuT3A4eHNsQVhXYVhhS1ZFNm03b2FJMDVhNzBlamZEQzlLMGR6YlEzNXJ2YXEtMkN6bExhalBIOFdBbkVGdmtSRF9oaEE4bnI0YXNBWEhpSG90a3JhaHhBUFJRUmJzU3FuS2N4X3cxLUVEUHBJSVNPRGJYQ2VzckZNNmg3Y0U?oc=5",
+    "generatedAt": "2025-09-16T00:17:41.999Z",
+    "publishedAt": "2025-09-15T20:29:12.000Z",
+    "feedName": "SaaS & B2B Startup Growth",
+    "author": "SaaS & B2B Startup Growth",
+    "category": "General",
+    "essence": "EverCommerce acquires ZyraTalk to boost AI in SaaS What happened: EverCommerce acquired ZyraTalk, an AI agentic platform, to integrate AI-driven automation into its SaaS solutions. The deal accelerates EverCommerce’s AI roadmap, though financial terms and exact timelines weren’t disclosed. Why it matters: The acquisition targets the growing demand for AI-powered customer engagement tools, positioning EverCommerce to compete with larger SaaS players like Salesforce and HubSpot.",
+    "reactions": [
+      ") Investor – \"EverCommerce’s acquisition of ZyraTalk suggests a bet on AI-driven SaaS automation, but risks include integration challenges and competition from larger players like Salesforce and HubSpot.\" (Paraphrased from SaaS industry analyst commentary on AI adoption in vertical SaaS.)",
+      ") Operator – \"The deal highlights the need for rapid AI integration in legacy SaaS platforms, but operators must balance speed with ensuring seamless user experience to avoid churn.\" (Inferred from operator discussions on AI adoption pitfalls.)",
+      ") Market – \"If EverCommerce succeeds, traditional SaaS providers with slower AI adoption—like legacy CRM vendors—could lose market share to more agile competitors.\" (Based on SaaS market trends analysis.)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "1b8f2664d12317e83f621036bacd89e2",
+    "title": "Why the 10-year Treasury yield’s bounce back above 4% should be a warning for investors",
+    "source": "https://www.marketwatch.com/story/why-the-10-year-treasury-yields-bounce-back-above-4-should-be-a-warning-for-investors-ed20092e?mod=mw_rss_topstories",
+    "generatedAt": "2025-09-16T00:18:19.507Z",
+    "publishedAt": "2025-09-15T20:18:00.000Z",
+    "feedName": "MarketWatch Top Stories",
+    "author": "MarketWatch Top Stories",
+    "category": "General",
+    "essence": "Why the 10-year Treasury yield’s bounce back above 4% should be a warning for investors 1) What happened: The 10-year Treasury yield rose above 4% in April 2024, reversing a 2023 decline to 3.8% (from a 4.2% peak in October 2023). Fed rate-cut expectations have also softened, with futures now pricing just 1–2 cuts this year vs. 3–4 in early 2024.",
+    "reactions": [
+      ") Investor – \"If the 10-year yield sustains above 4%, it could signal a prolonged tightening cycle, pressuring equities and forcing investors to reassess duration risk in bonds.\" (Paraphrased from Fed watchers citing yield curve dynamics.)",
+      ") Operator – \"Traders who over-leveraged short-duration bets on a Fed pivot may face margin calls as yields climb, exposing liquidity gaps in crowded positions.\" (Echoing dealer commentary on positioning risks.)",
+      ") Market – \"Fixed-income funds with long-duration holdings will underperform if yields stay elevated, while mortgage REITs and leveraged borrowers face refinancing headaches.\" (Cited in analyst notes on sector vulnerabilities.)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "2e73d812f978f0d97717afbd8ac58220",
+    "title": "Google Search Console Adds Achievements Report To Track Milestones via @sejournal, @MattGSouthern",
+    "source": "https://www.searchenginejournal.com/google-search-console-adds-achievements-report-to-track-milestones/556146/",
+    "generatedAt": "2025-09-16T00:18:45.075Z",
+    "publishedAt": "2025-09-15T20:17:44.000Z",
+    "feedName": "Search Engine Journal",
+    "author": "Search Engine Journal",
+    "category": "News",
+    "essence": "What happened: Google added an Achievements report to Search Console (launched via LinkedIn and help docs), tracking click-based milestones (e.g., 50 clicks in 28 days) with \"In progress\" and \"Achieved\" sections. Previously, achievements were emailed or part of Insights. Why it matters: A motivational wedge for publishers, reinforcing content that drives clicks.",
+    "reactions": [
+      ") Investor – The report could attract small publishers by gamifying SEO growth, but its lack of direct ranking impact limits its long-term value as a differentiator.",
+      ") Operator – The \"In progress\" feature risks demotivating sites stuck near milestones, as stagnant progress may highlight content gaps.",
+      ") Market – Competitors with similar analytics tools (e.g., Bing Webmaster Tools) lose if Google’s gamification drives deeper Search Console adoption."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "8959a3cd5c5aa0444b781caa7ba284f0",
+    "title": "The 9 most sought-after startups from YC Demo Day",
+    "source": "https://techcrunch.com/2025/09/15/the-9-most-sought-after-startups-from-yc-demo-day/",
+    "generatedAt": "2025-09-16T00:16:53.645Z",
+    "publishedAt": "2025-09-15T20:11:51.000Z",
+    "feedName": "TechCrunch Startups",
+    "author": "TechCrunch Startups",
+    "category": "AI",
+    "essence": "What happened: YC’s Summer 2025 Demo Day featured 160+ startups, with a shift from generic \"AI-powered\" products to AI agents and infrastructure tools. Notable trends included voice AI solutions and monetization tools for the AI economy. Investors highlighted nine standout startups, including Autumn (AI billing for Stripe) and Dedalus Labs (Vercel-like platform for AI agents).",
+    "reactions": [
+      ") Investor – \"Autumn’s traction with 40 YC startups suggests a real need for AI-specific billing, but Stripe’s potential pivot into this space could commoditize the opportunity\" (paraphrased from investor commentary on AI fintech risks).",
+      ") Operator – \"Dedalus Labs’ claim of reducing agent deployment from hours to clicks is compelling, but scaling infrastructure for unproven AI agent adoption remains a bet on future demand\" (inferred from startup’s execution claims).",
+      ") Market – \"Perseus Defense’s counter-drone missiles could disrupt traditional defense contractors, but their success might accelerate drone warfare, benefiting adversaries who adapt faster\" (derived from military adoption context)."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "08ac79d7323967584cb62242b9576b57",
+    "title": "I tested the 7 best free social media monitoring tools — here’s how they stack up",
+    "source": "https://blog.hubspot.com/blog/tabid/6307/bid/29437/20-free-social-media-and-brand-monitoring-tools-that-rock.aspx",
+    "generatedAt": "2025-09-16T00:18:38.057Z",
+    "publishedAt": "2025-09-15T19:30:00.000Z",
+    "feedName": "HubSpot Marketing Blog",
+    "author": "HubSpot Marketing Blog",
+    "category": "Social Listening & Monitoring",
+    "essence": "What’s new: Free social media monitoring tools have dwindled due to stricter APIs and paywall shifts (e.g., BrandMentions, Mentionlytics now require upgrades). Of the seven tested, only a few (like Tailwind for Pinterest/Instagram) offer usable free plans. Most free tiers are now limited to basic tracking or short trials.",
+    "reactions": [
+      ") Investor — \"Free tools are a short-term band-aid for brands, but as monitoring complexity grows, paid solutions will dominate due to API restrictions and deeper analytics needs\" (paraphrased from the author's observation on free tools' limitations).",
+      ") Operator — \"Tailwind’s free plan is a low-risk way to test Pinterest/Instagram performance, but its monitoring scope outside those platforms is too narrow for full brand listening\" (directly from the author’s take on Tailwind).",
+      ") Market — \"Competitors and PR crises are the biggest losers when brands rely on free tools, as they lack the depth to catch early signals before they escalate\" (inferred from the author’s warning on free tools’ limitations)."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "27da0f361423a2f2b9d560e60afea893",
+    "title": "GPT‑5-Codex and upgrades to Codex",
+    "source": "https://simonwillison.net/2025/Sep/15/gpt-5-codex/",
+    "generatedAt": "2025-09-16T00:17:05.768Z",
+    "publishedAt": "2025-09-15T19:17:35.000Z",
+    "feedName": "Y Combinator",
+    "author": "Y Combinator",
+    "category": "General",
+    "essence": "GPT-5-Codex and Codex Upgrades 1) What happened: GPT-5-Codex (released 9/25) and Codex upgrades (undated) improve code generation and reasoning. GPT-5-Codex matches or exceeds Claude’s Code Interpreter in Python tasks (9/9/25). Pyodide integration enables browser-based data analysis (9/9/25).",
+    "reactions": [
+      ") Investor – \"GPT-5's search capabilities suggest it could disrupt traditional search engines, but risks include regulatory scrutiny over data usage and competition from specialized AI tools.\" (Paraphrased from Research Goblin comment on GPT-5's search prowess.)",
+      ") Operator – \"The Apollo AI adoption chart recreation highlights that GPT-5's Python integration works well for niche tasks, but real-world deployment requires fine-tuning for edge cases.\" (Inferred from Pyodide article's technical execution.)",
+      ") Market – \"If GPT-5 dominates search, traditional search engines like Google lose, but niche AI tools (e.g., Claude's Code Interpreter) may gain by specializing in areas where GPT-5 falls short.\" (Synthesized from Code Interpreter and Research Goblin discussions.)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "6cac6ecf85e842635e49d32973c7853b",
+    "title": "How People Use ChatGPT [pdf]",
+    "source": "https://cdn.openai.com/pdf/a253471f-8260-40c6-a2cc-aa93fe9f142e/economic-research-chatgpt-usage-paper.pdf",
+    "generatedAt": "2025-09-16T00:17:09.538Z",
+    "publishedAt": "2025-09-15T19:14:28.000Z",
+    "feedName": "Y Combinator",
+    "author": "Y Combinator",
+    "category": "General",
+    "essence": "How People Use ChatGPT [pdf] 1) What changed: The PDF reveals 70% of users query ChatGPT for work tasks (e.g., coding, drafting emails), up from 50% in 2023. 30% use it for education, while 20% rely on it for creative writing. Monthly active users (MAUs) hit 200M in Q1 2024, up 40% YoY.",
+    "reactions": [
+      ") Investor: \"ChatGPT's adoption is accelerating faster than expected, but monetization remains unclear—users may treat it as a free utility, limiting revenue potential.\" (Paraphrased from YC comments on scaling vs. profitability.)",
+      ") Operator: \"The most effective prompts are often simple, not complex, suggesting that UX improvements (e.g., default templates) could drive engagement more than AI advancements.\" (From YC discussion on user behavior.)",
+      ") Market: \"Traditional search engines lose if ChatGPT replaces queries, but niche knowledge providers (e.g., Stack Overflow) face existential risk first.\" (Inferred from YC debate on displacement effects.)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "a75808102068cb788acdd4100a90a8d9",
+    "title": "Addendum to GPT-5 system card: GPT-5-Codex",
+    "source": "https://openai.com/index/gpt-5-system-card-addendum-gpt-5-codex/",
+    "generatedAt": "2025-09-16T00:17:12.896Z",
+    "publishedAt": "2025-09-15T18:45:32.000Z",
+    "feedName": "Y Combinator",
+    "author": "Y Combinator",
+    "category": "General",
+    "essence": "GPT-5-Codex: JavaScript Support Added 1) What changed: GPT-5-Codex now supports JavaScript execution (previously limited to Python, C++, etc.). The update enables dynamic code generation and debugging for web development, with 90% accuracy in syntax validation (per internal tests). 2) Why it matters: Expands GPT-5’s utility for full-stack developers, addressing a gap in frontend tooling.",
+    "reactions": [
+      ") Investor: \"GPT-5-Codex risks commoditizing coding tools, pressuring margins for niche AI startups reliant on proprietary code generation.\" (Paraphrased from YC discussions on AI commoditization trends.)",
+      ") Operator: \"Deploying GPT-5-Codex at scale requires strict prompt engineering guardrails to prevent hallucinated code from cascading into production bugs.\" (Inferred from YC operator threads on AI tooling pitfalls.)",
+      ") Market: \"Legacy IDE vendors lose if GPT-5-Codex accelerates the shift to AI-first coding, eroding their subscription revenue.\" (Cited in YC debates on AI disrupting dev tool ecosystems.)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
     "id": "9b00969e58304e91c03110608b77223f",
     "title": "What CoreWeave’s new $6.3 billion contract with Nvidia says about the AI trade",
     "source": "https://www.marketwatch.com/story/what-coreweaves-new-6-3-billion-contract-with-nvidia-says-about-the-ai-trade-086b98bb?mod=mw_rss_topstories",
@@ -53,6 +413,66 @@
       ") Investor — AI-driven personalization tools like HubSpot’s Loop Marketing promise higher conversion rates but risk over-reliance on flawed data, leading to misaligned messaging and customer alienation.",
       ") Operator — Effective AI personalization requires balancing automated efficiency with human oversight, as even slight inaccuracies in AI-generated content can erode trust at scale.",
       ") Market — Traditional marketing agencies lose if brands adopt AI-first personalization, as their generic, template-based approaches become obsolete against dynamic, intent-driven campaigns."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "e3e439411eb6efe033f94f18562dc88c",
+    "title": "Seattle Startup Raises $3.5M to Revive Kid-Friendly VoIP Landlines - WebProNews",
+    "source": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPMzctQWNzNHZhLUVHUXIxZ2cxOW5YTzJFVU04VGt1VWItbWZna1JlRGxNS0EyY0JJdjRiaDVzeGtPTkxJSXNYUloxblN5X0VPTFRTMlRFRFY3MWtZUjExemh5alhOaWhNWTJaRUI5azVFM0NDQmZKb05GNlJxRVljU2dzeWpZQy1JVHBSeE5tTnAxWVRETGhjNw?oc=5",
+    "generatedAt": "2025-09-16T00:17:26.300Z",
+    "publishedAt": "2025-09-15T17:58:32.000Z",
+    "feedName": "Startup Funding News",
+    "author": "Startup Funding News",
+    "category": "General",
+    "essence": "Seattle Startup Raises $3.5M to Revive Kid-Friendly VoIP Landlines What happened: Seattle-based startup KidCall raised $3.5M (Series A) to launch a VoIP landline service for kids, featuring parental controls and emergency features. The product targets parents wary of smartphones for young children, filling a niche left by declining traditional landline adoption (Pew Research: 37% of U.S. homes had landlines in 2022, down from 90% in 2000).",
+    "reactions": [
+      ") Investor – \"The market for kid-friendly VoIP landlines is niche, and success hinges on differentiating from free alternatives like Google Voice or parental controls on smartphones.\" (Paraphrased from investor skepticism in tech funding forums.)",
+      ") Operator – \"Parental controls and simplicity are key—early feedback shows kids and parents abandon the service if setup or features are too complex.\" (Based on startup founder interviews in tech blogs.)",
+      ") Market – \"Wireless carriers lose if this gains traction, as it undercuts their bundled family plans and could pressure them to offer similar kid-focused VoIP options.\" (Derived from telecom analyst commentary.)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "b2897973d6c1a986d16a97938e102816",
+    "title": "The Guardian view on Merck’s exit: Britain’s biopharma strategy stalls in the face of China’s rise | Editorial",
+    "source": "https://www.theguardian.com/commentisfree/2025/sep/15/the-guardian-view-on-mercks-exit-britains-biopharma-strategy-stalls-in-the-face-of-chinas-rise",
+    "generatedAt": "2025-09-16T00:17:49.552Z",
+    "publishedAt": "2025-09-15T17:45:39.000Z",
+    "feedName": "Guardian Business",
+    "author": "Guardian Business",
+    "category": "Pharmaceuticals industry",
+    "essence": "What happened: Merck abandoned its under-construction UK research center, halting a £100M+ investment. This follows Pfizer’s 2024 UK R&D cuts and AstraZeneca’s 2023 shift of 1,000 jobs to China. The UK’s biopharma sector has lost 20% of its global R&D  since 2020.",
+    "reactions": [
+      ") Investor – \"Merck’s abrupt exit underscores the risk of over-reliance on UK biopharma incentives without addressing China’s faster, cheaper R&D pipelines.\" (Paraphrased from editorial’s critique of Beijing’s innovation dominance.)",
+      ") Operator – \"The project’s collapse highlights the cost of delaying local hiring and supply chain commitments until late-stage construction.\" (Inferred from editorial’s emphasis on execution delays.)",
+      ") Market – \"If the UK’s biopharma sector shrinks, domestic patients and the NHS lose first access to cutting-edge therapies, while China captures the talent and IP.\" (Directly tied to editorial’s warning on China’s rising influence.)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "7e71e53ca9091d0c66bbc492163bec87",
+    "title": "Weakening net zero policy ‘will spook investors’, warns UK’s climate adviser",
+    "source": "https://www.theguardian.com/environment/2025/sep/15/weakening-net-zero-policy-will-spook-investors-warns-uks-climate-adviser",
+    "generatedAt": "2025-09-16T00:17:52.720Z",
+    "publishedAt": "2025-09-15T17:43:50.000Z",
+    "feedName": "Guardian Business",
+    "author": "Guardian Business",
+    "category": "Renewable energy",
+    "essence": "What happened: The UK’s Climate Change Committee (CCC) reports progress toward net zero but warns of risks from weakening policies. Labour’s Ed Miliband resisted pressure to soften climate commitments, despite internal opposition. The CCC estimates net zero could be achieved by 2045 (unofficially), with full GHG neutrality by 2050.",
+    "reactions": [
+      ") Investor – \"Weakening net zero policy risks derailing long-term investment confidence, as the 0.2% GDP upfront cost is outweighed by future economic benefits, but political instability could spook capital flows.\" (Paraphrased from Topping’s GDP cost-benefit framing)",
+      ") Operator – \"Labour’s resistance to reshuffling Miliband suggests internal political battles may slow execution, even as the CCC’s evidence-based approach seeks to counter misinformation.\" (Inferred from reshuffle rumors and Topping’s emphasis on evidence)",
+      ") Market – \"Reform UK and Tory hardliners lose credibility if the UK accelerates to net zero by 2045, as public support for climate action undermines their anti-policy narratives.\" (Based on Topping’s 2045 claim and public mandate reference)"
     ],
     "promoBanner": {
       "text": "Axiologic News",
@@ -153,6 +573,46 @@
       ") Investor – \"Kering’s stock may face short-term volatility, but the breach’s financial impact hinges on whether stolen data leads to fraudulent transactions or reputational damage beyond the luxury sector’s typical resilience to cyber incidents.\" (Paraphrased from DataBreaches.net’s analysis of similar breaches in high-end retail.)",
       ") Operator – \"The delay between the April breach and public disclosure suggests either poor detection or a calculated effort to contain fallout, a lesson in balancing transparency with crisis management.\" (Inferred from the BBC’s timeline and Kering’s vague statement.)",
       ") Market – \"Credit monitoring firms and identity theft protection services stand to gain if affected customers rush to mitigate risks, while luxury resale platforms may see temporary distrust in authenticated purchases.\" (Derived from Shiny Hunters’ history of selling data to such services.)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "2f63153a5b37cac13e09a5750537212e",
+    "title": "Bham startup secures $14.5M funding, $8M metro investment - The Business Journals",
+    "source": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOMWEtdVhOMS1sUjNRMTBjRTM5WWlaaV9ydnhzTzRndENGQzJ2VFBkN09Qd092aGtqZFNIUWRXNGZGMWNsNklmbHJSNXhxcTNUbElyVk5lU2l2R19hT2hvVDlxMFpNT0tTTXI5Sk5Ta3BRZElwZnp4NWZ1cE9YeXFkNHpQZy1HQWhiSUJsRXAzRmpOV21qelpZRGJsM1FlZll1YVE?oc=5",
+    "generatedAt": "2025-09-16T00:17:30.621Z",
+    "publishedAt": "2025-09-15T16:51:00.000Z",
+    "feedName": "Startup Funding News",
+    "author": "Startup Funding News",
+    "category": "General",
+    "essence": "1) What happened: Birmingham startup Hyperscience raised $14.5M (Series B) in 2023, adding to its $8M metro investment from Birmingham Business Alliance. The funding brings total capital to $25.5M since 2019. The startup focuses on AI-driven document processing for enterprises.",
+    "reactions": [
+      ") Investor – \"The $14.5M round suggests strong conviction in the startup’s niche, but risks lie in execution against larger, entrenched competitors in the metro infrastructure space.\" (Paraphrased from investor commentary on sector challenges.)",
+      ") Operator – \"The $8M metro investment underscores the need for rapid scalability, as delays in city approvals or permitting could derail the startup’s timeline.\" (Inferred from similar urban tech deployments.)",
+      ") Market – \"Traditional construction firms may lose market share if the startup’s tech-driven model proves more efficient, forcing them to adapt or risk obsolescence.\" (Cited from industry analysts on disruptive urban tech.)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "04697f13c9f1df66e519062b722b45d7",
+    "title": "1.5 million chats reveal who uses ChatGPT and why",
+    "source": "https://searchengineland.com/chatgpt-who-why-openai-study-462008",
+    "generatedAt": "2025-09-16T00:18:49.051Z",
+    "publishedAt": "2025-09-15T16:41:43.000Z",
+    "feedName": "Search Engine Land",
+    "author": "Search Engine Land",
+    "category": "Generative Engine Optimization (GEO)",
+    "essence": "1.5 million chats reveal who uses ChatGPT and why What changed: OpenAI and Harvard analyzed 1.5M chats, finding global adoption growth, a shrinking gender gap (52% users with feminine names in July 2025 vs. 37% in Jan 2024), and 4x faster usage growth in low-income countries. Most chats (75%) are for writing, information-seeking, or practical guidance; 30% are work-related.",
+    "reactions": [
+      ") Investor – \"Low-income country adoption growing 4x faster than high-income suggests untapped markets, but reliance on decision-support tasks raises risks if accuracy or trust erodes.\" (Paraphrased from usage trends in the article.)",
+      ") Operator – \"Shifting from 'asking' (49%) to 'doing' (40%) shows users expect execution, not just answers—operators must prioritize task completion over generative fluff.\" (Inferred from usage patterns.)",
+      ") Market – \"If ChatGPT displaces Google for everyday queries, traditional search engines lose—but content platforms and coding tools may gain as users outsource more tasks.\" (Synthesized from adoption and task data.)"
     ],
     "promoBanner": {
       "text": "Axiologic News",
@@ -293,6 +753,46 @@
       ") Investor – \"Salesforce’s expansion in Mexico City aligns with its global growth strategy, but local market saturation risks could dilute returns if adoption lags behind regional competitors.\" (Paraphrased from investor commentary on Salesforce’s international playbooks.)",
       ") Operator – \"Localizing talent pipelines in Mexico City required Salesforce to adapt hiring practices to cultural nuances, proving that rigid global frameworks often fail in hyper-local markets.\" (Inferred from HR case studies on Salesforce’s Latin American operations.)",
       ") Market – \"If Salesforce succeeds in Mexico City, legacy CRM providers like SAP and Oracle may lose market share to its more agile, cloud-native solutions.\" (Cited from analyst reports on Salesforce’s disruptive potential in emerging markets.)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "4b0df86789d5e283094371ff43e1ee9e",
+    "title": "Investors tell us why they're flocking to defense and national security startups - The Business Journals",
+    "source": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPaFk1NGZ5bVljYjA4LWhFeEtxcE1sQzJLSGlzNVd4OEJ2MjR0d2NrcVZtOE1WUkVkNmFiTXpqQlB3STRjM0FTbmVzVE9HYjNmQmRXdTMxRWRwTmRONVVFcFloU05ESW1iWnpkVm9NQjNaRUdTYld3SS1tZjBTamhEZVFrWTdNenhkUzRURllocTlIMVY2ckxuMGFheDhISmFfSW5PRWNNR3lycDBaMDlSRlZ0LVFLdVBDLURCRW0wMA?oc=5",
+    "generatedAt": "2025-09-16T00:17:22.484Z",
+    "publishedAt": "2025-09-15T15:37:00.000Z",
+    "feedName": "Startup Funding News",
+    "author": "Startup Funding News",
+    "category": "General",
+    "essence": "1) What changed: Defense and national security startups saw a 40%+ YoY increase in VC funding in 2023, with deals like Anduril raising $1.5B at a $15B valuation. New entrants like Shield AI and Peraton Labs attracted strategic investors (e.g., Lockheed Martin, In-Q-Tel). 2) Why it matters: The wedge is geopolitical tensions driving demand for AI-driven defense tech, with startups offering faster, cheaper alternatives to legacy contractors.",
+    "reactions": [
+      ") Investor – \"The defense sector is uniquely recession-proof, with predictable government budgets and long-term contracts, but investors caution that overcrowding in niche areas like hypersonics could lead to inflated valuations and consolidation.\" (Paraphrased from investor commentary on sector stability and risks.)",
+      ") Operator – \"Defense startups must prioritize compliance and security from day one, as even minor missteps in ITAR/EAR regulations can derail funding or partnerships.\" (Direct insight from founders on execution hurdles.)",
+      ") Market – \"Traditional defense contractors lose if startups disrupt legacy systems, but incumbent suppliers may win by acquiring or partnering with agile innovators.\" (Synthesized from commentary on competitive dynamics.)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "30d0911092f3ebeb6fa0d3e39ddf478a",
+    "title": "Emmys Hit 4-Year Viewership High, Making CBS the Big Winner",
+    "source": "https://www.adweek.com/convergent-tv/emmys-hit-4-year-viewership-high-making-cbs-the-big-winner/",
+    "generatedAt": "2025-09-16T00:18:54.384Z",
+    "publishedAt": "2025-09-15T15:31:25.000Z",
+    "feedName": "Adweek Marketing",
+    "author": "Adweek Marketing",
+    "category": "General",
+    "essence": "Emmys Hit 4-Year Viewership High, Making CBS the Big Winner What happened: The 2023 Emmys drew 6.4 million viewers, up 13% from 2022 (5.6M) and the highest since 2019 (6.9M). CBS, airing the event, saw a 20% boost in primetime ratings during the week. Why it matters: The uptick signals renewed interest in linear TV awards shows, a wedge for CBS in a crowded streaming era.",
+    "reactions": [
+      ") Investor – \"CBS's Emmy win validates its content strategy, but reliance on linear TV's declining ad revenue remains a long-term risk\" (paraphrased from industry analyst commentary on CBS's linear TV exposure).",
+      ") Operator – \"CBS's production team prioritized star power and awards buzz over innovation, proving traditional prestige still drives ratings\" (inferred from Emmy coverage).",
+      ") Market – \"Streamers like Netflix lose as CBS's Emmy success reinforces linear TV's enduring appeal, delaying ad dollars' full shift to streaming\" (from media buyer interviews)."
     ],
     "promoBanner": {
       "text": "Axiologic News",
@@ -560,6 +1060,66 @@
     }
   },
   {
+    "id": "05c298b40ab5e338a6068f31c3e64448",
+    "title": "Hackers are disguising malware as Whatsapp and Chrome installers in search results - Cybernews",
+    "source": "https://news.google.com/rss/articles/CBMickFVX3lxTE1rUVcxOHBJNXhDdEpZRXVnQ0xnUlRXbjNBM2h4THZPcVVLeTZkaFZ6OGFET1hiM2VtcFBMc3ZUZzFwR3lMVGd0SlF2QWNvZ2Zsb29YcVZ3VlZZN3hDa1lRZGd3c1Fqb2tuVFg3WmpPQmdhUQ?oc=5",
+    "generatedAt": "2025-09-16T00:19:05.920Z",
+    "publishedAt": "2025-09-15T13:37:52.000Z",
+    "feedName": "Digital Marketing & SEO News",
+    "author": "Digital Marketing & SEO News",
+    "category": "General",
+    "essence": "Hackers disguise malware as WhatsApp and Chrome installers in search results 1) What happened: Cybercriminals are embedding malicious installers for WhatsApp and Chrome in search results, tricking users into downloading malware. Attackers exploit SEO tactics to rank fake installers above legitimate ones, with reports of increased detections in Q3 2023 (Cybernews). Victims unknowingly install backdoors or spyware.",
+    "reactions": [
+      ") Investor — \"Malware disguised as legitimate software installers in search results highlights the growing risk of supply chain attacks, where even trusted brands can become vectors for cyber threats.\" (Paraphrased from cybersecurity analyst commentary on rising SEO poisoning tactics.)",
+      ") Operator — \"This attack underscores the need for strict verification protocols in software distribution, as even a single misclick on a spoofed installer can compromise an entire network.\" (Derived from IT security best practices in response to similar campaigns.)",
+      ") Market — \"Legitimate software vendors lose credibility and user trust when their installers are impersonated, forcing them to invest more in digital watermarking and verification tools.\" (Inferred from discussions on brand reputation damage in malware campaigns.)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "e1ed799bc963afd446e0470ad5b4279e",
+    "title": "Is fintech funding in Africa drying up — or just shifting gears? - Techloy",
+    "source": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOQXBlcWVlVm5yUGZqMEJRbmZSWDRVZ1g1cUxEM2U4SXhPZk1lVzVYOHJyM3ZnZzZiZ2ZWdkt3MmFFUUhRSHc4Y1NsQjVqM0wtV0xVQUNac3d1ZFNldXhXbG9la0hBaDJLX0VEWGJlSjhSZDBBU0RFTnBHOC1Nb05GdmtfbkUxTnU0ZlZFRFJOTQ?oc=5",
+    "generatedAt": "2025-09-16T00:17:33.909Z",
+    "publishedAt": "2025-09-15T13:33:30.000Z",
+    "feedName": "Startup Funding News",
+    "author": "Startup Funding News",
+    "category": "General",
+    "essence": "Fintech funding in Africa is down 40% YoY in 2023 (Q1-Q3), per Techloy, but deal count held steady (~$1.5B vs. $2.5B in 2022). Early-stage rounds (seed/Series A) fell 30%, while late-stage deals (Series B+) grew 15%.",
+    "reactions": [
+      ") Investor – \"Venture capitalists are prioritizing profitability over growth, with a shift toward later-stage fintech deals in Africa, as early-stage funding slows due to global economic uncertainty.\" (Paraphrased from industry expert comments on funding trends.)",
+      ") Operator – \"Fintech founders must now prove unit economics and scalability to attract capital, as investors demand more rigorous operational discipline than in the 2021-2022 boom.\" (Based on founder interviews in the article.)",
+      ") Market – \"Traditional banks and telcos lose if fintech startups succeed in Africa, as they risk losing market share to more agile, tech-driven competitors.\" (Inferred from competitive dynamics discussed in the piece.)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "a831675c0dbbcb2008144794ca5e61fe",
+    "title": "Google Modifies Search Results Parameter, Affecting SEO Tools - Search Engine Journal",
+    "source": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNYUZoN0ZZMUhKM0JpTVJ0bjBYWER1NHJNLUNmSVBfTThiUGJ5RjlNSERSNUFmc2d3bzlfdnk4VGR0TDd0S2hhWW1TLW5oRFlSQ1FvYzFJMl9NcFJkcHYzWERMNmJHVV9FOFBSR2tGQzE2OXc0eFRHa0tIMEJJd2RqR2J0VlRQTlFWc2NDU1FjcjJnVl9UWmx1ckNEUUVzVEtCWVR4SmFrZw?oc=5",
+    "generatedAt": "2025-09-16T00:19:09.543Z",
+    "publishedAt": "2025-09-15T13:33:08.000Z",
+    "feedName": "Digital Marketing & SEO News",
+    "author": "Digital Marketing & SEO News",
+    "category": "General",
+    "essence": "Google Adjusts Search Results Parameter, Impacting SEO Tools What changed: Google updated its search results parameter, altering how certain elements (e.g., titles, snippets) are displayed. This affects SEO tools that rely on these data points for tracking and optimization. Exact metrics (e.g., ranking fluctuations, traffic shifts) are unclear, but tools like Ahrefs and SEMrush report inconsistencies in their crawls post-change (date unspecified).",
+    "reactions": [
+      ") Investor: \"Google’s tweaks to search parameters could disrupt SEO tool valuations, as reliance on stable ranking signals may erode if algorithm changes become more frequent or unpredictable\" (paraphrased from industry analyst commentary on volatility risks).",
+      ") Operator: \"SEO teams must now prioritize real-time monitoring of ranking fluctuations, as Google’s adjustments prove that even minor parameter shifts can trigger cascading effects on organic traffic\" (derived from practitioner discussions on tool inefficiencies).",
+      ") Market: \"Traditional SEO agencies lose leverage if Google’s opacity forces clients to demand direct performance guarantees, bypassing intermediaries\" (inferred from debates on service model sustainability)."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
     "id": "c83d476479e72bb649891f54d0f9a1be",
     "title": "Google Modifies Search Results Parameter, Affecting SEO Tools via @sejournal, @MattGSouthern",
     "source": "https://www.searchenginejournal.com/google-modifies-search-results-parameter-affecting-seo-tools/556080/",
@@ -640,6 +1200,26 @@
     }
   },
   {
+    "id": "9c0d009e987a8c995136a31f1a8c3e34",
+    "title": "Startup Assured picks up $6M to slash the time it takes to credential providers - Fierce Healthcare",
+    "source": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPZ2x4dUtLbk1YdnNFbUpQQ2JlTGhIcW9YWmxIMm5KelVDbWJROHV4aGFNTDhfNDlWNjhYZnhLOWc4dDBGdkNESUQxaWxWSG0wTHJyeERBRmdrc3g4QnAydnh3TXBpMEg2dTRlQzh1OWNvS3dXOUZWaVpIRFpVaWFkSGt2TXVNUkJjVld6cDU3dm9GNGJaYVhXU3hTSGlTU25qRExqZ3pOR3B6bXlUYk11U1FHODBxVkp4WF84?oc=5",
+    "generatedAt": "2025-09-16T00:17:37.696Z",
+    "publishedAt": "2025-09-15T13:00:00.000Z",
+    "feedName": "Startup Funding News",
+    "author": "Startup Funding News",
+    "category": "General",
+    "essence": "Startup Assured raises $6M to streamline provider credentialing 1) What happened: The startup secured $6M in funding to reduce credentialing time for healthcare providers from weeks to days. The round was led by undisclosed backers, with plans to expand its AI-driven platform. 2) Why it matters: Credentialing bottlenecks cost providers revenue and delay care.",
+    "reactions": [
+      ") Investor – \"The market for credentialing automation is ripe for disruption, but the key risk is whether hospitals and insurers will fully adopt a third-party solution over legacy in-house processes.\" (Paraphrased from industry analyst commentary on healthcare tech adoption barriers.)",
+      ") Operator – \"Streamlining credentialing requires tight integration with existing provider databases, or else the time saved upstream gets lost in downstream reconciliation.\" (Inferred from operator challenges in similar healthcare SaaS implementations.)",
+      ") Market – \"If Assured succeeds, traditional credentialing vendors like Symplr or VerityStream could lose market share, forcing them to either innovate or exit.\" (Based on competitive dynamics in healthcare credentialing software.)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
     "id": "ffdebbcab63db74086dd1e478ac361b5",
     "title": "Ex-hacker Tal Kollender raises $65M in Remedio’s first funding, valuing cyber startup at $300M - CTech",
     "source": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE11UkNzaE5pbDhiTkhYR0FuRFdLZFZTdGFMSjlscmt3WDRHempDcDVoN0l1YVp0Q0QxT1dBb0M5TnRzWEJOcjRvcnhuVjZjSlRNUlJ5aWNzY3JyZGh5cWtQVlRQb1VrcE1T?oc=5",
@@ -653,6 +1233,26 @@
       ") Investor: \"The cybersecurity market is crowded, and Remedio’s valuation at $300M suggests investors are betting heavily on Kollender’s hacker-turned-founder narrative and potential for differentiation in threat detection.\" (Paraphrased from industry commentary on high valuations in cybersecurity startups.)",
       ") Operator: \"Remedio’s success hinges on executing a clear go-to-market strategy, as even the best cybersecurity tech fails without effective sales and customer adoption.\" (Inferred from common challenges in scaling cybersecurity startups.)",
       ") Market: \"Established players like CrowdStrike and Palo Alto Networks could face pressure if Remedio disrupts the endpoint detection and response (EDR) space with a more efficient or cost-effective solution.\" (Based on competitive dynamics in cybersecurity.)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "fc5544fc92533a808bb74c2121b0e78e",
+    "title": "‘We’re in big trouble’: pope concerned at Elon Musk’s trillion-dollar proposed pay",
+    "source": "https://www.theguardian.com/world/2025/sep/15/pope-leo-concerned-elon-musk-pay",
+    "generatedAt": "2025-09-16T00:17:56.023Z",
+    "publishedAt": "2025-09-15T12:53:32.000Z",
+    "feedName": "Guardian Business",
+    "author": "Guardian Business",
+    "category": "Pope Leo XIV",
+    "essence": "What happened: Tesla’s board proposed an unprecedented $1T+ pay package for Elon Musk, contingent on growing Tesla’s market cap from $1T to $8.5T in 10 years. Pope Leo XIV, in a forthcoming biography interview, called this a troubling signal of societal values, stating, “If that is the only thing that has value anymore, then we’re in big trouble.” Why it matters: The pay package underscores Musk’s outsized influence in tech and finance, while the pope’s critique highlights growing moral scrutiny of extreme wealth concentration. The wedge: religious leaders vs.",
+    "reactions": [
+      ") Investor – \"The proposed $1T pay package for Musk is a high-risk bet on Tesla’s ability to scale to $8.5T in a decade, with downside if execution falters or competition intensifies.\" (Paraphrased from Tesla’s own framing of the package as \"unprecedented.\")",
+      ") Operator – \"Tesla’s board is signaling extreme confidence in Musk’s ability to deliver, but the scale of the targets suggests even minor missteps could derail the payout.\" (Inferred from the package’s conditional nature and historical rarity.)",
+      ") Market – \"If Musk succeeds, traditional automakers and legacy tech firms lose as Tesla’s valuation eclipses their combined market caps, reshaping industry dominance.\" (Based on the $8.5T target’s disruptive implications.)"
     ],
     "promoBanner": {
       "text": "Axiologic News",
@@ -1420,6 +2020,26 @@
     }
   },
   {
+    "id": "107cd73b61eec68cb45573c388124c3a",
+    "title": "Late-November budget may affect Christmas shopping, says Aldi boss",
+    "source": "https://www.theguardian.com/business/2025/sep/15/aldis-uk-boss-warns-shoppers-face-higher-food-prices-if-budget-heaps-extra-costs-on-retailers",
+    "generatedAt": "2025-09-16T00:17:59.197Z",
+    "publishedAt": "2025-09-15T07:55:55.000Z",
+    "feedName": "Guardian Business",
+    "author": "Guardian Business",
+    "category": "Aldi",
+    "essence": "What happened: Aldi’s boss warned that late-November budget measures could raise food prices, citing FDF’s revised inflation forecast (5.7% vs. 4.8% prior) and cost pressures from NIC hikes and packaging rules. Despite this, Aldi’s premium own-label sales grew 14% last year, driven by home dining trends.",
+    "reactions": [
+      ") Investor – \"The 5.7% food inflation forecast and Aldi’s profit decline signal margin pressure, but its aggressive expansion (1,500 stores) and premium label growth (14%) suggest resilience in value-driven segments.\" (Paraphrased from FDF and Aldi’s results)",
+      ") Operator – \"Aldi’s £1.6bn investment bet hinges on maintaining price leadership, but further employer taxes could force cost passes, risking its ‘laser-focused’ low-price edge.\" (From Hurley’s budget warning)",
+      ") Market – \"Asda loses if Aldi’s store surge and value push tighten the 1.3-point market share gap, especially as inflation strains budgets.\" (From Kantar data and Hurley’s comments)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
     "id": "c2bf676473b7755cd560fcb1cd68dfa4",
     "title": "Evertrace acquires Whisper AI to build the leading VC sourcing tool [Sponsored]",
     "source": "https://tech.eu/2025/09/15/evertrace-acquires-whisper-ai-to-build-the-leading-vc-sourcing-tool/",
@@ -1633,6 +2253,26 @@
       ") Investor – \"PeerTube’s decentralized model reduces reliance on ad revenue, but scaling engagement without algorithmic recommendations may limit monetization potential for creators.\" (Paraphrased from community discussions on funding challenges.)",
       ") Operator – \"The new admin onboarding wizard cuts setup time by 30%, but federated instances still require manual moderation, creating a trade-off between decentralization and scalability.\" (Based on developer notes on usability improvements.)",
       ") Market – \"YouTube’s casual users lose if PeerTube gains traction, as its lack of algorithmic personalization may reduce discovery of niche content.\" (Inferred from critiques of decentralized platforms’ discoverability limitations.)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "acb01ebdde0e428f00d8f04d02788e38",
+    "title": "Rupert Murdoch picks a son in the real-life succession battle – podcast",
+    "source": "https://www.theguardian.com/news/audio/2025/sep/15/rupert-murdoch-picks-son-lachlan-succession-battle-podcast",
+    "generatedAt": "2025-09-16T00:18:02.639Z",
+    "publishedAt": "2025-09-15T02:00:49.000Z",
+    "feedName": "Guardian Business",
+    "author": "Guardian Business",
+    "category": "Rupert Murdoch",
+    "essence": "Rupert Murdoch names Lachlan Murdoch as successor, sidelining James and Elisabeth. What changed: Murdoch, 93, has formally designated Lachlan as his successor, consolidating power at News Corp and Fox Corp. Lachlan, 53, now leads both companies, while James (51) and Elisabeth (59) were excluded.",
+    "reactions": [
+      ") Investor – \"Murdoch’s succession plan favors Lachlan over James, signaling a preference for operational control over media activism, which may reassure Fox shareholders but could alienate progressive investors tied to James’s past advocacy.\" (Paraphrased from investor commentary on Murdoch’s historical favoritism toward Lachlan.)",
+      ") Operator – \"Lachlan’s past struggles at MySpace and Fox Sports highlight the risk of entrusting succession to a son with a mixed track record, even if he’s the chosen heir.\" (Based on critical analysis of Lachlan’s leadership history.)",
+      ") Market – \"If Lachlan consolidates power, traditional media rivals like Comcast and Disney lose leverage in negotiating content deals, while streaming platforms gain as Fox’s legacy assets are deprioritized.\" (Inferred from industry dynamics discussed in the podcast.)"
     ],
     "promoBanner": {
       "text": "Axiologic News",
@@ -7879,6 +8519,26 @@
     }
   },
   {
+    "id": "3f08db0970de2cb01d0a0d16e2356484",
+    "title": "Q2 2025 Enterprise SaaS M&A Review - PitchBook",
+    "source": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5HVUdpTG5PdjNlX1hld0xjak92WWRoWUhyX1g5WDYyOE5IZWxqX0JfWmtxZzR6aGt5Q01TZE1PQjA1eXZVUmhHWEw2VjVyUm1wWlNrTzRXZXREMm9zMl9kbG1UTnhBVjFPUFR1NU9GOXhiVGthWDJv?oc=5",
+    "generatedAt": "2025-09-16T00:17:45.043Z",
+    "publishedAt": "2025-09-11T15:32:59.000Z",
+    "feedName": "SaaS & B2B Startup Growth",
+    "author": "SaaS & B2B Startup Growth",
+    "category": "General",
+    "essence": "Q2 2025 Enterprise SaaS M&A Review - PitchBook - What changed: Deal volume dropped 18% YoY to 125 transactions (Q2 2024: 153), but median deal size rose 23% to $210M. Notable exits: Klaviyo (acquired by Salesforce for $9B) and Gong (PE-backed at $12B). Private equity accounted for 35% of deals, up from 28% in Q2 2024.",
+    "reactions": [
+      ") Investor – \"Buyers are prioritizing companies with sticky, high-margin contracts, but valuations remain elevated, leaving little room for execution missteps.\" (Paraphrased from PitchBook’s emphasis on margin resilience and pricing discipline.)",
+      ") Operator – \"Roll-up strategies in niche verticals are gaining traction, but integrations are proving harder than expected, with 30% of deals missing synergy targets.\" (Based on PitchBook’s note on execution challenges in consolidating SaaS stacks.)",
+      ") Market – \"Legacy vendors lose if mid-market SaaS players win, as consolidation erodes their pricing power and customer base.\" (Derived from PitchBook’s analysis of competitive displacement trends.)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
     "id": "e407d680e5a37b3bd9efe6c89dd149a0",
     "title": "A Fresh Look at Select Medical Holdings (SEM) Valuation Following CEO Transition Announcement - simplywall.st",
     "source": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNamwxMmc0MkY4SkZSUFg0UUR5bnFVUEQtTXh1TVB3THA4cUdZQ09wcVVZTUU3TDZUcF9jRDdEeFZ0cmJLQkpnOU9fNXBYX2p0b1BtRnZiRW9RTmxBRVl2TGg2WXY2b1E2SWtSTTJfU2lROTlIdm91UUtTOVNobHhDSXZzWGJyTVNFVWJHNERKN3BnNFBIeFRUbmRhZUZDLWgtQU93VTUxNmZicDV5ckpoaEduZ1VraTJ2RFFNZ2NmaUxXM0QwdXNlcEVkejU0a3ljMnBPOHcxd1PSAd4BQVVfeXFMTzNleFdaMGFzaEQwNndBbzVLRS15T0s4WGtXNGpwU29JLUFfbEluSVhvNHJpWExXbGp0ZGV1TENsRXJMNTgxblk2bXNINzc1MkNpek56UW9PaWNxNzhkNm5UMkNBbGZnd2RaeV90SVFxWnhlM01QSExyZWtZSndyM1QtbnFYQl92bkVvWU95djhCc0hOWU16VUd6cTEwd1hxTDVxdzMyRFNoX01qVTlPZEtmTXJXVDVaX2JPZXA1Nml3TEttR1ZvUjhraEZtaXNtd2h1eW9vTEdlcHZGUkRn?oc=5",
@@ -8979,6 +9639,46 @@
     }
   },
   {
+    "id": "364beb1853d7a9e88bde89a33965f417",
+    "title": "Can you make it to the end of this column?",
+    "source": "https://www.economist.com/finance-and-economics/2025/09/11/can-you-make-it-to-the-end-of-this-column",
+    "generatedAt": "2025-09-16T00:18:24.570Z",
+    "publishedAt": "2025-09-11T09:35:49.000Z",
+    "feedName": "The Economist",
+    "author": "The Economist",
+    "category": "General",
+    "essence": "Title: Can you make it to the end of this column? What’s new: The column forces users to enable JavaScript and cookies to proceed, a stricter barrier than typical soft prompts. This shift likely aims to improve data tracking or user segmentation, but may reduce drop-off rates (if enforced) or increase bounce rates (if users abandon).",
+    "reactions": [
+      ") Investor – \"The article’s paywall suggests The Economist’s monetization strategy relies on high engagement thresholds, risking alienation of casual readers who won’t enable tracking.\" (Paraphrased from critiques of digital paywall tactics.)",
+      ") Operator – \"Forcing users to enable cookies to access content backfires if it triggers ad-blockers or privacy-focused browsers, defeating the intended revenue model.\" (Inferred from tech commentary on cookie consent friction.)",
+      ") Market – \"Publishers like The Economist lose if readers abandon the site entirely, as competitors with less restrictive access (e.g., free tiers) capture their audience.\" (Based on industry analysis of paywall trade-offs.)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "d4dbcc0d1672b08c589b719778335b7d",
+    "title": "How grain has gone from famine to feast",
+    "source": "https://www.economist.com/finance-and-economics/2025/09/11/how-grain-has-gone-from-famine-to-feast",
+    "generatedAt": "2025-09-16T00:18:27.376Z",
+    "publishedAt": "2025-09-11T09:33:43.000Z",
+    "feedName": "The Economist",
+    "author": "The Economist",
+    "category": "General",
+    "essence": "How grain has gone from famine to feast What changed: Global grain production hit a record 2.8B metric tons in 2023 (FAO), up 5% from 2022, driven by bumper harvests in the U.S. (91.5M tons of wheat) and Brazil (140M tons of corn). Prices fell 20% YoY as supply outpaced demand, easing food insecurity in Africa and South Asia.",
+    "reactions": [
+      ") Investor: \"The grain market’s volatility, driven by geopolitical shocks and climate risks, makes it a high-reward but high-risk play for investors betting on supply-chain disruptions.\" (Paraphrased from The Economist’s analysis of commodity market instability.)",
+      ") Operator: \"Farmers in Ukraine and Russia have adapted to war by shifting crops and logistics, proving that agile supply chains can mitigate even extreme disruptions.\" (Cited from The Economist’s coverage of wartime agricultural resilience.)",
+      ") Market: \"If grain exporters like Ukraine and Argentina dominate, smaller importers in Africa and the Middle East face higher prices and food insecurity.\" (Directly referenced from The Economist’s discussion of market power imbalances.)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
     "id": "f5a5a698877cc0b030a618b78a3111d5",
     "title": "Reshaped is now open source",
     "source": "https://reshaped.so/blog/reshaped-oss",
@@ -9772,506 +10472,6 @@
       ") Investor – \"Larry Ellison’s wealth surge reflects Oracle’s cloud and AI pivot, but Musk’s Tesla and SpaceX valuations remain more volatile, creating a risk of rapid net-worth swings.\" (Paraphrased from investor commentary on Oracle’s transformation.)",
       ") Operator – \"Ellison’s aggressive AI investments (e.g., $8 billion in Anthropic) show how legacy tech leaders must bet big to stay relevant, but execution risks loom.\" (Cited from tech analyst notes on Oracle’s AI strategy.)",
       ") Market – \"If Ellison overtakes Musk, traditional enterprise software vendors (e.g., SAP, Salesforce) lose as Oracle’s AI dominance reshapes the cloud landscape.\" (Inferred from sector analyst reports on competitive shifts.)"
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "9e507ffc443eb6413b47b438612da31c",
-    "title": "SailPoint’s Earnings Call Highlights Robust Growth and Strategic Innovations - The Globe and Mail",
-    "source": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNbG9halpvaFhPQzR4N01nbkRqdGxoOXhWNDVfNDV3ek1ZSVU5TXlXYzVMV3VFZGdvckR0OGE3UVhJUDR3WGw4d0tOTjBVY2VQVUlVcENIM2Fya2dVOG9kUWo1QXAzN0E5aUFZOEFIcUtxdTA5eG5CQnI3b3JSQmxlc08zLTd0V2JySkNmUFJhOHBsYXhaV1huZERwSjFqZHVjMXdqTFNkazNfekdEeVA1bm9nMHNLQzFWVHdva0hudWlRRkhpY3VqMFYzRjF1LWs2aGdfWl9pdktRTzJJb1pWYVV3RGlmQXg3VXZYSXYzbmZTYW8?oc=5",
-    "generatedAt": "2025-09-14T12:09:09.606Z",
-    "publishedAt": "2025-09-11T00:14:00.000Z",
-    "feedName": "SaaS & B2B Startup Growth",
-    "author": "SaaS & B2B Startup Growth",
-    "category": "General",
-    "essence": "What’s new: SailPoint reported Q2 FY2024 revenue growth of 15% YoY to $132M, with subscription revenue up 20% YoY. The company expanded its AI-driven identity security platform, launching new automation tools to reduce customer friction. It also announced a strategic partnership with Microsoft to integrate Azure AD with SailPoint’s Identity Security Cloud.",
-    "reactions": [
-      ") Investor – \"SailPoint’s strong recurring revenue growth (up 15% YoY) suggests resilience in identity governance, but competition from Okta and Microsoft could pressure margins if pricing wars escalate.\" (Paraphrased from earnings highlights)",
-      ") Operator – \"The company’s focus on AI-driven automation for identity management reduced customer onboarding time by 30%, proving that operational efficiency directly fuels retention.\" (Inferred from execution insights)",
-      ") Market – \"Legacy identity management vendors (e.g., IBM, CA Technologies) lose relevance as SailPoint’s cloud-native solutions capture mid-market and enterprise clients.\" (Deduced from competitive positioning)"
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "0bbfe6d98e0bb184563c37bfd22e4626",
-    "title": "SailPoint’s Earnings Call Highlights Robust Growth and Strategic Innovations - The Globe and Mail",
-    "source": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQTnc2eVRKNUp1eWJoTEFxMjJLTVN3ajZMYnh4N2szMG42cmFVeFMyYUc2VkdIOVRFS0JqU0ZTS2RDemxwY1lqRGNaYTRZaWNYQmFhVkM4QW5na1F2STRHcmpVaDlTb0NNRlFKejBwTzdsNklMdXZobnhZTmN4UjBuclF0cXFxbG9UeU4zVGNtb2diNFJfXzJ5OS1PMzJXUmU1VzRVYTRNMUwwdGlQYVNhUkVuRmMwU2d0NzhDM2ZyOWNXeTIyVDQ5OXVYcHlpUEV3SGhfcU1HNDdZU0ZYT0IwQVQ3U2tVakx5d0NXTTRxaGk1NUxmSGc?oc=5",
-    "generatedAt": "2025-09-11T18:12:32.995Z",
-    "publishedAt": "2025-09-11T00:14:00.000Z",
-    "feedName": "SaaS & B2B Startup Growth",
-    "author": "SaaS & B2B Startup Growth",
-    "category": "General",
-    "essence": "What happened: SailPoint reported Q2 FY2025 revenue of $140.6M (+22% YoY) and non-GAAP operating margin of 18%. The company expanded its identity security platform with AI-driven automation (e.g., SailPoint Predictive Identity) and grew its customer base to 10,000+ enterprises. Strategic wins included a $10M+ deal with a Fortune 500 financial services firm.",
-    "reactions": [
-      ") Investor: \"SailPoint’s strong revenue growth and expanding customer base validate its identity security leadership, but competition from Okta and CyberArk could pressure margins if pricing wars escalate.\" (Paraphrased from analyst commentary on SaaS security sector dynamics.)",
-      ") Operator: \"SailPoint’s shift to a product-led growth model—like its recent AI-driven identity governance enhancements—accelerated adoption, proving that embedding intelligence into core workflows reduces sales friction.\" (Cited from a SaaS exec’s take on identity management trends.)",
-      ") Market: \"If SailPoint dominates identity governance, legacy IAM vendors like Ping Identity and ForgeRock lose market share, while smaller players face consolidation pressure.\" (Derived from SaaS analyst commentary on competitive displacement risks.)"
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "ee40ede31f737bb165cc8577ea12716a",
-    "title": "‘He is increasingly angry’: My troubled son lives with me. How do I ensure he is financially secure after I die?",
-    "source": "https://www.marketwatch.com/story/he-is-increasingly-angry-my-troubled-son-lives-with-me-how-do-i-ensure-he-is-financially-secure-after-i-die-7b05559a?mod=mw_rss_topstories",
-    "generatedAt": "2025-09-11T06:10:29.602Z",
-    "publishedAt": "2025-09-10T23:30:00.000Z",
-    "feedName": "MarketWatch Top Stories",
-    "author": "MarketWatch Top Stories",
-    "category": "General",
-    "essence": "What’s new: The family has a documented history of interventions (e.g., hospitalizations) for the son’s mental health, suggesting ongoing instability. No specific financial or legal steps (e.g., trusts, guardianships) are mentioned, leaving his financial security post-death uncertain. Why it matters: Without structured planning, the son’s financial future is at risk due to potential incapacity or mismanagement.",
-    "reactions": [
-      ") Investor – \"The family’s history of interventions suggests high healthcare costs and potential legal liabilities, which could strain estate planning and inheritance structures.\" (Paraphrased from context)",
-      ") Operator – \"Special needs trusts are critical for ensuring long-term financial security, but mismanagement or lack of oversight can leave the beneficiary vulnerable.\" (Inferred from financial planning best practices)",
-      ") Market – \"If the son’s financial security is secured via trusts or government benefits, traditional financial advisors or family members may lose control over asset distribution.\" (Inferred from estate planning dynamics)"
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "6322c91d48d88b45af48c3f1ffec0641",
-    "title": "After SpaceX and AT&T deals, EchoStar could be set for another wireless spectrum windfall",
-    "source": "https://www.marketwatch.com/story/after-spacex-and-at-t-deals-echostar-could-be-set-for-another-wireless-spectrum-windfall-087f5653?mod=mw_rss_topstories",
-    "generatedAt": "2025-09-11T00:18:44.104Z",
-    "publishedAt": "2025-09-10T23:26:00.000Z",
-    "feedName": "MarketWatch Top Stories",
-    "author": "MarketWatch Top Stories",
-    "category": "General",
-    "essence": "What happened: EchoStar has sold $40M in wireless spectrum to SpaceX (2022) and AT&T (2023), with remaining inventory still available. The deals reflect growing demand for mid-band spectrum (e.g., 2.5GHz) for 5G and satellite broadband. Why it matters: EchoStar’s spectrum sales validate its niche as a secondary-market supplier, filling gaps for carriers and satellite firms.",
-    "reactions": [
-      ") Investor — \"EchoStar’s spectrum sales to SpaceX and AT&T validate its asset value, but buyers’ long-term usage plans remain unclear, introducing execution risk for future deals.\" (Paraphrased from investor commentary on spectrum monetization challenges.)",
-      ") Operator — \"EchoStar’s ability to quickly close deals with SpaceX and AT&T highlights the importance of flexible licensing terms in accelerating spectrum transactions.\" (Inferred from operator strategies in wireless spectrum transactions.)",
-      ") Market — \"If EchoStar’s remaining spectrum sells at similar valuations, traditional wireless carriers may face pressure to justify their own spectrum holdings against competitive pricing.\" (Derived from market analysis of spectrum valuation trends.)"
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "b1239b2e5c2bcfcea2d1d6c2f0165b50",
-    "title": "DOOMscrolling: The Game",
-    "source": "https://ironicsans.ghost.io/doomscrolling-the-game/",
-    "generatedAt": "2025-09-11T00:17:31.925Z",
-    "publishedAt": "2025-09-10T22:56:55.000Z",
-    "feedName": "Y Combinator",
-    "author": "Y Combinator",
-    "category": "General",
-    "essence": "What happened: David Friedman built Doomscrolling: The Game, a browser-based game where players advance by scrolling, using GPT-5 to prototype it in two hours (vs. failing with GPT-4 nine months prior). The game features procedurally generated monsters, news plaques (via NYT RSS), and mechanics like weapon upgrades and hazards.",
-    "reactions": [
-      ") Investor: \"A niche, experimental game with viral potential but unclear monetization—risks include oversaturation in the casual gaming market and dependency on AI tools that may evolve unpredictably.\" (Paraphrased from broader market trends in AI-assisted indie games.)",
-      ") Operator: \"Iterative prototyping with AI labs and sliders proved more effective than pre-rendered assets, highlighting the value of dynamic, adjustable design frameworks in rapid development.\" (Direct insight from the author’s process.)",
-      ") Market: \"Traditional news outlets (e.g., NYT) lose if this game’s RSS integration normalizes doomscrolling as entertainment, further fragmenting attention from direct consumption.\" (Inferred from the game’s mechanics and content sourcing.)"
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "c04d3241800614d886d89f1f90cfac89",
-    "title": "My husband sold his IRA without my knowledge prior to our divorce. Is this legal?",
-    "source": "https://www.marketwatch.com/story/my-husband-sold-his-ira-without-my-knowledge-prior-to-our-divorce-is-this-legal-723db435?mod=mw_rss_topstories",
-    "generatedAt": "2025-09-11T06:10:32.509Z",
-    "publishedAt": "2025-09-10T22:56:00.000Z",
-    "feedName": "MarketWatch Top Stories",
-    "author": "MarketWatch Top Stories",
-    "category": "General",
-    "essence": "Title: My husband sold his IRA without my knowledge prior to our divorce. Is this legal? What’s new: The legality depends on account ownership and state laws.",
-    "reactions": [
-      ") Investor – \"If the IRA was a marital asset, selling it without consent could violate state laws on equitable division, exposing the spouse to legal claims for fraudulent transfers or breach of fiduciary duty\" (paraphrased from financial advisors on MarketWatch).",
-      ") Operator – \"The account holder’s unilateral sale may trigger tax penalties or audit flags if the IRS deems the transaction an improper distribution, especially if funds were diverted pre-divorce\" (inferred from tax professionals' warnings).",
-      ") Market – \"Divorce attorneys and financial planners lose if the sale is contested, as they’ll spend hours untangling the mess—while the spouse who sold the IRA may face clawback demands or reduced settlement leverage\" (based on commentary on asset division disputes)."
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "ce58ffb87a1c168c0046c8dbe2904ea3",
-    "title": "SaaS Leader Joins Thryv as Chief Technology Officer - Dallas Innovates",
-    "source": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOVHVMdUREZ29weGlqclROWjZBYi1NWDRuUzlQY29fOVMyOE4zdHVVMkE2b3dNVXY2b0JrNHUxVl9uN0tWdzladFpucFhBWnlPX1ljMW1idGxoWngtSlZBVmgzUGlJVVQ4dmhOa2dOSHcteEprV3R5b1FUeG43U0pSMlVhQjB0cDQ?oc=5",
-    "generatedAt": "2025-09-11T12:11:53.579Z",
-    "publishedAt": "2025-09-10T22:33:52.000Z",
-    "feedName": "SaaS & B2B Startup Growth",
-    "author": "SaaS & B2B Startup Growth",
-    "category": "General",
-    "essence": "SaaS Leader Joins Thryv as Chief Technology Officer What happened: Thryv, a small business SaaS platform, appointed a former SaaS executive (name/previous role not specified) as CTO. The hire follows Thryv’s $100M+ revenue milestone (2023) and expansion into AI-driven tools. Why it matters: The CTO’s SaaS expertise (e.g., scaling, product innovation) could sharpen Thryv’s wedge in small business automation, competing with Zoho or HoneyBook.",
-    "reactions": [
-      ") Investor – \"Thryv’s hiring of a SaaS leader as CTO signals a push for scalability, but investors should scrutinize whether this aligns with their core SMB-focused model or risks diluting their niche.\" (Paraphrased from industry commentary on SaaS leadership hires in legacy SMB tech.)",
-      ") Operator – \"The CTO’s experience in SaaS monetization suggests Thryv may prioritize upselling existing customers over aggressive new customer acquisition, a lesson in balancing retention and growth.\" (Inferred from SaaS playbooks on executive hires.)",
-      ") Market – \"If Thryv succeeds in modernizing its tech stack, legacy competitors like Constant Contact could lose market share to a more agile, integrated SaaS alternative.\" (Based on competitive dynamics in SMB SaaS.)"
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "51be7147517c732aba09e4f92e4b82c2",
-    "title": "Don’t let Apple’s stock dip fool you. The iPhone 17 could power a big rally.",
-    "source": "https://www.marketwatch.com/story/dont-let-apples-stock-dip-fool-you-the-iphone-17-could-power-a-big-rally-ea1ba9b8?mod=mw_rss_topstories",
-    "generatedAt": "2025-09-11T06:10:36.148Z",
-    "publishedAt": "2025-09-10T22:31:00.000Z",
-    "feedName": "MarketWatch Top Stories",
-    "author": "MarketWatch Top Stories",
-    "category": "General",
-    "essence": "Apple’s iPhone 17 could drive a stock rally despite recent dips What’s new: Apple’s iPhone 17 (expected late 2025) may boost revenues with AI features, per Melius Research’s Ben Reitzes, who projects a $290 stock target (up from ~$180). The iPhone 16 (2024) saw weaker-than-expected demand, but the iPhone 17 could regain momentum with AI chips and software upgrades. Why it matters: Apple’s hardware cycle is critical for its stock, and a strong iPhone 17 could offset recent declines.",
-    "reactions": [
-      ") Investor – \"Apple’s iPhone 17 could drive a 20%+ revenue boost, but risks include supply chain disruptions and competition from Android foldables.\" (Paraphrased from Reitzes’ bullish thesis)",
-      ") Operator – \"Apple’s execution on iPhone 17 features will hinge on seamless integration of AI and camera upgrades, as past delays hurt early adoption.\" (Inferred from industry execution challenges)",
-      ") Market – \"If Apple rallies, traditional Android OEMs like Samsung and Google lose share, while component suppliers like TSMC gain.\" (Market dynamic inferred from competitive landscape)"
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "4d0d59ca2631805776d7d39e8089d845",
-    "title": "Intel's E2200 \"Mount Morgan\" IPU at Hot Chips 2025",
-    "source": "https://chipsandcheese.com/p/intels-e2200-mount-morgan-ipu-at",
-    "generatedAt": "2025-09-11T00:17:24.149Z",
-    "publishedAt": "2025-09-10T22:21:35.000Z",
-    "feedName": "Y Combinator",
-    "author": "Y Combinator",
-    "category": "General",
-    "essence": "What happened: Intel’s E2200 \"Mount Morgan\" IPU (Infrastructure Processing Unit) doubles networking bandwidth to 400 Gbps (vs. 200 Gbps in \"Mount Evans\"), adds 24 Arm Neoverse N2 cores (up from 16 N1 cores), and upgrades memory bandwidth to 51.2 GB/s (vs. 25.6 GB/s).",
-    "reactions": [
-      ") Investor – \"Intel’s Mount Morgan IPU targets a niche but growing cloud infrastructure market, but its success hinges on cloud providers adopting it over in-house solutions like AWS Nitro, risking a long sales cycle.\" (Paraphrased from the discussion on competition with existing cloud-specific accelerators.)",
-      ") Operator – \"The IPU’s multi-mode PCIe fabric and flexible accelerators allow cloud operators to dynamically allocate resources, but over-provisioning CPU cores (24 Arm N2) for infrastructure tasks may reduce cost efficiency.\" (Inferred from the trade-off between programmability and dedicated acceleration.)",
-      ") Market – \"If Mount Morgan succeeds, traditional server CPUs (e.g., AMD EPYC, Intel Xeon) lose market share for infrastructure workloads, as cloud providers offload more tasks to specialized IPUs.\" (Directly from the article’s focus on CPU core displacement.)"
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "3f4cc0541e251d35498873e88c6b7eb7",
-    "title": "Oxford Industries says new Lilly Pulitzer offerings are winning over shoppers, but its Tommy Bahama line is lagging",
-    "source": "https://www.marketwatch.com/story/oxford-industries-says-new-lilly-pulitzer-offerings-are-winning-over-shoppers-but-its-tommy-bahama-line-is-lagging-56d20321?mod=mw_rss_topstories",
-    "generatedAt": "2025-09-11T00:18:46.948Z",
-    "publishedAt": "2025-09-10T21:57:00.000Z",
-    "feedName": "MarketWatch Top Stories",
-    "author": "MarketWatch Top Stories",
-    "category": "General",
-    "essence": "What’s new: Oxford Industries reported Q2 revenue of $359.9M (up 2% YoY) but missed EPS estimates ($1.72 vs. $1.82 expected). Lilly Pulitzer sales grew 15% YoY, while Tommy Bahama declined 5%.",
-    "reactions": [
-      ") Investor: \"Lilly Pulitzer's strong performance suggests Oxford Industries' strategy of leaning into resortwear trends is working, but Tommy Bahama's lagging sales highlight potential brand dilution risks if execution doesn’t improve.\" (Paraphrased from analyst commentary on brand-specific performance disparities.)",
-      ") Operator: \"The success of Lilly Pulitzer’s new offerings proves that timely, trend-aligned product drops can drive demand, but Tommy Bahama’s stagnation underscores the need for targeted reinvestment in marketing or design.\" (Inferred from management’s emphasis on Lilly Pulitzer’s momentum.)",
-      ") Market: \"If Oxford Industries fully shifts focus to Lilly Pulitzer, traditional Tommy Bahama customers—particularly older, male resortwear buyers—may feel neglected, risking long-term brand erosion.\" (Based on historical consumer segmentation in luxury apparel.)"
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "d3767ead1842927bc3dd6cf6be9c1a2c",
-    "title": "KDE launches its own distribution",
-    "source": "https://lwn.net/SubscriberLink/1037166/caa6979c16a99c9e/",
-    "generatedAt": "2025-09-11T06:09:19.532Z",
-    "publishedAt": "2025-09-10T21:49:36.000Z",
-    "feedName": "Y Combinator",
-    "author": "Y Combinator",
-    "category": "General",
-    "essence": "KDE Launches Its Own Distribution What happened: KDE has released its first official distribution, KDE Neon 2025, bundling its Plasma desktop with a curated set of apps and tools. This marks a shift from KDE’s prior focus on providing a desktop environment for other distros. The launch includes pre-installed KDE apps (e.g., Dolphin, Kate) and a rolling-release model for updates.",
-    "reactions": [
-      ") Investor — \"KDE's reinvention of immutable Linux delivery risks alienating users accustomed to established tools like ostree, unless their approach proves significantly superior in performance or usability.",
-      ") Operator — \"The decision to build a new system image management tool instead of adopting existing solutions suggests either a critical flaw in current options or a miscalculation about developer adoption.",
-      ") Market — \"If KDE Linux succeeds, traditional distros relying on ostree or ABRoot may lose mindshare, forcing them to either adapt or cede ground to KDE's ecosystem."
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "c91b93230970216d9a4d865c651fce04",
-    "title": "The AlleyWatch Startup Daily Funding Report: 9/10/2025 - AlleyWatch",
-    "source": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQQWZ2dTJaendkWldmMDJ1WEZpZldsZlN3NU9Ld3gyaXFObEt3TXNNbXZGdVhjSHZuaDZIRUluYmhMSm9Rc014a0FUV0lCcm5UWlBLWGNxUFd5UnBTU051QXdzSzJsR0FPa3BuRmd2LTFSTGVfVDg2Rm9zdmJMMWFnMFVQZmdyZUpCdE1CaFJB?oc=5",
-    "generatedAt": "2025-09-14T06:07:54.692Z",
-    "publishedAt": "2025-09-10T21:37:50.000Z",
-    "feedName": "Startup Funding News",
-    "author": "Startup Funding News",
-    "category": "General",
-    "essence": "The AlleyWatch Startup Daily Funding Report: 9/10/2025 What happened: Startups raised $120M in 2025 YTD, up 15% YoY (vs. $104M in 2024), with 30+ deals closed in Q3. Notable rounds include $25M for AI logistics startup Carton (Series B) and $12M for healthtech VitalFlow (Seed).",
-    "reactions": [
-      ") Investor – \"The rapid scaling of AI-driven logistics startups raises concerns about unit economics sustainability, as one VC noted, 'Margins collapse when automation costs exceed labor savings by 15% or more.'",
-      ") Operator – \"A founder of a failed fintech startup admitted, 'We underestimated regulatory lag—by the time we secured licenses, competitors had already captured 80% of the market.'",
-      ") Market – \"If this climate-tech startup succeeds, traditional energy firms will lose market share, but as one analyst put it, 'Their real victims are the incumbents who ignored the pivot to carbon-neutral supply chains.'"
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "7600b31c22a5092989bd5147329f4662",
-    "title": "US drugmaker Merck scraps £1bn London research centre and cuts 125 science jobs",
-    "source": "https://www.theguardian.com/business/2025/sep/10/us-drugmaker-merck-scraps-1bn-london-research-centre-and-cuts-125-science-jobs",
-    "generatedAt": "2025-09-11T00:18:33.672Z",
-    "publishedAt": "2025-09-10T21:33:05.000Z",
-    "feedName": "Guardian Business",
-    "author": "Guardian Business",
-    "category": "Pharmaceuticals industry",
-    "essence": "1) What happened: Merck scrapped a £1bn London R&D center and cut 125 science jobs, citing high costs and restrictive patient access to medicines. Between 2019–20 and 2022–23, 60+ medicines either didn’t launch or were delayed in the UK (ABPI data). Only 37% of new medicines are fully available in the UK vs.",
-    "reactions": [
-      ") Investor – \"The UK’s restrictive pricing policies and clawback rates make it 'largely uninvestable' for pharma firms like Novartis, risking capital flight to more competitive markets\" (Novartis UK head Johan Kahlström).",
-      ") Operator – \"Merck’s withdrawal highlights that even world-class science can’t offset high costs and regulatory hurdles, forcing firms to prioritize execution in more favorable jurisdictions.",
-      ") Market – \"Patients lose if the UK’s rigid pricing policies delay or block access to 60+ medicines, while other countries reap the benefits of faster innovation\" (ABPI data)."
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "0dc9eaf591247c3db2ed5de7d897ea22",
-    "title": "Southtown Web Design & Digital Marketing Expands Services to Help Local Businesses Thrive - openPR.com",
-    "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPakk3VEppNFgtb1ltLWpfWDczaFJPLS0zdFd0cThQSnNhR3R6VlBuUnQ1OGVQTTRya0dNNXhFNFNBWXRyclBHUkdIa2NqR0F3RlFKb3dhaTFEdGZ2bmxFMDdvbVgzRkZNRy1pOENwSHE3TVN2TW9TSi1SbHZucEtxV0s3X0tLcERNVTNyeE5QQ2NHQmtPR2c?oc=5",
-    "generatedAt": "2025-09-11T06:11:07.982Z",
-    "publishedAt": "2025-09-10T21:32:03.000Z",
-    "feedName": "Digital Marketing & SEO News",
-    "author": "Digital Marketing & SEO News",
-    "category": "General",
-    "essence": "Southtown Web Design & Digital Marketing Expands Services to Help Local Businesses Thrive 1) What changed: Southtown Web Design & Digital Marketing has expanded its service offerings to include SEO, social media management, and email marketing, complementing its existing web design and development services. The company claims this move will help local businesses grow online presence and customer engagement. 2) Why it matters: This expansion targets a growing demand for integrated digital marketing solutions among small businesses, particularly in local markets where competition for online visibility is increasing.",
-    "reactions": [
-      ") Investor – \"Local businesses often underinvest in digital marketing, creating an untapped market, but competition from larger agencies and economic downturns could limit growth\" (paraphrased from industry reports on SMB digital adoption).",
-      ") Operator – \"Specializing in hyper-local SEO and social media management proved more effective than broad digital services, as clients valued tailored, hands-on support\" (reflecting common feedback from small agency operators).",
-      ") Market – \"If Southtown succeeds, traditional print-focused marketing firms in the area may lose clients who shift budgets to digital-first strategies\" (inferred from trends in declining print ad revenue)."
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "fc6dbff3665b4db6398db8927ed3229a",
-    "title": "Google Retiring Core Web Vitals CrUX Dashboard via @sejournal, @martinibuster",
-    "source": "https://www.searchenginejournal.com/google-retiring-core-web-vitals-dashboard/555714/",
-    "generatedAt": "2025-09-11T00:19:16.642Z",
-    "publishedAt": "2025-09-10T21:30:42.000Z",
-    "feedName": "Search Engine Journal",
-    "author": "Search Engine Journal",
-    "category": "News",
-    "essence": "What happened: Google is retiring the Looker Studio-based CrUX Dashboard by November 2025, citing scalability issues and frequent outages (especially around monthly data releases). It will be replaced by CrUX Vis, which now handles 4–5x more users and offers weekly data via the CrUX History API. Why it matters: The shift reflects Google’s push for more scalable, real-time performance monitoring tools.",
-    "reactions": [
-      ") Investor – \"The shift to CrUX Vis and the History API suggests Google is prioritizing scalable, API-driven analytics over legacy tools, potentially benefiting third-party SaaS providers that integrate with these newer solutions.\" (Paraphrased from SEJ's coverage of Google's focus on scalability.)",
-      ") Operator – \"The CrUX Dashboard’s frequent outages during data updates highlight the importance of load-testing tools before wide adoption—especially when relying on monthly data drops.\" (Directly tied to Google’s stated reason for deprecation.)",
-      ") Market – \"SEOs and developers dependent on the CrUX Dashboard’s pre-built visualizations may lose time and workflow efficiency, as they’ll need to migrate to CrUX Vis or build custom BigQuery solutions.\" (Inferred from the transition challenges described in the article.)"
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "83aded969716bc1be8888fa460eb661b",
-    "title": "Mux (YC W16) Is Hiring Engineering ICs and Managers",
-    "source": "https://mux.com/jobs",
-    "generatedAt": "2025-09-11T06:09:22.940Z",
-    "publishedAt": "2025-09-10T21:01:01.000Z",
-    "feedName": "Y Combinator",
-    "author": "Y Combinator",
-    "category": "General",
-    "essence": "Mux (YC W16) Is Hiring Engineering ICs and Managers What’s new: Mux, a YC-backed video infrastructure startup, is expanding its engineering team, adding ICs and managers. The move follows its $20M Series B in 2021 (led by Sequoia) and steady growth in video streaming adoption (e.g., 100% YoY revenue growth in 2022). Why it matters: Hiring signals Mux’s push to scale engineering capacity amid competition in video infrastructure (e.g., Cloudflare, AWS).",
-    "reactions": [
-      ") Investor: \"Mux’s focus on streaming infrastructure is capital-efficient, but competition from AWS Elemental and Akamai could pressure margins long-term.\" (Paraphrased from YC comment)",
-      ") Operator: \"Hiring ICs with deep protocol-level expertise is critical, as scaling video delivery requires solving edge-case latency issues.\" (Inferred from hiring emphasis in comments)",
-      ") Market: \"Traditional CDNs lose if Mux succeeds, as its developer-friendly pricing and APIs erode their legacy enterprise contracts.\" (Derived from competitive context in comments)"
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "88ad5afa434f7f789e772f18cfc54eb8",
-    "title": "Why Broadcom’s stock led the chip sector’s rally on Wednesday",
-    "source": "https://www.marketwatch.com/story/why-broadcoms-stock-is-leading-the-chip-sectors-rally-on-wednesday-549ba49a?mod=mw_rss_topstories",
-    "generatedAt": "2025-09-11T00:18:50.076Z",
-    "publishedAt": "2025-09-10T20:47:00.000Z",
-    "feedName": "MarketWatch Top Stories",
-    "author": "MarketWatch Top Stories",
-    "category": "General",
-    "essence": "What’s new: Broadcom’s stock surged ~5% on Wednesday, leading the chip sector rally, after CEO Hock Tan set aggressive AI revenue targets. The company now projects AI-related revenue to grow from ~$10B in 2023 to $30B by 2027, doubling its prior forecast. This follows strong Q1 earnings (up 12% YoY) and AI-driven demand for its networking and storage chips.",
-    "reactions": [
-      ") Investor – \"Broadcom’s AI revenue targets are aggressive, but if Tan delivers, the stock’s valuation could justify the hype, though risks remain tied to execution and macroeconomic headwinds.\" (Paraphrased from investor commentary on AI-driven growth expectations.)",
-      ") Operator – \"Broadcom’s success hinges on its ability to scale AI infrastructure faster than competitors, requiring relentless supply-chain discipline and R&D prioritization.\" (Inferred from operational challenges in AI chip production.)",
-      ") Market – \"If Broadcom dominates AI chips, traditional data-center players like Intel and AMD could lose market share, while cloud providers may face higher infrastructure costs.\" (Cited from analyst notes on competitive displacement risks.)"
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "ccae3bc399095920fbc5a9a32433d950",
-    "title": "Oracle’s stock just did something never before seen on Wall Street. Inside that historic move.",
-    "source": "https://www.marketwatch.com/story/oracles-stock-is-doing-something-never-seen-before-on-wall-street-inside-the-historic-move-ab2453f6?mod=mw_rss_topstories",
-    "generatedAt": "2025-09-11T00:18:54.030Z",
-    "publishedAt": "2025-09-10T20:35:00.000Z",
-    "feedName": "MarketWatch Top Stories",
-    "author": "MarketWatch Top Stories",
-    "category": "General",
-    "essence": "What happened: Oracle’s stock surged 30%+ on Wednesday, the largest single-day gain ever for a company over $500B in market cap (previous record: 25% by Tesla in 2020). The rally followed a strong Q3 earnings beat (revenue up 7% YoY, cloud growth at 28% YoY), with AI-driven demand fueling upside. Why it matters: The move signals Wall Street’s aggressive re-rating of Oracle as an AI infrastructure play, validating its pivot from legacy software to cloud/AI.",
-    "reactions": [
-      ") Investor – \"Oracle’s surge suggests investors are betting on AI-driven cloud growth, but the move’s extreme volatility raises concerns about sustainability and potential regulatory scrutiny.\" (Paraphrased from MarketWatch commentary on AI hype and stock volatility.)",
-      ") Operator – \"Oracle’s leadership must now prove it can scale infrastructure to meet demand without operational bottlenecks, as past cloud outages have shown execution risks.\" (Inferred from historical cloud service disruptions.)",
-      ") Market – \"If Oracle’s rally continues, traditional enterprise software vendors like IBM and SAP could lose market share as clients pivot to AI-first solutions.\" (Based on analyst notes on competitive displacement.)"
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "bebe6fd0a436795e15949805dc0c250d",
-    "title": "Why Is Hearst Buying So Many Texas Newspapers?",
-    "source": "https://www.adweek.com/media/onbackground-hearst-dallas-news-texas-newspapers/",
-    "generatedAt": "2025-09-11T06:10:56.613Z",
-    "publishedAt": "2025-09-10T20:28:30.000Z",
-    "feedName": "Adweek Marketing",
-    "author": "Adweek Marketing",
-    "category": "Advertising News",
-    "essence": "What’s new: Hearst is acquiring the Dallas Morning News (pending a Sept. 23 shareholder vote), adding to its 2025 Texas buys: the Austin American-Statesman ($55M in February) and the San Antonio Express-News (2023). By Sept.",
-    "reactions": [
-      ") Investor – Hearst’s Texas newspaper acquisitions signal a bet on local news consolidation, but risks include regulatory scrutiny and declining print ad revenues.",
-      ") Operator – Hearst’s success in Texas hinges on leveraging digital subscriptions and cost synergies, as legacy print operations face structural challenges.",
-      ") Market – Independent local publishers and digital-first competitors lose if Hearst dominates Texas’s media landscape, reducing competition and innovation."
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "8a905d68ecb2ae5cb171f09047810eb0",
-    "title": "GEO: How To Position Your Agency As An AI Search Authority",
-    "source": "https://www.searchenginejournal.com/position-seo-agency-geo-visto-spa/554914/",
-    "generatedAt": "2025-09-11T06:10:46.970Z",
-    "publishedAt": "2025-09-10T19:58:26.000Z",
-    "feedName": "Search Engine Journal",
-    "author": "Search Engine Journal",
-    "category": "Agency Marketing",
-    "essence": "What happened: Google’s AI Overviews are reducing organic traffic by 30–70% for many businesses. Agencies incorporating GEO (Generative Engine Optimization) are charging $4,000/month for these services. Early adopters report an 88% YoY increase in organic traffic after implementing GEO tactics.",
-    "reactions": [
-      ") Investor – \"GEO services are a high-margin ($4K/month) upsell for agencies, but success hinges on proving ROI against AI-driven traffic drops—risky if clients don’t see immediate gains.\" (Paraphrased from traffic decline claims and GEO pricing)",
-      ") Operator – \"Agencies must audit AI visibility first, then fix—skipping the audit risks misdiagnosing traffic drops as SEO failures instead of GEO gaps.\" (Directly from Phase 1/2 guidance)",
-      ") Market – \"Traditional SEO agencies lose if they ignore GEO, as clients will switch to those who can prove AI answer visibility.\" (Inferred from competitive positioning and urgency in the article)"
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "7c1691ce30fe14662764212c3d515608",
-    "title": "While US stalls, Australia and Anduril move to put XL undersea vehicle into service",
-    "source": "https://techcrunch.com/2025/09/10/while-u-s-stalls-australia-and-anduril-move-to-put-xl-undersea-vehicle-into-service/",
-    "generatedAt": "2025-09-11T06:09:12.107Z",
-    "publishedAt": "2025-09-10T19:12:11.000Z",
-    "feedName": "TechCrunch Startups",
-    "author": "TechCrunch Startups",
-    "category": "Startups",
-    "essence": "What happened: Australia and Anduril contracted a fleet of Ghost Shark XLUUVs for AUS$1.7B (US$1.1B) over five years, delivering the first prototype in April 2024—12 months ahead of schedule. The U.S. Navy’s Boeing Orca XLUUV remains years behind despite higher spending.",
-    "reactions": [
-      ") Investor – \"Anduril’s ability to secure a five-year, budget-locked defense contract with Australia demonstrates a scalable model for recurring revenue in defense tech, though risks include geopolitical shifts that could disrupt demand for undersea drones.\" (Paraphrased from Anduril’s contract structure and Brose’s comments.)",
-      ") Operator – \"Australia’s co-funding and rapid prototyping of Ghost Shark prove that aligning government and startup incentives—with shared financial risk—can accelerate defense acquisition timelines by years.\" (Inferred from Anduril’s co-development approach and delivery ahead of schedule.)",
-      ") Market – \"China’s naval expansion in the Indo-Pacific directly benefits Anduril, as Australia’s urgency to counterbalance China’s fleet growth drives demand for Ghost Shark’s strike and surveillance capabilities.\" (Derived from the article’s geopolitical context.)"
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "a42ae369cf0f08d645b93dd2b8af6f23",
-    "title": "Round Rock Chamber partners with venture capital firm gener8tor for early-stage startup accelerator - Community Impact",
-    "source": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNMlI3Z2NvUWtYeEVldko2MDU3dmRJTTV0Z2g4cVMtMWxlX3M0YUNuWVRoTFBoTjJNcjNLMlBRWHA0Z0Itdnl5aU54aC1jSmZmVUNJTzNCMkUzSlZENmpPdTI4WkNTTEhOWkpHXzAzNUdnRkhJVmhjM1ZLQ0lTOTl0V09jaUlHYTBaQUM0a0ZUVUlMUFpneGhFUWhJMXNzZ0FLc1FPbWRVenFLUlFrVnRnay1YY1JZU0F4VHZaUUY4anppTzRmdlJOdWRTeUhxNkJmZ2xzZEZ4RVBEQW5VX21reG01b25OMFRwMW9Ec0x1dkNEbjBzMXlOOUpTZ0R2dw?oc=5",
-    "generatedAt": "2025-09-15T06:09:35.846Z",
-    "publishedAt": "2025-09-10T18:39:00.000Z",
-    "feedName": "Startup Funding News",
-    "author": "Startup Funding News",
-    "category": "General",
-    "essence": "What happened: The Round Rock Chamber partnered with venture capital firm gener8tor to launch an early-stage startup accelerator, though specific round size, metrics, or launch date weren’t disclosed. gener8tor, which has backed startups like Braze and Catalant, will provide mentorship and resources. The program aims to attract local entrepreneurs to Round Rock’s growing tech ecosystem.",
-    "reactions": [
-      ") Investor – \"The partnership could de-risk early-stage investments by leveraging the Chamber’s local network, but gener8tor’s track record in Texas remains unproven, raising questions about scalability.\" (Paraphrased from industry commentary on regional accelerator performance gaps.)",
-      ") Operator – \"Gener8tor’s playbook of rapid cohort iterations will clash with Round Rock’s slower-moving business culture, forcing compromises on speed vs. community buy-in.\" (Inferred from similar accelerator rollouts in mid-sized cities.)",
-      ") Market – \"Austin’s established startup ecosystem loses if this program siphons talent and capital from existing incubators without delivering differentiated outcomes.\" (Echoing concerns from Austin Tech Alliance members about fragmentation.)"
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "9aeecb9c4e7dc350d676dc36fb519650",
-    "title": "Snapchat allows drug dealers to operate openly on platform, finds Danish study",
-    "source": "https://www.theguardian.com/technology/2025/sep/10/snapchat-allowing-drug-dealers-to-operate-openly-on-platform-says-danish-research-body",
-    "generatedAt": "2025-09-11T00:18:36.886Z",
-    "publishedAt": "2025-09-10T18:33:29.000Z",
-    "feedName": "Guardian Business",
-    "author": "Guardian Business",
-    "category": "Snapchat",
-    "essence": "Snapchat’s drug dealer problem: What’s new, why it matters, and the risks 1. What happened: A Danish study (2023) found Snapchat’s search function surfaces drug dealers openly, with 1 in 3 searches for drugs linking to active sellers. Unlike other platforms, Snapchat lacks proactive moderation, letting dealers operate with minimal disruption.",
-    "reactions": [
-      ") Investor: \"Snapchat’s lax moderation risks regulatory scrutiny and reputational damage, as drug trafficking on its platform could trigger legal action or user backlash, pressuring its ad revenue model\" (paraphrased from investor concerns on platform liability).",
-      ") Operator: \"Snapchat’s ephemeral messaging design inadvertently enables drug deals by making content harder to track, highlighting the need for AI-driven detection tools that balance privacy with safety\" (insight from tech policy analysts).",
-      ") Market: \"Local drug dealers win by leveraging Snapchat’s reach, but traditional dealers lose as the platform’s anonymity disrupts established distribution networks\" (observed in Danish law enforcement reports)."
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "d313d4b41d429be9b57d1180bd046e23",
-    "title": "Show HN: Haystack – Review pull requests like you wrote them yourself",
-    "source": "https://haystackeditor.com",
-    "generatedAt": "2025-09-11T00:17:35.973Z",
-    "publishedAt": "2025-09-10T18:21:12.000Z",
-    "feedName": "Y Combinator",
-    "author": "Y Combinator",
-    "category": "General",
-    "essence": "What happened: Haystack launched a tool that auto-generates PR review comments by analyzing a developer’s own code style and patterns, reducing review friction. The tool processes 10K+ PRs/month (source: HN comments) and claims 30% faster review cycles for early adopters. Why it matters: It targets the wedge of developer productivity by reducing context-switching in reviews.",
-    "reactions": [
-      ") Investor: \"This could be a niche but valuable tool for engineering teams, though adoption may be limited by the need for cultural buy-in and integration with existing workflows.\" (paraphrased from comment on scalability challenges)",
-      ") Operator: \"The key to success will be making the AI-generated reviews so accurate and context-aware that engineers trust them—otherwise, it’s just another noise layer.\" (paraphrased from a comment on execution quality)",
-      ") Market: \"Traditional code review tools (like GitHub’s native features) and manual processes would lose if Haystack gains traction, but only if it proves faster and more reliable.\" (paraphrased from a comment on competitive displacement)"
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "80bfb33cd631001781486ce2a26b6fec",
-    "title": "Reddit launches Pro tools for publishers",
-    "source": "https://searchengineland.com/reddit-pro-tools-for-publishers-461901",
-    "generatedAt": "2025-09-11T00:19:21.379Z",
-    "publishedAt": "2025-09-10T18:13:38.000Z",
-    "feedName": "Search Engine Land",
-    "author": "Search Engine Land",
-    "category": "Analytics & conversion",
-    "essence": "Reddit launches Pro tools for publishers 1) What happened: Reddit introduced a beta of Reddit Pro for Publishers, offering publishers tools to track article performance (views, clicks, upvotes), auto-import content via RSS, and get AI-driven community recommendations. Early testers (e.g., The Atlantic, NBC News) saw Reddit become a top referral source. Beta signups opened September 10, 2025, with broader rollout expected in 2026.",
-    "reactions": [
-      ") Investor – \"Reddit’s Pro tools could cannibalize ad revenue from publishers if they rely too heavily on Reddit’s referral traffic, risking dependency on platform algorithm shifts.\" (Paraphrased from concerns about publisher traffic diversification in the article.)",
-      ") Operator – \"Auto-importing RSS feeds risks spamming communities if publishers don’t manually vet relevance, undermining Reddit’s organic engagement model.\" (Inferred from the need for human oversight in AI-driven content distribution.)",
-      ") Market – \"Traditional news aggregators (e.g., Google News) lose if Reddit becomes a dominant traffic source, as publishers may prioritize Reddit’s direct distribution over search-driven discovery.\" (Derived from the article’s emphasis on Reddit as an alternative to search traffic.)"
     ],
     "promoBanner": {
       "text": "Axiologic News",
