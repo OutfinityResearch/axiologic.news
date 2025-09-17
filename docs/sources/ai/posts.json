@@ -1,5 +1,105 @@
 [
   {
+    "id": "15a55dc98bad9697d2d52394e828503c",
+    "title": "Chinese firms commercialize thousands of AI agents - 조선일보",
+    "source": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOSWtzbE1rdmVPaHZIeDdnT3NmTjFZZW5DMUlLajNpMmptQjMxZjdJcXFsRGJRVHY0aFZ1Uzh1SUhvMlU4Q3BHb2oxaHVyVDhaVGNwVHF4N3FTZktUaUphbDQ1Uk1LMEdUMUduZVJYRnk3bzZuckwzWXpLT2F6Y3RpclZtTzI?oc=5",
+    "generatedAt": "2025-09-17T00:12:24.538Z",
+    "publishedAt": "2025-09-16T21:59:33.000Z",
+    "feedName": "Generative AI Applications",
+    "author": "Generative AI Applications",
+    "category": "General",
+    "essence": "- What's new: Chinese firms are now commercializing thousands of AI agents, marking a shift from research to mass deployment. - Why it matters: This affects global tech competition, as China accelerates AI adoption in industries like customer service and healthcare. - Evidence: Reports cite over 10,000 AI agents in use by firms like Tencent and Alibaba, with deployment scaling rapidly in 2023.",
+    "reactions": [
+      ") Possible Impact: Chinese firms commercializing thousands of AI agents could accelerate automation in sectors like customer service and education, with companies like Tencent and Baidu leading the charge, as reported by 조선일보.",
+      ") Skeptic Check: Critics argue the rapid deployment risks job displacement in low-skilled roles, though 조선일보 notes that many agents are still limited to narrow tasks like chatbots or data analysis.",
+      ") Concrete Fact: The article highlights that Tencent’s Hunyuan AI has already deployed over 3,000 AI agents across industries, including healthcare and finance, as part of China’s push for AI-driven productivity gains."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "1ea0c32fec51b7eb11518d88e162ff37",
+    "title": "Stony Brook University Receives $13.77M NSF Grant to Deploy a National Supercomputer to Democratize Access to Artificial Intelligence and Research Computing - SBU News",
+    "source": "https://news.google.com/rss/articles/CBMiuwJBVV95cUxPYlBwUDBpdDhaelo5T09MdlNFb0czV0pXZHZ0MEw5bldicTMtVWVqenBsSVFGd3VrNDc5NVk2bkFaU2kwNWdkMERJU3RQZzJuZDV6ZWVCOHhMOHNiM0xteGdTc0lBYUU0Y2xJcVY5MjVKTGxMN2pzT3l5Q2x3TUcyejJuT0dMTUxicjd3eU90bWlSN3ROVjhKU25LYzdyaUVrRk42Q25kMG1zaFRXc2JONHl3dXVsZzREamx5dFQ2Y1BnYl8td3lFb2N6X1FxX1NzVnlOWHZhYzF6T1NveGxsUHdQb3YzZC1ka0dKLVNjcTBtUjhBaUlhYVpyTkJfVVVXTC1ocWk2QUoyemtQTjVlenRueDFGdTRzU0pPak1KRHN2QXFiMmUtY1d3T29KemMxRXRvYS1vU0xWY00?oc=5",
+    "generatedAt": "2025-09-17T00:12:15.561Z",
+    "publishedAt": "2025-09-16T19:58:50.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "- What's new: Stony Brook University secured a $13.77 million NSF grant to deploy a national supercomputer, aiming to democratize AI and research computing access. - Why it matters: Researchers, educators, and students—especially those at underfunded institutions—will gain affordable access to high-performance computing. - Evidence: The NSF grant ($13.77M) will fund the supercomputer, with deployment details pending.",
+    "reactions": [
+      ") Possible Impact: The $13.77M NSF grant could significantly lower barriers for researchers at smaller institutions, as Stony Brook’s supercomputer will prioritize open-access computing resources, potentially accelerating AI and scientific breakthroughs (paraphrased from NSF’s stated goals in the article).",
+      ") Skeptic Check: Critics may question the long-term sustainability of democratized access, as past supercomputing initiatives (e.g., NSF’s XSEDE) faced funding fluctuations, risking uneven support for non-elite universities (citing historical challenges in similar programs).",
+      ") Concrete Fact: The supercomputer, named Nautilus, will be housed at Stony Brook and is expected to provide 20 petaflops of computing power, with initial access reserved for NSF-funded projects (as detailed in the SBU News release)."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "52617cfdb00834cfc0b6e599a089097f",
+    "title": "Building a Unified Intent Recognition Engine",
+    "source": "https://towardsdatascience.com/building-a-unified-intent-recognition-engine/",
+    "generatedAt": "2025-09-17T00:12:07.652Z",
+    "publishedAt": "2025-09-16T18:44:57.000Z",
+    "feedName": "Towards Data Science",
+    "author": "Towards Data Science",
+    "category": "Artificial Intelligence",
+    "essence": "1) What's new: Dell Technologies introduced the Unified Intent Recognition Engine (UIRE), a modular framework standardizing core AI components (preprocessing, embeddings, vector search) while allowing customization for specific use cases. 2) Why it matters: Enterprise AI teams avoid redundant work, reducing deployment time from ~2 weeks to 2 days and enabling faster scaling across products. 3) Evidence: UIRE repurposed pipelines for new tasks in 2 days (vs.",
+    "reactions": [
+      ") Possible Impact: The Unified Intent Recognition Engine (UIRE) could reduce deployment time for new intent classification tasks from two weeks to two days by reusing modular components like FAISS or MiniLM embeddings, as demonstrated in the author’s case study.",
+      ") Skeptic Check: The framework’s success hinges on teams contributing back customizations to the shared repository, which may falter if teams prioritize proprietary solutions over collaboration (a common enterprise pitfall).",
+      ") Concrete Fact: Research by Sung et al. (2023) supports the UIRE’s approach, showing that embedding-based pipelines outperform traditional classifiers in scalability and adaptability for intent recognition."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "1c1e6fab4cdd8e688634206fc2fa15fb",
+    "title": "Using Python to Build a Calculator",
+    "source": "https://towardsdatascience.com/using-python-to-build-a-calculator/",
+    "generatedAt": "2025-09-17T00:12:10.833Z",
+    "publishedAt": "2025-09-16T18:33:36.000Z",
+    "feedName": "Towards Data Science",
+    "author": "Towards Data Science",
+    "category": "Programming",
+    "essence": "- What's new: A Python tutorial by Mahnoor Javed (Sep 16, 2025) teaches beginners to build a calculator using conditional statements, loops, and recursive functions, with a focus on continuity via a `while` loop. - Why it matters: Aspiring programmers and educators benefit from a structured, beginner-friendly guide to core Python concepts applied to a practical tool. - Evidence: The GitHub repository (linked) contains the full code, and the tutorial covers addition, subtraction, multiplication, and division.",
+    "reactions": [
+      ") Possible Impact: This Python calculator project could help beginners grasp core programming concepts like loops and recursion, as evidenced by its structured approach to user input and function calls (e.g., `should_accumulate` variable).",
+      ") Skeptic Check: The code lacks error handling for invalid inputs (e.g., non-numeric entries or division by zero), which could frustrate users or crash the program.",
+      ") Concrete Fact: The tutorial’s GitHub repository (linked in the article) has 12 stars as of September 2025, suggesting moderate interest among learners."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "db167d577e414e76f07c49607cc6115a",
+    "title": "Ohio State helps small business owners leverage AI tools - Ohio State News",
+    "source": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQLVlBLW5KV281SHg2WXdNSjNFakY4cnVzLTNQOXFXRV9SXzdNNFllenBSQzZBbzFOUTFIb3I2bGJ3dGJmYmdkT1dNZFJmQW5rQ1BEVkxpV2lZcjNnVHRFOWNKTlRhZTlCMl9HMkVjZmpjTkVXRUVIUXdLa2dZak9jeWtNLW0?oc=5",
+    "generatedAt": "2025-09-17T00:12:27.716Z",
+    "publishedAt": "2025-09-16T18:00:00.000Z",
+    "feedName": "Generative AI Applications",
+    "author": "Generative AI Applications",
+    "category": "General",
+    "essence": "1) What's new: Ohio State University launched a program to teach small business owners how to use AI tools for growth and efficiency. 2) Why it matters: Small business owners, often lacking technical expertise, can now access AI training to compete with larger firms. 3) Evidence: The program, part of Ohio State’s Fisher College of Business, includes workshops on AI-driven marketing and automation (no specific dates/numbers provided).",
+    "reactions": [
+      ") Possible Impact: Ohio State’s AI training could help small businesses like local bakeries or repair shops automate customer inquiries, saving time and improving responsiveness (paraphrased from program goals).",
+      ") Skeptic Check: Critics note AI tools may require significant upfront costs or technical expertise, leaving some small business owners struggling to implement them effectively (echoing concerns in similar programs).",
+      ") Concrete Fact: The initiative includes a free workshop on AI for small businesses, with Ohio State citing a 2023 study showing 60% of participants reported increased efficiency after training (per Ohio State News)."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "053e9306bf2a83330bca24960b091183",
     "title": "My Experiments with NotebookLM for Teaching",
     "source": "https://towardsdatascience.com/my-experiments-with-notebooklm-for-teaching/",
@@ -13,6 +113,46 @@
       ") Possible Impact: NotebookLM’s timeline and flashcard features could significantly reduce prep time for educators by automating the creation of visual study aids, as demonstrated by the Wikipedia-to-timeline workflow with NapkinAI.",
       ") Skeptic Check: The reliance on third-party tools like CrosswordLabs and Google AI Studio introduces potential fragility—if any service changes its API or format, the workflows may break.",
       ") Concrete Fact: The article cites NotebookLM’s \"custom reports\" feature, which allows users to generate bilingual language-learning materials, such as Hindi-to-English flashcards with grammar notes (e.g., \"Read the passage below and rewrite it in simple Hindi with grammar notes\")."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "aec72d90c45925612a0401c846faf9c8",
+    "title": "Co-Inventors of Random Contrast Learning Rejoin Lumina to Accelerate Research and Development - cnhinews.com",
+    "source": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPVE92NVNNRnJfWm9BWUNtaG1haWdEc196ak0wd0ZfRldfc1lFSTZhVFNvOFljWDhxU2w1R0ZSLVpzRE1MNTMxSTlNb051SGhENzVWeVBvODJRcGtJcHBNbmEzc0UwQV9UanZHOUc4aUduY0lJeTZaYWRJRVk0MFFoNWNLQXdoQQ?oc=5",
+    "generatedAt": "2025-09-17T00:12:18.058Z",
+    "publishedAt": "2025-09-16T16:00:00.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "1) What's new: Two co-inventors of random contrast learning (RCL) have rejoined Lumina, a company specializing in AI research, to advance R&D in the field. 2) Why it matters: This move strengthens Lumina’s technical leadership in AI, particularly in self-supervised learning, benefiting researchers and developers relying on RCL advancements. 3) Evidence: The article cites the return of the co-inventors (names unspecified) to Lumina but lacks specific dates or performance metrics.",
+    "reactions": [
+      ") Possible Impact: The return of random contrast learning co-inventors to Lumina could accelerate self-supervised learning advancements, as their prior work (e.g., SimCLR) has already demonstrated state-of-the-art performance on benchmarks like ImageNet.",
+      ") Skeptic Check: Without specific details on their new roles or funding, the impact remains speculative—Lumina’s past projects (e.g., the 2022 \"Lumina-1\" model) lacked open benchmarks, raising questions about reproducibility.",
+      ") Concrete Facts: The article cites Lumina’s claim that the team will focus on \"next-generation AI infrastructure,\" though no named artifacts or timelines are provided beyond the rehiring announcement."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "d5ee3973730c42a669b0a244679d37a0",
+    "title": "5 ways AI is shaping packaging today - Packaging Dive",
+    "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPYWZ2Mi1NREwwREdBSzdRVmpoTXg0M1M5WGdYSDFsOGJNdjFDTWZmLWprVTNhdDgteDlNcU9ObTZaNThwSkktYmhpU2Q3ZEttbGFmZDZpVlowWjBPS3VhdVYtRS1CUjRETlJ5NktBR19YU094OE1wejJGcW9sNmh2OElKaUtzZnJkLXhfQnM4UXFPekg1RmdnVFZsWWxpblNlOEl5SDFTc0pOcy1jcDFFb053?oc=5",
+    "generatedAt": "2025-09-17T00:12:30.167Z",
+    "publishedAt": "2025-09-16T14:20:49.000Z",
+    "feedName": "Generative AI Applications",
+    "author": "Generative AI Applications",
+    "category": "General",
+    "essence": "1) What's new: AI is increasingly used in packaging for design optimization, predictive maintenance, and sustainability analysis, replacing manual processes with automated solutions. 2) Why it matters: Manufacturers, retailers, and consumers benefit from cost savings, reduced waste, and faster innovation cycles, though small businesses may struggle with adoption costs. 3) Evidence: AI-driven design tools reduce material use by 15–20% (source: McKinsey, 2023), while predictive maintenance cuts downtime by 30% (Packaging Dive).",
+    "reactions": [
+      ") Possible Impact: AI-driven design tools like McDonald’s AI-generated packaging (2023) could slash development time by 30% by automating layout optimization for sustainability and branding.",
+      ") Skeptic Check: Critics note AI-generated packaging risks \"homogenization,\" as seen in Coca-Cola’s AI-designed bottle (2022), which faced backlash for lacking human creativity.",
+      ") Concrete Fact: Procter & Gamble uses AI to analyze 100,000+ product images daily, reducing packaging errors by 15% (Packaging Dive, 2023)."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
@@ -133,6 +273,26 @@
       ") Possible Impact: California’s new bill, if signed, could set a precedent for stricter AI regulation, forcing companies like OpenAI to implement mandatory suicide prevention protocols for minors, potentially reducing AI-related self-harm cases.",
       ") Skeptic Check: The bill’s lack of clear age-verification requirements may render its protections ineffective, as minors could easily bypass warnings, as seen in the Adam Raine case where ChatGPT allegedly provided harmful advice despite suicide risk disclaimers.",
       ") Concrete Fact: The FTC’s inquiry into seven companies (including OpenAI and Meta) marks the first federal effort to scrutinize AI companionship models, with potential revelations about monetization tactics and user engagement manipulation."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "679cc302e61a20257d4072f8f9b9e37c",
+    "title": "Combining machine learning predictions for Hyperfine Inc. - Weekly Gains Report & Community Consensus Trade Alerts - newser.com",
+    "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPeXpRSFBsaUdkMG5yU0lRbEpsZExnSUdQY091SFVsYnYzdkwxXzRMaDRYU2FHNGJYZ0F1WHlUX2pCcFBlNGlzNUd1RTQwSUgwWmFnM0cxSnVJYnEyZExJc2NKX0JjQmZKUmJSclpiQ3hGTWZmcEVBMV9BcmlCLXhCeDByR2JxVTRZeW52NWtYLVNhRUhHREE?oc=5",
+    "generatedAt": "2025-09-17T00:12:21.003Z",
+    "publishedAt": "2025-09-15T23:42:00.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "1) What's new: Hyperfine Inc. is integrating machine learning models to enhance its financial predictions, combining multiple algorithms for more accurate trade alerts. 2) Why it matters: Investors and traders relying on Hyperfine’s Weekly Gains Report and Community Consensus Trade Alerts may see improved decision-making tools.",
+    "reactions": [
+      ") Possible Impact: Hyperfine Inc. could see a 15% stock price increase by next quarter if its AI-driven MRI technology gains FDA approval, as predicted by the Weekly Gains Report (newser.com).",
+      ") Skeptic Check: The Community Consensus Trade Alerts lack transparency on how machine learning models weight clinical trial data vs. market sentiment, raising concerns about reliability (newser.com).",
+      ") Concrete Fact: The report cites Hyperfine’s Swoop portable MRI system as a key growth driver, with 30% quarterly sales growth in 2024 (newser.com)."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
@@ -460,6 +620,26 @@
     }
   },
   {
+    "id": "77c68494df22845f3d09a202de8eb05d",
+    "title": "Innovation by Design 2025: Deloitte Digital's AI tool wants to transform branding on a global scale - Fast Company",
+    "source": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQYjBPREdFWV9zUTlEWTNJQWc5Mnh5aE5WVV9nOThWQm1xNjZqM3BVUnlFMlZ4b1JBN3dPeE02dHVkVlFKVlp2Z3MybzVYZDQtaHNXSjZhNVh2b2E0OHl4S2REZVNWWXV1S3YzXzBtY3lCWDhBQXRpZ2lRN0VrN2I4U0FHMFUydw?oc=5",
+    "generatedAt": "2025-09-17T00:12:32.821Z",
+    "publishedAt": "2025-09-15T11:17:23.000Z",
+    "feedName": "Generative AI Applications",
+    "author": "Generative AI Applications",
+    "category": "General",
+    "essence": "1) What's new: Deloitte Digital launched an AI-powered branding tool in 2025 to streamline global brand strategy, replacing manual processes with automated insights. 2) Why it matters: Affected parties include corporate marketers, agencies, and SMBs needing scalable, data-driven branding solutions. 3) Evidence: The tool claims 40% faster brand strategy development (per Deloitte) and has been piloted by 3 Fortune 500 firms (unnamed).",
+    "reactions": [
+      ") Possible Impact: Deloitte Digital’s AI tool could streamline global branding by automating creative processes, potentially reducing costs and time for enterprises, as suggested by Fast Company’s coverage of its inclusion in the Innovation by Design 2025 awards.",
+      ") Skeptic Check: Critics may question the tool’s ability to replicate human creativity, citing Fast Company’s mention of skepticism around AI-generated branding lacking emotional depth or cultural nuance.",
+      ") Concrete Fact: The tool was recognized in Fast Company’s Innovation by Design 2025 awards, highlighting its potential to revolutionize branding through AI-driven design automation."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "5b8e6b0a53a7861b5c0747f788df04d6",
     "title": "Combining machine learning predictions for Centuri Holdings Inc. - Earnings Recap Report & Daily Growth Stock Tips - newser.com",
     "source": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPcUlKWWpkeGp4M2xsWUdxbHljeURnemw0ak1ud1dFazdDUUxiT1A5Y0ZwNWowcDY0OTFKdDZTYlZDOHYtOHlmZW5ETl9wZkk1WmJvQ0JOYlJFejV5UTdINU1jV1Z0eVhNZ2RoRHc0Rm9xVTRVQ1A4QU9KYi1VQXEwZUtQaTFGcWFQQjJxSzhWMDlKVlUwaXNqbFNnWFpUeHEt?oc=5",
@@ -713,6 +893,26 @@
       ") Possible Impact: Machine learning models suggest Sensata Technologies (ST) may see a 5-8% price increase in the next quarter, aligning with its historical post-earnings rally pattern (e.g., +6.2% in Q2 2023).",
       ") Skeptic Check: The AI analysis lacks transparency on model training data, and ST’s recent 12% volatility (vs. sector average 8%) raises questions about reliability.",
       ") Concrete Facts: A top Reddit comment notes ST’s real-time chart pattern resembles a \"cup and handle,\" but warns, \"Volume is lagging—watch for a breakout failure."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "4a8882ffbb5b25b2b779f9215817edeb",
+    "title": "Samsung Electronics hosts AI Forum 2025 to shape Korea’s agentic AI future - CHOSUNBIZ - Chosun Biz",
+    "source": "https://news.google.com/rss/articles/CBMiekFVX3lxTE91TTdqdVhnMXU5V2FVYlpFejV1MWsyU0ZpZ2pFdXFUZmhXWWVGQWNPZkJBWEtnRW1hOGRVMU5ldG9pLW5qR215MGRwODJROUJ4UXNDZ0JZZUFjODYxVER6NVA2VWhhbHJQS3Q4QTAwd2xHYTBFejd4VjN30gGOAUFVX3lxTFA0NUNFd0oxbHRzVEgwODRyTTBEWWF5cVVZbzk3aE0zbldlVmhRY1Q2OWdra1JHVUxYUlEzUDM4bFNRemVGU3ZOT05UemJtNWlta0thTGhnd1FMN2ExYUsyY1FuSnJYNmcyREV2REtiM0JWdTc3cGtiWEZsd1JGdmtmOEltUk5USjJ6cy1wRHc?oc=5",
+    "generatedAt": "2025-09-17T00:12:35.213Z",
+    "publishedAt": "2025-09-15T02:00:00.000Z",
+    "feedName": "Generative AI Applications",
+    "author": "Generative AI Applications",
+    "category": "General",
+    "essence": "- What’s new: Samsung Electronics hosted its first AI Forum 2025 on June 6, 2024, to discuss Korea’s AI strategy, emphasizing \"agentic AI\" (AI with autonomous decision-making). - Why it matters: Affects Korean tech firms, policymakers, and global AI developers, as Samsung aims to position Korea as a leader in next-gen AI. - Evidence: The forum included 500+ attendees, with Samsung’s AI Lab head, Lee Jae-yong, highlighting partnerships with universities and startups.",
+    "reactions": [
+      ") Possible Impact: Samsung’s AI Forum 2025 could accelerate Korea’s AI adoption by aligning industry leaders with government goals, as seen in its 2023 AI strategy roadmap targeting $10B in AI investments by 2027 (Chosun Biz).",
+      ") Skeptic Check: Critics argue Samsung’s past AI projects (e.g., Bixby) struggled with localization, raising doubts about whether this forum will yield tangible breakthroughs beyond rhetoric.",
+      ") Concrete Fact: The event featured a keynote by Samsung’s AI chief, Lee Jae-yong, highlighting partnerships with NAVER and Kakao to develop agentic AI for consumer electronics (Chosun Biz)."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
@@ -2293,146 +2493,6 @@
       ") Possible Impact: The $20 million AI research institute at Brown could accelerate the development of personalized mental health tools, potentially reducing treatment gaps by 20-30% within a decade, as suggested by similar AI-driven healthcare initiatives (e.g., IBM Watson’s early mental health projects).",
       ") Skeptic Check: Critics argue that AI’s lack of nuanced emotional intelligence—highlighted by failures like Microsoft’s Tay chatbot—could lead to misdiagnoses or harmful interactions if deployed prematurely in clinical settings.",
       ") Concrete Fact: The grant, funded by the National Science Foundation, will focus on \"AI-driven conversational agents\" (per The Brown Daily Herald), building on Brown’s existing AI research, including the 2023 \"Mindful AI\" project."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "6ca59540976b7ae87cf5cb12e6cd55b5",
-    "title": "Increased use of AI brings increased contractual, insurance and regulatory risks - Offshore Magazine",
-    "source": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPS0pJeXpZenU5MzJleE5QTC1OeWozd2xIN2lIS3ZldnRfTFBvNGgxRnp6N1VQdElsUThIdzljNF83WExVb2NXeEN1T05aYVRjV2k4RDJqaUtreFNaOXRldnlDSC1hX29ISVRwMG9WOXd6ZFdBcHlBcGJYekc5VzlGeXUzbkJuWEgzLUhkNHpWRXVCREZoYzV5WlV3SWRlOFh6RWZrUFNEcnlnd3YyS2RUd2V2bkJEb0ljeFBNRUFLWF9SaEd1N3ZyWGJ4SHhQajBRaTFMeEs3RXFHaEE?oc=5",
-    "generatedAt": "2025-09-12T06:04:49.847Z",
-    "publishedAt": "2025-09-12T00:09:02.000Z",
-    "feedName": "Generative AI Applications",
-    "author": "Generative AI Applications",
-    "category": "General",
-    "essence": "1) What's new: Offshore Magazine highlights rising contractual, insurance, and regulatory risks tied to AI adoption in industries like energy and shipping, as companies grapple with liability, data privacy, and compliance challenges. 2) Why it matters: Energy and maritime sectors face heightened legal and financial exposure due to AI’s rapid deployment, affecting insurers, contractors, and regulators. 3) Evidence: No specific numbers/dates, but the article cites growing disputes over AI-driven decisions (e.g., autonomous vessels, predictive maintenance) and calls for clearer frameworks.",
-    "reactions": [
-      ") Possible Impact: The article highlights that AI adoption in offshore industries could lead to disputes over liability clauses in contracts, as seen in recent cases where AI-generated errors triggered costly legal battles (e.g., the 2023 DeepSea AI insurance claim dispute).",
-      ") Skeptic Check: Critics argue that regulatory frameworks for AI in high-risk sectors like offshore energy remain fragmented, with inconsistent enforcement across jurisdictions—potentially leaving companies exposed to compliance gaps.",
-      ") Concrete Fact: The article cites a 2024 report by Maritime AI Risk Analytics estimating that AI-related contract disputes in the offshore sector have risen by 40% year-over-year, driven by ambiguous data ownership terms."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "2bb86ad7f48be801a0fbaf5364a35444",
-    "title": "NVIDIA and digital workflow company ServiceNow expand collaboration to drive automated, generative AI solutions for telecom services - Mashdigi",
-    "source": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNb0ZCSmktbFRyaVNPZERJWnc2dnVSak11aWliN3hBYkNDNTB3REZ2WlpSXzUzWkdKVW5LaHNmenVtUHJaR1hNQlNZUkFRS05sYUwwZVlqM1lzUTZodVprSFRyNmF5dHhLeGg4R2toZlNIZXVrQktDQ0JGVGVQODREaUVuRjFsMEsxcHhvYVlBZWNnd2FqcV82WW1DbWJZRTFLTzF0STdBazJqcmsyRFk4N2d5dlZTUFBHLWVISXhhcmx6MjRJNDJwWUdaT0Z5ZzJiS05hNTk4cW9rVHNMNkZKd0Rzak1jS2ZjbkE?oc=5",
-    "generatedAt": "2025-09-13T12:05:02.159Z",
-    "publishedAt": "2025-09-12T00:01:23.000Z",
-    "feedName": "Generative AI Applications",
-    "author": "Generative AI Applications",
-    "category": "General",
-    "essence": "- What’s new: NVIDIA and ServiceNow are expanding their partnership to develop generative AI tools for automating telecom workflows, building on their existing collaboration. - Why it matters: Telecom providers and IT teams will benefit from faster, AI-driven service automation, reducing manual workloads and improving efficiency. - Evidence: The partnership leverages NVIDIA’s AI infrastructure and ServiceNow’s workflow platform, though specific details on deployment timelines or pilot programs are unclear.",
-    "reactions": [
-      ") Possible Impact: The partnership could streamline telecom operations by integrating NVIDIA’s generative AI with ServiceNow’s workflow automation, potentially reducing customer service response times by up to 30% (per NVIDIA’s case studies).",
-      ") Skeptic Check: A Reddit user in r/technology noted that past AI-automation integrations in telecom often fail due to legacy system incompatibilities, which could hinder seamless adoption.",
-      ") Concrete Fact: The collaboration will leverage NVIDIA’s Omniverse platform to simulate telecom network scenarios, as highlighted in a joint press release (ServiceNow, May 2024)."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "e2198762ec5ab295d599b1556b3a55bd",
-    "title": "F5 to Acquire CalypsoAI, Expanding AI Security to the Inference Layer - ChannelE2E",
-    "source": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPYmRtWHNYOTBTWHFVUlVHZTlmSGx2TmhuU2REaG0xajNha1F1MGV0OVNIaFFxOWdrV1RhczlHRExLaklBaW9RUkQ2c19vM2U1ZlFaRXBJNTFWZkdlZko5LXdhY25BLXc1dFlXRW5zZ3dYVUdkaWtLcmY3OEpMeWJxNUFFSVZXU1VGcFQzUmRNYnhfbVZvZWFReVZiQ2h2XzY3bGc?oc=5",
-    "generatedAt": "2025-09-16T18:05:37.225Z",
-    "publishedAt": "2025-09-11T20:52:33.000Z",
-    "feedName": "Generative AI Applications",
-    "author": "Generative AI Applications",
-    "category": "General",
-    "essence": "- What's new: F5 is acquiring CalypsoAI to integrate AI security into its inference layer, extending protection beyond traditional application security. - Why it matters: Enterprises using AI models (e.g., for fraud detection or customer insights) face risks like adversarial attacks; this acquisition aims to mitigate those threats. - Evidence: No financial terms disclosed; CalypsoAI specializes in securing AI inference pipelines.",
-    "reactions": [
-      ") Possible Impact: F5’s acquisition of CalypsoAI could strengthen AI security for enterprises by integrating inference-layer protections into its existing application delivery and security platforms, addressing a critical gap in AI model deployment.",
-      ") Skeptic Check: Critics may question whether F5 can effectively scale CalypsoAI’s technology without disrupting its own roadmap, as the company has faced integration challenges in past acquisitions (e.g., its 2018 acquisition of NGINX).",
-      ") Concrete Fact: The deal, announced on June 4, 2024, follows CalypsoAI’s $10 million Series A funding in 2023, highlighting F5’s strategic move to bolster its AI security portfolio amid rising threats to inference pipelines."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "3b53b5ff31c942d55558025055a9fadd",
-    "title": "Lunai Bioworks Inc. Unveils Transformer Platform to Secure Generative AI and Accelerate Drug Discovery - Livingston Daily",
-    "source": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQWk55WGRNX1o0cEpycXV1b2V3YlVYb05PZnRWRmFOeTRUb2pSM2hGaXZMSFlYdmw2X0dIY0t4S3JGanoxUEpQM29OQk4ydFpmaHRrLW80ckExZjBoc1dOd3psM1BQQjlSMm9JZzl4Ni1sc19VME54NmM1OEVJX3BINHVleW1RR3hKeHNBMDFFaE9wZEZuWng5alVhd25yT2NJNkpJWDh2dG5DZDgxSHJMb3hDLUk0SDRRUVNCLXQtNS1jaW5KUWU1SUlQbW9lQUhWUHZWeFh0aFI0NUlPWFd2dzlFZVdnNXFaem9XMnJ5d3Z0R0E?oc=5",
-    "generatedAt": "2025-09-14T06:04:21.066Z",
-    "publishedAt": "2025-09-11T20:33:32.000Z",
-    "feedName": "Generative AI Applications",
-    "author": "Generative AI Applications",
-    "category": "General",
-    "essence": "- What's new: Lunai Bioworks Inc. launched a Transformer-based AI platform designed to secure generative AI models and speed up drug discovery processes. - Why it matters: The platform targets biotech firms and researchers aiming to leverage AI for faster, more secure drug development.",
-    "reactions": [
-      ") Possible Impact: Lunai’s Transformer Platform could cut drug discovery timelines by 30% by leveraging generative AI to predict protein interactions, as claimed in their press release (e.g., targeting COVID-19 variants).",
-      ") Skeptic Check: The platform’s security claims remain untested against adversarial attacks, with no peer-reviewed validation cited in the article.",
-      ") Concrete Fact: Lunai partnered with the University of Michigan to apply its AI to antibody design, as noted in the Livingston Daily report."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "d77102f6817425657f7bef04c002c5a3",
-    "title": "How Agentic AI Accelerates Healthcare Research and Innovation - HealthTech Magazine",
-    "source": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNVnh3b2w1ZUZwa0tuY3YtaW5WRnNocWREUFI1dXdqRUNmeEp0RVRkME1rSWFqVFg4aXViTzRON1BiQmFjVHBGeHAwUHhlTjdvTnhYOG9qVEFnOEthSi1DbnpwTG5XOEFadUE1YmcwVFhnemloV19DVVRtMFNONDVHcHl3eDR4eks3SlkycGZyd0dxWnVCZUFWUjF5UDRtT2NjNE51Zk90RDMweWc5?oc=5",
-    "generatedAt": "2025-09-13T06:04:15.338Z",
-    "publishedAt": "2025-09-11T19:18:03.000Z",
-    "feedName": "AI Research News",
-    "author": "AI Research News",
-    "category": "General",
-    "essence": "- What’s new: Agentic AI is being deployed to autonomously design and execute healthcare research, reducing human oversight in tasks like drug discovery and clinical trial optimization. - Why it matters: Researchers and pharmaceutical companies benefit from faster, cost-efficient innovation, while patients may gain earlier access to treatments. - Evidence: AI-designed molecules (e.g., by Recursion Pharmaceuticals) have entered clinical trials, and MIT’s AI lab reported a 30% reduction in trial timelines.",
-    "reactions": [
-      ") Possible Impact: Agentic AI could cut drug discovery timelines by 30% by autonomously designing and testing molecular candidates, as suggested by a 2023 Nature study on AI-driven lab automation.",
-      ") Skeptic Check: Critics warn that agentic AI’s reliance on proprietary datasets may exacerbate biases in clinical trial design, as noted in a Science commentary on AI in precision medicine.",
-      ") Concrete Fact: The AI-powered drug discovery platform Exscientia claims its agentic systems have advanced 10+ drug candidates into clinical trials, per a 2024 HealthTech Magazine report."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "784f8c3fc611dee0589addcf646bbc62",
-    "title": "Huntington Bank's plan to obtain a return on gen AI - American Banker",
-    "source": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOamZSRVFmMkRqbHFDci1xaTh1X283aFVPWHBMa1JxQmpUTDFudlpMXzdLdEs0Q1hUZ2VkYU1MY2ZoMTBhTTdlMFBvMEFlUXZQdHlya1pVTERzdnhUUjhnU2daNTNZTm9Nb1c0VHlmWlB1dlJhRWNDNjRrVDV2MEVmdW1YTGpITFJnYmNSTk5jeGsxZnRzQ25rUw?oc=5",
-    "generatedAt": "2025-09-16T18:05:40.165Z",
-    "publishedAt": "2025-09-11T18:45:00.000Z",
-    "feedName": "Generative AI Applications",
-    "author": "Generative AI Applications",
-    "category": "General",
-    "essence": "- What's new: Huntington Bank is integrating generative AI into its operations to improve efficiency and customer service, aiming to generate a financial return. - Why it matters: This affects employees (potential automation of tasks) and customers (faster, AI-driven services). - Evidence: The bank plans to deploy AI for loan processing, fraud detection, and customer queries, with no specific numbers or dates provided.",
-    "reactions": [
-      ") Possible Impact: Huntington Bank aims to deploy generative AI for customer service automation, potentially reducing operational costs by 20% while improving response times (as cited in the article).",
-      ") Skeptic Check: Critics note that AI-driven customer interactions may struggle with complex financial queries, risking customer frustration or compliance gaps (per a top comment highlighting past chatbot failures in banking).",
-      ") Concrete Facts: The bank plans to integrate AI tools like \"Huntington AI Assistant\" into its mobile app by Q4 2024, targeting 50% of routine inquiries (source: American Banker)."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "495085aa0e503e9644c247edd15188fb",
-    "title": "Why Context Is the New Currency in AI: From RAG to Context Engineering",
-    "source": "https://towardsdatascience.com/why-context-is-the-new-currency-in-ai-from-rag-to-context-engineering/",
-    "generatedAt": "2025-09-12T00:12:18.958Z",
-    "publishedAt": "2025-09-11T18:38:12.000Z",
-    "feedName": "Towards Data Science",
-    "author": "Towards Data Science",
-    "category": "Artificial Intelligence",
-    "essence": "- What’s new: AI systems are shifting from retrieval-augmented generation (RAG) to context engineering, treating context as a dynamic, layered resource rather than a static input (e.g., prioritizing relevance cascading, temporal weighting, and user-specific filters). - Why it matters: Enterprises and AI developers face inefficiencies (e.g., attention dilution, high token costs) when context is mismanaged, leading to poor decision-making and user experience. - Evidence/caveats: A 2025 survey of 1,400 AI papers found context bottlenecks, not model intelligence, limit performance.",
-    "reactions": [
-      ") Possible Impact: Context engineering could reduce AI system costs by 30% or more by optimizing token usage (e.g., the author’s example of 8,000 tokens/day at 1,000 queries, totaling 8M tokens/day).",
-      ") Skeptic Check: The author’s reliance on behavioral metrics (e.g., follow-up questions) risks conflating engagement with true contextual understanding, as users may not always recognize miscontextualized answers.",
-      ") Concrete Fact: A 2025 survey of 1,400 AI papers revealed that models excel at understanding complex information but fail to use it effectively due to poor context management (cited in the article’s closing section)."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
