@@ -1,5 +1,85 @@
 [
   {
+    "id": "4c7056681dffea72f144ced6f5a58bdb",
+    "title": "Rapid Prototyping of Chatbots with Streamlit and Chainlit",
+    "source": "https://towardsdatascience.com/rapid-prototyping-of-chatbots-with-streamlit-and-chainlit/",
+    "generatedAt": "2025-09-18T14:05:08.072Z",
+    "publishedAt": "2025-09-18T14:00:00.000Z",
+    "feedName": "Towards Data Science",
+    "author": "Towards Data Science",
+    "category": "Artificial Intelligence",
+    "essence": "What's new: A blog post by Chinmay Kakatkar (Sep 18, 2025) compares building chatbot prototypes using Streamlit and Chainlit, detailing their respective pros and cons for rapid prototyping. Why it matters: This affects developers choosing frameworks for building chatbot applications, highlighting tradeoffs between ease of use for chat-centric apps (Chainlit) and integration into broader applications (Streamlit). Evidence: The post presents code examples and screenshots comparing Streamlit and Chainlit implementations, demonstrating features like message streaming and feedback handling.",
+    "reactions": [
+      "Streamlit and Chainlit enable rapid chatbot prototyping, with Chainlit offering superior asynchronous handling and built-in chat features, as the article demonstrates through end-to-end demos comparing the frameworks' capabilities in handling user prompts like \"What is the formula to convert Celsius to Fahrenheit?\".",
+      "Chainlit's relative immaturity, evidenced by a smaller community and potential for breaking changes, poses a risk for projects needing robust stability and extensive third-party integration, as noted in the author's discussion of the framework's pros and cons.",
+      "The article contrasts the frameworks' approaches to handling concurrent operations, highlighting Chainlit's use of Python's `async` and `await` keywords for smoother user experience in complex applications, unlike Streamlit's synchronous communication which reruns the app script with each interaction."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "1d707414c5bcf3a39b69153a90198725",
+    "title": "Qualcomm Taps Adobe GenStudio to Optimize Content Supply Chain with Generative AI - FinancialContent",
+    "source": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPWlhVU25naUNzQzZZOThoZF9fSjRCaTk2ck9XWm90S05PVG9SajJhN0pUdUJGQjVxejlOcXlWTDBrX3ljeHlDeDZhUms5Wm5sRFh0UUlRZDV3dnVkaHFqYzBlTHBudkhZR3daeGV1MjhRQ2ExRW1vQk1hT2V1czJjd2wwUElEVDkwdGFLWGxzUmtjLVp0YUEzakRPS1BoVThyWExxWDB2NFNFaTV5Q2luMGJ5MVd2bDU2RUZ6a19vYVc4TVFubjQ5MkZvQjZvNXZaa1JFbWR6VE5JaUxtZnhTWGg0SQ?oc=5",
+    "generatedAt": "2025-09-18T14:05:36.222Z",
+    "publishedAt": "2025-09-18T13:00:00.000Z",
+    "feedName": "Generative AI Applications",
+    "author": "Generative AI Applications",
+    "category": "General",
+    "essence": "What's new: Qualcomm is integrating Adobe GenStudio, a generative AI platform, into its content supply chain to streamline content creation and distribution. Why it matters: This partnership affects Qualcomm's internal operations and potentially its marketing and communications strategies, aiming for improved efficiency and reduced content production costs. It also signals a broader industry trend of leveraging generative AI for content optimization.",
+    "reactions": [
+      ") This partnership could significantly reduce Qualcomm's content creation costs and lead times by automating aspects of their supply chain using Adobe GenStudio's generative AI capabilities.",
+      ")  The success hinges on the quality and scalability of Adobe GenStudio's AI models to handle the specific demands of Qualcomm's diverse content needs; a failure to integrate seamlessly would negate the benefits.",
+      ") Qualcomm aims to optimize its content supply chain, leveraging Adobe GenStudio's generative AI features for unspecified improvements in efficiency."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "7ed360356debd73c865542f8eaffb4b6",
+    "title": "From Amnesia to Awareness: Giving Retrieval-Only Chatbots Memory",
+    "source": "https://towardsdatascience.com/from-amnesia-to-awareness-giving-retrieval-only-chatbots-memory/",
+    "generatedAt": "2025-09-18T14:05:11.877Z",
+    "publishedAt": "2025-09-18T12:30:00.000Z",
+    "feedName": "Towards Data Science",
+    "author": "Towards Data Science",
+    "category": "Artificial Intelligence",
+    "essence": "What's new: A new method uses a lightweight Large Language Model (LLM) to rewrite ambiguous follow-up questions in retrieval-only chatbots, enabling natural multi-turn conversations. Why it matters: This affects users of retrieval-only chatbots, improving their conversational experience by allowing for more natural, contextual dialogue without sacrificing the accuracy and content control of these systems. It's particularly relevant for government agencies like those using the VICA platform.",
+    "reactions": [
+      "Adding an LLM-based query rewriter to retrieval-only chatbots, as demonstrated in the VICA platform, allows for natural multi-turn conversations without sacrificing the accuracy and content control of a human-vetted knowledge base.",
+      "The effectiveness of the LLM-based query rewriting hinges on the quality of the LLM and its ability to accurately interpret conversational context; a poorly performing LLM could lead to incorrect or irrelevant responses.",
+      "The article cites the example of a user asking \"What about in Germany?\" as a follow-up to a weather query, highlighting the limitation of stateless retrieval systems and the need for contextual understanding."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "e8c5d0d10f215bb6eb62fdf0aeddb560",
+    "title": "The Download: AI-designed viruses, and bad news for the hydrogen industry",
+    "source": "https://www.technologyreview.com/2025/09/18/1123830/the-download-ai-designed-viruses-and-bad-news-for-the-hydrogen-industry/",
+    "generatedAt": "2025-09-18T14:05:02.623Z",
+    "publishedAt": "2025-09-18T12:10:00.000Z",
+    "feedName": "MIT Technology Review - AI",
+    "author": "MIT Technology Review - AI",
+    "category": "The Download",
+    "essence": "What's new: Researchers used AI to design new viral genetic codes, successfully replicating several viruses that kill bacteria, as detailed in a preprint paper. Why it matters: This development has implications for creating new treatments and accelerating research into engineered cells; however, it also raises concerns about the potential for AI-designed biological weapons. The hydrogen industry is facing setbacks due to project cancellations and delays, impacting energy transition goals.",
+    "reactions": [
+      "AI-designed viruses, as demonstrated by the California research team's successful replication of several viruses that kill bacteria, could revolutionize medicine and accelerate research into engineered cells.",
+      "The success of AI-designed viruses raises concerns about potential misuse, as highlighted by the \"impressive first step\" comment from experts,  potentially leading to the creation of dangerous biological weapons.",
+      "The International Energy Agency's report reveals that numerous major hydrogen projects face cancellations and delays, particularly in the US due to changes in tax credits and reduced support for renewable energy."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "b34ebf41bf29924448db58ad32958884",
     "title": "Clean hydrogen is facing a big reality check",
     "source": "https://www.technologyreview.com/2025/09/18/1123818/hydrogen-reality-check-china/",
@@ -340,6 +420,26 @@
     }
   },
   {
+    "id": "a3833f23081362054990cce46e77f953",
+    "title": "AI News: Artificial Intelligence Trends And Top AI Stocks To Watch - Investor's Business Daily",
+    "source": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQMTVTWnJlZkpsVU9ZV0g1WHdKQVBKOFFvcUpPeTJuMW9iT2FTMWI1N2hMYk1ud1cwQlBEVlJObDFVTnpoNnBhejJrZnVFelQ5V3NNRklrM2RlaHUtc2NsbmxWcVV1MWVzd082RUdTYmtJVW9MUmJRTG5sV1dJN3JCd1JNX2Z4VnZtV3VpbzdrNXdKNTVSc3FB?oc=5",
+    "generatedAt": "2025-09-18T14:05:20.657Z",
+    "publishedAt": "2025-09-17T15:02:00.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "What's new: Investor's Business Daily published an article highlighting current artificial intelligence trends and suggesting top AI stocks for investors to monitor. Why it matters: The article is relevant to investors interested in the AI sector, providing potential investment opportunities and insights into market trends. It impacts individuals considering investing in AI-related companies.",
+    "reactions": [
+      ")  Increased AI adoption across various sectors, driven by advancements in large language models and generative AI, is likely to boost the market value of associated companies significantly in the coming years, potentially creating new investment opportunities.",
+      ")  The article's focus on stock market performance rather than technological breakthroughs presents a risk of overlooking crucial ethical or societal implications of rapid AI development.",
+      ")  Investor's Business Daily highlights several top AI stocks to watch, including Nvidia, a company whose GPU technology is crucial for training many large AI models."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "8f3fc32cfcc37c2b1942ede47f666cb3",
     "title": "Google’s new Windows search app hints at AI future - Rolling Out",
     "source": "https://news.google.com/rss/articles/CBMiekFVX3lxTE41bWVqYVpqSllIUUtxN2Q0czJkZGJ2bEZXR2lTWi0zajJkQUNQNWhuOVYyMDZnZUhScE5YcFpyV21pSWZuR1RoMk5adHpzQm5BNVM1UnY4enN5elJNTl9GeFE5b3N2RHFIMS16MnBqR1F6TjlUSU1zTWVB?oc=5",
@@ -373,6 +473,26 @@
       ") Possible Impact: Implementing the \"Trust Sandwich Framework\" (e.g., Morningstar’s layered approach) could reduce AI-related lawsuits by 30% by ensuring fairness, resilience, and transparency are measurable, as seen in their 92% accuracy model with a 70% fairness score.",
       ") Skeptic Check: Shane Murray’s warning that dashboards alone fail to catch silent pipeline corruption (e.g., schema changes or stale data) highlights a critical blind spot in many AI observability tools, risking undetected failures.",
       ") Concrete Fact: The IEEE paper \"Data Trust Score\" (cited in the article) formalizes a composite metric integrating accuracy, fairness, and resilience, offering a tangible benchmark for trustworthy AI deployment."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "0c97db2f3dedf7debe86a92621ea0346",
+    "title": "AI is bad at data. This startup can fix that - Fast Company",
+    "source": "https://news.google.com/rss/articles/CBMingFBVV95cUxQVzJoNGppdWFRaG5meG40X25YaTRtVnlkZ3Q2V0cxOFBnNDNqR2cxRnJ0MERpTUc1YWtKcUpqUm5Vdl9DR0lPOFVtQnl2WFNVQkt1Y1pRZU9Ebkk4bzM0enJWSHFsSlhHUzFLeTh2TG82cnZSZXJjbmlMUm9XUzVtVnVid2R0REY5Nmh4TTZUUWdSam5Cc3kybE1pc1Zqdw?oc=5",
+    "generatedAt": "2025-09-18T14:05:42.470Z",
+    "publishedAt": "2025-09-17T13:09:44.000Z",
+    "feedName": "Generative AI Applications",
+    "author": "Generative AI Applications",
+    "category": "General",
+    "essence": "What's new: The startup, unnamed in the provided text, has developed technology to improve the quality of data used to train AI models. Why it matters: This impacts businesses and researchers reliant on AI, as improved data quality leads to more accurate and reliable AI outputs. Poor data quality currently hinders AI performance across many sectors.",
+    "reactions": [
+      ")  Fixing AI's data handling issues, as claimed by the Fast Company article about the unnamed startup, could significantly improve the reliability and accuracy of generative AI applications, potentially leading to wider adoption in various sectors.",
+      ") The article lacks specifics on the startup's technology and its demonstrable impact, raising concerns about the feasibility and scalability of its proposed solution.",
+      ")  The Fast Company article highlights the problem of AI's struggles with data, implying a significant market need for improved data management solutions within the generative AI space."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
@@ -473,6 +593,26 @@
       ") Possible Impact: MongoDB’s AI-powered platform could accelerate modernisation for SMEs by automating database migrations, as highlighted by SMBtech’s focus on streamlining legacy systems.",
       ") Skeptic Check: The platform’s Australian-built components may face adoption hurdles if integration with global MongoDB services proves inconsistent, per user concerns about regional latency.",
       ") Concrete Facts: The launch follows MongoDB’s $1.2B investment in AI tools last year, with the new platform touting \"real-time schema recommendations\" (SMBtech)."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "ea2ea9d730a791af2de9bbc5e49196b3",
+    "title": "Why enterprises need Search AI now: A preview of ElasticON Bengaluru - CNBC TV18",
+    "source": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOU0FzdUdIeFBJdUpUWDRCdU5kNk8yVm44bGdZUFVDemFibDctYVl3N0YtaEktdGRGSl9JX1duZHpYakZVMERnVHZITXhFOXhYVDZMbDRRMGkxaWQ5dExfZXF0V3QtX3BhNFN2VWdsa0tFM0NfZmtRWC1PZDhwS21GZjMxWlRVbDdKUFVPRlF3WGdNa1hQeHRuTnNPTEJJUjEyUGJQXzhrdXA2bXBKdlFkSHRPQjd1XzDSAbwBQVVfeXFMTl9WeHJyQ0k1SU5TMDBicnhyb3duSmhUd3NGTkNCZzZUYU0xVXJPckRWWVNhOWVnclNhRkFoc3BfX21ldlA3dEZNdVpkMEpWbXZhNGV4bERsWUtUWUJaMFNQS2NXREhNRjFLazFrVmxNU1NGbFZMTms4eDl5RXdqQ0tBa2Y0cEFlVDJFWWFMalowSnhoTTRVYllaRjJZVWdyOTdmT1p5bXFmeFdDRm5FR0lXTjJKcEM1TWNBbjA?oc=5",
+    "generatedAt": "2025-09-18T14:05:39.488Z",
+    "publishedAt": "2025-09-17T09:25:54.000Z",
+    "feedName": "Generative AI Applications",
+    "author": "Generative AI Applications",
+    "category": "General",
+    "essence": "What's new: ElasticON Bengaluru showcased advancements in enterprise search AI, integrating AI capabilities into existing search functionalities to improve relevance and efficiency. Why it matters: This impacts enterprises of all sizes by streamlining data access, boosting productivity, and potentially reducing operational costs associated with inefficient information retrieval. Improved search capabilities directly affect employees' ability to find needed information quickly.",
+    "reactions": [
+      "Possible Impact (but realistic):  Elasticsearch's advancements in search AI could significantly improve enterprise data accessibility and analysis, leading to faster, more informed decision-making, as suggested by the CNBC TV18 preview of ElasticON Bengaluru.",
+      "Skeptic check (weak spot or risk):  The article lacks concrete examples of how this improved search AI will address specific enterprise challenges beyond general claims of enhanced data accessibility, raising concerns about the practical impact and potential overselling.",
+      "Concrete facts from news:  The CNBC TV18 article previews ElasticON Bengaluru, highlighting the company's focus on integrating AI into its search technology."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
