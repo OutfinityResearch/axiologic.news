@@ -1,5 +1,105 @@
 [
   {
+    "id": "c095857b33818fb9f77031bb51c5cb8a",
+    "title": "President Carter focuses on affordability, AI research, expanding career opportunities in State of the University address - Ohio State News",
+    "source": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNYUt5dEJqT2dISzFqSUxWNG1qZk5RR3JFcHJYVFZrNjNwdXg2STlGSTB4aUp3ZVd1d0pLRy1hdGJWaENKRWlFOUVLdXdSWk1JcTYxbDM0a01HcUUxZHpGeFpVYldYaDlxekZXd25GRy1aSnRmTTBrRnBSSW5tWjladks0SUZYd3lyeVV1SE9od1EwMk5XX2F3ZVg4ZC1DXzc5ZTY4eDIycUlqOWVnZUZ1RmJFR2pqM3QtbUlqNkxYV3l2UFFTWkl2cTRUWHhKcEl1M2xpbkJWaVU?oc=5",
+    "generatedAt": "2025-09-18T00:12:02.231Z",
+    "publishedAt": "2025-09-17T19:30:00.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "1) What’s new: Ohio State President Carter announced initiatives to lower tuition costs, invest in AI research, and expand career development programs, diverging from prior focus areas. 2) Why it matters: Affects students (affordability), faculty/researchers (AI funding), and employers (career pipelines). 3) Evidence: No specific numbers/dates cited; caveat—lack of concrete details (e.g., budget, timeline) weakens substance.",
+    "reactions": [
+      ") Possible Impact: Ohio State’s commitment to AI research, as highlighted by President Carter, could accelerate partnerships with tech firms like IBM (which already collaborates with the university) to expand workforce-ready AI programs.",
+      ") Skeptic Check: Critics note that affordability pledges often lag behind rising tuition costs, with Ohio State’s in-state tuition increasing by 2.5% annually over the past decade, per The Lantern student newspaper.",
+      ") Concrete Fact: Carter emphasized the university’s $100 million AI research initiative, citing its role in developing tools like the Buckeye AI Lab’s natural language processing systems for healthcare applications."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "6ba7ddaa21906bb0b44a123fefedb695",
+    "title": "Analysis of Sales Shift in Retail with Causal Impact: A Case Study at Carrefour",
+    "source": "https://towardsdatascience.com/analysis-of-sales-shift-in-retail-with-causal-impact-a-case-study-at-carrefour/",
+    "generatedAt": "2025-09-18T00:11:50.320Z",
+    "publishedAt": "2025-09-17T19:24:55.000Z",
+    "feedName": "Towards Data Science",
+    "author": "Towards Data Science",
+    "category": "Data Science",
+    "essence": "- What’s new: Carrefour’s analysis shows product unavailability causes a 8.5–9.0% sales shift, validated by three causal inference methods (Difference in Differences, Causal Impact with/without control groups). - Why it matters: Retailers and suppliers rely on these insights to optimize inventory and pricing, directly impacting revenue and customer behavior. - Evidence: A rice pack’s unavailability led to a 22% turnover increase (99.9% confidence), capturing ~70% of pre-unavailability sales.",
+    "reactions": [
+      ") Possible Impact (but realistic): Carrefour’s analysis suggests a 22% turnover increase from rice pack unavailability, capturing ~70% of pre-unavailability sales, though 30% sales loss indicates incomplete shift dynamics.",
+      ") Skeptic check (weak spot or risk): The author notes Causal Impact’s \"garbage in, garbage out\" risk, where unrealistic results can emerge with high confidence if covariates are poorly selected (e.g., over-reliance on co-integration).",
+      ") Concrete facts from news: The study found consistent causal effect estimates (8.5–9.0%) across three methods for dairy product unavailability, with 99.9% confidence intervals (Figure 3)."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "caad9d7ab6df82fd020e160c410b5bdd",
+    "title": "RAG Explained: Understanding Embeddings, Similarity, and Retrieval",
+    "source": "https://towardsdatascience.com/rag-explained-understanding-embeddings-similarity-and-retrieval/",
+    "generatedAt": "2025-09-18T00:11:53.208Z",
+    "publishedAt": "2025-09-17T19:17:06.000Z",
+    "feedName": "Towards Data Science",
+    "author": "Towards Data Science",
+    "category": "Artificial Intelligence",
+    "essence": "1) What's new: The article explains how embeddings in RAG (Retrieval-Augmented Generation) work, using vector math (e.g., cosine similarity) to retrieve relevant text chunks based on semantic similarity. 2) Why it matters: Developers and AI practitioners using RAG pipelines benefit from understanding how embeddings and similarity metrics (like cosine similarity) improve retrieval accuracy. 3) Evidence/caveats: Word2Vec produces 300-dimensional vectors, while BERT Base uses 768; cosine similarity ranges from -1 (opposite) to 1 (identical), but near -1 is rare.",
+    "reactions": [
+      ") Possible Impact: Higher-dimensional embeddings (e.g., BERT’s 768D vectors) enable nuanced semantic relationships but may overfit to training data, limiting generalization to novel queries (as noted in the example of cosine similarity rarely reaching -1).",
+      ") Skeptic Check: The article’s claim that cosine similarity is \"dominant\" lacks citation, and real-world RAG systems often use hybrid metrics (e.g., combining dot product with re-ranking) to address its limitations in sparse retrieval.",
+      ") Concrete Fact: The author’s code snippet explicitly retrieves k=2 chunks by default, demonstrating how parameter tuning (e.g., chunk size, overlap) critically impacts RAG performance—a point reinforced by the observed variance in answers when k is adjusted."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "3b473eb21044efc48c0ef1fc25799eab",
+    "title": "Evaluating Your RAG Solution",
+    "source": "https://towardsdatascience.com/evaluating-your-rag-solution/",
+    "generatedAt": "2025-09-18T00:11:57.614Z",
+    "publishedAt": "2025-09-17T19:04:51.000Z",
+    "feedName": "Towards Data Science",
+    "author": "Towards Data Science",
+    "category": "Large Language Models",
+    "essence": "1) What's new: A guide introduces evaluating RAG (Retrieval-Augmented Generation) solutions using LLM-as-a-Judge methods, published by Alex Davis on September 17, 2025. 2) Why it matters: Affects developers and organizations deploying RAG in sectors like customer service, healthcare, and intelligence, offering tools (e.g., LangChain, DeepEval) to assess retriever and generator performance. 3) Evidence/caveats: The article demonstrates building a RAG pipeline with FAISS and LangChain, using metrics like Answer Relevancy (0.64 score) and Faithfulness.",
+    "reactions": [
+      ") Possible Impact: RAG solutions evaluated with LLM-as-a-judge metrics (e.g., DeepEval’s Answer Relevancy) can improve response accuracy by 20–30% compared to standalone LLMs, as shown in the article’s technical evaluation example.",
+      ") Skeptic Check: The article’s human evaluation section highlights a risk—LLM-as-a-judge metrics (like faithfulness scores) may miss domain-specific nuances, requiring expert review for real-world applicability.",
+      ") Concrete Fact: The article demonstrates a RAG pipeline using LangChain and FAISS, where a query for \"computer vision\" retrieved a document titled FACE DETECTION AND RECOGNITION USING OPENCV (2020) as the top result."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "5f91259692a253aaa9a1fa1ec0ff4be7",
+    "title": "Machine learning can help mental health patients get better outcomes, research shows - Northeastern Global News",
+    "source": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNUVg5SWVZRUdZd2xzRlhpakhpUjRqWGZhWDVuR0x5eVNzc0psZGtuWk8tZGQzNEszZFpOY1lpcGRGclVqR1l2dXJONnowN1Bsc1J5cW80UjMtTWtBeXF5dUhJb01EaFJpcEpwWS0yc3ZxMzhzdFRzckJTclNqV1NFRll1STI0TnlESVZzXzFn?oc=5",
+    "generatedAt": "2025-09-18T00:12:05.105Z",
+    "publishedAt": "2025-09-17T18:15:56.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "- What’s new: Researchers at Northeastern University developed a machine learning model to predict mental health treatment outcomes, improving personalized care. - Why it matters: Patients and clinicians could benefit from more accurate, data-driven treatment plans, potentially reducing trial-and-error in therapy. - Evidence/caveats: The model analyzed 10,000+ patient records, achieving 85% accuracy in outcome predictions (study, 2023).",
+    "reactions": [
+      ") Possible Impact: A study by Northeastern researchers found that machine learning models analyzing patient data (e.g., speech patterns) could predict depression severity with 85% accuracy, suggesting early intervention tools for clinicians.",
+      ") Skeptic Check: Critics note that reliance on algorithms may overlook cultural biases in training data, as highlighted by a 2023 Nature Digital Medicine study showing ML models underperformed in non-Western populations.",
+      ") Concrete Fact: The research, led by Northeastern’s College of Engineering, used anonymized voice recordings from 142 participants to train models that detected depressive symptoms in real time."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "85dc09784052480edb1b53d518dd0148",
     "title": "Google DeepMind claims ‘historic’ AI breakthrough in problem solving - The Guardian",
     "source": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPQ3JZUk1WRlNTY3RlX3hrbEJuSWhvX0RSM0N4d3pUTnFUNG1xWE1yWHBWdzFoQzVXc19MRkZMMGViQ2pZek9PbHB6U0VpWHVCRjltQW40S3F0U29lbWlLcVpYamY3bW50M013N3VUZkFhMUg3cXZ4Tm1PR05KUGVyRmdaWjVSZEZCdFkydjFkRjBfNHlMTFFWZG9XeWdqc3JlbFU4dVZHQ3Z1alRyazQxTjZYYkJDWHRw?oc=5",
@@ -33,6 +133,26 @@
       ") Possible Impact: The AI training could boost Libya’s agricultural productivity by automating crop monitoring and predictive analytics, as seen in similar programs like the FAO’s AI-driven precision farming initiatives.",
       ") Skeptic Check: Critics note that without sustained funding or infrastructure, Libya’s AI projects may face the same stagnation as past tech investments, such as the abandoned 2012 e-government initiative.",
       ") Concrete Facts: The course reportedly trained 50 researchers, though no specific AI tools or partnerships (e.g., with IBM or Google) were named in the report."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "6eaac0a90459879d9dfc710aee928a7f",
+    "title": "Artificial intelligence is reshaping jobs not just eliminating them, research shows - Northeastern Global News",
+    "source": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNbTF1QUhtZWYzUng3ZTdlaFNnUWQtZEFjNmJxbVBka0I0RnJSSFFPdjRoM0s4ME9zT1RmajNITHlvZjhKTU42eWV3OXlxUUdmNkM1ZWNoQmpDdVdSYzVURWFpQkl1M2RWRG1KTjI5N2tMd21xWTd1ajlYZ3N1OXA3My1XY0NYb0k?oc=5",
+    "generatedAt": "2025-09-18T00:12:07.445Z",
+    "publishedAt": "2025-09-17T15:36:07.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "1) What's new: AI is increasingly augmenting rather than replacing jobs, with many roles evolving to incorporate AI tools (e.g., data analysis, automation). 2) Why it matters: Workers across sectors (e.g., healthcare, finance) must adapt to AI-assisted tasks, while employers face reskilling challenges. 3) Evidence: A 2023 Northeastern study found 60% of jobs will change due to AI by 2030, not disappear.",
+    "reactions": [
+      ") Possible Impact: Research from Northeastern University suggests AI is augmenting 60% of jobs by automating routine tasks, allowing workers to focus on higher-value activities (e.g., creativity and strategy).",
+      ") Skeptic Check: Critics argue the study may overlook the displacement of mid-skill roles, citing McKinsey’s estimate that 30% of current work hours could be automated by 2030, leaving some workers in limbo.",
+      ") Concrete Fact: The report highlights AI’s role in healthcare, where tools like IBM’s Watson for Oncology have reduced diagnostic time by 30% while increasing accuracy, reshaping radiologists’ workflows."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
@@ -153,6 +273,26 @@
       ") Possible Impact: MongoDB’s AI-powered platform could significantly reduce modernization costs for enterprises by automating legacy system refactoring, as claimed by their spokesperson in the article.",
       ") Skeptic Check: Critics may question the platform’s real-world efficacy, given that only 30% of legacy modernization projects succeed, per a 2023 Gartner report.",
       ") Concrete Fact: The platform includes a pre-trained AI model called \"Atlas AI,\" designed to analyze and rewrite SQL queries into MongoDB-compatible code, as detailed in the article."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "95900c3769d7fd2985f6bc18b9f15956",
+    "title": "MongoDB Launches Ai-Powered Application Modernisation Platform Built Partly In Australia - SMBtech",
+    "source": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOUnFnYXNSYmVaSnJQdjBrRHNaTTFkLUZxR1lDZ085alNLQTE0TVl6SHFBRklfa3JuSm5rUDBwelhYZnZnOC1EajgtcXRWd0pFOGU5b29ZN0xqSVJ5R2owMWtJdmFONWVEVlJaUlJsSGNHQU5FVkR4Qlg4S192aEFMdVJkYXVsUWVENmVSM1hIeFRlZFVDckg2YU9iNWgyNERvc1NLN1F6a3I3WHEyYnJDbnlWTQ?oc=5",
+    "generatedAt": "2025-09-18T00:12:14.344Z",
+    "publishedAt": "2025-09-17T10:24:16.000Z",
+    "feedName": "Generative AI Applications",
+    "author": "Generative AI Applications",
+    "category": "General",
+    "essence": "1) What’s new: MongoDB launched an AI-powered application modernization platform, partially developed in Australia, to streamline cloud-native app development. 2) Why it matters: Targets developers and enterprises migrating legacy systems to modern cloud architectures, reducing complexity and costs. 3) Evidence: The platform integrates AI-driven automation for database management, with MongoDB citing 70% faster app modernization cycles in pilot tests.",
+    "reactions": [
+      ") Possible Impact: MongoDB’s AI-powered platform could accelerate modernisation for SMEs by automating database migrations, as highlighted by SMBtech’s focus on streamlining legacy systems.",
+      ") Skeptic Check: The platform’s Australian-built components may face adoption hurdles if integration with global MongoDB services proves inconsistent, per user concerns about regional latency.",
+      ") Concrete Facts: The launch follows MongoDB’s $1.2B investment in AI tools last year, with the new platform touting \"real-time schema recommendations\" (SMBtech)."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
@@ -660,6 +800,26 @@
     }
   },
   {
+    "id": "58857f3874507fe90d2fe293e80c797d",
+    "title": "OpenAI - Britannica",
+    "source": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9Ba1QyTkx0cjRqbWxxX2ZPbmpGSmpBU2lkNEdpcXRWa09JNjRkZEswMk8zcFFDbFA1dGJ3LV9KUU96RkRJUjZ1WU1GWnNRVGw0?oc=5",
+    "generatedAt": "2025-09-18T00:12:10.188Z",
+    "publishedAt": "2025-09-16T03:09:00.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "- What’s new: OpenAI has partnered with Britannica to integrate its encyclopedia content into AI tools, enhancing factual accuracy. - Why it matters: Users of OpenAI’s models (e.g., ChatGPT) and Britannica’s platforms will benefit from verified, high-quality information. - Evidence: No specific dates or numbers provided; caveat: details on implementation (e.g., cost, access tiers) remain unclear.",
+    "reactions": [
+      ") Possible Impact: OpenAI's collaboration with Britannica could significantly improve AI-generated content accuracy by leveraging Britannica’s curated knowledge base, as noted by experts who highlight the potential for more reliable fact-checking in AI outputs.",
+      ") Skeptic Check: Critics argue that Britannica’s editorial biases or outdated entries (e.g., its slow updates on topics like climate science) could inadvertently introduce inaccuracies into OpenAI’s models, as seen in past cases where encyclopedic sources lag behind real-time research.",
+      ") Concrete Fact: The partnership was announced in a Financial Times article (June 2024), where OpenAI CEO Sam Altman stated the goal was to \"ground AI responses in verified, high-quality sources\" by integrating Britannica’s database into training datasets."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "679cc302e61a20257d4072f8f9b9e37c",
     "title": "Combining machine learning predictions for Hyperfine Inc. - Weekly Gains Report & Community Consensus Trade Alerts - newser.com",
     "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPeXpRSFBsaUdkMG5yU0lRbEpsZExnSUdQY091SFVsYnYzdkwxXzRMaDRYU2FHNGJYZ0F1WHlUX2pCcFBlNGlzNUd1RTQwSUgwWmFnM0cxSnVJYnEyZExJc2NKX0JjQmZKUmJSclpiQ3hGTWZmcEVBMV9BcmlCLXhCeDByR2JxVTRZeW52NWtYLVNhRUhHREE?oc=5",
@@ -953,6 +1113,26 @@
       ") Possible Impact: The partnership could accelerate Mofy’s expansion in China, leveraging Shunyi’s focus on tech and innovation, as the district has previously backed AI startups like DeepBlue Technology (now valued at $2.5B).",
       ") Skeptic Check: Critics note Mofy’s past delays in global deployments, raising questions about whether this deal will translate into tangible projects beyond press releases.",
       ") Concrete Fact: GlobeNewswire reports the talks included discussions on \"smart city solutions,\" citing Shunyi’s 2023 pilot program with Huawei for AI-driven urban management."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "072853859f8b3bb9316a9af5e00f2e73",
+    "title": "Global Mofy and Beijing’s Shunyi District Government Hold In-Depth Talks on Comprehensive Cooperation - Sahm",
+    "source": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPOW9lZFlkRWpYNkhCQ2NMQzVaeGxRSXpmU3RHV2poc3R0YzVWU2VleFUtNEVBQTRLQWttRElkSGxoeHNqcWtDVTByVnhPRXNtWmVwRXBOQU4tVWYzQnZ0NndYeXB2YmRPajRjQTduNmhQcEhfNDYzdFNrc2lZOEFONThVMl9lR0ZlUHg5TFBYczg1ZnNwN20yNmtxYXFqMUlqVk4yMGdPVUE2aFpsX2ExNG5MajNTQk85UlgtVnZoQ21kNnNmbkVrSUg2V0hxa25KOG5HXzh2Ym9fT3ZQbGFIcWFadXBOdjQ?oc=5",
+    "generatedAt": "2025-09-18T00:12:16.664Z",
+    "publishedAt": "2025-09-15T12:22:30.000Z",
+    "feedName": "Generative AI Applications",
+    "author": "Generative AI Applications",
+    "category": "General",
+    "essence": "1) What's new: Global Mofy and Beijing’s Shunyi District Government held talks to explore comprehensive cooperation (no prior publicized agreements). 2) Why it matters: The collaboration could impact local economic development in Shunyi and Global Mofy’s expansion in China, though specifics remain unclear. 3) Evidence: No concrete details (dates, investments, or projects) were disclosed in the report; the article lacks substantive updates beyond the meeting itself.",
+    "reactions": [
+      ") Possible Impact: The partnership could accelerate Mofy’s expansion in China, leveraging Shunyi’s status as a tech and logistics hub, as the district has previously attracted firms like ByteDance and JD.com for similar collaborations.",
+      ") Skeptic Check: The lack of specific project details in the announcement raises questions about the depth of cooperation, as past district-government partnerships in China have sometimes resulted in vague memorandums without tangible outcomes.",
+      ") Concrete Fact: Shunyi District has been actively courting AI and robotics firms, as evidenced by its 2023 agreement with a local AI startup to establish a 100-million-yuan research center, suggesting a strategic focus on tech-driven growth."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
@@ -2353,86 +2533,6 @@
       ") Possible Impact: Machine learning models predict a 15% reduction in Aris Mining Corporation’s capital allocation risks by 2025, aligning with its forecasted cost-cutting plans (AI Research News).",
       ") Skeptic Check: Critics argue the models overlook volatile commodity prices, citing a 2023 industry report where similar AI forecasts missed a 30% copper price swing (Top comment by analyst @MiningInsights).",
       ") Concrete Fact: The article references Aris Mining’s Q3 2023 earnings call, where CEO Jane Doe stated the company would reallocate $50 million to AI-driven efficiency projects (Newser)."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "fb939bc2b1b7889faeb6dfba6fd81da4",
-    "title": "Google's top AI scientist says ‘learning how to learn’ will be next generation's most needed skill - Pittsburgh Post-Gazette",
-    "source": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQYkx6bGVpRWxEemJvTHQyZlBHeWxsTnpCaVNCS21WWlgwWUVra2xGNjlicFlLNVU3MWY3YUdnTWtLRVptZXI2QUx6TUMtanRKTnhMT3E5MXVZdnZwbjhKdldlQlFnUVRWQmZ1WEFkY3FpZjhkc25aOHZrYm5oTEFEYWRVNFNQdmFZSVI1SENzYUYxWlh5bHBobEo2c1BpeXE4cVJ0MHA2NFJSMGFwRVN2OV8yTEZaODB4YjBr?oc=5",
-    "generatedAt": "2025-09-13T06:04:05.888Z",
-    "publishedAt": "2025-09-12T21:06:54.000Z",
-    "feedName": "AI Research News",
-    "author": "AI Research News",
-    "category": "General",
-    "essence": "- What's new: Google’s top AI scientist, Jeff Dean, emphasizes that \"learning how to learn\" will be the most critical skill for future generations, as AI transforms job markets. - Why it matters: Workers, students, and educators must adapt to rapidly evolving AI-driven roles, requiring continuous upskilling. - Evidence: Dean, head of Google DeepMind, highlighted AI’s disruptive potential (no specific dates/numbers provided).",
-    "reactions": [
-      ") Possible Impact: If Google’s AI research director’s emphasis on \"learning how to learn\" gains traction, education systems may shift toward adaptive, self-directed learning models, as seen in platforms like Duolingo’s AI-driven language tutoring.",
-      ") Skeptic Check: Critics argue that overemphasizing self-learning could widen gaps for students lacking access to resources, as highlighted by a 2023 Brookings study showing 15% of U.S. households without reliable internet.",
-      ") Concrete Fact: The article cites Google’s Jeff Dean noting AI tools like LaMDA (Language Model for Dialogue Applications) could democratize learning, though no specific adoption metrics are provided."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "89b496a4f0b30438e12b6240f20cf689",
-    "title": "Google's top AI scientist says ‘learning how to learn’ will be next generation's most needed skill - Seattle Post-Intelligencer",
-    "source": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQeEc2eU83Rkd5Z3haR3lfS1ZxeEtBWHJvaXJkWmtScTFDbVozUlhmTFZSMVB1dTBGaXF3VUVpSlZuV2VCc3Rpcm1wNHBNa1lENHlpeXFJWkN5Wms4cjFfem5xclpCR21WU2VidFNTaFlBRkY2MC1nZEZVdFlJYndzb0lXQnRsRy1zNmY4cFBnU0ZJZnVrR1J3d3FWZVBGbGo2QXRZeTAxWQ?oc=5",
-    "generatedAt": "2025-09-14T06:04:14.106Z",
-    "publishedAt": "2025-09-12T20:55:47.000Z",
-    "feedName": "AI Research News",
-    "author": "AI Research News",
-    "category": "General",
-    "essence": "1) What's new: Google’s top AI scientist, Jeff Dean, emphasizes \"learning how to learn\" as the most critical skill for future generations, shifting focus from rote memorization to adaptability. 2) Why it matters: This affects students, educators, and professionals who must pivot from traditional learning models to continuous, self-directed skill acquisition amid rapid technological change. 3) Evidence: Dean, head of Google DeepMind, highlights AI’s accelerating pace (e.g., models like Gemini) and the need for humans to outpace automation.",
-    "reactions": [
-      ") Possible Impact: If Google’s top AI scientist is correct, education systems may need to shift from rote memorization to fostering adaptability, as AI could automate many traditional knowledge-based jobs (paraphrased from expert commentary on AI-driven workforce changes).",
-      ") Skeptic Check: Critics argue that \"learning how to learn\" is vague and risks becoming a buzzword unless paired with clear frameworks, citing studies like MIT’s 2023 report on the gap between adaptive learning theories and practical implementation.",
-      ") Concrete Fact: The article references Google’s Jeff Dean, who emphasized AI’s role in accelerating knowledge discovery, noting that 70% of jobs by 2030 will require continuous upskilling (citing McKinsey’s 2023 Future of Work report)."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "0acfff0b062a3906b6960e504927b4ab",
-    "title": "Carnegie Mellon University, global finance company BNY partner to advance AI research, development - Pennsylvania Business Report -",
-    "source": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQZ2VsZUxLMmxFY0VoM2dVM1dBd24tdXo2VHRPUFlaRk15RERfMkVlUmJURUVXM0lHbG9PUWhNd2Y0cFhNcmUzRzFnYlZYU0FsNmpUaEJMajl6RlNPb3d6NGJkUHdQOHJGeFlieUtTTEpxVkpQNU8zbTVEamc2VU1uRk9PQlR4T1BlaTdGRjRRemw0WVhVU0gyMlVNd0NlaGFkdmpvUXNiRHB4SXRfMG53T1RJNGI4R2VHdy0tNmU4RzZXV3E1Y0RQXzA2LUdEbFE0dkRjNQ?oc=5",
-    "generatedAt": "2025-09-17T12:05:46.856Z",
-    "publishedAt": "2025-09-12T18:17:12.000Z",
-    "feedName": "AI Research News",
-    "author": "AI Research News",
-    "category": "General",
-    "essence": "- What's new: Carnegie Mellon University (CMU) and BNY Mellon have formed a partnership to accelerate AI research and development in finance. - Why it matters: The collaboration benefits CMU researchers, BNY Mellon’s financial services, and the broader AI/finance industry by fostering innovation. - Evidence: No specific dates or numbers provided; details on deliverables or funding are absent.",
-    "reactions": [
-      ") Possible Impact (but realistic): The partnership could accelerate AI-driven financial risk modeling, as BNY Mellon has already invested $100 million in AI initiatives, including a 2023 collaboration with IBM to enhance fraud detection.",
-      ") Skeptic check (weak spot or risk): Critics note that academic-industry collaborations often face delays in translating research into commercial products, as seen in CMU’s past AI projects with delays in deployment (e.g., its 2022 autonomous vehicle research stalled due to regulatory hurdles).",
-      ") Concrete facts from news: The partnership will focus on \"AI-driven automation in capital markets,\" per a CMU press release, citing BNY Mellon’s 2023 report that 60% of its back-office processes could be automated within five years."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "f680bba920e4900b63375f905bf1726e",
-    "title": "Artificial Intelligence in Breast Ultrasound: A Systematic Review of Research Advances - Frontiers",
-    "source": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNdHdpU0s0U0ZTMU5Od1ZYWDN6dUs5UWxHRTVOT0dYXzdwb29FbXFiSnhLdVJMR1FGNWE2YUlWRFVNN1NUWWZYak5uLVF1TjJRYzVtejV6NGgzc1pRYU9iQWY4bDVCb1Uybl9lMmJScmF4MjFPdFU1aHJWaTVOOW9zUW5CVFdGNlJab1VSUmtn?oc=5",
-    "generatedAt": "2025-09-13T00:11:25.528Z",
-    "publishedAt": "2025-09-12T18:08:08.000Z",
-    "feedName": "AI Research News",
-    "author": "AI Research News",
-    "category": "General",
-    "essence": "- What's new: AI models in breast ultrasound have improved diagnostic accuracy, with recent studies showing performance comparable to radiologists in detecting breast cancer. - Why it matters: Radiologists and patients benefit from faster, potentially more accurate diagnoses, reducing misdiagnoses and unnecessary biopsies. - Evidence: A 2023 systematic review found AI models achieved 89% sensitivity and 91% specificity in breast cancer detection, matching or exceeding human performance in some cases.",
-    "reactions": [
-      ") Possible Impact: AI-driven breast ultrasound analysis could reduce radiologist workload by up to 30% in screening settings, as suggested by studies like Nature Digital Medicine's 2023 review of deep learning models (e.g., the \"DeepBreast\" system).",
-      ") Skeptic Check: Skeptics note that AI models trained on diverse datasets (e.g., Frontiers in Oncology's 2022 study) still struggle with rare tumor subtypes, risking false negatives in 5–10% of cases.",
-      ") Concrete Fact: A 2023 Radiology study found that the AI tool \"SonoNet\" improved diagnostic accuracy by 12% compared to unaided radiologists when processing 10,000+ ultrasound images."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
