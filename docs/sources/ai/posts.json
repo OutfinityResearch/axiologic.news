@@ -1,5 +1,125 @@
 [
   {
+    "id": "0f58e295283815434920c012d6803074",
+    "title": "How I Built and Deployed an App in 2 days with Lovable, Supabase, and Netlify",
+    "source": "https://towardsdatascience.com/how-i-built-and-deployed-an-app-in-2-days-with-lovable-supabase-and-netlify/",
+    "generatedAt": "2025-09-18T18:04:48.340Z",
+    "publishedAt": "2025-09-18T17:30:48.000Z",
+    "feedName": "Towards Data Science",
+    "author": "Towards Data Science",
+    "category": "Programming",
+    "essence": "What's new: Soner Yıldırım built and deployed a web application, drawcraft.io, in two days using Lovable, Supabase, and Netlify, leveraging AI-powered app building. Why it matters: This demonstrates the potential for non-developers to rapidly create functional web applications using AI tools, impacting individuals with limited coding experience and potentially accelerating software development. Evidence: Yıldırım spent $102 (including $25 each for Lovable and Supabase monthly subscriptions, and $47 for a domain name) on September 18, 2025.",
+    "reactions": [
+      ")  Utilizing Lovable, Supabase, and Netlify, the author built and deployed a functional web application, drawcraft.io, within two days, demonstrating the potential for rapid application development using AI-powered tools.",
+      ")  The author's reliance on Lovable for all aspects of development, including backend integration, created unforeseen complications and increased costs, highlighting a potential weakness in this \"vibe coding\" approach.",
+      ") The project cost a total of $102, including $25 for a Lovable subscription, $25 for Supabase, $47 for a one-year domain name purchase, and $5 for OpenAI API calls."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "39ef41c308a8dcc5c0e94f042d53da17",
+    "title": "Deepfake tool could defeat biometric authentication with jailbroken iPhone - SC Media",
+    "source": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQNWFFa1o4dDM1ZTJYUGZ0MWprX19saEdyM093YlVFYWt5LVA2SzBtbXJ6ak5kd2gwaEdnX0ZwTGxBWTdNUF81SDNsSnZ3REloS05Od1pBRE1qV05pNHpiNnBpalZUc0Nkd2lOYjRnM1hibmhjZ25nblI0cG5ybFF5REpsNWdBSkxWZzNfYmNyVDF6YmNOQ0ZsY3VOaGk4bzJkc2ZPanZKNEFOZw?oc=5",
+    "generatedAt": "2025-09-18T18:05:03.376Z",
+    "publishedAt": "2025-09-18T17:19:39.000Z",
+    "feedName": "Generative AI Applications",
+    "author": "Generative AI Applications",
+    "category": "General",
+    "essence": "What's new: Researchers demonstrated a deepfake tool capable of bypassing Face ID on a jailbroken iPhone using a fabricated video of a user's face. Why it matters: This affects iPhone users, particularly those with jailbroken devices, as it compromises the security of biometric authentication, potentially enabling unauthorized access to their devices and data. Businesses relying on Face ID for secure access to sensitive systems are also at risk.",
+    "reactions": [
+      ")  A readily available deepfake tool exploiting a jailbroken iPhone's vulnerabilities could significantly compromise biometric authentication systems used by many organizations, potentially leading to widespread data breaches.",
+      ") The effectiveness of this deepfake tool is heavily reliant on the specific jailbreak used and may not be easily replicable across different iPhone models or iOS versions, limiting its broad applicability.",
+      ") The SC Media article highlights a deepfake tool capable of bypassing Face ID on a jailbroken iPhone, demonstrating a practical vulnerability in existing biometric security measures."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "a855db3074617e15e27d4921f075d06b",
+    "title": "A pivotal meeting on vaccine guidance is underway—and former CDC leaders are alarmed",
+    "source": "https://www.technologyreview.com/2025/09/18/1123844/meeting-vaccine-guidance-former-cdc-leaders-alarmed/",
+    "generatedAt": "2025-09-18T18:04:44.144Z",
+    "publishedAt": "2025-09-18T16:21:31.000Z",
+    "feedName": "MIT Technology Review - AI",
+    "author": "MIT Technology Review - AI",
+    "category": "Biotechnology and health",
+    "essence": "What's new: A CDC advisory panel is meeting to discuss recommendations on childhood vaccines, following the departures of the CDC director and chief medical officer who allege a shift away from scientific evidence in vaccine guidance under the current administration. Why it matters: This impacts the health of millions of US children and vulnerable populations who rely on the Vaccines for Children program and the Affordable Care Act for vaccine access. Weakened vaccine protections could lead to outbreaks of preventable diseases.",
+    "reactions": [
+      ") Weakened vaccine protections, as warned by former CDC director Susan Monarez, could lead to a resurgence of preventable diseases, mirroring the current measles outbreak which has already resulted in two child deaths.",
+      ") A significant risk is the potential for politically motivated decisions to override scientific evidence in vaccine guidance, as suggested by the testimony of former CDC leaders regarding the agency's current direction.",
+      ") The Advisory Committee on Immunization Practices (ACIP) is currently reviewing childhood vaccine recommendations, impacting the Vaccines for Children program which provides vaccines to approximately 50% of US children and the Affordable Care Act's insurance coverage for ACIP-recommended vaccines for about 150 million people."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "05ee88cf99bf8a1c4fe28b9f4204fa1c",
+    "title": "From Python to JavaScript: A Playbook for Data Analytics in n8n with Code Node Examples",
+    "source": "https://towardsdatascience.com/from-python-to-javascript-a-playbook-for-data-analytics-in-n8n-with-code-node-examples/",
+    "generatedAt": "2025-09-18T18:04:51.275Z",
+    "publishedAt": "2025-09-18T15:30:00.000Z",
+    "feedName": "Towards Data Science",
+    "author": "Towards Data Science",
+    "category": "Data Science",
+    "essence": "What's new: A tutorial demonstrates using JavaScript code nodes within the n8n workflow automation tool for data analytics tasks, specifically showcasing Pareto and ABC-XYZ analyses, previously often handled by Python. Why it matters: This impacts data scientists and users of n8n who need to perform data preprocessing or light analytics within their workflows. It offers an alternative to relying on external Python environments, which can be less efficient in cloud-based n8n instances.",
+    "reactions": [
+      ")  Using JavaScript within n8n's code nodes allows for efficient data preprocessing and integration with external systems, as demonstrated by the author's EDI parsing workflow which achieved 100% message parsing using JavaScript.",
+      ")  The article's comparison of JavaScript-only versus FastAPI-backed workflows shows a minimal performance difference (11.7 seconds vs 11.0 seconds), suggesting that for larger datasets, the overhead of JavaScript within n8n could become significant.",
+      ")  The author's workflow for Distribution Planning Optimization, depicted in multiple images, integrates a Google Sheet, a FastAPI microservice (for complex computations in Python), and JavaScript code nodes for data transformation."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "f37051c8dec1624835e966fb4fab5188",
+    "title": "Machine Learning Accelerates Direct Energy Deposition Research - 3D Printing Industry",
+    "source": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPR2lodHh3dFBZUlE0UXNSbXVJZDVVcVhiLS1QZ2ppd0x2WWxKUXNjeWRqMGs2UmlPMnRmUlRUeW5hRlN2ZFROa0hGUFIwTzRTV3QyWkV0bWxmUHBrTmhjTHlRTS1xeWxjTHd6ZWt1VmV4MHZQZ0J2Y0o5b1RORUI3MmVuUXpZdWtlR0VfUkswR3ZyNHI2bWJpeHhwT1dMMkFHbktYVkhfWGtSZw?oc=5",
+    "generatedAt": "2025-09-18T18:04:55.537Z",
+    "publishedAt": "2025-09-18T14:51:12.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "What's new: Researchers used machine learning to optimize the direct energy deposition (DED) 3D printing process, resulting in improved control over material properties and build speed. Why it matters: This impacts the additive manufacturing industry, potentially leading to faster production times and higher-quality parts for various sectors including aerospace and automotive. Companies using DED for prototyping or manufacturing will benefit from increased efficiency and potentially lower costs.",
+    "reactions": [
+      "Machine learning could significantly reduce the time and cost associated with optimizing DED process parameters, leading to faster development cycles for additive manufacturing.  The success of this approach hinges on the availability of high-quality, representative datasets for training the machine learning models; insufficient data could lead to inaccurate predictions.  The article cites a study where machine learning algorithms improved the prediction accuracy of DED process outcomes by 15%, showcasing the technology's potential.",
+      "The key takeaway for founders from \"Machine Learning Accelerates Direct Energy Deposition Research - 3D Printing Industry\" is that integrating machine learning (ML) into Direct Energy Deposition (DED) 3D printing processes offers significant potential for accelerating research, improving process control, and ultimately, creating more efficient and cost-effective manufacturing.  This translates to several opportunities:\n\n Faster product development: ML can optimize DED parameters in a fraction of the time it takes through traditional trial-and-error",
+      "The market impact of machine learning (ML) accelerating direct energy deposition (DED) research in the 3D printing industry is significant and multifaceted, impacting several areas:\n\nPositive Impacts:\n\n Increased Speed and Efficiency: ML algorithms can optimize DED process parameters (laser power, scan speed, powder feed rate, etc.) in real-time, leading to faster build times and reduced material waste. This translates to lower production costs and higher throughput.\n Improved Part Quality: ML can"
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "2ef48aecdb5b620b5c49a754a05cf9ff",
+    "title": "Machine learning can help mental health patients get better outcomes, research shows - Medical Xpress",
+    "source": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQLWJ6aTM2NDh4Nk1lbzlLaWJCWVhiWU40MHV2NzhGRk1BTkJtR29YRm1rUW4zR2hXRDRtUVE4UVEtRUR4WXIwbnk4NUpETXktMFR6YmdWSWJZS2ZXNExMYnRLSUkxenUzXzY2VnNKcERnWmR1RVdzZldzVnpJeWhER180MzNucEJuOFNJ?oc=5",
+    "generatedAt": "2025-09-18T18:05:00.022Z",
+    "publishedAt": "2025-09-18T14:17:03.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "What's new: A study indicates machine learning algorithms can improve mental health treatment outcomes by better predicting patient response to specific therapies. Why it matters: This research directly impacts mental health patients, potentially leading to more effective and personalized treatment plans, reducing the time to recovery and improving overall well-being. Healthcare providers and policymakers could also benefit from more efficient resource allocation.",
+    "reactions": [
+      ")  Machine learning models, as demonstrated in the referenced research, may improve mental health treatment by personalizing interventions and predicting relapse risk, leading to better patient outcomes.",
+      ")  The generalizability of findings from machine learning studies in mental health is questionable, as datasets often lack diversity and may not accurately reflect real-world patient populations.",
+      ")  The Medical Xpress article highlights research showing that machine learning algorithms can predict with accuracy the likelihood of relapse in patients with depression and anxiety disorders."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "4c7056681dffea72f144ced6f5a58bdb",
     "title": "Rapid Prototyping of Chatbots with Streamlit and Chainlit",
     "source": "https://towardsdatascience.com/rapid-prototyping-of-chatbots-with-streamlit-and-chainlit/",
@@ -2673,46 +2793,6 @@
       ") Possible Impact: AquaBounty’s stock may face short-term volatility due to ML models flagging a \"gap down\" signal, as seen in similar biotech stocks reacting to algorithmic trading patterns (e.g., CRISPR’s 12% drop after AI-driven sell signals in 2023).",
       ") Skeptic Check: The \"stepwise trade signal\" lacks transparency, as AI models often rely on opaque data inputs, and AquaBounty’s recent FDA approval for salmon (2020) hasn’t yet translated to consistent revenue growth, per SEC filings.",
       ") Concrete Fact: AquaBounty’s Q3 2023 earnings report showed a $1.2M net loss, despite FDA approval, raising questions about the AI models’ ability to predict long-term viability (source: Seeking Alpha)."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "5b2041a66cd566e486496c1064212c96",
-    "title": "MediaTek partners with the Taipei City Government and Taipei University of Technology to promote the application of large-scale natural language models in Chinese. - Mashdigi",
-    "source": "https://news.google.com/rss/articles/CBMimgJBVV95cUxORl9NOUZhaDlneTVweVVaMWdGaWlYeTI0M2NJYXdLei1jNmVPVFBGRjhPYTVHdjRMdEZoN2tVOEQ0RmppQkFxQVd2RWtEVkRSMVpCdlJrTm9kLW5hNV9JVDNXTEhtWG8xY1ZWYlJZODZHcG54UlV1MEQtNVM2cHhTNFQ1VnpXaXpzN1VwWWtNRWNSVFJqNmkxWmFSRktuXy1ReXc1dlNpMFFCNVc2NTJWNlVDaTFER1ZfYnptdmctOVdJWTd3SThNQjY3cjRaRnk4VVdQdFJjUlk4cEtKczlsS1g1TFpwUkw3STVBMFBXN1pWeWsxVzNwNlZEOW50WmNxS1RWWUxIUnJKMDU4bzAxdFVERHRsRjRWVFE?oc=5",
-    "generatedAt": "2025-09-14T00:13:19.296Z",
-    "publishedAt": "2025-09-13T16:55:13.000Z",
-    "feedName": "Generative AI Applications",
-    "author": "Generative AI Applications",
-    "category": "General",
-    "essence": "- What’s new: MediaTek, Taipei City Government, and Taipei University of Technology are collaborating to advance Chinese-language AI models, focusing on large-scale NLP applications. - Why it matters: This partnership could accelerate AI adoption in Chinese-language industries (e.g., education, government services) and position Taiwan as a regional leader in AI innovation. - Evidence: No specific dates or numbers are provided, but the involvement of a major chipmaker (MediaTek), a municipal government, and a technical university suggests institutional backing.",
-    "reactions": [
-      ") Possible Impact: This partnership could accelerate Chinese-language AI development by leveraging MediaTek's hardware expertise and Taipei University of Technology's research, potentially creating tailored models for industries like education and government services.",
-      ") Skeptic Check: A risk is that the collaboration may struggle to compete with global giants like Baidu or Alibaba, which already dominate Chinese-language AI models with vast resources and datasets.",
-      ") Concrete Fact: MediaTek, a leader in semiconductor design, has previously partnered with universities on AI projects, such as its 2022 collaboration with National Taiwan University to develop AI chips for edge computing."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "71ab17f066f54ab7ee35c8cac734a870",
-    "title": "Building Research Agents for Tech Insights",
-    "source": "https://towardsdatascience.com/building-research-agents-for-tech-insights/",
-    "generatedAt": "2025-09-13T18:03:49.174Z",
-    "publishedAt": "2025-09-13T14:30:00.000Z",
-    "feedName": "Towards Data Science",
-    "author": "Towards Data Science",
-    "category": "Agentic AI",
-    "essence": "1) What's new: A structured AI workflow translates user profiles into JSON for tech research, using MongoDB storage and parallel keyword fetching to generate curated reports with themes and summaries. 2) Why it matters: Tech professionals and researchers benefit from automated, personalized insights without manual data filtering, though the system requires pre-prepared data. 3) Evidence/caveats: The process uses GPT-5 for reasoning (slower but more accurate) and caches facts to reduce latency.",
-    "reactions": [
-      ") Possible Impact: Structured JSON outputs and pre-cached data (like keyword \"facts\") could reduce LLM hallucinations and speed up tech insight generation, as seen in the author’s MongoDB-backed system.",
-      ") Skeptic Check: The reliance on pre-vetted data (e.g., \"cached ‘facts’\") risks outdated or biased summaries if the underlying sources aren’t refreshed dynamically.",
-      ") Concrete Fact: The system uses GPT-5 for final report synthesis, with the author noting it takes \"a few minutes\" per report due to reasoning overhead (cited in the article)."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
