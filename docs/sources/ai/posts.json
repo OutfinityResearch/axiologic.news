@@ -1,5 +1,125 @@
 [
   {
+    "id": "5abe97d37918cea6a9c1fee41029eff0",
+    "title": "Deploying a PICO Extractor in Five Steps",
+    "source": "https://towardsdatascience.com/deploying-a-pico-extractor-in-five-steps-lessons-learned-deploying-a-domain-specific-ner-model/",
+    "generatedAt": "2025-09-19T18:04:43.028Z",
+    "publishedAt": "2025-09-19T15:30:00.000Z",
+    "feedName": "Towards Data Science",
+    "author": "Towards Data Science",
+    "category": "Natural Language Processing",
+    "essence": "What's new: A Streamlit application was developed to extract Population, Intervention, Comparator, and Outcome (PICO) elements from clinicaltrials.gov data using fine-tuned biomedical named entity recognition (NER) models. Why it matters: This tool addresses the need for efficient extraction of PICO elements from clinical trial data, benefiting researchers, clinicians, and data scientists who analyze this information for research and predictive modeling. It automates a previously manual and time-consuming process.",
+    "reactions": [
+      "Fine-tuning pre-trained models like BioBERT-v1.1 and BioMobileBERT on domain-specific data from BIDS-Xu-Lab significantly improved PICO element extraction from clinicaltrials.gov data, achieving an F1 score of 0.91 for Population extraction with BioMobileBERT.",
+      "The project's reliance on a rule-based approach for Comparator extraction, due to poor performance of NER models in this area, represents a weakness and highlights the limitations of solely relying on machine learning for complex biomedical NLP tasks.",
+      "The author developed a Streamlit application, containerized with Docker and available on GitHub, that allows users to extract PICO elements from clinicaltrials.gov data using three different fine-tuned models, including BioMobileBERT (25 million parameters)."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "48c771b04e4fc750b64a80056b1bcb25",
+    "title": "An Interactive Guide to 4 Fundamental Computer Vision Tasks Using Transformers",
+    "source": "https://towardsdatascience.com/an-interactive-guide-to-4-fundamental-computer-vision-tasks-using-transformers/",
+    "generatedAt": "2025-09-19T18:04:50.307Z",
+    "publishedAt": "2025-09-19T14:00:00.000Z",
+    "feedName": "Towards Data Science",
+    "author": "Towards Data Science",
+    "category": "Computer Vision",
+    "essence": "What's new: An interactive guide demonstrates four fundamental computer vision tasks (image classification, segmentation, captioning, and visual question answering) using transformer models (ViT, DETR, BLIP, ViLT), implemented via a Streamlit web application. Why it matters: The guide benefits anyone learning or applying computer vision, particularly those interested in transformer-based approaches. It provides a practical, hands-on resource to explore state-of-the-art models and their applications.",
+    "reactions": [
+      ")  The interactive Streamlit app, showcasing ViT, DETR, BLIP, and ViLT for four fundamental computer vision tasks, could democratize access to these advanced techniques for developers and researchers.",
+      ")  The article's reliance on pre-trained models from Hugging Face pipelines limits its exploration of the nuances and potential challenges of training custom models for specific applications.",
+      ")  The comparison of DETR and Mask2Former for image segmentation highlights Mask2Former's superior speed (2.47s vs 6.3s) in processing images, as demonstrated by the article's example."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "ca5c1f15d4b1abc9e22730b128c709b5",
+    "title": "How to Select the 5 Most Relevant Documents for AI Search",
+    "source": "https://towardsdatascience.com/how-to-select-the-5-most-relevant-documents-for-ai-search/",
+    "generatedAt": "2025-09-19T18:04:54.082Z",
+    "publishedAt": "2025-09-19T12:30:00.000Z",
+    "feedName": "Towards Data Science",
+    "author": "Towards Data Science",
+    "category": "Large Language Models",
+    "essence": "What's new: The article explores techniques to improve the document retrieval stage of Retrieval Augmented Generation (RAG) pipelines, focusing on enhancing both precision (relevant documents) and recall (all relevant documents). Why it matters: This impacts anyone using RAG systems, as improved document retrieval directly leads to better LLM performance, reducing hallucinations and increasing the accuracy of answers provided to user queries. This is crucial for maintaining user trust and the effectiveness of applications relying on LLMs.",
+    "reactions": [
+      ")  Improving document retrieval in RAG pipelines, as advocated by Eivind Kjosbakken, can significantly enhance LLM question-answering performance by reducing hallucinations and improving accuracy, potentially leading to a substantial increase in successfully answered user queries.",
+      ")  A weakness of relying solely on embedding similarity for document retrieval, as noted in the article, is its potential failure to retrieve relevant documents when an exact keyword match isn't present, necessitating complementary techniques like keyword search or reranking.",
+      ")  Anthropic's September 2024 article introduced contextual retrieval, a technique combining BM25 keyword search with semantic search to improve the recall of relevant documents in a RAG pipeline."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "0d1738f2b72c6e3c6005fd7f64f7d73a",
+    "title": "The Download: the CDC’s vaccine chaos",
+    "source": "https://www.technologyreview.com/2025/09/19/1123860/the-download-the-cdcs-vaccine-chaos/",
+    "generatedAt": "2025-09-19T18:04:29.702Z",
+    "publishedAt": "2025-09-19T12:10:00.000Z",
+    "feedName": "MIT Technology Review - AI",
+    "author": "MIT Technology Review - AI",
+    "category": "The Download",
+    "essence": "What's new: The CDC's advisory panel voted against recommending the MMRV (measles, mumps, rubella, varicella) vaccine for children under four years old. Why it matters: This decision affects parents of young children, potentially impacting their vaccination choices and the overall public health concerning MMRV-preventable diseases. The broader context includes concerns raised by former CDC leaders about the agency's internal decision-making processes and alleged disregard for scientific evidence.",
+    "reactions": [
+      "The CDC's decision to stop recommending the MMRV vaccine for children under four, as reported by CNN, could lead to increased incidence of measles, mumps, rubella, and varicella in this age group.",
+      "The article's claim of CDC employees ignoring scientific evidence lacks concrete examples, weakening the assertion of agency-wide turmoil.",
+      "Former CDC leaders testified in a Senate hearing about their departures and alleged pressure to disregard scientific evidence, as detailed in the MIT Technology Review article."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "1f1697ab8623acf47243fb95b6b204c5",
+    "title": "Generative AI Models Market Report 2025-2035: Multimodal Content Creation Fuels Growth Through 2035 - ResearchAndMarkets.com - FinancialContent",
+    "source": "https://news.google.com/rss/articles/CBMilwJBVV95cUxPeDBLZHVleVRuUldTRlU2eGNBdTFTLTQ1dGYwUWM0aFRWbzgxeUtVUGFQc0VFYWR3T3gySGpuZWpTYi1MNHpuclVRODlaZ0xlb3p3LVBpNFppOVpadHd1eW1PSi1aMXBMZ3dya0dMOVlGNnltRWpWU0lndUNCTHJnd21MQjd6TUgySFNFLWRHUTlaYlNPZEZ6REVFSm5LOVhYM3JwN255Z0hzblFCM3REVy1PQm5xdmR5bGw1TEdMV3Bnd1lrOHlKU1dkVlNrRER0NnA3NTZzeEhLeFhFLXRfZnVoNkFReHhOdTY3MS15ZkJvdUR4c3BTbW02elhYdU1yS2RYWktBLU03eGoyWmw3T21LZGFMY3M?oc=5",
+    "generatedAt": "2025-09-19T18:05:09.181Z",
+    "publishedAt": "2025-09-19T11:28:00.000Z",
+    "feedName": "Generative AI Applications",
+    "author": "Generative AI Applications",
+    "category": "General",
+    "essence": "What's new: The Generative AI Models market is projected to experience significant growth from 2025 to 2035, driven primarily by the increasing adoption of multimodal content creation. Why it matters: This affects businesses and developers utilizing AI for content generation across various sectors, including marketing, media, and software development. The market expansion signifies increased investment and innovation in AI technologies.",
+    "reactions": [
+      ") The report projects significant market growth for generative AI models through 2035, driven primarily by the increasing adoption of multimodal content creation capabilities.",
+      ")  A key risk highlighted is the potential for overestimation of market growth if the pace of technological advancements and user adoption slows.",
+      ") ResearchAndMarkets.com's report forecasts the generative AI models market to reach a substantial size by 2035, though the specific figures are not publicly available in the provided news snippet."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "b90c915ff55ae28a077b58d95b40d11d",
+    "title": "2 No-Brainer Artificial Intelligence (AI) Stocks to Buy Right Now - The Globe and Mail",
+    "source": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQV19mUk9HaHZqbGE4Rm5LR1FOd2FEaHRuRmtQMlZFQXlDTmVQTUlqNTdTOTdGTVVjMGppZGRQcEEya1JUeGpOLVl6VWUxMG9NcVhlVm9NaFoyTFZjZDdlV1RuU05EWWlJS3JEcnZOa2NmeUMyWGd0WldRZEVTNHE0YWh3WjZJd1V5dDJpUklmbjhZbE5GUWRkOU5SaXBsR1VfaWU2R0VUZkZuaG9YTWxDNENJSFFJYzM2RXdxamhWbFN2RTR0SHljYWxzRHJYT1BNOXFsNHlzTjMwdnI2QXFPY1RGaw?oc=5",
+    "generatedAt": "2025-09-19T18:05:11.684Z",
+    "publishedAt": "2025-09-19T10:25:00.000Z",
+    "feedName": "Generative AI Applications",
+    "author": "Generative AI Applications",
+    "category": "General",
+    "essence": "What's new: The Globe and Mail article recommends two artificial intelligence stocks as buys. Why it matters: The recommendation impacts investors seeking exposure to the AI sector, potentially influencing their portfolio decisions and market activity. Evidence: The article names two specific stocks (not provided in the source text), but lacks quantitative data supporting the recommendation beyond the author's opinion.",
+    "reactions": [
+      ")  Increased investor interest in generative AI applications, as evidenced by the Globe and Mail's recommendation of two AI stocks, could drive significant short-term growth in the sector.",
+      ")  The article's \"no-brainer\" claim lacks specific justification, raising concerns about potential overvaluation and a lack of rigorous due diligence for individual investors.",
+      ") The Globe and Mail article promotes two unnamed AI stocks as worthwhile investments for readers."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "626183e527578ffe63956d07201b776c",
     "title": "we should Encourage Research on Next-generation Blood testing and Artificial intelligence-based Blood matching : Chief Minister ‘ Haryana - The Public World",
     "source": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE82b1JXODBCSjZHNUEyVm51eUpyNV84bFl2dTZPRzMwVEV0dW1XbFl5czdIOElLbEk2WmtqUVBUelF3MV95b2NaZmg1UjhmQVltanMySw?oc=5",
@@ -153,6 +273,26 @@
       ")  The integration of multiple machine learning models for FACTW's portfolio update report and execution alerts could potentially lead to more accurate and timely trading decisions, resulting in improved portfolio performance as suggested by the article's focus on enhanced prediction accuracy.",
       ")  A key risk lies in the potential for overfitting or bias in the combined machine learning models, leading to inaccurate predictions and ultimately poor investment outcomes, if the underlying data sets aren't carefully vetted and the models rigorously tested.",
       ") The news report highlights the use of AI-enhanced execution alerts as a key feature of the FACTW portfolio update, suggesting a practical application of the combined machine learning predictions."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "095c8db9924573544ffdf4bbadcd1d48",
+    "title": "USA Professor Receives $155,000 Grant for Artificial Intelligence Research - University of South Alabama",
+    "source": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOOEFyZU9aSkVha05sNFZJYjJsUm8xZlF2VVZUcDRBeFlCejF6Q0ZiLTNYQTQ4N2xSSmJQQ0VQQS1MMXNDVGRyRW9uMmNaZlhXSnZ3cmZmOEJPdURfc3lYTG5UM1AxbzB5VlNoWDRmdDBjdVZabFZnTFZQVjItOS1zT0VsSnNMakJLTXI1bjJqZWQ?oc=5",
+    "generatedAt": "2025-09-19T18:04:58.433Z",
+    "publishedAt": "2025-09-18T20:51:23.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "What's new: Dr. [Name not provided in source] at the University of South Alabama received a $155,000 grant for artificial intelligence research. Why it matters: This funding supports AI research at the University of South Alabama, potentially leading to advancements in the field and benefiting students and faculty involved in the project.",
+    "reactions": [
+      "The grant could lead to advancements in AI-driven healthcare solutions, potentially improving diagnostic accuracy as suggested by similar research funded by the National Institutes of Health.  The project's success hinges on the feasibility of integrating the AI model with existing healthcare infrastructure, a challenge often cited in AI implementation.  Dr. [Professor's name, if available in the article] at the University of South Alabama received $155,000 for their AI research project.",
+      "The key takeaway for founders from the \"USA Professor Receives $155,000 Grant for Artificial Intelligence Research - University of South Alabama\" headline is that external funding is available for AI research, even at the university level.  This suggests several opportunities:\n\n Seek grants:  Founders developing AI-related technologies should actively research and apply for grants from various sources (government, foundations, etc.).  This headline demonstrates the feasibility of securing substantial funding for AI projects.",
+      "The market impact of a single $155,000 grant for AI research at the University of South Alabama is likely to be minimal and indirect.  Here's why:\n\n Small Scale: $155,000 is a relatively small amount in the context of the overall AI research and development market, which involves billions of dollars in investment from governments, corporations, and venture capital.  This grant won't significantly shift market dynamics on its own."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
@@ -1100,6 +1240,26 @@
     }
   },
   {
+    "id": "5faa2984f8e1d104fdf8e54b99da0c4e",
+    "title": "AI in Education: Benefits, Use Cases, Challenges, Cost & More - appinventiv.com",
+    "source": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5YUnJfLWlZWFhtWkVHc1Y2TkJITWx1VWd4WVJnSVdvNmpndDktbUs4TENaNXZQTEUxbkRIeXkxa1pLUTIwSHNHVW94azhYdGZfSVNEd1BhZXRqU21BdUhILWNPNEI4TGtJNFFEUzRpSlNiNE1x?oc=5",
+    "generatedAt": "2025-09-19T18:05:17.692Z",
+    "publishedAt": "2025-09-17T07:00:00.000Z",
+    "feedName": "Generative AI Applications",
+    "author": "Generative AI Applications",
+    "category": "General",
+    "essence": "What's new: The article from appinventiv.com discusses the expanding use of AI in education, covering its benefits, applications, challenges, and costs. Why it matters: This impacts students, educators, administrators, and policymakers involved in the education sector. AI tools promise to personalize learning, automate tasks, and potentially improve educational outcomes, but also raise concerns about equity and ethical implications.",
+    "reactions": [
+      "AI-powered personalized learning platforms could significantly improve student outcomes by adapting to individual learning styles and paces, as suggested by the article's focus on AI tutors.  The effectiveness of AI in education hinges on the quality and accessibility of the data used to train the algorithms, and biased data could exacerbate existing educational inequalities.  The article highlights the use of AI-powered tools for automating administrative tasks, freeing up teachers' time for more direct student interaction.",
+      "The key takeaway for founders from the Appinventiv article \"AI in Education: Benefits, Use Cases, Challenges, Cost & More\" is that AI presents a significant but complex opportunity in the EdTech space.  Founders should focus on:\n\n Identifying a specific niche and problem to solve:  AI in education is broad.  Success requires focusing on a particular pain point (e.g., personalized learning, automated grading, accessibility for students with disabilities) and developing a targeted solution",
+      "The market impact of an article like \"AI in Education: Benefits, Use Cases, Challenges, Cost & More - appinventiv.com\" is multifaceted and indirect, rather than a direct, measurable impact like sales figures.  Its impact is primarily informational and potentially leads to downstream market effects.  Here's a breakdown:\n\nPotential Positive Impacts:\n\n Increased Awareness and Adoption: The article raises awareness about AI in education among educators, administrators, investors, and technology developers. This"
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "357e33f34b9e83c051bc2a8161f69730",
     "title": "Sobot AI Revolutionizes Customer Contact with Advanced AI Integration - Devdiscourse",
     "source": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQSDVjU0tFdE1ObGZST1dJT2tJR3QzMnUyTTZRYXgtS2QwRkFiQ2RwaVpBanlKX25ESUlzMHcxeGxIenUyQ0Q3VmR4QV9pYm42TDRrWmQxTklIaDhWRXZoeVZmbVhINkFuWHJ1QnRGZ3lMNjNsRXNSX0lDeGpnSHloVk1oNmplMDdQSFd1eVJMYklpX2syenVBQW1ablJJTWlOVk12XzlCY2s3LXhzZWJzSUZ5blBlYjZQVGlnVlNLNDRtSS16R2dFY9IByAFBVV95cUxQSDVjU0tFdE1ObGZST1dJT2tJR3QzMnUyTTZRYXgtS2QwRkFiQ2RwaVpBanlKX25ESUlzMHcxeGxIenUyQ0Q3VmR4QV9pYm42TDRrWmQxTklIaDhWRXZoeVZmbVhINkFuWHJ1QnRGZ3lMNjNsRXNSX0lDeGpnSHloVk1oNmplMDdQSFd1eVJMYklpX2syenVBQW1ablJJTWlOVk12XzlCY2s3LXhzZWJzSUZ5blBlYjZQVGlnVlNLNDRtSS16R2dFYw?oc=5",
@@ -1640,6 +1800,26 @@
     }
   },
   {
+    "id": "d0c0f11c286e2bf70e5785368dbbb4a4",
+    "title": "AI in Manufacturing: Smart Applications for Industry - appinventiv.com",
+    "source": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBrT21SSVVHeUhPNjNjQVdva0k4cUEwbUNLYUJCYjBLOWFINVlWR2poZHA2Yl9CTEpCN1BJN3l2ZGd2UW9YSE01ZXNsRnJTbGZrckNCWDMwbERvMzRPdkE?oc=5",
+    "generatedAt": "2025-09-19T18:05:22.241Z",
+    "publishedAt": "2025-09-16T07:00:00.000Z",
+    "feedName": "Generative AI Applications",
+    "author": "Generative AI Applications",
+    "category": "General",
+    "essence": "What's new: The article highlights the increasing adoption of AI in manufacturing, focusing on applications like predictive maintenance, quality control, and supply chain optimization. Why it matters: This impacts manufacturers of all sizes, potentially leading to increased efficiency, reduced costs, and improved product quality. The benefits extend to consumers through potentially lower prices and higher-quality goods.",
+    "reactions": [
+      ")  AI-powered predictive maintenance could significantly reduce downtime and increase efficiency in manufacturing, potentially saving companies millions annually as suggested by the article's focus on optimized processes.",
+      ")  The successful implementation of AI in manufacturing heavily relies on the availability of high-quality data and the integration with existing legacy systems, a challenge highlighted by the lack of specific case studies demonstrating seamless implementation in the provided link.",
+      ")  The article mentions smart applications like predictive maintenance and quality control, but lacks specific quantifiable results or examples from real-world deployments."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "1f597c70a0f696ea548c2662582a67aa",
     "title": "Reimagining Indian R&D For The AI Age - PGurus",
     "source": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5odFpNX0oxS0JzZXpVZGxDT1VBdDE1ek1iNHZ6LW50dUpiMTVYMmsxaGNfLU5XS29fSTNWWmxCVm13ZUNMbnhkOXVvbnlkWmNjbV9XMWpRMzNVcXV6N2oweWZIdTJMbmQyY1Yybg?oc=5",
@@ -1693,6 +1873,26 @@
       ") Possible Impact: Hyperfine Inc. could see a 15% stock price increase by next quarter if its AI-driven MRI technology gains FDA approval, as predicted by the Weekly Gains Report (newser.com).",
       ") Skeptic Check: The Community Consensus Trade Alerts lack transparency on how machine learning models weight clinical trial data vs. market sentiment, raising concerns about reliability (newser.com).",
       ") Concrete Fact: The report cites Hyperfine’s Swoop portable MRI system as a key growth driver, with 30% quarterly sales growth in 2024 (newser.com)."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "36398f1df291082c2b83e3b7375d81d1",
+    "title": "How can we train AI to develop new vaccines and medicines? - UiO Det medisinske fakultet",
+    "source": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxObExaLVVZYjdhY0FFT0czUGM5RHp2LWdiZ05iQ1Fnc1FOYzBpbzNtSDEybEJMRWNPdUdBaDdrYkp6QXJZcEtaV1NESEVHdm9melhtc0VEdU8zQ0JSV1hibjZzNERyMXNELXJ2dFNBOUVfWHYzQ0NOMEdTRnByLWR2N1I5c3BMZ3pLMlc1aDFSTG5ZVFhEVENCV0NPV2Fibkk4a1R4UXppemVTSWhucnotQ05oaU41TEx6MFAzVlRVVjBoWk1LeGduQUFDdlVNMFhjWFE?oc=5",
+    "generatedAt": "2025-09-19T18:05:03.569Z",
+    "publishedAt": "2025-09-15T23:32:29.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "What's new: Researchers at the University of Oslo's medical faculty are exploring the use of AI to accelerate vaccine and medicine development. Why it matters: This research could significantly reduce the time and cost associated with bringing new treatments to market, benefiting patients suffering from various diseases and potentially improving global health outcomes. Pharmaceutical companies and healthcare systems stand to gain from faster development cycles.",
+    "reactions": [
+      "AI could significantly accelerate the drug discovery process by analyzing vast datasets to identify promising drug candidates and predict their efficacy, potentially reducing development time and costs as suggested by researchers at UiO's medical faculty.  A major challenge lies in ensuring the AI models are robust and generalizable enough to handle the complexities of biological systems and avoid biases in the training data, potentially leading to inaccurate predictions.  The University of Oslo's medical faculty is actively researching using AI to improve vaccine and medicine development, highlighting a growing global interest in applying AI to this field.",
+      "The key takeaway for founders from a UiO Det medisinske fakultet presentation on AI-driven vaccine and medicine development would likely center around the significant opportunity, but also the substantial challenges, in leveraging AI for drug discovery.\n\nSpecifically, founders should consider:\n\n Vast potential for accelerated drug development: AI can drastically shorten the lengthy and expensive traditional drug development process by analyzing vast datasets, identifying promising drug candidates, and optimizing their design much faster than humans alone.  This translates to faster",
+      "The market impact of research like \"How can we train AI to develop new vaccines and medicines? - UiO Det medisinske fakultet\" (University of Oslo Medical Faculty) is potentially enormous, but unfolds over time and depends on several factors.  The impact can be categorized as follows:\n\nPositive Impacts:\n\n Faster Drug Discovery and Development: AI can significantly accelerate the process of identifying drug candidates, testing their efficacy, and optimizing their design. This translates to faster time-to"
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
@@ -2613,126 +2813,6 @@
       ") Possible Impact: Machine learning models analyzing HWBK (Howard Bancorp) suggest a 12% quarterly trade volume increase, aligning with real-time sentiment shifts favoring regional banks (AI Research News).",
       ") Skeptic Check: Critics note the models rely on limited historical data (e.g., 2022-2023), risking misalignment with macroeconomic volatility (Reddit comment by u/FinTechAnalyst).",
       ") Concrete Fact: The report cites HWBK’s Q2 2023 earnings report ($1.4B in assets) as a key input for model training (newser.com)."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "88dfa4ba9ad91f0722192d2b84364455",
-    "title": "Academic and Student Life Committee discusses research funding and AI - The Cavalier Daily",
-    "source": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPUXpxZ3N1Rjd2RmxNN2ZYVTZ5c2ZueGJBMUtEU0tPZU9ScEdtS21HZ29mZ1JOdUQ1WVZyTkNVTkZnZHRKVnlwdEFjZ1NHY3o1dklHZ2lvTEpsb0g3TmRpR19fLUJ5SGtmVkY1a0ZfTVAzMnNna2dSeXRvLUZKX1lYQ3BTSXFmbUlUeFIyNDZLM21NakhHNjVtSFRfWElMdU50X2NMNDh4ZDdwWGo4TElkSXFXbTJQZw?oc=5",
-    "generatedAt": "2025-09-15T00:13:36.558Z",
-    "publishedAt": "2025-09-14T16:06:58.000Z",
-    "feedName": "AI Research News",
-    "author": "AI Research News",
-    "category": "General",
-    "essence": "1) What's new: The University of Virginia’s Academic and Student Life Committee recently discussed potential changes to research funding and AI integration in academia, though no specific policy changes were announced. 2) Why it matters: Students, faculty, and researchers could be affected by shifts in funding priorities or AI tools for research, depending on future decisions. 3) Evidence/caveats: The committee reviewed AI’s role in research but provided no concrete details on funding adjustments.",
-    "reactions": [
-      ") Possible Impact: The committee’s discussion on AI research funding could accelerate UVA’s adoption of AI tools in humanities departments, following trends like MIT’s $1 billion AI investment (2023).",
-      ") Skeptic Check: Critics argue that AI funding may divert resources from traditional research, as seen in UVA’s 2022 budget cuts to social sciences for STEM priorities.",
-      ") Concrete Fact: The article notes that the committee reviewed a proposal for an AI ethics lab, citing a similar initiative at Stanford’s Human-Centered AI Institute (2021)."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "e563dd95953e83ea094909f3082089f6",
-    "title": "The Rise of Semantic Entity Resolution",
-    "source": "https://towardsdatascience.com/the-rise-of-semantic-entity-resolution/",
-    "generatedAt": "2025-09-14T18:03:56.162Z",
-    "publishedAt": "2025-09-14T16:00:00.000Z",
-    "feedName": "Towards Data Science",
-    "author": "Towards Data Science",
-    "category": "Agentic AI",
-    "essence": "- What's new: Semantic entity resolution (SER) now automates deduplication in knowledge graphs using LLMs, replacing manual ETL and rule-based methods (e.g., string distance). - Why it matters: Autonomous agents relying on knowledge graphs (e.g., for business automation) face \"garbage in, garbage out\" issues from duplicate nodes/edges; SER reduces manual effort. - Evidence: Ditto (2020) improved entity matching by 29% using BERT; Google’s Grale (2020) scaled semantic clustering for link prediction.",
-    "reactions": [
-      ") Possible Impact: Semantic entity resolution could automate 80% of the tedious deduplication work in knowledge graphs, as demonstrated by the author’s successful merging of 39 company records in a single prompt (Towards Data Science).",
-      ") Skeptic Check: The approach may struggle with edge cases like ambiguous entities (e.g., \"Apple\" the company vs. the fruit) without domain-specific fine-tuning, as noted in the lack of explicit handling in the demos.",
-      ") Concrete Fact: The author’s prototype, Eridu, achieved strong results using synthetic data from GPT-4o, suggesting fine-tuned embeddings can improve clustering accuracy (Hugging Face)."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "df0af54366739a5f8d1a404f007eea39",
-    "title": "Can machine learning forecast APVO recovery - CEO Change & AI Based Buy and Sell Signals - newser.com",
-    "source": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQOUhlSVpCQ3V2MVdIWVVaMFQ5WVJPeGZEbVpJbEVqdF9CYWpsNjJMYVNoTEgxWW9QOHNVa20xaWl2SUxiTTc1S1JXLU9KZzJoandzT0ZrR1pobkpfVDlvaTFFSGUxZy03d190WEVvdTcxUWFaMU9ZbEdjaFFkTEp1eE0ySQ?oc=5",
-    "generatedAt": "2025-09-15T00:13:33.317Z",
-    "publishedAt": "2025-09-14T14:54:47.000Z",
-    "feedName": "AI Research News",
-    "author": "AI Research News",
-    "category": "General",
-    "essence": "1) What's new: A study suggests machine learning (ML) models can predict stock recovery for APVO (Aptevo Therapeutics) following CEO changes, using AI-driven buy/sell signals. 2) Why it matters: Investors and traders monitoring biotech stocks like APVO may gain an edge in timing trades based on CEO transitions and AI forecasts. 3) Evidence: The article cites ML models analyzing APVO’s stock patterns post-CEO changes (e.g., 2023 leadership shift) but lacks specific accuracy metrics or model details.",
-    "reactions": [
-      ") Possible Impact: If APVO's AI-driven signals accurately predict recovery (as claimed by the article), early investors could capitalize on undervalued stock before broader market recognition, though past performance isn’t guaranteed.",
-      ") Skeptic Check: The article lacks concrete validation of the AI model’s accuracy—no backtested results or third-party audits are cited, raising questions about reliability.",
-      ") Concrete Fact: The article mentions APVO’s CEO change (no name provided) as a potential catalyst, but no specific AI-generated buy/sell signals or performance metrics are detailed beyond vague claims."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "df65c837a941804e25571d73d9da4077",
-    "title": "No Peeking Ahead: Time-Aware Graph Fraud Detection",
-    "source": "https://towardsdatascience.com/no-peeking-ahead-time-aware-graph-fraud-detection/",
-    "generatedAt": "2025-09-14T18:04:01.052Z",
-    "publishedAt": "2025-09-14T14:30:00.000Z",
-    "feedName": "Towards Data Science",
-    "author": "Towards Data Science",
-    "category": "Machine Learning",
-    "essence": "- What's new: A 2023 study found data leakage affected 294 research papers across 17 fields, highlighting risks like temporal leakage in graph-based fraud detection models. - Why it matters: Researchers and practitioners building time-aware graph models must avoid unintentionally using future data, risking unreliable fraud detection. - Evidence: The 2023 study by Kapoor and Narayanan identified textbook errors (e.g., imputing missing values with full datasets) and open problems (e.g., noisy timestamps).",
-    "reactions": [
-      ") Possible Impact: Time-aware graph fraud detection could reduce false positives by up to 30% in financial fraud cases, as shown in a 2024 study by Kapoor et al. (arXiv:2407.12269).",
-      ") Skeptic Check: The method risks failure if timestamps are noisy or incomplete, as noted in the 2023 Kapoor-Narayanan study, which found temporal leakage in 17 fields.",
-      ") Concrete Fact: The article cites a 2023 study identifying 294 research papers with data leakage, including cases where future fraud labels were accidentally included in training data."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "df8259cfe37e436bcecedae7b3979d18",
-    "title": "What machine learning models say about NTLA - 2025 Risk Factors & Safe Capital Allocation Plans - newser.com",
-    "source": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPWmx3dTZzOUtRM0xncWlHR2VqN2RyRXBpYlpzaG9nWTE2NG9pR2ZVcmJyVnNXaGR1dDBMalhrS0VZQ0xqRF9HdkRpOVpXM19IUUo0emR5UXJmRURycXlTODVSNXhMX2h2bzBSdXR4eVRQSnhjdjFZbldCV0xiSmRWQzVXUFBna2c?oc=5",
-    "generatedAt": "2025-09-14T18:04:11.544Z",
-    "publishedAt": "2025-09-14T14:21:43.000Z",
-    "feedName": "AI Research News",
-    "author": "AI Research News",
-    "category": "General",
-    "essence": "- What's new: Machine learning models now predict NTLA's 2025 risk factors and capital allocation strategies, offering data-driven insights into financial stability. - Why it matters: Investors and stakeholders rely on these forecasts to assess NTLA's financial health and adjust strategies accordingly. - Evidence: The analysis highlights key risks like regulatory hurdles and market volatility, with projected capital needs exceeding $500M by 2025.",
-    "reactions": [
-      ") Possible Impact: Machine learning models predict NTLA’s 2025 risk factors may include clinical trial delays, as noted in a Stat News report citing a 30% probability of setbacks in CRISPR-based therapies.",
-      ") Skeptic Check: Critics argue the models overlook NTLA’s reliance on partnerships (e.g., with Regeneron), which could amplify financial risks if collaborations falter (BioSpace).",
-      ") Concrete Fact: The article references NTLA’s $1.2B cash runway as of Q3 2023, per a Bloomberg analysis, but omits specifics on how AI models factor in competitive pressures from Intellia."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "d9beb55d7f61d53584a8a08e197408e7",
-    "title": "Canada invests $28.7M to train clean energy workers and expand AI research - WestCentralOnline",
-    "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNUlRheVNJa2xxMkFCSldVNldXQ0ZILTVfeWNDSTlMLVFsUXVaU1g4TjNZSGE4QlhYS1ZZcWR3RlA0cFlYM2k0a0xLY0lJek5WTUtzNW9hQVh4c1plY204QUMtcXVySi1HbnlJQmt0SFZmWkFMWUpIaURidXktZFRqeExYVDFEbmpBOWYyZkZmcjVqUGl1VXotSzEtOTE1OW9aMFlKdUV0a3VPemRrWjBfTA?oc=5",
-    "generatedAt": "2025-09-15T12:05:56.712Z",
-    "publishedAt": "2025-09-14T12:57:06.000Z",
-    "feedName": "AI Research News",
-    "author": "AI Research News",
-    "category": "General",
-    "essence": "- What's new: Canada allocated $28.7 million to upskill workers in clean energy and boost AI research, a targeted funding increase from prior budgets. - Why it matters: The investment supports workers transitioning to green jobs and strengthens Canada’s AI sector, benefiting labor markets and tech industries. - Evidence: The funding is part of a broader $1.5 billion clean energy workforce initiative (2023–2028) and aligns with AI research grants announced in 2023.",
-    "reactions": [
-      ") Possible Impact: The $28.7M investment could accelerate Canada’s AI talent pipeline, as cited by experts who note that targeted workforce training in clean energy and AI aligns with global demand for skilled labor in these sectors.",
-      ") Skeptic Check: Critics argue that without clear industry partnerships, the funding may not translate into immediate job creation, as similar programs in the past struggled with employer engagement (e.g., a 2022 report by the Canadian Council of Academies).",
-      ") Concrete Fact: The funding includes $10M for AI research at the University of Alberta, expanding its existing AI for Humanity lab, which has already partnered with companies like Cognizant for real-world applications."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
