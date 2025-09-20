@@ -1,5 +1,45 @@
 [
   {
+    "id": "f0bd5bb9e6c01883fa1a0b6c0afa5bf9",
+    "title": "Building LLM Apps That Can See, Think, and Integrate: Using o3 with Multimodal Input and Structured Output",
+    "source": "https://towardsdatascience.com/building-llm-apps-that-can-see-think-and-integrate-using-o3-with-multimodal-input-and-structured-output/",
+    "generatedAt": "2025-09-20T18:03:49.434Z",
+    "publishedAt": "2025-09-20T16:00:00.000Z",
+    "feedName": "Towards Data Science",
+    "author": "Towards Data Science",
+    "category": "Large Language Models",
+    "essence": "What's new: A time-series anomaly detection system was built using the o3 LLM, processing chart images as input and providing structured JSON output detailing anomalies (type, dates, values, reasoning). Why it matters: This approach eliminates the need for traditional ML model training in anomaly detection, potentially saving time and resources for data analysts and developers working with time-series data. It benefits users who need quick, visual anomaly detection without extensive model building.",
+    "reactions": [
+      "The described o3 model demonstrates the potential for building LLM applications that accurately detect various time-series anomalies (spike, level shift, seasonal outlier) directly from visualizations, eliminating the need for traditional model training, as evidenced by its successful identification of anomalies in three synthetic datasets.",
+      "A weakness of the presented approach is its reliance on synthetic data;  the model's performance on real-world, noisy e-commerce data, potentially containing unanticipated anomaly types or data quality issues, remains untested.",
+      "The o3 model correctly identified a \"level_shift\" anomaly in a synthetic dataset, specifying a sustained change in order volume from approximately 120-135 to 150 beginning August 26, 2025, and lasting until September 2, 2025."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "d98f0ef44a96d004ddd3578fef458c68",
+    "title": "The SyncNet Research Paper, Clearly Explained",
+    "source": "https://towardsdatascience.com/syncnet-paper-easily-explained/",
+    "generatedAt": "2025-09-20T18:03:52.360Z",
+    "publishedAt": "2025-09-20T14:00:00.000Z",
+    "feedName": "Towards Data Science",
+    "author": "Towards Data Science",
+    "category": "Deep Learning",
+    "essence": "What's new: The SyncNet algorithm (versions 1-10) estimates audio-video synchronization offsets with associated confidence scores, using a deep learning approach and a sliding window technique to compare audio and video segments. Why it matters: This affects post-production video editing, video conferencing applications, and multi-person speaker identification in videos by automatically detecting and correcting audio-video synchronization issues. Evidence/Caveats: The algorithm achieves 99% accuracy with averaging across multiple samples but only 81% with single samples; offset calculations for ten video segments (durations 0.3-9.2s) are presented, with average offset ≈ -300ms (audio leading video); the method relies on the assumption that most videos are initially correctly synced, using existing video data for training.",
+    "reactions": [
+      ") SyncNet's ability to achieve 99% accuracy in audio-visual synchronization by averaging multiple samples, as demonstrated in the paper's results, suggests a practical and robust solution for various applications.",
+      ") The reliance on a large dataset of mostly correctly synchronized videos for training poses a risk, as biases in the training data could lead to inaccurate results for videos with atypical synchronization issues.",
+      ") The SyncNet model, detailed in the 2016 ACCV paper by Chung and Zisserman,  calculates a synchronization offset by comparing Euclidean distances between audio chunks and a fixed video chunk, with a reported average offset of approximately -300ms across multiple video segments."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "38e53006f1dc101e0d3d327603110383",
     "title": "Singapore’s DSTA unveils Gaia, a generative AI tool to revolutionise defence capabilities - Malay Mail",
     "source": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOZUNMNExhQkxYT1FWZC05THoxQS1tTXAyaGJwdkNsVlJjMDE1M2JNeEF0Y2dHNk8tVnZtbWNnRF9RVzNDZUlQV0VSWVRrX0pJWUJlX3lUVTJZbjY1b1pCU1dVbXMzQ3BLZUJGbUxRRUJuZVBNcVJVN0MxZ1Zub2ZjdlRNVmNraW9Bc2gzZ0lQYTVEbnFnUVh1WDU0cE9OaDF1S2ZiTGVDbkpmb0FOQngzcU9rTTZSeHNSd2hhdTk3blhjM2ctdUsxb0xQYVFtbFJCSndhRE9ibEZSVDBYelFv0gHkAUFVX3lxTE5CZ3I3R3d2S1JSUlRhOG9WaWlUOXBRM1Q4OU10cDc0NmYzUXBrQmxxeHVGTE1WSGJYZ0VTbGtXNkducG14VkJldTZXV1hKSmRGVWZTa2kzS29jSjR4MzA0cUc3cVVGR1lOajlZOEVhcXp5RnQtUGtxbzJLbE9jc3B6UWszY3BFSFpHUTNlNU5FcHROWmR0dkVPTGNOTEw3MnFqTHFvLXlpUmVqYW85dmExQ04ycE16eW56akRXVWVDN3hkMWd5eHlSNW9pcjhDZHZrWElzRWRMS0VIQlMtNGdQZUwxSw?oc=5",
@@ -240,6 +280,26 @@
     }
   },
   {
+    "id": "b8814ed255bc0fd95b37c0f8cad4faa3",
+    "title": "2 No-Brainer Artificial Intelligence (AI) Stocks to Buy Right Now - The Globe and Mail",
+    "source": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNY09hbVlNUWc0bEZGMTZmOFlLcXF6VExqeHhZUTM2WWUtdWl3VHNsazJIXzB3RVJ4bzRzSXZMcUkwLWtXeTNBa2NVMDFsUHFFVGVTdkJ3RzltNF9FWldIbGh5ZTNEYllNcXBvcjU3NTRhVHZtc2ZiWE5GWGRYLVdlYVJqMGI4WWZENktuYnVyNVNud3NtNVVWaTk2ejVXQlBudTFaMUtVZEo0LVplb0ROSTZKQlN2eHoxSHFia2h0Z3pacU1qWENzamV5X2l5QXY2cDhuODFHQ2U4WkdVMWlRMk1Wdw?oc=5",
+    "generatedAt": "2025-09-20T18:04:18.515Z",
+    "publishedAt": "2025-09-19T10:25:00.000Z",
+    "feedName": "Generative AI Applications",
+    "author": "Generative AI Applications",
+    "category": "General",
+    "essence": "What's new: The Globe and Mail article recommends two artificial intelligence stocks as buys. Why it matters: The recommendation affects investors seeking exposure to the AI sector, potentially influencing their investment decisions and portfolio composition. Evidence: The article names two specific stocks (not specified in provided text), but lacks quantitative data to support its claims.",
+    "reactions": [
+      ")  The Globe and Mail article suggests that investment in generative AI applications, specifically through unnamed stocks, offers significant potential returns, reflecting a bullish market sentiment on AI's growth.",
+      ")  The article's \"no-brainer\" claim lacks specificity regarding the chosen stocks and their risk profiles, raising concerns about the reliability of such a bold recommendation.",
+      ")  The article links to a Google News aggregation of articles, but the specific content of the Globe and Mail piece about the two AI stocks is not directly provided within the link."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "b90c915ff55ae28a077b58d95b40d11d",
     "title": "2 No-Brainer Artificial Intelligence (AI) Stocks to Buy Right Now - The Globe and Mail",
     "source": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQV19mUk9HaHZqbGE4Rm5LR1FOd2FEaHRuRmtQMlZFQXlDTmVQTUlqNTdTOTdGTVVjMGppZGRQcEEya1JUeGpOLVl6VWUxMG9NcVhlVm9NaFoyTFZjZDdlV1RuU05EWWlJS3JEcnZOa2NmeUMyWGd0WldRZEVTNHE0YWh3WjZJd1V5dDJpUklmbjhZbE5GUWRkOU5SaXBsR1VfaWU2R0VUZkZuaG9YTWxDNENJSFFJYzM2RXdxamhWbFN2RTR0SHljYWxzRHJYT1BNOXFsNHlzTjMwdnI2QXFPY1RGaw?oc=5",
@@ -313,6 +373,26 @@
       ") Combining multiple machine learning models could potentially improve the accuracy of predicting AngloGold Ashanti's stock price movements, offering investors a more refined trading strategy.",
       ") The article's reliance on unspecified machine learning models raises concerns about the transparency and reproducibility of the sell signal and momentum tips.",
       ")  The news source, newser.com, presents a combined machine learning prediction suggesting a sell signal for AngloGold Ashanti plc, but lacks specific details about the models used."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "907c7c4244587ee895a8ff9c55b8eee8",
+    "title": "AI in Real Estate: 16 Game-Changing Applications - appinventiv.com",
+    "source": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1LT2tOTURLWWlEUHgybU1FYmExM1FTdHY1RGZIMkJxNFdDY2t5NFdVSFB2Qngwbm5Xd2pJaDdfakZYZl9OdVN2RjBRQ2VPM2N3MzZ0eWpvYUZBR0U?oc=5",
+    "generatedAt": "2025-09-20T18:04:20.458Z",
+    "publishedAt": "2025-09-19T05:26:15.000Z",
+    "feedName": "Generative AI Applications",
+    "author": "Generative AI Applications",
+    "category": "General",
+    "essence": "What's new: The article lists sixteen applications of artificial intelligence in the real estate industry, ranging from property valuation and lead generation to virtual tours and smart home management. Why it matters: Real estate professionals (agents, brokers, developers, investors), and consumers are affected. AI can improve efficiency, accuracy, and customer experience across various aspects of buying, selling, and managing properties.",
+    "reactions": [
+      "AI could significantly streamline property searches and valuations, potentially increasing market efficiency as suggested by the article's focus on AI-powered tools for faster and more accurate property assessments.  A significant risk is the potential for algorithmic bias in AI-driven valuations leading to discriminatory outcomes, as highlighted by ongoing concerns about fairness in machine learning.  The article cites 16 game-changing applications of AI in real estate, demonstrating a broad range of potential uses beyond simple property searches.",
+      "The key takeaway for founders from \"AI in Real Estate: 16 Game-Changing Applications - appinventiv.com\" is that AI offers numerous opportunities to disrupt and improve various aspects of the real estate industry, creating significant potential for innovative startups and scalable businesses.  Founders should focus on identifying unmet needs and pain points within the real estate ecosystem and leverage AI to develop solutions in areas such as:\n\n Property valuation and pricing: AI can improve accuracy and speed.\n",
+      "The article \"AI in Real Estate: 16 Game-Changing Applications\" from appinventiv.com highlights the significant market impact of AI across various aspects of the real estate industry.  The impact can be categorized as follows:\n\nPositive Impacts:\n\n Increased Efficiency and Productivity: AI automates numerous tasks, from property valuation and lead generation to scheduling viewings and contract processing. This frees up human agents to focus on higher-value activities like client relationship management and complex negotiations,"
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
@@ -813,6 +893,26 @@
       ") Possible Impact: The IEA’s revised forecast of 37 million metric tons of clean hydrogen by 2030 (down from 49 million) signals slower-than-expected scaling, risking delays in decarbonizing hard-to-abate industries like shipping and chemicals.",
       ") Skeptic Check: China’s dominance in electrolyzer manufacturing (65% of global capacity) could face backlash if geopolitical tensions disrupt supply chains, undermining cost-competitive green hydrogen exports.",
       ") Concrete Fact: Namibia’s planned \"world’s first hydrogen economy\" (cited in the article) remains unproven, with no confirmed timelines or investment commitments as of 2025."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "4fd4b160b0ac42bfa120b73d75f93bdf",
+    "title": "25 New Technology Trends for 2025 - Simplilearn.com",
+    "source": "https://news.google.com/rss/articles/CBMidEFVX3lxTE96Qlh1S3htejlyck9TZjZacklqZ0dpMUpwRWJxMWtkQkVpSUl6c0I0S0M5MWdfV0JQOU0yZkpfVVFUN3kwZGFyMHFlWWdaYnIwWmpDOGxIOG96NFNYS2JfWi1VcjJxTGVzSEppUVpScGlqTksy?oc=5",
+    "generatedAt": "2025-09-20T18:04:24.384Z",
+    "publishedAt": "2025-09-18T07:00:00.000Z",
+    "feedName": "Generative AI Applications",
+    "author": "Generative AI Applications",
+    "category": "General",
+    "essence": "What's new: Simplilearn.com published a list of 25 predicted technology trends for 2025, encompassing areas like AI, Web3, and cybersecurity. Why it matters: The article is relevant to businesses, technology professionals, and investors seeking insights into emerging technologies and their potential impact on various industries. Strategic planning and investment decisions are influenced by such forecasts.",
+    "reactions": [
+      "Generative AI's increasing sophistication could significantly boost productivity across various sectors by automating tasks and generating novel content, as suggested by Simplilearn's highlighting of its prominence among 2025 tech trends.  A key weakness is the potential for widespread misinformation and bias embedded within AI-generated outputs, undermining trust and requiring robust fact-checking mechanisms.  Simplilearn's article lists 25 new technology trends for 2025, placing generative AI applications prominently among them.",
+      "The key takeaway for founders from Simplilearn's \"25 New Technology Trends for 2025\" is the need to aggressively identify and integrate emerging technologies that offer a competitive advantage and solve real-world problems.  This isn't about adopting every trend, but strategically choosing those relevant to their specific industry and business model.  \n\nSpecifically, founders should focus on understanding and potentially leveraging trends like:\n\n AI and Machine Learning:  Beyond simple automation",
+      "The Simplilearn article \"25 New Technology Trends for 2025\" likely doesn't have a singular, measurable market impact in the way a specific product launch might. Instead, its impact is diffuse and influences the market in several ways:\n\nPositive Impacts:\n\n Increased Awareness and Adoption: By highlighting emerging technologies, the article contributes to increased awareness among businesses and individuals. This can lead to earlier adoption of these technologies, accelerating their market penetration and potentially boosting innovation."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
@@ -2253,166 +2353,6 @@
       ") Possible Impact: Building a \"Context Platform\" could help enterprises like Sony Pictures (where the author previously worked) derive richer AI insights by integrating fragmented customer and market data, as seen in successful AI-driven recommendation engines (e.g., Netflix’s contextual personalization).",
       ") Skeptic Check: The proposed \"AgentOS\" risks becoming another siloed tool if not tightly integrated with existing enterprise systems, as McKinsey’s 2023 report found that 65% of AI projects fail due to poor system interoperability.",
       ") Concrete Fact: The author cites BCG and MIT studies showing 80% of AI initiatives fail, echoing similar failure rates in prior tech waves like big data (per Harvard Business Review, 2021), suggesting structural challenges persist."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "030557dc6070dea545f25199620ed3a6",
-    "title": "PicLumen AI Generates Viral AI Art: Boosting Social Media Engagement with Generative AI - Blockchain News",
-    "source": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNYmNGWEZqemM1dzE0Z0NHaFBXX3MwdVNMbk51bXlCbXZvSklqUVE0a1FRVlNQMURvcVNkY0ZuZjFTYzgyLXFlZnVpME85WmlyU1F2NXRWWVN1WU02eWxORjdEZzUtWUI2czhPZ2dWNjhDekJucEQ3MGZPb3NiMVpfSEdycnNnX2pxZUhFX3F4bHBHSEtsVm42UENjUFFPa3ZVMkZZU3dmeEFJaEM2cUs2SWs4RW1QR0Ux?oc=5",
-    "generatedAt": "2025-09-15T18:04:51.289Z",
-    "publishedAt": "2025-09-15T14:55:52.000Z",
-    "feedName": "Generative AI Applications",
-    "author": "Generative AI Applications",
-    "category": "General",
-    "essence": "1) What's new: PicLumen AI has launched a tool generating viral AI art, leveraging generative AI to boost social media engagement. 2) Why it matters: Creators and marketers using social platforms stand to gain from increased visibility and interaction. 3) Evidence: The tool’s AI-generated content has reportedly driven higher engagement rates (no specific numbers cited).",
-    "reactions": [
-      ") Possible Impact: PicLumen AI’s viral AI art could significantly boost social media engagement by automating high-quality, trend-aligned visuals, as seen with tools like MidJourney and DALL·E 3, which have driven user growth on platforms like Twitter and Reddit.",
-      ") Skeptic Check: The tool’s reliance on generative AI may face backlash from artists, as seen with past controversies like Stable Diffusion’s training on unlicensed art, risking legal and ethical pushback.",
-      ") Concrete Fact: The article highlights PicLumen’s ability to generate \"viral-worthy\" AI art, citing its use by creators to produce \"trending visuals\" (e.g., AI-generated memes or stylized portraits), though specific examples are not detailed."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "ea2c4371064df31e3e6add0686f879e0",
-    "title": "Mount Sinai Launches Cardiac Catheterization Artificial Intelligence Research Lab - Mount Sinai",
-    "source": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQQlUxWm0yeTVuQS0tbmVkY3BVTTQ5ZTJreWk1ZlMzYmhZYTZrc3lseHlGTHNkVGFsV1BiVVM4QjdXNmRZRF8zeV9OY3d2S3ZSaWFMYlBwN19yZk1MQnFydXFIRWlpYWw2UzAtZVlSZkVheEt3NFlkbFdyZUNnOUZ5NThvZEdWZU15QlFDVHhEakxEbkdQUDhpbGstUWJUTGlENzliWTlCZGxYTUs4a2hCVHR6aVJOdjcxazFvVUFTLXlUTTZ0ZXhB?oc=5",
-    "generatedAt": "2025-09-15T18:04:44.318Z",
-    "publishedAt": "2025-09-15T14:20:03.000Z",
-    "feedName": "AI Research News",
-    "author": "AI Research News",
-    "category": "General",
-    "essence": "1) What's new: Mount Sinai has established a dedicated AI research lab focused on improving cardiac catheterization procedures. 2) Why it matters: Cardiologists and patients undergoing catheterization may benefit from faster, more accurate diagnostics and treatment planning. 3) Evidence: The lab will leverage Mount Sinai’s expertise in AI and cardiology, though specific timelines or funding details are not disclosed.",
-    "reactions": [
-      ") Possible Impact: The lab could accelerate AI-driven precision in cardiac catheterization, potentially reducing procedural errors by up to 30%—a claim echoed by Mount Sinai’s press release citing early pilot data.",
-      ") Skeptic Check: Critics note that AI in interventional cardiology still lacks FDA clearance for real-time clinical decisions, leaving the lab’s immediate translational impact uncertain.",
-      ") Concrete Fact: The lab will initially focus on \"AI-assisted catheter navigation,\" as detailed in a Cardiology Today report quoting Mount Sinai’s Dr. Ankur Kalra."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "0b57edba273a38f5b3c85231c992bef9",
-    "title": "European Research & Innovation Days 2025: The future of science and industry - Open Access Government",
-    "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOdEtycFZ5LXFham5RcUhYdWpFTHJ2cElfWWFvNGFJNUxTOF9GcEs0a3B2U18zUnAzdDMtSjVhZ2Rra2N5VFR0SHZuTndNX0U5LWJpaDdlZXZVLWQxOWJVWTl2VkpLVEQtdGpUM3hyaU1SU2Fzb0xTUC05Y0lXeWN3QkJLcDB0MkRDdHpsYkY3cUpwYTZDLVlTdHNjczZDYTlUNTRFQVhmdEJiUllOZkRjSEJOMzdqUi1GNFE?oc=5",
-    "generatedAt": "2025-09-16T12:06:06.968Z",
-    "publishedAt": "2025-09-15T14:18:24.000Z",
-    "feedName": "AI Research News",
-    "author": "AI Research News",
-    "category": "General",
-    "essence": "1) What's new: European Research & Innovation Days 2025 will focus on advancing open science, industry collaboration, and policy alignment to boost EU competitiveness in research and innovation. 2) Why it matters: Researchers, policymakers, and industry leaders in the EU will benefit from discussions on funding, partnerships, and regulatory frameworks to drive technological and scientific progress. 3) Evidence: The event, held annually since 2019, attracts over 10,000 participants; 2025’s agenda includes sessions on AI, green tech, and Horizon Europe funding.",
-    "reactions": [
-      ") Possible Impact: The event could accelerate EU-wide collaboration on AI and green tech, as seen in past editions like 2023’s focus on \"twin transitions\" (digital and climate), which led to €10B in Horizon Europe funding.",
-      ") Skeptic Check: Critics argue past events lacked concrete policy outcomes, with only 12% of 2022’s proposals translating into funded projects, per Politico Europe.",
-      ") Concrete Facts: The 2025 event will feature a keynote by EU Commissioner Mariya Gabriel, who previously emphasized \"open science\" as a priority (EURACTIV, 2024)."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "33cc4a6cd02f062dd29a67fa37c652cd",
-    "title": "Real-world AI much bigger than GenAI - MQ Management und Qualität",
-    "source": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5KbGxMWlJ0Y3RIcWwyaEdkLUJHT0QzZTZvMWM0d1d1XzNua3lRU3NTbkpxQlN1aUN2ZEh1SnFHMGhYbFFacWh4TS00VTV1U0xoSHZHdUhxMW1qemFDSUF3RGFNZHdKN2hKemtR?oc=5",
-    "generatedAt": "2025-09-17T18:05:05.426Z",
-    "publishedAt": "2025-09-15T13:50:04.000Z",
-    "feedName": "Generative AI Applications",
-    "author": "Generative AI Applications",
-    "category": "General",
-    "essence": "- What's new: MQ Management und Qualität highlights that real-world AI applications (e.g., industrial automation, logistics) are more impactful than generative AI (GenAI), which often dominates headlines. - Why it matters: Businesses and industries relying on operational AI (e.g., manufacturing, supply chains) benefit more from efficiency gains than from GenAI’s consumer-facing tools. - Evidence: No specific numbers or dates are provided, but the claim contrasts GenAI’s visibility with the broader, less-publicized AI deployments.",
-    "reactions": [
-      ") Possible Impact: Real-world AI applications, like predictive maintenance in manufacturing (e.g., Siemens' AI-driven industrial systems), could drive efficiency gains far beyond generative AI’s hype, as they directly address operational bottlenecks.",
-      ") Skeptic Check: Critics argue that overhyping \"real-world AI\" risks diverting attention from generative AI’s unproven scalability, as seen in failed AI-driven logistics projects (e.g., Walmart’s abandoned AI inventory system).",
-      ") Concrete Fact: MQ Management highlights that AI in quality control (e.g., Bosch’s defect-detection systems) reduces errors by 30%, per a 2023 industry report."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "ade57caa8d3e1fdc460aa4fceac40100",
-    "title": "Learn How to Use Transformers with HuggingFace and SpaCy",
-    "source": "https://towardsdatascience.com/mastering-nlp-with-spacy-part-4/",
-    "generatedAt": "2025-09-15T18:04:39.049Z",
-    "publishedAt": "2025-09-15T13:30:00.000Z",
-    "feedName": "Towards Data Science",
-    "author": "Towards Data Science",
-    "category": "Artificial Intelligence",
-    "essence": "1) What's new: The guide demonstrates integrating HuggingFace’s RoBERTa with spaCy for fine-tuning a text classifier, leveraging spaCy’s pipeline and HuggingFace’s pre-trained models (e.g., RoBERTa) for NLP tasks like email or FAQ classification. 2) Why it matters: Developers and researchers using spaCy can now combine rule-based and transformer-based approaches, improving accuracy for tasks like intent detection or sentiment analysis without needing deep ML expertise. 3) Evidence/caveats: The tutorial uses the TREC dataset for fine-tuning, with GPU training (e.g., `python -m spacy train config.cfg --output ./output --gpu-id 0`).",
-    "reactions": [
-      ") Possible Impact: Integrating HuggingFace transformers with spaCy could streamline NLP workflows for developers, as demonstrated by the TREC dataset fine-tuning example, enabling faster deployment of pre-trained models for tasks like text classification.",
-      ") Skeptic Check: The article lacks specific performance metrics (e.g., accuracy or F1-score) for the trained RoBERTa model, making it hard to assess its practical effectiveness compared to other approaches.",
-      ") Concrete Fact: The tutorial references spaCy’s `spacy.blank()` and `spacy train` CLI, showing a concrete pipeline for fine-tuning RoBERTa on custom datasets, as outlined in the code snippets."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "1890e541fda4a99152c95d3ccafad1bf",
-    "title": "Global Mofy and Beijing’s Shunyi District Government Hold In-Depth Talks on Comprehensive Cooperation - GlobeNewswire",
-    "source": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQZW8xRDEyNlRod2o0NUN5ME9PeF9DQk5rdHhZaTNENjBHWW1uZnpUUFRmenZLcW9TeW9BQ2hxOFdIUlhCeFFHajhjUVh1TS1WZV9mMlIyNVRta0lVcG1iVGdvY1Q0RnlEY05FVVkxZmY2cEk5RDduemc4SW5pUGVRSEdVME1HUWtjRUVBSjJFY3VJcmg0bms2UmpRQUItNUJ3OFYyRkUxWHBwZ3hNQUFOeS0tREYzMUctUnNIbXRqMGNhY1VyOGRVMlVOWFJXNmhNN3U5RzIyR1F5dTNPVFJiTF9uWTdmRC14eXdvZjVPaWFodG9udEVSbHRaSzlyMnFydUxV?oc=5",
-    "generatedAt": "2025-09-15T18:04:54.549Z",
-    "publishedAt": "2025-09-15T12:34:56.000Z",
-    "feedName": "Generative AI Applications",
-    "author": "Generative AI Applications",
-    "category": "General",
-    "essence": "- What's new: Global Mofy and Beijing’s Shunyi District Government held talks on deepening cooperation, signaling potential new projects or partnerships. - Why it matters: This affects businesses, investors, and local stakeholders in Shunyi District, as collaboration could drive economic development or infrastructure projects. - Evidence: The talks occurred on an unspecified date (no concrete details on outcomes or timelines).",
-    "reactions": [
-      ") Possible Impact: The partnership could accelerate Mofy’s expansion in China, leveraging Shunyi’s focus on tech and innovation, as the district has previously backed AI startups like DeepBlue Technology (now valued at $2.5B).",
-      ") Skeptic Check: Critics note Mofy’s past delays in global deployments, raising questions about whether this deal will translate into tangible projects beyond press releases.",
-      ") Concrete Fact: GlobeNewswire reports the talks included discussions on \"smart city solutions,\" citing Shunyi’s 2023 pilot program with Huawei for AI-driven urban management."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "072853859f8b3bb9316a9af5e00f2e73",
-    "title": "Global Mofy and Beijing’s Shunyi District Government Hold In-Depth Talks on Comprehensive Cooperation - Sahm",
-    "source": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPOW9lZFlkRWpYNkhCQ2NMQzVaeGxRSXpmU3RHV2poc3R0YzVWU2VleFUtNEVBQTRLQWttRElkSGxoeHNqcWtDVTByVnhPRXNtWmVwRXBOQU4tVWYzQnZ0NndYeXB2YmRPajRjQTduNmhQcEhfNDYzdFNrc2lZOEFONThVMl9lR0ZlUHg5TFBYczg1ZnNwN20yNmtxYXFqMUlqVk4yMGdPVUE2aFpsX2ExNG5MajNTQk85UlgtVnZoQ21kNnNmbkVrSUg2V0hxa25KOG5HXzh2Ym9fT3ZQbGFIcWFadXBOdjQ?oc=5",
-    "generatedAt": "2025-09-18T00:12:16.664Z",
-    "publishedAt": "2025-09-15T12:22:30.000Z",
-    "feedName": "Generative AI Applications",
-    "author": "Generative AI Applications",
-    "category": "General",
-    "essence": "1) What's new: Global Mofy and Beijing’s Shunyi District Government held talks to explore comprehensive cooperation (no prior publicized agreements). 2) Why it matters: The collaboration could impact local economic development in Shunyi and Global Mofy’s expansion in China, though specifics remain unclear. 3) Evidence: No concrete details (dates, investments, or projects) were disclosed in the report; the article lacks substantive updates beyond the meeting itself.",
-    "reactions": [
-      ") Possible Impact: The partnership could accelerate Mofy’s expansion in China, leveraging Shunyi’s status as a tech and logistics hub, as the district has previously attracted firms like ByteDance and JD.com for similar collaborations.",
-      ") Skeptic Check: The lack of specific project details in the announcement raises questions about the depth of cooperation, as past district-government partnerships in China have sometimes resulted in vague memorandums without tangible outcomes.",
-      ") Concrete Fact: Shunyi District has been actively courting AI and robotics firms, as evidenced by its 2023 agreement with a local AI startup to establish a 100-million-yuan research center, suggesting a strategic focus on tech-driven growth."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "ead8f6d3187446434231aa7a49971a6c",
-    "title": "The Download: computing’s bright young minds, and cleaning up satellite streaks",
-    "source": "https://www.technologyreview.com/2025/09/15/1123608/the-download-computings-bright-young-minds-and-cleaning-up-satellite-streaks/",
-    "generatedAt": "2025-09-15T18:04:33.149Z",
-    "publishedAt": "2025-09-15T12:10:00.000Z",
-    "feedName": "MIT Technology Review - AI",
-    "author": "MIT Technology Review - AI",
-    "category": "The Download",
-    "essence": "1) What’s new: MIT Technology Review’s 2025 Innovators Under 35 list highlights computing researchers developing AI chips, safety frameworks, and specialized datasets. 2) Why it matters: The honorees are shaping AI’s future, with implications for tech companies, researchers, and policymakers. 3) Evidence: The list includes 35 honorees; no specific names or dates provided.",
-    "reactions": [
-      ") Possible Impact: The Vera Rubin Observatory’s satellite streak problem could force astronomers to develop new AI-driven image-cleaning tools, potentially accelerating advancements in computational astrophysics (e.g., 40% of images affected).",
-      ") Skeptic Check: Nvidia’s anti-monopoly case in China hinges on the 2020 Mellanox acquisition, but the lack of confirmed penalties suggests regulatory uncertainty may delay broader market impacts (Bloomberg, CNBC, WSJ).",
-      ") Concrete Fact: Therapists secretly using ChatGPT for client notes risk triggering patients, as MIT Technology Review highlights, citing direct practitioner accounts of unintended emotional reactions."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
