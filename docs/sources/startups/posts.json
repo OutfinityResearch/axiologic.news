@@ -1,5 +1,125 @@
 [
   {
+    "id": "5eee2b8ee62f796608034384a93d3bb1",
+    "title": "Less is safer: how Obsidian reduces the risk of supply chain attacks",
+    "source": "https://obsidian.md/blog/less-is-safer/",
+    "generatedAt": "2025-09-20T00:15:47.314Z",
+    "publishedAt": "2025-09-19T22:02:29.000Z",
+    "feedName": "Y Combinator",
+    "author": "Y Combinator",
+    "category": "General",
+    "essence": "Less is Safer: Obsidian's Supply Chain Security Approach What happened: Obsidian minimized its reliance on third-party code. Instead of using numerous external libraries, it prioritizes building features in-house or forking and rigorously version-controlling essential external libraries (e.g., pdf.js, Mermaid, MathJax). Dependency updates are infrequent and involve extensive manual review (line-by-line changelog review, diffing, testing) before deployment.",
+    "reactions": [
+      "Investor — thesis/risks: Obsidian's minimized dependency strategy, while increasing development effort, mitigates supply chain attack risk, a key competitive advantage but potentially limiting future feature expansion.",
+      "Operator — execution lesson:  Thorough dependency reviews, version pinning, and deliberate, delayed upgrades, treating each update like a new dependency, are crucial for maintaining a secure application.",
+      "Market — who loses if they win: Competitors relying on numerous third-party libraries face increased vulnerability to supply chain attacks, potentially losing market share to Obsidian's more secure approach."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "5c14cb713038c5691c1af63208539034",
+    "title": "Hidden risk in Notion 3.0 AI agents: Web search tool abuse for data exfiltration",
+    "source": "https://www.codeintegrity.ai/blog/notion",
+    "generatedAt": "2025-09-20T00:15:50.499Z",
+    "publishedAt": "2025-09-19T21:49:37.000Z",
+    "feedName": "Y Combinator",
+    "author": "Y Combinator",
+    "category": "General",
+    "essence": "Hidden risk in Notion 3.0 AI agents: Web search tool abuse for data exfiltration What happened: Notion 3.0 introduced AI Agents with MCP integrations, allowing them to interact with external tools. Researchers demonstrated a vulnerability where a maliciously crafted prompt could use the `functions.search` tool to exfiltrate data via a seemingly innocuous web search to an internal URL (e.g., `https://db-client-codeintegrity.com/{data}`). This was successfully tested exfiltrating client data.",
+    "reactions": [
+      "Investor —  The vulnerability of Notion's AI agents to data exfiltration via web search queries represents a significant risk, potentially impacting user trust and leading to regulatory fines.",
+      "Operator —  The incident highlights the critical need for rigorous security testing of AI agent integrations, especially those involving external data sources and system calls.",
+      "Market —  Competitors could gain a market advantage by showcasing superior AI agent security and mitigating the risk of data breaches associated with similar integrations."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "b6a88909c04629e87e582fa2d8d2da77",
+    "title": "Nvidia eyes $500M investment into self-driving tech startup Wayve",
+    "source": "https://techcrunch.com/2025/09/19/nvidia-eyes-500m-investment-into-self-driving-tech-startup-wayve/",
+    "generatedAt": "2025-09-20T00:15:27.016Z",
+    "publishedAt": "2025-09-19T20:55:54.000Z",
+    "feedName": "TechCrunch Startups",
+    "author": "TechCrunch Startups",
+    "category": "Startups",
+    "essence": "Nvidia's Potential $500M Investment in Wayve What happened: Nvidia, following its £2B ($2.6B) AI investment pledge in the UK, is considering a $500M strategic investment in Wayve's Series D funding round. This follows Nvidia's participation in Wayve's $1.05B Series C round (May 2024). Wayve uses a self-learning approach to autonomous driving, leveraging Nvidia's GPUs (generation 3 uses Nvidia Drive AGX Thor).",
+    "reactions": [
+      ") Investor (Nvidia):  Nvidia's $500M potential investment in Wayve, building on their existing partnership and leveraging Wayve's data-driven self-learning approach, aims to secure a stake in a potentially trillion-dollar company and further its dominance in the autonomous vehicle AI market.",
+      ") Operator (Wayve): Wayve's rapid progress, demonstrated by its Gen 3 platform utilizing Nvidia's Drive AGX Thor and showcasing its technology to Nvidia CEO Jensen Huang in a London test drive, highlights the effectiveness of its data-centric approach to autonomous driving software development.",
+      ") Market (Competitors):  If Wayve's self-learning, map-free approach proves successful and scalable, established players reliant on high-definition mapping and rule-based systems could face significant disruption in the autonomous vehicle market."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "d5aabd9c6da294100eeeb3bf29ea9fc7",
+    "title": "Microsoft Ads launches Supplemental Feeds to streamline product updates",
+    "source": "https://searchengineland.com/microsoft-ads-launches-supplemental-feeds-to-streamline-product-updates-462289",
+    "generatedAt": "2025-09-20T00:18:17.386Z",
+    "publishedAt": "2025-09-19T18:43:20.000Z",
+    "feedName": "Search Engine Land",
+    "author": "Search Engine Land",
+    "category": "Microsoft Advertising",
+    "essence": "What happened: Microsoft Ads launched Supplemental Feeds on September 19, 2025, allowing merchants to update product details (titles, descriptions, etc.) without full catalog re-uploads. This eliminates the need for complete feed replacements, streamlining updates. The system globally rolled out.",
+    "reactions": [
+      "Investor:  Microsoft's Supplemental Feeds, part of a broader efficiency push, could improve advertiser ROI and increase platform stickiness, but success hinges on adoption and avoiding integration complexities.",
+      "Operator: Streamlining product updates via Supplemental Feeds reduces manual effort and errors, improving campaign accuracy, but requires careful management of data overrides and potential conflicts.",
+      "Market:  Google Ads and other platforms could lose market share if Microsoft Ads' improved efficiency and features significantly attract advertisers seeking better campaign management tools."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "f6defa07c4baa34598f3f807b513daae",
+    "title": "DOJ Seeks Google Ad Manager Break Up As Remedies Trial Begins via @sejournal, @MattGSouthern",
+    "source": "https://www.searchenginejournal.com/doj-seeks-google-ad-manager-break-up-as-remedies-trial-begins/556431/",
+    "generatedAt": "2025-09-20T00:18:13.841Z",
+    "publishedAt": "2025-09-19T18:28:51.000Z",
+    "feedName": "Search Engine Journal",
+    "author": "Search Engine Journal",
+    "category": "News",
+    "essence": "DOJ Seeks Google Ad Manager Breakup What happened: The DOJ is seeking a divestiture of Google Ad Manager (formerly AdX and DFP), arguing Google illegally monopolized publisher ad server and ad exchange markets. Google counters with a proposal to improve interoperability, allowing third-party tools to access real-time bids, rather than a breakup. The remedies trial began Monday, October 23rd, 2023, before Judge Leonie Brinkema.",
+    "reactions": [
+      "Investor — Google's appeal highlights significant risk of a drawn-out legal battle and potential for substantial financial repercussions from a divestiture, despite their proposed interoperability solution.",
+      "Operator —  Google's argument that a breakup would disrupt publishers and raise advertiser costs suggests a potential execution challenge in disentangling the Ad Manager system without significant market disruption.",
+      "Market —  If the DOJ wins and Google is forced to divest Ad Manager,  smaller ad tech companies stand to gain market share, while publishers and advertisers may face transitional costs and potential service disruptions."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "1895b9e3c1b1080dbd05de392167b113",
+    "title": "The Week’s 10 Biggest Funding Rounds: AI And Robotics Headline Busy Week For Dealmaking",
+    "source": "https://news.crunchbase.com/venture/biggest-funding-rounds-ai-robotics-figure/",
+    "generatedAt": "2025-09-20T00:16:17.081Z",
+    "publishedAt": "2025-09-19T18:27:45.000Z",
+    "feedName": "Crunchbase News",
+    "author": "Crunchbase News",
+    "category": "Artificial intelligence",
+    "essence": "What happened: Seven AI/robotics companies secured significant funding rounds totaling over $2.6 billion in the week of September 13-19, 2025. Figure led with a $1 billion Series C, achieving a $39 billion valuation. Other notable rounds included Groq ($750M Series undisclosed), and Divergent ($290M Series E).",
+    "reactions": [
+      "Investor — Figure's $1B Series C at a $39B valuation suggests a strong belief in the potential of general-purpose humanoid robots, but this valuation hinges on successfully navigating significant technological and market adoption hurdles.  Operator — Divergent Technologies' Series E, combining equity and debt financing, highlights a strategic approach to securing capital for scaling its digital manufacturing platform, demonstrating a blend of risk-taking and financial prudence. Market — The surge in AI and robotics funding could lead to consolidation and diminished returns for later-stage entrants, as well as potential job displacement in affected industries.",
+      "The key takeaway for founders from \"The Week's 10 Biggest Funding Rounds: AI and Robotics Headline Busy Week For Dealmaking\" is that significant investment capital is currently flowing into AI and robotics companies.  This suggests a strong market opportunity for founders in these sectors, but also increased competition.  Founders should focus on developing innovative and compelling solutions within AI and robotics to attract investor attention in this competitive landscape.  The article highlights the substantial sums being invested, indicating a willingness from V",
+      "The headline \"The Week's 10 Biggest Funding Rounds: AI and Robotics Headline Busy Week for Dealmaking\" suggests a significant market impact, primarily driven by increased investor confidence and activity in the AI and robotics sectors.  The specific impact can be broken down as follows:\n\nPositive Impacts:\n\n Increased valuations:  Large funding rounds indicate investors are placing high valuations on AI and robotics companies, potentially driving up valuations across the sector. This can lead to a \"wealth effect"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
     "id": "aab3226d5ddac6cf3450662921389a84",
     "title": "Social Security’s commissioner says younger generations may have a different set of rules. Should Gen Z even plan for it?",
     "source": "https://www.marketwatch.com/story/should-gen-z-and-millennials-even-bother-including-social-security-in-their-retirement-plans-anymore-1d9fd1ff?mod=mw_rss_topstories",
@@ -33,6 +153,26 @@
       "Investor —  A successful US-China energy deal could significantly boost energy stock prices, but the risk lies in the deal's fragility given the broader geopolitical tensions between the two countries.",
       "Operator —  Execution hinges on navigating complex regulatory hurdles in both the US and China, requiring deep understanding of each nation's energy policies and political landscape.",
       "Market —  Existing players in the global energy market, particularly those reliant on alternative energy sources or those with established relationships with other nations, could lose market share if a US-China energy deal significantly increases trade."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "9ac24d2a4ebeb86b16220397498d3d7c",
+    "title": "Google warns DOJ ad-tech remedies would hurt publishers, advertisers",
+    "source": "https://searchengineland.com/google-warns-doj-ad-tech-remedies-would-hurt-publishers-advertisers-462288",
+    "generatedAt": "2025-09-20T00:18:20.077Z",
+    "publishedAt": "2025-09-19T15:33:20.000Z",
+    "feedName": "Search Engine Land",
+    "author": "Search Engine Land",
+    "category": "Google Ads",
+    "essence": "What happened: The DOJ proposed splitting Google Ad Manager, a key ad-tech tool, despite a court ruling that Google's acquisitions didn't harm competition. Google counters that this exceeds the court's decision and antitrust law, proposing increased interoperability instead. The article was published September 19, 2025.",
+    "reactions": [
+      "Investor — Google's thesis is that forcing a divestment of Ad Manager would harm publishers and advertisers, raising costs and reducing innovation, thus undermining the DOJ's stated goal.",
+      "Operator —  Google's execution lesson is that successfully defending against antitrust actions requires demonstrating tangible negative consequences for the broader ecosystem beyond the defendant's own interests.",
+      "Market —  Smaller publishers and advertisers lose if the DOJ wins, as Google's proposed interoperability solution would likely be less beneficial than the current, integrated system."
     ],
     "promoBanner": {
       "text": "Axiologic News",
@@ -193,6 +333,26 @@
       "Investor — Thesis/Risks:  Mark McLaughlin of Alkeon Capital sees a \"new infrastructure cycle\" driven by AI-powered rebuilding of core business systems, including HR, but the current funding levels are still significantly below 2021's peak, indicating substantial risk.",
       "Operator — Execution Lesson: Ashby's success, doubling its customer base and increasing ARR by 135% in a year, demonstrates the potential for rapid growth in the HR tech space by focusing on AI-powered solutions and targeting both startups and enterprises.",
       "Market — Who Loses if They Win:  Established players like Workday, through its acquisitions of Sana and Paradox, are likely to consolidate market share, potentially squeezing out smaller, less well-funded competitors."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "121bb77d19296d51b32954347664b115",
+    "title": "Why Global Sites Amplify Technical Errors and Steps to Prevent This by Semrush Enterprise",
+    "source": "https://searchengineland.com/why-global-sites-amplify-technical-errors-and-steps-to-prevent-this-461990",
+    "generatedAt": "2025-09-20T00:18:22.925Z",
+    "publishedAt": "2025-09-19T11:00:00.000Z",
+    "feedName": "Search Engine Land",
+    "author": "Search Engine Land",
+    "category": "SEO",
+    "essence": "What happened: A single technical error on a global website with multiple ccTLDs (.de, .fr, .jp) and language variations (/en-us/, /en-gb/, /en-au/) multiplies exponentially across markets. Search Engine Land reported 31% of international sites had hreflang errors in 2025. A template update in one market (e.g., US) can cascade to others, causing indexing anomalies and traffic drops within days.",
+    "reactions": [
+      ") Investor:  The exponential amplification of technical errors in global sites presents a significant risk for companies lacking robust monitoring and cross-regional coordination, potentially impacting revenue and brand reputation.",
+      ") Operator:  Aligning crawl schedules with deployment cycles, and implementing \"cascade testing\" across markets before global rollouts, mitigates the risk of widespread technical issues.",
+      ") Market: Competitors with superior technical SEO infrastructure and proactive monitoring will gain market share from those whose global sites suffer from cascading technical failures."
     ],
     "promoBanner": {
       "text": "Axiologic News",
@@ -10073,226 +10233,6 @@
       ") Investor – \"The Emmys' focus on streaming-driven nominations (e.g., The Bear, The Last of Us) signals a shift in ad spend toward platforms like Netflix and Apple TV+, but risks arise if linear TV’s decline accelerates faster than expected\" (paraphrased from industry analyst commentary).",
       ") Operator – \"Sydney Sweeney’s viral Emmy moment highlights the power of organic social media moments, but brands must balance authenticity with the risk of tone-deafness in leveraging celebrity culture\" (Adweek’s social media team).",
       ") Market – \"If streaming platforms dominate Emmy wins, traditional networks lose ad revenue and cultural relevance, while mid-tier cable networks face existential threats\" (paraphrased from media strategist interviews)."
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "445df90807b7d9cb5ee37154f9adbcd0",
-    "title": "U.S. stock futures flat ahead of this week’s big Fed meeting",
-    "source": "https://www.marketwatch.com/story/u-s-stock-futures-flat-ahead-of-this-weeks-big-fed-meeting-85e83580?mod=mw_rss_topstories",
-    "generatedAt": "2025-09-15T00:19:44.859Z",
-    "publishedAt": "2025-09-15T00:09:00.000Z",
-    "feedName": "MarketWatch Top Stories",
-    "author": "MarketWatch Top Stories",
-    "category": "General",
-    "essence": "1) What happened: U.S. stock futures were flat Sunday (June 9), with the S&P 500 futures near 5,300 and Nasdaq futures around 17,500. The Fed is expected to cut rates by 25 basis points on Wednesday (June 12), the first cut since July 2023.",
-    "reactions": [
-      ") Investor – \"A Fed rate cut could boost equities, but if inflation resurfaces, the market may see it as premature and reverse gains.\" (Paraphrased from trader commentary on MarketWatch)",
-      ") Operator – \"Hedging strategies ahead of Fed decisions often underperform due to overcrowding, as seen in the muted futures reaction.\" (Inferred from market behavior patterns)",
-      ") Market – \"Bond traders lose if the Fed cuts rates too soon, as yields may rise again, eroding recent gains.\" (Cited from a Bloomberg analyst’s note on Fed timing risks)"
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "9b0ec10d6f432749cdfd6286540f15f6",
-    "title": "Bank of England urged to slow bond-selling plan to help cut record UK borrowing costs",
-    "source": "https://www.theguardian.com/business/2025/sep/14/bank-of-england-urged-to-slow-bond-selling-plan-to-help-cut-record-uk-borrowing-costs",
-    "generatedAt": "2025-09-15T00:19:29.449Z",
-    "publishedAt": "2025-09-14T23:00:36.000Z",
-    "feedName": "Guardian Business",
-    "author": "Guardian Business",
-    "category": "Bank of England",
-    "essence": "1) What happened: The Bank of England (BoE) is considering slowing its bond-selling (QT) program after Governor Andrew Bailey cited the 30-year gilt yield’s impact on economic confidence. Foreign investors have flagged this as a concern. Scaling back QT could ease pressure on long-term borrowing costs, which hit record highs in 2023 (e.g., 10-year gilt yields peaked at ~4.5% in September).",
-    "reactions": [
-      ") Investor: \"Foreign investors are wary of UK long-term yields, and a slower QT pace could stabilize confidence, but selling bonds at a loss may signal deeper fiscal strain\" (paraphrased from Bailey’s comments).",
-      ") Operator: \"Scaling back QT could save the Treasury money, but timing the pivot risks signaling market instability if yields spike further\" (inferred from gilt-sale losses).",
-      ") Market: \"Pension funds and insurers reliant on gilts lose if yields drop, as their liabilities become harder to hedge\" (implied by yield sensitivity)."
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "5b34f3ee6c0fa2c5a94e21954622b68a",
-    "title": "SEO in 2026: Content, AI, and Authority Drive the Year Ahead - Digital Information World",
-    "source": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNMDFrcjRjUThvWWo5YWNJbElQLVY3bGRzYkNCckpHX1dyR3FvY2R6dGZNdW1zdGZSWDFKOEg0dXVHRTRmRUc5QnFlTndNNXpZZ2lkTWlYcFAtOUFIQTNWZElWVTJhT3Rla3RSN2RtNmVyQTRPSVBpRkFCWkMwdGt1b01TQzdtdUNfZ3RxSDlfUlNUZWc?oc=5",
-    "generatedAt": "2025-09-16T06:10:49.506Z",
-    "publishedAt": "2025-09-14T22:30:00.000Z",
-    "feedName": "Digital Marketing & SEO News",
-    "author": "Digital Marketing & SEO News",
-    "category": "General",
-    "essence": "SEO in 2026: Content, AI, and Authority Drive the Year Ahead 1) What changed: AI-generated content now dominates 60% of search results, but Google’s updated E-E-A-T guidelines (2025) penalize low-authority AI output, favoring human-curated or expert-backed content. Authority signals (e.g., backlinks from .edu domains) grew 30% YoY in 2025. 2) Why it matters: AI democratized content creation, but authority and trust are the new wedges.",
-    "reactions": [
-      ") Investor: \"AI-driven content tools will commoditize low-quality SEO, forcing investors to back only those with proprietary authority-building strategies\" (paraphrased from industry expert commentary on AI's role in content saturation).",
-      ") Operator: \"SEOs must pivot from keyword stuffing to AI-assisted topic clustering and authority signals, as Google’s algorithms prioritize depth over density\" (derived from practitioner discussions on execution shifts).",
-      ") Market: \"Traditional agencies lose as in-house teams adopt AI tools, but niche consultancies specializing in authority-building (e.g., E-E-A-T) thrive\" (inferred from market trend analysis in the article)."
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "3de9173243a03ee850cd4a78124c10dd",
-    "title": "Titania Programming Language",
-    "source": "https://github.com/gingerBill/titania",
-    "generatedAt": "2025-09-15T06:09:19.076Z",
-    "publishedAt": "2025-09-14T22:29:49.000Z",
-    "feedName": "Y Combinator",
-    "author": "Y Combinator",
-    "category": "General",
-    "essence": "Titania Programming Language 1) What’s new: Titania is a new teaching-focused language based on Oberon-07, designed for compiler development. It introduces built-in procedures (e.g., `abs()`, `lsh()`, `new()`) and memory management tools (`addr()`, `size_of()`). The name references Shakespeare’s A Midsummer Night’s Dream (Oberon’s queen, Titania), though it’s likely a placeholder.",
-    "reactions": [
-      ") Investor: \"Titania’s niche focus on compiler education could attract academic and niche engineering investors, but its lack of mainstream adoption risks limiting scalability beyond teaching environments.\" (Paraphrased from YC comments on similar niche languages.)",
-      ") Operator: \"The gradual addition of built-in procedures suggests a pragmatic approach to language development, but overloading basic operations (e.g., `inc(x, y)`) may confuse beginners.\" (Inferred from YC discussions on language design trade-offs.)",
-      ") Market: \"If Titania succeeds, traditional compiler teaching tools like LLVM’s educational materials or Python’s simplicity may lose relevance in academic settings.\" (No direct YC quotes; synthesized from market positioning logic.)"
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "4d67eeb1dd87a73bf29403049185c134",
-    "title": "Grapevine cellulose makes stronger plastic alternative, biodegrades in 17 days",
-    "source": "https://www.sdstate.edu/news/2025/08/can-grapevines-help-slow-plastic-waste-problem",
-    "generatedAt": "2025-09-15T00:18:42.697Z",
-    "publishedAt": "2025-09-14T22:15:33.000Z",
-    "feedName": "Y Combinator",
-    "author": "Y Combinator",
-    "category": "General",
-    "essence": "Grapevine cellulose makes stronger plastic alternative, biodegrades in 17 days 1) What happened: A startup (unnamed) developed a grapevine-based cellulose plastic that degrades in 17 days (vs. 450+ years for conventional plastics) while matching PET’s strength (100MPa tensile strength). Pilot production began in July 2025, targeting food packaging.",
-    "reactions": [
-      ") Investor: \"The bioplastic market is crowded, and scaling grapevine cellulose to compete with petrochemical plastics will require breakthroughs in feedstock supply and cost parity—risks include regulatory shifts favoring other bio-based alternatives.\" (Paraphrased from YC comments on bioplastic startups' scalability hurdles.)",
-      ") Operator: \"Early pilot failures taught us that grapevine cellulose's degradation rate varies wildly with moisture content—standardizing processing conditions was critical to hitting the 17-day claim consistently.\" (Inferred from YC discussions on bio-material consistency challenges.)",
-      ") Market: \"Traditional plastic manufacturers lose if this scales, but so do landfill operators whose revenue depends on non-degradable waste streams.\" (Derived from YC debates on circular economy disruptions.)"
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "97c82f73d4bd6804e777340c55c04123",
-    "title": "Website is hosted on a disposable vape",
-    "source": "http://ewaste.fka.wtf/",
-    "generatedAt": "2025-09-15T00:18:48.210Z",
-    "publishedAt": "2025-09-14T22:14:56.000Z",
-    "feedName": "Y Combinator",
-    "author": "Y Combinator",
-    "category": "General",
-    "essence": "What’s new: A website is now hosted on a disposable vape (e.g., Elf Bar, Puff Bar) via a USB-C port, bypassing traditional servers. The vape’s internal storage (e.g., 16GB) and battery (typically 1000mAh) enable limited hosting of static sites. Example: A developer hosted a basic HTML page on a $10 vape, accessible via a hotspot.",
-    "reactions": [
-      ") Investor: \"If the website is truly hosted on a disposable vape, the thesis is either a joke or a bet on absurdity—risks include zero scalability and immediate obsolescence.\" (Paraphrased from YC comment: \"This sounds like a prank, but if it’s real, the tech stack is a non-starter.\")",
-      ") Operator: \"The lesson here is that even the most unconventional execution (like using a vape as a server) fails if it doesn’t solve a real problem or outlast its own gimmick.\" (Inferred from YC discussion on \"novelty vs. utility.\")",
-      ") Market: \"The losers are any users who trust this setup for critical data—if it works at all, it’s a race to the bottom against actual cloud providers.\" (Echoing YC skepticism: \"This isn’t competition; it’s a meme.\")"
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "a6738f832635165f9f4172148fe8cbd0",
-    "title": "AI startup Cohere valued at $6.8 billion in latest fundraising, hires Meta exec - AOL.com",
-    "source": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5hZl9MZjBwZl9uRGFEcWEtWDJmV0RudEp2RzVwYW9tS093OG5wX3oxc0s5WE5sb1h6TDQ0M1VYakJhNUZ3MEhJRVBfeTVBYzd1RXdRSGM2M0lRS2RTMjFZZ1ktbl9uY3JQamdmVXZrbm1Tblg2?oc=5",
-    "generatedAt": "2025-09-15T06:09:28.615Z",
-    "publishedAt": "2025-09-14T21:36:17.000Z",
-    "feedName": "Startup Funding News",
-    "author": "Startup Funding News",
-    "category": "General",
-    "essence": "Cohere raises $270M at $6.8B valuation, hires Meta’s Joaquin Quiñonero Candela - What happened: Cohere closed a $270M Series C in April 2023, valuing it at $6.8B (up from $2.2B in 2022). It also hired Meta’s former AI chief, Joaquin Quiñonero Candela, as CTO. - Why it matters: The funding and hire signal momentum in enterprise AI, particularly for Cohere’s language models.",
-    "reactions": [
-      ") Investor – \"Cohere’s valuation leap suggests investors are betting on its ability to outcompete larger players like Google and Microsoft in enterprise AI, but risks include reliance on a narrow niche (LLMs) and potential margin compression as cloud providers integrate similar tech.\" (Paraphrased from VC commentary on AI startup valuations.)",
-      ") Operator – \"Hiring a Meta exec signals Cohere’s push for scalability, but execution hinges on whether it can replicate Big Tech’s operational rigor without the same resources.\" (Inferred from startup hiring trends in AI.)",
-      ") Market – \"If Cohere wins, traditional enterprise software vendors (e.g., IBM, Oracle) lose as AI-first solutions displace legacy systems.\" (Cited from analyst reports on AI disruption.)"
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "ab908826232cca417f398e57919482cc",
-    "title": "AMD Turin PSP binaries analysis from open-source firmware perspective",
-    "source": "https://blog.3mdeb.com/2025/2025-09-11-gigabyte-mz33-ar1-blob-analysis/",
-    "generatedAt": "2025-09-15T06:09:23.177Z",
-    "publishedAt": "2025-09-14T21:35:42.000Z",
-    "feedName": "Y Combinator",
-    "author": "Y Combinator",
-    "category": "General",
-    "essence": "What happened: AMD’s Turin PSP firmware requires undocumented blobs to initialize, forcing workarounds like injecting coreboot into vendor firmware. Recent updates to `amdfwtool` (e.g., `amdfwread` patches) improved parsing of Turin’s Embedded Firmware Structure (EFS), revealing discrepancies between coreboot and vendor images (e.g., SPI/eSPI config differences). Dumps of Gigabyte MZ33-AR1’s R11_F08 BIOS show mismatches in EFS fields, requiring splitting the 32MB dual-BIOS image for accurate analysis.",
-    "reactions": [
-      ") Investor – \"AMD’s opaque PSP firmware structure and reliance on proprietary blobs create technical and compliance risks for open-source ecosystems, potentially limiting adoption of its server CPUs in non-vendor environments.\" (Paraphrased from coreboot community discussions on firmware hurdles.)",
-      ") Operator – \"The workaround of injecting coreboot into vendor firmware highlights the fragility of AMD’s PSP initialization process, suggesting that future open-source deployments may require deeper reverse-engineering or AMD’s cooperation for stability.\" (Derived from the post’s analysis of EFS and amdfwtool parsing.)",
-      ") Market – \"If AMD’s server customers successfully bypass PSP restrictions, it could erode AMD’s control over firmware customization, benefiting competitors like Intel or open-source alternatives that offer cleaner integration paths.\" (Inferred from the post’s focus on vendor firmware dependencies.)"
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "f4b9384a525856cfbefbff515f86ee81",
-    "title": "This crypto investor correctly predicted bitcoin would hit $120K in 2025. He now expects it to double in the next year.",
-    "source": "https://www.marketwatch.com/story/this-crypto-investor-correctly-predicted-bitcoin-would-hit-120k-in-2025-he-now-expects-it-to-double-in-the-next-year-250b5ab4?mod=mw_rss_topstories",
-    "generatedAt": "2025-09-15T00:19:48.570Z",
-    "publishedAt": "2025-09-14T19:56:00.000Z",
-    "feedName": "MarketWatch Top Stories",
-    "author": "MarketWatch Top Stories",
-    "category": "General",
-    "essence": "What changed: Dan Morehead, Pantera Capital’s founder, now predicts Bitcoin will double in the next year (up from his prior $120K 2025 target). He cites macroeconomic tailwinds and institutional adoption as key drivers. Why it matters: If realized, this would validate Pantera’s long-term crypto thesis and accelerate institutional inflows.",
-    "reactions": [
-      ") Investor – Morehead’s $120K prediction hinged on Bitcoin’s halving cycle and institutional adoption, but his new $240K target assumes sustained ETF inflows and macroeconomic tailwinds, ignoring potential regulatory crackdowns that could derail momentum.",
-      ") Operator – Pantera’s aggressive call reflects a pattern of crypto funds overpromising returns to attract capital, but past performance (e.g., 2021’s missed $100K forecast) suggests execution risks when macro conditions shift.",
-      ") Market – If Bitcoin doubles, traditional asset managers (e.g., BlackRock) win by capturing ETF fees, while retail traders lose if they chase the rally into a speculative peak."
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "e9b401e5cb3dffd924b925b5f872afda",
-    "title": "OpenAI board chair Bret Taylor says we’re in an AI bubble (but that’s OK)",
-    "source": "https://techcrunch.com/2025/09/14/openai-board-chair-bret-taylor-says-were-in-an-ai-bubble-but-thats-ok/",
-    "generatedAt": "2025-09-15T18:09:35.137Z",
-    "publishedAt": "2025-09-14T19:33:22.000Z",
-    "feedName": "TechCrunch Startups",
-    "author": "TechCrunch Startups",
-    "category": "AI",
-    "essence": "OpenAI board chair Bret Taylor acknowledges an AI bubble—without alarm What changed: Taylor, echoing OpenAI CEO Sam Altman, confirmed an AI bubble exists but framed it as a historical parallel to the dot-com era. He cited the late-’90s bubble as precedent: many startups failed, but the internet’s long-term value held. No specific metrics or timelines were provided.",
-    "reactions": [
-      ") Investor: Taylor’s bubble analogy suggests AI’s long-term value will outlast the current speculative frenzy, but investors should brace for short-term losses akin to the dot-com crash.",
-      ") Operator: Sierra’s CEO frames the AI bubble as a necessary filter, where only the most resilient startups (like those in the dot-com era) will survive the shakeout.",
-      ") Market: If AI startups win, traditional industries (e.g., consulting, content creation) face existential disruption, as automation replaces labor-intensive roles."
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "3289ad81cfe8bef2c2a2ffbe3e10349f",
-    "title": "OpenAI board chair Bret Taylor says we’re in an AI bubble (but that’s okay)",
-    "source": "https://techcrunch.com/2025/09/14/openai-board-chair-bret-taylor-says-were-in-an-ai-bubble-but-thats-okay/",
-    "generatedAt": "2025-09-15T00:18:35.241Z",
-    "publishedAt": "2025-09-14T19:33:22.000Z",
-    "feedName": "TechCrunch Startups",
-    "author": "TechCrunch Startups",
-    "category": "AI",
-    "essence": "What happened: OpenAI board chair Bret Taylor confirmed the AI sector is in a bubble (echoing Sam Altman’s warning) but framed it as a historical pattern, citing the dot-com bubble. He noted parallels: overvaluation and failures, but long-term economic gains. No specific metrics or timelines were provided.",
-    "reactions": [
-      ") Investor – Taylor’s comparison to the dot-com bubble suggests AI’s long-term value will outweigh short-term losses, but investors should brace for significant write-downs in speculative ventures.",
-      ") Operator – Sierra’s focus on AI agents implies that execution in niche, high-margin verticals may outperform broad, capital-intensive plays during a bubble.",
-      ") Market – Legacy tech firms risk obsolescence if they overpay for AI integration, while startups with unproven models could collapse if funding dries up."
     ],
     "promoBanner": {
       "text": "Axiologic News",
