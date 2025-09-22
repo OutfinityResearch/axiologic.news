@@ -1,5 +1,105 @@
 [
   {
+    "id": "f0f99444a6953d9326d8fbeeec02c03e",
+    "title": "Creating and Deploying an MCP Server from Scratch",
+    "source": "https://towardsdatascience.com/creating-and-deploying-an-mcp-server-from-scratch/",
+    "generatedAt": "2025-09-22T18:04:28.038Z",
+    "publishedAt": "2025-09-22T17:55:18.000Z",
+    "feedName": "Towards Data Science",
+    "author": "Towards Data Science",
+    "category": "Artificial Intelligence",
+    "essence": "What's new: A step-by-step guide details creating and deploying a simple \"Hello World\" MCP server using Python's FastMCP library and the Alpic deployment platform, integrating it with Mistral's LLM. Why it matters: The guide helps developers build and deploy reusable tools for various LLMs using the Model Context Protocol (MCP), reducing integration efforts across different LLM providers. This affects developers working with multiple LLMs.",
+    "reactions": [
+      ")  Deploying an MCP server using FastMCP and Alpic streamlines the process, enabling rapid integration with LLMs like Mistral, as demonstrated by the author's \"Prédictif\" project.",
+      ")  The article's reliance on a specific deployment platform (Alpic) limits the generalizability of its approach and may hinder adoption by users of other cloud providers.",
+      ")  The author successfully created a functional \"Hello MCP Server\" and deployed it using Alpic, showcasing the integration with Mistral's chat interface via a custom connector."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "8aee5477d520fdb7bbe8457ed864ee19",
+    "title": "Integrating DataHub into Jira: A Practical Guide Using DataHub Actions",
+    "source": "https://towardsdatascience.com/integrating-datahub-into-jira-a-practical-guide-using-datahub-actions/",
+    "generatedAt": "2025-09-22T18:04:30.869Z",
+    "publishedAt": "2025-09-22T17:39:13.000Z",
+    "feedName": "Towards Data Science",
+    "author": "Towards Data Science",
+    "category": "Data Science",
+    "essence": "What's new: A new guide demonstrates integrating DataHub metadata changes into Jira workflows using DataHub Actions, a custom framework. Why it matters: This affects data teams and project managers who need to track DataHub events (e.g., new data products, tag additions) within their Jira project management system, improving collaboration and workflow efficiency. Evidence: The guide, written by Jimin Kang on September 22, 2025, details creating a Jira ticket upon DataHub data product creation using YAML configuration and a custom Python class.",
+    "reactions": [
+      ")  Integrating DataHub with Jira via custom actions, as demonstrated using the provided YAML and Python code, could streamline data governance workflows by automatically creating Jira tickets for significant DataHub events like new data product creation.",
+      ") The article's focus on a single event type (data product creation) limits its generalizability;  the effectiveness of this approach for other DataHub events (e.g., tag changes) remains to be seen and requires further testing and configuration adjustments as described within the article.",
+      ") The example code utilizes the `jira` Python library to create Jira issues, specifying fields like 'summary' ('New Data Product') and linking to the relevant DataHub data product."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "8935b7f0f1a5df92e809c7e354dcd2fd",
+    "title": "AWS Launches Amazon Bedrock In Asia Pacific, Pushes Local Generative AI Innovations - VOI.ID",
+    "source": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE5hbXVJeXZpVW5SNU8zN2drZU5rbHN4Z1BVX2I3ZDJ6Y1d5dV9fMGFUa1o5V0N3V0EtbUJ0eFA1M1Y0d9IBQkFVX3lxTE5hbXVJeXZpVW5SNU8zN2drZU5rbHN4Z1BVX2I3ZDJ6Y1d5dV9fMGFUa1o5V0N3V0EtbUJ0eFA1M1Y0dw?oc=5",
+    "generatedAt": "2025-09-22T18:04:52.005Z",
+    "publishedAt": "2025-09-22T14:47:29.000Z",
+    "feedName": "Generative AI Applications",
+    "author": "Generative AI Applications",
+    "category": "General",
+    "essence": "Amazon Web Services (AWS) expanded its Amazon Bedrock generative AI service to the Asia Pacific region. This matters because it makes large language model (LLM) access easier for businesses and developers in Asia Pacific, potentially boosting local AI innovation and application development. Affected parties include businesses, developers, and researchers in the region.",
+    "reactions": [
+      "Amazon Bedrock's Asia Pacific launch could significantly accelerate the adoption of generative AI across various industries in the region, potentially fostering local innovation and economic growth.  A key risk is the dependence on AWS infrastructure and services, limiting the flexibility and potentially hindering the development of truly independent generative AI solutions within the region.  The article notes AWS's aim to \"push local generative AI innovations,\" suggesting a focus on supporting regional developers and startups rather than solely providing a cloud-based service.",
+      "The key takeaway for founders from the VOI.ID article \"AWS Launches Amazon Bedrock In Asia Pacific, Pushes Local Generative AI Innovations\" is that the Asia Pacific market is rapidly opening up for generative AI applications, presenting significant opportunities but also requiring a focus on localized solutions.\n\nThis means founders should:\n\n Consider leveraging AWS Bedrock:  Access to powerful, pre-trained foundation models simplifies development and reduces costs, accelerating time to market.  This is especially valuable in the AP",
+      "The launch of Amazon Bedrock in the Asia-Pacific region will have several significant market impacts:\n\nPositive Impacts:\n\n Increased Access to Generative AI:  This will make advanced generative AI tools more accessible to businesses and developers in the region, fostering innovation and potentially leading to the development of new products and services.  Smaller companies, especially, may benefit from access to powerful AI without the need for significant upfront investment in infrastructure and expertise.\n Boosted Cloud Adoption: The launch"
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "b43bbe6505a596aadad1eeede5670fe9",
+    "title": "The Theory of Universal Computation: Bayesian Optimality, Solomonoff Induction & AIXI",
+    "source": "https://towardsdatascience.com/the-theory-of-universal-computation-bayesian-optimality-solomonoff-induction-aixi/",
+    "generatedAt": "2025-09-22T18:04:34.269Z",
+    "publishedAt": "2025-09-22T12:30:00.000Z",
+    "feedName": "Towards Data Science",
+    "author": "Towards Data Science",
+    "category": "Artificial Intelligence",
+    "essence": "What's new: The article explains AIXI, a mathematical model of universal artificial intelligence, by connecting Bayesian optimality, Solomonoff induction, and Kolmogorov complexity. Why it matters: Data scientists, AI enthusiasts, and the general public interested in AI's theoretical foundations will benefit from understanding AIXI's conceptual and formal aspects. The article aims to make complex concepts accessible.",
+    "reactions": [
+      "AIXI, integrating Solomonoff induction and sequential decision theory, offers a potential framework for creating agents with superior learning and decision-making capabilities compared to current AI systems, as suggested by the article's exploration of its theoretical foundations.",
+      "The practical implementation of AIXI faces significant challenges due to the incomputability of the Solomonoff prior, rendering its application to real-world problems currently infeasible, as noted in the article's discussion of limitations.",
+      "The article explains Bayes' theorem as a \"normative rule for updating beliefs about hypotheses in light of new evidence,\" highlighting its role in Bayesian inference and its use in the AIXI framework."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "882557e3772736b134112c18a849e50a",
+    "title": "The Download: the LLM will see you now, and a new fusion power deal",
+    "source": "https://www.technologyreview.com/2025/09/22/1123889/the-download-the-llm-will-see-you-now-and-a-new-fusion-power-deal/",
+    "generatedAt": "2025-09-22T18:04:24.001Z",
+    "publishedAt": "2025-09-22T12:10:00.000Z",
+    "feedName": "MIT Technology Review - AI",
+    "author": "MIT Technology Review - AI",
+    "category": "The Download",
+    "essence": "What's new: Akido Labs is using an LLM-based system, ScopeAI, to assist with medical diagnoses in Southern California clinics, allowing doctors to see significantly more patients. Why it matters: This impacts patients and doctors by potentially increasing access to care (more patients seen) but also raises concerns about the quality of care due to reduced doctor-patient interaction and reliance on AI for diagnosis. Evidence: Akido's CEO claims doctors can see four to five times more patients; the system is used in a small number of Southern California clinics; experts express skepticism about replacing human cognitive work in medicine.",
+    "reactions": [
+      "Akido Labs' LLM-based system, ScopeAI, could significantly increase doctor efficiency, allowing a single physician to see four to five times more patients, as stated by the company's CEO.",
+      "The effectiveness and safety of delegating diagnostic and treatment planning to an LLM like ScopeAI is questionable, as highlighted by expert skepticism regarding the displacement of cognitive medical work onto AI.",
+      "Eni, a major oil and gas company, committed to a $1 billion deal to purchase electricity from Commonwealth Fusion Systems' planned commercial fusion power plant in Virginia, scheduled to be operational in the early 2030s."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "7827613fc0367470e407350878e57444",
     "title": "An oil and gas giant signed a $1 billion deal with Commonwealth Fusion Systems",
     "source": "https://www.technologyreview.com/2025/09/22/1123870/commonwealth-fusion-eni/",
@@ -20,6 +120,26 @@
     }
   },
   {
+    "id": "f280aea4354dd78b599679e4de5df3a5",
+    "title": "China Claims Artificial Intelligence Breakthrough Threatening the Stealth of US Nuclear Submarines - Army Recognition",
+    "source": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPS0dsc1ZHZ0h2cnMwaFZWeGhYNkZGVWtBeUdjeUlQYnQ0Zkw2N1FrYmRIanBHTVd4Y1laSGMtTm5HZGVsOHd4UGFVelRzZTlZNkRoZEJ5S1JydlA1Tmd4TS1Hc2hScWZJYlhhVmZOLXZmTWFDT3NVSEtsUHZVdjNKRVU0MlZfdHR1ei1tcFVfamtiRmxDWXd3NG5PcE9NZUVtNEZXSE15NjZSYU83YnVyaGs1QzlqREc5c0E4TEtFTE1MWFFtSXVqLVFicXdkREJJaDFuS1NvSnVLTWdEUVJF?oc=5",
+    "generatedAt": "2025-09-22T18:04:38.894Z",
+    "publishedAt": "2025-09-22T10:23:23.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "What's new: China claims its artificial intelligence has achieved a breakthrough in detecting US nuclear submarines, compromising their stealth capabilities. Why it matters: This development, if true, significantly impacts US naval power projection and strategic deterrence, potentially altering the balance of power in the Indo-Pacific region. It affects the US Navy's ability to maintain its strategic submarine advantage.",
+    "reactions": [
+      ")  China's purported AI advancement, if accurate, could significantly reduce the operational effectiveness of US nuclear submarines by improving detection capabilities, potentially impacting strategic deterrence.",
+      ")  The claim lacks independent verification and could be an instance of exaggerated technological progress aimed at influencing geopolitical narratives, as independent analysis is currently absent.",
+      ")  The Army Recognition article, citing unspecified Chinese sources, claims the AI can analyze \"subtle acoustic and magnetic signatures\" to identify submarines, though no specific performance data or peer-reviewed studies are presented."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "bc321bf6b003a7e5094454b52f23e3bb",
     "title": "Worldwide spending on AI is expected to be nearly $1.5 trillion in 2025: Report - The Hans India",
     "source": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOZUFnNXBhVGRvZFJMdS1ZNzdqYjJPU3F1LXF3YUt6eE43OUo4QlB1ZUl0SG13d3NRSEQwaG5faHJXaUlRam1YX2NSajVFdmYxZzNMTVFoZEFBWDd2SzNUVWV1UHpTa0ZDWkY4ejJFSDdaOF9UTHd2clAzVDRlcV9IdWdBbk12bXZBZUk3djNxSDlkSkh6alNoTHZLNmQ0UXJXWmVVWjJTSnJYQUE0TXNKSncxUFFhT0J4VG1aNllNdDNCTFBTWE9uMEY3UEc0ZmPSAdQBQVVfeXFMTUt4VXpiYkxUYl92MU82V2VWdk5HVjVmcXU4NHNLc2x3NEZIeHd2MW5vT3VSY0hxRjZoWGFEOUZzdkZucC1kNzZfTWpEeE9jYnhsQm5DdmptN0VVa2NLV2JqSGc4SGFocnNrbEg0WktLVUJtWTJITEtOMjlPM0FZVVpWcmpQNEozYTFsbXgwTTZPTm5ialItb01JMUtXRXVIODM0aGNGandvXy1STlNUWG5GZ0t6SS13X0ZINkZXa19qcHhYVDJVZnBKNTRGSjlLZ0tmQVc?oc=5",
@@ -33,6 +153,26 @@
       ")  The projected $1.5 trillion in worldwide AI spending by 2025 suggests a significant acceleration in AI adoption across various sectors, potentially driving innovation and economic growth.",
       ")  This prediction's accuracy hinges on sustained investor confidence and the successful navigation of potential regulatory hurdles and economic downturns that could curb investment.",
       ")  The Hans India report cites unnamed sources in projecting this substantial increase in AI spending."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "2a63a67e318fd1d192c44853dca9c93c",
+    "title": "Skills and Epistemic Cultures in Artificial Intelligence Research: Evidence from Job Postings - Frontiers",
+    "source": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQNlp4SEQ2eTZxcjJaQi01QWlHQ2w0Z0c2bzBhVXhxcklCbUR4MVNseHpBeVNCUnNQR0lmM01ScFVEeXRQN0w2eTQ0NXJzMGcxdWh2dnBER180cXhIMmNmamVDbUdkMzg5c3V2YkU1S25HekxKT0FLcVRLZVZrMVZPM1U0d3JlOFIyanRpc1BUZw?oc=5",
+    "generatedAt": "2025-09-22T18:04:41.397Z",
+    "publishedAt": "2025-09-22T10:19:51.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "What's new: A Frontiers study analyzed AI research job postings to identify trends in required skills and epistemic cultures. Why it matters: The findings are relevant to AI researchers, recruiters, and educators seeking to understand the evolving skillset demands and cultural norms within the field, informing curriculum design and career development strategies. This impacts individuals seeking AI-related employment and institutions aiming to train a competitive workforce.",
+    "reactions": [
+      "The study's analysis of AI job postings reveals a strong emphasis on practical skills like Python programming and TensorFlow, suggesting a shift towards applied AI development over theoretical research.  A potential weakness is the reliance solely on job postings, which might not fully reflect the diversity of skills used within AI research labs.  The Frontiers article highlights that \"the demand for specific skills varies across different subfields of AI research,\" indicating a nuanced landscape of expertise within the field.",
+      "The key takeaway from \"Skills and Epistemic Cultures in Artificial Intelligence Research: Evidence from Job Postings - Frontiers\" for founders is that recruiting and retaining top AI talent requires understanding and aligning with the specific epistemic cultures prevalent within different AI subfields.  This means that simply listing \"AI experience\" isn't enough.\n\nFounders need to:\n\n Identify the specific AI subfield relevant to their product/company: Different subfields (e.g., deep learning",
+      "The Frontiers article \"Skills and Epistemic Cultures in Artificial Intelligence Research: Evidence from Job Postings\" likely has a subtle but potentially significant market impact, primarily felt in the AI talent acquisition and development spheres.  Its impact isn't a sudden, disruptive shift, but rather a contribution to a more nuanced understanding of the AI job market, leading to gradual changes over time.  Here's a breakdown of potential market impacts:\n\nPositive Impacts:\n\n Improved Talent Acquisition Strategies:"
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
@@ -333,6 +473,26 @@
       ")  Vietnamese AI startups' success in reaching millions globally demonstrates the potential for developing nations to become significant players in the global AI market, as evidenced by the article's focus on their expanding user bases.",
       ")  The article lacks specifics on the AI models' underlying technology and data sources, raising concerns about potential biases or limitations in their widespread application.",
       ")  VietNamNet reports that Vietnamese startups are leveraging AI to provide services to millions of users worldwide, though the exact number of users and specific startups remain unspecified."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "a3833f23081362054990cce46e77f953",
+    "title": "AI News: Artificial Intelligence Trends And Top AI Stocks To Watch - Investor's Business Daily",
+    "source": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQMTVTWnJlZkpsVU9ZV0g1WHdKQVBKOFFvcUpPeTJuMW9iT2FTMWI1N2hMYk1ud1cwQlBEVlJObDFVTnpoNnBhejJrZnVFelQ5V3NNRklrM2RlaHUtc2NsbmxWcVV1MWVzd082RUdTYmtJVW9MUmJRTG5sV1dJN3JCd1JNX2Z4VnZtV3VpbzdrNXdKNTVSc3FB?oc=5",
+    "generatedAt": "2025-09-22T18:04:48.850Z",
+    "publishedAt": "2025-09-19T17:06:00.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "What's new: The article highlights current trends in artificial intelligence and identifies top AI stocks for investors to consider. Why it matters: The information is relevant to investors interested in the AI market and seeking potential investment opportunities in the sector. This impacts individuals managing personal portfolios or institutional investors tracking AI-related businesses.",
+    "reactions": [
+      ")  Increased AI adoption across various sectors, as predicted by Investor's Business Daily's focus on \"Top AI Stocks To Watch,\" could lead to significant economic growth and job displacement in the coming years.",
+      ")  The article's focus on stock performance overlooks the potential for AI development to be concentrated in a few powerful companies, creating monopolies and stifling innovation.",
+      ")  Investor's Business Daily highlights specific companies, such as those mentioned in their \"Top AI Stocks To Watch\" section,  as key players in the burgeoning AI market."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
@@ -1100,6 +1260,26 @@
     }
   },
   {
+    "id": "a0d3477384a38eea3a314431f0981d87",
+    "title": "Qualcomm Taps Adobe GenStudio to Optimize Content Supply Chain with Generative AI - FinancialContent",
+    "source": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQazlQLVpSR1piQ2hQbU5JTjgzd1VLM0Fnd0I3cVk0Z3lSbEw1a3JwSVVLd2NWNzNmZGEzZ0hwV2ZDaHd1RThWT0R5ckZfdE44dmlDQnBaWUZBWDY5NFU1eUdMSDJjaFNPd3otYmtUYndHT21sV28yWGhpRmVHTlZ1QVRZdXE0X01LcmhjRnRhMEdBVFB0X2lsOGR1eGpaS2pKdTBxd0ZqdTFIV0xHNFEySEJiUEh5NlczZzZjXzIxdTZIN3V4eGNMZU9hQ1JMcGs1Q2xCbVRZSFFWSXZMYWVUZUdIRVE0Zw?oc=5",
+    "generatedAt": "2025-09-22T18:04:56.328Z",
+    "publishedAt": "2025-09-18T13:00:00.000Z",
+    "feedName": "Generative AI Applications",
+    "author": "Generative AI Applications",
+    "category": "General",
+    "essence": "What's new: Qualcomm is integrating Adobe GenStudio, a generative AI platform, into its content supply chain to streamline content creation and distribution. Why it matters: This impacts Qualcomm's marketing and communications efforts, potentially improving efficiency and reducing costs associated with producing various forms of marketing materials. The change affects internal teams responsible for content creation and potentially external agencies involved in Qualcomm's marketing.",
+    "reactions": [
+      "Qualcomm's use of Adobe GenStudio could streamline content creation and reduce production costs for marketing materials and technical documentation, potentially improving their time-to-market.  A potential weakness is the reliance on Adobe's technology, limiting flexibility and potentially creating vendor lock-in should Adobe's GenStudio fail to meet expectations or become overpriced.  The article states Qualcomm aims to optimize its content supply chain, suggesting a focus on efficiency improvements rather than solely on generative AI's creative capabilities.",
+      "The key takeaway for founders from the Qualcomm and Adobe GenStudio partnership is that integrating generative AI into your content supply chain can significantly optimize efficiency and reduce costs.  Qualcomm's adoption highlights the growing trend of using AI to automate and improve various aspects of content creation, distribution, and management.  This suggests that founders should explore how generative AI can streamline their own content processes, potentially leading to faster turnaround times, lower production expenses, and improved scalability.  It also underscores the importance of partnering",
+      "The market impact of Qualcomm tapping Adobe GenStudio to optimize its content supply chain with generative AI, as reported by FinancialContent, is likely to be multifaceted and unfold over time.  Here's a breakdown of potential impacts:\n\nPositive Impacts:\n\n Increased Efficiency and Reduced Costs for Qualcomm:  Automating content creation and optimization through generative AI should lead to significant cost savings and increased efficiency for Qualcomm. This could improve their profitability and competitiveness.\n Enhanced Content Quality and Consistency:"
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "ec8cd00cad5ba837cc3125bb1e32a433",
     "title": "Qualcomm Taps Adobe GenStudio to Optimize Content Supply Chain with Generative AI - Yahoo Finance",
     "source": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOZi1zaExzWndwWjRGWEpWdG01N2lWRnpReUlKRTJ6dHBtQ18tODItZjVzODdSZ1kxQjN1SXJyNmpNRGFWLTdWMXBjUmhSdzR1cjRUZEtpZklnZTRtWnYxXzBPS3hDWmxWLXZ5eHRBd2ZycVRHME5uU2phT2dGNXdtZXVEbWJBTnlXancwbw?oc=5",
@@ -1513,306 +1693,6 @@
       ") Possible Impact: A study by Northeastern researchers found that machine learning models analyzing patient data (e.g., speech patterns) could predict depression severity with 85% accuracy, suggesting early intervention tools for clinicians.",
       ") Skeptic Check: Critics note that reliance on algorithms may overlook cultural biases in training data, as highlighted by a 2023 Nature Digital Medicine study showing ML models underperformed in non-Western populations.",
       ") Concrete Fact: The research, led by Northeastern’s College of Engineering, used anonymized voice recordings from 142 participants to train models that detected depressive symptoms in real time."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "85dc09784052480edb1b53d518dd0148",
-    "title": "Google DeepMind claims ‘historic’ AI breakthrough in problem solving - The Guardian",
-    "source": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPQ3JZUk1WRlNTY3RlX3hrbEJuSWhvX0RSM0N4d3pUTnFUNG1xWE1yWHBWdzFoQzVXc19MRkZMMGViQ2pZek9PbHB6U0VpWHVCRjltQW40S3F0U29lbWlLcVpYamY3bW50M013N3VUZkFhMUg3cXZ4Tm1PR05KUGVyRmdaWjVSZEZCdFkydjFkRjBfNHlMTFFWZG9XeWdqc3JlbFU4dVZHQ3Z1alRyazQxTjZYYkJDWHRw?oc=5",
-    "generatedAt": "2025-09-17T18:04:41.095Z",
-    "publishedAt": "2025-09-17T17:04:00.000Z",
-    "feedName": "AI Research News",
-    "author": "AI Research News",
-    "category": "General",
-    "essence": "1) What's new: Google DeepMind’s AI system, GNoME, autonomously discovered 2.2 million new materials, including 300,000 with potential for clean energy and electronics. 2) Why it matters: Researchers and industries (e.g., renewable energy, tech) could accelerate material discovery, reducing trial-and-error costs and time. 3) Evidence: GNoME analyzed 1.5 million existing materials to predict 2.2 million new ones (as of 2024).",
-    "reactions": [
-      ") Possible Impact: DeepMind’s AlphaProof AI solved a 100-year-old open math problem, potentially accelerating progress in formal verification and automated theorem proving (The Guardian).",
-      ") Skeptic Check: Critics note that the AI’s success relied on human guidance and that the problem’s complexity was limited compared to broader real-world challenges (paraphrased from expert commentary in the article).",
-      ") Concrete Fact: The breakthrough involved proving a mathematical theorem in the Hales-Jewett theorem family, a key area in combinatorics (cited in The Guardian’s report)."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "8e488966dd7cf3fa42c1a50adf774d50",
-    "title": "(PDF) Predicting Student Dropout based on Machine Learning and Deep Learning: A Systematic Review - researchgate.net",
-    "source": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNb2JvYS1Kb0wxMjc2dmh4SFhMSXFKalQxSkkwZVNESm9UTEoyREtoM21sZzMwWXF4dXlrTWhEbjRKTGZ4eVl2cW1GdmstMk1oZXdYWEZ4Mnh2QUdFRG84b0hQaFJyYjFiM1E4ZWhFc3ppdU81bUhaeFg2RnJ3Y1hMcndDMGNMNGlzc0xURnF5cHJoV2tQWnpmMkZIM2hfV1E5TlRoX2xkUWotY3ZFb1BrOXl4RjJETjFIYTRLMk9GU3FxS3piNWRKM25ETk9QQXh1VTU0VEF2cFc?oc=5",
-    "generatedAt": "2025-09-20T06:04:08.344Z",
-    "publishedAt": "2025-09-17T16:15:33.000Z",
-    "feedName": "AI Research News",
-    "author": "AI Research News",
-    "category": "General",
-    "essence": "What's new: A systematic review analyzed the application of machine learning and deep learning models to predict student dropout, summarizing existing research. Why it matters: This research directly impacts educational institutions seeking to improve student retention and support services. Early identification of at-risk students allows for timely interventions, potentially preventing dropout and improving educational outcomes.",
-    "reactions": [
-      "The systematic review suggests that machine learning models, particularly deep learning approaches, hold promise for accurately predicting student dropout, potentially enabling timely interventions to improve retention rates.",
-      "A key weakness lies in the potential for bias in the training data, leading to inaccurate predictions for certain student subgroups and potentially exacerbating existing inequalities.",
-      "The research, published on ResearchGate, synthesizes findings from numerous studies, analyzing the efficacy of various machine learning algorithms in predicting student attrition."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "2c9071a23b68dbdb4ef1a0283e6ba0bd",
-    "title": "Agricultural Research Center concludes a specialized training course in Artificial Intelligence - libyaupdate.com",
-    "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQR2FqQmtmWXFFanJ5WWxnLUxUUk5Fd0cwa25SOHV6bXVBSTctWnR1NWk5Tm5RaTMybE5JR2JHcVlaQ0s5dnhtYUtLYkdkbENuQWwwSXFEUmd0TTR4ZzVrTWJzRVJHaHZDSXhBTWU2bGl4U3RWV1RBdnFLVUYwZ2RYOWo2S3NyM1lZT19qc1l5U1ZJcU5MdC1qaUxtSU5iS0k0RzZ5Yi1RQjhjc2hZdE9qR2p4ZW9mV0xyNEVRcw?oc=5",
-    "generatedAt": "2025-09-17T18:04:43.422Z",
-    "publishedAt": "2025-09-17T16:04:05.000Z",
-    "feedName": "AI Research News",
-    "author": "AI Research News",
-    "category": "General",
-    "essence": "1) What's new: The Agricultural Research Center in Libya completed a specialized AI training course for researchers and professionals, marking its first such initiative in the sector. 2) Why it matters: Libyan agricultural scientists and policymakers gain tools to modernize farming practices, improving efficiency and productivity in a sector critical to food security. 3) Evidence: The course was held in 2024, targeting 50+ participants; no specific outcomes or partners were named.",
-    "reactions": [
-      ") Possible Impact: The AI training could boost Libya’s agricultural productivity by automating crop monitoring and predictive analytics, as seen in similar programs like the FAO’s AI-driven precision farming initiatives.",
-      ") Skeptic Check: Critics note that without sustained funding or infrastructure, Libya’s AI projects may face the same stagnation as past tech investments, such as the abandoned 2012 e-government initiative.",
-      ") Concrete Facts: The course reportedly trained 50 researchers, though no specific AI tools or partnerships (e.g., with IBM or Google) were named in the report."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "6eaac0a90459879d9dfc710aee928a7f",
-    "title": "Artificial intelligence is reshaping jobs not just eliminating them, research shows - Northeastern Global News",
-    "source": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNbTF1QUhtZWYzUng3ZTdlaFNnUWQtZEFjNmJxbVBka0I0RnJSSFFPdjRoM0s4ME9zT1RmajNITHlvZjhKTU42eWV3OXlxUUdmNkM1ZWNoQmpDdVdSYzVURWFpQkl1M2RWRG1KTjI5N2tMd21xWTd1ajlYZ3N1OXA3My1XY0NYb0k?oc=5",
-    "generatedAt": "2025-09-18T00:12:07.445Z",
-    "publishedAt": "2025-09-17T15:36:07.000Z",
-    "feedName": "AI Research News",
-    "author": "AI Research News",
-    "category": "General",
-    "essence": "1) What's new: AI is increasingly augmenting rather than replacing jobs, with many roles evolving to incorporate AI tools (e.g., data analysis, automation). 2) Why it matters: Workers across sectors (e.g., healthcare, finance) must adapt to AI-assisted tasks, while employers face reskilling challenges. 3) Evidence: A 2023 Northeastern study found 60% of jobs will change due to AI by 2030, not disappear.",
-    "reactions": [
-      ") Possible Impact: Research from Northeastern University suggests AI is augmenting 60% of jobs by automating routine tasks, allowing workers to focus on higher-value activities (e.g., creativity and strategy).",
-      ") Skeptic Check: Critics argue the study may overlook the displacement of mid-skill roles, citing McKinsey’s estimate that 30% of current work hours could be automated by 2030, leaving some workers in limbo.",
-      ") Concrete Fact: The report highlights AI’s role in healthcare, where tools like IBM’s Watson for Oncology have reduced diagnostic time by 30% while increasing accuracy, reshaping radiologists’ workflows."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "cb4b0f65a6ea5394ef03feb287216787",
-    "title": "AI-designed viruses are here and already killing bacteria",
-    "source": "https://www.technologyreview.com/2025/09/17/1123801/ai-virus-bacteriophage-life/",
-    "generatedAt": "2025-09-17T18:04:22.020Z",
-    "publishedAt": "2025-09-17T15:14:29.000Z",
-    "feedName": "MIT Technology Review - AI",
-    "author": "MIT Technology Review - AI",
-    "category": "Biotechnology and health",
-    "essence": "- What’s new: Researchers at Stanford and Arc Institute used AI to design functional viral genomes, with 16 of 302 AI-generated bacteriophages successfully replicating and killing bacteria. - Why it matters: This could accelerate drug discovery and phage therapy for bacterial infections, but raises risks of misuse (e.g., weaponizing pathogens). - Evidence/caveats: The AI, trained on 2M bacteriophage genomes, targeted the phiX174 virus (5,000 DNA letters).",
-    "reactions": [
-      ") Possible Impact (realistic): AI-designed bacteriophages could revolutionize phage therapy, offering faster, customizable treatments for antibiotic-resistant bacterial infections, as demonstrated by the 16 successful AI-generated viruses that killed E. coli in lab tests.",
-      ") Skeptic Check (weak spot/risk): J. Craig Venter warns that AI-generated viruses could be repurposed for harmful human pathogens, highlighting the lack of safeguards against \"viral enhancement research\" with unpredictable outcomes.",
-      ") Concrete Fact: The Stanford/Arc Institute team used AI model Evo (trained on 2M bacteriophage genomes) to design 302 synthetic phiX174 variants, with 16 successfully replicating and killing bacteria—marking the first \"generative\" viral genomes."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "21f673f25633526979c8bfa9def08320",
-    "title": "SwRI, UT San Antonio Collaboration Uses ML to Detect Pre-Ignition in H2 Engines - Fuel Cells Works",
-    "source": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQd2xDejNxbThuSkk0X2hmUjZzQ1pmM0VLSWFfY3Z6LXVJc2FibVY1VnpuRHNFb2xYVnlFSFZjM2tBakt1SkVjZGZtSlZpbFhKUlZtdXdZSUFZY2VGYmJMS2hhTFluMnlfWjdLb0o1MlRFWUstUk15a1dzVDNWcjZPRUg4a0NfY3B2WHpreGdJUmRuZnlFaWlGM0hpSy1pX2F5cHJqUTBzeG4wcFd2ckxSb1dJRFpycVZJcWZQelE4SW5TNGZCSm94NndLMklyLWdidFpJVG5lRldWX2FRZXFoUVUwVWpMZ1JQd3c?oc=5",
-    "generatedAt": "2025-09-18T06:04:34.308Z",
-    "publishedAt": "2025-09-17T15:13:00.000Z",
-    "feedName": "AI Research News",
-    "author": "AI Research News",
-    "category": "General",
-    "essence": "- What’s new: SwRI and UT San Antonio developed a machine learning (ML) model to detect pre-ignition in hydrogen engines, improving early fault identification. - Why it matters: Hydrogen engine developers and manufacturers benefit by reducing risks of catastrophic failures and optimizing performance. - Evidence: The collaboration leverages SwRI’s expertise in hydrogen combustion and UT San Antonio’s ML capabilities, though specific performance metrics or deployment dates are not detailed.",
-    "reactions": [
-      ") Possible Impact: The collaboration could reduce hydrogen engine failures by up to 30% by detecting pre-ignition events earlier, as highlighted in SwRI’s case studies on hydrogen combustion optimization.",
-      ") Skeptic Check: The system’s real-world reliability remains unproven, as no peer-reviewed validation studies were cited in the article, leaving room for false positives in noisy engine data.",
-      ") Concrete Fact: The project leverages a \"machine learning algorithm trained on 10,000+ hours of engine sensor data\" from UT San Antonio’s testbed, as noted in the Fuel Cells Works report."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "a3833f23081362054990cce46e77f953",
-    "title": "AI News: Artificial Intelligence Trends And Top AI Stocks To Watch - Investor's Business Daily",
-    "source": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQMTVTWnJlZkpsVU9ZV0g1WHdKQVBKOFFvcUpPeTJuMW9iT2FTMWI1N2hMYk1ud1cwQlBEVlJObDFVTnpoNnBhejJrZnVFelQ5V3NNRklrM2RlaHUtc2NsbmxWcVV1MWVzd082RUdTYmtJVW9MUmJRTG5sV1dJN3JCd1JNX2Z4VnZtV3VpbzdrNXdKNTVSc3FB?oc=5",
-    "generatedAt": "2025-09-18T14:05:20.657Z",
-    "publishedAt": "2025-09-17T15:02:00.000Z",
-    "feedName": "AI Research News",
-    "author": "AI Research News",
-    "category": "General",
-    "essence": "What's new: Investor's Business Daily published an article highlighting current artificial intelligence trends and suggesting top AI stocks for investors to monitor. Why it matters: The article is relevant to investors interested in the AI sector, providing potential investment opportunities and insights into market trends. It impacts individuals considering investing in AI-related companies.",
-    "reactions": [
-      ")  Increased AI adoption across various sectors, driven by advancements in large language models and generative AI, is likely to boost the market value of associated companies significantly in the coming years, potentially creating new investment opportunities.",
-      ")  The article's focus on stock market performance rather than technological breakthroughs presents a risk of overlooking crucial ethical or societal implications of rapid AI development.",
-      ")  Investor's Business Daily highlights several top AI stocks to watch, including Nvidia, a company whose GPU technology is crucial for training many large AI models."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "109ef0df878d2d9ceb763c62faba5cf8",
-    "title": "Dr Jitendra Singh Inaugurates Uttarakhand’s First AI-HPC Centre at Graphic Era University - convergence-now.com",
-    "source": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNMFIwT1E0NVQ2aVNkR3VTVVhMdS1jVENhVGxyOHg1WDRCcDVWbXFVV2lmSWhLVkNuSllyMWpUWHByd3F3QUtONXhOcERjT05nVkxKOGhYVGhWU2RHNXNhM256a2hUeGxBek92ajFsR3V6aVBsay1DZGx5S3JHRVJ5VkV2TGlaYkpNcjBIczNHQVhnWnVqWG5YY3dXWTNoanBLeGxBRzRhbEp1RV9DalNTQ3c2TGdQSXZPb0tXT3d6UjdadFlGTUs4T213NVlfWjlxMGNMR1JWaTZmZW5QSUxicHFR?oc=5",
-    "generatedAt": "2025-09-21T18:04:05.472Z",
-    "publishedAt": "2025-09-17T14:26:15.000Z",
-    "feedName": "AI Research News",
-    "author": "AI Research News",
-    "category": "General",
-    "essence": "What's new: Uttarakhand's first Artificial Intelligence and High-Performance Computing (AI-HPC) center opened at Graphic Era University. Why it matters: This center will boost AI research and development in Uttarakhand, potentially impacting students, researchers, and the state's technological advancement. It may also attract investment and create job opportunities in the region.",
-    "reactions": [
-      "The AI-HPC center at Graphic Era University could significantly boost AI research and development in Uttarakhand, potentially attracting investment and skilled professionals to the region.  The center's long-term success hinges on securing sustained funding and attracting top-tier researchers to work there, beyond the initial inauguration.  Dr. Jitendra Singh's inauguration of the facility marks a significant step toward advancing AI capabilities in Uttarakhand, as reported by convergence-now.com.",
-      "The key takeaway for founders from the inauguration of Uttarakhand's first AI-HPC center at Graphic Era University is the growing importance and government support for AI and high-performance computing (HPC) in India, particularly in emerging regions.  This signifies potential opportunities:\n\n Access to resources:  The center provides access to advanced computing infrastructure, which can be crucial for AI-driven startups that lack the resources to build their own. Founders can explore collaborations or partnerships with the university to",
-      "The inauguration of Uttarakhand's first AI-HPC (Artificial Intelligence-High-Performance Computing) center at Graphic Era University by Dr. Jitendra Singh, a Union Minister, will likely have several market impacts, both short-term and long-term:\n\nShort-Term Impacts:\n\n Increased Awareness:  The news will raise awareness about AI and HPC capabilities in Uttarakhand, potentially attracting investment and talent to the region. This is particularly true if the inauguration generates significant media coverage."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "8f3fc32cfcc37c2b1942ede47f666cb3",
-    "title": "Google’s new Windows search app hints at AI future - Rolling Out",
-    "source": "https://news.google.com/rss/articles/CBMiekFVX3lxTE41bWVqYVpqSllIUUtxN2Q0czJkZGJ2bEZXR2lTWi0zajJkQUNQNWhuOVYyMDZnZUhScE5YcFpyV21pSWZuR1RoMk5adHpzQm5BNVM1UnY4enN5elJNTl9GeFE5b3N2RHFIMS16MnBqR1F6TjlUSU1zTWVB?oc=5",
-    "generatedAt": "2025-09-18T12:06:08.401Z",
-    "publishedAt": "2025-09-17T14:11:37.000Z",
-    "feedName": "Generative AI Applications",
-    "author": "Generative AI Applications",
-    "category": "General",
-    "essence": "- What's new: Google launched a Windows search app with AI-powered features, including generative search and web browsing. - Why it matters: Windows users gain a Google-powered alternative to Microsoft’s Bing AI, expanding AI search options. - Evidence: The app is in early access for Windows 11 (no public release date yet).",
-    "reactions": [
-      ") Possible Impact: Google’s AI-powered Windows search app could disrupt Microsoft’s Edge and Bing integration by offering faster, more contextual results, as suggested by early user reports of 30% quicker query resolution.",
-      ") Skeptic Check: The app’s reliance on cloud-based AI raises concerns about offline functionality, with one Reddit user noting, \"It crashes when my connection drops, unlike Windows’ native search.",
-      ") Concrete Fact: The app’s \"AI Overview\" feature, highlighted in a Rolling Out demo, generates summarized answers from indexed web pages, similar to Google’s existing Search Generative Experience."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "7341472d3d3164bbbc25aee12603fe72",
-    "title": "Deploying AI Safely and Responsibly",
-    "source": "https://towardsdatascience.com/deploying-ai-safely-and-responsibly/",
-    "generatedAt": "2025-09-17T18:04:30.292Z",
-    "publishedAt": "2025-09-17T14:00:00.000Z",
-    "feedName": "Towards Data Science",
-    "author": "Towards Data Science",
-    "category": "Artificial Intelligence",
-    "essence": "- What’s new: Industry experts debunked four myths about trustworthy AI, emphasizing that accuracy alone doesn’t ensure trust, observability requires systemic visibility, governance accelerates innovation, and ethical AI is a collective responsibility. - Why it matters: Business leaders, engineers, and policymakers must adopt layered trust frameworks to mitigate risks like bias, misinformation, and legal liabilities. - Evidence: Anusha Dwivedula’s Trust Sandwich Framework integrates accuracy, fairness, and explainability (e.g., 92% accuracy with 65% timeliness yields a lower trust score).",
-    "reactions": [
-      ") Possible Impact: Implementing the \"Trust Sandwich Framework\" (e.g., Morningstar’s layered approach) could reduce AI-related lawsuits by 30% by ensuring fairness, resilience, and transparency are measurable, as seen in their 92% accuracy model with a 70% fairness score.",
-      ") Skeptic Check: Shane Murray’s warning that dashboards alone fail to catch silent pipeline corruption (e.g., schema changes or stale data) highlights a critical blind spot in many AI observability tools, risking undetected failures.",
-      ") Concrete Fact: The IEEE paper \"Data Trust Score\" (cited in the article) formalizes a composite metric integrating accuracy, fairness, and resilience, offering a tangible benchmark for trustworthy AI deployment."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "258fa1f263566b9376d98b19e3047078",
-    "title": "Modern Careers Need Modern Skills: Why a Generative AI Course Is Essential Today - Content Media Solution",
-    "source": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPclJ2UGE2SkQ1Q2g3Szhlc1Z6RzRLZmZzcGlYQlRtb2liTFRibnFUU1VfUHVVQmxKbXhLRk9UbG9kU2FibzNub0Y5XzF1eEhndnJVTnVfVkY4eDFiS2s2V2pfMnM0RzU2MGVQU09iVkgzZ0xCNWw3SzE4LW5CdDZrUm4zMnh1TjhSR1dIRWJ4ZlIxTTZxNDRTTGFwSDU0NXIyNnFKb0VXaXFocXpvNzlUdFJDR21XVzQ4eTNidXVhOVDSAcABQVVfeXFMT3JSdlBhNkpENUNoN0s4ZXNWekc0S2Zmc3BpWEJUbW9pYkxUYm5xVFNVX1B1VUJsSm14S0ZPVGxvZFNhYm8zbm9GOV8xdXhIZ3ZyVU51X1ZGOHgxYktrNldqXzJzNEc1NjBlUFNPYlZIM2dMQjVsN0sxOC1uQnQ2a1JuMzJ4dU44UkdXSEVieGZSMU02cTQ0U0xhcEg1NDVyMjZxSm9FV2lxaHF6bzc5VHRSQ0dtV1c0OHkzYnV1YTlQ?oc=5",
-    "generatedAt": "2025-09-19T06:05:21.992Z",
-    "publishedAt": "2025-09-17T13:12:04.000Z",
-    "feedName": "Generative AI Applications",
-    "author": "Generative AI Applications",
-    "category": "General",
-    "essence": "What's new: A content marketing piece argues that generative AI courses are essential for modern careers. Why it matters: The article targets individuals seeking to enhance their job prospects and adapt to the evolving job market influenced by artificial intelligence. Businesses also benefit from employees possessing these skills.",
-    "reactions": [
-      ")  The article suggests that generative AI skills will become increasingly crucial for career advancement, potentially leading to higher salaries and more competitive job opportunities for those with relevant training.",
-      ") The article's claim lacks concrete evidence demonstrating a direct causal link between taking a generative AI course and securing higher-paying jobs;  the impact might be overstated.",
-      ")  The article's source, Content Media Solution, promotes a generative AI course, creating a potential conflict of interest that weakens its objectivity."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "0c97db2f3dedf7debe86a92621ea0346",
-    "title": "AI is bad at data. This startup can fix that - Fast Company",
-    "source": "https://news.google.com/rss/articles/CBMingFBVV95cUxQVzJoNGppdWFRaG5meG40X25YaTRtVnlkZ3Q2V0cxOFBnNDNqR2cxRnJ0MERpTUc1YWtKcUpqUm5Vdl9DR0lPOFVtQnl2WFNVQkt1Y1pRZU9Ebkk4bzM0enJWSHFsSlhHUzFLeTh2TG82cnZSZXJjbmlMUm9XUzVtVnVid2R0REY5Nmh4TTZUUWdSam5Cc3kybE1pc1Zqdw?oc=5",
-    "generatedAt": "2025-09-18T14:05:42.470Z",
-    "publishedAt": "2025-09-17T13:09:44.000Z",
-    "feedName": "Generative AI Applications",
-    "author": "Generative AI Applications",
-    "category": "General",
-    "essence": "What's new: The startup, unnamed in the provided text, has developed technology to improve the quality of data used to train AI models. Why it matters: This impacts businesses and researchers reliant on AI, as improved data quality leads to more accurate and reliable AI outputs. Poor data quality currently hinders AI performance across many sectors.",
-    "reactions": [
-      ")  Fixing AI's data handling issues, as claimed by the Fast Company article about the unnamed startup, could significantly improve the reliability and accuracy of generative AI applications, potentially leading to wider adoption in various sectors.",
-      ") The article lacks specifics on the startup's technology and its demonstrable impact, raising concerns about the feasibility and scalability of its proposed solution.",
-      ")  The Fast Company article highlights the problem of AI's struggles with data, implying a significant market need for improved data management solutions within the generative AI space."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "abd21cd0281aa2d51a1218ce6aa70eba",
-    "title": "North Korean operation uses ChatGPT to forge military IDs as part of cyberattack - The Record from Recorded Future News",
-    "source": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOeVB5czVwR1dza2ZuN0NmbVpEenRCZnl2MHAwWm1ESGJxUjdKLU12ZjluMlNNMHo4LW9pZ2NLOVhvSjVWbEk0WXVXZkNBWk9mYUhSVE1CYlQ4V1QzcDdFdjREdFFteF9wUE15ZklNdTgwemJCU1F2OTFrcXVaWmdmX2x0cjcxYnZqTWxjV1o1MA?oc=5",
-    "generatedAt": "2025-09-17T18:04:50.715Z",
-    "publishedAt": "2025-09-17T13:03:10.000Z",
-    "feedName": "Generative AI Applications",
-    "author": "Generative AI Applications",
-    "category": "General",
-    "essence": "- What's new: North Korean hackers used ChatGPT to generate fake military IDs for cyberattacks, marking the first known use of AI by the group for identity forgery. - Why it matters: Military and defense personnel could be targeted, risking data breaches or operational disruptions. - Evidence: Recorded Future linked the activity to North Korea’s Lazarus Group, though specifics on scale or targets remain unclear.",
-    "reactions": [
-      ") Possible Impact: North Korea’s use of ChatGPT to forge military IDs could accelerate cyber espionage by automating the creation of convincing fake identities, as noted by cybersecurity analysts tracking APT38’s evolving tactics.",
-      ") Skeptic Check: The claim lacks specific evidence of ChatGPT’s direct involvement, as the article cites unnamed sources and no technical artifacts (e.g., malware samples or leaked documents) linking the AI tool to the operation.",
-      ") Concrete Fact: The Recorded Future report references a 2023 campaign where North Korean hackers targeted South Korean defense contractors, though it does not confirm ChatGPT’s role in ID forgery."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "6d976a4bc344e3d7d8438afd9b54cf40",
-    "title": "ROC AUC Explained: A Beginner’s Guide to Evaluating Classification Models",
-    "source": "https://towardsdatascience.com/roc-auc-explained-a-beginners-guide-to-evaluating-classification-models/",
-    "generatedAt": "2025-09-17T18:04:34.906Z",
-    "publishedAt": "2025-09-17T12:30:00.000Z",
-    "feedName": "Towards Data Science",
-    "author": "Towards Data Science",
-    "category": "Data Science",
-    "essence": "- What's new: The guide explains ROC AUC (Receiver Operating Characteristic Area Under Curve) as a metric for evaluating classification models, particularly for imbalanced datasets like the IBM HR Analytics dataset (1,470 employees, 34 features), where accuracy (86%) was misleading due to low recall (34% for attrition cases). - Why it matters: Data scientists and analysts working with imbalanced data (e.g., fraud detection, medical diagnosis) benefit from ROC AUC, as it evaluates model performance across all thresholds and is threshold-independent, unlike accuracy or precision. - Evidence/caveats: The model achieved an AUC of 0.81 on the HR dataset, meaning an 81% chance of correctly ranking attrition cases higher than non-attrition cases.",
-    "reactions": [
-      ") Possible Impact: ROC AUC (0.81) helps address imbalanced datasets like IBM’s HR Analytics (1,470 employees), where accuracy (86%) misleads by favoring the majority class (96% recall for \"stayed\" vs. 34% for \"left\").",
-      ") Skeptic Check: The article’s sample ROC curve calculations (e.g., AUC = 0.33) lack real-world complexity, as thresholds in practice depend on domain-specific trade-offs (e.g., precision vs. recall).",
-      ") Concrete Fact: The IBM HR dataset (Kaggle, CC0 license) includes 34 features and 1,470 records, with attrition labels (\"0\" for stayed, \"1\" for left) driving the logistic regression model’s evaluation."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "d0fc9ee344b22cc682115933c31428d1",
-    "title": "The Download: measuring returns on R&D, and AI’s creative potential",
-    "source": "https://www.technologyreview.com/2025/09/17/1123795/the-download-measuring-returns-on-rd-and-ais-creative-potential/",
-    "generatedAt": "2025-09-17T18:04:25.046Z",
-    "publishedAt": "2025-09-17T12:10:00.000Z",
-    "feedName": "MIT Technology Review - AI",
-    "author": "MIT Technology Review - AI",
-    "category": "The Download",
-    "essence": "1) What's new: Economists in recent papers found R&D is a strong long-term government investment, despite US federal science funding cuts. 2) Why it matters: Policymakers and taxpayers evaluating science budgets need evidence of R&D's value. 3) Evidence: Studies (unspecified) conclude R&D yields high long-term returns, but no specific numbers/dates are cited.",
-    "reactions": [
-      ") Possible Impact: Economists' findings that R&D is a strong long-term investment could bolster arguments for increased federal funding, especially amid cuts to US science budgets (MIT Technology Review).",
-      ") Skeptic Check: China’s ban on Nvidia chips risks stifling its own AI progress, as domestic alternatives may lag behind (Financial Times).",
-      ") Concrete Fact: OpenAI is developing a teen-focused ChatGPT version with age-verification tech, amid Senate hearings on chatbot harms (Axios)."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
