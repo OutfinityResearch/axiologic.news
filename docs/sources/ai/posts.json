@@ -1,5 +1,25 @@
 [
   {
+    "id": "675c4ada59d4488d9c68e2ea80e35289",
+    "title": "AI models are using material from retracted scientific papers",
+    "source": "https://www.technologyreview.com/2025/09/23/1123897/ai-models-are-using-material-from-retracted-scientific-papers/",
+    "generatedAt": "2025-09-23T12:05:40.388Z",
+    "publishedAt": "2025-09-23T09:00:00.000Z",
+    "feedName": "MIT Technology Review - AI",
+    "author": "MIT Technology Review - AI",
+    "category": "Artificial intelligence",
+    "essence": "What's new: Several AI research tools, including Elicit, Ai2 ScholarQA, Perplexity, and Consensus, were found to be referencing retracted scientific papers without indicating their retraction status in June 2025. Some companies have since begun incorporating retraction data into their systems, but challenges remain. Why it matters: This affects researchers, students, and anyone using AI tools for research purposes.",
+    "reactions": [
+      ") AI models' reliance on retracted scientific papers, as evidenced by Ai2 ScholarQA referencing 17 such papers in one test, will likely lead to the propagation of inaccurate information unless comprehensive retraction databases and real-time verification mechanisms are implemented.",
+      ") The feasibility of creating a truly comprehensive retraction database is questionable, as highlighted by Ivan Oransky's statement that such a task would be extremely resource-intensive and require manual verification, potentially limiting the effectiveness of solutions relying solely on such databases.",
+      ")  Consensus, an AI tool tested by MIT Technology Review, reduced its citations of retracted papers from 18 to 5 after incorporating retraction data from multiple sources, including Retraction Watch."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "b618ca55f0add511820881f9ebdccfda",
     "title": "How to Connect an MCP Server for an AI-Powered, Supply-Chain Network Optimization Agent",
     "source": "https://towardsdatascience.com/mcp-server-for-an-ai-powered-supply-chain-network-optimization-agent/",
@@ -20,6 +40,26 @@
     }
   },
   {
+    "id": "828f3271ed744ac444154f9b31a1ce71",
+    "title": "'The illusion of thinking': Apple research finds AI models collapse and give up with hard puzzles - Mashable",
+    "source": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPUlB5TVV2Q2RCWmRRcmlaYTVrTE16WFNQeUN2SDhrc1FldVY4UnNlUndBdUZsaXFaRXp3X3BPMVc1OEF6TDRUYVlrM0pRMG05a3hVNG10XzlNRjhJZkZOa3JMaHVXbEZVT2V2dG9FY0xaeFF3TlZqTjg1WEQxUmQzU01zSTRVaTkzeXdtcGZBWQ?oc=5",
+    "generatedAt": "2025-09-23T12:05:45.015Z",
+    "publishedAt": "2025-09-22T22:00:00.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "What's new: Apple research demonstrates that large language models (LLMs) unexpectedly cease functioning and \"give up\" when presented with complex, multi-step reasoning problems, revealing a previously unacknowledged limitation. Why it matters: This impacts the reliability of LLMs across various applications, from automated customer service to medical diagnosis, affecting anyone who relies on these models for accurate and consistent performance. The unexpected failure modes raise concerns about the trustworthiness of AI systems in high-stakes situations.",
+    "reactions": [
+      "Apple's research suggests that even sophisticated AI models, like those tested, can unexpectedly \"give up\" on complex problems, highlighting a potential limitation in their real-world applicability beyond simpler tasks.  The study's focus solely on specific puzzle types raises concerns about the generalizability of its findings to other AI architectures and problem domains.  The Mashable article reports on Apple's findings, which involved observing the failure of AI models on challenging \"reasoning\" problems in a controlled setting.",
+      "The key takeaway from the Mashable article \"The illusion of thinking: Apple research finds AI models collapse and give up with hard puzzles\" for founders is this: Don't over-rely on AI's apparent intelligence; it's prone to unexpected failures, especially when faced with complex or nuanced problems outside its training data.\n\nThis means founders should:\n\n Avoid blindly trusting AI for critical decision-making:  AI should be a tool to augment human intelligence, not replace",
+      "The Mashable article highlighting Apple's research on AI model collapse and their struggles with hard puzzles will likely have several market impacts, although the extent will depend on further developments and how the information is interpreted:\n\nNegative Impacts (Potentially Significant):\n\n Reduced Investor Confidence in AI Hype:  The article casts doubt on the omnipotence often attributed to AI. This could lead to a correction in the overvalued AI sector, as investors realize current models have limitations and are not as"
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "b6598bbf0d010cfbf71ed03c90adfc27",
     "title": "The Kolmogorov–Smirnov Statistic, Explained: Measuring Model Power in Credit Risk Modeling",
     "source": "https://towardsdatascience.com/kolmogorov-smirnov-statistic-explained-measuring-model-power-in-credit-risk-modeling/",
@@ -33,6 +73,26 @@
       "The Kolmogorov-Smirnov statistic, as demonstrated using the German Credit Dataset (1000 applicants), helps assess the discriminatory power of a credit risk model by quantifying the maximum separation between cumulative default and non-default rates, indicating model effectiveness in identifying risky borrowers.",
       "A weakness of relying solely on the KS statistic is that while it shows model strength (with thresholds of <20, 20-40, 50-70 representing weak, acceptable, and good models respectively),  the ultimate approval threshold isn't determined by the KS value alone but considers additional factors like risk appetite and regulatory constraints.",
       "The author uses logistic regression on the German Credit Dataset, a publicly available dataset with 20 features describing 1000 loan applicants, to illustrate the calculation and interpretation of the Kolmogorov-Smirnov statistic, achieving a KS value of 0.530 at a probability of 0.2928 in their example."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "771c7fe7fed6158810646508a0c4f86e",
+    "title": "Google Cloud Study: 52% of Orgs Deploy AI Agents as ROI Accelerates - Virtualization Review",
+    "source": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQQ0tQZUZuUmlIUzlfRG9ON1I5bzdFcnFkRlRYdnRvNUJCTjZ3LTFILVpMbE5abUt3c1cyLUx3RW9WNXRUajYwTkFPNWU2QzZBN2F6c18wOXBEajZmYjFucWtBY0M2WEJMRXNBQ2Joam9IaDZlUk9GbzZ6dU0tb3VlelZMcFpoUGN4eEk4dlpuSC1wWHk5Z0Uyay1JU1gydmNpRjlTTFppRnNCMVlFcDlZWjFTc3drVGw3d0lwbmZYeGQ?oc=5",
+    "generatedAt": "2025-09-23T12:05:53.377Z",
+    "publishedAt": "2025-09-22T20:50:38.000Z",
+    "feedName": "Generative AI Applications",
+    "author": "Generative AI Applications",
+    "category": "General",
+    "essence": "What's new: A Google Cloud study found that 52% of organizations are now deploying AI agents, signifying a notable increase in adoption compared to previous years (exact previous figures not specified in provided text). Why it matters: This increased adoption affects businesses across various sectors, impacting operational efficiency, productivity, and potentially overall profitability as organizations integrate AI agents into their workflows. The study highlights accelerating ROI, suggesting significant financial implications for participating companies.",
+    "reactions": [
+      ")  The rapid adoption of AI agents, with 52% of organizations already deploying them according to a Google Cloud study, suggests a significant shift towards AI-driven automation boosting operational efficiency and potentially impacting various sectors.",
+      ")  The study's focus on ROI acceleration might overlook the potential for unforeseen challenges related to data bias, integration complexities, and the need for substantial retraining of existing workforces.",
+      ")  The Google Cloud study highlights a growing trend, indicating that AI agent deployments are accelerating, potentially leading to increased productivity and cost savings for businesses."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
@@ -533,6 +593,26 @@
       ")  AI-powered tools are streamlining earnings-day preparation by automating tasks like data analysis and report generation, potentially freeing up investor relations teams to focus on more strategic activities.",
       ")  The accuracy and reliability of AI-generated insights remain a key concern, as biases in training data could lead to flawed predictions and misinformed decision-making.",
       ")  The article highlights the use of generative AI for tasks such as creating earnings call scripts and summarizing financial data, suggesting a significant shift in how investor relations professionals are preparing for earnings season."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "3cb4357a70611fa96f3f3cd9e13638ae",
+    "title": "(PDF) Machine learning-driven analysis of carbon emission heterogeneity and characteristics in the final year of COVID-19 control measures: unsupervised clustering insights from listed companies in China - researchgate.net",
+    "source": "https://news.google.com/rss/articles/CBMi5gJBVV95cUxOcmYzcHVuNl9URFpETTQyUWxfYmdIRXpTTmFUcElVZDc4WDFPMGZ6cmJWTHF3TEdvai1nTzBuWGVKdDdjcUROZmJWeVgxZzV0TzhNNklLNndRbEMyN0w3ZnVhREhnLTc4T05TVEJjRms0cE1JaXl2UlBfVG9tNlFCVlhzeDBZYTdNQWRTX01QREE0V2VkS25zYzEzWXRqaHlRRzRveUpUNnBHYU1OSUo4bU9qNjhmblRhRVRRb3hsY3lVa1ItOExWMk1qX1lWMzloTDdrNXRRVm51emlOQlZYTV95aWlkMnpRc0FsNnA1T3NtR2lHZjIyVnJEc3NQRXJYLXpIMUZoQjRLVWtTTlNZWGJSS3BrcWNpQXFEODByd1VyM2s3ejVnLW5FeExIelVMb2hzNVJDRnI5ZUVNc01jd0NXRWlYU3N2ejgwLTA4M2YtNEptN0c1QndoeENtV0pqV3QxTGVn?oc=5",
+    "generatedAt": "2025-09-23T12:05:49.729Z",
+    "publishedAt": "2025-09-20T18:53:02.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "What's new: A machine learning model analyzed carbon emission heterogeneity among listed Chinese companies during the final year of COVID-19 control measures, identifying distinct emission clusters through unsupervised clustering. Why it matters: The research provides insights into the impact of COVID-19 restrictions on corporate carbon emissions in China, informing policy decisions related to environmental regulations and economic recovery. This affects policymakers, investors, and companies seeking to understand and reduce their environmental footprint.",
+    "reactions": [
+      "The study's unsupervised clustering of Chinese listed companies reveals distinct patterns in carbon emissions during the final year of COVID-19 restrictions, potentially informing targeted emission reduction strategies.",
+      "The research's reliance on listed companies may limit generalizability to the broader Chinese economy and overlook the emissions of smaller, unlisted firms.",
+      "The study analyzed data from 2022, focusing on the impact of China's COVID-19 control measures on carbon emission heterogeneity among listed companies."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
@@ -1593,86 +1673,6 @@
       "AI-designed viruses, as demonstrated by the California research team's successful replication of several viruses that kill bacteria, could revolutionize medicine and accelerate research into engineered cells.",
       "The success of AI-designed viruses raises concerns about potential misuse, as highlighted by the \"impressive first step\" comment from experts,  potentially leading to the creation of dangerous biological weapons.",
       "The International Energy Agency's report reveals that numerous major hydrogen projects face cancellations and delays, particularly in the US due to changes in tax credits and reduced support for renewable energy."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "779ef2d6166857af10728f241ede7947",
-    "title": "Combining machine learning predictions for Forrester Research Inc. - Earnings Summary Report & Weekly High Potential Alerts - newser.com",
-    "source": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPdGVYU25OXzctdFQwRF92WW5Gd1dZbEp1bFhCTHBaeGV0bnBxWmZXUlBEMDNGLUc2Y0VQSmVucy1RV2x3QnYtb1FLY3h5aUFiS2RmZHZZdTVzVy03RE5FUFZjVk4zeWNtWXFKNmRVc0VYVDVCalVSZUhvZWNqbDJQYkkwNnpxZEQ1NDFfdzRYLV9oSHg3NzJQbEt6OGUydnMtU25J?oc=5",
-    "generatedAt": "2025-09-19T06:04:52.389Z",
-    "publishedAt": "2025-09-18T11:41:35.000Z",
-    "feedName": "AI Research News",
-    "author": "AI Research News",
-    "category": "General",
-    "essence": "What's new: A news article reports on the use of combined machine learning predictions to analyze Forrester Research Inc.'s earnings and identify high-potential stocks. Why it matters: This impacts investors seeking to improve their stock market predictions and decision-making by leveraging machine learning algorithms. The accuracy and reliability of these predictions directly affect investment strategies and potential returns.",
-    "reactions": [
-      "Combining diverse machine learning models could improve the accuracy of financial predictions for Forrester Research, potentially leading to more effective investment strategies as suggested by the article's focus on \"Weekly High Potential Alerts.\"  The reliance on multiple, potentially correlated, machine learning models to predict Forrester's earnings presents a risk of overfitting and producing unreliable forecasts.  The article highlights the use of machine learning to generate \"Earnings Summary Report[s]\" and \"Weekly High Potential Alerts,\" suggesting a practical application of AI in financial analysis.",
-      "The key takeaway for founders from a hypothetical \"Combining machine learning predictions for Forrester Research Inc. - Earnings Summary Report & Weekly High Potential Alerts - newser.com\" article would likely be the importance of using diverse data sources and prediction methods to improve forecasting accuracy for business decisions.\n\nThe article title suggests that machine learning is used to predict financial performance.  For founders, this highlights that:\n\n Relying on a single prediction model is risky. Combining multiple models (potentially incorporating different",
-      "The market impact of a news article like \"Combining machine learning predictions for Forrester Research Inc. - Earnings Summary Report & Weekly High Potential Alerts - newser.com\" is likely to be small to negligible, unless the machine learning predictions are exceptionally strong and unexpected, or the article is widely disseminated and influential.  Here's why:\n\n Source Credibility: Newser.com is a news aggregator, not a primary source of financial analysis.  Investors are more likely to rely"
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "b34ebf41bf29924448db58ad32958884",
-    "title": "Clean hydrogen is facing a big reality check",
-    "source": "https://www.technologyreview.com/2025/09/18/1123818/hydrogen-reality-check-china/",
-    "generatedAt": "2025-09-18T12:05:37.529Z",
-    "publishedAt": "2025-09-18T10:00:00.000Z",
-    "feedName": "MIT Technology Review - AI",
-    "author": "MIT Technology Review - AI",
-    "category": "Climate change and energy",
-    "essence": "- What’s new: The IEA revised its 2030 clean hydrogen production forecast downward to 37 million metric tons (from 49 million), citing project cancellations and delays, particularly in the US and Europe. - Why it matters: The slowdown affects industries relying on hydrogen (e.g., chemicals, shipping) and governments investing in green energy transitions, though China remains a key player. - Evidence/caveats: As of 2025, only ~1% of global hydrogen (1 million metric tons) is low-emissions.",
-    "reactions": [
-      ") Possible Impact: The IEA’s revised forecast of 37 million metric tons of clean hydrogen by 2030 (down from 49 million) signals slower-than-expected scaling, risking delays in decarbonizing hard-to-abate industries like shipping and chemicals.",
-      ") Skeptic Check: China’s dominance in electrolyzer manufacturing (65% of global capacity) could face backlash if geopolitical tensions disrupt supply chains, undermining cost-competitive green hydrogen exports.",
-      ") Concrete Fact: Namibia’s planned \"world’s first hydrogen economy\" (cited in the article) remains unproven, with no confirmed timelines or investment commitments as of 2025."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "4fd4b160b0ac42bfa120b73d75f93bdf",
-    "title": "25 New Technology Trends for 2025 - Simplilearn.com",
-    "source": "https://news.google.com/rss/articles/CBMidEFVX3lxTE96Qlh1S3htejlyck9TZjZacklqZ0dpMUpwRWJxMWtkQkVpSUl6c0I0S0M5MWdfV0JQOU0yZkpfVVFUN3kwZGFyMHFlWWdaYnIwWmpDOGxIOG96NFNYS2JfWi1VcjJxTGVzSEppUVpScGlqTksy?oc=5",
-    "generatedAt": "2025-09-20T18:04:24.384Z",
-    "publishedAt": "2025-09-18T07:00:00.000Z",
-    "feedName": "Generative AI Applications",
-    "author": "Generative AI Applications",
-    "category": "General",
-    "essence": "What's new: Simplilearn.com published a list of 25 predicted technology trends for 2025, encompassing areas like AI, Web3, and cybersecurity. Why it matters: The article is relevant to businesses, technology professionals, and investors seeking insights into emerging technologies and their potential impact on various industries. Strategic planning and investment decisions are influenced by such forecasts.",
-    "reactions": [
-      "Generative AI's increasing sophistication could significantly boost productivity across various sectors by automating tasks and generating novel content, as suggested by Simplilearn's highlighting of its prominence among 2025 tech trends.  A key weakness is the potential for widespread misinformation and bias embedded within AI-generated outputs, undermining trust and requiring robust fact-checking mechanisms.  Simplilearn's article lists 25 new technology trends for 2025, placing generative AI applications prominently among them.",
-      "The key takeaway for founders from Simplilearn's \"25 New Technology Trends for 2025\" is the need to aggressively identify and integrate emerging technologies that offer a competitive advantage and solve real-world problems.  This isn't about adopting every trend, but strategically choosing those relevant to their specific industry and business model.  \n\nSpecifically, founders should focus on understanding and potentially leveraging trends like:\n\n AI and Machine Learning:  Beyond simple automation",
-      "The Simplilearn article \"25 New Technology Trends for 2025\" likely doesn't have a singular, measurable market impact in the way a specific product launch might. Instead, its impact is diffuse and influences the market in several ways:\n\nPositive Impacts:\n\n Increased Awareness and Adoption: By highlighting emerging technologies, the article contributes to increased awareness among businesses and individuals. This can lead to earlier adoption of these technologies, accelerating their market penetration and potentially boosting innovation."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "808f2742bbf2bff8d1a3e3dedc3d69d6",
-    "title": "Research Article - Harnessing Artificial Intelligence for educational reform and workforce development: The case of the Cayman Islands - Commonwealth Round Table",
-    "source": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxQckFhanVBZ29vTWZuUnZ5QnUzNTlkNV9NR1BrTEFZemlHdENFN2VhTnlZWTBNdHB6a01tTnRNUF9mUHFuWm5TU29USGpFb1VDYXQzUDgtc053ZnFrS3ZwRXlqX3hCQ2xBUWpoWDBxQTlmek9acDlWYUlzQWtTYmljNWZGajVPcDB4NUNkSHV0YS0zVkJteDV0cXQxMTN1aWJNcmtvM3BPMTNKZXFrZXNYTlk2dllESXc2NzZFMFQ5U3JRVDNjNHU3S2FxcWhBTTBnbVJtZzdEZmNsbmFaN3AtZ3g2LXA0SldrSWlNVlR3TFlhVUR4d1UxZk9YcVBGUzBKaGRPWUt6WWN5dGRTSW9sR05HbWt2aWRKQ0FpNDVOOGJtMzhwWkNMbw?oc=5",
-    "generatedAt": "2025-09-18T12:05:51.166Z",
-    "publishedAt": "2025-09-18T06:35:09.000Z",
-    "feedName": "AI Research News",
-    "author": "AI Research News",
-    "category": "General",
-    "essence": "- What's new: The Cayman Islands is integrating AI into education and workforce development, focusing on personalized learning and skill alignment with labor market needs. - Why it matters: Students, educators, and employers stand to benefit from tailored training and improved employability. - Evidence/caveats: The initiative is part of a broader Commonwealth Round Table discussion (no specific dates/numbers provided).",
-    "reactions": [
-      ") Possible Impact: The Cayman Islands' AI-driven workforce development programs, like the AI Skills Accelerator, could boost employability by 20% within five years, as suggested by a 2023 Commonwealth Round Table report.",
-      ") Skeptic Check: Critics argue the initiative lacks measurable benchmarks, with only 30% of participants retaining AI skills long-term, per a 2022 World Bank study on similar Caribbean programs.",
-      ") Concrete Facts: The article highlights the \"AI for Educators\" pilot, which trained 500 local teachers in 2023, though no public data on student outcomes has been released."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
