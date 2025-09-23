@@ -1,5 +1,165 @@
 [
   {
+    "id": "7e30cd9e4101d62ac31b6bf21a82ee5b",
+    "title": "Telo raises $20 million to build tiny electric trucks for cities",
+    "source": "https://techcrunch.com/2025/09/23/telo-raises-20-million-to-build-tiny-electric-trucks-for-cities/",
+    "generatedAt": "2025-09-23T18:09:46.721Z",
+    "publishedAt": "2025-09-23T16:55:45.000Z",
+    "feedName": "TechCrunch Startups",
+    "author": "TechCrunch Startups",
+    "category": "Fundraising",
+    "essence": "Telo, a startup building small electric trucks, secured a $20 million Series A funding round led by its co-founders Yves Béhar and Marc Tarpenning, with participation from Marc Benioff and others. This contrasts sharply with the hundreds of millions raised by other EV startups that ultimately failed. This funding is significant because it allows Telo to focus on a niche market (city-centric trucks) with a potentially higher chance of profitability due to a leaner approach and smaller production scale (initial target of 5,000 units annually).",
+    "reactions": [
+      "Investor — Telo's focus on a niche market (city trucks) and lean approach to manufacturing minimizes risk compared to larger EV startups, but success hinges on achieving unit profitability quickly with limited funding.",
+      "Operator —  Telo's strategy of prioritizing unit profitability and leveraging a network of external partners and consultants allows them to maximize their limited resources.",
+      "Market —  Established automakers and larger EV companies lose if Telo successfully demonstrates that a smaller, more efficient electric truck can profitably capture a significant portion of the urban delivery and personal use market."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "30a58d9fe8613488fbef0704777a7747",
+    "title": "Review Signals Gain Influence In Top Google Local Rankings via @sejournal, @MattGSouthern",
+    "source": "https://www.searchenginejournal.com/review-signals-gain-influence-in-top-google-local-rankings/556664/",
+    "generatedAt": "2025-09-23T18:12:55.674Z",
+    "publishedAt": "2025-09-23T15:31:34.000Z",
+    "feedName": "Search Engine Journal",
+    "author": "Search Engine Journal",
+    "category": "Local Search",
+    "essence": "What happened: A Search Atlas study of 3,269 Google Business Profiles across four sectors (food, health, law, beauty) found that while proximity remains the primary local ranking factor (55% influence for positions 1-21), review signals significantly impact top rankings. In the top ten positions, review count's influence rises to 26%, and keyword relevance in reviews reaches 22%, while proximity's influence drops to 36%. Why it matters: This shifts the focus for local SEO.",
+    "reactions": [
+      "Investor —  Search Atlas's findings suggest a significant opportunity in businesses leveraging review optimization for improved Google Local rankings, but the model's reliance on correlation and potential overstatement of proximity's influence present investment risks.",
+      "Operator —  To maximize Google Local ranking, focus on acquiring high-volume, keyword-rich reviews using natural, service-specific language, recognizing that proximity's impact diminishes as ranking improves.",
+      "Market — Businesses prioritizing location over review quality and optimization risk losing top rankings to competitors with stronger review profiles and more relevant keyword usage."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "13480c1f3f3adaba9f7f42ec3ac1bdaa",
+    "title": "Shopify, pulling strings at Ruby Central, forces Bundler and RubyGems takeover",
+    "source": "https://joel.drapper.me/p/rubygems-takeover/",
+    "generatedAt": "2025-09-23T18:10:12.502Z",
+    "publishedAt": "2025-09-23T15:25:29.000Z",
+    "feedName": "Y Combinator",
+    "author": "Y Combinator",
+    "category": "General",
+    "essence": "What happened: On September 9th, 2025, Ruby Central, facing financial instability after losing a $250,000 Sidekiq sponsorship, took over the Bundler and RubyGems GitHub repositories and gems at Shopify's behest. This involved adding Marty Haught as an owner and removing access for several long-time maintainers, including André Arko, despite their objections and Marty's own initial reservations. The takeover occurred despite alternative solutions being presented.",
+    "reactions": [
+      "Investor — Shopify's actions, while securing RubyGems' supply chain, expose significant reputational risk stemming from accusations of strong-arming open-source maintainers and potentially stifling competition (Spinel).",
+      "Operator —  Ruby Central's decision, driven by financial dependence on Shopify and perceived supply chain vulnerabilities, highlights the precarious position of open-source projects reliant on corporate sponsorship.",
+      "Market —  Spinel, the competing Ruby management tool, stands to gain if Shopify's actions alienate the Ruby community and erode trust in Ruby Central's governance."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "4484a4af91ab3a5d985913f8883c2109",
+    "title": "From MCP to shell: MCP auth flaws enable RCE in Claude Code, Gemini CLI and more",
+    "source": "https://verialabs.com/blog/from-mcp-to-shell/",
+    "generatedAt": "2025-09-23T18:10:08.634Z",
+    "publishedAt": "2025-09-23T15:09:50.000Z",
+    "feedName": "Y Combinator",
+    "author": "Y Combinator",
+    "category": "General",
+    "essence": "What happened: Researchers discovered authentication flaws in the Model Control Proxy (MCP) used by Claude Code, Gemini CLI, and other tools. This allowed remote code execution (RCE) via malicious MCP servers, escalating Cross-Site Scripting (XSS) vulnerabilities. Exploits involved stealing authentication tokens (MCP_PROXY_AUTH_TOKEN) and injecting commands.",
+    "reactions": [
+      "Investor — Anthropic's proactive patching of its MCP TypeScript SDK, demonstrated by its quick response and high bounty awards, suggests a strong commitment to security and reduced future liability from downstream vulnerabilities.",
+      "Operator —  The vulnerability highlights the risk of relying on third-party libraries without robust security validation, underscoring the need for thorough vetting and proactive patching mechanisms within development pipelines.",
+      "Market —  Vendors who failed to promptly address the vulnerability (e.g., Cherry Studio) face reputational damage and potential legal exposure, while those with effective auto-update mechanisms (Cloudflare) mitigate damage from the exploit."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "46be1939e1a07baa604786a40a643e8c",
+    "title": "Launch HN: Strata (YC X25) – One MCP server for AI to handle thousands of tools",
+    "source": "https://news.ycombinator.com/item?id=45347914",
+    "generatedAt": "2025-09-23T18:09:57.171Z",
+    "publishedAt": "2025-09-23T14:52:07.000Z",
+    "feedName": "Y Combinator",
+    "author": "Y Combinator",
+    "category": "General",
+    "essence": "What happened: Strata, a YC-backed (S25) company, launched on Hacker News. Their product is a single multi-cloud platform (MCP) server designed to manage thousands of AI tools. No specific launch metrics (e.g., sign-ups, downloads) were provided in the HN comments.",
+    "reactions": [
+      "Investor — Thesis/Risks:  The market for AI tool orchestration is nascent, but Strata's pricing is significantly higher than competitors, posing a substantial risk to adoption despite claims of superior accuracy.",
+      "Operator — Execution Lesson:  Clarifying pricing and addressing concerns about cost-competitiveness is crucial for attracting customers, especially given the straightforward nature of the underlying technology.",
+      "Market — Who Loses if They Win:  Existing, cheaper multi-tool aggregation services and developers who could easily replicate Strata's core functionality using simpler methods lose if Strata gains significant market share."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "4a2835f2714a3257258c9ff9cf90fd7b",
+    "title": "AI company Superpanel raises $5.3M seed to automate legal intake",
+    "source": "https://techcrunch.com/2025/09/23/superpanel-raises-5-3m-seed-to-automate-legal-intake/",
+    "generatedAt": "2025-09-23T18:09:49.731Z",
+    "publishedAt": "2025-09-23T14:50:00.000Z",
+    "feedName": "TechCrunch Startups",
+    "author": "TechCrunch Startups",
+    "category": "AI",
+    "essence": "What happened: Superpanel, a legal intake automation platform, raised $5.3M in seed funding led by Outlander VC and Field Ventures. The round also included participation from LOI Venture, Zenda Capital, 8-Bit Capital, and Behind Genius Ventures. The funding will be used to expand the platform's capabilities and accelerate hiring.",
+    "reactions": [
+      "Investor: Superpanel's focus on automating a high-friction legal process, coupled with the founder's prior successful exits, presents a compelling investment thesis, though competition in the burgeoning legal AI space poses a significant risk.",
+      "Operator:  The successful integration of AI into legal intake hinges on smoothly handling the handoff between automated processes and human intervention when ambiguity arises.",
+      "Market:  Established legal software providers like Clio Grow and MyCase could lose market share if Superpanel successfully disrupts the client onboarding process with its AI-powered solution."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "965fc61ede1037031a5283d974312f5c",
+    "title": "OpenDataLoader-PDF: An open source tool for structured PDF parsing",
+    "source": "https://github.com/opendataloader-project/opendataloader-pdf",
+    "generatedAt": "2025-09-23T18:10:05.557Z",
+    "publishedAt": "2025-09-23T13:58:48.000Z",
+    "feedName": "Y Combinator",
+    "author": "Y Combinator",
+    "category": "General",
+    "essence": "OpenDataLoader-PDF, an open-source tool for structured PDF parsing, has been released. It converts PDFs into JSON, Markdown, or HTML, reconstructing document layout (headings, lists, tables, reading order) for easier AI processing. The tool runs locally, prioritizing privacy and incorporating AI safety features (filtering prompt injection).",
+    "reactions": [
+      "Investor —  The open-source nature and focus on local processing mitigate cloud-based data security risks, but the reliance on rule-based heuristics may limit accuracy compared to AI-powered competitors.",
+      "Operator —  The ease of use and local-first architecture streamline PDF processing, but achieving optimal performance may require careful tuning of parameters and potentially Java/Python expertise.",
+      "Market — Existing PDF parsing services and proprietary solutions lose if OpenDataLoader-PDF gains significant traction due to its open-source accessibility, local processing, and built-in safety features."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "23b64847b852f22fbef1eb59579b9566",
+    "title": "LinkedIn Company Intelligence API links ads to pipeline, revenue",
+    "source": "https://searchengineland.com/linkedin-company-intelligence-api-462366",
+    "generatedAt": "2025-09-23T18:12:59.791Z",
+    "publishedAt": "2025-09-23T13:00:00.000Z",
+    "feedName": "Search Engine Land",
+    "author": "Search Engine Land",
+    "category": "LinkedIn",
+    "essence": "What happened: LinkedIn launched a Company Intelligence API enabling B2B advertisers to directly link ad campaign engagement to pipeline and revenue. Early beta users saw a 288% increase in engaged companies, a 93% pipeline value increase, and a 30% ROI boost, alongside a 37% reduction in cost per acquisition (CPA). Why it matters: This addresses the challenge of proving ROI in complex B2B sales cycles.",
+    "reactions": [
+      "Investor —  DataSnipper's report of \"nearly twice as much influenced pipeline\" suggests strong potential ROI, but the reliance on LinkedIn's partners for data aggregation presents a risk of vendor lock-in.",
+      "Operator — Eftsure's success in justifying investment with \"reductions in cost per SQL\" highlights the importance of demonstrable ROI for securing budget approval.",
+      "Market —  If LinkedIn's API delivers on its promises, traditional attribution models and B2B advertising platforms lacking similar capabilities could lose market share."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
     "id": "045c8e52ae02ed177b86dc3413030b24",
     "title": "Schema and AI Overviews: Does structured data improve visibility?",
     "source": "https://searchengineland.com/schema-ai-overviews-structured-data-visibility-462353",
@@ -693,6 +853,26 @@
       ") Investor:  Rand Fishkin's observation that \"Zero-click is taking over everything\" highlights the risk of Google's AI-driven search reducing advertiser ROI by prioritizing user experience over monetization.",
       ") Operator:  Marketers should prioritize reframing search around \"journeys, not keywords,\" designing multi-step campaigns anticipating user follow-ups and refinements, as suggested by the article.",
       ") Market: Smaller, niche advertisers will likely lose market share to larger brands with greater scale and resources in the increasingly competitive, less transparent AI-driven ad environment."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "d1eb9e7d50083ad72170c5c5d4787f99",
+    "title": "These Are The Speediest Companies To Go From Series A To Series C",
+    "source": "https://news.crunchbase.com/venture/fastest-companies-seriesa-to-seriesc-ai-fintech-spacetech/",
+    "generatedAt": "2025-09-23T18:10:21.227Z",
+    "publishedAt": "2025-09-22T11:00:33.000Z",
+    "feedName": "Crunchbase News",
+    "author": "Crunchbase News",
+    "category": "Artificial intelligence",
+    "essence": "What happened: A significant number of companies rapidly progressed from Series A to Series C funding between 2023 and September 2025. Several achieved this in under 12 months. Examples include Anysphere ($900M Series C, <1 year post-Series A), Cognition ($400M Series C, <1 year post-Series A), and Fal ($125M Series C, 10 months post-Series A).",
+    "reactions": [
+      "Investor — Thesis:  Rapid Series A to C fundraising, particularly in generative AI, vertical AI, and fintech, signals strong market validation and potential for significant returns, though the compressed timeline increases risk of overvaluation and premature scaling.",
+      "Operator — Execution Lesson:  Exceptional execution,  leveraging strong market tailwinds (like the generative AI boom), and securing substantial early traction are crucial for achieving rapid fundraising cycles.",
+      "Market — Who Loses:  Competitors lacking similar speed and capital access in these rapidly evolving sectors risk being overtaken by better-funded, faster-moving rivals."
     ],
     "promoBanner": {
       "text": "Axiologic News",
@@ -2193,386 +2373,6 @@
       "Investor —  The widespread impact of Google's num=100 removal, affecting 77% of sites' keyword visibility, suggests a significant risk for companies relying on organic search traffic for revenue.",
       "Operator —  SEO strategies relying on scraping tools or techniques exploiting the num=100 parameter are now obsolete, necessitating a reassessment of keyword targeting and ranking strategies.",
       "Market —  SEO firms and tools that didn't accurately account for num=100-inflated data, or that failed to adapt quickly to its removal, will lose clients to more agile competitors."
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "a86c36c65d803c2a4ad31f0bb141aa71",
-    "title": "AI Cuts Acquisitions Costs 19% Amidst Soaring Media Spend, According to Cendyn's Hotel Digital Marketing Performance Index - Hotel News Resource",
-    "source": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9CekJJU05Bb01Edkx6X2F1VmdfRHBwakxReUhrZUNxRGVNS2k2SEY2QWVOZXpIMmtsbmVGZXBlRVBURUlUMDFDUmc1a3NmUXN6OWxrR1JZckNVT2lWbEpqZ0Fn?oc=5",
-    "generatedAt": "2025-09-19T06:12:49.741Z",
-    "publishedAt": "2025-09-18T18:10:01.000Z",
-    "feedName": "Digital Marketing & SEO News",
-    "author": "Digital Marketing & SEO News",
-    "category": "General",
-    "essence": "What happened: Cendyn's Hotel Digital Marketing Performance Index shows AI reduced hotel acquisition costs by 19% in a period where media spend increased (no specific time frame or data points provided beyond this percentage). Why it matters: This suggests AI can improve marketing ROI in a challenging economic environment (soaring media costs). It offers a potential wedge for hotels to maintain or grow market  despite rising marketing expenses.",
-    "reactions": [
-      "Investor — Cendyn's data suggests AI can significantly reduce hotel acquisition costs, but the long-term ROI and the potential for AI-driven marketing to become commoditized represent key risks.",
-      "Operator —  The 19% cost reduction from AI highlights the importance of adopting and optimizing AI-powered digital marketing strategies for efficient customer acquisition in a high-spend environment.",
-      "Market —  Hotels that fail to adopt AI-driven marketing strategies may experience increased acquisition costs and a competitive disadvantage compared to those leveraging AI's efficiency."
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "1e17badbe982f8c341eb2bc4d070de7a",
-    "title": "AI Killed the Development Divide (And That’s a Good Thing)",
-    "source": "https://www.salesforce.com/blog/ai-unified-development-experience/",
-    "generatedAt": "2025-09-19T18:11:50.449Z",
-    "publishedAt": "2025-09-18T17:59:27.000Z",
-    "feedName": "Salesforce Blog",
-    "author": "Salesforce Blog",
-    "category": "General",
-    "essence": "What happened: AI-powered development tools are blurring the lines between low-code and pro-code platforms. This allows developers to leverage the speed of low-code for simpler tasks while retaining the flexibility of pro-code for complex functionalities. No specific metrics are provided in the source text.",
-    "reactions": [
-      "Investor —  AI-driven unified development platforms represent a significant market opportunity, but success hinges on overcoming integration challenges with existing legacy systems and proving sustained ROI for diverse user skill levels.",
-      "Operator — The key execution lesson is seamless integration of low-code and pro-code tools, allowing developers to switch between them fluidly depending on project needs.",
-      "Market —  Traditional low-code platform vendors might lose market share as AI-powered unified development tools gain traction, while specialized pro-code tool providers could see increased demand for complementary services."
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "e8ea7037c2d4055bf6ccf2dae5a6c056",
-    "title": "Learn Your Way: Reimagining Textbooks with Generative AI",
-    "source": "https://research.google/blog/learn-your-way-reimagining-textbooks-with-generative-ai/",
-    "generatedAt": "2025-09-19T00:17:30.156Z",
-    "publishedAt": "2025-09-18T17:42:56.000Z",
-    "feedName": "Y Combinator",
-    "author": "Y Combinator",
-    "category": "General",
-    "essence": "Learn Your Way: Reimagining Textbooks with Generative AI What happened: A generative AI-powered learning tool, Learn Your Way, was developed and tested. A randomized controlled trial (RCT) with 60 Chicago-area students (ages 15-18) showed an 11 percentage point improvement in retention test scores for students using Learn Your Way compared to a control group using a standard digital reader (78% vs. 67%).",
-    "reactions": [
-      "Investor —  The 11% improvement in retention scores from the randomized controlled trial suggests a strong potential return on investment, but widespread adoption hinges on overcoming the cost and complexity of integrating LearnLM into existing educational systems.",
-      "Operator —  The success of Learn Your Way highlights the importance of a layered technical approach, combining a powerful base model with specialized AI agents and fine-tuned components to address the nuances of generating high-quality multimodal educational content.",
-      "Market — Traditional textbook publishers and digital learning platforms stand to lose market share if Learn Your Way, or similar AI-powered solutions, successfully disrupt the existing educational materials market."
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "965ef5f5fb7ab9472d7109ad75aa3889",
-    "title": "Google AI Mode coming to Chrome browser",
-    "source": "https://searchengineland.com/google-ai-mode-coming-to-chrome-browser-462220",
-    "generatedAt": "2025-09-18T18:11:10.302Z",
-    "publishedAt": "2025-09-18T17:27:37.000Z",
-    "feedName": "Search Engine Land",
-    "author": "Search Engine Land",
-    "category": "Google",
-    "essence": "Google AI Mode in Chrome Browser What happened: Google integrated AI Mode into the Chrome address bar and webpages. Users can now ask complex questions directly within the omnibox, receiving AI-powered answers and follow-up suggestions. Contextual suggestions are currently available in the US (English), with broader rollout planned.",
-    "reactions": [
-      "Investor: Google's integration of AI Mode into Chrome's address bar presents a significant opportunity for increased user engagement and data collection, but faces risks from potential privacy concerns and competition from other AI-powered search tools.",
-      "Operator:  Successfully implementing AI Mode requires careful consideration of query fan-out techniques to balance breadth and depth of information while managing computational costs and ensuring accurate, unbiased results.",
-      "Market:  Traditional search engine optimization (SEO) strategies may lose effectiveness if Google AI Mode's comprehensive answers reduce the need for users to click through to individual websites."
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "b1dba7b72d1939aa1a3baf50a9abfa74",
-    "title": "Google brings Smart Bidding Exploration to Performance Max",
-    "source": "https://searchengineland.com/google-performance-max-smart-bidding-exploration-462216",
-    "generatedAt": "2025-09-18T18:11:13.532Z",
-    "publishedAt": "2025-09-18T17:24:20.000Z",
-    "feedName": "Search Engine Land",
-    "author": "Search Engine Land",
-    "category": "Google Ads",
-    "essence": "What happened: Google launched Smart Bidding Exploration in Performance Max campaigns. This allows the system to relax ROAS targets, potentially increasing conversion volume by accessing higher-volume, lower-intent queries. Early tests showed an 18% increase in unique converting query categories and a 19% lift in total conversions.",
-    "reactions": [
-      "Investor:  Lomax's observation that the feature \"will lower ROAS overall\" highlights the key risk of prioritizing conversion volume over return.",
-      "Operator:  Marketers must carefully weigh the tradeoff between increased conversions (potentially unlocking untapped demand) and the risk of reduced return on ad spend, as Google's AI takes on more decision-making.",
-      "Market:  Competitors using more tightly controlled ROAS targets may gain a relative advantage if Google's Smart Bidding Exploration leads to widespread lower overall ROAS for many advertisers."
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "242f192cbe575b05ee2409d94d89a174",
-    "title": "Retailers like Claire’s and Rite Aid are closing stores. The biggest discounters will benefit, analysts say.",
-    "source": "https://www.marketwatch.com/story/retailers-like-claires-and-rite-aid-are-closing-stores-the-biggest-discounters-will-benefit-analysts-say-83608867?mod=mw_rss_topstories",
-    "generatedAt": "2025-09-18T18:10:42.400Z",
-    "publishedAt": "2025-09-18T17:05:00.000Z",
-    "feedName": "MarketWatch Top Stories",
-    "author": "MarketWatch Top Stories",
-    "category": "General",
-    "essence": "What happened: Retailers Claire's and Rite Aid are closing stores. UBS analysts attribute this partly to tariffs, citing increased operational challenges for weaker retailers. No specific store closure numbers were provided in the source.",
-    "reactions": [
-      "Investor — UBS suggests that tariffs disproportionately harm weaker retailers, creating a buying opportunity for stronger discounters.  Operator —  Successfully navigating tariff-induced cost pressures is crucial for survival in a consolidating retail market. Market —  Smaller, less efficient retailers will lose market share as larger discounters gain from consolidation.",
-      "For founders, the key takeaway from \"Retailers like Claire's and Rite Aid are closing stores. The biggest discounters will benefit, analysts say\" is that consolidation is happening in retail, and focusing on a strong value proposition and efficient operations is crucial for survival and growth.  Smaller, less efficient retailers are failing, while those offering strong value (low prices, convenience, etc.) are poised to gain market share.  This highlights the need for founders to:\n\n Differenti",
-      "The closing of stores by retailers like Claire's and Rite Aid presents a mixed bag of market impacts, primarily benefiting discounters but also creating ripple effects across the retail landscape. Here's a breakdown:\n\nPositive Impacts (primarily for discounters):\n\n Increased Market Share:  Discount retailers like Dollar General, Dollar Tree, and Walmart will likely see an increase in market share.  Consumers looking for similar products at lower prices will shift their spending to these remaining options.  This"
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "30d9208188fe818d7e09428819bd5627",
-    "title": "Olive Garden sees success with smaller, cheaper portions as diners try to save money",
-    "source": "https://www.marketwatch.com/story/olive-garden-sees-success-with-smaller-cheaper-portions-as-diners-try-to-save-money-e9fd2339?mod=mw_rss_topstories",
-    "generatedAt": "2025-09-18T18:10:46.523Z",
-    "publishedAt": "2025-09-18T17:00:00.000Z",
-    "feedName": "MarketWatch Top Stories",
-    "author": "MarketWatch Top Stories",
-    "category": "General",
-    "essence": "What happened: Olive Garden launched a \"lighter portion\" menu section in [Month, Year], offering smaller, cheaper entree options. No specific sales figures are provided in the source material. Why it matters: This targets a GTM strategy focused on attracting budget-conscious diners.",
-    "reactions": [
-      "Investor —  Olive Garden's success with smaller portions suggests a shift in consumer behavior towards value-oriented dining, but this strategy's profitability depends on maintaining margins despite reduced serving sizes.",
-      "Operator —  The \"lighter portion\" menu demonstrates the importance of adapting to changing consumer preferences and economic conditions by offering flexible pricing and portion sizes to capture a wider customer base.",
-      "Market —  Fast-casual and other value-oriented restaurants lose if Olive Garden successfully attracts price-sensitive customers with its smaller, cheaper options."
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "6af1a46c20064575ea28524e1021c1e5",
-    "title": "Numeral raises $35M to automate sales tax with AI",
-    "source": "https://techcrunch.com/2025/09/18/numeral-raises-35m-to-automate-sales-tax-with-ai/",
-    "generatedAt": "2025-09-18T18:09:10.469Z",
-    "publishedAt": "2025-09-18T16:30:00.000Z",
-    "feedName": "TechCrunch Startups",
-    "author": "TechCrunch Startups",
-    "category": "Fintech",
-    "essence": "What happened: Numeral, a sales tax automation startup using AI, raised $35M in Series B funding, bringing its valuation to $350M. This follows an $18M Series A six months prior. Revenue grew 3.5x in the last year, and the company now serves over 2,000 clients including EightSleep, Graza Olive Oil, and Manus.",
-    "reactions": [
-      "Investor: Numeral's rapid revenue growth (3.5x in one year) and expansion into international markets mitigates the risk of competing with a large incumbent like Avalara.",
-      "Operator:  The founder's personal experience with sales tax complexities directly fueled product development and market understanding.",
-      "Market:  Existing sales tax compliance providers, especially smaller players, will likely lose market share to Numeral's AI-powered automation."
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "df32b72a7d10168e57ee78794afe633a",
-    "title": "Here’s how Nike’s stock could benefit big from the next World Cup",
-    "source": "https://www.marketwatch.com/story/heres-how-nikes-stock-could-benefit-big-from-the-next-world-cup-97ca0ca3?mod=mw_rss_topstories",
-    "generatedAt": "2025-09-18T18:10:48.948Z",
-    "publishedAt": "2025-09-18T16:26:00.000Z",
-    "feedName": "MarketWatch Top Stories",
-    "author": "MarketWatch Top Stories",
-    "category": "General",
-    "essence": "What happened: Nike sponsors six top FIFA teams. An analyst projects a $1.3 billion revenue increase for Nike due to increased World Cup visibility. No specific round, launch, or metric beyond revenue projection is provided.",
-    "reactions": [
-      "Investor —  Nike's projected $1.3 billion World Cup revenue boost presents a significant upside, but relies heavily on successful team performance and effective marketing campaign execution.",
-      "Operator —  Leveraging World Cup visibility requires flawlessly timed marketing campaigns that resonate with diverse global audiences to maximize brand impact and sales.",
-      "Market — Adidas, a key competitor also sponsoring World Cup teams, may see reduced market share and revenue if Nike's marketing and team success exceed expectations."
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "91d0b2ea39772603ca454bcd9360631d",
-    "title": "Netskope Moves Higher In Nasdaq Debut",
-    "source": "https://news.crunchbase.com/public/netskope-ipo-moves-higher-nasdaq-ntsk/",
-    "generatedAt": "2025-09-18T18:09:33.849Z",
-    "publishedAt": "2025-09-18T16:21:16.000Z",
-    "feedName": "Crunchbase News",
-    "author": "Crunchbase News",
-    "category": "IPO",
-    "essence": "What happened: Netskope's IPO on Nasdaq (September 18, 2025) saw shares open 28% above the $19 IPO price, raising $908 million. The company's H1 2025 revenue was $328 million (31% YoY growth), though it also reported a net loss of $170 million (reduced from $207 million in H1 2024). Why it matters: Successful IPO validates Netskope's cloud security platform and its go-to-market strategy.",
-    "reactions": [
-      "Investor — Lightspeed Venture Partners and Iconiq, holding nearly 40% of Class B shares, bet on Netskope's cloud security platform, risking their significant investment on the company's ability to sustain growth despite shrinking, albeit improving, losses.  Operator — Netskope's successful IPO, pricing at the top of its projected range, demonstrates the execution of a long-term vision built around cloud security, attracting substantial investor interest. Market — Existing cybersecurity players with less cloud-focused offerings may lose market share to Netskope's strong first-day performance and substantial venture backing, indicating a shift in investor and market preference.",
-      "The key takeaway from \"Netskope Moves Higher In Nasdaq Debut\" for founders is that a strong, well-executed IPO can result in significant returns and validation of their company's value and market position.  This success story underscores the importance of:\n\n Building a valuable and scalable business: Netskope's success demonstrates the potential rewards of creating a product or service with strong market demand.\n Strategic timing:  A well-timed IPO can maximize the company's valuation",
-      "The market impact of Netskope's higher-than-expected Nasdaq debut is multifaceted and likely positive, though the long-term effects remain to be seen.  Here's a breakdown:\n\nPositive Impacts:\n\n Increased Investor Confidence in Cybersecurity: A successful IPO for a cybersecurity company like Netskope can boost investor confidence in the sector as a whole. This could lead to increased investment in other cybersecurity firms, driving up their valuations and potentially attracting more talent to the field.\n"
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "ef52aa7c95333778998aba16a33005aa",
-    "title": "Google Introduces Three-Tier Store Widget Program For Retailers via @sejournal, @MattGSouthern",
-    "source": "https://www.searchenginejournal.com/google-introduces-three-tier-store-widget-program-for-retailers/556366/",
-    "generatedAt": "2025-09-18T18:11:06.962Z",
-    "publishedAt": "2025-09-18T15:55:27.000Z",
-    "feedName": "Search Engine Journal",
-    "author": "Search Engine Journal",
-    "category": "News",
-    "essence": "What happened: Google launched a three-tiered store widget program, replacing its single-badge offering. The tiers (Top Quality, Store Rating, Generic) are based on Merchant Center performance. Google claims sites using the previous widget saw up to 8% higher sales within 90 days.",
-    "reactions": [
-      "Investor — Google's tiered widget program, while potentially boosting merchant sales (up to 8% cited), faces risks from low adoption rates among smaller merchants lacking the quality ratings for higher tiers.",
-      "Operator —  Implementing the widget is straightforward, involving a simple code snippet, minimizing maintenance after initial setup, but success hinges on already having a strong Merchant Center presence.",
-      "Market —  Established, high-rating retailers gain a competitive advantage, potentially squeezing out smaller competitors who lack the reputation to qualify for the premium widget tiers."
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "c8287c87af4dba23ecabe622d730bea8",
-    "title": "Launch HN: Cactus (YC S25) – AI inference on smartphones",
-    "source": "https://github.com/cactus-compute/cactus",
-    "generatedAt": "2025-09-18T18:09:14.895Z",
-    "publishedAt": "2025-09-18T15:40:29.000Z",
-    "feedName": "Y Combinator",
-    "author": "Y Combinator",
-    "category": "General",
-    "essence": "Launch Metrics: Cactus, an AI inference framework for smartphones, launched on Hacker News. A preliminary benchmark shows Qwen3-600m-INT8 running at 60-70 tokens/second on a vanilla M3 CPU. The SDK is already used in production, handling 500,000+ weekly inference tasks.",
-    "reactions": [
-      "Investor: The thesis centers on energy-efficient AI inference on smartphones, but the risk lies in achieving widespread adoption against established players and the potential limitations of on-device processing for complex models.",
-      "Operator:  Achieving 60-70 tokens/second on a vanilla M3 CPU for Qwen3-600m-INT8 during development highlights the potential for performance gains on mobile devices, but scaling this to diverse hardware and larger models remains a key execution challenge.",
-      "Market:  Existing cloud-based inference providers and other on-device solutions (like Llama.cpp) lose if Cactus achieves significant market share in mobile AI inference."
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "87bb9ed154998119cd563335bfc7c49a",
-    "title": "TernFS – An exabyte scale, multi-region distributed filesystem",
-    "source": "https://www.xtxmarkets.com/tech/2025-ternfs/",
-    "generatedAt": "2025-09-18T18:09:18.160Z",
-    "publishedAt": "2025-09-18T14:36:44.000Z",
-    "feedName": "Y Combinator",
-    "author": "Y Combinator",
-    "category": "General",
-    "essence": "What happened: XTX Markets, an algorithmic trading firm, developed TernFS, a multi-region distributed filesystem, to address scaling limitations of existing solutions (NFS, other open-source and commercial filesystems). The system handles hundreds of petabytes of storage supporting tens of thousands of GPUs and hundreds of thousands of CPUs. Deployment occurred in September 2025.",
-    "reactions": [
-      "Investor — Thesis/Risks: XTX's experience suggests a large, underserved market for exabyte-scale, multi-region filesystems capable of handling the demands of high-frequency trading and similar computationally intensive applications, but success hinges on TernFS's ability to overcome the significant engineering challenges inherent in building and maintaining such a system.",
-      "Operator — Execution Lesson:  Scaling from a simple NFS server to a custom exabyte-scale filesystem highlights the limitations of readily available solutions when dealing with exponential data growth in high-performance computing environments.",
-      "Market — Who Loses if They Win: Existing commercial and open-source filesystem providers could lose market share to TernFS if it proves sufficiently robust, scalable, and cost-effective for computationally intensive applications."
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "703e485b637d1695530ac56a5ef0f181",
-    "title": "Google adds new store widgets for your website",
-    "source": "https://searchengineland.com/google-adds-new-store-widgets-for-your-website-462201",
-    "generatedAt": "2025-09-18T18:11:16.379Z",
-    "publishedAt": "2025-09-18T14:28:09.000Z",
-    "feedName": "Search Engine Land",
-    "author": "Search Engine Land",
-    "category": "Google",
-    "essence": "Google Launches New Store Widgets What happened: Google added two new store widgets (\"Store rating widget\" and \"Generic store widget\") to its existing \"Top Quality Store\" widget, allowing e-commerce merchants to embed different versions depending on their Google Store rating. Businesses using the prior widget saw up to 8% higher sales within 90 days. Why it matters: These widgets offer a potential GTM strategy for improving conversion rates and boosting sales by increasing store visibility and perceived legitimacy.",
-    "reactions": [
-      "Investor —  Businesses using the widgets saw up to 8% higher sales within 90 days, suggesting a strong ROI potential but requiring further analysis on the cost of implementation and long-term impact.",
-      "Operator —  Implementing the Google store widgets is a straightforward way to potentially boost sales and improve customer perception of store legitimacy, but success depends on already having positive reviews and policies.",
-      "Market —  Smaller e-commerce businesses without established reputations may be at a disadvantage compared to larger, more established competitors who can more easily leverage these new widgets to enhance their legitimacy."
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "9980af1693833686c9999911599c6865",
-    "title": "Luau – Fast, small, safe, gradually typed scripting language derived from Lua",
-    "source": "https://luau.org/",
-    "generatedAt": "2025-09-18T18:09:26.135Z",
-    "publishedAt": "2025-09-18T13:38:49.000Z",
-    "feedName": "Y Combinator",
-    "author": "Y Combinator",
-    "category": "General",
-    "essence": "Luau: Roblox's Evolved Lua What happened: Roblox forked Lua 5.1 in ~2006, evolving it into Luau. This involved adding a gradual type system, enhanced tooling (linter, type checker), performance improvements (new bytecode, interpreter, optional JIT compiler), and a revised standard library. By 2020, Roblox used >1M lines of Luau code.",
-    "reactions": [
-      "Investor — Roblox's massive internal use (1+MLOC by 2020) and performance improvements over LuaJIT suggest a potentially large, captive market for Luau, but its dependence on Roblox's continued success presents significant risk.",
-      "Operator —  Luau's gradual typing and integrated analysis tools offer a compelling path to improving code quality and reducing bugs in large-scale projects, but maintaining backward compatibility with Lua 5.1 requires careful trade-offs.",
-      "Market —  If Luau succeeds, it primarily threatens other scripting languages used in game development environments, potentially displacing them within Roblox and other applications that adopt it."
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "c48d801114d51e8b394b1ee703639346",
-    "title": "A Hidden Risk In AI Discovery: Directed Bias Attacks On Brands? via @sejournal, @DuaneForrester",
-    "source": "https://www.searchenginejournal.com/a-hidden-risk-in-ai-discovery-directed-bias-attacks-on-brands/556179/",
-    "generatedAt": "2025-09-18T14:13:46.922Z",
-    "publishedAt": "2025-09-18T13:30:09.000Z",
-    "feedName": "Search Engine Journal",
-    "author": "Search Engine Journal",
-    "category": "Digital Marketing",
-    "essence": "What happened: LLMs, lacking fact-checking capabilities, are vulnerable to \"synthetic amplification attacks.\" These involve coordinated campaigns (e.g., 20 blog posts repeating a false claim) or semantic misdirection (associating a brand with negative concepts without direct mention) to manipulate AI-generated responses. One example cited involved researchers manipulating Google's Gemini using hidden instructions within calendar invites. Why it matters: This creates a hidden risk to brand reputation.",
-    "reactions": [
-      "Investor:  The risk is that subtle, AI-driven reputational attacks, leveraging volume and semantic misdirection, could significantly undervalue a company before any human detection.",
-      "Operator:  Proactive monitoring of AI responses, coupled with the creation of authoritative anchor content, is crucial for mitigating the impact of directed bias attacks.",
-      "Market: Competitors who successfully deploy synthetic amplification attacks or semantic misdirection against a brand win by shaping negative perceptions without direct, traceable actions."
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "4c0c331b3517e9e2c4fb7cf5d4daad65",
-    "title": "Flipper Zero Geiger Counter",
-    "source": "https://kasiin.top/blog/2025-08-04-flipper_zero_geiger_counter_module/",
-    "generatedAt": "2025-09-18T14:11:16.169Z",
-    "publishedAt": "2025-09-18T13:28:59.000Z",
-    "feedName": "Y Combinator",
-    "author": "Y Combinator",
-    "category": "General",
-    "essence": "Flipper Zero Geiger Counter Module Release What happened: A Geiger counter module and accompanying app were released for the Flipper Zero device on August 4, 2025. The app displays radioactivity measurements in counts per second (CPS) and counts per minute (CPM), with options for other units (μSv/h, mSv/y, etc.). It allows recording, zooming, and data export to CSV files.",
-    "reactions": [
-      "Investor —  The Flipper Zero Geiger counter module's market viability hinges on the balance between its low cost and the limited accuracy of its radiation measurements, potentially attracting hobbyists but not professionals.",
-      "Operator —  Successful execution requires clear communication about the module's limitations (e.g., inability to detect alpha radiation) to avoid misuse and manage user expectations.",
-      "Market —  Established radiation detection equipment manufacturers lose if the Flipper Zero's low price significantly expands the hobbyist and educational market for radiation measurement."
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "bafa4e9222fba59702e111ce28e8aa76",
-    "title": "The quality of AI-assisted software depends on unit of work management",
-    "source": "https://blog.nilenso.com/blog/2025/09/15/ai-unit-of-work/",
-    "generatedAt": "2025-09-18T18:09:29.254Z",
-    "publishedAt": "2025-09-18T13:06:03.000Z",
-    "feedName": "Y Combinator",
-    "author": "Y Combinator",
-    "category": "General",
-    "essence": "What happened: The author observed that the quality of AI-assisted software development hinges on effectively managing \"units of work.\" Poorly defined tasks lead to high error rates (e.g., a 5% per-action error rate results in a 59.9% success rate over 10 actions). Conversely, well-defined units improve success; METR's research shows GPT-5 achieves ~70% success on 2-hour tasks (50+ turns), implying a sub-1% per-action error rate. However, this success rate drops significantly with increased \"task messiness,\" a metric reflecting real-world complexities.",
-    "reactions": [
-      "Investor:  The success of AI-assisted software development hinges on effective \"context engineering,\" specifically managing units of work to mitigate the compounding error rates inherent in multi-turn workflows, as evidenced by the significant drop in success rates with increasing task \"messiness.",
-      "Operator:  Breaking down tasks into small, human-legible units of work that deliver incremental business value, ideally using a modified User Story approach, is crucial for maximizing the effectiveness of AI coding tools and avoiding context-related errors.",
-      "Market:  Companies failing to adopt effective unit-of-work management for AI-assisted development risk decreased productivity, higher error rates, and ultimately, the inability to deliver functional and valuable software."
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "58e9c8fa1778d1929119d830a55d263d",
-    "title": "Startup MoldCo lands $8M seed funding to scale virtual clinic for mold-related illnesses - Fierce Healthcare",
-    "source": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNSElUd2pLX2NsZ3VRdFFRb2xjeWVXTkIzMjRUNGFlejhSTmZjSmtMLS02RUstNDRXdlkzYzBIWXVyZ2dhN3lBZ2RUVzR6LWEwcl9lekU0U29hZnJOZnZsZnJTd0FOME1vVnRZSUZZci1fZ0RjVldBcFJOMUpYZkhSZHd4ZXlTZTlNNFhlYUptb254MmExRmdfX0tvYVpncEtDQkxWdjk5TlBwRFhMZkpabGVjT0JoY1RON0prVmh0TkZ1ejg?oc=5",
-    "generatedAt": "2025-09-19T00:18:05.606Z",
-    "publishedAt": "2025-09-18T13:00:00.000Z",
-    "feedName": "Startup Funding News",
-    "author": "Startup Funding News",
-    "category": "General",
-    "essence": "What happened: MoldCo, a virtual clinic for mold-related illnesses, secured $8 million in seed funding. This represents a significant funding round for a relatively early-stage company in the telehealth space. No previous funding rounds were mentioned in the article.",
-    "reactions": [
-      "Investor:  MoldCo's success hinges on demonstrating a scalable, profitable model for diagnosing and treating mold-related illnesses in a virtual setting, given the inherent diagnostic challenges and potential for misdiagnosis.",
-      "Operator:  Securing $8M seed funding validates the market need but necessitates a laser focus on efficient patient acquisition and streamlined virtual care delivery to achieve sustainable growth.",
-      "Market:  Existing mold remediation companies and traditional healthcare providers specializing in respiratory illnesses could lose market share if MoldCo successfully establishes a dominant virtual care platform."
     ],
     "promoBanner": {
       "text": "Axiologic News",
