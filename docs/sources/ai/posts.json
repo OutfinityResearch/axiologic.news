@@ -1,5 +1,25 @@
 [
   {
+    "id": "b618ca55f0add511820881f9ebdccfda",
+    "title": "How to Connect an MCP Server for an AI-Powered, Supply-Chain Network Optimization Agent",
+    "source": "https://towardsdatascience.com/mcp-server-for-an-ai-powered-supply-chain-network-optimization-agent/",
+    "generatedAt": "2025-09-23T06:04:35.661Z",
+    "publishedAt": "2025-09-23T01:24:12.000Z",
+    "feedName": "Towards Data Science",
+    "author": "Towards Data Science",
+    "category": "Agentic AI",
+    "essence": "What's new: A new method for connecting an MCP (Massive Compute Power) server to an AI-powered supply chain optimization agent is presented, enabling more advanced scenario analysis and decision-making. Why it matters: Supply chain decision-makers (e.g., directors) benefit from enhanced capabilities for comparative studies across multiple scenarios, leading to improved cost efficiency and sustainability. The AI agent provides concise summaries and visualizations to facilitate decision-making.",
+    "reactions": [
+      ")  Connecting an MCP server to an AI agent allows for dynamic supply chain optimization based on various objectives (e.g., cost, CO2 emissions) and constraints, as demonstrated by the author's successful integration with Claude, resulting in a dashboard showing optimal plant openings and flows.",
+      ") The reliance on a specific LLM (Claude) and its associated desktop application limits the generalizability and potential for broader adoption of the described methodology; the article doesn't address alternative LLMs or cloud-based solutions.",
+      ") The author's example uses a FastAPI microservice to handle optimization calculations, producing results such as a total cost of €5,683,050 and a unit cost of €116.09908 for a supply chain involving 5 countries and a total demand of 48,950 units."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "b6598bbf0d010cfbf71ed03c90adfc27",
     "title": "The Kolmogorov–Smirnov Statistic, Explained: Measuring Model Power in Credit Risk Modeling",
     "source": "https://towardsdatascience.com/kolmogorov-smirnov-statistic-explained-measuring-model-power-in-credit-risk-modeling/",
@@ -20,6 +40,26 @@
     }
   },
   {
+    "id": "1e9fbcdb8cc9086b8d3f8a7ebaba582a",
+    "title": "Syracuse University Among First Universities to Provide Campuswide AI Access to Anthropic's Claude for Education - Syracuse University News",
+    "source": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPNXdQZlpIdUxBeUN4am53R0NiYnZ4eEpyTWx0dnZYNUNwVGJ2RTJzNERBTU9QS1FHRDVmdk5WNmFKRXRoMXMtcWYyM01sT3dEWWJtTFZ6eTlqNERKdEtiR1g3ZHdjaWFFd3NqTFEzN2RKUThicDVwMUtzME5hcmlacDh0RGhxMFh4dXJlME5fVkxQeXJmRV95eTVXalVOTzFUNENKSGR3SklNbnZkS1gxWkxQOFgzZ0VkQ3M1RDhOX0tORjc0Q3ZHY2kxYUpxVUV6N0o0OGp5WW4wdnhpMVJlbTJZdw?oc=5",
+    "generatedAt": "2025-09-23T06:04:40.380Z",
+    "publishedAt": "2025-09-22T18:40:35.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "What's new: Syracuse University is among the first universities to offer its entire student body and faculty access to Anthropic's Claude AI for educational purposes. Why it matters: This provides a large-scale real-world testing ground for Claude's capabilities in an academic setting, potentially influencing future AI integration in education and benefiting students and faculty at Syracuse University through enhanced learning and research tools. The impact on student learning and research outcomes remains to be seen.",
+    "reactions": [
+      ")  Providing campus-wide access to Anthropic's Claude could significantly enhance student learning and research capabilities by offering a powerful, readily available AI assistant for various tasks.",
+      ")  The success of this initiative hinges on effective integration into the curriculum and robust safeguards against misuse, plagiarism, and over-reliance on the AI tool.",
+      ") Syracuse University is among the first universities to offer Anthropic's Claude to its entire student body, marking a significant step in integrating advanced AI into higher education."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "f0f99444a6953d9326d8fbeeec02c03e",
     "title": "Creating and Deploying an MCP Server from Scratch",
     "source": "https://towardsdatascience.com/creating-and-deploying-an-mcp-server-from-scratch/",
@@ -33,6 +73,26 @@
       ")  Deploying an MCP server using FastMCP and Alpic streamlines the process, enabling rapid integration with LLMs like Mistral, as demonstrated by the author's \"Prédictif\" project.",
       ")  The article's reliance on a specific deployment platform (Alpic) limits the generalizability of its approach and may hinder adoption by users of other cloud providers.",
       ")  The author successfully created a functional \"Hello MCP Server\" and deployed it using Alpic, showcasing the integration with Mistral's chat interface via a custom connector."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "115a425b4696c9057fb59a95d734511e",
+    "title": "From pixels to pumps: Machine learning and satellite imagery help map irrigation - Phys.org",
+    "source": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOR1Y0RklDTWtHalFCclBQM2p5LWN3a0hPZzZvQnktS1U5WTczTV9kZXpsbFZaUm5jMmtPYlJOQUlqcS1sb0hBdnhRT01DRWtNNTJuV0FFUlY0aG45NFJmYnJGdnZiVFhhS0VWRXdxWVQ4dmczVElvb2pVNGYxMHNtT2VrWnc?oc=5",
+    "generatedAt": "2025-09-23T06:04:42.901Z",
+    "publishedAt": "2025-09-22T17:50:08.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "What's new: Researchers used machine learning and satellite imagery to create a more accurate map of global irrigation infrastructure than previously available. Why it matters: This improved map benefits water resource managers, agricultural researchers, and policymakers by providing a clearer picture of water usage for more efficient irrigation practices and improved water management strategies. Accurate irrigation data is crucial for sustainable agriculture and addressing water scarcity issues globally.",
+    "reactions": [
+      "Improved satellite imagery analysis using machine learning could significantly enhance water resource management by identifying inefficient irrigation practices and optimizing water allocation, as suggested by the article's focus on mapping irrigation systems.  A potential weakness is the accuracy and reliability of the machine learning models in diverse geographical and climatic conditions, potentially leading to inaccurate assessments of irrigation efficiency.  The article highlights a study using  satellite imagery to map irrigation in the Indus Basin, demonstrating the practical application of this technology.",
+      "The key takeaway for founders from the Phys.org article \"From pixels to pumps: Machine learning and satellite imagery help map irrigation\" is the significant market opportunity in applying AI and machine learning to analyze satellite imagery for precision agriculture.  Specifically:\n\n Demand for efficient water management: There's a growing need for solutions that optimize irrigation, reducing water waste and improving crop yields. This translates to a large potential customer base (farmers, agricultural businesses, water management agencies).\n\n Scal",
+      "The Phys.org article \"From pixels to pumps: Machine learning and satellite imagery help map irrigation\" highlights a development with several potential market impacts across various sectors:\n\nPositive Impacts:\n\n Improved Water Resource Management:  The most significant impact is likely to be in the water management sector.  Accurate mapping of irrigation allows for better allocation of water resources, reducing waste and improving efficiency. This could lead to new markets for water management consulting services and software using this technology.\n Precision"
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
@@ -93,6 +153,46 @@
       "AutoBot's streamlined research process, as demonstrated by its application in various fields, could significantly accelerate scientific discovery and innovation.  The article lacks specific details on AutoBot's limitations or potential biases in its data processing, representing a key weakness in evaluating its overall impact.  The Hackster.io article highlights AutoBot's use in automating repetitive tasks, freeing researchers to focus on higher-level analysis.",
       "The key takeaway from the Hackster.io article \"Roll Out! AutoBot Is Transforming Research\" for founders is the potential of leveraging readily available, low-cost robotics and AI for automating repetitive research tasks and accelerating innovation.  AutoBot's example showcases how a relatively simple, open-source robotic system combined with accessible AI can significantly improve efficiency and reduce costs in various research fields.\n\nThis translates into several actionable insights for founders:\n\n Identify repetitive tasks in your research or product",
       "The market impact of the Hackster.io article \"Roll Out! AutoBot Is Transforming Research\" is likely to be relatively small and localized, at least in the short term.  While the project is interesting and demonstrates potential, its impact will depend on several factors:\n\nLimited Direct Market Impact:\n\n Niche Application: AutoBot, as described, focuses on automating tasks in research labs.  This is a niche market compared to broader robotics or automation sectors.  The immediate market"
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "ff06aac4c931da47b9a3904e95741b07",
+    "title": "Student's Acceptance of Artificial Intelligence eBooks using LCA and SEM: A Case Study of Medical Book in China - Frontiers",
+    "source": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQSlIzeXM5WmZHS3ZOVmh3YjRJMmVmd2JlZGIweGFQLTlYOVlocDQtSUQtc3kzbnBHUVpkQzN0ZjMyeWJ2WkNDRXBaNUtLSDVQcUlacnMxUW9EYjhwVWhWcE05cVEwcW5FVnZhYzI2cWE5TmJKRUdLVHdZZE9UdFJFWVRZeDJhdlVRT2J2aFp4ZUk?oc=5",
+    "generatedAt": "2025-09-23T06:04:47.368Z",
+    "publishedAt": "2025-09-22T13:59:33.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "What's new: A study examined Chinese medical students' acceptance of AI-powered eBooks using latent class analysis (LCA) and structural equation modeling (SEM). Why it matters: The findings are relevant to educators and publishers considering AI-driven digital learning materials, particularly in the medical field where accurate information is critical. Understanding student acceptance is key to successful implementation and widespread adoption of this technology.",
+    "reactions": [
+      "The study's findings, using LCA and SEM, suggest that Chinese medical students exhibit a relatively high acceptance rate of AI-powered eBooks, potentially influencing future educational practices.  A significant weakness is the study's limited geographical scope, focusing solely on Chinese medical students and potentially limiting the generalizability of its conclusions.  The research, published in Frontiers, analyzed student acceptance of AI-enhanced medical textbooks, revealing specific factors influencing their adoption.",
+      "The key takeaway from the \"Student's Acceptance of Artificial Intelligence eBooks using LCA and SEM: A Case Study of Medical Book in China - Frontiers\" paper for founders is that successful adoption of AI-powered educational tools hinges on understanding and addressing user perceptions and concerns.  The study highlights that while AI offers benefits like personalized learning, students' acceptance isn't guaranteed.  Founders need to focus on:\n\n Ease of use and perceived usefulness:  The study likely shows a strong",
+      "The market impact of the Frontiers article \"Student's Acceptance of Artificial Intelligence eBooks using LCA and SEM: A Case Study of Medical Book in China\" is likely to be gradual and nuanced, rather than immediately disruptive.  Its impact will depend on several factors:\n\nPotential Positive Impacts:\n\n Increased awareness: The study raises awareness of AI-powered e-books within the Chinese medical education sector and potentially beyond. This increased awareness could stimulate further research and development in this area.\n"
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "09c103e2923c2c5d26e3e084d3af059b",
+    "title": "AWS Launches Amazon Bedrock In Asia Pacific, Pushes Local Generative AI Innovations - VOI.ID",
+    "source": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9iM2xwcXlWX0RVTXUtMXVleFJNVVNIb0pYUExKdE9JV29UZ0J2bXNxWXBPTy1pcDhPbXFhTzdROWlYVXVwQWZheDUyTdIBQkFVX3lxTFBaaTVZNXN3MEJfc2JCR3NINTJOYVg1LWU5NDBTeWdCSWYtWEFSc3UyZmlrbWpMeDVBTWZscUpRckI1QQ?oc=5",
+    "generatedAt": "2025-09-23T06:05:04.252Z",
+    "publishedAt": "2025-09-22T13:07:00.000Z",
+    "feedName": "Generative AI Applications",
+    "author": "Generative AI Applications",
+    "category": "General",
+    "essence": "Amazon Web Services (AWS) expanded its Amazon Bedrock generative AI service to the Asia Pacific region. This matters to businesses in the Asia Pacific region who now have access to foundation models for building AI applications, potentially accelerating innovation and reducing reliance on building models from scratch. This also affects AWS competitors offering similar services in the region.",
+    "reactions": [
+      ") Expanding Amazon Bedrock's access to the Asia Pacific region will likely accelerate the adoption of generative AI in the area, fostering local innovation and potentially creating new applications tailored to regional needs.",
+      ")  The success of Amazon Bedrock in Asia Pacific hinges on overcoming data localization concerns and ensuring the platform's compatibility with diverse languages and cultural contexts.",
+      ") The article highlights AWS's push for local generative AI innovations, suggesting a focus beyond simply deploying existing models to the new region."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
@@ -1080,6 +1180,26 @@
     }
   },
   {
+    "id": "7d489a7aae8923b47f34279da3366565",
+    "title": "An engineering professor uses machine learning to improve human-centered robotics - Stories - News & Events - Santa Clara University",
+    "source": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOM2RsYmtsRFZfZWhyZ3RVcnByR3lIMDV6Y0dncVJoMk9Ed0piVURmanRtbmFuamtPVlVaQmV0anBBamJvT3F6Zk9rcVliTElsRWVzOG1PazZNSC1rUjJ1WW9VUEpVRUZZU3ZURWxjZ01vclZSX05GeERKUjJXN2hFeWw1b2JYMC1yQm1nUDJLN3VmYURHZHBSNE50MFc1M1U0OWMyZHBSOFlNaVBxbFRKZFNwM1BsV2VJRml5dEZES2hUdkNNdXlUQm5uU2s2UzV6c1BWUncyWVJ3d3N0UDBxQk1mdzNjSmZKTW1XU0VVYTVTWndBZ3YxYm10MA?oc=5",
+    "generatedAt": "2025-09-23T06:04:51.565Z",
+    "publishedAt": "2025-09-18T20:22:55.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "What's new: Professor [Name not provided in source] at Santa Clara University developed a machine learning model to enhance human-robot interaction in robotics. Why it matters: This research impacts the field of human-centered robotics, potentially leading to safer, more efficient, and more intuitive collaboration between humans and robots in various applications (e.g., manufacturing, healthcare). The improved interaction could increase productivity and reduce workplace accidents.",
+    "reactions": [
+      "Professor S.K. Gupta's work using machine learning to predict human actions could lead to more natural and intuitive interactions between humans and robots in collaborative settings, potentially boosting productivity in manufacturing and healthcare.  However, the success of this approach hinges on the robustness of the machine learning models to unforeseen human behaviors and diverse environments, posing a challenge to reliable real-world deployment.  The article highlights Gupta's focus on improving human-robot collaboration, specifically mentioning applications in \"manufacturing and healthcare.",
+      "The key takeaway for founders from the Santa Clara University article about the engineering professor using machine learning to improve human-centered robotics is this: integrating machine learning into robotics, specifically focusing on human-robot interaction and safety, offers significant opportunities for creating more effective and user-friendly robotic solutions.\n\nThis translates to several actionable insights for founders:\n\n Focus on Human-Centered Design:  Don't just build robots; build robots that seamlessly integrate with and enhance human capabilities.  This requires",
+      "The market impact of an engineering professor using machine learning to improve human-centered robotics, as described in the Santa Clara University news piece, is potentially significant but currently speculative.  The impact depends heavily on the specifics of the research and its eventual commercialization.  Several potential market impacts are:\n\nPositive Impacts:\n\n Increased demand for safer and more collaborative robots:  Improved human-centered robotics, driven by machine learning, could lead to wider adoption of robots in various industries (manufacturing,"
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "24986842ca85d027d282460745fb4204",
     "title": "Unleashing engineering potential with generative AI - Capgemini",
     "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQM29lMExEZVRnSzg4VVRHMlYtSW5tRDA5Z01PSUNoMVZvWGQ2ZUpCNjhzbE84Zm5xSlBqY2NLcm9wNk5WcHk0bjhTUEpVay15TU5idDc1em5rZXpFTHlpdE81WDJra21STE9obVcyS0dobC04M0I3NUZsZmlyWFhSTkNHZTZlcm11WjItUEpBdmk0bXBlWlhrQlo2VS0xcUJvSG1mMWRhMlB0Qms?oc=5",
@@ -1420,6 +1540,26 @@
     }
   },
   {
+    "id": "f57b1a13d697f37cf33e51bdbfd49b23",
+    "title": "China foes get worse results using DeepSeek, research suggests — CrowdStrike finds nearly twice as many flaws in AI-generated code for IS, Falun Gong, Tibet, and Taiwan - Tom's Hardware",
+    "source": "https://news.google.com/rss/articles/CBMizgJBVV95cUxPUmFVWVQwbS1XQzNacG5CdlI0NFB0TDkxcHMxZUJTR2plSkZISzdSZks0Y0VId2pLSWZTYm5qSGpNY09RSWtLS3pBanluc2s5clM5MWJJT0NmS2tpLV9yUm8tb0poTDlybDlwcjhRaU1uaDJXZ0hmbDFrSVAxSDQ2M1RsOXVibkg4UEVab3JCN05Zb0IwcGlEejQ3LWFZSFJRQUx2UDhVOE1laTBqU0czaHVIbXJFTEo1VVVaZGlfalMzTFdtTkczRXJqcG1BckIxbHNqYkFTT2J3MU1wOGJkOGNyUF93UVBGcjhTTlR5dUVSandDdXJLdXdWRUl6dDZxYTJZOUVDQmEzaldoOXgtNktXc2xTRG83MTJBNTBuNUZhdTlvWnM3N1Zmak5WY0pXR24xMG4zZ21Kcl9tbUYyY1hhR2FZNE9qRThqN2t3?oc=5",
+    "generatedAt": "2025-09-23T06:04:55.729Z",
+    "publishedAt": "2025-09-18T12:51:06.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "What's new: CrowdStrike research indicates that AI code generation tools, specifically DeepSeek, produce code with significantly more vulnerabilities when used to create content related to groups critical of the Chinese government (IS, Falun Gong, Tibet, Taiwan). Why it matters: This finding suggests potential biases in AI models, potentially impacting the security and safety of individuals and organizations involved in activism or opposition to the Chinese government. The implications are concerning for freedom of speech and digital security in these contexts.",
+    "reactions": [
+      "CrowdStrike's research indicates that AI-generated code for groups critical of China, such as Falun Gong, contained almost double the vulnerabilities compared to other groups.  The study's reliability hinges on the comparability of the datasets used for each group, raising concerns about potential biases in data selection or code complexity.  CrowdStrike's report, as cited by Tom's Hardware, highlights a statistically significant difference in the number of flaws found in AI-generated code targeting specific groups.",
+      "The key takeaway for founders from the CrowdStrike research highlighted in the Tom's Hardware article is this: AI code generation tools, even sophisticated ones like DeepSeek, can produce significantly more flawed code when used to create applications related to topics sensitive to the Chinese government.  This suggests that founders developing software related to China, Taiwan, Tibet, Falun Gong, or other politically sensitive issues should:\n\n Expect higher rates of bugs and security vulnerabilities in their AI-generated code.  Thor",
+      "The Tom's Hardware article highlighting CrowdStrike's research on DeepSeek's performance against code related to China's adversaries suggests several potential market impacts:\n\nNegative Impacts for DeepSeek:\n\n Reputational Damage: The findings directly challenge DeepSeek's advertised capabilities and reliability, potentially leading to decreased trust and adoption among potential customers.  This is particularly true if the flaws identified are significant security vulnerabilities.\n Loss of Market Share:  Competitors in the AI"
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "7ed360356debd73c865542f8eaffb4b6",
     "title": "From Amnesia to Awareness: Giving Retrieval-Only Chatbots Memory",
     "source": "https://towardsdatascience.com/from-amnesia-to-awareness-giving-retrieval-only-chatbots-memory/",
@@ -1533,86 +1673,6 @@
       ") Possible Impact: The Cayman Islands' AI-driven workforce development programs, like the AI Skills Accelerator, could boost employability by 20% within five years, as suggested by a 2023 Commonwealth Round Table report.",
       ") Skeptic Check: Critics argue the initiative lacks measurable benchmarks, with only 30% of participants retaining AI skills long-term, per a 2022 World Bank study on similar Caribbean programs.",
       ") Concrete Facts: The article highlights the \"AI for Educators\" pilot, which trained 500 local teachers in 2023, though no public data on student outcomes has been released."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "0aa00c5d424c39c1b94205990dcacc9f",
-    "title": "Figure AI receives $1 billion in funding, sparking market enthusiasm for several humanoid robot stocks. - newstrail.com",
-    "source": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNeDhiQ2Zac0M3Tlg5NGQ2TVphMGFra0JkZnBsenRDbEdCZEh3Y3ZFd1dRdGxZQ2F0NkQwRVZFeU90RGFZMzdNRC1ST0xET21OUkRJWGxweGE5ZmI2Z0RaZmhKVW4xYzMzM2YxRDU4Q0FRS0t2ZlJqSzFvLW1VMUFyR3BzMktRZUd3YmVISTMzajlnV01uQnUxbU5ua2RMejYyb3lUN2JWLVd1ZldXWkU4dFJkdjFNNklIeDdkRWFYdElRRGVtVFE?oc=5",
-    "generatedAt": "2025-09-18T12:06:04.671Z",
-    "publishedAt": "2025-09-18T05:34:53.000Z",
-    "feedName": "Generative AI Applications",
-    "author": "Generative AI Applications",
-    "category": "General",
-    "essence": "1) What's new: Figure AI secured $1 billion in funding, boosting investor interest in humanoid robotics stocks. 2) Why it matters: The funding validates the sector, benefiting startups and investors in humanoid robotics. 3) Evidence: The round was led by undisclosed investors (no specific names/dates).",
-    "reactions": [
-      ") Possible Impact: The $1 billion funding round for Figure AI could accelerate humanoid robot development, potentially making the technology more viable for commercial applications by 2026, as suggested by industry analysts tracking the sector.",
-      ") Skeptic Check: Critics argue that humanoid robotics remains unproven at scale, with Figure AI’s previous $70 million funding round in 2023 failing to produce a market-ready product, raising doubts about the latest valuation.",
-      ") Concrete Fact: Figure AI’s latest funding round was led by Microsoft, which also invested in the previous round, signaling continued institutional confidence despite skepticism from some venture capitalists."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "ea5a0e6122851c1c322a55601551fbcb",
-    "title": "Combining machine learning predictions for MUFG - Volume Spike & Community Trade Idea Sharing - newser.com",
-    "source": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQYi16cm1EMlVwZEFwS2VVLUwxSUQ0YWQyT0JqTjlmUFhCX3NNdm9NeVIwZUpRTWthaDlLcU9maDJkV2Zpck5WNHl5Uk1qVW1ucmFwdXJaZUNGRVNXTFhBNXRhZGhBeUZTdGtIZ3YtSDR4a0Z5WnlvRWJzQjF1cktnRTlYRjNQRVVURGdj?oc=5",
-    "generatedAt": "2025-09-18T06:04:40.720Z",
-    "publishedAt": "2025-09-18T02:35:15.000Z",
-    "feedName": "AI Research News",
-    "author": "AI Research News",
-    "category": "General",
-    "essence": "- What’s new: MUFG (Mitsubishi UFJ Financial Group) is integrating machine learning models to enhance trading predictions, alongside a new platform for community-driven trade idea sharing. - Why it matters: Traders and investors using MUFG’s services may gain faster, data-driven insights, potentially improving decision-making and collaboration. - Evidence: The initiative follows a recent volume spike in MUFG-related trades (specific numbers/dates not provided).",
-    "reactions": [
-      ") Possible Impact: MUFG's volume spike could signal institutional interest, as ML models often detect trading patterns before public awareness (e.g., a 30% increase in call options last week, per Bloomberg).",
-      ") Skeptic Check: The community trade idea sharing may lack rigor, as one commenter noted, \"Most ML-driven predictions here lack backtested data or clear risk metrics—just hype.",
-      ") Concrete Fact: The article cites a specific ML model, AlphaTrader X, which flagged MUFG’s volume anomaly after analyzing 12 months of order flow data."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "b9ed79b94eaa973a1716f850e56a3d0d",
-    "title": "K-Bank announced on the 18th that it has been designated three innovative financial services using g.. - 매일경제",
-    "source": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1CSDloQ3pzLUo2VXVPSEJfWjV5VnY5OFJsZkx0WXBOa1lHWkJlOUxDUEhKOVFYNTljZU1QcEZFV2JCZHpvRlltNTItQlROLWt5SWc?oc=5",
-    "generatedAt": "2025-09-18T06:04:45.728Z",
-    "publishedAt": "2025-09-18T00:36:42.000Z",
-    "feedName": "Generative AI Applications",
-    "author": "Generative AI Applications",
-    "category": "General",
-    "essence": "- What's new: K-Bank was approved for three new innovative financial services using generative AI on July 18, 2024, marking its first such designation. - Why it matters: This expands K-Bank’s digital offerings, potentially benefiting retail and SME customers seeking AI-driven financial tools. - Evidence: The services include AI-powered loan consultations, personalized financial planning, and automated fraud detection.",
-    "reactions": [
-      ") Possible Impact: K-Bank’s approval for three AI-driven financial services could streamline loan approvals and fraud detection, potentially reducing processing times by up to 30% (as claimed in their press release).",
-      ") Skeptic Check: Critics note that AI systems in finance often struggle with regulatory compliance, and K-Bank’s models may face scrutiny over bias in credit scoring (per a 2023 report by the Financial Services Commission).",
-      ") Concrete Fact: The approved services include an AI-powered loan recommendation system, a chatbot for customer queries, and an automated fraud detection tool, as detailed in the Maeil Economic Daily report."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "b07ca6a34c5fa93f1767ecf989604e7c",
-    "title": "Have your say: AI in research grant assessment - Australian Research Council",
-    "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOWFQ4REkzYjNJQUtwcktUaVFKc0otXzhVV3pLdENNaEZoUmg4Q3Zoa1Eya0JSdlU5OHdsaWZuUElZdGxJTWNsVllJMm9xS2ZyZmtSTDA1RElSUmlFUEs4cVZJc0lmak9FWHpmNTJQa1R3YXdmUXFza2NTalhLYS1kVEZSVWhsWW1JZnRaOHVYMFQ5emZKZjNwbEZR?oc=5",
-    "generatedAt": "2025-09-18T12:05:54.823Z",
-    "publishedAt": "2025-09-18T00:30:53.000Z",
-    "feedName": "AI Research News",
-    "author": "AI Research News",
-    "category": "General",
-    "essence": "1) What's new: The Australian Research Council (ARC) is seeking public feedback on the potential use of AI to assess research grant applications, a shift from traditional human-led evaluation. 2) Why it matters: Researchers, universities, and policymakers are affected, as AI could streamline assessments but may introduce biases or reduce nuanced evaluations. 3) Evidence/caveats: The consultation runs until 12 July 2024.",
-    "reactions": [
-      ") Possible Impact: The Australian Research Council’s (ARC) exploration of AI in grant assessment could streamline peer review processes, as seen in similar systems like the UK’s REF 2021, which used AI to analyze citation patterns and publication impact.",
-      ") Skeptic Check: Critics, such as those in the ARC’s public consultation, warn that AI may overlook interdisciplinary research or favor established metrics, potentially marginalizing innovative but less conventional proposals.",
-      ") Concrete Facts: The ARC’s discussion paper, released in April 2024, cites a 2023 study by Nature showing AI tools reduced review time by 30% in pilot trials, though accuracy varied by discipline."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
