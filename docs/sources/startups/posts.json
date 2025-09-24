@@ -1,5 +1,105 @@
 [
   {
+    "id": "4f20a6a446108b9ef15aca2a00ead085",
+    "title": "From SEO To GEO: How Can Marketers Adapt To The New Era Of Search Visibility? via @sejournal, @Semji_fr",
+    "source": "https://www.searchenginejournal.com/seo-geo-boost-visibility-semji-spa/556132/",
+    "generatedAt": "2025-09-24T06:12:50.900Z",
+    "publishedAt": "2025-09-24T05:00:24.000Z",
+    "feedName": "Search Engine Journal",
+    "author": "Search Engine Journal",
+    "category": "SEO Strategy",
+    "essence": "What happened: The rise of generative AI (like ChatGPT, Google AI) is shifting search from keyword-based SEO to Generative Engine Optimization (GEO). Users now receive synthesized answers from LLMs, rather than just lists of links. 74% of problem-solving searches now surface AI-generated responses.",
+    "reactions": [
+      ") Investor:  The shift from SEO to GEO presents a significant investment opportunity for companies developing tools and services that help businesses optimize content for large language models (LLMs), as evidenced by the 74% of problem-solving searches now surfacing AI-generated responses.",
+      ") Operator:  To succeed in the GEO era, marketers must prioritize content that is not only well-structured and clear but also demonstrably trustworthy and rich in semantic depth, as LLMs prioritize factual accuracy and consistency across sources.",
+      ") Market:  Companies failing to adapt to GEO risk becoming invisible in the increasingly dominant \"answer layer\" of search results, losing both organic traffic and the crucial brand trust established through direct inclusion in AI-generated responses."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "e87335274601d40efa3af4c079dc15b9",
+    "title": "Here’s Palantir’s ‘secret sauce,’ which these analysts say can boost the stock even more",
+    "source": "https://www.marketwatch.com/story/heres-palantirs-secret-sauce-which-these-analysts-say-can-boost-the-stock-even-more-8d827f11?mod=mw_rss_topstories",
+    "generatedAt": "2025-09-24T06:11:37.364Z",
+    "publishedAt": "2025-09-24T02:16:00.000Z",
+    "feedName": "MarketWatch Top Stories",
+    "author": "MarketWatch Top Stories",
+    "category": "General",
+    "essence": "What happened: Palantir's forward-deployed engineers (FDEs) are driving increased customer adoption and product utilization. Bank of America analysts highlighted this as a key growth driver. No specific numerical data on impact was provided in the source.",
+    "reactions": [
+      "Investor — Palantir's competitive advantage lies in its forward-deployed engineers, enabling deeper customer integration and stickier contracts, but this model relies heavily on high-touch sales and potentially limits scalability.  Operator —  Embedding engineers directly with clients accelerates product adoption and strengthens relationships, but requires significant investment in personnel and careful management of resource allocation. Market —  Competitors lacking a similar embedded engineering model may lose market share to Palantir's deeper customer relationships.",
+      "The key takeaway for founders from the article \"Here’s Palantir’s ‘secret sauce,’ which these analysts say can boost the stock even more\" is the importance of focusing on long-term, high-value government and commercial contracts, emphasizing data integration and analysis capabilities, and building a strong, adaptable platform that can serve diverse client needs.\n\nPalantir's success, as highlighted in the article, isn't solely about the technology itself, but rather its ability",
+      "The market impact of an article titled \"Here’s Palantir’s ‘secret sauce,’ which these analysts say can boost the stock even more\" would depend on several factors, and the impact could range from negligible to significant. Here's a breakdown:\n\nFactors influencing market impact:\n\n The nature of the \"secret sauce\":  If the article reveals genuinely groundbreaking technology or a previously unknown competitive advantage, the impact could be substantial.  If it's a re"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "3c2a2e90767a6bba00e0cd036fdb2461",
+    "title": "Quadratic memory reductions for Zero-knowledge Proofs",
+    "source": "https://github.com/logannye/space-efficient-zero-knowledge-proofs",
+    "generatedAt": "2025-09-24T06:09:52.722Z",
+    "publishedAt": "2025-09-24T02:12:58.000Z",
+    "feedName": "Y Combinator",
+    "author": "Y Combinator",
+    "category": "General",
+    "essence": "What happened: A new Rust implementation, SSZKP, achieves sublinear memory usage (O(√T) vs O(T)) for zero-knowledge proofs using KZG commitments on BN254. This is accomplished through streaming techniques and aggregate-only Fiat-Shamir, avoiding the need to buffer entire polynomials. Tests with 1024, 1536, and 2048 rows (representing trace length T) demonstrated successful verification.",
+    "reactions": [
+      "Investor — Thesis/Risks:  The quadratic memory reduction in SSZKP offers significant scalability improvements for zero-knowledge proof systems, but widespread adoption hinges on the performance and security of the  BN254-based KZG commitments in production environments.",
+      "Operator — Execution Lesson:  Successfully integrating SSZKP requires careful management of the streaming data pipeline and adherence to the time-ordered accumulator state updates to maintain the O(√T) memory bound.",
+      "Market — Who Loses if They Win:  Existing zero-knowledge proof systems relying on O(T) memory solutions may face decreased market share if SSZKP demonstrates superior scalability and performance in real-world applications."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "1a5ee024bf4767250bb7ebbd41b442e7",
+    "title": "Nvidia’s OpenAI deal adds to a brewing concern. But will that actually hurt the stock?",
+    "source": "https://www.marketwatch.com/story/nvidias-openai-deal-adds-to-a-brewing-concern-but-will-that-actually-hurt-the-stock-3bc3a015?mod=mw_rss_topstories",
+    "generatedAt": "2025-09-24T06:11:41.720Z",
+    "publishedAt": "2025-09-23T23:34:00.000Z",
+    "feedName": "MarketWatch Top Stories",
+    "author": "MarketWatch Top Stories",
+    "category": "General",
+    "essence": "What happened: Nvidia's substantial investment in OpenAI (exact figures unstated) adds to existing concerns about its reliance on large language model (LLM) developers as primary customers. This follows a pattern of Nvidia supplying chips to companies it also invests in. Why it matters: This creates a potential GTM (Go-to-Market) concentration risk.",
+    "reactions": [
+      "Investor —  Some investors are concerned about Nvidia's investments in companies that subsequently buy its chips, raising questions about the sustainability of this revenue stream.",
+      "Operator —  The current strong demand for Nvidia's chips suggests that concerns about circular investments are currently outweighed by market forces.",
+      "Market —  If Nvidia's strategy of investing in and supplying AI companies proves unsustainable, competitors offering alternative chip solutions could gain market share."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "739beafcf5d4eb23e48e2b99ce86b239",
+    "title": "Why the rally in stocks may only pause into year-end despite a ‘stretched’ market",
+    "source": "https://www.marketwatch.com/story/why-the-rally-in-stocks-may-see-just-a-pause-into-year-end-despite-a-stretched-market-ba718e0a?mod=mw_rss_topstories",
+    "generatedAt": "2025-09-24T06:11:48.153Z",
+    "publishedAt": "2025-09-23T23:00:00.000Z",
+    "feedName": "MarketWatch Top Stories",
+    "author": "MarketWatch Top Stories",
+    "category": "General",
+    "essence": "What happened: Morgan Stanley's Andrew Slimmon predicts a pause, not a significant downturn, in the U.S. stock bull market through year-end, despite the S&P 500's high valuation. No specific numerical projections were provided.",
+    "reactions": [
+      "Investor —  Morgan Stanley's Andrew Slimmon believes the S&P 500's high valuation is unlikely to significantly curtail the bull market's momentum before year-end.  Operator — No meaningful perspectives found. Market —  No meaningful perspectives found.",
+      "The key takeaway for founders from an article titled \"Why the rally in stocks may only pause into year-end despite a ‘stretched’ market\" is that despite market valuations appearing high and a potential for a near-term correction, the long-term upward trend might continue.  This means founders shouldn't necessarily panic or drastically alter their long-term plans based on short-term market fluctuations.  However, they should remain cautious, maintain fiscal discipline, and avoid over-reliance on inflated",
+      "The market impact of a headline like \"Why the rally in stocks may only pause into year-end despite a ‘stretched’ market\" is complex and depends on several factors, but generally leans towards a neutral to slightly negative influence in the short term, with longer-term implications less certain.\n\nShort-term (days to weeks):\n\n Potential for profit-taking: The headline highlights a potential near-term pause, suggesting the current rally might be overextended. This could trigger"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
     "id": "c40e1bda23070168aaba916afa2fc9a5",
     "title": "Micron’s stock gains as the memory-chip maker clears a high bar",
     "source": "https://www.marketwatch.com/story/microns-stock-gains-as-the-memory-chip-maker-clears-a-high-bar-d4c13a92?mod=mw_rss_topstories",
@@ -20,6 +120,26 @@
     }
   },
   {
+    "id": "9a0448164f017d59b7b6f3ef886bc797",
+    "title": "From Rust to reality: The hidden journey of fetch_max",
+    "source": "https://questdb.com/blog/rust-fetch-max-compiler-journey/",
+    "generatedAt": "2025-09-24T06:09:59.596Z",
+    "publishedAt": "2025-09-23T21:24:45.000Z",
+    "feedName": "Y Combinator",
+    "author": "Y Combinator",
+    "category": "General",
+    "essence": "What happened: The `fetch_max` function, designed for atomically updating unsigned integers, was implemented. Its journey involved macro expansion to `atomic_umax`, a compiler intrinsic, which then translated into LLVM instructions (`atomicrmw umax`). Further compiler optimization replaced this with a compare-and-swap loop at the assembly level (x86-64 and AArch64 examples shown).",
+    "reactions": [
+      "Investor —  The `fetch_max` function's journey from a high-level Rust API to low-level assembly reveals potential performance bottlenecks dependent on memory ordering and the inherent complexity of atomic operations, impacting scalability and latency for high-throughput applications.",
+      "Operator —  The compiler's automatic translation of `fetch_max` into a compare-and-swap loop highlights the importance of understanding the underlying implementation details even when using high-level abstractions,  as performance optimization may require deeper knowledge of the hardware and low-level code.",
+      "Market —  Competitors offering alternative atomic operation implementations with superior performance at the hardware level could gain a significant advantage, potentially displacing solutions reliant on less efficient compiler-generated code."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
     "id": "1c031c53c1bad0b0f5a1fcf5d570468c",
     "title": "Pew: Most Americans Want AI Labels, Few Trust Detection via @sejournal, @MattGSouthern",
     "source": "https://www.searchenginejournal.com/pew-most-americans-want-ai-labels-few-trust-detection/556697/",
@@ -33,6 +153,26 @@
       "Investor —  The significant gap between public demand for AI labeling (76%) and low confidence in detecting AI-generated content (12%) presents a market opportunity for companies developing robust AI detection tools, but carries the risk of regulatory hurdles and public skepticism hindering adoption.",
       "Operator —  Transparency regarding AI usage is crucial;  building trust requires clearly labeling AI-generated content, even if consumers lack the ability to independently verify its origin.",
       "Market —  Companies failing to clearly label AI-generated content risk alienating consumers who increasingly demand transparency and control over AI's role in their lives."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "0e8e3ee7abd84b5be2585b4c440ad028",
+    "title": "How China could claim a much bigger slice of the world’s gold-trading business",
+    "source": "https://www.marketwatch.com/story/how-china-could-claim-a-much-bigger-slice-of-the-worlds-gold-trading-business-41313186?mod=mw_rss_topstories",
+    "generatedAt": "2025-09-24T06:11:51.821Z",
+    "publishedAt": "2025-09-23T21:06:00.000Z",
+    "feedName": "MarketWatch Top Stories",
+    "author": "MarketWatch Top Stories",
+    "category": "General",
+    "essence": "What happened: China is reportedly inviting certain countries to purchase and store physical gold within its borders. This represents a potential shift in global gold trading, aiming to increase China's influence in the market. No specific numbers on gold volume or participating countries are yet available.",
+    "reactions": [
+      "Investor —  China's move to attract gold storage could increase demand for the metal, but faces risks from geopolitical instability and potential countermeasures from established players.",
+      "Operator —  Successful execution hinges on convincing other nations to trust China's secure storage and transparent pricing mechanisms.",
+      "Market —  Existing gold trading hubs, like London and Zurich, could lose market share and influence if China's initiative gains significant traction."
     ],
     "promoBanner": {
       "text": "Axiologic News",
@@ -153,6 +293,46 @@
       "Investor — Telo's focus on a niche market (city trucks) and lean approach to manufacturing minimizes risk compared to larger EV startups, but success hinges on achieving unit profitability quickly with limited funding.",
       "Operator —  Telo's strategy of prioritizing unit profitability and leveraging a network of external partners and consultants allows them to maximize their limited resources.",
       "Market —  Established automakers and larger EV companies lose if Telo successfully demonstrates that a smaller, more efficient electric truck can profitably capture a significant portion of the urban delivery and personal use market."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "a894411f6389ce25837745107d0fad5a",
+    "title": "Your GEO content audit template",
+    "source": "https://searchengineland.com/geo-content-audit-template-462384",
+    "generatedAt": "2025-09-24T06:12:58.226Z",
+    "publishedAt": "2025-09-23T15:56:25.000Z",
+    "feedName": "Search Engine Land",
+    "author": "Search Engine Land",
+    "category": "Generative Engine Optimization (GEO)",
+    "essence": "GEO Content Audit: Key Findings What happened: The article introduces a GEO (Geographic) content audit template, differentiating it from standard SEO audits by focusing on AI answer inclusion. The template aims to improve brand visibility in AI-powered search results (e.g., Google AI Overviews, ChatGPT) by optimizing content for direct answers, FAQ schema, and offsite mentions. A worked example targets 40% inclusion across 50 priority prompts and aims for +15% homepage sessions QoQ and +25% revenue for a specific cluster.",
+    "reactions": [
+      "Investor:  The thesis is that optimizing for AI-driven search visibility (\"GEO\") represents a significant new market opportunity, but the risk is that rapid changes in AI algorithms could render optimization efforts quickly obsolete.",
+      "Operator:  A successful GEO content audit requires not only fixing on-site technical issues but also proactively building an off-site presence on authoritative platforms frequently cited by AI models.",
+      "Market:  Competitors can gain significant visibility and market share even without top search rankings by securing mentions on high-authority third-party sites that are frequently referenced in AI-generated answers."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "745e8693fbec21b5af6849f2d9729a76",
+    "title": "Google Ads streamlines scripts documentation",
+    "source": "https://searchengineland.com/google-ads-scripts-documentation-462442",
+    "generatedAt": "2025-09-24T06:13:01.959Z",
+    "publishedAt": "2025-09-23T15:36:59.000Z",
+    "feedName": "Search Engine Land",
+    "author": "Search Engine Land",
+    "category": "Google",
+    "essence": "What happened: Google Ads revamped its scripts documentation on September 23, 2025. Changes include grouping guides by experience level and campaign type, a new central reference tab for script objects, and consolidated sample code in one location. No specific quantitative metrics on usage or improvement are provided.",
+    "reactions": [
+      ") Investor: Improved Google Ads script documentation could increase advertiser adoption and reduce reliance on third-party automation tools, potentially boosting Google's revenue from script-driven campaign optimization.",
+      ") Operator:  Streamlining the documentation reduces the time spent searching for solutions and examples, allowing for faster script development and implementation.",
+      ") Market:  Third-party script providers specializing in Google Ads automation might see reduced demand if the improved official documentation adequately addresses user needs."
     ],
     "promoBanner": {
       "text": "Axiologic News",
@@ -320,6 +500,26 @@
     }
   },
   {
+    "id": "0aa1e398eaff6509948caab5277a45f4",
+    "title": "British FinTech startup Fnality raises €115 million for seamless wholesale payment systems - EU-Startups",
+    "source": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNc295Zm5wYUtvU1NqalJLU0FMak1SdURFeER3LVV5UkZocE5aY3BYbHNnRThyS1NkUC1hc2F5QzV4ZVNWb2E4UUZrUkpDNC1CTGZrTWttT3BqenFhcFIzMUswTWd2dElDWmhjZVRJN2c4RlVTSlRUN3g1a2ZnNlpkZVdORzZTVGQ5SXBIeUt1Q1ZXZEtnMC1yZkVyQXVyTDY2Uy1OaW5BeHZvZjdqUVN4a1Zyd2ZXU1JuU0FqeHBOYU5SMjFpMHc?oc=5",
+    "generatedAt": "2025-09-24T06:10:40.432Z",
+    "publishedAt": "2025-09-23T14:35:05.000Z",
+    "feedName": "Startup Funding News",
+    "author": "Startup Funding News",
+    "category": "General",
+    "essence": "What happened: Fnality, a British FinTech startup, secured €115 million in funding. This represents a significant capital injection for the company, exceeding previous funding rounds (specific figures unavailable). The funds will be used to develop seamless wholesale payment systems.",
+    "reactions": [
+      "Investor:  Fnality's success hinges on navigating complex regulatory landscapes and achieving sufficient network effects to overcome incumbent payment rails.",
+      "Operator:  Securing €115 million in funding demonstrates the significant capital required to build and scale a truly seamless wholesale payment system.",
+      "Market:  Traditional correspondent banking networks and existing payment processors stand to lose market share if Fnality achieves widespread adoption."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
     "id": "965fc61ede1037031a5283d974312f5c",
     "title": "OpenDataLoader-PDF: An open source tool for structured PDF parsing",
     "source": "https://github.com/opendataloader-project/opendataloader-pdf",
@@ -353,6 +553,26 @@
       "Investor — Thesis:  Libghostty addresses a widespread need for robust, consistent terminal emulation in diverse applications, potentially creating a valuable, reusable component for numerous software companies.",
       "Operator — Execution Lesson:  Even seemingly simple tasks like terminal sequence parsing present significant unexpected complexities; thorough testing and attention to edge cases are crucial.",
       "Market — Who Loses:  Existing ad-hoc terminal emulation implementations within various applications may become obsolete or less competitive if libghostty gains widespread adoption."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "daf0248aced050e56f9895cd749a0229",
+    "title": "Making SEO Personas Actionable Across Teams via @sejournal, @Kevin_Indig",
+    "source": "https://www.searchenginejournal.com/making-seo-personas-actionable-across-teams/556618/",
+    "generatedAt": "2025-09-24T06:12:53.981Z",
+    "publishedAt": "2025-09-23T13:30:05.000Z",
+    "feedName": "Search Engine Journal",
+    "author": "Search Engine Journal",
+    "category": "SEO",
+    "essence": "Making SEO Personas Actionable What happened: The article details a method for making SEO personas actionable across teams. This involves creating an internal knowledge hub (Notion, Airtable, etc.), building a clear narrative around persona value (using real queries and competitor analysis), and training contributors on persona use in all communication (content briefs, ad copy, sales scripts, etc.). One client saw a 20-60% month-over-month increase in organic visits from ChatGPT after pivoting to persona-focused content in March 2023.",
+    "reactions": [
+      "Investor:  The thesis is that actionable SEO personas, derived from real user data and continuously updated, unlock cross-functional alignment and improved marketing ROI; the risk is underestimating the ongoing effort required to maintain and utilize them effectively across teams.",
+      "Operator:  To make SEO personas actionable, create a central knowledge hub, build a compelling narrative showcasing their value, and enforce their use in content creation and across all communication channels.",
+      "Market: Competitors who fail to leverage detailed, data-driven SEO personas to inform their content and messaging will lose market share to those who do."
     ],
     "promoBanner": {
       "text": "Axiologic News",
@@ -913,6 +1133,26 @@
       "Investor —  The ruling's impact is uncertain, as Google's ad tech dominance is already waning due to the rise of walled gardens and retail media networks, making the remedies potentially \"too little, too late.",
       "Operator —  Forcing open Google's auction logic and eliminating \"first look\" advantages could increase competition and transparency, potentially benefiting advertisers and publishers.",
       "Market —  Walled gardens and retail media networks are the primary beneficiaries if the remedies fail to significantly disrupt Google's market share."
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
+    "id": "d31e6f6cc727f38b6d33ad68142bbe6d",
+    "title": "Lift off: First look at the Space Stage agenda at TechCrunch Disrupt 2025",
+    "source": "https://techcrunch.com/2025/09/22/lift-off-first-look-at-the-space-stage-agenda-at-techcrunch-disrupt-2025/",
+    "generatedAt": "2025-09-24T06:09:47.801Z",
+    "publishedAt": "2025-09-22T14:30:00.000Z",
+    "feedName": "TechCrunch Startups",
+    "author": "TechCrunch Startups",
+    "category": "Space",
+    "essence": "Lift off: First look at the Space Stage agenda at TechCrunch Disrupt 2025 What happened: TechCrunch Disrupt 2025 will feature a new \"Space Stage\" in partnership with the Aerospace Corporation, launching October 27th in San Francisco. The agenda includes sessions on space investing (with Celeste Ford of Stellar Ventures and Chris Morales of Point72 Ventures), AI in space, dual-use technologies, and building space infrastructure (with CEOs from True Anomaly, Vast, and Northwood Space). A startup pitch-off focusing on AI solutions in space will also be held.",
+    "reactions": [
+      "Investor:  Celeste Ford (Stellar Ventures) and Chris Morales (Point72 Ventures) will discuss where capital is flowing in the space sector, highlighting the evolving funding landscape and what startups need to demonstrate to secure funding.",
+      "Operator: Baiju Bhatt (Aetherflux) will share lessons learned from building Robinhood and transitioning to the aerospace industry, focusing on how founder experience translates to a vastly different, high-stakes environment.",
+      "Market:  The session on dual-use technology featuring Dan Jablonsky (Ursa Major) will explore the opportunities and responsibilities involved in building commercial and defense technologies, illustrating the complex landscape for startups navigating this space."
     ],
     "promoBanner": {
       "text": "Axiologic News",
@@ -2393,126 +2633,6 @@
       ") Investor:  SpyFu's Mike Roberts highlights the high cost and potential losses of maintaining comprehensive rank tracking data, suggesting a significant risk for companies relying on this business model.",
       ") Operator: Ahrefs' Tim Soulo advises focusing on top 20 rankings, arguing that data beyond this point offers limited actionable insights and is likely to become prohibitively expensive.",
       ") Market:  Google's actions against SERP scraping could benefit smaller SEO firms less reliant on extensive, potentially inaccurate, data from third-party tools."
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "5f98b26871c471802e3c57e52e48b7ad",
-    "title": "Reform UK receives £100,000 donation from design firm that faced winding-up petition",
-    "source": "https://www.theguardian.com/politics/2025/sep/19/reform-uk-receives-100000-donation-from-design-firm-that-faced-winding-up-petition",
-    "generatedAt": "2025-09-19T12:12:26.065Z",
-    "publishedAt": "2025-09-19T06:00:38.000Z",
-    "feedName": "Guardian Business",
-    "author": "Guardian Business",
-    "category": "Reform UK",
-    "essence": "Reform UK received a £100,000 donation from Greybull Capital, a firm that previously owned British Steel. This adds to other significant donations totaling over £2 million this year, including £750,000 from Fiona Cottrell and £500,000 from property developer Candy. This influx of funding significantly boosts Reform UK's financial resources, enhancing its capacity for campaigning and expansion.",
-    "reactions": [
-      "Investor:  The substantial donations to Reform UK, including those from individuals with past financial difficulties and connections to controversial business dealings, present significant reputational and regulatory risk.",
-      "Operator:  Reform UK's fundraising success highlights the effectiveness of leveraging existing networks and attracting donors from across the political spectrum, but also reveals dependence on a small number of high-value contributors.",
-      "Market:  Established political parties and their donors could lose influence and funding if Reform UK's unconventional funding strategy continues to yield electoral success."
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "ab3014ff0b7e38790196909432cb37f2",
-    "title": "Revealed: ‘Corporate capture’ of UN aviation body by industry",
-    "source": "https://www.theguardian.com/environment/2025/sep/19/revealed-corporate-capture-un-aviation-body-icao",
-    "generatedAt": "2025-09-19T12:12:28.931Z",
-    "publishedAt": "2025-09-19T05:00:34.000Z",
-    "feedName": "Guardian Business",
-    "author": "Guardian Business",
-    "category": "Airline emissions",
-    "essence": "What happened: An InfluenceMap report revealed that industry delegates outnumbered climate experts 14:1 at a recent ICAO environmental meeting. In February 2025, 72 industry delegates (31% of attendees) represented trade associations including fossil fuel and aircraft manufacturers, while only five (2%) represented green groups. This imbalance increased from a 10:1 ratio in 2022.",
-    "reactions": [
-      "Investor —  InfluenceMap's report highlights significant risks for investors in the aviation sector due to the ICAO's insufficient climate policies and the industry's lobbying power hindering meaningful emissions reductions.",
-      "Operator —  The aviation industry's success in shaping ICAO policies underscores the importance of proactive engagement with regulators and the need for transparent, science-based approaches to climate action to avoid future regulatory backlash.",
-      "Market — If the aviation industry's lobbying efforts succeed in delaying or weakening climate regulations, taxpayers and future generations will bear the costs of increased climate damage."
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "5e95961d3bf59c88d20dece5ddc43e0c",
-    "title": "Indian fintech Jar turns profitable by enabling millions to save in gold",
-    "source": "https://techcrunch.com/2025/09/18/indian-fintech-jar-turns-profitable-by-helping-millions-save-in-gold/",
-    "generatedAt": "2025-09-19T06:09:58.541Z",
-    "publishedAt": "2025-09-19T03:30:00.000Z",
-    "feedName": "TechCrunch Startups",
-    "author": "TechCrunch Startups",
-    "category": "Fintech",
-    "essence": "What happened: Jar, an Indian fintech, achieved profitability in the last two quarters. FY24 saw a ninefold increase in operating revenue from its core gold-saving app to ₹2.08 billion ($23.6 million), and a 49-fold increase in total revenue across all business lines to ₹24.50 billion ($279.3 million). This growth followed vertical integration of its gold operations and expansion into digital payments via partnerships with BharatPe and Unity Small Finance Bank.",
-    "reactions": [
-      "Investor — Jar's ninefold revenue growth in FY24, coupled with profitability and a large, underserved user base, presents a compelling investment thesis despite the risks inherent in a rapidly evolving fintech market and potential competition.",
-      "Operator — Vertical integration, enabling Jar to control its gold supply chain and capture a larger share of the value, proved crucial to its profitability and rapid revenue growth.",
-      "Market — Existing players in the Indian gold market and traditional financial institutions serving the low-to-middle-income segment may experience market share erosion as Jar expands its user base and product offerings."
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "bdc33e8323355b8834ff2ca91317c64c",
-    "title": "Google searches for ‘help with mortgage’ haven’t been this high since 2009",
-    "source": "https://www.marketwatch.com/story/google-searches-for-help-with-mortgage-havent-been-this-high-since-2009-7e0354cf?mod=mw_rss_topstories",
-    "generatedAt": "2025-09-19T06:11:40.490Z",
-    "publishedAt": "2025-09-19T02:50:00.000Z",
-    "feedName": "MarketWatch Top Stories",
-    "author": "MarketWatch Top Stories",
-    "category": "General",
-    "essence": "What happened: Google searches for \"help with mortgage\" reached levels not seen since 2009. No specific search volume numbers are provided. Why it matters: Increased searches suggest potential mortgage distress among consumers, impacting the financial services sector.",
-    "reactions": [
-      "Investor —  The surge in \"help with mortgage\" searches, while reminiscent of 2009, may not signal a widespread crisis, as economists suggest a more complex situation warrants further investigation before drawing investment conclusions.",
-      "Operator —  The increased search volume highlights a crucial need for proactive, accessible customer support resources within the mortgage industry; failing to adapt to this demand could lead to significant reputational and financial damage.",
-      "Market —  If mortgage assistance programs prove highly effective in preventing widespread defaults,  investors betting on a significant market downturn in the housing sector could lose out."
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "475d296166f544bd59e265acbc067345",
-    "title": "Xplor Technologies Acquires Ezypay, Enhancing Global Payment Solutions for SaaS Platforms in Asia-Pacific - Laotian Times",
-    "source": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNZEVXcF8wT0t6MFlnTWdMTl9kVDFFcWdnYkNGbFNBUjMweF92dExIMUZMSHJldUl0cmNmenJXTTFYUG5iWjNDamd5MlQzUFg3WFh3QTdGa09sX0NXUEpGOU9Edm4xem82WlNGdmVpMGE0ZHFrR3ZPYjhGN0RzT3ZBVmhyck5lcWNPWTYwQVVUcXUweE9UMTE4Z2Z3RXM2THplSDl4ZVg1T2Zxd2Z5RncxTjZ2a1d4eDFGSGt5TmM3cEQ5dk5xRmNjVGRzZGdUMGszOTZkOUFKNmg?oc=5",
-    "generatedAt": "2025-09-20T06:08:42.966Z",
-    "publishedAt": "2025-09-19T01:48:04.000Z",
-    "feedName": "SaaS & B2B Startup Growth",
-    "author": "SaaS & B2B Startup Growth",
-    "category": "General",
-    "essence": "What Happened: Xplor Technologies acquired Ezypay, expanding its payment processing capabilities for SaaS platforms in the Asia-Pacific region. No specific financial details (acquisition price, revenue figures) are provided in the source. Why it Matters: This acquisition strengthens Xplor's geographic reach and product offerings, potentially increasing its market  within the Asia-Pacific SaaS payment processing sector.",
-    "reactions": [
-      "Investor —  The acquisition's success hinges on Xplor's ability to integrate Ezypay's existing Asian-Pacific client base seamlessly into its global SaaS payment platform, mitigating potential integration challenges and cultural differences.",
-      "Operator —  Successful execution requires not only technical integration of Ezypay's payment infrastructure but also a strategic approach to customer retention and expansion within the existing client base to demonstrate tangible value from the acquisition.",
-      "Market —  Competitors offering similar SaaS payment solutions in the Asia-Pacific region may lose market share if Xplor successfully integrates Ezypay's capabilities and expands its reach."
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "950876604b25c9040a8c63c8f47d9631",
-    "title": "Help Us Raise $200k to Free JavaScript from Oracle",
-    "source": "https://deno.com/blog/javascript-tm-gofundme",
-    "generatedAt": "2025-09-19T12:11:09.746Z",
-    "publishedAt": "2025-09-19T01:40:35.000Z",
-    "feedName": "Y Combinator",
-    "author": "Y Combinator",
-    "category": "General",
-    "essence": "What happened: Deno, a JavaScript runtime, filed a trademark cancellation petition against Oracle's \"JavaScript\" trademark in September 2025, following an open letter signed by over 27,000 people. The petition is now in the discovery phase. Oracle officially denied \"JavaScript\" is a generic term on August 6th, 2025.",
-    "reactions": [
-      "Investor — Thesis:  Success hinges on proving \"JavaScript\" is a generic term, requiring expensive legal discovery to overcome Oracle's denial.",
-      "Operator — Execution Lesson: Securing funding for legal discovery is crucial in challenging established trademarks, highlighting the high cost of such litigation.",
-      "Market — Who Loses:  If Oracle wins, the precedent weakens trademark law, allowing corporations to claim ownership of generic terms and potentially stifle open-source development."
     ],
     "promoBanner": {
       "text": "Axiologic News",
