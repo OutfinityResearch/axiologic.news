@@ -1,5 +1,125 @@
 [
   {
+    "id": "ca8a59b4b939ffca2880912c60053e7c",
+    "title": "Shoplifters could soon be chased down by drones",
+    "source": "https://www.technologyreview.com/2025/09/25/1124088/shoplifters-could-soon-be-chased-down-by-drones/",
+    "generatedAt": "2025-09-25T18:04:34.849Z",
+    "publishedAt": "2025-09-25T17:34:26.000Z",
+    "feedName": "MIT Technology Review - AI",
+    "author": "MIT Technology Review - AI",
+    "category": "Artificial intelligence",
+    "essence": "What's new: Flock Safety, a company known for its police drone programs, is expanding its services to the private sector, offering drone surveillance to businesses like retailers, warehouses, and hospitals. Why it matters: This expansion raises significant privacy concerns, potentially impacting employees, customers, and the general public near these businesses. The technology could lead to increased surveillance without sufficient oversight or legal protections.",
+    "reactions": [
+      "Flock Safety's drone program, already used by Morning Star for security, could expand significantly into private retail and healthcare, providing real-time surveillance of suspected shoplifters and potentially deterring crime.",
+      "The program raises serious Fourth Amendment concerns, as  Rebecca Williams from the ACLU notes the potential for private data collection to erode protections against unlawful search and seizure, mirroring concerns about similar police-drone programs.",
+      "While Flock Safety claims success in assisting police,  for example, with a Colorado wilderness supply drop,  they have yet to secure contracts with major retailers despite ongoing negotiations."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "e16f41315fa4177048de9388b9cbd97f",
+    "title": "Notes on LLM Evaluation",
+    "source": "https://towardsdatascience.com/notes-on-llm-evaluation/",
+    "generatedAt": "2025-09-25T18:04:42.916Z",
+    "publishedAt": "2025-09-25T16:55:50.000Z",
+    "feedName": "Towards Data Science",
+    "author": "Towards Data Science",
+    "category": "Large Language Models",
+    "essence": "What's new: A practical guide details building an evaluation pipeline for a real-world LLM application, focusing on data annotation, rubric creation, and automated scoring using an LLM \"judge.\" Why it matters: AI engineers and developers building LLM-based applications need robust evaluation methods to measure performance, identify failure modes, and iteratively improve their systems. This directly impacts application reliability and user experience. Evidence: The author, Felipe Adachi, describes building a pipeline using approximately 50 initial examples, expanding to at least 100 for error analysis, and leveraging work from Hamel Husain and Chip Huyen.",
+    "reactions": [
+      "The author's practical approach to LLM evaluation, using a 50-example initial dataset and defined evaluation dimensions like \"Escalation Behavior\" and \"Root Cause Accuracy,\" offers a realistic starting point for improving LLM-based application performance.",
+      "A weakness lies in the potential for overfitting to the initial evaluation set of 50 examples, especially given the iterative nature of prompt and system tuning based on evaluation results;  the suggestion to create bootstraps is a step towards mitigating this, but further validation is needed.",
+      "The article references Chip Huyen's \"AI Engineering\" book and Hamel Husain's blog as sources of theoretical concepts informing the practical evaluation pipeline described."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "129fa9d260ee1b81343edd004019530a",
+    "title": "Building a Video Game Recommender System with FastAPI, PostgreSQL, and Render: Part 2",
+    "source": "https://towardsdatascience.com/building-a-video-game-recommender-system-with-fastapi-postgresql-and-render-part-2/",
+    "generatedAt": "2025-09-25T18:04:46.159Z",
+    "publishedAt": "2025-09-25T12:32:00.000Z",
+    "feedName": "Towards Data Science",
+    "author": "Towards Data Science",
+    "category": "Data Science",
+    "essence": "What's new: A previous board game recommender system (Part 1) was deployed as a web application using Render, a cloud service. Why it matters: This makes the recommender system accessible to users beyond a local environment, expanding its potential audience. Evidence: The author, Lucas See, published Part 2 on September 25, 2025.",
+    "reactions": [
+      ")  Deploying a FastAPI application with PostgreSQL to Render streamlines the process of making a video game recommender system accessible to users, as demonstrated by the author's successful deployment detailed in the article.",
+      ")  A potential weakness lies in the article's lack of explicit error handling beyond basic connectivity checks; more robust error handling and logging would improve the system's reliability and maintainability.",
+      ") The author uses PostgreSQL as the database and Docker to containerize the FastAPI application for deployment on the Render platform, referencing specific tools and technologies throughout the process."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "670ad808ab2041d9d34cbdc4769fc8e2",
+    "title": "Building Video Game Recommender Systems with FastAPI, PostgreSQL, and Render: Part 1",
+    "source": "https://towardsdatascience.com/building-video-game-recommender-systems-with-fastapi-postgresql-and-render-part-1/",
+    "generatedAt": "2025-09-25T18:04:48.910Z",
+    "publishedAt": "2025-09-25T12:30:00.000Z",
+    "feedName": "Towards Data Science",
+    "author": "Towards Data Science",
+    "category": "Data Science",
+    "essence": "What's new: A blog post details building a video game recommender system using FastAPI, PostgreSQL, and a custom similarity pipeline (cosine similarity), covering database setup, API route creation (GET requests for game data), and background task implementation for recommendation generation. Why it matters: This impacts data scientists, software engineers, and game developers interested in building personalized recommendation systems. The tutorial provides a practical example using readily available tools (FastAPI, PostgreSQL, Steam API).",
+    "reactions": [
+      "This FastAPI-based video game recommender system, using cosine similarity on game tags fetched from a PostgreSQL database and deployed on Render, offers a practical, scalable architecture for personalized recommendations, as demonstrated by the detailed code examples showing database interactions and the recommendation pipeline.",
+      "A potential weakness lies in the reliance on tag data; the accuracy of recommendations heavily depends on the comprehensiveness and quality of the game tags, and the system's performance might degrade with incomplete or inconsistent tagging.",
+      "The article details the use of `uvicorn src.main:app --reload` command to run the FastAPI application locally, highlighting a key step in the development process."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "9a331947166b22124a7a703d6e762772",
+    "title": "The Download: growing threats to vulnerable languages, and fact-checking Trump’s medical claims",
+    "source": "https://www.technologyreview.com/2025/09/25/1124079/the-download-threats-vulnerable-languages-and-trump-medical-claims/",
+    "generatedAt": "2025-09-25T18:04:37.658Z",
+    "publishedAt": "2025-09-25T12:10:00.000Z",
+    "feedName": "MIT Technology Review - AI",
+    "author": "MIT Technology Review - AI",
+    "category": "The Download",
+    "essence": "What's new: A new study reveals that 40-60% of articles in four African Wikipedia language editions are uncorrected machine translations, poisoning AI language learning models which rely on Wikipedia data. Additionally, Huntington's disease has seen a 75% slowdown in disease progression for the first time through gene therapy. Finally, Commonwealth Fusion Systems secured a billion-dollar deal with Eni for electricity from a yet-to-be-built fusion power plant.",
+    "reactions": [
+      "AI-generated content is polluting Wikipedia pages for minority languages, with estimates suggesting 40-60% of articles in some African language editions are uncorrected machine translations, creating a feedback loop that harms AI language learning.",
+      "Trump's promotion of leucovorin as an autism treatment, despite the Coalition for Autism Researchers' rejection of the claim, highlights the risk of misinformation leveraging public trust in authority figures and the spread of unfounded medical claims.",
+      "Commonwealth Fusion Systems secured a billion-dollar deal with Eni for electricity from a yet-to-be-built commercial fusion power plant, demonstrating significant investor confidence in the technology despite the lack of a functioning prototype."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "795cd3d757dabfb2045a0812b580a069",
+    "title": "Quantum Annealing with Machine Learning Tunes Penalty Parameters for Minimum Bisection Problem Solutions - Quantum Zeitgeist",
+    "source": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNeTRUZVdkV2htNjltUUZEUkhBZElOY2RQVW5VMlgwMVZFWk44OEoxdW9zcFhnRGRIZTJsbGUyRDJrVEJOMlB3amlXdE5qY1QycHpQVDVVZTNxamdxeVZmeFhvZUxEbUNRS0RMSnJ5bnpFaXBQQnI2TldhSzFPYi1PbGQ2amhzb1c1ZFlvOXFyTWVQNWJRMkowdnVseG1CdnZjdWdMZmwzZlB2YjN1OGl0cnVubU9DVzJJbGpGSkNEcy1lN2c?oc=5",
+    "generatedAt": "2025-09-25T18:04:52.904Z",
+    "publishedAt": "2025-09-25T10:33:03.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "What's new: A machine learning algorithm was developed to optimize penalty parameters in quantum annealing for solving the minimum bisection problem, improving solution quality compared to traditional methods. Why it matters: This impacts researchers and practitioners working on combinatorial optimization problems, particularly those using quantum annealing hardware for solving them. Improved solution quality translates to better results in various applications like logistics, network design, and materials science.",
+    "reactions": [
+      ")  By using machine learning to optimize penalty parameters, this research could significantly improve the efficiency and scalability of solving minimum bisection problems using quantum annealing, potentially impacting areas like network design and logistics.",
+      ") The success of this approach hinges on the ability of the machine learning model to generalize effectively to unseen instances of the minimum bisection problem, a weakness that requires further investigation.",
+      ")  The research demonstrates improved performance in solving minimum bisection problems compared to traditional approaches, achieving a speedup of several orders of magnitude in some cases (though the specific number isn't explicitly stated in the provided link)."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "c4bccaedf988d8a57baf533fbe4d8e91",
     "title": "Fusion power plants don’t exist yet, but they’re making money anyway",
     "source": "https://www.technologyreview.com/2025/09/25/1124050/fusion-future-funding/",
@@ -273,6 +393,26 @@
       ")  While increased autism diagnoses are partly due to broadened diagnostic criteria and heightened awareness,  small studies suggest leucovorin may offer some benefit for a subset of children with folate transport deficiencies, as highlighted by research focusing on children younger than six.",
       ") The assertion that leucovorin is a viable autism treatment is premature, given the limited and inconsistent findings from only four small trials, as noted by the Coalition for Autism Researchers.",
       ")  A 2024 study of nearly 2.5 million Swedish children found no link between acetaminophen use during pregnancy and autism after accounting for potential biases in a sibling analysis."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "cd1b0024571cbb0b92a1ea8bb4c69168",
+    "title": "Qualcomm Taps Adobe GenStudio to Optimize Content Supply Chain with Generative AI - CXOToday.com",
+    "source": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPLXo3Z0IzU3NrbTlDdm54OEhRS3YxZEhQMHFwdktORGp1Nk51eTRPVkgwalBfS0xxZ0s1LXpHejMzcjJVSkdUMjFVVmFVNXJjYmhScXVQMU9VSU1aSUgwVFFkRHFOaWk3Q2kyU0Z1TkFuRnFEN2diNVB5bHR2ZWsta2ZGRDk4QUJBaU9PbXVmR2dFVE4wMUpHZWpZb2VhLUdINnNCUU9reDVsdlFldmlKV3NTMnNBTkNo?oc=5",
+    "generatedAt": "2025-09-25T18:05:00.067Z",
+    "publishedAt": "2025-09-24T11:29:26.000Z",
+    "feedName": "Generative AI Applications",
+    "author": "Generative AI Applications",
+    "category": "General",
+    "essence": "Qualcomm will use Adobe GenStudio, a generative AI platform, to streamline its content creation and distribution processes. This matters because it could significantly improve Qualcomm's efficiency in producing marketing materials, developer resources, and other content, impacting its marketing and developer relations teams. Faster content creation can lead to quicker product launches and better engagement with customers and developers.",
+    "reactions": [
+      ") Qualcomm's integration of Adobe GenStudio could significantly streamline its content creation process, potentially reducing production costs and time-to-market for marketing materials and other assets.",
+      ") The success of this partnership hinges on Adobe GenStudio's ability to effectively handle Qualcomm's specific content needs and integrate seamlessly with its existing workflows; otherwise, it risks becoming an underutilized tool.",
+      ") The CXOToday article highlights Qualcomm's aim to optimize its content supply chain using generative AI, suggesting a focus on efficiency gains rather than solely on creative innovation."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
@@ -893,6 +1033,26 @@
       ") Experian's research suggests that machine learning can significantly improve the speed and accuracy of financial decision-making, potentially leading to more efficient credit scoring and risk assessment.",
       ")  The study's success hinges on the quality and representativeness of the data used to train the machine learning models; biased data could perpetuate existing inequalities in financial access.",
       ")  The article highlights Experian's research showing machine learning's positive impact on financial decisions, although specific metrics or case studies are not detailed."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "73a91dfb551c61bb06c8504683953ab2",
+    "title": "The hidden environmental cost of generative AI and its toll on climate - USA Today",
+    "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQMEZhS1JZUUVEV3c0MFpYbURxT2kyVlBRclJGOVR1V29kdVNLc1hBeHJoRUFjemtzSnF3eFAzUUxrOXV1aWMycFMxdUFkT1VEYVpMd2J6OHBJU2U1dGMzUnItMkhVNGx2Q2Z1Zy13RHQ2S2VLRjBQOHViSWk2Rzl1anpBMXpyeGNZcnphdkw4dmRUUXRKMWZ5VjJB?oc=5",
+    "generatedAt": "2025-09-25T18:05:02.573Z",
+    "publishedAt": "2025-09-23T09:02:16.000Z",
+    "feedName": "Generative AI Applications",
+    "author": "Generative AI Applications",
+    "category": "General",
+    "essence": "What's new: The article highlights the previously underreported environmental impact of generative AI, specifically its significant carbon footprint stemming from the energy-intensive training and operation of large language models. Why it matters: This impacts everyone, as the increasing use of generative AI contributes to climate change through substantial greenhouse gas emissions. The technology's widespread adoption across various sectors (from entertainment to business) exacerbates this problem, affecting global efforts to mitigate climate change.",
+    "reactions": [
+      ")  The substantial energy consumption of training large language models, as highlighted by the article's discussion of data center power needs, will likely contribute to increased carbon emissions unless significant efficiency gains are achieved.",
+      ")  The article lacks concrete data on the relative environmental impact of generative AI compared to other energy-intensive industries, hindering a comprehensive assessment of its overall contribution to climate change.",
+      ")  USA Today's article cites the significant energy demands of training AI models, referencing the massive computational power required, although it doesn't provide specific kilowatt-hour figures for a particular model."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
@@ -1580,6 +1740,26 @@
     }
   },
   {
+    "id": "cfdd050c14337798f0db2d2d534f9134",
+    "title": "New Tool Enhances Generative AI Models to Accelerate Discovery of Breakthrough Materials - Bioengineer.org",
+    "source": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNN2llRmYxeXBWRDBMNHUxM0MzV3BibjdzYk1HdkNJV2N3X0pIM1NtSWhxVHUwNVV3Rl9DQTlnVDBib1N3MTNRX285a2pjeFQzYlpoYmlQMVowUWU4N1p2TzdXWVBOWDlEOENwbnZKRGl1TUIxSjhvOWdDYVVzUlRVbXhzZ0g3MFlaYkhFdHB0LWJVdDNZTGhIV1lMcG1wcHdOeGZTb0RMOG9HNHVGNXBTb2FtNA?oc=5",
+    "generatedAt": "2025-09-25T18:05:05.549Z",
+    "publishedAt": "2025-09-22T09:26:01.000Z",
+    "feedName": "Generative AI Applications",
+    "author": "Generative AI Applications",
+    "category": "General",
+    "essence": "What's new: A new tool, unspecified in detail, enhances generative AI models for faster discovery of novel materials. Why it matters: This impacts materials science research and development, potentially accelerating innovation across various industries relying on advanced materials (e.g., energy, electronics, medicine). Faster material discovery translates to quicker technological advancements and economic benefits.",
+    "reactions": [
+      ")  The new tool, by leveraging generative AI, could significantly reduce the time and cost associated with discovering novel materials, potentially leading to breakthroughs in areas like energy storage and electronics as suggested by the article's emphasis on accelerated discovery.",
+      ") The success of this tool hinges on the quality and quantity of training data; insufficient or biased data could lead to inaccurate or limited predictions, hindering its effectiveness as noted implicitly by the focus on enhanced generative AI models.",
+      ")  The article highlights the potential for faster material discovery, but provides no specific examples of materials already discovered using this tool or quantifiable improvements in discovery speed."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "14e6b2ac773f6eee93d2149303e5b42d",
     "title": "This medical startup uses LLMs to run appointments and make diagnoses",
     "source": "https://www.technologyreview.com/2025/09/22/1123873/medical-diagnosis-llm/",
@@ -1813,46 +1993,6 @@
       "The study's unsupervised clustering of Chinese listed companies reveals distinct patterns in carbon emissions during the final year of COVID-19 restrictions, potentially informing targeted emission reduction strategies.",
       "The research's reliance on listed companies may limit generalizability to the broader Chinese economy and overlook the emissions of smaller, unlisted firms.",
       "The study analyzed data from 2022, focusing on the impact of China's COVID-19 control measures on carbon emission heterogeneity among listed companies."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "f0bd5bb9e6c01883fa1a0b6c0afa5bf9",
-    "title": "Building LLM Apps That Can See, Think, and Integrate: Using o3 with Multimodal Input and Structured Output",
-    "source": "https://towardsdatascience.com/building-llm-apps-that-can-see-think-and-integrate-using-o3-with-multimodal-input-and-structured-output/",
-    "generatedAt": "2025-09-20T18:03:49.434Z",
-    "publishedAt": "2025-09-20T16:00:00.000Z",
-    "feedName": "Towards Data Science",
-    "author": "Towards Data Science",
-    "category": "Large Language Models",
-    "essence": "What's new: A time-series anomaly detection system was built using the o3 LLM, processing chart images as input and providing structured JSON output detailing anomalies (type, dates, values, reasoning). Why it matters: This approach eliminates the need for traditional ML model training in anomaly detection, potentially saving time and resources for data analysts and developers working with time-series data. It benefits users who need quick, visual anomaly detection without extensive model building.",
-    "reactions": [
-      "The described o3 model demonstrates the potential for building LLM applications that accurately detect various time-series anomalies (spike, level shift, seasonal outlier) directly from visualizations, eliminating the need for traditional model training, as evidenced by its successful identification of anomalies in three synthetic datasets.",
-      "A weakness of the presented approach is its reliance on synthetic data;  the model's performance on real-world, noisy e-commerce data, potentially containing unanticipated anomaly types or data quality issues, remains untested.",
-      "The o3 model correctly identified a \"level_shift\" anomaly in a synthetic dataset, specifying a sustained change in order volume from approximately 120-135 to 150 beginning August 26, 2025, and lasting until September 2, 2025."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "d98f0ef44a96d004ddd3578fef458c68",
-    "title": "The SyncNet Research Paper, Clearly Explained",
-    "source": "https://towardsdatascience.com/syncnet-paper-easily-explained/",
-    "generatedAt": "2025-09-20T18:03:52.360Z",
-    "publishedAt": "2025-09-20T14:00:00.000Z",
-    "feedName": "Towards Data Science",
-    "author": "Towards Data Science",
-    "category": "Deep Learning",
-    "essence": "What's new: The SyncNet algorithm (versions 1-10) estimates audio-video synchronization offsets with associated confidence scores, using a deep learning approach and a sliding window technique to compare audio and video segments. Why it matters: This affects post-production video editing, video conferencing applications, and multi-person speaker identification in videos by automatically detecting and correcting audio-video synchronization issues. Evidence/Caveats: The algorithm achieves 99% accuracy with averaging across multiple samples but only 81% with single samples; offset calculations for ten video segments (durations 0.3-9.2s) are presented, with average offset ≈ -300ms (audio leading video); the method relies on the assumption that most videos are initially correctly synced, using existing video data for training.",
-    "reactions": [
-      ") SyncNet's ability to achieve 99% accuracy in audio-visual synchronization by averaging multiple samples, as demonstrated in the paper's results, suggests a practical and robust solution for various applications.",
-      ") The reliance on a large dataset of mostly correctly synchronized videos for training poses a risk, as biases in the training data could lead to inaccurate results for videos with atypical synchronization issues.",
-      ") The SyncNet model, detailed in the 2016 ACCV paper by Chung and Zisserman,  calculates a synchronization offset by comparing Euclidean distances between audio chunks and a fixed video chunk, with a reported average offset of approximately -300ms across multiple video segments."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
