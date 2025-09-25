@@ -1,5 +1,45 @@
 [
   {
+    "id": "c4bccaedf988d8a57baf533fbe4d8e91",
+    "title": "Fusion power plants don’t exist yet, but they’re making money anyway",
+    "source": "https://www.technologyreview.com/2025/09/25/1124050/fusion-future-funding/",
+    "generatedAt": "2025-09-25T12:05:48.112Z",
+    "publishedAt": "2025-09-25T10:00:00.000Z",
+    "feedName": "MIT Technology Review - AI",
+    "author": "MIT Technology Review - AI",
+    "category": "Climate change and energy",
+    "essence": "What's new: Commonwealth Fusion Systems secured a $1 billion power purchase agreement from Eni, an oil and gas company, for electricity from its future commercial fusion power plant in Virginia. Why it matters: This impacts investors and energy companies. It demonstrates significant investment in fusion technology despite the lack of a currently operational reactor, potentially shaping future energy markets.",
+    "reactions": [
+      "Possible Impact:  Eni's billion-dollar deal with Commonwealth Fusion Systems, despite the plant's non-existence, demonstrates significant investor confidence in the potential of fusion power and could accelerate its development.",
+      "Skeptic Check:  Professor Ed Morse's observation that \"They don’t have a reactor\" highlights the substantial risk that current investments are based on projections rather than demonstrable technology, potentially leading to wasted resources.",
+      "Concrete Fact:  The National Ignition Facility at Lawrence Livermore National Laboratory achieved net energy gain in a fusion reaction in 2022, a milestone that, while not commercially viable, boosted confidence in the field."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "91ad25f34b7b86a6203411407f0266cc",
+    "title": "How AI and Wikipedia have sent vulnerable languages into a doom spiral",
+    "source": "https://www.technologyreview.com/2025/09/25/1124005/ai-wikipedia-vulnerable-languages-doom-spiral/",
+    "generatedAt": "2025-09-25T12:05:51.043Z",
+    "publishedAt": "2025-09-25T09:00:00.000Z",
+    "feedName": "MIT Technology Review - AI",
+    "author": "MIT Technology Review - AI",
+    "category": "Artificial intelligence",
+    "essence": "What's new: Machine translation tools are creating numerous error-filled Wikipedia articles in less-resourced languages, leading to a \"doom loop\" where AI models trained on this inaccurate data produce even worse translations. Why it matters: This affects speakers of vulnerable languages, particularly Indigenous communities, hindering language revitalization efforts and potentially accelerating language extinction. Incorrect information in AI-generated learning materials also harms students.",
+    "reactions": [
+      "The proliferation of machine-translated Wikipedia articles in low-resource languages creates a \"doom loop,\" where AI models trained on inaccurate data perpetuate further inaccuracies, as evidenced by the finding that over two-thirds of Inuktitut Wikipedia pages with multiple sentences contain machine-translated portions.",
+      "A significant weakness is the reliance on community moderation, as illustrated by Kenneth Wehr's experience cleaning up the Greenlandic Wikipedia, which highlights the challenge of ensuring accuracy when volunteer editors lack linguistic expertise and AI tools produce plausible-sounding but incorrect content.",
+      "Google Translate incorrectly translates the Fulfulde word for \"January\" as either June (Google Translate) or August/September (ChatGPT), demonstrating the unreliability of AI translation in low-resource languages and the potential for misinformation in educational resources derived from these translations."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "88038193017d144743b5143c74e93ad9",
     "title": "6 Fully-Funded PhD Scholarships in Artificial Intelligence for Weather Forecasting and Climate Change at (UCD) University College Dublin - Global South Opportunities",
     "source": "https://news.google.com/rss/articles/CBMibEFVX3lxTE13X1BWaTdJMkFWN2RLVUhvSG1GaFpGM3lrcVNiZ1FreV9BSncycFY1R1VuUGxzQm9YWkg1ZE5xVkpBRGlJeGNwWjVULUxiUGYwLVozR3NtSk1wUkhFSFZnNUo1NEhfdDZIckF6Ng?oc=5",
@@ -133,6 +173,26 @@
       "PyTorch's automatic differentiation, highlighted by the example of calculating gradients for each element of a vector, significantly accelerates deep learning model training by parallelizing computations.",
       "A potential weakness is the article's reliance on simplified examples;  the scalability and performance of PyTorch's automatic differentiation in extremely large or complex models remain less explicitly addressed.",
       "The article demonstrates PyTorch's core training loop using a linear regression example with a 10-step optimization process and mentions the use of  `torch.tensor` to handle data."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "b8acf1fc4ff534cf0d4072cb0e5f492b",
+    "title": "In conversation with Dr Ioana Colfescu: Machine learning can predict ENSO - National Centre for Atmospheric Science",
+    "source": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOUmQ1aEVWZlZ0NHp0djAxNHVFaXNuNkFZMVlYcGVlelcyVU1aamhOWDhjbHNVUHI3WlJIalFEcjJzZ1czdC1XcFZqQ3Rmcm9GSElhaVBFdTg4YVdFSHVzM3JoeGZGVXEtMHJHVXlvd2I0RElhRmJfSUdLWENiR2pza1QyYlloclg2TnRCa3lFNVZaOXB1cW9B?oc=5",
+    "generatedAt": "2025-09-25T12:05:57.391Z",
+    "publishedAt": "2025-09-24T14:52:45.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "What's new: A machine learning model developed by Dr. Ioana Colfescu and colleagues at the National Centre for Atmospheric Science shows improved prediction accuracy for El Niño-Southern Oscillation (ENSO) events. Why it matters: More accurate ENSO predictions benefit various sectors, including agriculture, water resource management, and disaster preparedness, as ENSO significantly impacts global weather patterns and economies.",
+    "reactions": [
+      ")  Dr. Colfescu's research suggests machine learning could significantly improve ENSO prediction accuracy, potentially leading to more effective disaster preparedness and mitigation strategies.",
+      ")  The success of this approach hinges on the availability of high-quality, extensive datasets, and the model's generalizability to diverse climatic conditions beyond the training data.",
+      ")  The article highlights Dr. Colfescu's work using machine learning to forecast El Niño-Southern Oscillation (ENSO) events, potentially improving prediction lead times."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
@@ -900,6 +960,26 @@
     }
   },
   {
+    "id": "1a63181408d02113f857e89ce3f261af",
+    "title": "Enterprise Agentic AI Market to Skyrocket from $1.5B to $41.8B by 2030 - TechAfrica News",
+    "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOUUxDcjR6ZmdUX0Z0MTQxVHprNERfaUs1bnpxQWlyRkJ3Y2g2MkRnUEJUa1VOSU1memtxd0Z6d19PMjhzemZHYVh6VDlNcEZQajdaZERNV3N1Uml1S1d2LU5Vb2NJRlRRcGJsVGt3TW02OU1mUHpCSTRKZ1VvLV82X3E4aXphSkhqUlZvbzlRbW53aHBrWW5qbGlvVzFtaW5VRnhXM0gzUjdSLUE?oc=5",
+    "generatedAt": "2025-09-25T12:06:32.599Z",
+    "publishedAt": "2025-09-23T08:43:55.000Z",
+    "feedName": "Generative AI Applications",
+    "author": "Generative AI Applications",
+    "category": "General",
+    "essence": "What's new: The enterprise agentic AI market is projected to experience significant growth, increasing from $1.5 billion in value to $41.8 billion by 2030. Why it matters: This growth will impact businesses across various sectors, potentially leading to increased automation, efficiency gains, and new business models. The expansion affects companies developing and deploying AI solutions, as well as businesses integrating these technologies.",
+    "reactions": [
+      ")  The projected $41.8B market value by 2030 for enterprise agentic AI suggests significant adoption across various sectors, driven by increased automation and efficiency gains.",
+      ")  The forecast's accuracy hinges on the successful resolution of current challenges like data security and explainability concerns within agentic AI systems, which remain significant hurdles to widespread adoption.",
+      ") TechAfrica News reports a projected market skyrocket from $1.5B to $41.8B by 2030 for enterprise agentic AI, indicating substantial investor confidence in the technology's future."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "618468d87a914d88d7a7c3a5caf106d2",
     "title": "In the US, 50% of residents perceive AI as a threat to humans — Pew Research - Mezha.Media",
     "source": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQTFl1ZmM1NE5hTjZkeDZRTUNHOVR6SHZlQ3JLLWtlY1FNR01UOFdiMm9IcURUVEtNSFJ1em04b3Zyekc0Q2VSRUZGNm9GSjJkbFd5elh0VkZMOTNMMTNNcmdTQURCSmgtdjNTVTUzWXdKbEwxbm9ZWjhxem16cWdPWlBZdUVSc0lmcHJTX9IBkgFBVV95cUxOTy1rbERFWFd1dEJPU0t2VVJUN3VMNXZHRXVYWHNTZmNxM1FQc3NTempSbnhXRVlQWGt6NDVFQW9fN19qWTVQdk5QS3NhWmRDY2p1WF9OUzYwdnMtdzlxYS00bWFzd0NNeXNka1RnM1RqdjRTTEJPR1NNOExQZFU2aTZ0Wjc2TV94VE4yYzhwbGJqUQ?oc=5",
@@ -913,6 +993,26 @@
       "The widespread perception of AI as a threat, as evidenced by the Pew Research Center's finding that 50% of US residents share this concern, could significantly impact future AI policy and development, potentially slowing down certain advancements.  The reliability of this 50% figure hinges on the survey methodology and its ability to accurately represent the diverse opinions across the US population, raising questions about potential biases.  Pew Research's report,  released in [insert date if available from the linked article], details the survey's methodology and sample size, allowing for independent verification of its findings.",
       "The key takeaway for founders from the Pew Research finding that 50% of US residents perceive AI as a threat to humans is the critical need to address ethical concerns and build trust in AI development and deployment.  This means founders should:\n\n Prioritize AI safety and transparency:  Demonstrate a commitment to responsible AI development, including robust testing, mitigation of biases, and clear explanations of how their AI systems work.  This builds user confidence and reduces the perception of AI as an",
       "The Pew Research finding that 50% of US residents perceive AI as a threat to humans has significant potential market impacts across various sectors:\n\nNegative Impacts:\n\n Reduced Investment in AI:  The perception of AI as a threat could lead to decreased investment in AI research and development, both from private companies and government agencies.  This could stifle innovation and slow the adoption of beneficial AI technologies.\n Increased Regulatory Scrutiny:  Public concern will likely fuel calls for stricter regulations"
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "2f20ca60687aadf041ef062658421498",
+    "title": "AI adoption rate is much faster than smartphone or e-commerce adoption: UBS - ANI News",
+    "source": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNWG5TQ2dGNWtUUGtsTzVYS1RSNHM3MzlxZnBfM01vSzNqRDlkWFpRYXZPeDh2OENkVHFHZjR1ZXdmSGFCWEpXU1p6ZHNRbGRENmdQLUhva1g3VXJtc3dJbDB4MlFGbEhGM2RVMVhNSW1ibXFyNXhNNU5hZ2kxVUx4NksyTEZENExiTTJQM3YzUmViRnl2YzhZb3cyYTBkWEpfNDlnc1VXWlJkc3pHMUtXZVZnZkx1bHAyMTNNbDFVc1ZMVloxN3l3eDZEc9IBywFBVV95cUxNWG5TQ2dGNWtUUGtsTzVYS1RSNHM3MzlxZnBfM01vSzNqRDlkWFpRYXZPeDh2OENkVHFHZjR1ZXdmSGFCWEpXU1p6ZHNRbGRENmdQLUhva1g3VXJtc3dJbDB4MlFGbEhGM2RVMVhNSW1ibXFyNXhNNU5hZ2kxVUx4NksyTEZENExiTTJQM3YzUmViRnl2YzhZb3cyYTBkWEpfNDlnc1VXWlJkc3pHMUtXZVZnZkx1bHAyMTNNbDFVc1ZMVloxN3l3eDZEcw?oc=5",
+    "generatedAt": "2025-09-25T12:06:35.848Z",
+    "publishedAt": "2025-09-23T06:53:00.000Z",
+    "feedName": "Generative AI Applications",
+    "author": "Generative AI Applications",
+    "category": "General",
+    "essence": "What's new: UBS research indicates that the rate of AI adoption is significantly exceeding that of previous technological advancements like smartphones and e-commerce. Why it matters: This rapid adoption affects businesses across all sectors, impacting their strategies, operations, and competitiveness. Consumers will also experience changes in products and services as AI becomes more integrated.",
+    "reactions": [
+      "UBS's claim suggests that generative AI's integration into workflows and everyday life could surpass previous technological shifts within the next few years, potentially revolutionizing various sectors.  However, the rapid adoption rate might be skewed by hype and early adopter bias, leading to an overestimation of long-term market penetration and sustained user engagement.  The ANI News article cites UBS's analysis, but lacks specific data points or supporting evidence to substantiate the claim of faster adoption than smartphones or e-commerce.",
+      "The key takeaway for founders from the UBS report stating that AI adoption is faster than smartphones or e-commerce is this: AI presents a massive, rapidly expanding market opportunity with significant potential for disruption.  Founders should seriously consider how AI can be integrated into their business models, either as a core component of their product or service, or as a tool to improve efficiency and scalability.  The window of opportunity for early adopters and innovators in the AI space is currently wide open, but it",
+      "The statement \"AI adoption rate is much faster than smartphone or e-commerce adoption: UBS - ANI News\" suggests a significant market impact across numerous sectors.  The faster-than-expected adoption rate implies several key consequences:\n\nPositive Impacts:\n\n Increased Productivity and Efficiency: AI's integration into various industries (manufacturing, logistics, finance, healthcare) will lead to automation, improved decision-making, and increased operational efficiency, resulting in higher productivity and potentially lower costs.\n"
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
@@ -1753,46 +1853,6 @@
       ") SyncNet's ability to achieve 99% accuracy in audio-visual synchronization by averaging multiple samples, as demonstrated in the paper's results, suggests a practical and robust solution for various applications.",
       ") The reliance on a large dataset of mostly correctly synchronized videos for training poses a risk, as biases in the training data could lead to inaccurate results for videos with atypical synchronization issues.",
       ") The SyncNet model, detailed in the 2016 ACCV paper by Chung and Zisserman,  calculates a synchronization offset by comparing Euclidean distances between audio chunks and a fixed video chunk, with a reported average offset of approximately -300ms across multiple video segments."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "58857f3874507fe90d2fe293e80c797d",
-    "title": "OpenAI - Britannica",
-    "source": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9Ba1QyTkx0cjRqbWxxX2ZPbmpGSmpBU2lkNEdpcXRWa09JNjRkZEswMk8zcFFDbFA1dGJ3LV9KUU96RkRJUjZ1WU1GWnNRVGw0?oc=5",
-    "generatedAt": "2025-09-23T00:12:44.886Z",
-    "publishedAt": "2025-09-20T09:35:00.000Z",
-    "feedName": "AI Research News",
-    "author": "AI Research News",
-    "category": "General",
-    "essence": "OpenAI integrated Britannica's content into its models, enhancing their factual accuracy and breadth of knowledge. This affects OpenAI users and developers who rely on the accuracy of its large language models (LLMs) for various applications, ranging from research to content creation. Improved factual accuracy benefits anyone using OpenAI's tools.",
-    "reactions": [
-      "OpenAI's partnership with Encyclopædia Britannica could lead to significantly improved factual accuracy and reasoning capabilities in large language models, potentially making them more reliable sources of information.",
-      "The success of this collaboration hinges on effectively integrating Britannica's structured knowledge into OpenAI's models, a challenge given the complexity of knowledge representation and potential biases present in existing datasets.",
-      "The announcement of the partnership itself, as reported by various news outlets, highlights OpenAI's continued efforts to enhance its AI models' factual grounding."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "38e53006f1dc101e0d3d327603110383",
-    "title": "Singapore’s DSTA unveils Gaia, a generative AI tool to revolutionise defence capabilities - Malay Mail",
-    "source": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOZUNMNExhQkxYT1FWZC05THoxQS1tTXAyaGJwdkNsVlJjMDE1M2JNeEF0Y2dHNk8tVnZtbWNnRF9RVzNDZUlQV0VSWVRrX0pJWUJlX3lUVTJZbjY1b1pCU1dVbXMzQ3BLZUJGbUxRRUJuZVBNcVJVN0MxZ1Zub2ZjdlRNVmNraW9Bc2gzZ0lQYTVEbnFnUVh1WDU0cE9OaDF1S2ZiTGVDbkpmb0FOQngzcU9rTTZSeHNSd2hhdTk3blhjM2ctdUsxb0xQYVFtbFJCSndhRE9ibEZSVDBYelFv0gHkAUFVX3lxTE5CZ3I3R3d2S1JSUlRhOG9WaWlUOXBRM1Q4OU10cDc0NmYzUXBrQmxxeHVGTE1WSGJYZ0VTbGtXNkducG14VkJldTZXV1hKSmRGVWZTa2kzS29jSjR4MzA0cUc3cVVGR1lOajlZOEVhcXp5RnQtUGtxbzJLbE9jc3B6UWszY3BFSFpHUTNlNU5FcHROWmR0dkVPTGNOTEw3MnFqTHFvLXlpUmVqYW85dmExQ04ycE16eW56akRXVWVDN3hkMWd5eHlSNW9pcjhDZHZrWElzRWRMS0VIQlMtNGdQZUwxSw?oc=5",
-    "generatedAt": "2025-09-20T12:05:50.382Z",
-    "publishedAt": "2025-09-20T07:26:41.000Z",
-    "feedName": "Generative AI Applications",
-    "author": "Generative AI Applications",
-    "category": "General",
-    "essence": "What's new: The Defence Science and Technology Agency (DSTA) of Singapore unveiled Gaia, a generative AI tool intended for defense applications. Why it matters: This affects Singapore's defense capabilities, potentially improving efficiency and effectiveness in areas like training, planning, and logistics. The impact extends to national security, as AI-driven improvements could enhance defense preparedness.",
-    "reactions": [
-      ") Gaia's integration into defense planning and simulation could significantly accelerate the development and testing of new strategies and equipment, potentially reducing costs and improving response times.",
-      ")  The success of Gaia hinges on the availability and quality of the training data used, and a lack of diverse, realistic datasets could limit its effectiveness in real-world scenarios.",
-      ") The Malay Mail article reports that the Defence Science and Technology Agency (DSTA) has unveiled Gaia, a generative AI tool aimed at revolutionizing Singapore's defense capabilities."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
