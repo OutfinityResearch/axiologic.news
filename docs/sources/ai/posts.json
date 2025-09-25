@@ -1,5 +1,85 @@
 [
   {
+    "id": "1c5748b9fce8e11a41dc92102a292c09",
+    "title": "Roundtables: The Future of Birth Control",
+    "source": "https://www.technologyreview.com/2025/09/24/1124058/roundtables-the-future-of-birth-control/",
+    "generatedAt": "2025-09-25T00:12:15.825Z",
+    "publishedAt": "2025-09-24T20:09:56.000Z",
+    "feedName": "MIT Technology Review - AI",
+    "author": "MIT Technology Review - AI",
+    "category": "Subscriber-Only Stories",
+    "essence": "What's new: MIT Technology Review hosted a subscriber-only roundtable discussion on September 24, 2025, featuring Contraline CEO Kevin Eisenfrats, focusing on the development of male birth control options. Why it matters: This discussion highlights a shift in the conversation surrounding birth control, traditionally centered on women, to include men's reproductive health and the development of male contraceptive choices. This impacts men and couples seeking alternative or additional birth control methods.",
+    "reactions": [
+      ") Contraline's work on male birth control, highlighted by MIT Technology Review's recognition of its CEO as a 2025 Innovator Under 35, could significantly expand contraceptive options and shift the burden of family planning.",
+      ")  The lack of access to the full MIT Technology Review roundtable discussion limits assessment of the feasibility and potential risks associated with Contraline's technology.",
+      ")  Kevin Eisenfrats, co-founder and CEO of Contraline, participated in a roundtable discussion on the future of birth control recorded on September 24, 2025."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "f4305cb589c82b5f76ce9382bbffc2d5",
+    "title": "Decoding Nonlinear Signals In Large Observational Datasets",
+    "source": "https://towardsdatascience.com/decoding-nonlinear-signals-in-large-observational-datasets/",
+    "generatedAt": "2025-09-25T00:12:19.970Z",
+    "publishedAt": "2025-09-24T19:37:07.000Z",
+    "feedName": "Towards Data Science",
+    "author": "Towards Data Science",
+    "category": "Machine Learning",
+    "essence": "What's new: A machine learning approach was used to analyze a large observational dataset of precipitation microphysics, revealing previously unseen patterns in complex precipitation events. Why it matters: This research improves our understanding of precipitation processes, crucial for enhancing numerical weather prediction, refining remote sensing retrievals, and informing climate change research. Improved forecasting directly benefits numerous sectors, including agriculture, transportation, and disaster preparedness.",
+    "reactions": [
+      "Applying machine learning to a dataset of over 1 million minutes of particle microphysical observations from 10 sites over 10 years, as detailed in King et al. (2024), could significantly improve the accuracy of weather prediction models and remote sensing retrievals.",
+      "A weakness lies in the potential for biases in the dataset due to the use of a single instrument type and calibration, potentially limiting the generalizability of findings beyond the specific conditions under which the data were collected.",
+      "The study utilizes the UMAP algorithm (McInnes et al., 2020) for dimensionality reduction to analyze the complex precipitation data."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "93a5600ee9202d63c6b952b6ea5151bf",
+    "title": "RAG Explained: Reranking for Better Answers",
+    "source": "https://towardsdatascience.com/rag-explained-reranking-for-better-answers/",
+    "generatedAt": "2025-09-25T00:12:22.697Z",
+    "publishedAt": "2025-09-24T18:31:39.000Z",
+    "feedName": "Towards Data Science",
+    "author": "Towards Data Science",
+    "category": "Large Language Models",
+    "essence": "What's new: A retrieval-augmented generation (RAG) pipeline now incorporates a reranking step using a cross-encoder model to improve the selection of relevant documents for question answering. Why it matters: This affects users of RAG systems by improving the accuracy and relevance of answers generated. The two-stage approach balances efficiency (vector search) with accuracy (cross-encoder reranking).",
+    "reactions": [
+      "Reranking in Retrieval Augmented Generation (RAG) pipelines, as demonstrated using FAISS and a cross-encoder, significantly improves answer accuracy by refining initial vector search results and prioritizing contextually relevant information.",
+      "A potential weakness of this approach is over-reliance on the cross-encoder's performance; if the cross-encoder is biased or poorly trained, the reranking step could introduce inaccuracies or reinforce existing biases in the final answer.",
+      "The article uses a FAISS index for vector search and a cross-encoder for reranking, illustrating a practical implementation of a two-stage retrieval process in a RAG pipeline."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "f922a466adc01ac2a200dc291f1d1924",
+    "title": "PyTorch Explained: From Automatic Differentiation to Training Custom Neural Networks",
+    "source": "https://towardsdatascience.com/the-basics-of-deep-learning-with-pytorch-in-1-hour/",
+    "generatedAt": "2025-09-25T00:12:25.582Z",
+    "publishedAt": "2025-09-24T18:19:59.000Z",
+    "feedName": "Towards Data Science",
+    "author": "Towards Data Science",
+    "category": "Deep Learning",
+    "essence": "What's new: A September 24, 2025 article by Avishek Biswas explains PyTorch's core mechanics, focusing on automatic differentiation and custom neural network training, illustrating the process with linear regression and transformer network examples. Why it matters: The article targets deep learning practitioners and students, offering a tutorial on building and training custom neural networks using PyTorch, emphasizing its ability to handle multi-dimensional inputs and parallelize gradient computations. This is valuable for anyone working with deep learning projects.",
+    "reactions": [
+      "PyTorch's automatic differentiation, highlighted by the example of calculating gradients for each element of a vector, significantly accelerates deep learning model training by parallelizing computations.",
+      "A potential weakness is the article's reliance on simplified examples;  the scalability and performance of PyTorch's automatic differentiation in extremely large or complex models remain less explicitly addressed.",
+      "The article demonstrates PyTorch's core training loop using a linear regression example with a 10-step optimization process and mentions the use of  `torch.tensor` to handle data."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "5b00a529f7a65d7838719e972034d911",
     "title": "Introducing the AI-3P Assessment Framework: Score AI Projects Before Committing Resources",
     "source": "https://towardsdatascience.com/the-ai-3p-assessment-framework/",
@@ -253,6 +333,26 @@
       "Google Cloud's claim that 88% of early AI agent adopters see ROI suggests a significant market shift towards generative AI in marketing and creative fields.  The reported 88% ROI figure lacks detail on the methodology used to calculate return, raising concerns about the reliability of this statistic.  Mediaweek's report highlights Google Cloud's assertion of  \"meaningful impact on marketing and creative operations,\"  without specifying the nature or scale of these impacts for individual companies.",
       "The key takeaway for founders from the Mediaweek article about Google Cloud's AI agent adoption is that early adoption of AI agents, specifically in marketing and creative operations, is showing significant ROI for a large percentage of businesses (88%).  This strongly suggests that integrating AI agents into these functions is not just a future trend but a present opportunity to gain a competitive edge and improve efficiency and profitability.  Founders should seriously consider exploring how AI agents can streamline and enhance their marketing and creative workflows",
       "The Mediaweek headline \"Google Cloud reports 88% of early AI agent adopters are seeing ROI, with meaningful impact on marketing and creative operations\" has several potential market impacts:\n\nPositive Impacts:\n\n Increased Adoption of AI in Marketing and Creative:  The strong ROI claim (88%) will likely encourage more businesses, especially in marketing and creative fields, to explore and adopt AI agents offered by Google Cloud and potentially competitors. This could lead to significant growth in the AI-"
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "55be244e2f2fefa6c9552e4f57b56969",
+    "title": "Lordstown part of mammoth $500 billion artificial intelligence data center project - WFMJ.com",
+    "source": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQdl9WLXB2dGdQdWlmMnZVdXM0enRmUEgzdUZBRGhlTm5yUmdDRWJKZHcwZXQyNmtCWWRpSEk2MmV2bTA3N3lJd0NVYlllZU5sWWh5R1VLYVJWcjZ3a0dEZmJUOW45RXNKcThCUUkxM0NFdkZzUlpKaXhJNGdoZ3l2aTVYVVFxNEhkNF9NQ0JiVFVzdFZMZ1I4cjVmZE93NTRwSDh4YnppU1k4WEZXYmJKRTlteGJ2WnFJOFpQMTEwTHM?oc=5",
+    "generatedAt": "2025-09-25T00:12:29.503Z",
+    "publishedAt": "2025-09-23T23:04:33.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "What's new: A $500 billion artificial intelligence data center project, encompassing multiple locations, will include a facility in Lordstown, Ohio. Why it matters: This project signifies substantial investment in AI infrastructure in the United States, potentially creating numerous jobs and boosting the local economy of Lordstown and surrounding areas. The project's scale could influence the future development of AI technology and its accessibility.",
+    "reactions": [
+      "Possible Impact:  The project, if realized, could significantly boost Lordstown's economy and position Ohio as a major player in the burgeoning AI industry.",
+      "Skeptic check: The $500 billion price tag raises concerns about funding feasibility and potential overestimation of the project's scope and economic impact.",
+      "Concrete facts:  The article mentions Lordstown's involvement in a planned AI data center project with a projected cost of $500 billion."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
@@ -620,6 +720,26 @@
     }
   },
   {
+    "id": "6b391ef1c0edbd72b4db3ac3d8f216d0",
+    "title": "Ulsan Institute of Science and Technology (UNIST) is planning to build an artificial intelligence (A.. - 매일경제",
+    "source": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9NV2Z6THBaLWlCWkdRMWc3TzFzNmVLb1VVUHFwVWFSakROQVhJMHNYRURseEJlVDVSUTJvQWczU2U5NDB1UFVSQ2M4NldwR1Q2R2c?oc=5",
+    "generatedAt": "2025-09-25T00:12:31.921Z",
+    "publishedAt": "2025-09-23T08:47:44.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "What's new: The Ulsan Institute of Science and Technology (UNIST) plans to construct a new artificial intelligence (AI) research center. Why it matters: This development will likely benefit UNIST's researchers, students, and potentially South Korea's AI industry by providing advanced research facilities and fostering innovation. The impact on the broader South Korean economy remains to be seen.",
+    "reactions": [
+      "UNIST's AI hub could significantly boost South Korea's AI capabilities, potentially attracting international talent and fostering innovation in key sectors like manufacturing and robotics.  The project's success hinges on securing sufficient funding and attracting top researchers, which may be challenging given global competition for AI expertise.  The article mentions UNIST's plan to build an AI hub, but provides no details on funding sources or specific research areas.",
+      "The key takeaway for founders from the Maekyung Economic Daily article about UNIST's plan to build an AI graduate school is this: South Korea is heavily investing in AI education and research, creating a potentially lucrative talent pool and a strong ecosystem for AI-focused startups.  This means founders should consider:\n\n South Korea as a location for their AI business: Access to highly skilled graduates from a prestigious institution like UNIST could provide a competitive advantage.\n Collaboration opportunities:",
+      "The impact of UNIST's plan to build an AI semiconductor research center will depend on several factors, but the potential effects on the market can be categorized as follows:\n\nPositive Impacts:\n\n Increased AI Development in South Korea: The center could accelerate AI development within South Korea, fostering innovation and potentially leading to new AI-related products and services. This could attract further investment in the South Korean AI sector.\n Boost to the Semiconductor Industry: The focus on AI semiconductors will"
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "618468d87a914d88d7a7c3a5caf106d2",
     "title": "In the US, 50% of residents perceive AI as a threat to humans — Pew Research - Mezha.Media",
     "source": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQTFl1ZmM1NE5hTjZkeDZRTUNHOVR6SHZlQ3JLLWtlY1FNR01UOFdiMm9IcURUVEtNSFJ1em04b3Zyekc0Q2VSRUZGNm9GSjJkbFd5elh0VkZMOTNMMTNNcmdTQURCSmgtdjNTVTUzWXdKbEwxbm9ZWjhxem16cWdPWlBZdUVSc0lmcHJTX9IBkgFBVV95cUxOTy1rbERFWFd1dEJPU0t2VVJUN3VMNXZHRXVYWHNTZmNxM1FQc3NTempSbnhXRVlQWGt6NDVFQW9fN19qWTVQdk5QS3NhWmRDY2p1WF9OUzYwdnMtdzlxYS00bWFzd0NNeXNka1RnM1RqdjRTTEJPR1NNOExQZFU2aTZ0Wjc2TV94VE4yYzhwbGJqUQ?oc=5",
@@ -653,6 +773,26 @@
       "The conference could foster collaborations leading to advancements in AI applications relevant to local Indian contexts, potentially impacting healthcare or agriculture.  A potential weakness is the lack of detailed information on the conference's specific outcomes or the diversity of participants, hindering assessment of its true impact.  The article mentions the conference is the \"2nd international conference\" suggesting some prior success and established interest in the field.",
       "The key takeaway for founders from the Daijiworld article about the MITK's 2nd international conference on AI, machine learning, and data science in Kundapur is the growing importance and accessibility of AI/ML/Data Science expertise, even in unexpected locations.  This suggests several things:\n\n Talent Acquisition: Founders can potentially tap into a wider pool of skilled talent than previously thought, expanding their recruiting horizons beyond traditional tech hubs.\n Collaboration Opportunities:  The conference",
       "The market impact of the news headline \"Kundapur: MITK hosts 2nd international conference on AI, machine learning & data science - Daijiworld\" is likely to be localized and relatively small, at least in the short term.  Here's a breakdown:\n\nLimited Direct Market Impact:\n\n No major company announcements: The headline doesn't mention any specific company breakthroughs, product launches, or partnerships related to AI, ML, or data science.  Therefore,"
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "0ae1614c9b2d8431633419ca805a88a3",
+    "title": "Kundapur: MITK hosts 2nd international conference on AI, machine learning & data science - Daijiworld",
+    "source": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5CVHp5M0Q5cmpValhMTkt6MDFXYm9Hd2lZSkYtSW1qNGpJVFFiWDBuaTNaeHJfNF82YjlmTHdKZWlzXzk5Q0VaVWQ4X1RMUHNuakxZSnl6cjJPbi01cFp3aTRFLXRvTDIyN2hfT05YYWE3eXZKRUdF?oc=5",
+    "generatedAt": "2025-09-25T00:12:35.812Z",
+    "publishedAt": "2025-09-23T05:03:04.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "What's new: The Manipal Institute of Technology Kundapur (MITK) held its second international conference on artificial intelligence, machine learning, and data science. Why it matters: The conference impacts students, researchers, and professionals in the fields of AI, machine learning, and data science, fostering collaboration and knowledge sharing within the region and internationally. The event likely benefits MITK's reputation and attracts future students and faculty.",
+    "reactions": [
+      "Possible Impact: The conference could foster collaborations leading to advancements in AI applications relevant to India's diverse needs, potentially impacting areas like agriculture or healthcare as suggested by similar events.  Skeptic check: The long-term impact hinges on the conference's ability to translate presentations and networking into tangible projects and publications, a challenge for many such events. Concrete facts: The article reports this is the second international conference on AI, machine learning, and data science hosted by MITK in Kundapur.",
+      "The key takeaway for founders from the Daijiworld article about the MITK's 2nd international conference on AI, machine learning, and data science in Kundapur is the growing importance and accessibility of AI/ML/Data Science expertise, even in seemingly unexpected locations.  This suggests several things for founders:\n\n Talent acquisition opportunities:  The conference highlights the presence of skilled professionals in diverse geographical areas, expanding the potential talent pool beyond traditional tech hubs. Founders should consider looking beyond",
+      "The market impact of a news article like \"Kundapur: MITK hosts 2nd international conference on AI, machine learning & data science - Daijiworld\" is likely to be small and localized, at least directly.  The impact will be felt more subtly and over the long term.  Here's a breakdown:\n\nLimited Direct Impact:\n\n No immediate stock price swings:  Unless MITK (Manipal Institute of Technology, Kundapur) is a publicly traded"
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
@@ -1053,6 +1193,26 @@
       "Akido Labs' LLM-based system, ScopeAI, could significantly increase doctor efficiency, allowing a single physician to see four to five times more patients, as stated by the company's CEO.",
       "The effectiveness and safety of delegating diagnostic and treatment planning to an LLM like ScopeAI is questionable, as highlighted by expert skepticism regarding the displacement of cognitive medical work onto AI.",
       "Eni, a major oil and gas company, committed to a $1 billion deal to purchase electricity from Commonwealth Fusion Systems' planned commercial fusion power plant in Virginia, scheduled to be operational in the early 2030s."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "e218f8795d50d2838ee6529b95078434",
+    "title": "Artificial Intelligence (AI) in Medical Devices Market Set for Record Growth - Key Insights 2025 - openPR.com",
+    "source": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPS3E4SjRBSmNGR0ZaVVBpUXc0VVNkQkdkc08taGE0X3dEc2JienlSTmFKeVM2M25ORnRiSEEtUW96OWdfb1JTSU9raDZSLU82X2d2U1laRjVucnE4ZWZBYjdPUWR2RlhIQTFRcTYxRGVjVFdvZmFBX1ZsYWZwU2FLbUpLWUxvYnNnWkhlSDRRS0w4dkV4OTRV?oc=5",
+    "generatedAt": "2025-09-25T00:12:40.095Z",
+    "publishedAt": "2025-09-22T12:02:02.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "What's new: The artificial intelligence (AI) in medical devices market is projected to experience record growth by 2025. Why it matters: This growth impacts medical device manufacturers, healthcare providers, and ultimately patients who will benefit from AI-driven improvements in diagnosis, treatment, and patient care. Evidence/Caveats: The provided text lacks specific numerical data on market size projections or growth rates for 2025.",
+    "reactions": [
+      "AI-powered medical devices are projected to significantly improve diagnostic accuracy and treatment efficacy, potentially reducing healthcare costs by streamlining processes and improving patient outcomes.  The market's rapid expansion may outpace the development and implementation of robust regulatory frameworks, leading to potential safety and efficacy concerns.  The openPR.com article cites a predicted record growth in the AI medical device market by 2025, though specific figures are not provided.",
+      "The key takeaway for founders from the openPR article \"Artificial Intelligence (AI) in Medical Devices Market Set for Record Growth - Key Insights 2025\" is that the AI in medical devices market presents a significant opportunity for substantial growth and investment.  Founders should consider:\n\n High demand and market expansion:  The market is predicted to experience rapid expansion, indicating a strong demand for innovative AI-powered medical devices. This presents a lucrative opportunity for startups and established companies alike",
+      "The press release headline \"Artificial Intelligence (AI) in Medical Devices Market Set for Record Growth - Key Insights 2025 - openPR.com\" suggests several potential market impacts:\n\nPositive Impacts:\n\n Increased Investment:  The prediction of record growth will likely attract significant investment into AI medical device development, research, and manufacturing.  Venture capital, private equity, and established medical device companies will likely increase funding.\n Innovation and New Product Development:  Increased investment"
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
@@ -1493,46 +1653,6 @@
       "Machine learning models suggest a buy signal for Manhattan Associates Inc., indicating potential for increased stock value in the near future.  A weakness lies in the lack of detail regarding the specific models used and their underlying assumptions, limiting the reliability of the prediction.  The news article mentions \"accurate buy signal notifications,\" but provides no quantitative data or specific examples to support this claim.",
       "The key takeaway from a news article title like \"What machine learning models say about Manhattan Associates Inc. - Buy Signal & Accurate Buy Signal Notifications - newser.com\" for founders is the potential for using machine learning to predict market trends and inform crucial business decisions.\n\nHowever, it's crucial to temper this with caution:\n\n The article's credibility is unknown.  `newser.com` is not necessarily a reputable financial source. Founders should independently verify any predictions made",
       "The market impact of an article like \"What machine learning models say about Manhattan Associates Inc. - Buy Signal & Accurate Buy Signal Notifications - newser.com\" is likely to be small to negligible, and potentially even negative depending on several factors.  Here's why:\n\n Source Credibility: \"newser.com\" is not a widely respected financial news source.  Its credibility is questionable, and investors are less likely to trust its machine learning model predictions compared to those from"
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "59f7de6d66a63b1af7eaa30d820eb57d",
-    "title": "Vietnamese startups use AI to serve millions worldwide - Báo VietNamNet",
-    "source": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQdEpUakJEXzVmNVB4S0ViQVVwYllzTTlXOTZQRmFwSmpjWFUzZFlKVnFMZjl0bmxxVC1NVEdlM3dFeHBESUF4YURSVXUxS2NwRTV2OEF2RE9lMHZGcGVOYk5xYnBhQkRZeEF1eG1yTVdydnAwZHlMbnpTbThOcGdYWU5LTExFRFYxT0hpQ25uaFJZN21GYkpV?oc=5",
-    "generatedAt": "2025-09-20T06:04:12.187Z",
-    "publishedAt": "2025-09-19T23:55:00.000Z",
-    "feedName": "Generative AI Applications",
-    "author": "Generative AI Applications",
-    "category": "General",
-    "essence": "What's new: Vietnamese startups are increasingly leveraging AI to expand their services and reach millions of users globally. Why it matters: This development impacts Vietnamese businesses, fostering economic growth and potentially creating new jobs within the tech sector. It also signifies Vietnam's growing presence in the global AI market, affecting consumers worldwide who utilize these AI-powered services.",
-    "reactions": [
-      ")  Vietnamese AI startups' success in reaching millions globally demonstrates the potential for developing nations to become significant players in the global AI market, as evidenced by the article's focus on their expanding user bases.",
-      ")  The article lacks specifics on the AI models' underlying technology and data sources, raising concerns about potential biases or limitations in their widespread application.",
-      ")  VietNamNet reports that Vietnamese startups are leveraging AI to provide services to millions of users worldwide, though the exact number of users and specific startups remain unspecified."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "a6c8c06aace38563cd2a4bef471995c0",
-    "title": "What machine learning models say about Pulmonx Corporation - Quarterly Risk Review & Low Volatility Stock Recommendations - newser.com",
-    "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQbU5admZVc01KVXNPMmUwaGU4aTM1MndfWmVDcUowMVcwSEMxOTZ3MURlUWJVZFlqekd3ZHNlWE1oSXZLWnllQl9mbVhPdURjV1FIaldvM2xySmJMMGZWb3k2cWZFeHNQaDBUc1FWM1lIUEh6dnNNOWo1b19GWHl6VzNHYnJqbGFvX3ZKTnNlUFJXR2VJSjllaEVR?oc=5",
-    "generatedAt": "2025-09-24T00:12:28.820Z",
-    "publishedAt": "2025-09-19T18:26:32.000Z",
-    "feedName": "AI Research News",
-    "author": "AI Research News",
-    "category": "General",
-    "essence": "What's new: A machine learning model assessed Pulmonx Corporation's quarterly risk and provided low-volatility stock recommendations. Why it matters: This impacts investors interested in Pulmonx Corporation stock, offering a data-driven perspective on risk and potential returns. The analysis helps inform investment decisions, potentially reducing risk for those who follow the model's recommendations.",
-    "reactions": [
-      "Pulmonx Corporation's stock, according to machine learning models cited in the Newser article, presents a low-volatility investment opportunity with potential for moderate growth.  A weakness in the analysis might be its reliance on historical data which may not accurately predict future market fluctuations.  The article highlights that Pulmonx's Zephyr valve system received FDA approval in 2009, indicating a track record of regulatory success.",
-      "The key takeaway for founders from a news article titled \"What machine learning models say about Pulmonx Corporation - Quarterly Risk Review & Low Volatility Stock Recommendations - newser.com\" would depend heavily on the content of the article itself, which is not provided.  However, we can infer potential takeaways based on the title:\n\nPotential Takeaways (depending on article content):\n\n Machine learning's predictive power in assessing market risk: The article likely demonstrates how machine learning models",
-      "The market impact of a news article like \"What machine learning models say about Pulmonx Corporation - Quarterly Risk Review & Low Volatility Stock Recommendations - newser.com\" is likely to be relatively small and short-lived, unless the ML model's predictions are exceptionally strong or unexpected, and the article is widely disseminated.\n\nHere's a breakdown of the potential impacts:\n\n Positive Impact (limited): If the ML model predicts positive performance for Pulmonx, the article"
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
