@@ -1898,45 +1898,5 @@
       "text": "AI Insights by Axiologic.News",
       "url": "https://axiologic.news/"
     }
-  },
-  {
-    "id": "454318f45c86c54c9dcd124582b31391",
-    "title": "Data Visualization Explained: What It Is and Why It Matters",
-    "source": "https://towardsdatascience.com/data-visualization-explained-what-it-is-and-why-it-matters/",
-    "generatedAt": "2025-09-22T00:13:37.129Z",
-    "publishedAt": "2025-09-21T16:00:00.000Z",
-    "feedName": "Towards Data Science",
-    "author": "Towards Data Science",
-    "category": "Data Science",
-    "essence": "What's new: The article provides a brief overview of data visualization, highlighting its historical use in mapping (e.g., the Babylonian world map) and disease tracking (e.g., John Snow's cholera map). Why it matters: Data visualization is crucial for understanding complex information across various fields, impacting anyone who needs to interpret data effectively, from researchers to business professionals. Improved data understanding leads to better decision-making.",
-    "reactions": [
-      ") Data visualization, as evidenced by the ancient Babylonian map and John Snow's cholera map, has demonstrably improved decision-making across millennia by clarifying complex information and revealing patterns.",
-      ")  The article's lack of specific examples of modern data visualization techniques beyond mentioning John Snow's map limits its ability to fully convey the breadth and depth of the field's current impact.",
-      ") The article references John Snow's cholera map of London, a visualization that pinpointed the source of a deadly outbreak and revolutionized public health practices."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
-  },
-  {
-    "id": "fb38e0a4847323b46398aa153b1c8111",
-    "title": "Python Can Now Call Mojo",
-    "source": "https://towardsdatascience.com/python-can-now-call-mojo/",
-    "generatedAt": "2025-09-21T18:04:01.703Z",
-    "publishedAt": "2025-09-21T14:00:00.000Z",
-    "feedName": "Towards Data Science",
-    "author": "Towards Data Science",
-    "category": "Programming",
-    "essence": "What's new: Python code can now directly call Mojo code, enabling faster execution of computationally intensive tasks. Why it matters: Data scientists, ML engineers, and software developers can improve the performance of their Python applications, particularly for computationally-bound sections. This impacts anyone needing speed improvements in Python projects.",
-    "reactions": [
-      ")  Mojo's integration with Python offers a realistic path to significantly boosting performance for computationally intensive tasks, as demonstrated by a 12x speed increase over pure Python in the sigmoid calculation benchmark.",
-      ")  The effectiveness of Mojo hinges on minimizing the overhead of interfacing between Python and Mojo;  tasks perfectly suited to NumPy's vectorized operations may not see substantial gains.",
-      ")  Benchmarks in the article show Mojo achieving a 0.150-second execution time for a sigmoid calculation, outperforming both pure Python (1.847 seconds) and NumPy (0.323 seconds)."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
   }
 ]
