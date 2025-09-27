@@ -1,5 +1,25 @@
 [
   {
+    "id": "d2aa3839aac9e3fc42d4708cbef034df",
+    "title": "Typst: A Possible LaTeX Replacement",
+    "source": "https://lwn.net/Articles/1037577/",
+    "generatedAt": "2025-09-27T12:06:14.176Z",
+    "publishedAt": "2025-09-27T07:31:39.000Z",
+    "feedName": "Y Combinator",
+    "author": "Y Combinator",
+    "category": "General",
+    "essence": "September 17, 2025 This article was contributed by Lee Phillips This update highlights key points about \"Typst: A Possible LaTeX Replacement\" from Y Combinator, focusing on practical implications and why it matters now.",
+    "reactions": [
+      "Community perspective: The problem is that some website push you to use the newest gimmick package that will break compatibility in two year instead of the tried and true solution. But how is it different from other softwar",
+      "Community perspective: If you are publishing something, you don't (usually) have a choice. Your publisher will hand you a LaTeX template, probably with a big stack of arbitrary packages, and tell you to use that. But then w",
+      "Community perspective: My impression (from what packages I was required to use) was the journals didn't pick the unstable (or new or modern or even maintained) packages, but the oldest ones (along with old compilers)? I'm n"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
     "id": "53a7cb0c980421db869c16e5167bdf91",
     "title": "Why do we remember some life moments - but not others?",
     "source": "https://www.bu.edu/articles/2025/why-do-we-remember-some-moments-but-not-others/",
@@ -2552,246 +2572,6 @@
       "Investor — The success of Anthropic's Claude models on CompileBench, particularly in handling complex cross-compilation tasks, suggests a strong potential market for LLMs specializing in robust software engineering assistance, although the need to combine high-performing (and expensive) models with cheaper alternatives for optimal cost-efficiency presents a challenge.",
       "Operator —  CompileBench highlights the crucial role of agentic loops and error recovery in achieving successful LLM-driven compilation, demonstrating that simply generating code is insufficient;  the ability to iteratively debug, resolve dependencies, and adapt to unexpected errors is paramount.",
       "Market —  Existing software developers and DevOps engineers may be displaced if LLMs become sufficiently proficient at handling complex build processes, particularly for legacy codebases, though the need for human oversight and intervention for novel or exceptionally challenging tasks remains."
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "1a7a563f75103a198899226a3a2baea8",
-    "title": "Agentic AI In SEO: AI Agents & The Future Of Content Strategy (Part 3) via @sejournal, @VincentTerrasi",
-    "source": "https://www.searchenginejournal.com/agentic-ai-in-seo-ai-agents-the-future-of-content-strategy-part-3/555521/",
-    "generatedAt": "2025-09-22T12:11:49.162Z",
-    "publishedAt": "2025-09-22T12:00:55.000Z",
-    "feedName": "Search Engine Journal",
-    "author": "Search Engine Journal",
-    "category": "Generative AI",
-    "essence": "Agentic AI in SEO: Key Changes and Implications What happened: The article describes a shift from static SEO to \"Agentic SEO,\" where content dynamically adapts based on user intent, SERP seasonality, and Core Web Vitals. This involves creating modular, polymorphic content optimized for AI agents like ChatGPT, alongside traditional SEO. One example cited is a peer-to-peer car rental platform dynamically adjusting 20,000 city pages based on seasonal demand (summer: convertibles; winter: 4x4s).",
-    "reactions": [
-      "Investor:  The thesis is that agentic AI, enabling dynamic content adaptation based on user and search engine signals, will create a significant competitive advantage for early adopters, but the risk is the high upfront investment in developing and maintaining these adaptive systems.",
-      "Operator:  A key execution lesson is the need to move beyond static content creation to build modular, polymorphic content structures optimized for both human consumption and AI agent interaction.",
-      "Market: Those who fail to adapt to agentic AI in SEO—by not creating dynamic, AI-friendly content—will lose market share and traffic to competitors leveraging these technologies."
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "a502f929feae57ab7b67b2238e9e154f",
-    "title": "Stocks are at a risk of a correction if the Fed makes the right call on the economy, says Morgan Stanley",
-    "source": "https://www.marketwatch.com/story/stocks-are-at-a-risk-of-a-correction-if-the-fed-makes-the-right-call-on-the-economy-says-morgan-stanley-44475847?mod=mw_rss_topstories",
-    "generatedAt": "2025-09-22T12:10:57.815Z",
-    "publishedAt": "2025-09-22T11:40:00.000Z",
-    "feedName": "MarketWatch Top Stories",
-    "author": "MarketWatch Top Stories",
-    "category": "General",
-    "essence": "What happened: Morgan Stanley's Mike Wilson warned of potential equity market correction due to increased liquidity stress. No specific numbers or dates were provided in the given text regarding market performance or Fed actions. Why it matters: This warning highlights a significant risk for investors.",
-    "reactions": [
-      "Investor:  Morgan Stanley's Mike Wilson posits that a Fed correctly addressing economic issues could trigger a stock market correction due to increased liquidity stress.",
-      "Operator:  The lesson for market operators is to prepare for potential volatility stemming from the Federal Reserve's actions.",
-      "Market:  If Morgan Stanley's prediction proves correct, highly leveraged investors and those with concentrated equity positions will likely suffer losses."
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "76045098bad8d20cc5c67d9c22463cdb",
-    "title": "The small-business hiring engine is sputtering. That’s a red flag for the economy.",
-    "source": "https://www.marketwatch.com/story/the-small-business-hiring-engine-is-sputtering-thats-a-red-flag-for-the-economy-12428cce?mod=mw_rss_topstories",
-    "generatedAt": "2025-09-22T12:11:00.288Z",
-    "publishedAt": "2025-09-22T11:35:00.000Z",
-    "feedName": "MarketWatch Top Stories",
-    "author": "MarketWatch Top Stories",
-    "category": "General",
-    "essence": "What happened: Small business hiring, a key economic indicator, slowed significantly in Q3 2023. Specific data on job creation numbers are needed to quantify the slowdown precisely. This contrasts with stronger growth in previous quarters.",
-    "reactions": [
-      "Investor —  The sputtering small-business hiring engine suggests significant downside risk to economic growth projections, implying a potential reassessment of valuations in growth-dependent sectors.",
-      "Operator —  Securing and retaining talent amidst economic uncertainty necessitates a proactive, flexible approach to compensation and benefits, exceeding basic market expectations.",
-      "Market —  If small businesses fail to overcome hiring challenges, consumers will experience reduced service availability and potentially higher prices due to decreased competition and supply chain disruptions."
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "dc2a636a40557b3d44b9dea569847061",
-    "title": "How AI Mode Will Redefine Paid Search Advertising via @sejournal, @brookeosmundson",
-    "source": "https://www.searchenginejournal.com/how-ai-mode-will-redefine-paid-search-advertising/555365/",
-    "generatedAt": "2025-09-22T12:11:52.853Z",
-    "publishedAt": "2025-09-22T11:06:42.000Z",
-    "feedName": "Search Engine Journal",
-    "author": "Search Engine Journal",
-    "category": "PPC",
-    "essence": "What happened: Google's AI Mode significantly alters search results, embedding ads within AI-generated summaries. Pew Research shows only 8% of visits with AI Overviews resulted in clicks on traditional results, compared to 15% without. Similarweb data indicates a near 70% rise in zero-click searches by mid-2025.",
-    "reactions": [
-      ") Investor:  Rand Fishkin's observation that \"Zero-click is taking over everything\" highlights the risk of Google's AI-driven search reducing advertiser ROI by prioritizing user experience over monetization.",
-      ") Operator:  Marketers should prioritize reframing search around \"journeys, not keywords,\" designing multi-step campaigns anticipating user follow-ups and refinements, as suggested by the article.",
-      ") Market: Smaller, niche advertisers will likely lose market share to larger brands with greater scale and resources in the increasingly competitive, less transparent AI-driven ad environment."
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "d1eb9e7d50083ad72170c5c5d4787f99",
-    "title": "These Are The Speediest Companies To Go From Series A To Series C",
-    "source": "https://news.crunchbase.com/venture/fastest-companies-seriesa-to-seriesc-ai-fintech-spacetech/",
-    "generatedAt": "2025-09-23T18:10:21.227Z",
-    "publishedAt": "2025-09-22T11:00:33.000Z",
-    "feedName": "Crunchbase News",
-    "author": "Crunchbase News",
-    "category": "Artificial intelligence",
-    "essence": "What happened: A significant number of companies rapidly progressed from Series A to Series C funding between 2023 and September 2025. Several achieved this in under 12 months. Examples include Anysphere ($900M Series C, <1 year post-Series A), Cognition ($400M Series C, <1 year post-Series A), and Fal ($125M Series C, 10 months post-Series A).",
-    "reactions": [
-      "Investor — Thesis:  Rapid Series A to C fundraising, particularly in generative AI, vertical AI, and fintech, signals strong market validation and potential for significant returns, though the compressed timeline increases risk of overvaluation and premature scaling.",
-      "Operator — Execution Lesson:  Exceptional execution,  leveraging strong market tailwinds (like the generative AI boom), and securing substantial early traction are crucial for achieving rapid fundraising cycles.",
-      "Market — Who Loses:  Competitors lacking similar speed and capital access in these rapidly evolving sectors risk being overtaken by better-funded, faster-moving rivals."
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "1a6f9d246a4afec394c4199288333fdd",
-    "title": "As Wired Turns Its Journalists Into Influencers, Subscriptions Surge",
-    "source": "https://www.adweek.com/media/wired-journalists-influencers-subscriptions/",
-    "generatedAt": "2025-09-22T18:12:48.237Z",
-    "publishedAt": "2025-09-22T10:00:00.000Z",
-    "feedName": "Adweek Marketing",
-    "author": "Adweek Marketing",
-    "category": "Media News",
-    "essence": "What happened: Wired shifted its video strategy, making reporters the faces of its content. This resulted in a nearly 800% increase in Instagram views and a 163% increase in TikTok comments since the shift to vertical, staff-led videos. One YouTube series, \"On the Grid,\" became Wired's top-performing video in the past year.",
-    "reactions": [
-      "Investor —  Wired's strategy of transforming journalists into influencers, driving significant increases in video views and subscription revenue, presents a compelling investment thesis, though risks include dependence on specific personalities and the potential for burnout.",
-      "Operator —  The success of Wired's shift to talent-led video content demonstrates the power of leveraging journalist personalities to build audience engagement and directly connect journalism with a sustainable business model.",
-      "Market —  Traditional media brands that fail to adapt to a personality-driven platform model, prioritizing brand over individual talent, risk losing audience share and revenue to more agile competitors."
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "6d9ca6146c0a47b153477324d5d652ad",
-    "title": "LinkedIn will soon train AI models with data from European users",
-    "source": "https://hostvix.com/linkedin-will-soon-train-ai-models-with-data-from-european-users/",
-    "generatedAt": "2025-09-22T12:09:31.314Z",
-    "publishedAt": "2025-09-22T09:33:32.000Z",
-    "feedName": "Y Combinator",
-    "author": "Y Combinator",
-    "category": "General",
-    "essence": "What happened: LinkedIn will resume training its AI models with data from EU/EEA, UK, and Swiss users starting November 3, 2025. This reverses a September 2024 pause following criticism. Data used includes profile details, public posts, and job application information; private messages are excluded.",
-    "reactions": [
-      "Investor: LinkedIn's pivot to using European user data for AI training, despite previous setbacks, presents a high-risk, high-reward proposition, dependent on successfully navigating GDPR compliance and maintaining user trust.",
-      "Operator:  The execution lesson is that navigating complex data privacy regulations requires clear communication, granular user controls, and a willingness to adapt strategies following regulatory and public feedback.",
-      "Market:  Competitors who fail to similarly leverage user data for AI model training, while respecting privacy regulations, risk losing ground in the development and deployment of advanced AI features."
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "bc2db2526d218c2484c3e6da141ef8f4",
-    "title": "Google August 2025 spam update done rolling out",
-    "source": "https://searchengineland.com/google-august-2025-spam-update-done-rolling-out-461560",
-    "generatedAt": "2025-09-22T12:12:02.915Z",
-    "publishedAt": "2025-09-22T09:30:14.000Z",
-    "feedName": "Search Engine Land",
-    "author": "Search Engine Land",
-    "category": "Google",
-    "essence": "Google's August 2025 spam update, lasting 27 days (August 26 - September 22), was a broad update impacting many sites. This follows three updates in 2024 and is the first of 2025. Some sites experienced rapid ranking drops within 24 hours, with a second wave around September 9th.",
-    "reactions": [
-      "Investor —  The rapid rollout and significant impact of Google's August 2025 spam update highlight the ongoing risk of algorithm changes for SEO-dependent businesses.",
-      "Operator —  The update's swift impact underscores the need for proactive, continuous SEO optimization and adherence to Google's spam policies, rather than reactive measures.",
-      "Market —  Websites employing black-hat SEO tactics or relying on manipulative link-building strategies lose market share as Google's algorithms improve."
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "c28b1602d567da4488477e38e9faacf6",
-    "title": "Brain drain? How Wall Street is reacting to $100,000 charge for H1-B visas",
-    "source": "https://www.marketwatch.com/story/brain-drain-how-wall-street-is-reacting-to-100-000-charge-for-h1-b-visas-0e5bee7e?mod=mw_rss_topstories",
-    "generatedAt": "2025-09-22T12:11:06.154Z",
-    "publishedAt": "2025-09-22T09:30:00.000Z",
-    "feedName": "MarketWatch Top Stories",
-    "author": "MarketWatch Top Stories",
-    "category": "General",
-    "essence": "What happened: The Trump administration implemented a $100,000 fee for H-1B visas, effective [Insert Effective Date if available]. This represents a significant increase from previous fees. No specific data on visa application numbers is yet available.",
-    "reactions": [
-      "Investor — The increased H1-B visa fee represents a significant cost for tech companies, potentially impacting profitability and slowing growth, especially for those reliant on foreign talent.",
-      "Operator —  Successfully navigating this new regulatory landscape requires proactive strategies, including exploring alternative talent acquisition methods and adjusting hiring plans to account for increased costs.",
-      "Market —  If tech companies successfully absorb the increased H1-B visa costs without significantly reducing hiring, smaller competitors lacking similar financial resources may lose market share."
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "58edb214cbc96474ec2a58f5e3ccbc43",
-    "title": "Google Answers SEO Question About Keyword Cannibalization via @sejournal, @martinibuster",
-    "source": "https://www.searchenginejournal.com/google-answers-seo-question-about-keyword-cannibalization/556472/",
-    "generatedAt": "2025-09-22T12:11:56.505Z",
-    "publishedAt": "2025-09-22T09:17:37.000Z",
-    "feedName": "Search Engine Journal",
-    "author": "Search Engine Journal",
-    "category": "News",
-    "essence": "What happened: Google's John Mueller addressed the SEO community's misconception of \"keyword cannibalization,\" clarifying that multiple pages ranking for the same query isn't inherently problematic. He emphasized focusing on content quality, internal linking, and eliminating unnecessary duplication instead. No specific data points were provided.",
-    "reactions": [
-      "Investor:  Mueller's dismissal of \"keyword cannibalization\" as an ill-defined problem suggests a risk for SEO services built around addressing this perceived issue.",
-      "Operator:  Focus on content quality, internal linking, and addressing actual issues like thin content or off-topic passages, rather than chasing the phantom of keyword cannibalization.",
-      "Market:  SEO firms that profit from diagnosing and \"fixing\" keyword cannibalization lose if SEOs adopt Mueller's advice to focus on content quality instead."
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "7275021eb5762852bf427c14a302bea4",
-    "title": "Why creative teams need the safety to fail [according to a senior director for Magic: The Gathering]",
-    "source": "https://blog.hubspot.com/marketing/why-creative-teams-need-the-safety-to-fail",
-    "generatedAt": "2025-09-22T12:11:34.837Z",
-    "publishedAt": "2025-09-22T09:00:00.000Z",
-    "feedName": "HubSpot Marketing Blog",
-    "author": "cdelprincipe@hubspot.com (Curt del Principe)",
-    "category": "General",
-    "essence": "Why creative teams need the safety to fail What happened: Magic: The Gathering's marketing team experienced multiple instances of marketing material leaks and negative online feedback following product launches. No specific metrics are provided in the source. Why it matters: A culture of risk-taking and failure acceptance is crucial for creative teams.",
-    "reactions": [
-      "Investor —  A marketing campaign's success hinges on the team's ability to take risks and learn from inevitable failures, but investors should assess the risk tolerance of the creative team and the company's ability to pivot after setbacks.",
-      "Operator —  Creating a safe space for creative exploration, even if it leads to failures, is crucial for fostering innovation and rapid adaptation to market feedback.",
-      "Market — Competitors benefit from the failures of a creative team if the team is unable to learn from their mistakes and adapt quickly, allowing competitors to capture market share."
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "2385ee8fd2c252388ea70dfa204ad609",
-    "title": "Google Confirms August Spam Update Is Complete via @sejournal, @MattGSouthern",
-    "source": "https://www.searchenginejournal.com/google-confirms-august-spam-update-is-complete/556465/",
-    "generatedAt": "2025-09-22T12:11:59.360Z",
-    "publishedAt": "2025-09-22T07:20:59.000Z",
-    "feedName": "Search Engine Journal",
-    "author": "Search Engine Journal",
-    "category": "News",
-    "essence": "What happened: Google completed a global spam update (August 26 - September 22, 2025) targeting spammy content. Early data from Sistrix suggests limited broad re-ranking, with primarily penalty-only effects; no major SERP shifts observed. Why it matters: This update reinforces Google's ongoing commitment to improving search quality by removing spam.",
-    "reactions": [
-      "Investor — Thesis/risks:  The muted impact of Google's August spam update, as indicated by SISTRIX's \"penalty-only\" assessment, suggests limited short-term investment opportunities tied to SEO improvements driven by this specific update.",
-      "Operator — Execution lesson:  Focus on ensuring compliance with Google's spam policies rather than seeking immediate ranking gains, as the update primarily focuses on removing non-compliant content.",
-      "Market — Who loses if they win:  Black hat SEO operators and websites employing spammy techniques lose if Google's spam-fighting systems successfully remove or demote their content."
     ],
     "promoBanner": {
       "text": "Axiologic News",
