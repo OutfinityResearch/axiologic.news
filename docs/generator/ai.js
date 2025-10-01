@@ -100,7 +100,7 @@ function getModel(provider) {
         case 'mistral':
             return 'mistral-large-latest';
         case 'gemini':
-            return 'gemini-1.5-flash';
+            return 'gemini-2.5-flash';
         case 'claude':
         case 'anthropic':
             return 'claude-3-haiku-20240307';
