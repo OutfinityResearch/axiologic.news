@@ -1,5 +1,45 @@
 [
   {
+    "id": "d3d6c709fe28eb712b0d9100bb1d2da8",
+    "title": "Are Foundation Models Ready for Your Production Tabular Data?",
+    "source": "https://towardsdatascience.com/foundation-models-in-tabular-data/",
+    "generatedAt": "2025-10-02T00:12:36.832Z",
+    "publishedAt": "2025-10-01T20:11:10.000Z",
+    "feedName": "Towards Data Science",
+    "author": "Towards Data Science",
+    "category": "Large Data Models",
+    "essence": "1. What's new: A review highlights emerging foundation models (FMs) for tabular data, including TabPFN, CARTE, TabuLa-8b, and TabDPT, designed for zero-shot predictions and aiming to challenge classic Machine Learning algorithms. 2.",
+    "reactions": [
+      ") Possible Impact: CARTE simplifies tabular data preprocessing by using LLM embeddings for strings and column names, negating the need for categorical encoding and handling entity variations like \"Londres\" vs. \"London.",
+      ") Skeptic check: Several foundation models, including CARTE and TabuLa-8b, struggle with large datasets due to computational intensity or context window limits, such as the Llama 3-8B's 8,000 tokens.",
+      ") Concrete facts from news: TabPFN's Bayesian inference mechanism is grounded in a prior distribution derived from 100 million synthetic datasets, engineered to represent a broad spectrum of potential scenarios."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "fbaa1423c9eb0f54879db7645b3d8292",
+    "title": "How to Improve the Efficiency of Your PyTorch Training Loop",
+    "source": "https://towardsdatascience.com/improve-efficiency-of-your-pytorch-training-loop/",
+    "generatedAt": "2025-10-02T00:13:04.665Z",
+    "publishedAt": "2025-10-01T19:16:04.000Z",
+    "feedName": "Towards Data Science",
+    "author": "Towards Data Science",
+    "category": "Deep Learning",
+    "essence": "What's new: PyTorch training bottlenecks, often due to GPU idle time, can be significantly mitigated by optimizing the `DataLoader` parameters `num_workers` for parallel data loading and `pin_memory=True` for faster CPU-GPU transfers. Why it matters: This directly benefits deep learning practitioners by reducing training times and maximizing GPU utilization, thereby accelerating model development and experimentation. Evidence: Experiments on an MNIST dataset with a FeedForward NN showed that using `num_workers=8` reduced training time from 22.67 seconds to 9.14 seconds (a 2.48x speedup).",
+    "reactions": [
+      "Possible Impact: By strategically configuring PyTorch's `num_workers` and `pin_memory` parameters, deep learning practitioners can realistically achieve over a 2.5x speedup in training loops by minimizing GPU idle time.",
+      "Skeptic check: Over-optimizing with too many `num_workers` can lead to increased RAM consumption and CPU resource contention, potentially slowing down the entire system rather than improving training efficiency.",
+      "Concrete facts: The article demonstrated this optimization by reducing a FeedForward neural network's training time on the MNIST dataset from a 22.67-second baseline to 9.00 seconds using 8 workers and pinned memory."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "cfa2eb40d2e6dbff0319ce3323547fd5",
     "title": "Trump signs order authorizing artificial intelligence to be used in childhood cancer research - Deseret News",
     "source": "https://news.google.com/rss/articles/CBMingFBVV95cUxPalBwMDg0QWhJdFdkTTdSMmw0RU5Cenc5TGxaaWVQZllPRGF5VV9rUnczQmo1ZmhMa2JfY0lIYjdHcjFtQ2JoUFQtR1lpLWxpdkc0b1hxWF80UDRzR190elZkVG5JVWFaQWZmWTZBOUs1N2xfbUdDVXBxaXF4eXBFNHNnaUllQmJaSHhIQ2ZhbWNUSjQ5UmpleWJDdmg2dw?oc=5",
@@ -13,6 +53,26 @@
       ") Possible Impact (but realistic): The authorization could accelerate the analysis of complex genomic data and identify new therapeutic targets for pediatric cancers.",
       ") Skeptic check (weak spot or risk): The order primarily provides authorization, but tangible advancements depend on significant, sustained funding and the effective integration of AI tools into existing research infrastructure.",
       ") Concrete facts from news: President Trump signed an executive order, as reported by Deseret News, specifically authorizing the use of artificial intelligence in the domain of childhood cancer research."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "4322e5142d45b0b9a446e21147834b07",
+    "title": "Data Visualization Explained (Part 2): An Introduction to Visual Variables",
+    "source": "https://towardsdatascience.com/data-visualization-explained-part-2-an-introduction-to-visual-variables/",
+    "generatedAt": "2025-10-02T00:13:26.513Z",
+    "publishedAt": "2025-10-01T17:21:17.000Z",
+    "feedName": "Towards Data Science",
+    "author": "Towards Data Science",
+    "category": "Data Visualization",
+    "essence": "What's new: This article provides an accessible introduction to visual encoding channels, such as position, size, shape, and color, explaining their role as fundamental concepts for effective data visualization design. Why it matters: Grasping these \"visual variables\" is crucial for data professionals and designers to select optimal visual representations for diverse data types (quantitative, ordinal, nominal), thereby significantly improving audience comprehension. Evidence/Caveat: The framework is rooted in Jacques Bertin's \"Semiology of Graphics\" and is illustrated with Charles Minard's famous 1812 map of Napoleon's Russian campaign.",
+    "reactions": [
+      ") Possible Impact: Applying Bertin's visual variables, especially understanding that Position is optimal across data types, allows designers to create more effective and clearer data visualizations.",
+      ") Skeptic check: Despite being an \"accessible guide,\" applying the nuanced rankings of visual variables beyond position for different data types remains a challenging and potentially confusing aspect for new visualization designers.",
+      ") Concrete facts from news: Charles Minard's map illustrating Napoleon's Russian campaign is presented as a \"masterful application\" of visual variables, emphasizing that Position is the best option for all data types."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
@@ -40,6 +100,46 @@
     }
   },
   {
+    "id": "afcf7d34a66a2b142dd0c9dc211c149b",
+    "title": "In the presence of Khaled bin Mohamed bin Zayed, Tahnoon bin Zayed chairs meeting of Artificial Intelligence and Advanced Technology Council - مكتب أبوظبي الإعلامي",
+    "source": "https://news.google.com/rss/articles/CBMipwJBVV95cUxQNGtFY2R6NXVqVzlhV25qa2wzUlBEYkJOeUV5SHZvcF9pbjVseEU5eEdWeWNLUnFNVmdkSXN6THdIcEJfT3N6SmtlN0xuX2hER3F2emNVS1NQUDcxRmwtbm0wOVBvMzhGMkNlRE45UFc3TVRQYjBqTHJRZFVtbVlQV2FMUm5IS1BqM2Y1bUlsSDcwNjQ3TUFmaWNBOXFkRmd2dnRKdnBVWTZQMmZ5MUpORFFnSXdOazQ0MC1JQzBaOGRxa1Rvem9fOFJmRk9KSXN6ZXJSZUptMUJOWlY2aHctZUoySFlXUnJvaUxoVDlmbHFteFUwYXZoQXN4bjc5Q2kzbERtSzZWN1d4b213RXFmQW9ZV0VlMVVtbVlUMHllMFE4cy1RYkRj?oc=5",
+    "generatedAt": "2025-10-02T00:15:59.810Z",
+    "publishedAt": "2025-10-01T14:52:22.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "What's new: Tahnoon bin Zayed chaired a meeting of the Artificial Intelligence and Advanced Technology Council, with Khaled bin Mohamed bin Zayed in attendance, indicating active high-level leadership engagement in the UAE's advanced technology initiatives. Why it matters: This signifies Abu Dhabi's continued strategic focus and commitment to developing and integrating AI and advanced technologies, impacting future policy, investment, and the nation's digital economy trajectory. Evidence + Caveat: The meeting involved key figures Tahnoon bin Zayed and Khaled bin Mohamed bin Zayed, and was reported by مكتب أبوظبي الإعلامي (Abu Dhabi Media Office).",
+    "reactions": [
+      ") Possible Impact: The high-level attendance of Khaled and Tahnoon bin Zayed at the AI and Advanced Technology Council meeting indicates the UAE's strong national strategic focus on AI, likely translating into significant future resource allocation and policy development.",
+      ") Skeptic check: The provided content, limited to a meeting announcement, does not detail specific agenda items or outcomes, making it difficult to assess the concrete progress or direction of the Artificial Intelligence and Advanced Technology Council.",
+      ") Concrete facts from news: Tahnoon bin Zayed chaired a meeting of the Artificial Intelligence and Advanced Technology Council, with Khaled bin Mohamed bin Zayed also present, as reported by the Abu Dhabi Media Office."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "d63d0e236d0ca9117313fee63d141374",
+    "title": "Embracing AI- driven operations and observability at re:Invent 2025 - Amazon Web Services",
+    "source": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNS2xuYjVZemZUbGdUMGxCRUFxQ0s4ODJzcDBQRGVMaUxQaEltLWxuWi1NdkxZNkwxa1Vqd19samFXMmd5RnUxT095RU9hSXQxZEpsVTVVN2pxMXdSeEdXSnlPam8tZTVWNldGVWVKRlZuLUN1RFpCRlZqckZURzVpRWVwSDVBYlQ4MjRGd2IybG9JdWplUk53SU5KLXlaUW8?oc=5",
+    "generatedAt": "2025-10-02T00:18:05.495Z",
+    "publishedAt": "2025-10-01T14:43:13.000Z",
+    "feedName": "Generative AI Applications",
+    "author": "Generative AI Applications",
+    "category": "General",
+    "essence": "The provided content is a title and a link, not the full article. Therefore, a precise summary of the article's substance is not possible. What's new: Based solely on the title, Amazon Web Services (AWS) is highlighting an increased focus on AI-driven operations and observability.",
+    "reactions": [
+      ") AWS's push for \"AI-driven operations and observability\" by re:Invent 2025 realistically aims to automate and streamline cloud infrastructure management, leading to more efficient and resilient systems for users.",
+      ") While promising, \"AI-driven operations and observability\" could introduce new complexities in debugging AI-generated issues or increase reliance on systems whose internal decision-making processes remain opaque.",
+      ") Amazon Web Services (AWS) specifically plans to feature \"AI-driven operations and observability\" at its re:Invent 2025 event."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "4c39f35b84027899ad50209b4000717e",
     "title": "Americans have mixed feelings about AI summaries in search results - Pew Research Center",
     "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQYkd0NEh3SHZBTU5nSWlXYW9SVnVCYnp4Z0pjYjMzRFVraDBMaGVVVk1vRVAzbERwN3o2b1VMZVFlSjhLc0FBUkQ1dmxUdmZ1cm5XenZseTEwR01ySTlOQjVpTjItd3I0cjZyc0hEMHpEZk5HSEhLejRwLUFKRF9scHFWYlVqQjFLX2dJbGlPVGlwbWxxckIxNEFtaU9zRi1fV09WX1M2Q19nY3V5aFBzeTVldEVkWUU2ckE?oc=5",
@@ -53,6 +153,26 @@
       ") The mixed public sentiment suggests a potential for varied user adoption and continued reliance on traditional search alongside AI summaries, rather than a rapid, universal shift.",
       ") This \"mixed feelings\" response could indicate underlying user concerns about the accuracy, reliability, or potential bias of AI-generated content, posing a challenge for widespread trust.",
       ") A study by the Pew Research Center confirms that Americans express \"mixed feelings\" about the integration of AI summaries into their search results."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "a8094af93994efc271c4d0c78b0731f1",
+    "title": "Under the Hood: How DAX Works with Filters",
+    "source": "https://towardsdatascience.com/under-the-hood-how-dax-works-with-filters/",
+    "generatedAt": "2025-10-02T00:13:49.681Z",
+    "publishedAt": "2025-10-01T12:30:00.000Z",
+    "feedName": "Towards Data Science",
+    "author": "Towards Data Science",
+    "category": "Power BI",
+    "essence": "What's new: The article clarifies that DAX time intelligence functions fundamentally operate by generating and applying tables of dates as filters, which is the core mechanism for all such calculations. Why it matters: This insight simplifies the comprehension and mastery of complex DAX time intelligence and other table-input functions for Power BI users and data analysts. Evidence: Author Salvatore Cagliari (Oct 1, 2025) demonstrates this with `DATESYTD()` and `SAMEPERIODLASTYEAR()` examples, showing how filter tables result in \"30 days for June\" or \"181 rows\" for a leap year.",
+    "reactions": [
+      ") Understanding DAX's underlying mechanism of treating time intelligence functions as table filters can significantly simplify complex data analysis and mastery in Power BI.",
+      ") The author cautions that \"some of the DAX code shown here may be obsolete\" with new Power BI features, indicating specific implementations might need updates despite the principles remaining valid.",
+      ") The article illustrates that `SAMEPERIODLASTYEAR()` applied to a 2024 date range, a leap year, correctly returns 181 rows, demonstrating DAX's precise date manipulation."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
@@ -260,6 +380,26 @@
     }
   },
   {
+    "id": "3a98a86f9827a131d980c04d50a209a2",
+    "title": "Trump signs order aimed at using artificial intelligence to boost childhood cancer treatment - The Hill",
+    "source": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNWVNzTlpjMHJuOXJILXplaTdjM2lmS3NIVjJMc25xUmNVZ3dyWDhnV2xHaVJsVFM4bG9MZm1ubTJfcklzYUtpVlVNRlRTVFJhR3hRLWNZbnNFd0U2QnJ0Rm02cjU4aVROUFI4c2dnc2RlU0dBbnNudnZWUy01WENxbnpjSXFjS1l50gGOAUFVX3lxTE9rLXA0THE5RGU0cEtkc2lNQU9tYV9OZlB4dXlNMkxQcmpXMGFHOGFrdGNxQVhkanZOVS00bTRzVXY5dVFlSjRSTWV5UGIzQzluYTJoYUNRRS1Yd3N4bWtnQnBhUmt2R1pHOGFzWWc4VGZUczBYTlVXT1luZ0hkZVlzVFd3R2Vlem1QQWdoOXc?oc=5",
+    "generatedAt": "2025-10-02T00:16:18.649Z",
+    "publishedAt": "2025-09-30T21:14:00.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "What's new: President Trump signed an executive order establishing the National Childhood Cancer Data Initiative, aiming to leverage artificial intelligence and big data to accelerate research and treatment development. Why it matters: This initiative seeks to improve outcomes for children diagnosed with cancer by integrating disparate data, enabling researchers to better understand the disease and create new therapies. It addresses the leading cause of disease-related death among U.S.",
+    "reactions": [
+      ") Possible Impact: This order could realistically direct federal attention and resources towards applying AI in pediatric oncology, potentially speeding up research into more effective treatments.",
+      ") Skeptic check: A skeptical view might question whether an executive order provides sufficient concrete mechanisms or funding to overcome the significant scientific and implementation challenges of integrating AI into complex childhood cancer treatments.",
+      ") Concrete facts from news: The Hill reported that President Trump signed an executive order specifically targeting the use of artificial intelligence to enhance childhood cancer treatment."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "645b1c11e66550b619f92762272406a5",
     "title": "For these law school application essays, AI is required - Reuters",
     "source": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOM3JFOEU4azhZRnozYmFpemE5VHJ0Q2Uxc2xkQjlIbENTTXg5WFBvc1JKdDNpdkxoSExWbXpzQXp1RjYyMmhERVAzN1d3dGY4alpTZ2dGb3Zqd1RBTnVhcDR0TjBrLTlHMGpLcVN1ZUVHdDY0R3pEQ2lPUlFudGJ5ZER2WEVKLWl3NmJrY2tFQlIxVUREQ293Q3NHWDYyZ3VUMC1LWjlTeDlHUQ?oc=5",
@@ -360,6 +500,46 @@
     }
   },
   {
+    "id": "e0192be9ada62cb5504121abdfdbbbea",
+    "title": "Beyond ROC-AUC and KS: The Gini Coefficient, Explained Simply",
+    "source": "https://towardsdatascience.com/beyond-roc-auc-and-ks-gini-coefficient-explained-simply/",
+    "generatedAt": "2025-10-02T00:14:11.493Z",
+    "publishedAt": "2025-09-30T15:30:00.000Z",
+    "feedName": "Towards Data Science",
+    "author": "Towards Data Science",
+    "category": "Data Science",
+    "essence": "What's new: This article introduces the Gini Coefficient as a classification metric, distinct from ROC-AUC and KS Statistic, to quantify how much better a model ranks positives than random guessing. It assesses a model's efficiency in separating positive and negative classes. Why it matters: Data scientists and machine learning practitioners gain a complementary tool for model evaluation, offering insight into how effectively a model concentrates positives at the top of a sorted list, beyond overall ranking or maximum separation gap.",
+    "reactions": [
+      ") Possible Impact: The Gini Coefficient offers data scientists a clear metric to assess how much better their classification model is than random guessing at ranking positives, with a Gini of 0.6–0.7 considered a \"good model.",
+      ") Skeptic check: The article does not identify any specific weak spots or risks inherent to the Gini Coefficient, framing it solely as \"another important classification metric\" providing a \"different angle.",
+      ") Concrete facts: Using the publicly available German Credit dataset, a logistic regression model demonstrated a Gini Coefficient of 0.60, derived from its ROC-AUC score."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "0c55e232b4b23f91b37f154a65ddb384",
+    "title": "Actual Intelligence in the Age of AI",
+    "source": "https://towardsdatascience.com/actual-intelligence-in-the-age-of-ai/",
+    "generatedAt": "2025-10-02T00:14:30.689Z",
+    "publishedAt": "2025-09-30T14:29:30.000Z",
+    "feedName": "Towards Data Science",
+    "author": "Towards Data Science",
+    "category": "Artificial Intelligence",
+    "essence": "What's new: Generative AI (GenAI) now significantly boosts data scientists' productivity in coding (writing, debugging basic Python) and research (clarifying topics, finding resources), according to Jarom Hulet, a data science leader at Toyota Financial Services. Why it matters: This impacts data scientists' daily workflows, offering efficiency but demanding caution to prevent shallow understanding. It's crucial for businesses to balance AI benefits with fostering deep \"actual intelligence,\" and for job seekers to prioritize foundational mastery, as deep understanding is a critical differentiator in hiring.",
+    "reactions": [
+      ") Possible Impact: Generative AI realistically boosts data scientist productivity, with Jarom Hulet noting its utility for writing basic Python code, debugging, and clarifying research topics.",
+      ") Skeptic check: Jarom Hulet expresses concern that constant GenAI availability could lead to \"substituting actual intelligence for artificial intelligence\" and fostering a \"shallow understanding of topics.",
+      ") Concrete facts: Jarom Hulet, a data science leader at Toyota Financial Services, leverages ChatGPT for tasks like writing basic Python code and debugging, aiming to publish \"one article every month."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "41099fec7ffda3e58e797d82277e94c6",
     "title": "How to Build Effective Agentic Systems with LangGraph",
     "source": "https://towardsdatascience.com/how-to-build-effective-agentic-systems-with-langgraph/",
@@ -393,6 +573,26 @@
       ") Possible Impact: Nous's recognition as a \"Major Contender\" in Everest Group's 2025 PEAK Matrix for AI application development suggests its growing capability and competitive standing within the specialized generative AI services market.",
       ") Skeptic Check: While positive, the \"Major Contender\" designation implies Nous is not yet a market leader, potentially highlighting areas where it lags top-tier competitors in the Everest Group's assessment for AI application services.",
       ") Concrete Facts: The Everest Group's Application Development Services for AI Applications PEAK Matrix® Assessment 2025 has positioned Nous as a \"Major Contender."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "a97f9d34229d614406b8570b490b9064",
+    "title": "Designing CPUs for next-generation supercomputing",
+    "source": "https://www.technologyreview.com/2025/09/30/1124505/designing-cpus-for-next-generation-supercomputing/",
+    "generatedAt": "2025-10-02T00:12:08.332Z",
+    "publishedAt": "2025-09-30T13:54:41.000Z",
+    "feedName": "MIT Technology Review - AI",
+    "author": "MIT Technology Review - AI",
+    "category": "Computing",
+    "essence": "What's new: Contrary to the prevailing narrative of GPU dominance, CPUs are experiencing a technological renaissance, demonstrating significant performance gains through innovations like high-bandwidth memory (HBM) without costly architectural resets. Why it matters: CPUs continue to power 80-90% of critical high-performance computing (HPC) workloads in scientific, engineering, and research domains, affecting experts from meteorology to finance, and the public relying on their insights. Evidence: Evan Burness (Microsoft Azure’s HPC and AI product teams) estimates CPUs support 80-90% of HPC simulation jobs in 2025.",
+    "reactions": [
+      ") Possible Impact: Continued CPU innovation, including High-Bandwidth Memory (HBM), ensures essential high-performance computing (HPC) simulations for meteorology, automotive safety, and finance can achieve significant performance gains without costly architectural resets.",
+      ") Skeptic check: The article, being \"Sponsored Computing\" content in partnership with Microsoft Azure and AMD, presents a potentially biased view, possibly downplaying the \"lion’s share of press (and investment)\" currently directed towards GPU-accelerated AI and the projected 17% annual increase in GPU installations through 2030.",
+      ") Concrete facts from news: Evan Burness of Microsoft Azure estimates that CPUs still support 80% to 90% of today’s HPC simulation jobs, despite the increasing focus on GPUs."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
@@ -440,6 +640,26 @@
     }
   },
   {
+    "id": "ec6e18a544725dc66a2c1aab06ae5d3c",
+    "title": "The Machine Learning Lessons I’ve Learned This Month",
+    "source": "https://towardsdatascience.com/the-machine-learning-lessons-ive-learned-this-month/",
+    "generatedAt": "2025-10-02T00:14:51.987Z",
+    "publishedAt": "2025-09-30T12:30:00.000Z",
+    "feedName": "Towards Data Science",
+    "author": "Towards Data Science",
+    "category": "Machine Learning",
+    "essence": "What's new: In September 2025, Pascal Janetzky articulated three practical machine learning lessons: strategically choosing between libraries and self-made code, utilizing clipboard managers, and the importance of broad reading for deep insights. Why it matters: These insights aim to enhance efficiency, reduce cognitive burden, and foster creativity for ML practitioners and researchers in their daily work and project development. Evidence: The author references tools like PyTorch, TensorFlow, Avalanche, Mammoth, Ditto, and Launchbar, stating these practices saved \"days of indecision.\" Caveat: Guidelines for library choice are not universally applicable.",
+    "reactions": [
+      "Possible Impact (but realistic): ML practitioners can significantly boost efficiency and reduce errors in iterative testing by integrating clipboard managers like Ditto or Launchbar into their workflow, as highlighted by the author's experience this month.",
+      "Skeptic check (weak spot or risk): While clipboard managers are praised for reducing cognitive overhead, the author notes that relying on copying/pasting results is \"not recommended\" for later project stages, implying a risk if not combined with structured logging.",
+      "Concrete facts from news: Author Pascal Janetzky, in September 2025, identified three key practical lessons, including the utility of clipboard managers like Launchbar on Mac and Ditto on Windows."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "3f2e51dd264b5f56ff50aa54990a246f",
     "title": "AI Contracts Company SimpleDocs Acquires Law Insider and Its Extensive Library of Contracts and Clauses - LawSites",
     "source": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOTXFNNkR4Vm5GS3l2bjVpQTF5UVVIWGtfbnhZcnN4S3VSXy1KcDEzZ3p1ODlnOGU0NDgxR0M1LTdOU1hZUmJTUDUxZjMtNlVkY3ZueUJzczh0ODBVV2tRYzhETERpNDd2M0x5R2J3MU9aanhMOXZCSmNzaEtiNENkc1c3Mkg4bHpUTmc3dDI4emxlLVJ0S1NUaldubThsY3VWdDAzcWF3dmJ0c0Y4cy1wMXJCYmx5Ulhvb3pneVJzRHBHWldBeDdaS19mOGNIcTIwUDc3NUNQaw?oc=5",
@@ -453,6 +673,26 @@
       ") Possible Impact: The acquisition of Law Insider's \"extensive library of contracts and clauses\" will likely provide SimpleDocs' AI with a significantly larger and more diverse dataset for training, potentially improving the accuracy and breadth of its contract analysis and generation capabilities.",
       ") Skeptic check: A key challenge for SimpleDocs will be effectively integrating and cleaning such an \"extensive library\" to ensure the data is high-quality and formatted for optimal AI training, rather than just raw volume.",
       ") Concrete facts: AI contracts company SimpleDocs has acquired Law Insider and its \"extensive library of contracts and clauses,\" according to a report from LawSites."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "61720332a54981e18d4f7394f83ab2a5",
+    "title": "Superiorstar Prosperity Group - Russell Hawthorne highlights new machine learning risk framework - The AI Journal",
+    "source": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNZUI0YWI2ZHpWdnFiZElUT0pYVkdkRjF0OV9WN09ZZG9kOXVKQXA1eWFVZ01iTmNSeGdGcWE5Q29PblQxR2o0ano4SGFoODZtRi0yLUtCRkNrVG1BS0o5TXp5Tmx5S19aNUs4RGVKNnhyMXd2RnRUSnJaMC0wRnBXYVI3OU1DdFB4djhBb1BpaW55SGlGNHdyQ0ZMcFM0Uk16dFloWnNoc3d2Q0VVNnBKdmFzNzZjQQ?oc=5",
+    "generatedAt": "2025-10-02T00:16:36.153Z",
+    "publishedAt": "2025-09-30T11:53:09.000Z",
+    "feedName": "AI Research News",
+    "author": "AI Research News",
+    "category": "General",
+    "essence": "What's new: Superiorstar Prosperity Group, represented by Russell Hawthorne, has unveiled a new framework specifically designed to manage risks associated with machine learning deployments. Why it matters: This development is crucial for any organization leveraging artificial intelligence and machine learning, as it signals a growing emphasis on robust governance and ethical considerations. It aims to help businesses navigate the complexities and potential pitfalls of advanced ML models, ensuring more responsible and secure technological integration.",
+    "reactions": [
+      ") Possible Impact: Superiorstar Prosperity Group's new machine learning risk framework, highlighted by Russell Hawthorne, could lead to more systematic identification and mitigation of AI-related operational risks across industries.",
+      ") Skeptic check: The actual efficacy and broad adoption of this \"new\" framework across diverse ML applications are yet to be demonstrated, potentially limiting its immediate practical impact beyond its announcement.",
+      ") Concrete facts: Russell Hawthorne of Superiorstar Prosperity Group highlighted a \"new machine learning risk framework,\" a development reported by The AI Journal."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
@@ -533,6 +773,26 @@
       ") Possible Impact (but realistic): The FAA's proposed loosening of \"beyond line of sight\" rules could realistically usher in a future where drones are commonplace, operating extensively across US airspace for diverse applications.",
       ") Skeptic check (weak spot or risk): A key risk of expanded drone operations, as highlighted by the ACLU, is the enablement of \"persistent surveillance\" without adequate privacy protections, particularly impacting protests and public gatherings.",
       ") Concrete facts from news: The FAA is accepting public comments on its proposed rule changes until October 6, with a final rule directed by Trump's executive order to be released by spring 2026."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
+    "id": "1dd8fa92777d0cef29a0ad7969964d0a",
+    "title": "A survey reveals that 51% of game developers in Japan are utilizing generative AI - WN Hub",
+    "source": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5HdFcybUpXYUZxck5uVGJqS3lQM2VLaThiam04Nk5CWDBKSlZkT09Jc0pyZi1zWnk2cWM4WXQxVUMyLTJnTG90SWdLMEs1ZURCWFJBQUdNTnk3dw?oc=5",
+    "generatedAt": "2025-10-02T00:18:22.996Z",
+    "publishedAt": "2025-09-30T00:11:15.000Z",
+    "feedName": "Generative AI Applications",
+    "author": "Generative AI Applications",
+    "category": "General",
+    "essence": "What's new: A recent survey indicates that 51% of game developers in Japan are now actively utilizing generative AI technologies in their professional work. Why it matters: This finding highlights a significant and swift adoption of AI within Japan's prominent game development industry, potentially transforming established workflows, accelerating content creation, and redefining creative and technical roles for professionals in the sector. Evidence/Caveat: The key datapoint is the 51% adoption rate among game developers in Japan.",
+    "reactions": [
+      ") Possible Impact: The adoption by 51% of game developers in Japan suggests a significant shift towards leveraging generative AI for accelerated content creation and potentially novel gameplay mechanics.",
+      ") Skeptic check: The broad term \"utilizing\" in the survey leaves open whether generative AI is integrated into core development or primarily for experimental or ancillary tasks.",
+      ") Concrete facts from news: A survey reveals that 51% of game developers in Japan are now using generative AI, as reported by WN Hub."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
@@ -820,6 +1080,26 @@
     }
   },
   {
+    "id": "5e897ff5a7c8c072f67144fed44bf8fd",
+    "title": "China Bans AI in Patent Document Generation for Attorneys - WebProNews",
+    "source": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNYWJtNjhaSFdOaHhOMG9oZzdwaUpsMWo4a0c3WDRsY2x6M2JYUE11QjhIdUNteGxVVWRhekJCWVFYQ2N5enkzQXpQZHQwRE9vZTdaMk1EUmlOUkdGT0lXam8tZW9Ta2NmYV9PMjlEUzRLc2hVRzJqTXJINFhIdlNIdVM0Q0JaN2RlazJ0UG1B?oc=5",
+    "generatedAt": "2025-10-02T00:18:39.135Z",
+    "publishedAt": "2025-09-29T02:54:00.000Z",
+    "feedName": "Generative AI Applications",
+    "author": "Generative AI Applications",
+    "category": "General",
+    "essence": "China has officially banned the use of artificial intelligence tools by patent attorneys for generating patent application documents. This new regulation significantly impacts legal professionals and intellectual property firms operating in China, potentially affecting their drafting processes, operational efficiency, and the overall quality and consistency of patent filings. It also signals the government's cautious approach to AI integration in sensitive legal domains.",
+    "reactions": [
+      ") Possible Impact: The mandate likely aims to ensure human accountability and originality in patent applications, potentially slowing China's adoption of AI-driven legal tech compared to other nations.",
+      ") Skeptic check: Enforcement of such a ban could prove challenging, as attorneys might still use AI for background research or initial drafting that isn't explicitly \"document generation,\" blurring the lines of compliance.",
+      ") Concrete facts from news: China has officially prohibited the use of artificial intelligence for generating patent documents specifically for attorneys, as reported by WebProNews."
+    ],
+    "promoBanner": {
+      "text": "AI Insights by Axiologic.News",
+      "url": "https://axiologic.news/"
+    }
+  },
+  {
     "id": "57f97817499de84e155e30695fc6d17c",
     "title": "Eulerian Melodies: Graph Algorithms for Music Composition",
     "source": "https://towardsdatascience.com/eulerian-melodies-graph-algorithms-for-music-composition/",
@@ -880,19 +1160,19 @@
     }
   },
   {
-    "id": "a5f0c344745944a9d88bd1f81b486743",
-    "title": "Building Fact-Checking Systems: Catching Repeating False Claims Before They Spread",
-    "source": "https://towardsdatascience.com/building-fact-checking-systems-catching-repeating-false-claims-before-they-spread/",
-    "generatedAt": "2025-10-01T14:24:42.704Z",
-    "publishedAt": "2025-09-26T18:31:56.000Z",
+    "id": "a7f7b891849757a7eae35828492e0b79",
+    "title": "What Clients Really Ask for in AI Projects",
+    "source": "https://towardsdatascience.com/what-clients-really-ask-for-in-ai-projects/",
+    "generatedAt": "2025-10-02T00:15:13.135Z",
+    "publishedAt": "2025-09-27T14:30:00.000Z",
     "feedName": "Towards Data Science",
     "author": "Towards Data Science",
-    "category": "Machine Learning",
-    "essence": "Automated fact-checking systems now integrate ensemble methods, combining multiple retrieval models (lexical like BM25 and semantic like E5, BGE) and rerankers. This enhances the \"Previously Fact-Checked Claim Retrieval (PFCR)\" process. This innovation combats the rapid spread of misinformation on social media by enabling faster, more scalable, and reliable verification of frequently altered false claims, helping maintain accuracy and trust in the digital world.",
+    "category": "Artificial Intelligence",
+    "essence": "The article clarifies that clients in AI projects primarily seek consistent communication, transparency, and demonstrable business value, rather than solely advanced technical features. This guidance is crucial for AI project managers, developers, and product leaders, as it directly impacts project success, client satisfaction, and the long-term operational viability of AI solutions by aligning technical work with business needs. Authored by Ivo Bernardo, leveraging over 15 years of experience in AI initiatives, it advocates principles like \"ABU (Always Be Updating)\" and prioritizing business metrics (e.g., reducing customer churn by 10%) over technical ones (e.g., 92% model accuracy).",
     "reactions": [
-      "By quickly linking new claims to previously verified information through PFCR, these automated systems can significantly reduce the circulation time of false narratives, enhancing trust in digital content at scale.",
-      "The article acknowledges that \"no single model is good enough on its own,\" as lexical models like BM25 fail with rephrased claims, while semantic models like E5 and BGE sometimes struggle with exact wording, necessitating an ensemble approach.",
-      "The automated fact-checking pipeline typically includes \"five steps\" (like claim detection and veracity prediction), often adding a \"sixth step\" for Previously Fact-Checked Claim Retrieval (PFCR), leveraging models such as BM25, E5, and BGE."
+      "Possible Impact (but realistic): Adhering to principles like \"Always Be Updating\" and defining business metrics upfront, such as reducing call center handling time by 20%, realistically enables AI projects to build client trust and deliver measurable financial or operational impact.",
+      "Skeptic check (weak spot or risk): A significant risk is that AI projects often get lost in \"cool features\" or technical metrics like 92% accuracy, failing to validate actual user needs or plan for the complex operational scaling required beyond initial deployment.",
+      "Concrete facts from news: The article, published on \"Towards Data Science,\" draws on \"over 15 years\" of author Ivo Bernardo's experience, stressing that clients prioritize clear communication and business metrics over raw technical scores like F1 score or ROC-AUC."
     ],
     "promoBanner": {
       "text": "AI Insights by Axiologic.News",
