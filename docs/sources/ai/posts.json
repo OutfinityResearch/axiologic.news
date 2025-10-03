@@ -1298,25 +1298,5 @@
       "text": "AI Insights by Axiologic.News",
       "url": "https://axiologic.news/"
     }
-  },
-  {
-    "id": "57f97817499de84e155e30695fc6d17c",
-    "title": "Eulerian Melodies: Graph Algorithms for Music Composition",
-    "source": "https://towardsdatascience.com/eulerian-melodies-graph-algorithms-for-music-composition/",
-    "generatedAt": "2025-10-01T14:24:08.253Z",
-    "publishedAt": "2025-09-28T14:30:00.000Z",
-    "feedName": "Towards Data Science",
-    "author": "Towards Data Science",
-    "category": "Graph Theory",
-    "essence": "What's new: A new data science approach applies graph theory's Eulerian paths to algorithmically compose music by assembling stochastically generated motifs. It includes an end-to-end Python implementation for creating melodies from a de Bruijn graph. Why it matters: This enables composers and developers to generate acoustically structured melodies, mimicking how human composers like John Williams reuse motifs.",
-    "reactions": [
-      ") Possible Impact: The article details a Python implementation that enables the algorithmic generation of structured melodies by assembling stochastically generated motifs, offering a tool for composers or AI to create new pieces based on specified scales like \"C-Major-Pentatonic.",
-      ") Skeptic check: Despite generating \"acoustically pleasing melodies\" by ensuring structural coherence via Eulerian paths, the reliance on stochastically generated motifs and random note variations suggests the output may lack the nuanced artistic originality or emotional depth of human-composed music.",
-      ") Concrete facts from news: Authored by Chinmay Kakatkar and published on September 28, 2025, the Python implementation uses tools like FFmpeg and FluidSynth, along with a `TimGM6mb.sf2` SoundFont file, to generate an output example like \"C-Major-Pentatonic_v2.mp3."
-    ],
-    "promoBanner": {
-      "text": "AI Insights by Axiologic.News",
-      "url": "https://axiologic.news/"
-    }
   }
 ]
