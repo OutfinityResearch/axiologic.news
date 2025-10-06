@@ -1,5 +1,25 @@
 [
   {
+    "id": "43d45841883ec4799699853b922303af",
+    "title": "CHERI with a Linux on Top",
+    "source": "https://lwn.net/Articles/1037974/",
+    "generatedAt": "2025-10-06T06:28:19.576Z",
+    "publishedAt": "2025-10-06T04:25:31.000Z",
+    "feedName": "Y Combinator",
+    "author": "Y Combinator",
+    "category": "General",
+    "essence": "CHERI with a Linux on Top. Source: Y Combinator. This update highlights key points about \"CHERI with a Linux on Top\" from Y Combinator, focusing on practical implications and why it matters now.",
+    "reactions": [
+      "Community perspective: > capability revocation (e.g. free(3)) requires sweeping the process address space to invalidate capabilities Any chance you might have a deeper reference for this?",
+      "Community perspective: > I don't see it scaling well to large workloads either. Imagine a database server with hundreds of GB of memory mapped into the process, no way that you want to sweep through all the pointers in that",
+      "Community perspective: > Then you're using the wrong database server :-) Please do not continue down this path, Wol. You have been asked before. Your favorite hobby horse is off-topic on this article (and many, many others)"
+    ],
+    "promoBanner": {
+      "text": "Axiologic News",
+      "url": "https://axiologic.news"
+    }
+  },
+  {
     "id": "36c495fa48f0d869dc1c1839b82bf58a",
     "title": "The death of industrial design and the era of dull electronics",
     "source": "https://hackaday.com/2025/07/23/the-death-of-industrial-design-and-the-era-of-dull-electronics/",
@@ -1632,126 +1652,6 @@
       ") Investor: Investors could see a new, high-margin revenue channel from Mastercard's unique transaction data, but must weigh the significant privacy and regulatory backlash potential.",
       ") Operator: The lesson for operators is to identify untapped value in proprietary data assets, even if it means building an entirely new business unit and sales motion, like Mastercard is doing with its shopping data.",
       ") Market: Competitors in the retail media and adtech space, particularly those without Mastercard's direct, granular transaction data, stand to lose advertiser spend if this new venture succeeds."
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "2e3d56e9e4d78952af926bea7b79c04f",
-    "title": "Optimuse raises €4M to make building design smarter, cheaper, and greener",
-    "source": "https://tech.eu/2025/10/01/optimuse-raises-eur4m-to-make-building-design-smarter-cheaper-and-greener/",
-    "generatedAt": "2025-10-01T19:11:05.113Z",
-    "publishedAt": "2025-10-01T06:28:24.000Z",
-    "feedName": "Tech.eu",
-    "author": "Tech.eu",
-    "category": "Constructiontech",
-    "essence": "Austrian deep tech startup Optimuse secured €4M in a seed funding round to advance its AI-powered platform for building design optimization. The platform simulates and optimizes heating, cooling, and building envelope systems early in the planning process. This aims to reduce long-term costs and emissions, addressing critical efficiency and sustainability needs in construction.",
-    "reactions": [
-      "Investor: Investors back Optimuse's deep tech AI to optimize building systems early, betting on long-term cost and emissions reductions despite the inherent risks of integrating new technology into established construction workflows.",
-      "Operator: The key operational lesson is to leverage AI for early-stage simulation and optimization of building systems, as this proactive approach demonstrably cuts long-term costs and emissions.",
-      "Market: If Optimuse wins, the market for inefficient building designs and their associated higher long-term operational costs will shrink, putting pressure on traditional planning methods that fail to optimize early for energy and cost."
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "fbb32ca90d77d8828a2562d111c878b9",
-    "title": "Defence Tech Momentum: DroneShield’s Growth Story and ASX 200 Spotlight - Kalkine Media",
-    "source": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNVThXaWRWREFSUlhZS2dhRWswX1F5a1hxVW4xNnAxWmJZLWFsa2xiTlA3T2psZ2luM3g3WmpWVlF4QmZXQS1MTGRxS2gtMGNmdnAyV1VIc2FZZ3dWX0VNcVhmZUlsRE5ZOGl6TGJiZ0FjOWZIQkp0ZFR3OXFEU0VMelgwRVZwQ2dYdFo5Q1RBSkNtaU91bzBfT0drRFduUzAycXRnSDhRQ2tPdERqNXRWODd0MkgwZw?oc=5",
-    "generatedAt": "2025-10-01T15:47:24.447Z",
-    "publishedAt": "2025-10-01T06:09:00.000Z",
-    "feedName": "SaaS & B2B Startup Growth",
-    "author": "SaaS & B2B Startup Growth",
-    "category": "General",
-    "essence": "What's new: Based solely on the Kalkine Media title, DroneShield is reportedly experiencing \"Defence Tech Momentum\" and a \"Growth Story,\" leading to an \"ASX 200 Spotlight.\" Why it matters: This implies growing market recognition and potential for increased investor attention, positioning DroneShield as a significant player within the defence technology sector, particularly in counter-drone solutions. Evidence/Caveats: The \"ASX 200 Spotlight\" serves as the primary indicator of market prominence. However, without access to the full article content, specific financial metrics, operational achievements, or detailed risks (e.g., retention, CAC/LTV) cannot be extracted.",
-    "reactions": [
-      ") Investor — thesis/risks: The investment thesis centers on DroneShield's rapid growth, record revenue, and a $27 million order backlog, capitalizing on increasing global demand for counter-drone technology amidst geopolitical tensions.",
-      ") Operator — execution lesson: DroneShield's operational success stems from effectively securing large-scale government and defence contracts for its advanced counter-drone technology, driving significant revenue growth and a substantial order backlog.",
-      ") Market — who loses if they win: If DroneShield's counter-drone technology prevails, the primary 'losers' are malicious drone operators and adversaries whose unmanned aerial vehicle (UAV) operations are detected and neutralized, enhancing security for governments and critical infrastructure."
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "1ed1a20f9a62f89a4ac4d6f2aabf98bb",
-    "title": "Semrush: Too Cheap To Ignore (NYSE:SEMR) - Seeking Alpha",
-    "source": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPTVJIRXdvSklEZjZud2EyeVJvNlpGMG9tcTl0ZVdpb2NlNlRGUkl3ZDJzVWg3UUJDR3h1ZXpWeHkzYjVBWTJ5aEFXdVZ5dnhqVVI1SDVIR1lJUzl5b1VKa050bEh2V1d3eEd4TVhNckt5UnBTMFRqZTk0cHctcF95bWt6a1hyZzk2?oc=5",
-    "generatedAt": "2025-10-01T15:45:55.589Z",
-    "publishedAt": "2025-10-01T05:32:36.000Z",
-    "feedName": "SaaS & B2B Startup Growth",
-    "author": "SaaS & B2B Startup Growth",
-    "category": "General",
-    "essence": "The provided content only includes a title and a link to a Seeking Alpha article, \"Semrush: Too Cheap To Ignore (NYSE:SEMR)\". As an AI, I cannot access external websites or follow links to retrieve the full article text. Consequently, there is no substantive content available for analysis to extract the required facts, metrics, or proof points.",
-    "reactions": [
-      ") Investor: Semrush presents a \"too cheap to ignore\" investment thesis as an undervalued, sticky, all-in-one digital marketing SaaS platform with improving profitability, offering significant upside despite competitive and macro risks.",
-      ") Operator: The success of Semrush demonstrates that building a comprehensive, integrated SaaS platform that consolidates multiple point solutions can create high switching costs and a strong moat, enabling a balance of growth and improving profitability.",
-      ") Market: Semrush's victory in consolidating digital marketing functions directly impacts niche point solution providers, whose individual offerings become less compelling when bundled effectively into a single, sticky platform."
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "1b368d18321d6d087f47ab19fc1fde8f",
-    "title": "Serena raises €200M for applied AI and energy transition",
-    "source": "https://tech.eu/2025/10/01/serena-raises-eur200m-for-applied-ai-and-energy-transition/",
-    "generatedAt": "2025-10-01T15:42:32.876Z",
-    "publishedAt": "2025-10-01T04:00:00.000Z",
-    "feedName": "Tech.eu",
-    "author": "Tech.eu",
-    "category": "VC Fund",
-    "essence": "Serena launched its fourth flagship fund, successfully raising €200M. This new vehicle will primarily invest in applied AI and energy transition startups, marking a clear focus on these sectors. This strategic allocation positions Serena to capitalize on two significant, high-growth transformations impacting the European market.",
-    "reactions": [
-      ") Investor — thesis/risks: Serena's thesis targets Europe's \"key transformations\" in applied AI and energy transition, signaling a belief in foundational shifts but facing execution risks within broad, competitive sectors.",
-      ") Operator — execution lesson: Raising €200M for applied AI and energy transition underscores that a clear, timely investment narrative tied to \"key transformations\" is crucial for securing substantial capital.",
-      ") Market — who loses if they win: If Serena's portfolio companies win in applied AI and energy transition, incumbents tied to less efficient or carbon-intensive models will lose market share and relevance."
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "0c4f6d4d4f76a995fb7ab6b2c953acc9",
-    "title": "DroneShield Surges 40% After Hitting 4,000 Units Sold and Securing AUD 7.9m in New Orders - Stocks Down Under",
-    "source": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFAtTjRUbHNUSlVDbTRqWU9Cb2dkMXBUaURMcjIyS2JzakFmSzU3eTRyM3JQMm9pU0ZIS3hwQnAxNzRvVmxZWkpSdVpFN3ZmbkZNNUIycndkT0lqU3UyRE04?oc=5",
-    "generatedAt": "2025-10-01T15:47:02.252Z",
-    "publishedAt": "2025-10-01T01:25:53.000Z",
-    "feedName": "SaaS & B2B Startup Growth",
-    "author": "SaaS & B2B Startup Growth",
-    "category": "General",
-    "essence": "DroneShield (ASX:DRO) shares surged 40% following news of reaching 4,000 counter-drone units sold globally. The company also secured AUD 7.9 million in new orders. This milestone and new order intake signal strong market adoption and a deepening competitive wedge in the C-UAS defense sector, indicating accelerated go-to-market execution and validating demand for their technology.",
-    "reactions": [
-      ") Investor — thesis/risks: The 40% stock surge, driven by 4,000 units sold and AUD 7.9m in new orders, validates DroneShield's current market traction and operational execution, suggesting a strong thesis around growing counter-drone demand.",
-      ") Operator — execution lesson: Hitting specific, high-volume sales targets, such as 4,000 units sold and securing AUD 7.9m in new orders, proves that strong operational execution drives immediate market reward.",
-      ") Market — who loses if they win: DroneShield's surge in counter-drone unit sales indicates a market where those relying on unauthorized or malicious drone operations stand to lose operational capability."
-    ],
-    "promoBanner": {
-      "text": "Axiologic News",
-      "url": "https://axiologic.news"
-    }
-  },
-  {
-    "id": "31169c83d7dad18d73bd19fc9517e9ea",
-    "title": "Best Practices for Secure Agentforce Implementation",
-    "source": "https://www.salesforce.com/blog/best-practices-for-secure-agentforce-implementation-2/",
-    "generatedAt": "2025-10-02T01:18:57.993Z",
-    "publishedAt": "2025-10-01T01:12:50.000Z",
-    "feedName": "Salesforce Blog",
-    "author": "Salesforce Blog",
-    "category": "General",
-    "essence": "An upcoming article, \"Agentforce Best Practices for Secure Agentforce Implementation Part 2,\" authored by Sri Srinivasan, is scheduled for release on September 30, 2025. This 4-minute read will explore implementation strategies specifically designed to protect Agentforce workflows in real-world environments, building upon previous guidance. The publication of a second part on secure implementation underscores an ongoing commitment to enhancing Agentforce's enterprise readiness and user trust.",
-    "reactions": [
-      ") Investor — thesis/risks: An investor would see Agentforce's focus on \"secure implementation\" as validating a market need for enterprise-grade AI automation, but also flagging significant deployment complexities and reputational risks if real-world security vulnerabilities are not robustly addressed.",
-      ") Operator — execution lesson: Operators deploying Agentforce learn that secure implementation demands proactive strategies to protect workflows against specific threats in real-world environments, making security a foundational design principle rather than an afterthought.",
-      ") Market — who loses if they win: If Agentforce achieves widespread, secure adoption, competitors offering less integrated or less robust agent automation solutions will lose market share, and organizations failing to implement such secure platforms will lag in efficiency and data integrity."
     ],
     "promoBanner": {
       "text": "Axiologic News",
